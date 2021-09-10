@@ -1,0 +1,609 @@
+
+<style>
+  .page-main {
+    padding: 0px;
+  }
+  .page-footer h5{
+    font: 500 14px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
+    margin: 0 0 5px;
+  }
+  .nowrap {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+  
+  /* Global CSS */
+  * {
+    box-sizing: border-box;
+  }
+  :root {
+    --lightblue: #E5F3FE;
+    --lighterblue: #F0F6FB;
+    --lightorange: #FFECE6;
+    --lighterorange: #fff6f3;
+    --white: #ffffff;
+    --black: #606060;
+
+  }
+body{
+color:var(--black);
+}
+  
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    padding:0 50px;
+  }
+  h1,
+  h3 {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+color:var(--black);
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 37px;
+
+  }
+  h5 {
+  font-family: Montserrat;
+font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+
+  }
+  .btn {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+    margin: auto;
+  }
+  
+  .btn-blue {
+    color: var(--white) !important;
+    background-color: #9bb8d3;
+  }
+  .btn-blue:hover {
+    color: var(--white);
+    background-color: var(--black);
+  }
+    .large-btn{
+      width: 347px;
+    }
+    .small-btn{
+      width: 217px;
+    }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Diamond Page CSS */
+  .diamond-banner {
+  background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/MT2-Diamond-Banner-Desktop-1920-768.jpg);
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
+  .diamond-banner-bg{
+      background-color: transparent;
+  }
+  .pure-heart {
+    background-color: var(--lightblue);
+  }
+  .design-your-own-bg {
+    background-color: var(--lightorange);
+  }
+    
+  .education {
+    background-color: var(--lightorange);
+  }
+  .ready-to-ship-bg{
+    background-color: var(--lightblue);
+  }
+
+  .perfect-fit-bg{
+   background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+  }
+
+ 
+  .engagement-banner{
+      background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
+  }
+  .create-your-own-engagement{
+      background-color: var(--lightorange);
+  }
+  .create-your-own-engagement .row{
+    justify-content:space-between;
+  }
+  .choose-setting::after{
+    content: "+";
+    font-size: 100px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    right: -67px;
+    transform: translate(0,-50%);
+  }
+  .choose-diamond::before{
+    content: "=";
+    font-size: 100px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    right: -67px;
+    transform: translate(0,-50%);
+  }
+  .engagement-banner-diamond img{
+      width: 100%;
+      margin-bottom: -120px;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  
+  .diamond-banner .diamond-image-bg {
+    height: 400px;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .design-your-own .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/P2-Diamond-lifestyle.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .ready-to-ship .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .perfect-fit .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing_-p5_Kiss.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+
+
+
+.pure-heart sup{
+font-size:40%;
+top:-1em;
+}
+  
+ .diamond-image img{
+    width: 500px;
+  }
+  
+
+  
+
+
+ /* sliderConfig */
+.owl-carousel .owl-item{
+display:flex;
+align-items:center;
+justify-content:center;
+height:250px;
+}
+.owl-carousel .owl-item img{
+width:100px;
+transition: all 0.5s;
+}
+.owl-carousel .owl-item.center img{
+width:200px;
+}
+.owl-carousel .owl-item.center {
+margin:0px 30px;
+}
+.owl-item article>a{
+display:none;
+font-weight:500;
+}
+.owl-item.center article>a{
+  margin-top:10px;
+display:block;
+}
+.columns a{
+  color:var(--black);
+}
+
+#diamonds-slider-color-desktop .owl-item article>a{
+display:block;
+margin-top:10px;
+}
+
+#diamonds-slider-color-desktop.owl-carousel .owl-item{
+display:flex;
+align-items:center;
+justify-content:center;
+height:200px ;
+}
+#diamonds-slider-color-desktop.owl-carousel .owl-stage{
+margin:auto;
+}
+
+#diamonds-slider-color-desktop.owl-carousel .owl-item img{
+margin:0px 20px;
+}
+  
+  /* Medium  Devices */
+  @media (max-width: 1199.98px) {
+    h1 {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    h3 {
+      font-size: 25px;
+      line-height: 29px;
+    }
+  h5 {
+    font-size: 18px;
+ line-height: 25px;
+}
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+   .diamond-image img {
+      width: 320px;
+    }
+  
+
+
+  }
+  
+  /* Small Devices */
+  @media (max-width: 767.98px) {
+    p{
+      padding:0;
+    }
+    .btn {
+      font-size: 14px;
+      line-height: 22px;
+    
+    }
+    .my-4{
+      margin-top: 1.2rem !important;
+    }
+
+  .row {
+    display: block;
+  }
+
+.diamond-image img
+ {
+      width: 320px;
+    }
+    .diamond-banner {
+    background-image: none;
+    padding-top:0;
+  padding-bottom:0;
+  }
+    .engagement-banner-diamond img{
+      margin-bottom: -50px;
+  }
+  .perfect-fit-bg{
+      background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+  }
+  .diamond-banner-bg{
+      background-color: var(--lighterblue);
+  }
+  .col-sm-12{
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  }
+  
+  /* Extra Small Devices */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 25px;
+      line-height: 29px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  h5 {
+    font-size: 17px;
+ line-height: 20px;
+}
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .btn {
+      font-size: 14px;
+      line-height: 15px;
+      height: 30px;
+    }
+    .large-btn{
+      width: 217px;
+    }
+
+  .diamond-image img  {
+      width: 80%;
+    }
+    
+    .engagement-banner-diamond img{
+      margin-bottom: -35px;
+  }
+    
+.owl-carousel .owl-item{
+height:180px;
+}
+.owl-carousel .owl-item img{
+width:70px;
+}
+.owl-carousel .owl-item.center img{
+width:150px;
+}
+.owl-carousel .owl-item.center{
+margin:0px 20px;
+}
+
+  }
+  
+  </style>
+
+
+  
+<section class="engagement-banner py-5 hidden-xs">
+        
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 box engagement-banner-diamond mb-3"> 
+                <img src="{{media url=&quot;0newengagementpage/MT2-Engagement-Banner-_TRY_2.png&quot;}}" alt="PMT2-Engagement---Banner-768-320.png" >
+            </div>
+            <div class="col-sm-12 box "> 
+               <div >
+                   <h1>Engagement Rings</h1>
+                   
+                   <p class="my-4">Create your unique engagement ring from either the setting or a diamond. Start from our engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range of loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
+                    <a href="#" class="btn btn-blue large-btn mb-2" role="button">Start with Diamonds</a>
+                    <a href="#" class="btn btn-blue large-btn " role="button">Start with Setting</a>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</section>
+
+<section class=" visible-xs">
+        
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12 box engagement-banner engagement-banner-diamond mb-3"> 
+                <img src="{{media url=&quot;0newengagementpage/MT2-Engagement---Banner-768-320.png&quot;}}" alt="PMT2-Engagement---Banner-768-320.png" >
+            </div>
+            <div class="col-sm-12 box py-5"> 
+               <div >
+                   <h1>Engagement Rings</h1>
+                   
+                   <p class="my-4">Create your unique engagement ring from either the setting or a diamond. Start from our engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range of loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
+                    <a href="#" class="btn btn-blue large-btn mb-2" role="button">Start with Diamonds</a>
+                    <a href="#" class="btn btn-blue large-btn " role="button">Start with Setting</a>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<section class="my-5 py-5"></section>
+
+<section class="create-your-own-engagement py-5 hidden-xs">
+        
+    <div class="container">
+        <div class="row ">
+           
+            <div class="col-sm-6 box "> 
+               <div >
+                 <div style="width: 300px;height: 300px;border:1px solid red;position: relative;" class="choose-setting"></div>
+                   <h5>Choose Setting</h5>
+                   
+                   <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
+                    
+               </div>
+            </div>
+            <div class="col-sm-6 box "> 
+                <div >
+                 <div style="width: 300px;height: 300px;border:1px solid red;position: relative;" class="choose-diamond"></div>
+
+                    <h5>Choose Diamond</h5>
+                    
+                    <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
+                    
+                </div>
+             </div>
+             <div class="col-sm-6 box "> 
+                <div >
+                 <div style="width: 300px;height: 300px;border:1px solid red;" ></div>
+
+                    <h5>Complete Your Ring</h5>
+                    
+                    <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
+                     
+                </div>
+             </div>
+            
+        </div>
+    </div>
+
+
+</section>
+
+<section class="py-5 visible-xs">
+        
+  <div class="container ">
+      <div class="row">
+          <div class="col-sm-24 text-center"> 
+             <div >
+                 <h1>Fancy Colour Diamonds</h1>
+
+
+                 <div id="diamonds-slider-color-mobile" class="owl-carousel owl-theme img-slider  "  data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"responsive":{
+        "0": {
+            "items":1
+        },
+       "375": {
+            "items":1
+        },
+        "768":{
+            "items":3
+        },
+        "1200":{
+          "items":3
+      }
+    }}}}}'>
+                  <div class="item">
+                    <article class="text-center">
+                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/round"><img src="{{media url=&quot;0newdiamondpage/Fancy-Colour-Diamonds-YELLOW.png&quot;}}" class="img-responsive" alt="Fancy-Colour-Diamonds-YELLOW.png"></a></figure>
+                    <a href="https://www.michaeltrio.com/loose-diamonds/round">YELLOW</a></article>
+                    </div>
+                    <div class="item">
+                    <article class="text-center">
+                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/princess"><img src="{{media url=&quot;0newdiamondpage/Fancy-Colour-Diamonds-BLUE.png&quot;}}" class="img-responsive" alt="Fancy-Colour-Diamonds-BLUE.png"></a></figure>
+                    <a href="https://www.michaeltrio.com/loose-diamonds/princess">BLUE</a></article>
+                    </div>
+                    <div class="item">
+                    <article class="text-center">
+                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/emerald"><img src="{{media url=&quot;0newdiamondpage/Fancy-Colour-Diamonds-PINK.png&quot;}}" class="img-responsive" alt="Fancy-Colour-Diamonds-PINK.png"></a></figure>
+                    <a href="https://www.michaeltrio.com/loose-diamonds/emerald">PINK</a></article>
+                    </div>
+                    
+                    
+                </div>
+
+                
+             </div>
+          </div>
+          
+      </div>
+  </div>
+
+
+</secti
+
+
+<section class="custom-made py-5">
+        
+    <div class="container">
+        <div class="row ">
+            
+            <div class="col-sm-12 box "> 
+               <div >
+                   <h1>Custom Made <br/>Propsoal Rings</h1>
+                  
+                   <p class="my-4">Need some Ring-spiration? 
+                    Get inspired by some of our custom made rings to help you get started on planning for your ideal engagement ring.</p>
+                    <a href="#" class="btn btn-blue large-btn " role="button">Explore Cutom Made</a>
+               </div>
+            </div>
+            <div class="col-sm-12 box diamond-image hidden-xs"> 
+                <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}" alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
+              
+            </div>
+            
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+    <section class="ready-to-ship ">
+        
+            <div class="container">
+                <div class="row ready-to-ship-bg">
+                    <div class="visible-xs"> 
+                        <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg&quot;}}" alt="MT2-Wedding-Landing-p4-BOX.jpg" class="img-responsive w-100">
+                    </div>
+
+                    <div class="col-sm-12  diamond-image-bg hidden-xs"> 
+                       
+                    </div>
+
+                    <div class="col-sm-12 box my-5"> 
+                       <div>
+                           <h1>Ready to Ship</h1>
+                           <p class="my-4">Ready to ship brings you propsoal ring you can get when you are in a rush.</p>
+                            <a href="#" class="btn btn-blue large-btn " role="button">Ready to Ship</a>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+    
+    </section>
+    
+    <section class="perfect-fit mt-5">
+        
+        <div class="container">
+            <div class="row perfect-fit-bg">
+                <div class="visible-xs"> 
+                    <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p5_Kiss.png&quot;}}" alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
+                </div>
+               
+                <div class="col-sm-12 box my-5"> 
+                   <div >
+                       <h1>Get the Perfect Fit</h1>
+                       <p class="my-4">Find her Ring size with our complimentary ring sizer!</p>
+                        <a href="#" class="btn btn-blue large-btn " role="button">Free Ring Sizer</a>
+                   </div>
+                </div>
+
+                <div class="col-sm-12 diamond-image-bg hidden-xs"> 
+                   
+                </div>
+                
+            </div>
+        </div>
+    
+
+</section>
+
+
+
+    

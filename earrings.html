@@ -1,0 +1,1333 @@
+
+
+<style>
+  .page-main {
+    padding: 0px;
+  }
+  .page-footer h5{
+    font: 500 14px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
+    margin: 0 0 5px;
+  }
+  .nowrap {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Global CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  * {
+    box-sizing: border-box;
+  }
+  :root {
+    --lightblue: #E5F3FE;
+    --lighterblue: #F0F6FB;
+    --darkblue: #325683;
+    --lightorange: #FFECE6;
+    --lighterorange: #fff6f3;
+    --white: #ffffff;
+    --black: #606060;
+    --companyblue:#9BB8D3;
+  }
+body{
+color:var(--black);
+font-size: 14px;
+}
+.p-wrapper{
+  max-width: 900px;
+  margin:auto;
+}
+  
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    padding:0 50px;
+  }
+  h1,
+  h3 {
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+color:var(--black);
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 37px;
+
+  }
+  h5 {
+  font-family: Montserrat;
+font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+
+  }
+  .btn {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+    margin: auto;
+  }
+  
+  .btn-blue {
+    color: var(--white) !important;
+    background-color: var(--companyblue);
+  }
+  .btn-blue:hover {
+    color: var(--white);
+    background-color: var(--black);
+  }
+  .columns a.btn-blue-outline {
+    min-width: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--companyblue);
+    border: 2px solid var(--companyblue);
+  }
+
+  .columns a.btn-blue-outline:hover {
+    color: var(--white);
+    background-color: var(--black);
+    border-color: transparent;
+  }
+
+  .columns a.btn-blue-outline.active {
+    color: var(--white);
+    background-color: var(--companyblue);
+  }
+
+  .studs-nav .btn{
+   display: inline-block;
+  }
+
+    .large-btn{
+      width: 347px;
+    }
+    .small-btn{
+      width: 217px;
+    }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Global CSSDiamond Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  .diamond-banner {
+  background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/MT2-Diamond-Banner-Desktop-1920-768.jpg);
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
+  .diamond-banner-bg{
+      background-color: transparent;
+  }
+  .pure-heart {
+    background-color: var(--lightblue);
+  }
+  .design-your-own-bg {
+    background-color: var(--lightorange);
+  }
+  .custom-earrings-bg,.custom-pendant-bg {
+    background-color: var(--lighterblue);
+  }
+    
+  .education {
+    background-color: var(--lightorange);
+  }
+  .ready-to-ship-bg{
+    background-color: var(--lightblue);
+  }
+
+  .perfect-fit-bg{
+   background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+  }
+
+ 
+  .engagement-banner{
+      background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
+  }
+  .create-your-own-engagement{
+      background-color: var(--lightorange);
+  }
+
+  .bg-white{
+      background-color: var(--white);
+  }
+  .bg-lightgrey{
+      background-color: #FAFAFA; 
+  }
+  .bg-lightgreyblue{
+      background-color: var(--lighterblue);
+  }
+  .earrings-banner{
+    background-color:var(--lighterblue);
+  }
+  .earrings-banner p,.earrings-banner h1,.earrings-banner h3{
+   color:black;
+  }
+
+  .pandent-banner{
+    background-color:var(--lighterblue);
+  }
+  .pandent-banner{
+   color:black;
+  }
+
+
+  .create-your-own-engagement .row{
+    justify-content:space-between;
+  }
+  .create-your-own-engagement .col-sm-6{
+    width: 30%;
+  }
+
+  .engagement-banner-diamond img{
+      width: 80%;
+      margin-bottom: -175px;
+  }
+  .create-your-own-engagement p {
+    padding: 0;
+    font-size: 15px;
+  }
+  .top8{
+    padding-top: 8%;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  
+  .diamond-banner .diamond-image-bg {
+    height: 400px;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+  }
+  .design-your-own .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/P2-Diamond-lifestyle.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .custom-earrings .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .custom-pendant .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .ready-to-ship .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  .perfect-fit .diamond-image-bg {
+    height: 400px;
+    background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing_-p5_Kiss.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+
+
+
+.pure-heart sup{
+font-size:40%;
+top:-1em;
+}
+  
+ .diamond-image img{
+    width: 500px;
+  }
+  
+
+  
+
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ sliderConfig @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.owl-carousel .owl-item{
+display:flex;
+align-items:center;
+justify-content:center;
+height:250px;
+}
+.owl-carousel .owl-item img{
+width:100px;
+transition: all 0.5s;
+}
+.owl-carousel .owl-item.center img{
+width:200px;
+margin:auto;
+}
+.owl-carousel .owl-item.center {
+margin:0px 30px;
+}
+
+#choose-setting.owl-carousel .owl-item {
+  height:300px;
+}
+#choose-setting.owl-carousel .owl-item img{
+  width:200px;
+}
+#choose-setting.owl-carousel .owl-item.center img{
+  width:350px;
+}
+
+.owl-item article>a{
+display:none;
+font-weight:500;
+text-transform: uppercase;
+}
+.owl-item.center article>a{
+  margin-top:10px;
+display:block;
+}
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
+  top:auto;
+  bottom:8px;
+}
+
+
+.owl-carousel .owl-nav [class*='owl-']:before{
+  font-size: 40px;
+}
+.columns a{
+  color:var(--black) ;
+}
+
+#diamonds-slider-color-desktop .owl-item article>a{
+display:block;
+margin-top:10px;
+}
+
+#diamonds-slider-color-desktop.owl-carousel .owl-item{
+display:flex;
+align-items:center;
+justify-content:center;
+height:200px ;
+}
+#diamonds-slider-color-desktop.owl-carousel .owl-stage{
+margin:auto;
+}
+
+#diamonds-slider-color-desktop.owl-carousel .owl-item img{
+margin:0px 20px;
+}
+
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  .ct025 {
+  width: 10px;
+ margin:auto;
+  }
+  .ct030 {
+  width: 11px;
+ margin:auto;
+  }
+  .ct033 {
+  width: 12px;
+ margin:auto;
+  }
+  .ct050 {
+  width: 14px;
+ margin:auto;
+
+  }
+
+  .ct060 {
+  width: 14.3px;
+ margin:auto;
+
+  }
+  .ct070 {
+  width: 15px;
+ margin:auto;
+
+  }
+  .ct075 {
+  width: 15.5px;
+ margin:auto;
+
+  }
+  .ct080 {
+  width: 15.7px;
+ margin:auto;
+
+  }
+  .ct090 {
+  width: 16px;
+ margin:auto;
+
+  }
+  .ct100 {
+ margin:auto;
+  width: 18px;
+  }
+  .ct125 {
+ margin:auto;
+  width: 22px;
+  }
+  .ct150 {
+ margin:auto;
+  width: 25px;
+  }
+  .ct200 {
+ margin:auto;
+  width: 30px;
+  }
+  .diamond-thumbnail{
+     padding-top:0px;
+     padding-bottom:10px;
+     border-radius: 10px;
+     font-size: 11px;
+      font-weight: 300;
+      border:2px solid transparent;
+      cursor: pointer;
+  }
+  .diamond-thumbnail .diamond-size{
+    font-size: 11px;
+  }
+  .diamond-thumbnail.bg-white:hover{
+    border:2px solid var(--companyblue);
+  }
+  .active .diamond-thumbnail.bg-white{
+    border:2px solid var(--companyblue);
+  }
+  .diamond-thumbnail-img{
+      height: 70px;
+      padding: 10px 0px;
+      display: flex;
+  }
+  .diamond-price{
+      font-size: 14px;
+      margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .diamond-quality{
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .spinning-diamond{
+      width: 420px;
+      height: 420px;
+      border-radius: 20px;
+    }
+    .selling.No{
+      opacity: 0.5;
+      cursor:not-allowed;
+    }
+    .selling.No .diamond-thumbnail.bg-white:hover{
+    border:2px solid transparent;
+  }
+  .fa-green{
+    color: #5EE9AD;
+  }
+ 
+
+
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  @media (max-width: 1199.98px) {
+    h1 {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    h3 {
+      font-size: 25px;
+      line-height: 29px;
+    }
+  h5 {
+    font-size: 18px;
+ line-height: 25px;
+}
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  
+   .diamond-image img {
+      width: 320px;
+    }
+    .btn{
+      height: 35px;
+    }
+    .engagement-banner-diamond img{
+      width: 100%;
+     
+  }
+  #choose-setting.owl-carousel .owl-item img{
+    width:120px;
+  }
+  #choose-setting.owl-carousel .owl-item.center img{
+    width:250px;
+  }
+  
+  .spinning-diamond{
+      width: 380px;
+      height: 380px;
+    }
+    .diamond-quality, .diamond-price{
+      font-size: 12px;
+    }
+
+  }
+  
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  @media (max-width: 767.98px) {
+    p{
+      padding:0;
+    }
+    .btn {
+      font-size: 14px;
+      line-height: 22px;
+    
+    }
+    .my-4{
+      margin-top: 1.2rem !important;
+    }
+
+  .row {
+    display: block;
+  }
+
+.diamond-image img
+ {
+      width: 320px;
+    }
+    .diamond-banner {
+    background-image: none;
+    padding-top:0;
+  padding-bottom:0;
+  }
+    .engagement-banner-diamond img{
+      width: 55%;
+      margin-bottom: -50px;
+  }
+  .perfect-fit-bg{
+      background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+  }
+  .diamond-banner-bg{
+      background-color: var(--lighterblue);
+  }
+  .col-sm-12{
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+
+  }
+  
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 25px;
+      line-height: 29px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  h5 {
+    font-size: 17px;
+ line-height: 20px;
+}
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .btn {
+      font-size: 14px;
+      line-height: 15px;
+      height: 30px;
+    }
+    .large-btn{
+      width: 217px;
+    }
+
+  .diamond-image img  {
+      width: 80%;
+    }
+    
+    .engagement-banner-diamond img{
+      width: 70%;
+      padding-top:50px;
+      margin-bottom: -50px;
+  }
+    
+.owl-carousel .owl-item{
+height:180px;
+}
+.owl-carousel .owl-item img{
+width:70px;
+transition: unset;
+}
+.owl-carousel .owl-item.center img{
+width:150px;
+}
+.owl-carousel .owl-item.center{
+margin:0px 20px;
+}
+#create-your-own-engagement.owl-carousel .owl-item{
+height:auto ;
+margin:0;
+}
+#create-your-own-engagement.owl-carousel .owl-nav .owl-prev,#create-your-own-engagement.owl-carousel .owl-nav .owl-next{
+  top:auto;
+  bottom:-40px;
+}
+#choose-setting.owl-carousel .owl-item{
+height:auto ;
+}
+.spinning-diamond{
+      width: 295px;
+      height: 295px;
+    }
+
+    .diamond-thumbnail .diamond-size{
+      font-size:11px;
+    }
+    .diamond-quality, .diamond-price{
+      font-size: 12px;
+    }
+
+
+
+}
+  
+  </style>
+
+<section class="pt-5 pb-4">
+  <div class="container">
+    <div class="row ">
+      <div class="col-xs-24">
+        <h1 class="text-center">Diamond Solitaire Collection</h1>
+        <h3 class="text-center">by michael trio</h3>
+        <div class="studs-nav pt-3">
+         
+          <a href="https://www.michaeltrio.com/jewellery/earrings/studs" class="btn btn-blue-outline active" role="button">Earrings (Studs)  </a>
+
+            <a href="https://www.michaeltrio.com/jewellery/pendant/studs" class="btn btn-blue-outline" role="button">Pendants </a>
+          <!-- <a href="#" class="btn btn-blue-outline" role="button">Bracelets </a> -->
+
+          <!-- <a href="#" class="btn btn-blue-outline" role="button">Rings </a> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="earrings-banner py-5">
+        
+    <div class="container ">
+  
+      <div class="row text-center">
+        <div class="col-xs-24">
+          <h1>Diamond Earrrings </h1>
+          <h3>Solitaire studs </h3>
+          <p class="my-4 p-wrapper">
+            Our extraordinary earring selection makes the perfect gift for any occasion. All Solitaire 
+            Diamond Studs are available in White Gold, Rose Gold, and Yellow Gold.
+           </p>
+        </div>
+      </div>
+ 
+    </div>
+  
+  
+  </section>
+
+    <section class="bg-lightgrey py-5">
+        
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-24 text-center">
+                    <h1>Round Solitaire Diamond Earrings in 14K White Gold</h1>
+                  
+                    <p class="my-4 p-wrapper">Presenting the finest quality-cut diamond, Michael Trio's Round Solitaire Diamond Earrings features an exquisite brilliance that goes beyond the everyday accessories.</p>
+
+                </div>
+            </div>
+         
+            <div class="row pt-4">
+                <div class="col-sm-12 text-center pb-4"> 
+                  <iframe src='//spins0.arqspin.com/iframe.html?spin=3vmk8z2pe36u&is=0.16' class="spinning-diamond" scrolling='no' frameborder='0'></iframe>
+                </div>
+                <div class="col-sm-12  "> 
+                  
+                  <h1 class="text-center">  Diamond Type</h1>
+
+                  <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EL2021',0)">
+                    <div class="diamond-thumbnail bg-white py-3">
+                      <div class="diamond-quality"> </i>Best Value</div> 
+                    <div><i class="fa fa-diamond pr-2 fa-green" aria-hidden="true"></i> Lab Grown</div>
+                      <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                      <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+
+
+                    </div>
+                  </div>
+
+                     <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EISI2021',1)">
+                      <div class="diamond-thumbnail bg-white py-3">
+                        <div class="diamond-quality"> </i>Great Value</div> 
+                      <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                        <div class="hidden-xs"> Colour: H-I | Clarity: SI</div>
+                        <div class="visible-xs"> Colour: H-I <br/> Clarity: SI</div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EGVS2021',2)">
+                      <div class="diamond-thumbnail bg-white  py-3">
+                        <div class="diamond-quality"></i>Best Quality</div> 
+                        <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                          <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                          <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+                      </div>
+                    </div>
+
+                      
+                     
+                        <div class="col-xs-24  "> <h1 class="text-center  pt-4">  Choose Your Diamond </h1></div>
+                    
+
+                      <div id="EL2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">   </div>
+                       <div id="EISI2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+                       <div id="EGVS2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+
+
+                     
+
+
+                </div>
+                
+            </div>
+
+            
+        </div>
+    
+    
+    </section>
+
+    <section class="bg-lightgreyblue py-5">
+        
+      <div class="container">
+          <div class="row ">
+              <div class="col-sm-24 text-center">
+                <h1>Round Cut Diamond 18K White Gold</h1>
+                <p class="my-4 p-wrapper">Featuring pristine brilliance and pure elegance, the round cut diamond earrings is the perfect pairing for any occassion.</p>
+
+              </div>
+          </div>
+       
+          <div class="row pt-4">
+              <div class="col-sm-12 text-center pb-4"> 
+               
+                <iframe src="//spins0.arqspin.com/iframe.html?spin=1i8md9xrpzdrx&amp;is=0.16" class="spinning-diamond" scrolling="no" frameborder="0"></iframe>
+                
+              </div>
+              <div class="col-sm-12  "> 
+                
+                <h1 class="text-center">  Diamond Type</h1>
+
+                <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EISI2020_NoItem',0)">
+                  <div class="diamond-thumbnail bg-white py-3">
+                    <div class="diamond-quality"> </i>Best Value</div> 
+                  <div><i class="fa fa-diamond pr-2 fa-green" aria-hidden="true"></i> Lab Grown</div>
+                  <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                  <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+                  </div>
+                </div>
+
+                   <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EISI2020',1)">
+                    <div class="diamond-thumbnail bg-white py-3">
+                      <div class="diamond-quality"> </i>Great Value</div> 
+                    <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                    <div class="hidden-xs"> Colour: H-I | Clarity: SI</div>
+                    <div class="visible-xs"> Colour: H-I <br/> Clarity: SI</div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EGVS2020',2)">
+                    <div class="diamond-thumbnail bg-white  py-3">
+                      <div class="diamond-quality"></i>Best Quality</div> 
+                      <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                      <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                      <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+                    </div>
+                  </div>
+
+                    
+                   
+                      <div class="col-xs-24  "> <h1 class="text-center  pt-4">  Choose Your Diamond </h1></div>
+                    
+
+                    
+                    <div  class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">   </div>
+                     <div id="EISI2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+                     <div id="EGVS2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+                   <div id="EISI2020_NoItem" class="row earrings2021 text-center" style="flex-wrap: wrap;padding:0px 20px; display: none;"> 
+                    For customisation of Solitaire Studs, please contact us for availability and pricing. </div>
+
+
+                    
+
+
+              </div>
+              
+          </div>
+
+          
+      </div>
+  
+  
+  </section>
+
+  <section class="bg-lightgrey py-5">
+        
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-24 text-center">
+                <h1>Princess Cut Diamond 18K White Gold</h1>
+                <p class="my-4 ">Exquisite and unique, the princess cut diamond earrings showcase absolute symmetry and glow.</p>
+
+            </div>
+        </div>
+     
+        <div class="row pt-4">
+            <div class="col-sm-12 text-center pb-4"> 
+             
+              <iframe src="//spins0.arqspin.com/iframe.html?spin=fgx31qimqin7&amp;is=0.16" class="spinning-diamond" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <div class="col-sm-12  "> 
+              
+              <h1 class="text-center">  Diamond Type</h1>
+
+              <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EL2020_NoItem',0)">
+                <div class="diamond-thumbnail bg-white py-3">
+                  <div class="diamond-quality"> </i>Best Value</div> 
+                <div><i class="fa fa-diamond pr-2 fa-green" aria-hidden="true"></i> Lab Grown</div>
+                <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+                </div>
+              </div>
+
+                 <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EL2020_NoItem',1)">
+                  <div class="diamond-thumbnail bg-white py-3">
+                    <div class="diamond-quality"> </i>Great Value</div> 
+                  <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                  <div class="hidden-xs"> Colour: H-I | Clarity: SI</div>
+                  <div class="visible-xs"> Colour: H-I <br/> Clarity: SI</div>
+                  </div>
+                </div>
+
+                
+                <div class="col-xs-8 text-center diamond-type " onclick="activeQuality('EL2020',2)">
+                  <div class="diamond-thumbnail bg-white  py-3">
+                    <div class="diamond-quality"></i>Best Quality</div> 
+                    <div><i class="fa fa-diamond pr-2" aria-hidden="true"></i>Earth Natural</div>
+                    <div class="hidden-xs"> Colour: F-G | Clarity: VS</div>
+                    <div class="visible-xs"> Colour: F-G <br/> Clarity: VS</div>
+                  </div>
+                </div>
+
+                  
+                
+                    <div class="col-xs-24  "> <h1 class="text-center  pt-4">  Choose Your Diamond </h1></div>
+                 
+
+                  
+                  <div id="EL2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">   </div>
+                   <div  class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+                   <div  class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+                   <div id="EL2020_NoItem" class="row earrings2021 text-center" style="flex-wrap: wrap;padding:0px 20px; display: none;"> 
+                    For customisation of Solitaire Studs, please contact us for availability and pricing. </div>
+
+
+                  
+
+
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+
+</section>
+
+<section class="custom-earrings py-5">
+        
+  <div class="container ">
+
+ 
+
+      <div class="row custom-earrings-bg mt-3">
+        <div class="col-sm-12 diamond-image-bg hidden-xs"> 
+        </div>
+
+        <div class="box  visible-xs mb-3"> 
+          <img src="{{media url=&quot;catalog/jewellery/custom-sol-earring-bg.jpg&quot;}}" alt="P2-Diamond-lifestyle.jpg" class="img-responsive w-100">
+      </div>
+
+          <div class="col-sm-12 box my-5 "> 
+             <div >
+              <h1>Custom Made Solitaire Earrings</h1>
+        <p class="my-4 p-wrapper">At Michael Trio, We are able to customize your earring, let us Know your considerations and we’ll do the rest!</p>
+     
+               <a href="https://www.michaeltrio.com/contacts" class="btn btn-blue large-btn " role="button">Learn More </a>
+             </div>
+          </div>
+         
+      </div>
+  </div>
+
+
+</section>
+
+
+
+    <script>
+        var EGVS2021=[
+ {
+   "SKU": "MDE0006-GVS025-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS025-14KW",
+   "Size": "0.25ct",
+   "Price": "SG$654",
+   "ClassName" : "ct025",
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS050-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS050-14KW",
+   "Size": "0.50ct",
+   "Price": "SG$1,289",
+   "ClassName" : "ct050",
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS075-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS075-14KW",
+   "Size": "0.75ct",
+   "Price": "SG$2,308",
+   "ClassName" : "ct075",
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS100-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS100-14KW",
+   "Size": "1.00ct",
+   "Price": "SG$3,654",
+   "ClassName" : "ct100",
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS125-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS125-14KW",
+   "Size": "1.25ct",
+   "Price": "SG$6,766",
+   "ClassName" : "ct125",
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS150-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS150-14KW",
+   "Size": "1.50ct",
+   "Price": "SG$7,794",
+   "ClassName" : "ct150"  ,
+   "Selling":"Yes" 
+ },
+ {
+   "SKU": "MDE0006-GVS200-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-GVS200-14KW",
+   "Size": "2.00ct",
+   "Price": "SG$15,700",
+   "ClassName" : "ct200"  ,
+   "Selling":"Yes" 
+ }]
+        var EISI2021=[ {
+   "SKU": "MDE0006-ISI025-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI025-14KW",
+   "Size": "0.25ct",
+   "Price": "SG$439",
+   "ClassName": "ct025" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI050-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI050-14KW",
+   "Size": "0.50ct",
+   "Price": "SG$1,056",
+   "ClassName": "ct050" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI075-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI075-14KW",
+   "Size": "0.75ct",
+   "Price": "SG$2,009",
+   "ClassName": "ct075" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI100-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI100-14KW",
+   "Size": "1.00ct",
+   "Price": "SG$3,420",
+   "ClassName": "ct100" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI125-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI125-14KW",
+   "Size": "1.25ct",
+   "Price": "SG$4,327",
+   "ClassName": "ct125" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI150-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI150-14KW",
+   "Size": "1.50ct",
+   "Price": "SG$6,878",
+   "ClassName": "ct150" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-ISI200-14KW",
+   "URL": " https://www.michaeltrio.com/MDE0006-ISI200-14KW",
+   "Size": "2.00ct",
+   "Price": "SG$12,897",
+   "ClassName": "ct200" ,
+   "Selling":"Yes" 
+  }]
+        var EL2021=[{
+   "SKU": "MDE0006-L025-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l025-14kw",
+   "Size": "0.25ct",
+   "Price": "SG$392",
+   "ClassName": "ct025" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L050-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l050-14kw",
+   "Size": "0.50ct",
+   "Price": "SG$747",
+   "ClassName": "ct050" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L075-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l075-14kw",
+   "Size": "0.75ct",
+   "Price": "SG$1,215",
+   "ClassName": "ct075" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L100-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l100-14kw",
+   "Size": "1.00ct",
+   "Price": "SG$2,140",
+   "ClassName": "ct100" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L125-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l125-14kw",
+   "Size": "1.25ct",
+   "Price": "SG$2,803",
+   "ClassName": "ct125" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L150-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l150-14kw",
+   "Size": "1.50ct",
+   "Price": "SG$3,392",
+   "ClassName": "ct150" ,
+   "Selling":"Yes" 
+  },
+ {
+   "SKU": "MDE0006-L200-14KW",
+   "URL": " https://www.michaeltrio.com/mde0006-l200-14kw",
+   "Size": "2.00ct",
+   "Price": "SG$6,261",
+   "ClassName": "ct200" ,
+   "Selling":"Yes" 
+  }]
+ 
+
+
+
+ var EL2020=[ {
+   "SKU": "mde0008-gvs025-18kw",
+   "URL": " https://www.michaeltrio.com/mde0008-gvs025-18kw",
+   "Size": "0.25ct",
+   "Price": "SG$635",
+   "ClassName": "ct025",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0008-gvs060-18kw",
+   "URL": " https://www.michaeltrio.com/mde0008-gvs060-18kw",
+   "Size": "0.60ct",
+   "Price": "SG$2,149",
+   "ClassName": "ct060",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0008-gvs080-18kw",
+   "URL": " https://www.michaeltrio.com/mde0008-gvs080-18kw",
+   "Size": "0.80ct",
+   "Price": "SG$2,953",
+   "ClassName": "ct080",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0008-gvs100-18kw",
+   "URL": " https://www.michaeltrio.com/mde0008-gvs100-18kw",
+   "Size": "1.00ct",
+   "Price": "SG$3,486",
+   "ClassName": "ct100",
+   "Selling": "Yes"
+ }];
+ var EGVS2020=[ {
+   "SKU": "mde0006-gvs025-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs025-18kw",
+   "Size": "0.25ct",
+   "Price": "SG$622",
+   "ClassName": "ct025",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-gvs033-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs033-18kw",
+   "Size": "0.33ct",
+   "Price": "SG$1,214",
+   "ClassName": "ct033",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-gvs050-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs050-18kw",
+   "Size": "0.50ct",
+   "Price": "SG$1,494",
+   "ClassName": "ct050",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-gvs080-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs080-18kw",
+   "Size": "0.80ct",
+   "Price": "SG$2,710",
+   "ClassName": "ct080",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-gvs090-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs090-18kw",
+   "Size": "0.90ct",
+   "Price": "SG$2,981",
+   "ClassName": "ct090",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-gvs100-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-gvs100-18kw",
+   "Size": "1.00ct",
+   "Price": "SG$4,914",
+   "ClassName": "ct100",
+   "Selling": "Yes"
+ }];
+ var EISI2020 =[ {
+   "SKU": "mde0006-isi025-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi025-18kw",
+   "Size": "0.25ct",
+   "Price": "SG$523",
+   "ClassName": "ct025",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi033-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi033-18kw",
+   "Size": "0.33ct",
+   "Price": "SG$850",
+   "ClassName": "ct033",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi050-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi050-18kw",
+   "Size": "0.50ct",
+   "Price": "SG$1,120",
+   "ClassName": "ct050",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi075-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi075-18kw",
+   "Size": "0.75ct",
+   "Price": "SG$2,112",
+   "ClassName": "ct075",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi080-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi080-18kw",
+   "Size": "0.80ct",
+   "Price": "SG$2,224",
+   "ClassName": "ct100",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi100-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi100-18kw",
+   "Size": "1.00ct",
+   "Price": "SG$3,158",
+   "ClassName": "ct125",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi150-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi150-18kw",
+   "Size": "1.50ct",
+   "Price": "SG$5,831",
+   "ClassName": "ct150",
+   "Selling": "Yes"
+ },
+ {
+   "SKU": "mde0006-isi200-18kw",
+   "URL": " https://www.michaeltrio.com/mde0006-isi200-18kw",
+   "Size": "2.00ct",
+   "Price": "SG$11,775",
+   "ClassName": "ct200",
+   "Selling": "Yes"
+ }];
+
+//  window.onresize = function(){
+//   window.location.reload(); 
+//  };
+ window.onload = function() {
+   
+  
+ 
+   renderData(EL2021,'EL2021','round');
+   renderData(EISI2021,'EISI2021','round');
+   renderData(EGVS2021,'EGVS2021','round');
+
+
+   renderData(EL2020,'EL2020','princess');
+   renderData(EISI2020,'EISI2020','round');
+   renderData(EGVS2020,'EGVS2020','round');
+  
+   
+   activeQuality('EL2021',0);
+   activeQuality('EISI2020',1);
+   activeQuality('EL2020',2);
+
+   disableSelling();
+
+};
+
+
+function renderData(diamondType,id,cut){
+    var cutImg = "";
+    var data="";
+    if (cut==='round'){
+      cutImg = 'https://www.michaeltrio.com/pub/media/catalog/jewellery/round-cut-ci-csi.png';
+    }else if(cut==="princess"){
+      cutImg = 'https://www.michaeltrio.com/pub/media/catalog/jewellery/princess-cut-cg-cvs.png';
+    }
+
+    diamondType.forEach(function(diamond) {
+        data += '<div class="col-sm-6 col-xs-8 text-center selling '+diamond.Selling+'"><a href="'+diamond.URL+'"><div class="diamond-thumbnail bg-white"> <div class="diamond-thumbnail-img"> <img src="'+cutImg+'" alt="" class="'+diamond.ClassName+'"></div> <div class="diamond-size">'+diamond.Size+'</div> </div><div class="diamond-price">'+diamond.Price+'</div> </a></div>';
+    }); 
+
+    document.getElementById(id).innerHTML= data;
+
+}
+
+
+function activeQuality(id,index) {
+
+  var p=document.getElementById(id).parentElement;
+
+  var x = p.getElementsByClassName("earrings2021");
+
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(id).style.display = "block";  
+
+  
+
+  var type=p.getElementsByClassName("diamond-type");
+  for (let i = 0; i < type.length; i++) {
+    type[i].classList.remove("active");
+  }
+  type[index].classList.add("active");
+}
+
+
+function disableSelling(){
+ 
+ var  y= document.getElementsByClassName("No");
+ 
+ for (let i = 0; i < y.length; i++) {
+  y[i].getElementsByTagName('a')[0].removeAttribute("href");
+  
+ }
+
+}
+
+
+</script>
+    
