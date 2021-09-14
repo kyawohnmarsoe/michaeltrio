@@ -96,11 +96,13 @@
     .btn-blue {
       color: var(--white) !important;
       background-color: var(--companyblue);
+      transition: all 2s;
     }
 
     .btn-blue:hover {
       color: var(--white);
       background-color: var(--black);
+
     }
 
     .columns a.btn-blue-outline {
@@ -209,6 +211,10 @@
     }
 
     .create-your-own-engagement a:hover {
+      color: var(--black);
+    }
+
+    .owl-item .item a:hover {
       color: var(--black);
     }
 
@@ -565,9 +571,18 @@
     }
 
     #for-her-slider.owl-carousel .owl-item img,
-    #for-him-slider.owl-carousel .owl-item img,
-    #top-selling-slider.owl-carousel .owl-item img {
+    #for-him-slider.owl-carousel .owl-item img {
       width: 160px;
+    }
+
+    #for-her-slider a img:hover,
+    #for-him-slider a img:hover,
+    #top-selling-slider a img:hover {
+      filter: contrast(130%);
+    }
+
+    #top-selling-slider.owl-carousel .owl-item img {
+      width: 100%;
     }
 
     #for-him-slider .for-title {
@@ -577,6 +592,7 @@
     #top-selling-slider .for-title {
       text-transform: unset;
       padding: 10px 5px;
+
     }
 
     #for-him-slider {
@@ -664,7 +680,14 @@
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 767.98px) {
+      #top-selling-slider .for-title {
+        max-width: 400px;
+        margin: auto;
+      }
 
+      .wedding-banner {
+        background-image: none;
+      }
 
       p {
         padding: 0;
@@ -713,15 +736,21 @@
         padding-right: 13px;
       }
 
-      #for-her-slider,
-      #for-him-slider {
+      #for-her-slider {
         margin-bottom: 40px;
       }
 
-      #for-her-slider.owl-carousel .owl-item img,
-      #for-him-slider.owl-carousel .owl-item img {
-        width: 100%;
+      #for-her-slider.owl-carousel .owl-item img {
+        width: 80%;
+        margin: auto;
       }
+
+      #for-him-slider.owl-carousel .owl-item img,
+      #top-selling-slider.owl-carousel .owl-item img {
+        width: 70%;
+        margin: auto;
+      }
+
 
       #create-your-own-engagement.owl-carousel .owl-item img {
         transition: unset;
@@ -729,6 +758,19 @@
 
       #choose-setting.owl-carousel .owl-item {
         height: 270px;
+      }
+
+      .spacing-xs-t {
+        padding-top: 20px !important;
+      }
+
+      .spacing-xs-b {
+        padding-bottom: 20px !important;
+      }
+
+      #for-him-slider {
+        padding: 0;
+        margin: 40px auto;
       }
 
     }
@@ -817,6 +859,7 @@
       }
 
 
+
     }
   </style>
 </head>
@@ -824,26 +867,179 @@
 <body>
 
 
-  <section class="engagement-banner py-5 hidden-xs">
+  <section class="wedding-banner">
 
     <div class="container">
       <div class="row ">
-        <div class="col-sm-12 box engagement-banner-diamond mb-3">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Engagement-Banner-_TRY_2.png&quot;}}"
-            alt="PMT2-Engagement---Banner-768-320.png">
+        <div class=" visible-xs ">
+
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-Wedding-Banner-768.jpg"
+            alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
+        </div>
+
+        <div class="col-sm-12 wedding-banner-bg hidden-xs">
+
+        </div>
+
+        <div class="col-sm-12 box  wedding-banner-bg py-5">
+          <div>
+            <h1>Wedding Bands</h1>
+            <p class="my-4">A wedding band is a symbol of commitment; a promise, a pledge, and a vow.</p>
+
+            <a href="https://www.michaeltrio.com/loose-diamonds/all-diamonds" class="btn btn-blue large-btn "
+              role="button">Explore Wedding Bands</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="wedding-bands py-5">
+    <div class="container">
+
+      <h1 class="text-center">Wedding Bands</h1>
+
+      <h3 class="text-center pb-3">For Her</h3>
+
+      <div class="row box for-her-bg mb-4">
+        <div class="col-xs-24 p-0 visible-xs">
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Picture768x300.jpg" class="w-100"
+            alt="">
+        </div>
+        <div class="col-sm-18 col-xs-24 ">
+
+          <div id="for-her-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
+            "0": {
+                "items":1
+            },
+           "375": {
+                "items":1
+            },
+            "768":{
+                "items":5
+            },
+            "1200":{
+              "items":5
+          }
+        }}}}}'>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/classic">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Classic300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Classic</div>
+              </a>
+            </div>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/eternity">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Eternity300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Eternity</div>
+              </a>
+            </div>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/diamond">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Diamond300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Diamond</div>
+              </a>
+            </div>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/dainty">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Dainty300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Dainty</div>
+              </a>
+            </div>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/alternative">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Alternative300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Alternative</div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-sm-6 p-0 hidden-xs">
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg" class="w-100" alt="">
+        </div>
+
+      </div>
+
+
+
+      <h3 class="text-center pb-3">For Him</h3>
+      <div class="row box for-him-bg">
+        <div class="col-sm-6 p-0 visible-xs">
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture768x300.jpg" class="w-100"
+            alt="">
+        </div>
+        <div class="col-sm-6 p-0 hidden-xs">
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture.jpg" class="w-100" alt="">
+        </div>
+
+
+        <div class="col-sm-18 col-xs-24">
+          <div id="for-him-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
+            "0": {
+                "items":1
+            },
+           "375": {
+                "items":1
+            },
+            "768":{
+                "items":3
+            },
+            "1200":{
+              "items":3
+          }
+        }}}}}'>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/classic">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Classic300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Classic</div>
+              </a>
+            </div>
+
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/diamond">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Diamond</div>
+              </a>
+            </div>
+            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/alternative">
+                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Alternative300.png"
+                  class="img-responsive" alt="">
+                <div class="for-title">Alternative</div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="lab py-5">
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12 box diamond-image ">
+          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Custommade.jpg"
+            alt="Diamond-P3-No-BG.jpg">
         </div>
         <div class="col-sm-12 box ">
           <div>
-            <h1>Engagement Rings</h1>
+            <h1>Custom Made Wedding Bands</h1>
 
-            <p class="my-4">Create your unique engagement ring from either the setting or a diamond. Start from our
-              engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range
-              of
-              loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
-            <a href="{{store url='loose-diamonds/all-diamonds'}}" class="btn btn-blue large-btn mb-2"
-              role="button">Start with Diamonds</a>
-            <a href="{{store url='engagement-rings/setting'}}" class="btn btn-blue large-btn " role="button">Start with
-              Setting</a>
+            <p class="my-4">Design your perfect wedding band. Select from our range of wedding bands styles, customise
+              it with diamonds, the precious metal of your choice and preferred metal finishing.</p>
+            <a href="https://www.michaeltrio.com/loose-diamonds/lab-grown-diamonds" class="btn btn-blue large-btn "
+              role="button">Learn More</a>
           </div>
         </div>
 
@@ -853,107 +1049,97 @@
 
   </section>
 
-  <section class=" visible-xs">
-
-    <div class="container">
-      <div class="row ">
-        <div class="col-sm-12 box engagement-banner engagement-banner-diamond mb-3">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Engagement-Banner-_TRY_2.png&quot;}}"
-            alt="PMT2-Engagement---Banner-768-320.png">
-        </div>
-        <div class="col-sm-12 box py-5">
-          <div>
-            <h1>Engagement Rings</h1>
-
-            <p class="my-4">Create your unique engagement ring from either the setting or a diamond. Start from our
-              engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range
-              of
-              loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
-            <a href="{{store url='loose-diamonds/all-diamonds'}}" class="btn btn-blue large-btn mb-2"
-              role="button">Start with Diamonds</a>
-            <a href="{{store url='engagement-rings/setting'}}" class="btn btn-blue large-btn " role="button">Start with
-              Setting</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-  <section class="choose-setting py-5">
+  <section class="top-selling-bands py-5">
 
     <div class="container ">
       <div class="row">
         <div class="col-sm-24 text-center">
           <div>
-            <h1>Choose Your Setting Style</h1>
-            <div id="choose-setting" class="owl-carousel owl-theme img-slider my-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
-        "0": {
-            "items":1
-        },
-       "375": {
-            "items":1
-        },
-        "480": {
-          "items":3
-      },
-        "768":{
-            "items":5
-        },
-        "1200":{
-          "items":5
-      }
-    }}}}}'>
+            <h1>Top selling Wedding Bands</h1>
+            <div id="top-selling-slider" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+              "0": {
+                  "items":1
+              },
+             "375": {
+                  "items":1
+              },
+              "768":{
+                  "items":5
+              },
+              "1200":{
+                "items":5
+            }
+          }}}}}'>
               <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/solitaire'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/solitaire'}}">Solitaire</a>
-                </article>
+                <a href="https://www.michaeltrio.com/wr0136b-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/1WR0136B-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Classic Glossy Finished with Diamond Wedding Ring in 18K White Gold</div>
+                </a>
               </div>
               <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/pave'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Pave-WR0175F-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/pave'}}">Pave</a>
-                </article>
+                <a href="https://www.michaeltrio.com/wr0042b-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/2WR0042B-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Satin Finished with Channel Set Diamond Ring in 18K White Gold</div>
+                </a>
               </div>
               <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/channel-set'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Channel_Set-MSR0033F-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
-                </article>
-              </div>
-
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/side-stone'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Side_Stone-MSR0063-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/side-stone'}}">Side Stone</a>
-                </article>
+                <a href="https://www.michaeltrio.com/wr0006b-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/3WR0006B-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Glossy Tone with Milgrain Edge with Groove Ring in 18k White Gold</div>
+                </a>
               </div>
               <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/vintage'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Vintage-msr0100-18kwr.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/vintage'}}">Vintage</a>
-                </article>
+                <a href="https://www.michaeltrio.com/wr0135b-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/4WR0135B-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Classic Indented with Glossy Finished Diamond Ring in 18K White Gold</div>
+                </a>
               </div>
               <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/halo'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Halo-MSR0188-18kw.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/halo'}}">Halo</a>
-                </article>
+                <a href="https://www.michaeltrio.com/wr0129a-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/5WR0129A-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Glossy Carved Design Ring in 18K white Gold</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.michaeltrio.com/wr0280a-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/6WR0280A-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Brushed Curve Steps Diamond Ring in 18k White Gold</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.michaeltrio.com/wr0065a-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/7WR0065A-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Indented Matte Inlay Ring with 18k White Gold</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.michaeltrio.com/wr0045a-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/8WR0045A-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.michaeltrio.com/wr0018a-18kw"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/9WR0018A-18KW.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.michaeltrio.com/wr0098b-18kwr"><img
+                    src="http://new.michaeltrio.com/pub/media/0newweddingpage/top10slider/10WR0098B-18KWR.jpg"
+                    class="img-responsive m-auto" alt="">
+                  <div class="for-title">Dual Tone Contrasted Finish with Flush Set Diamond Ring in 18K White and Rose
+                    Gold</div>
+                </a>
               </div>
 
             </div>
@@ -966,214 +1152,6 @@
     </div>
   </section>
 
-
-  <section class="create-your-own-engagement py-5 hidden-xs">
-
-    <div class="container">
-      <div class="row ">
-
-
-        <div class="col-sm-24 box ">
-          <h1>Create your own Engagement Ring</h1>
-        </div>
-      </div>
-
-      <div class="row ">
-
-        <div class="col-sm-6 box ">
-          <div>
-
-            <a href="{{store url='engagement-rings/setting'}}"><img
-                src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
-                alt="M2-Engagement---Step123---Setting.png" class="img-responsive">
-
-              <h5>Choose Setting</h5>
-
-              <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-sm-3 top8 ">
-          <img src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Plus-.png&quot;}}"
-            alt="M2-Engagement---Step123---Plus-.png" class="img-responsive">
-
-        </div>
-        <div class="col-sm-6  box">
-          <div>
-
-            <a href="{{store url='engagement-rings/setting'}}"><img
-                src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
-                alt="M2-Engagement---Step123---Diamond-.png" class="img-responsive">
-
-
-
-              <h5>Choose Diamond</h5>
-
-              <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-sm-3 top8 ">
-          <img src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Equal-.png&quot;}}"
-            alt="M2-Engagement---Step123---Equal-.png" class="img-responsive">
-
-        </div>
-        <div class="col-sm-6 box ">
-          <div>
-
-            <img src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
-              alt="M2-Engagement---Step123---Engagementring.png" class="img-responsive">
-
-
-
-            <h5>Complete Your Ring</h5>
-
-            <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-  <section class="create-your-own-engagement py-5 visible-xs">
-
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-24 text-center">
-          <div>
-            <h1>Create your own Engagement Ring</h1>
-
-
-            <div id="create-your-own-engagement" class="owl-carousel owl-theme img-slider  " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":false,"autoWidth":false,"responsive":{
-        "0": {
-            "items":1
-        },
-       "375": {
-            "items":1
-        },
-        "768":{
-            "items":3
-        },
-        "1200":{
-          "items":3
-      }
-    }}}}}'>
-              <div class="item">
-                <article class="text-center">
-                  <a href="{{store url='engagement-rings/setting'}}">
-                    <figure><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Setting.png"></figure>
-                    <h5>1.Choose Setting</h5>
-
-                    <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
-                  </a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <a href="{{store url='engagement-rings/setting'}}">
-                    <figure><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Diamond-.png"></figure>
-                    <h5>2.Choose Diamond</h5>
-
-                    <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
-                  </a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="#"><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Engagementring.png"></a></figure>
-                  <h5>3.Complete Your Ring</h5>
-
-                  <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
-                </article>
-              </div>
-
-
-            </div>
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <section class="custom-made py-5">
-
-    <div class="container">
-      <div class="row ">
-        <div class="col-sm-12 box diamond-image visible-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
-            alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
-
-        </div>
-
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Custom Made <br />Propsoal Rings</h1>
-
-            <p class="my-4">Need some ring-spiration?
-              Get inspired by some of our custom made rings to help you get started on planning for your ideal
-              engagement
-              ring.</p>
-            <a href="{{store url='customisation'}}" class="btn btn-blue large-btn " role="button">Explore Custom
-              Made</a>
-          </div>
-        </div>
-        <div class="col-sm-12 box diamond-image hidden-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
-            alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
-
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <section class="ready-to-ship ">
-
-    <div class="container">
-      <div class="row ready-to-ship-bg">
-        <div class="visible-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg&quot;}}"
-            alt="MT2-Wedding-Landing-p4-BOX.jpg" class="img-responsive w-100">
-        </div>
-
-        <div class="col-sm-12  diamond-image-bg hidden-xs">
-
-        </div>
-
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Ready to Ship</h1>
-            <p class="my-4">Ready to ship brings you propsoal ring you can get when you are in a rush.</p>
-            <!-- <a href="#" class="btn btn-blue large-btn " role="button">Ready to Ship</a> -->
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
 
   <section class="perfect-fit mt-5">
 
@@ -1188,8 +1166,7 @@
           <div>
             <h1>Get the Perfect Fit</h1>
             <p class="my-4">Find her ring size with our complimentary ring sizer!</p>
-            <a href="{{store url='request-ring-sizer'}}" class="btn btn-blue large-btn " role="button">Free Ring
-              Sizer</a>
+            <a href="#" class="btn btn-blue large-btn " role="button">Free Ring Sizer</a>
           </div>
         </div>
 
