@@ -1,554 +1,1447 @@
-<style>
-    .mtpage-wedding .mt-4x {
-        margin-top: 40px !important;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .mtpage-wedding .top-wedding-band .owl-wrapper {
-        height: 350px;
-        margin-bottom: 76px;
-    }
-
-    .mtpage-wedding .top-wedding-band .owl-theme .owl-controls .owl-buttons div {
-        font-size: 50px;
-        background-color: transparent;
-        color: #d8d8d8;
-    }
-
-    .mtpage-wedding .google-reviews,
-    .mtpage-wedding .customize-your-ring {
-        margin-top: 40px;
-    }
-
-    .mtpage-wedding .why-choose-us h1,
-    .mtpage-wedding .top-wedding-band h1 {
-        margin-top: 55px;
-        margin-bottom: 40px;
-        font-size: 50px;
-    }
-
-    .mtpage-wedding .top-wedding-band h1 {
-        margin-bottom: 0;
-    }
-
-    .mtpage-wedding .find-ring-size,
-    .mtpage-wedding .choose-engagement-ring,
-    .mtpage-wedding .diamond-investment {
-        margin-top: 40px;
-    }
-
-    .mtpage-wedding .diamond-investment {
-        margin-bottom: 75px;
-    }
-
-    .mtpage-wedding .choose-engagement-ring img,
-    .mtpage-wedding .diamond-investment img {
-        margin: 0 auto;
-    }
-
-    .mtpage-wedding .google-reviews .col-md-12:nth-child(2) {
-        background-color: #e4e9f6;
-        min-height: 600px;
-        text-align: center;
-        color: #75859a;
-        padding-top: 140px;
-    }
-
-    .mtpage-wedding .google-reviews .col-md-12:nth-child(2) h4 {
-        font-size: 100px;
-    }
-
-    .mtpage-wedding .google-reviews .col-md-12:nth-child(2) h3 {
-        margin: 0;
-        font-size: 25px;
-    }
-
-    .mtpage-wedding .google-reviews a {
-        font-size: 20px;
-        color: #e47b65;
-        margin-top: 40px;
-        display: block;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 {
-        text-align: center;
-        padding: 0;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block h6 {
-        font-size: 16px;
-        padding: 15px 0;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block {
-        padding: 40px 29px;
-        min-height: 380px;
-        font-size: 16px;
-        color: #75859a;
-        font-weight: 300;
-        margin-right: 15px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(1) .wp-block {
-        background-color: #dde5e9;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(2) .wp-block {
-        background-color: #fabd9f;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block .txt {
-        letter-spacing: 1px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(3) .wp-block {
-        background-color: #ceded8;
-        margin-right: 0px;
-    }
-
-    .mtpage-wedding .top-wedding-band .owl-wrapper {
-        height: 400px;
-        margin-bottom: 54px;
-    }
-
-    .mtpage-wedding .top-wedding-band .top-item {
-        padding: 15px;
-    }
-
-    .mtpage-wedding .top-wedding-band .owl-theme .owl-controls {
-        margin-top: 25px;
-    }
-
-    .mtpage-wedding .for-him,
-    .mtpage-wedding .for-her {
-        background-color: #f0e2db;
-        text-align: center;
-        padding: 82px 0;
-    }
-
-    .mtpage-wedding .for-him h2,
-    .mtpage-wedding .for-her h2 {
-        font-size: 60px;
-        margin-bottom: 36px;
-        color: #d29389;
-        margin-top: 0;
-        padding-top: 0;
-        font-weight: 600;
-        letter-spacing: 5px;
-    }
-
-    .mtpage-wedding .for-him a,
-    .mtpage-wedding .for-her a {
-        background-color: #fabd9f;
-        padding: 6px 30px;
-        color: #fff;
-        font-size: 22px;
-        letter-spacing: 2px;
-        display: inline-block;
-        border-radius: 5pt;
-    }
-
-    .mtpage-wedding .for-him-rings .col-md-4,
-    .mtpage-wedding .for-her-rings .col-md-4 {
-        text-align: center;
-        padding: 0;
-    }
-
-    .mtpage-wedding .for-him-rings .col-md-4 .wp-block,
-    .mtpage-wedding .for-her-rings .col-md-4 .wp-block {
-        margin-left: 5px;
-        margin-right: 5px;
-        background-color: #f9fafc;
-    }
-
-    .mtpage-wedding .for-him-rings .box-img,
-    .mtpage-wedding .for-her-rings .box-img {
-        padding: 15px 0;
-    }
-
-    .mtpage-wedding .for-him-rings .box-img img,
-    .mtpage-wedding .for-her-rings .box-img img {
-        margin: 0 auto;
-    }
-
-    .mtpage-wedding .for-him-rings .box-detail .btn,
-    .mtpage-wedding .for-her-rings .box-detail .btn {
-        border-radius: 0;
-        background-color: #f0e2db;
-        font-size: 16px;
-        display: inline-block;
-        width: 100%;
-        padding: 15px;
-        letter-spacing: 3px;
-    }
-
-    .mtpage-wedding .for-him {
-        background-color: #e1ebec;
-    }
-
-    .mtpage-wedding .for-him h2 {
-        color: #7f8d8d;
-    }
-
-    .mtpage-wedding .for-him a {
-        background-color: #9ab8ad;
-    }
-
-    .mtpage-wedding .for-him-rings .box-detail .btn {
-        background-color: #e1ebec;
-    }
-
-    .mtpage-wedding .top-wedding-band .best-price {
-        color: #6c88a2;
-        font-size: 17px;
-    }
-
-    .mtpage-wedding .top-wedding-band .best-title {
-        line-height: 1.7em;
-        min-height: 80px;
-        font-size: 16px;
-    }
-
-    .mtpage-wedding .top-wedding-band .best-tax-info {
-        font-style: italic;
-        font-size: 12px;
-    }
-
-    .mtpage-wedding .top-wedding-band .best-item {
-        text-align: center;
-        padding: 15px 55px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 {
-        text-align: center;
-        padding: 0;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block h6 {
-        font-size: 16px;
-        padding: 15px 0;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block {
-        padding: 40px 29px;
-        min-height: 380px;
-        font-size: 16px;
-        color: #75859a;
-        font-weight: 300;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(1) .wp-block {
-        background-color: #dde5e9;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(2) .wp-block {
-        background-color: #fabd9f;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8 .wp-block .txt {
-        letter-spacing: 1px;
-    }
-
-    .mtpage-wedding .why-choose-us .col-md-8:nth-child(3) .wp-block {
-        background-color: #ceded8;
-    }
-
-    .mtpage-wedding .top-wedding-band .owl-wrapper {
-        height: 400px;
-        margin-bottom: 54px;
-    }
-
-    .mtpage-wedding .top-wedding-band .top-item {
-        padding: 15px;
-    }
-
-    .mtpage-wedding .top-wedding-band .owl-theme .owl-controls {
-        margin-top: 25px;
-    }
-
-    @media (max-width: 768px) {
-        .mtpage-wedding .why-choose-us .col-md-8 {
-            margin: 0px;
+<head>
+    <style>
+        .page-main {
+            padding: 0px;
         }
-    }
 
-    @media (max-width: 375px) {
-        .mtpage-wedding .why-choose-us .col-md-8 .wp-block {
-            margin-right: 0px;
+        .page-footer h5 {
+            font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+            margin: 0 0 5px;
         }
-    }
-</style>
-<section class="mtpage-wedding">
-    <div class="container p-0">
-        <div class="banner"><img src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-banner.jpg"
-                class="img-responsive"></div>
-        <div class="for-her mt-4x">
-            <h2>For Her</h2>
-            <div><a href="{{store url=""}}wedding-bands/women">View All Women Wedding Bands</a></div>
-        </div>
-        <div class="for-her-rings">
-            <div class="row m-0">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/women/classic"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-classic-her.png"
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/women/classic"
-                                class="btn">Classic</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/women/dainty"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-dainty.png" alt=""
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/women/dainty"
-                                class="btn">Dainty</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/women/diamond"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-diamond-her.png" alt=""
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/women/diamond"
-                                class="btn">Diamond</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/women/eternity"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-eternity.png" alt=""
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/women/eternity"
-                                class="btn">Eternity</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/women/alternative"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-alternative-metal-her.jpg"
-                                    alt="" class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/women/alternative"
-                                class="btn">Alternative</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="for-him mt-4x">
-            <h2>For Him</h2>
-            <div><a href="{{store url=""}}wedding-bands/men">View All Men Wedding Bands</a></div>
-        </div>
-        <div class="for-him-rings">
-            <div class="row m-0">
-                <div class="col-md-4 col-sm-4 col-md-offset-1"></div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/men/classic"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-classic-him.png" alt=""
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/men/classic"
-                                class="btn">Classic</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/men/diamond"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-diamond-him.png" alt=""
-                                    class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/men/diamond"
-                                class="btn">Diamond</a></div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="wp-block">
-                        <div class="box-img"><a href="{{store url=""}}wedding-bands/men/alternative"><img
-                                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/wedding-alternative-metal-him.png"
-                                    alt="" class="img-responsive"></a></div>
-                        <div class="box-detail"><a href="{{store url=""}}wedding-bands/men/alternative"
-                                class="btn">Alternative</a></div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4"></div>
-            </div>
-        </div>
-        <div class="customize-your-ring"><a href="{{store url=""}}customisation"><img
-                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/customize-your-ring.jpg" alt=""
-                    class="img-responsive"></a></div>
-        <div class="top-wedding-band">
-            <h1 class="text-center txt-w200 txt-b mt-title">Top 10 Wedding Bands</h1>
-            <div id="wedding-bands-slider">
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}wr0106a-18kw"
-                            title="Beveled Edge Satin Finished Wedding Ring in 18K White Gold"> <img
-                                src="{{store url=""}}/pub/media/catalog/product/cache/451cc34aa0c2fd8d78ba81cb10feab48/w/r/wr0106a-18kw_3.jpg"
-                                class="img-responsive"
-                                alt="Beveled Edge Satin Finished Wedding Ring in 18K White Gold"></a></div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}wr0106a-18kw"
-                                title="Beveled Edge Satin Finished Wedding Ring in 18K White Gold">Beveled Edge Satin
-                                Finished Wedding Ring in 18K White Gold</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}wr0001-4mm-18kw"
-                            title="Comfort Fit Wedding Ring in 18k White Gold (4mm)"> <img
-                                src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/w/r/wr0001-4mm-18kw.jpg"
-                                class="img-responsive" alt="Comfort Fit Wedding Ring in 18k White Gold (4mm)"></a></div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}wr0001-4mm-18kw"
-                                title="Comfort Fit Wedding Ring in 18k White Gold (4mm)">Comfort Fit Wedding Ring in 18k
-                                White Gold (4mm)</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}wr0172a-18kwr"
-                            title="Satin Finished Dual Tone Criss Cross Ring in 18K White &amp; Rose Gold"> <img
-                                src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/w/r/wr0172a-18kwr_1.jpg"
-                                class="img-responsive"
-                                alt="Satin Finished Dual Tone Criss Cross Ring in 18K White &amp; Rose Gold"></a></div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}wr0172a-18kwr"
-                                title="Satin Finished Dual Tone Criss Cross Ring in 18K White &amp; Rose Gold">Satin
-                                Finished Dual Tone Criss Cross Ring in 18K White &amp; Rose Gold</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}wr0194a-18kw"
-                            title="Classic Concave Satin Finish Ring in 18K White Gold"> <img
-                                src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/w/r/wr0194a-18kw_4.jpg"
-                                class="img-responsive" alt="Classic Concave Satin Finish Ring in 18K White Gold"></a>
-                    </div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}wr0194a-18kw"
-                                title="Classic Concave Satin Finish Ring in 18K White Gold">Classic Concave Satin Finish
-                                Ring in 18K White Gold</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}nr0004-he050-18kw"
-                            title="V Prong Half Eternity Diamond Ring in 18k White Gold (0.50 ct. tw.)"> <img
-                                src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/n/r/nr0004-he050-18kw_1.jpg"
-                                class="img-responsive"
-                                alt="V Prong Half Eternity Diamond Ring in 18k White Gold (0.50 ct. tw.)"></a></div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}nr0004-he050-18kw"
-                                title="V Prong Half Eternity Diamond Ring in 18k White Gold (0.50 ct. tw.)">V Prong Half
-                                Eternity Diamond Ring in 18k White Gold (0.50 ct. tw.)</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}wr0018b-18kw"
-                            title="Glossy Crossovered Diamond Ring with Channel Setting in 18k White Gold (0.15 ct. tw.)">
-                            <img src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/w/r/wr0018b-18kw_3.jpg"
-                                class="img-responsive"
-                                alt="Glossy Crossovered Diamond Ring with Channel Setting in 18k White Gold (0.15 ct. tw.)"></a>
-                    </div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}wr0018b-18kw"
-                                title="Glossy Crossovered Diamond Ring with Channel Setting in 18k White Gold (0.15 ct. tw.)">Glossy
-                                Crossovered Diamond Ring with Channel Setting in 18k White Gold (0.15 ct. tw.)</a></h6>
-                    </div>
-                </div>
-                <div class="top-item">
-                    <div class="box-pict"><a href="{{store url=""}}dr5082-18kw"
-                            title="Triple-Layer Diamond Wedding Band in 18K White Gold (0.71 ct. tw.)"> <img
-                                src="{{store url=""}}pub/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/c/o/copy_of_dr5082-18kw.jpeg"
-                                class="img-responsive"
-                                alt="Triple-Layer Diamond Wedding Band in 18K White Gold (0.71 ct. tw.)"></a></div>
-                    <div class="box-detail text-center">
-                        <h6 class="best-title"><a href="{{store url=""}}dr5082-18kw"
-                                title="Triple-Layer Diamond Wedding Band in 18K White Gold (0.71 ct. tw.)">Triple-Layer
-                                Diamond Wedding Band in 18K White Gold (0.71 ct. tw.)</a></h6>
-                    </div>
-                </div>
-            </div>
-            <script type="text/x-magento-init">
-                    {
-                        "#wedding-bands-slider": {
-                            "themewidgets": {"jewel.imgslider": {"sliderConfig":{"items":5, "nav": true}}}
-                        }
-                    }
-                </script>
-        </div>
-        <div class="google-reviews">
-            <div class="row m-0">
-                <div class="col-sm-12 col-md-12"><img class="pict"
-                        src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-reviews-pict.jpg"></div>
-                <div class="col-sm-12 col-md-12"><img
-                        src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-goodsign.png" alt="">
-                    <h4>99%</h4>
-                    <h3>of our Google reviews <br>are 4-star or higher</h3>
-                    <div><a href="https://www.google.com/search?q=michaeltrio&amp;oq=michaeltrio&amp;aqs=chrome..69i57j46i175i199j46i10i175i199j0i10j46i10i175i199j0i10l5.1532j0j15&amp;sourceid=chrome&amp;ie=UTF-8&amp;tbs=lf:1,lf_ui:4&amp;tbm=lcl&amp;rflfq=1&amp;num=10&amp;rldimm=11525655843321090395&amp;lqi=CgttaWNoYWVsdHJpbyIDiAEBSLO9sseAmICACFoeCgttaWNoYWVsdHJpbxAAGAAiC21pY2hhZWx0cmlvkgENamV3ZWxyeV9zdG9yZQ&amp;ved=2ahUKEwjhk8-93_fvAhWGA3IKHb6aDHwQvS4wB3oECA4QHA&amp;rlst=f#"
-                            id="read-reviews" class="overall-review-box" target="_blank" rel="noopener">READ
-                            REVIEWS&nbsp;&nbsp;&gt;</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="why-choose-us">
-            <h1 class="text-center txt-w200 txt-b mt-title">Why Choose Us</h1>
-            <div class="row flex-grid">
-                <div class="col-xs-24 col-sm-8 col-md-8">
-                    <div class="wp-block">
-                        <div><img src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-choose1.png"
-                                alt="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-choose1.png"></div>
-                        <h6>EXPECT LOWER MARKUPS</h6>
-                        <div>We don't hold diamond inventory and we don't have many stores that are expensive to
-                            operate, we pass on the savings to you.</div>
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-8 col-md-8">
-                    <div class="wp-block">
-                        <div><img src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-choose3.png"
-                                alt="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-choose3.png"></div>
-                        <h6>QUALITY ASSURANCE</h6>
-                        <div>The dimensions of each diamond from Michael Trio would be analyzed and delivered by our
-                            master diamond gemologists before cutting to ensure no errors exist</div>
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-8 col-md-8">
-                    <div class="wp-block">
-                        <div><img src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-choose2.png" alt=""></div>
-                        <h6>KNOW WHAT YOU'RE BUYING</h6>
-                        <div>From online guidelines to a real live person to talk with. We will share everything you
-                            want to know about your diamond.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="find-ring-size"><a href="{{store url=""}}blog/findhersize/"><img
-                    src="//d213t4exkgxsjh.cloudfront.net/assets/images/engage-find-ring-size.jpg" alt=""
-                    class="img-responsive"></a></div>
-    </div>
-    <div class="container p-0">
-        <div class="row wedding-band-blog1 mt-5">
-            <div class="col-md-2"></div>
-            <div class="col-md-20 wedding-blog-w"><a
-                    href="{{store url=""}}blog/wedding-bands-how-do-i-turn-them-into-a-statement-piece">
-                    <div class="row m-0">
-                        <div class="col-xs-24 col-sm-12 col-md-12 p-0 text-left wedding-blog-img"></div>
-                        <div class="col-xs-24 col-sm-12 col-md-12 p-0 wedding-blog-title">
-                            <h2>How Do I Turn Them into A Statement Piece?</h2>
+
+        .nowrap {
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Global CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        body {
+            color: var(--black);
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            padding: 0 50px;
+        }
+
+
+
+        h1,
+        h3 {
+            font-family: Times New Roman;
+            font-style: normal;
+            font-weight: normal;
+            color: var(--black);
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-size: 32px;
+            line-height: 37px;
+
+        }
+
+        h5 {
+            font-family: Montserrat;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+
+        }
+
+        h6 {
+            font-size: 17px;
+        }
+
+        .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            height: 40px;
+            display: block;
+            margin: auto;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Global CSSDiamond Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .diamond-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/MT2-Diamond-Banner-Desktop-1920-768.jpg);
+            background-size: cover;
+            background-position-x: right;
+            background-position-y: center;
+        }
+
+        .diamond-banner-bg {
+            background-color: transparent;
+        }
+
+        .wedding-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Banner-1920.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: bottom;
+            margin-bottom: -30px;
+
+        }
+
+        .wedding-banner img {
+            margin-bottom: -30px;
+        }
+
+        .wedding-banner-bg {
+            background-color: transparent;
+            height: 400px;
+        }
+
+        .custom-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1920.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+        }
+
+        .custom-banner-bg {
+            background-color: transparent;
+            height: 400px;
+        }
+
+        .things-to-note {
+            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM4-banner-1200.jpg);
+            background-size: cover;
+            background-position-x: right;
+            background-position-y: bottom;
+            padding-top: 3rem;
+            /* padding-bottom: 3rem; */
+        }
+
+        .things-to-note-bg {
+            background-color: transparent;
+            height: 300px;
+        }
+
+        .pure-heart {
+            background-color: var(--lightblue);
+        }
+
+        .design-your-own-bg {
+            background-color: var(--lightorange);
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .education {
+            background-color: var(--lightorange);
+        }
+
+        .ready-to-ship-bg {
+            background-color: var(--lightblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+
+        .engagement-banner {
+            background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
+        }
+
+        .create-your-own-engagement {
+            background-color: var(--lightorange);
+        }
+
+        .create-your-own-engagement a {
+            color: var(--black);
+        }
+
+        .create-your-own-engagement a:hover {
+            color: var(--black);
+        }
+
+        .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .create-your-own-engagement .owl-item.center article>a {
+            text-transform: inherit;
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+        .earrings-banner {
+            background-color: var(--lighterblue);
+        }
+
+        .earrings-banner p,
+        .earrings-banner h1,
+        .earrings-banner h3 {
+            color: black;
+        }
+
+        .pandent-banner {
+            background-color: var(--lighterblue);
+        }
+
+        .pandent-banner {
+            color: black;
+        }
+
+
+        .create-your-own-engagement .row {
+            justify-content: space-between;
+        }
+
+        .create-your-own-engagement .col-sm-6 {
+            width: 30%;
+        }
+
+        .engagement-banner-diamond img {
+            width: 80%;
+            margin-bottom: -175px;
+        }
+
+        .create-your-own-engagement p {
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .row {
+            display: flex;
+        }
+
+
+        .diamond-banner .diamond-image-bg {
+            height: 400px;
+            background-size: cover;
+            background-position-x: right;
+            background-position-y: center;
+        }
+
+        .design-your-own .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/P2-Diamond-lifestyle.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-pendant .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .ready-to-ship .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing_-p5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+
+
+
+        .pure-heart sup {
+            font-size: 40%;
+            top: -1em;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+
+
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ sliderConfig @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+        #diamonds-slider.owl-carousel .owl-item,
+        #diamonds-slider-color-mobile.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        #choose-setting.owl-carousel .owl-item {
+            height: 350px;
+        }
+
+        #choose-setting.owl-carousel .owl-item img {
+            width: 200px;
+        }
+
+        #choose-setting.owl-carousel .owl-item.center img {
+            width: 320px;
+        }
+
+        .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .owl-carousel .owl-nav .owl-prev,
+        .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        #diamonds-slider-color-desktop .owl-item article>a {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #diamonds-slider-color-desktop.owl-carousel .owl-item {
+            height: 200px;
+        }
+
+        #diamonds-slider-color-desktop.owl-carousel .owl-stage {
+            margin: auto;
+        }
+
+        #diamonds-slider-color-desktop.owl-carousel .owl-item img {
+            margin: 0px 20px;
+        }
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .ct025 {
+            width: 10px;
+            margin: auto;
+        }
+
+        .ct030 {
+            width: 11px;
+            margin: auto;
+        }
+
+        .ct033 {
+            width: 12px;
+            margin: auto;
+        }
+
+        .ct050 {
+            width: 14px;
+            margin: auto;
+
+        }
+
+        .ct060 {
+            width: 14.3px;
+            margin: auto;
+
+        }
+
+        .ct070 {
+            width: 15px;
+            margin: auto;
+
+        }
+
+        .ct075 {
+            width: 15.5px;
+            margin: auto;
+
+        }
+
+        .ct080 {
+            width: 15.7px;
+            margin: auto;
+
+        }
+
+        .ct090 {
+            width: 16px;
+            margin: auto;
+
+        }
+
+        .ct100 {
+            margin: auto;
+            width: 18px;
+        }
+
+        .ct125 {
+            margin: auto;
+            width: 22px;
+        }
+
+        .ct150 {
+            margin: auto;
+            width: 25px;
+        }
+
+        .ct200 {
+            margin: auto;
+            width: 30px;
+        }
+
+        .diamond-thumbnail {
+            padding-top: 0px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 300;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border 1s;
+        }
+
+        .diamond-thumbnail .diamond-size {
+            font-size: 11px;
+        }
+
+        .diamond-thumbnail.bg-white:hover {
+            border: 2px solid var(--companyblue);
+        }
+
+        .active .diamond-thumbnail.bg-white {
+            border: 2px solid var(--companyblue);
+        }
+
+        .diamond-thumbnail-img {
+            height: 70px;
+            padding: 10px 0px;
+            display: flex;
+        }
+
+        .diamond-price {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .diamond-quality {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .spinning-diamond {
+            width: 420px;
+            height: 420px;
+            border-radius: 20px;
+        }
+
+        .selling.No {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .selling.No .diamond-thumbnail.bg-white:hover {
+            border: 2px solid transparent;
+        }
+
+        .fa-green {
+            color: #5EE9AD;
+        }
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Wedding Bands @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .for-her-bg {
+            background-color: var(--lightorange);
+        }
+
+        .for-her .colsm-4 {
+            padding: 0;
+        }
+
+        #for-her-slider.owl-carousel .owl-item img,
+        #for-him-slider.owl-carousel .owl-item img {
+            width: 160px;
+        }
+
+        #for-her-slider a img:hover,
+        #for-him-slider a img:hover,
+        #top-selling-slider a img:hover {
+            filter: contrast(130%);
+        }
+
+        .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #top-selling-slider.owl-carousel .owl-item img {
+            width: 100%;
+        }
+
+        #for-him-slider .for-title {
+            margin-top: 20px;
+        }
+
+        #top-selling-slider .for-title {
+            text-transform: unset;
+            padding: 10px 5px;
+
+        }
+
+        #for-him-slider {
+            padding: 0 80px;
+        }
+
+        .for-him-bg {
+            background-color: var(--lightblue);
+        }
+
+        .for-him .colsm-4 {
+            padding: 0;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Custom Made @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .recent-custom img {
+            transition: all 2s;
+        }
+
+        .recent-custom img:hover {
+            transform: scale(1.5);
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .process-icon {
+            width: 100px;
+        }
+
+        .things-steps {
+
+            text-align: center;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        @media (max-width: 1199.98px) {
+
+
+
+            .custom-banner {
+                background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1200.jpg);
+            }
+
+            .wedding-banner {
+                background-image: url(https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Bannder_-_1200.jpg);
+            }
+
+            h1 {
+                font-size: 30px;
+                line-height: 34px;
+            }
+
+            h3 {
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h5 {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .btn {
+                height: 35px;
+            }
+
+            .engagement-banner-diamond img {
+                width: 100%;
+
+            }
+
+            #choose-setting.owl-carousel .owl-item img {
+                width: 150px;
+            }
+
+            #choose-setting.owl-carousel .owl-item.center img {
+                width: 235px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        @media (max-width: 767.98px) {
+
+            .wedding-banner-bg {
+                height: auto;
+
+            }
+
+            .process-icon {
+                width: 60px;
+            }
+
+            .process .process-icon {
+                padding: 0 10px;
+            }
+
+            .things-steps {
+                display: flex;
+                text-align: left;
+            }
+
+            .process-steps h3,
+            .process-steps h5,
+            .process-steps h6 {
+                display: inline-block;
+            }
+
+            .custom-banner-bg {
+                background-color: var(--lightblue);
+                height: auto;
+            }
+
+            #top-selling-slider .for-title {
+                max-width: 400px;
+                margin: auto;
+            }
+
+            .wedding-banner,
+            .things-to-note {
+                background-image: none;
+            }
+
+            .custom-banner {
+                background-image: none;
+                padding-bottom: 0;
+            }
+
+            p {
+                padding: 0;
+            }
+
+            .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .diamond-banner {
+                background-image: none;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .engagement-banner-diamond img {
+                width: 55%;
+                margin-bottom: -50px;
+                padding-top: 50px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+            .diamond-banner-bg {
+                background-color: var(--lighterblue);
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            #for-her-slider {
+                margin-bottom: 40px;
+            }
+
+            #for-her-slider.owl-carousel .owl-item img {
+                width: 80%;
+                margin: auto;
+            }
+
+            #for-him-slider.owl-carousel .owl-item img,
+            #top-selling-slider.owl-carousel .owl-item img {
+                width: 70%;
+                margin: auto;
+            }
+
+
+            #create-your-own-engagement.owl-carousel .owl-item img {
+                transition: unset;
+            }
+
+            #choose-setting.owl-carousel .owl-item {
+                height: 270px;
+            }
+
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            #for-him-slider {
+                padding: 0;
+                margin: 40px auto;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        @media (max-width: 480px) {
+
+
+
+            h1 {
+                font-size: 25px;
+                line-height: 29px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 23px;
+            }
+
+            h5 {
+                font-size: 17px;
+                line-height: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .btn {
+                font-size: 14px;
+                line-height: 15px;
+                height: 30px;
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            .engagement-banner-diamond img {
+                width: 70%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            #create-your-own-engagement.owl-carousel .owl-item {
+                margin: 0;
+            }
+
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            #choose-setting.owl-carousel .owl-item {
+                height: auto;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+            .home-engagement {
+                top: 65 px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Home @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .home-engagement {
+            position: relative;
+        }
+
+        .home-engagement::before {
+            content: "engagement ring";
+            position: absolute;
+            top: -114px;
+            width: 100%;
+            text-align: center;
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--cream);
+            opacity: 0.7;
+        }
+
+        .home-jewel {
+            position: relative;
+        }
+
+        .home-jewel::before {
+            content: "jewellery";
+            position: absolute;
+            top: -114px;
+            width: 100%;
+            text-align: center;
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--lightorange);
+            opacity: 0.7;
+        }
+
+        .home-wedding-box {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .home-wedding-box img {
+            transition: transform 2s;
+        }
+
+        .home-jewel-box {
+            width: 150px;
+            overflow: hidden;
+        }
+
+        .home-jewel-box img {
+            transition: transform 2s;
+        }
+
+        .home-jewel-box img:hover {
+            transform: scale(1.5);
+        }
+
+        .home-engagement a:hover {
+            color: var(--black);
+        }
+
+        .home-wedding-box img:hover {
+            transform: scale(1.5);
+        }
+
+        .home-diamond-banner {
+            background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        .home-diamond-banner-bg {
+            height: 400px;
+        }
+
+        #best-seller-home .for-title {
+            display: none;
+        }
+
+        #best-seller-home.owl-carousel .owl-item.center .for-title {
+            display: block;
+            width: 280px;
+        }
+
+        #best-seller-home.owl-carousel .owl-item {
+            height: 270px;
+
+        }
+
+        #best-seller-home.owl-carousel .owl-item img {
+            width: 180px;
+        }
+
+        #best-seller-home.owl-carousel .owl-item.center img {
+            width: 280px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .mx-xs-3 {
+            margin: auto 15px;
+        }
+
+        .home-jewel,
+        .home-engagement {
+            margin-top: 150px;
+        }
+
+
+
+        @media (max-width: 1199.98px) {
+
+            .home-engagement::before,
+            .home-jewel::before {
+                font-size: 4rem;
+                top: -62px;
+            }
+
+        }
+
+        @media (max-width: 767.98px) {
+            .home-diamond-banner {
+                background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg-sm.jpg);
+                background-size: cover;
+            }
+
+            .home-engagement::before,
+            .home-jewel::before {
+                font-size: 3rem;
+                top: -47px;
+            }
+
+            .home-wedding-box {
+                width: auto;
+            }
+
+            .home-jewel .visible-xs {
+                display: flex !important;
+            }
+
+            .home-jewel,
+            .home-engagement {
+                margin-top: 95px;
+            }
+
+
+        }
+
+        @media (max-width: 480px) {
+            #best-seller-home.owl-carousel .owl-item img {
+                width: 150px;
+            }
+
+            #best-seller-home.owl-carousel .owl-item.center img {
+                width: 250px;
+            }
+
+            .home-jewel,
+            .home-engagement {
+                margin-top: 65px;
+            }
+
+        }
+    </style>
+
+
+    <script>
+        require(['jquery', 'owlslider'], function ($) {
+
+            $(document).ready(function () {
+
+                var owl = $('.owl-carousel');
+                owl.on(
+                    'translated.owl.carousel ',
+                    function (e) {
+                        console.log("done");
+                        getSliderDesc();
+
+                    });
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <section class="diamond-by-shape py-5">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-24 text-center">
+                    <div>
+                        <h1>Explore Diamonds By Shape</h1>
+                        <div id="diamonds-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                  "0": {
+                      "items":1
+                  },
+                 "375": {
+                      "items":3
+                  },
+                  "768":{
+                      "items":5
+                  },
+                  "1200":{
+                    "items":7
+                }
+              }}}}}'>
+                            <div class="item ">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/round"><img
+                                                src="{{media url=&quot;landing/images/diamond1.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/round"
+                                        class="diamond-name">ROUND</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/princess"><img
+                                                src="{{media url=&quot;landing/images/diamond2.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/princess"
+                                        class="diamond-name">PRINCESS</a>
+                                </article>
+
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/emerald"><img
+                                                src="{{media url=&quot;landing/images/diamond3.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/emerald"
+                                        class="diamond-name">EMERALD</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/heart"><img
+                                                src="{{media url=&quot;landing/images/diamond4.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/heart"
+                                        class="diamond-name">HEART</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/pear"><img
+                                                src="{{media url=&quot;landing/images/diamond5.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/pear"
+                                        class="diamond-name">PEAR</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/asscher"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-asscher.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/asscher"
+                                        class="diamond-name">ASSCHER</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/cushion"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-cushion.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/cushion"
+                                        class="diamond-name">CUSHION</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/radiant"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-radient.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/radiant"
+                                        class="diamond-name">RADIANT</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/oval"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-oval.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/oval"
+                                        class="diamond-name">OVAL</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/marquise"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-marquise.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/marquise"
+                                        class="diamond-name">MARQUISE</a>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                </a></div>
-            <div class="col-md-2"></div>
-        </div>
-        <div class="row wedding-band-blog2 mt-5">
-            <div class="col-md-2"></div>
-            <div class="col-md-20 wedding-blog-w"><a
-                    href="{{store url=""}}blog/what-metal-should-we-get-for-our-wedding-band">
-                    <div class="row m-0">
-                        <div class="col-xs-24 col-sm-12 col-md-12 p-0 text-left wedding-blog-img"></div>
-                        <div class="col-xs-24 col-sm-12 col-md-12 p-0 wedding-blog-title">
-                            <h2>What Metal Should We Get for Our Wedding Band?</h2>
+
+                        <div class="diamond-desc">
+                            <h5 id="diamond-desc-title">ROUND BRILLIANT CUT</h5>
+                            <p id="diamond-desc-text"> The round brilliant cut diamond is the most popular shape of
+                                diamond. For hundreds of years, diamond cutters have been working with this cut to
+                                maximize its brilliance and fire. While this cut offers great flexibility within the
+                                four C’s, you will want to select higher quality grades to bring out the most brilliance
+                                within a round diamond.</p>
                         </div>
+
+
                     </div>
-                </a></div>
-            <div class="col-md-2"></div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
+    <script>
+        var diamondDesc = {
+            round: {
+                title: "ROUND BRILLIANT CUT",
+                text: "The round brilliant cut diamond is the most popular shape of diamond. For hundreds of years, diamond cutters have been working with this cut to maximize its brilliance and fire. While this cut offers great flexibility within the four C’s, you will want to select higher quality grades to bring out the most brilliance within a round diamond."
+            },
+            princess: {
+
+                title: "PRINCESS CUT",
+                text: "Princess cut diamonds are exceptionally brilliant because of the way they are cut and are available in both square and rectangular shapes. The color that is emitted from princess cut diamonds is very unique. While the color of other diamond is displayed mainly in the center, the princess cut diamonds show distinct color in each of the corners as well."
+            },
+            emerald: {
+
+                title: "EMERALD CUT",
+                text: "Emerald cut diamonds have a unique optical appearance because of the rectangular facets step-cut into the diamond’s pavilion. This cut showcases the diamond’s original clarity beautifully because of its large rectangular table which will also make inclusions and color more apparent."
+            },
+            heart: {
+
+                title: "HEART",
+                text: "Heart"
+            },
+            pear: {
+
+                title: "PEAR SHAPED",
+                text: "Combining round and marquise cuts, the teardrop style of pear shaped diamonds is exceptional. The slender pear shape will give fingers and hands a slimmer appearance while creating a soft and delicate look. Pear shaped diamonds are cut to produce maximum brilliance, so it’s important to look for excellent symmetry."
+            },
+            asscher: {
+
+                title: "ASSCHER CUT",
+                text: "Asscher cut diamonds are often mistaken for an emerald cut because of its similar cut style; however an asscher is square rather than rectangular. Created in the early 1920s, the asscher cut has recently resurged in popularity, especially amongst celebrities."
+            },
+            cushion: {
+
+                title: "CUSHION CUT",
+                text: "Sometimes called a pillow-cut diamond, the cushion cut is a timeless cut that has earned its name for its pillow shape. Cushion cut diamonds tend to have impeccable brilliance and clarity in their appearance which can be attributed to their rounded corners and larger facets. These diamonds are available in square and rectangular shapes."
+            },
+            radiant: {
+
+                title: "RADIANT CUT",
+                text: "Perfect for those looking for a unique style, radiant cut diamonds feature uniquely trimmed corners which combines the lines of an emerald cut with the brilliance of a round diamond. The sparkle of this diamond cut looks beautiful when combined with a variety of other diamond cuts."
+            },
+            oval: {
+
+                title: "OVAL CUT",
+                text: "Oval cut diamonds have a classic appearance with a modern twist! It is a popular cut in all types of jewelry, especially in engagement rings, making it easy to match with other jewelry. It has an incredible brilliance, similar to the round brilliant cut, but also has the advantage of accentuating long, slender finders."
+            },
+            marquise: {
+
+                title: "MARQUISE CUT",
+                text: "A marquise cut diamond is a perfect shape for maximizing carat weight by emphasizing the size of the diamond. Its unique shape creates the effect of longer, more slender hands and fingers. The outline of a diamond is determined by its length to width ratio, which also provides an image of the shape and look of the diamond."
+            }
+        }
+
+
+
+
+        function getSliderDesc() {
+            let slider = document.getElementById('diamonds-slider');
+
+            let activeSlide = slider.getElementsByClassName('center');
+
+            let diamondName = activeSlide[0].getElementsByClassName('diamond-name')[0].innerHTML;
+
+            let diamondKey = diamondName.toLowerCase();
+
+            document.getElementById("diamond-desc-title").innerHTML = diamondDesc[diamondKey].title;
+            document.getElementById("diamond-desc-text").innerHTML = diamondDesc[diamondKey].text;
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

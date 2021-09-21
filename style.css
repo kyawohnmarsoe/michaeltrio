@@ -1,15 +1,16 @@
-
 <style>
 .page-main {
   padding: 0px;
 }
-.page-footer h5{
-  font: 500 14px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
+
+.page-footer h5 {
+  font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
   margin: 0 0 5px;
 }
+
 .nowrap {
-white-space: nowrap;
-word-break: keep-all;
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 
@@ -18,6 +19,7 @@ word-break: keep-all;
 * {
   box-sizing: border-box;
 }
+
 :root {
   --lightblue: #E5F3FE;
   --lighterblue: #F0F6FB;
@@ -26,15 +28,63 @@ word-break: keep-all;
   --lighterorange: #fff6f3;
   --white: #ffffff;
   --black: #606060;
-  --companyblue:#9BB8D3;
+  --companyblue: #9BB8D3;
+  --cream: #F7F3F0;
+  --oragne: #FFB898;
 }
-body{
-color:var(--black);
-font-size: 14px;
+
+.bg-cream {
+  background-color: var(--cream);
 }
-.p-wrapper{
-max-width: 900px;
-margin:auto;
+
+.bg-lighterorange {
+  background-color: var(--lighterorange);
+}
+
+.bg-lightorange {
+  background-color: var(--lightorange);
+}
+
+.bg-orange {
+  background-color: var(--oragne);
+}
+
+.bg-lighterblue {
+  background-color: var(--lighterblue);
+}
+
+.bg-lightblue {
+  background-color: var(--lightblue);
+}
+
+body {
+  color: var(--black);
+  font-size: 14px;
+}
+
+a.textblack {
+  color: var(--black);
+}
+
+a.textblack:hover {
+  color: var(--black);
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.p-wrapper {
+  max-width: 900px;
+  margin: auto;
 }
 
 p {
@@ -44,32 +94,43 @@ p {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.05em;
-  padding:0 50px;
+  padding: 0 50px;
 }
+
+
+
 h1,
 h3 {
   font-family: Times New Roman;
   font-style: normal;
   font-weight: normal;
-color:var(--black);
+  color: var(--black);
 }
+
 h1 {
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
 }
+
 h3 {
   font-size: 32px;
   line-height: 37px;
 
 }
+
 h5 {
-font-family: Montserrat;
-font-weight: 300;
+  font-family: Montserrat;
+  font-weight: 300;
   font-size: 22px;
   line-height: 27px;
 
 }
+
+h6 {
+  font-size: 17px;
+}
+
 .btn {
   font-size: 17px;
   line-height: 24px;
@@ -83,17 +144,22 @@ font-weight: 300;
 .btn-blue {
   color: var(--white) !important;
   background-color: var(--companyblue);
+  transition: background-color 2s;
 }
+
 .btn-blue:hover {
   color: var(--white);
   background-color: var(--black);
+
 }
+
 .columns a.btn-blue-outline {
   min-width: 120px;
   margin-right: 10px;
   margin-bottom: 10px;
   color: var(--companyblue);
   border: 2px solid var(--companyblue);
+  transition: all 1s;
 }
 
 .columns a.btn-blue-outline:hover {
@@ -107,16 +173,17 @@ font-weight: 300;
   background-color: var(--companyblue);
 }
 
-.studs-nav .btn{
- display: inline-block;
+.studs-nav .btn {
+  display: inline-block;
 }
 
-  .large-btn{
-    width: 347px;
-  }
-  .small-btn{
-    width: 217px;
-  }
+.large-btn {
+  width: 347px;
+}
+
+.small-btn {
+  width: 217px;
+}
 
 .box {
   display: flex;
@@ -125,134 +192,53 @@ font-weight: 300;
   text-align: center;
 }
 
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Global CSSDiamond Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-.diamond-banner {
-background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/MT2-Diamond-Banner-Desktop-1920-768.jpg);
-background-size: cover;
-background-position-x: right;
-background-position-y: center;
-padding-top:3rem;
-padding-bottom:3rem;
-}
-.diamond-banner-bg{
-    background-color: transparent;
-}
-.pure-heart {
-  background-color: var(--lightblue);
-}
-.design-your-own-bg {
-  background-color: var(--lightorange);
-}
-.custom-earrings-bg,.custom-pendant-bg {
+.custom-earrings-bg,
+.custom-pendant-bg {
   background-color: var(--lighterblue);
 }
-  
-.education {
-  background-color: var(--lightorange);
-}
-.ready-to-ship-bg{
-  background-color: var(--lightblue);
+
+.perfect-fit-bg {
+  background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
 }
 
-.perfect-fit-bg{
- background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+.owl-item .item a:hover {
+  color: var(--black);
 }
 
-
-.engagement-banner{
-    background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
-}
-.create-your-own-engagement{
-    background-color: var(--lightorange);
+.bg-white {
+  background-color: var(--white);
 }
 
-.bg-white{
-    background-color: var(--white);
-}
-.bg-lightgrey{
-    background-color: #FAFAFA; 
-}
-.bg-lightgreyblue{
-    background-color: var(--lighterblue);
-}
-.earrings-banner{
-  background-color:var(--lighterblue);
-}
-.earrings-banner p,.earrings-banner h1,.earrings-banner h3{
- color:black;
+.bg-lightgrey {
+  background-color: #FAFAFA;
 }
 
-.pandent-banner{
-  background-color:var(--lighterblue);
-}
-.pandent-banner{
- color:black;
+.bg-lightgreyblue {
+  background-color: var(--lighterblue);
 }
 
 
-.create-your-own-engagement .row{
-  justify-content:space-between;
-}
-.create-your-own-engagement .col-sm-6{
-  width: 30%;
-}
 
-.engagement-banner-diamond img{
-    width: 80%;
-    margin-bottom: -175px;
-}
-.create-your-own-engagement p {
-  padding: 0;
-  font-size: 15px;
-}
-.top8{
+
+
+.top8 {
   padding-top: 8%;
 }
 
-.row{
+.row {
   display: flex;
 }
 
 
-.diamond-banner .diamond-image-bg {
-  height: 400px;
-  background-size: cover;
-  background-position-x: right;
-  background-position-y: center;
-}
-.design-your-own .diamond-image-bg {
-  height: 400px;
-  background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/P2-Diamond-lifestyle.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-}
-.custom-earrings .diamond-image-bg {
-  height: 400px;
-  background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-}
-.custom-pendant .diamond-image-bg {
-  height: 400px;
-  background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-}
-.ready-to-ship .diamond-image-bg {
-  height: 400px;
-  background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-}
+
+
+
+
+
+
 .perfect-fit .diamond-image-bg {
   height: 400px;
-  background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Wedding-Landing_-p5_Kiss.png);
+  background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -261,12 +247,7 @@ padding-bottom:3rem;
 
 
 
-.pure-heart sup{
-font-size:40%;
-top:-1em;
-}
-
-.diamond-image img{
+.diamond-image img {
   width: 500px;
 }
 
@@ -276,236 +257,283 @@ top:-1em;
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ sliderConfig @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-.owl-carousel .owl-item{
-display:flex;
-align-items:center;
-justify-content:center;
-height:250px;
+.owl-carousel .owl-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: auto; */
 }
-.owl-carousel .owl-item img{
-width:100px;
-transition: all 0.5s;
+#diamonds-slider.owl-carousel .owl-item {
+  height: 250px;
 }
-.owl-carousel .owl-item.center img{
-width:200px;
-margin:auto;
+
+
+
+#top-selling-slider.owl-carousel .owl-item {
+  align-items: flex-start;
 }
+
+.owl-carousel .owl-item img {
+  width: 100px;
+  transition: all 1s;
+}
+
+
+.owl-carousel .owl-item.center img {
+  width: 200px;
+  margin: auto;
+}
+
 .owl-carousel .owl-item.center {
-margin:0px 30px;
-}
-
-#choose-setting.owl-carousel .owl-item {
-height:300px;
-}
-#choose-setting.owl-carousel .owl-item img{
-width:200px;
-}
-#choose-setting.owl-carousel .owl-item.center img{
-width:350px;
-}
-
-.owl-item article>a{
-display:none;
-font-weight:500;
-text-transform: uppercase;
-}
-.owl-item.center article>a{
-margin-top:10px;
-display:block;
-}
-.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
-top:auto;
-bottom:8px;
+  margin: 0px 20px;
 }
 
 
-.owl-carousel .owl-nav [class*='owl-']:before{
-font-size: 40px;
-}
-.columns a{
-color:var(--black) ;
+
+.owl-item article>a {
+  display: none;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-#diamonds-slider-color-desktop .owl-item article>a{
-display:block;
-margin-top:10px;
+.owl-item.center article>a {
+  margin-top: 10px;
+  display: block;
 }
 
-#diamonds-slider-color-desktop.owl-carousel .owl-item{
-display:flex;
-align-items:center;
-justify-content:center;
-height:200px ;
-}
-#diamonds-slider-color-desktop.owl-carousel .owl-stage{
-margin:auto;
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  top: auto;
+  bottom: -40px;
 }
 
-#diamonds-slider-color-desktop.owl-carousel .owl-item img{
-margin:0px 20px;
+.owl-carousel .owl-nav [class*='owl-']:before {
+  font-size: 40px;
 }
+
+.columns a {
+  color: var(--black);
+}
+
+
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 .ct025 {
-width: 10px;
-margin:auto;
+  width: 10px;
+  margin: auto;
 }
+
 .ct030 {
-width: 11px;
-margin:auto;
+  width: 11px;
+  margin: auto;
 }
+
 .ct033 {
-width: 12px;
-margin:auto;
+  width: 12px;
+  margin: auto;
 }
+
 .ct050 {
-width: 14px;
-margin:auto;
+  width: 14px;
+  margin: auto;
 
 }
 
 .ct060 {
-width: 14.3px;
-margin:auto;
+  width: 14.3px;
+  margin: auto;
 
 }
+
 .ct070 {
-width: 15px;
-margin:auto;
+  width: 15px;
+  margin: auto;
 
 }
+
 .ct075 {
-width: 15.5px;
-margin:auto;
+  width: 15.5px;
+  margin: auto;
 
 }
+
 .ct080 {
-width: 15.7px;
-margin:auto;
+  width: 15.7px;
+  margin: auto;
 
 }
+
 .ct090 {
-width: 16px;
-margin:auto;
+  width: 16px;
+  margin: auto;
 
 }
+
 .ct100 {
-margin:auto;
-width: 18px;
+  margin: auto;
+  width: 18px;
 }
+
 .ct125 {
-margin:auto;
-width: 22px;
+  margin: auto;
+  width: 22px;
 }
+
 .ct150 {
-margin:auto;
-width: 25px;
+  margin: auto;
+  width: 25px;
 }
+
 .ct200 {
-margin:auto;
-width: 30px;
+  margin: auto;
+  width: 30px;
 }
-.diamond-thumbnail{
-   padding-top:0px;
-   padding-bottom:10px;
-   border-radius: 10px;
-   font-size: 11px;
-    font-weight: 300;
-    border:2px solid transparent;
-    cursor: pointer;
+
+.diamond-thumbnail {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 300;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 1s;
 }
-.diamond-thumbnail .diamond-size{
+
+.diamond-thumbnail .diamond-size {
   font-size: 11px;
 }
-.diamond-thumbnail.bg-white:hover{
-  border:2px solid var(--companyblue);
+
+.diamond-thumbnail.bg-white:hover {
+  border: 2px solid var(--companyblue);
 }
-.active .diamond-thumbnail.bg-white{
-  border:2px solid var(--companyblue);
+
+.active .diamond-thumbnail.bg-white {
+  border: 2px solid var(--companyblue);
 }
-.diamond-thumbnail-img{
-    height: 70px;
-    padding: 10px 0px;
-    display: flex;
+
+.diamond-thumbnail-img {
+  height: 70px;
+  padding: 10px 0px;
+  display: flex;
 }
-.diamond-price{
-    font-size: 14px;
-    margin-top: 10px;
+
+.diamond-price {
+  font-size: 14px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-.diamond-quality{
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .spinning-diamond{
-    width: 420px;
-    height: 420px;
-    border-radius: 20px;
-  }
-  .selling.No{
-    opacity: 0.5;
-    cursor:not-allowed;
-  }
-  .selling.No .diamond-thumbnail.bg-white:hover{
-  border:2px solid transparent;
+
+.diamond-quality {
+  font-size: 14px;
+  font-weight: 700;
 }
-.fa-green{
+
+.spinning-diamond {
+  width: 420px;
+  height: 420px;
+  border-radius: 20px;
+}
+
+.selling.No {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.selling.No .diamond-thumbnail.bg-white:hover {
+  border: 2px solid transparent;
+}
+
+.fa-green {
   color: #5EE9AD;
 }
 
+.owl-carousel .owl-item a img:hover {
+  filter: contrast(130%);
+}
 
 
 
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+
+.desktop-show {
+  display: block;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.d-flex {
+    display: flex;
+  }
+  .mx-xs-3 {
+    margin: auto 15px;
+  }
+  
+  .pb-sm-5 {
+    padding-bottom: 3rem !important;
+  }
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium  Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media (max-width: 1199.98px) {
+
   h1 {
     font-size: 30px;
     line-height: 34px;
   }
+
   h3 {
     font-size: 25px;
     line-height: 29px;
   }
-h5 {
-  font-size: 18px;
-line-height: 25px;
-}
+
+  h5 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   p {
     font-size: 16px;
     line-height: 22px;
   }
 
- .diamond-image img {
+  .diamond-image img {
     width: 320px;
   }
-  .btn{
+
+  .btn {
     height: 35px;
   }
-  .engagement-banner-diamond img{
-    width: 100%;
-   
-}
-#choose-setting.owl-carousel .owl-item img{
-  width:120px;
-}
-#choose-setting.owl-carousel .owl-item.center img{
-  width:250px;
-}
 
-.spinning-diamond{
+  .spinning-diamond {
     width: 380px;
     height: 380px;
   }
-  .diamond-quality, .diamond-price{
+
+  .diamond-quality,
+  .diamond-price {
     font-size: 12px;
   }
 
 }
+
+
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -513,45 +541,53 @@ line-height: 25px;
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media (max-width: 767.98px) {
-  p{
-    padding:0;
+    .pb-sm-5 {
+        padding-bottom: 0 !important;
+      }
+    
+      .pt-xs-3 {
+        padding-top: 1rem !important;
+      }
+
+  p {
+    padding: 0;
   }
+
   .btn {
     font-size: 14px;
     line-height: 22px;
-  
+
   }
-  .my-4{
+
+  .my-4 {
     margin-top: 1.2rem !important;
   }
 
-.row {
-  display: block;
-}
+  .row {
+    display: block;
+  }
 
-.diamond-image img
-{
+  .diamond-image img {
     width: 320px;
   }
-  .diamond-banner {
-  background-image: none;
-  padding-top:0;
-padding-bottom:0;
-}
-  .engagement-banner-diamond img{
-    width: 55%;
-    margin-bottom: -50px;
-}
-.perfect-fit-bg{
+
+  .perfect-fit-bg {
     background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
-}
-.diamond-banner-bg{
-    background-color: var(--lighterblue);
-}
-.col-sm-12{
-  padding-left: 13px;
-  padding-right: 13px;
-}
+  }
+
+  .col-sm-12 {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+
+  .spacing-xs-t {
+    padding-top: 20px !important;
+  }
+
+  .spacing-xs-b {
+    padding-bottom: 20px !important;
+  }
 
 
 }
@@ -561,79 +597,81 @@ padding-bottom:0;
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Extra Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @media (max-width: 480px) {
+
   h1 {
     font-size: 25px;
     line-height: 29px;
   }
+
   h3 {
     font-size: 20px;
     line-height: 23px;
   }
-h5 {
-  font-size: 17px;
-line-height: 20px;
-}
+
+  h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
   p {
     font-size: 14px;
     line-height: 22px;
   }
+
   .btn {
     font-size: 14px;
     line-height: 15px;
     height: 30px;
   }
-  .large-btn{
+
+  .large-btn {
     width: 217px;
   }
 
-.diamond-image img  {
+  .diamond-image img {
     width: 80%;
   }
-  
-  .engagement-banner-diamond img{
-    width: 70%;
-    padding-top:50px;
-    margin-bottom: -50px;
-}
-  
-.owl-carousel .owl-item{
-height:180px;
-}
-.owl-carousel .owl-item img{
-width:70px;
-transition: unset;
-}
-.owl-carousel .owl-item.center img{
-width:150px;
-}
-.owl-carousel .owl-item.center{
-margin:0px 20px;
-}
-#create-your-own-engagement.owl-carousel .owl-item{
-height:auto ;
-margin:0;
-}
-#create-your-own-engagement.owl-carousel .owl-nav .owl-prev,#create-your-own-engagement.owl-carousel .owl-nav .owl-next{
-top:auto;
-bottom:-40px;
-}
-#choose-setting.owl-carousel .owl-item{
-height:auto ;
-}
-.spinning-diamond{
+
+  #diamonds-slider.owl-carousel .owl-item {
+    height: 200px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 70px;
+    transition: unset;
+  }
+
+  .owl-carousel .owl-item.center img {
+    width: 150px;
+  }
+
+  .owl-carousel .owl-item.center {
+    margin: 0px 20px;
+  }
+
+  .spinning-diamond {
     width: 295px;
     height: 295px;
   }
 
-  .diamond-thumbnail .diamond-size{
-    font-size:11px;
+  .diamond-thumbnail .diamond-size {
+    font-size: 11px;
   }
-  .diamond-quality, .diamond-price{
+
+  .diamond-quality,
+  .diamond-price {
     font-size: 12px;
   }
 
+  .desktop-show {
+    display: none;
+  }
 
+  .mobile-show {
+    display: block;
+  }
 
 }
+
 
 </style>

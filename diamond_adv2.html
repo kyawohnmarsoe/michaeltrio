@@ -34,24 +34,10 @@
       --white: #ffffff;
       --black: #606060;
       --companyblue: #9BB8D3;
-      --cream: #F7F3F0;
-      --oragne: #FFB898;
-    }
-
-    .bg-cream {
-      background-color: var(--cream);
     }
 
     .bg-lighterorange {
       background-color: var(--lighterorange);
-    }
-
-    .bg-lightorange {
-      background-color: var(--lightorange);
-    }
-
-    .bg-orange {
-      background-color: var(--oragne);
     }
 
     .bg-lighterblue {
@@ -65,26 +51,6 @@
     body {
       color: var(--black);
       font-size: 14px;
-    }
-
-    a.textblack {
-      color: var(--black);
-    }
-
-    a.textblack:hover {
-      color: var(--black);
-    }
-
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-      padding: 0;
     }
 
     .p-wrapper {
@@ -101,8 +67,6 @@
       letter-spacing: 0.05em;
       padding: 0 50px;
     }
-
-
 
     h1,
     h3 {
@@ -815,10 +779,7 @@
 
     @media (max-width: 767.98px) {
 
-      .wedding-banner-bg {
-        height: auto;
 
-      }
 
       .process-icon {
         width: 60px;
@@ -993,7 +954,7 @@
       }
 
       #diamonds-slider.owl-carousel .owl-item {
-        height: 200px;
+        height: 180px;
       }
 
       .owl-carousel .owl-item img {
@@ -1040,183 +1001,75 @@
         display: block;
       }
 
-      .home-engagement {
-        top: 65 px;
-      }
-
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Home @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    .home-engagement {
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Advance Slider @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    #diamonds-slider {
       position: relative;
     }
 
-    .home-engagement::before {
-      content: "engagement ring";
-      position: absolute;
-      top: -114px;
-      width: 100%;
-      text-align: center;
-      font-size: 7rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: var(--cream);
-      opacity: 0.7;
-    }
-
-    .home-jewel {
-      position: relative;
-    }
-
-    .home-jewel::before {
-      content: "jewellery";
-      position: absolute;
-      top: -114px;
-      width: 100%;
-      text-align: center;
-      font-size: 7rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: var(--lightorange);
-      opacity: 0.7;
-    }
-
-    .home-wedding-box {
-      width: 300px;
-      overflow: hidden;
-    }
-
-    .home-wedding-box img {
-      transition: transform 2s;
-    }
-
-    .home-jewel-box {
-      width: 150px;
-      overflow: hidden;
-    }
-
-    .home-jewel-box img {
-      transition: transform 2s;
-    }
-
-    .home-jewel-box img:hover {
-      transform: scale(1.5);
-    }
-
-    .home-engagement a:hover {
-      color: var(--black);
-    }
-
-    .home-wedding-box img:hover {
-      transform: scale(1.5);
-    }
-
-    .home-diamond-banner {
-      background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-
-    }
-
-    .home-diamond-banner-bg {
-      height: 400px;
-    }
-
-    #best-seller-home .for-title {
+    #diamonds-slider .owl-item .desc-box {
       display: none;
+
     }
 
-    #best-seller-home.owl-carousel .owl-item.center .for-title {
+    #diamonds-slider .owl-item.center .desc-box {
       display: block;
-      width: 280px;
-    }
-
-    #best-seller-home.owl-carousel .owl-item {
-      height: 270px;
-
-    }
-
-    #best-seller-home.owl-carousel .owl-item img {
-      width: 180px;
-    }
-
-    #best-seller-home.owl-carousel .owl-item.center img {
-      width: 280px;
-    }
-
-    .d-flex {
-      display: flex;
-    }
-
-    .mx-xs-3 {
-      margin: auto 15px;
-    }
-
-    .home-jewel,
-    .home-engagement {
-      margin-top: 150px;
-    }
-
-
-
-    @media (max-width: 1199.98px) {
-
-      .home-engagement::before,
-      .home-jewel::before {
-        font-size: 4rem;
-        top: -62px;
-      }
-
-    }
-
-    @media (max-width: 767.98px) {
-      .home-diamond-banner {
-        background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg-sm.jpg);
-        background-size: cover;
-      }
-
-      .home-engagement::before,
-      .home-jewel::before {
-        font-size: 3rem;
-        top: -47px;
-      }
-
-      .home-wedding-box {
-        width: auto;
-      }
-
-      .home-jewel .visible-xs {
-        display: flex !important;
-      }
-
-      .home-jewel,
-      .home-engagement {
-        margin-top: 95px;
-      }
-
-
-    }
-
-    @media (max-width: 480px) {
-      #best-seller-home.owl-carousel .owl-item img {
-        width: 150px;
-      }
-
-      #best-seller-home.owl-carousel .owl-item.center img {
-        width: 250px;
-      }
-
-      .home-jewel,
-      .home-engagement {
-        margin-top: 65px;
-      }
 
     }
   </style>
 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+  <script>
+    require(['jquery', 'owlslider'], function ($) {
+
+      $(document).ready(function () {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          autoplay: true,
+          loop: true,
+          nav: true,
+          dots: true,
+          center: true,
+          autoWidth: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            375: {
+              items: 3
+            },
+            768: {
+              items: 5
+            },
+            1200: {
+              items: 7
+            }
+          }
+        });
+
+
+        owl.on('changed.owl.carousel', function (event) {
+          onChange: callback
+        })
+
+        function callback(event) {
+
+          console.log("callback");
+
+        }
+
+
+      });
+    });
+
+
+  </script>
+
 </head>
 
 <body>
+
 
   <section class="diamond-by-shape py-5">
 
@@ -1224,27 +1077,35 @@
       <div class="row">
         <div class="col-sm-24 text-center">
           <div>
-            <h1>Explore Diamonds By Shape</h1>
-            <div id="diamonds-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
-              "0": {
-                  "items":1
-              },
-             "375": {
-                  "items":3
-              },
-              "768":{
-                  "items":5
-              },
-              "1200":{
-                "items":7
-            }
-          }}}}}'>
-              <div class="item center">
+            <h1 class="mb-3">Explore Diamonds By Shape</h1>
+            <div id="diamonds-slider" class="owl-carousel owl-theme img-slider mb-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                "0": {
+                    "items":1
+                },
+               "375": {
+                    "items":3
+                },
+                "768":{
+                    "items":5
+                },
+                "1200":{
+                  "items":7
+              }
+            }}}}}'>
+              <div class="item">
                 <article class="text-center">
                   <figure><a href="https://www.michaeltrio.com/loose-diamonds/round"><img
                         src="{{media url=&quot;landing/images/diamond1.jpg&quot;}}" class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/round" class="diamond-name">ROUND</a>
                 </article>
+
+                <div class="desc-box">
+                  <title>ROUND BRILLIANT CUT</title>
+                  <desc>The round brilliant cut diamond is the most popular shape of diamond. For hundreds of years,
+                    diamond cutters have been working with this cut to maximize its brilliance and fire. While this cut
+                    offers great flexibility within the four C’s, you will want to select higher quality grades to bring
+                    out the most brilliance within a round diamond.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1252,7 +1113,14 @@
                         src="{{media url=&quot;landing/images/diamond2.jpg&quot;}}" class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/princess" class="diamond-name">PRINCESS</a>
                 </article>
-
+                <div class="desc-box">
+                  <title>PRINCESS CUT</title>
+                  <desc>Princess cut diamonds are exceptionally brilliant because of the way they are cut and are
+                    available in both square and rectangular shapes. The color that is emitted from princess cut
+                    diamonds
+                    is very unique. While the color of other diamond is displayed mainly in the center, the princess cut
+                    diamonds show distinct color in each of the corners as well.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1260,6 +1128,13 @@
                         src="{{media url=&quot;landing/images/diamond3.jpg&quot;}}" class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/emerald" class="diamond-name">EMERALD</a>
                 </article>
+                <div class="desc-box">
+                  <title>EMERALD CUT</title>
+                  <desc>Emerald cut diamonds have a unique optical appearance because of the rectangular facets step-cut
+                    into the diamond’s pavilion. This cut showcases the diamond’s original clarity beautifully because
+                    of
+                    its large rectangular table which will also make inclusions and color more apparent.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1267,6 +1142,10 @@
                         src="{{media url=&quot;landing/images/diamond4.jpg&quot;}}" class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/heart" class="diamond-name">HEART</a>
                 </article>
+                <div class="desc-box">
+                  <title>HEART</title>
+                  <desc>HEART</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1274,6 +1153,19 @@
                         src="{{media url=&quot;landing/images/diamond5.jpg&quot;}}" class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/pear" class="diamond-name">PEAR</a>
                 </article>
+
+
+                <div class="desc-box">
+                  <title>PEAR SHAPED</title>
+                  <desc>Combining round and marquise cuts, the teardrop style of pear shaped diamonds is exceptional.
+                    The
+                    slender pear shape will give fingers and hands a slimmer appearance while creating a soft and
+                    delicate
+                    look. Pear shaped diamonds are cut to produce maximum brilliance, so it’s important to look for
+                    excellent symmetry.</desc>
+                </div>
+
+
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1282,6 +1174,13 @@
                         class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/asscher" class="diamond-name">ASSCHER</a>
                 </article>
+                <div class="desc-box">
+                  <title>ASSCHER CUT</title>
+                  <desc>Asscher cut diamonds are often mistaken for an emerald cut because of its similar cut style;
+                    however an asscher is square rather than rectangular. Created in the early 1920s, the asscher cut
+                    has
+                    recently resurged in popularity, especially amongst celebrities.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1290,6 +1189,14 @@
                         class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/cushion" class="diamond-name">CUSHION</a>
                 </article>
+                <div class="desc-box">
+                  <title>CUSHION CUT</title>
+                  <desc>Sometimes called a pillow-cut diamond, the cushion cut is a timeless cut that has earned its
+                    name
+                    for its pillow shape. Cushion cut diamonds tend to have impeccable brilliance and clarity in their
+                    appearance which can be attributed to their rounded corners and larger facets. These diamonds are
+                    available in square and rectangular shapes.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1298,14 +1205,31 @@
                         class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/radiant" class="diamond-name">RADIANT</a>
                 </article>
+                <div class="desc-box">
+                  <title>RADIANT CUT</title>
+                  <desc>Perfect for those looking for a unique style, radiant cut diamonds feature uniquely trimmed
+                    corners which combines the lines of an emerald cut with the brilliance of a round diamond. The
+                    sparkle
+                    of this diamond cut looks beautiful when combined with a variety of other diamond cuts.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
                   <figure><a href="https://www.michaeltrio.com/loose-diamonds/oval"><img
                         src="{{media url=&quot;landing/images/diamond-sample-oval.jpg&quot;}}"
-                        class="img-responsive"></a></figure>
+                        class="img-responsive"></a>
+                  </figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/oval" class="diamond-name">OVAL</a>
                 </article>
+                <div class="desc-box">
+                  <title>OVAL CUT</title>
+                  <desc>Oval cut diamonds have a classic appearance with a modern twist! It is a popular cut in all
+                    types
+                    of jewelry, especially in engagement rings, making it easy to match with other jewelry. It has an
+                    incredible brilliance, similar to the round brilliant cut, but also has the advantage of
+                    accentuating
+                    long, slender finders.</desc>
+                </div>
               </div>
               <div class="item">
                 <article class="text-center">
@@ -1314,8 +1238,17 @@
                         class="img-responsive"></a></figure>
                   <a href="https://www.michaeltrio.com/loose-diamonds/marquise" class="diamond-name">MARQUISE</a>
                 </article>
+                <div class="desc-box">
+                  <title>MARQUISE CUT</title>
+                  <desc>A marquise cut diamond is a perfect shape for maximizing carat weight by emphasizing the size of
+                    the diamond. Its unique shape creates the effect of longer, more slender hands and fingers. The
+                    outline of a diamond is determined by its length to width ratio, which also provides an image of the
+                    shape and look of the diamond.</desc>
+                </div>
               </div>
             </div>
+
+
 
             <div class="diamond-desc">
               <h5 id="diamond-desc-title"></h5>
@@ -1384,12 +1317,8 @@
       }
     }
 
-
-
-
     function getSliderDesc() {
       var slider = document.getElementById('diamonds-slider');
-
       var activeSlide = slider.getElementsByClassName('center');
 
       var diamondName = activeSlide[0].getElementsByClassName('diamond-name')[0].innerHTML;
@@ -1401,9 +1330,7 @@
 
     }
 
-
   </script>
-
 
 </body>
 
