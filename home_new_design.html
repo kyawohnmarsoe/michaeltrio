@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .home-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_Banner_1920x550_.jpg);
+            background-size: cover;
+            height: 550px;
+            background-position: center center;
+        }
+
+        .home-banner-bg {
+            background-color: transparent;
+            height: 550px;
+        }
+
+        .home-engagement {
+            position: relative;
+        }
+
+        .home-engagement::before {
+            content: "engagement ring";
+            position: absolute;
+            top: -114px;
+            width: 100%;
+            text-align: center;
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--cream);
+            opacity: 0.7;
+        }
+
+        .home-jewel {
+            position: relative;
+        }
+
+        .home-jewel::before {
+            content: "jewellery";
+            position: absolute;
+            top: -114px;
+            width: 100%;
+            text-align: center;
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--lightorange);
+            opacity: 0.7;
+        }
+
+        .home-wedding-box {
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .home-wedding-box img {
+            transition: transform 2s;
+        }
+
+        .home-jewel-box {
+            width: 150px;
+            overflow: hidden;
+        }
+
+        .home-jewel-box img {
+            transition: transform 2s;
+        }
+
+        .home-jewel-box img:hover {
+            transform: scale(1.5);
+        }
+
+        .home-engagement a:hover {
+            color: var(--black);
+        }
+
+        .home-wedding-box img:hover {
+            transform: scale(1.5);
+        }
+
+        .home-custom-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0home/MT2_-Main_-_Custom_Made_-_1200x400.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+        }
+
+        .home-diamond-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0home/MT2_-Main_-_Diamonds_-_1200x400.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+        }
+
+        .home-diamond-banner-bg {
+            height: 400px;
+        }
+
+        .home-custom-banner-bg {
+            height: 400px;
+        }
+
+        #best-seller-home .for-title {
+            display: none;
+        }
+
+        #best-seller-home.owl-carousel .owl-item.center .for-title {
+            display: block;
+            width: 280px;
+        }
+
+        #best-seller-home.owl-carousel .owl-item {
+            height: 270px;
+
+        }
+
+        #best-seller-home.owl-carousel .owl-item img {
+            width: 180px;
+        }
+
+        #best-seller-home.owl-carousel .owl-item.center img {
+            width: 280px;
+        }
+
+        .home-jewel,
+        .home-engagement {
+            margin-top: 150px;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .home-engagement::before,
+            .home-jewel::before {
+                font-size: 4rem;
+                top: -62px;
+            }
+
+        }
+
+        @media (max-width: 767.98px) {
+            .home-engagement img {
+                width: 70%;
+            }
+
+
+            .home-banner {
+                background-image: url(https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_Banner_768x450_.png);
+                background-size: cover;
+            }
+
+            .home-diamond-banner {
+                background-image: none;
+            }
+
+            .home-custom-banner {
+                background-image: none;
+            }
+
+            .home-engagement::before,
+            .home-jewel::before {
+                font-size: 3rem;
+                top: -47px;
+            }
+
+            .home-wedding-box {
+                width: auto;
+            }
+
+            .home-jewel,
+            .home-engagement {
+                margin-top: 95px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .home-jewel {
+                margin-top: 65px;
+            }
+
+            .home-engagement {
+                margin-top: 30px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="home-banner">
+
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-sm-12 home-banner-bg hidden-xs">
+
+                </div>
+
+                <div class="col-sm-12 box py-5 hidden-xs">
+                    <div>
+                        <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_Banner_Text.png" alt=""
+                            class="w-75">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="container visible-xs">
+        <div class="py-4 text-center">
+            <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_Banner_Text.png" alt="" class="w-75">
+        </div>
+    </div>
+
+
+    <section class="home-engagement bg-cream py-5 mb-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 box visible-xs">
+                    <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_-_Create_your_Own_Engagement_600x300.png"
+                        alt="" class="w-50 mb-4">
+                </div>
+                <div class="col-sm-12 box">
+                    <div>
+                        <h3>Create your own</h3>
+                        <h1>Engagement Ring</h1>
+                        <h6 class="my-4">In 2 Easy Steps</h6>
+                        <a class="btn btn-blue mb-3" href="#">Start with a Diamond</a>
+                        <a class="btn btn-blue" href="#">Start with a Setting</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 box hidden-xs">
+                    <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Main_-_Create_your_Own_Engagement_600x300.png"
+                        alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-wedding bg-lighterorange py-5">
+        <div class="container mb-5">
+            <h1 class="text-center mb-4">Wedding Bands</h1>
+
+            <div class=" box d-flex">
+
+                <div class="mx-xs-3">
+                    <a href="https://www.michaeltrio.com/wedding-bands/women/" class="textblack">
+                        <div class="bg-orange home-wedding-box">
+                            <div class="home-wedding-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/female-wedding-band.jpg"
+                                    alt="" class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">For Her</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mx-xs-3">
+                    <a href="https://www.michaeltrio.com/wedding-bands/men/" class="textblack">
+                        <div class="bg-orange home-wedding-box">
+                            <div class="home-wedding-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/male-wedding-band.jpg"
+                                    alt="" class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">For Him</h6>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+    </section>
+
+    <section class="home-review py-5">
+        <div class="container">
+
+            <h1 class="text-center">What Our Customers Are Saying</h1>
+            <div style="margin-top: 30px;margin-bottom: 50px;" class="yotpo yotpo-reviews-carousel"
+                data-background-color="transparent" data-mode="most_recent" data-type="product" data-count="9"
+                data-show-bottomline="1" data-autoplay-enabled="1" data-autoplay-speed="3000" data-show-navigation="1">
+                &nbsp;
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Diamonds_-_768x400.png" alt="" class="w-100">
+        </div>
+        <div class="container home-diamond-banner">
+            <div class="row">
+                <div class="col-sm-12 home-diamond-banner-bg hidden-xs"></div>
+
+
+                <div class="col-sm-12 box">
+                    <div class="py-5">
+                        <h1>Diamonds</h1>
+                        <p class="py-3">Explore our diamonds in 360 HD. Inspect them with up to 40x Magnification and
+                            review the 4’Cs
+                            togther with the grading certification.</p>
+                        <a class="btn btn-blue small-btn mb-3" href="#">Earth Natural </a>
+                        <a class="btn btn-blue small-btn " href="#">Lab Created </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="diamond-by-shape py-5">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-24 text-center">
+                    <div>
+                        <h1 class="mb-3">Explore Diamonds By Shape</h1>
+                        <div id="diamonds-slider" class="owl-carousel owl-theme img-slider mb-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                    "0": {
+                        "items":1
+                    },
+                   "375": {
+                        "items":3
+                    },
+                    "768":{
+                        "items":5
+                    },
+                    "1200":{
+                      "items":7
+                  }
+                }}}}}'>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/round"><img
+                                                src="{{media url=&quot;landing/images/diamond1.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/round">ROUND</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/princess"><img
+                                                src="{{media url=&quot;landing/images/diamond2.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/princess">PRINCESS</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/emerald"><img
+                                                src="{{media url=&quot;landing/images/diamond3.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/emerald">EMERALD</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/heart"><img
+                                                src="{{media url=&quot;landing/images/diamond4.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/heart">HEART</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/pear"><img
+                                                src="{{media url=&quot;landing/images/diamond5.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/pear">PEAR</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/asscher"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-asscher.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/asscher">ASSCHER</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/cushion"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-cushion.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/cushion">CUSHION</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/radiant"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-radient.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/radiant">RADIANT</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/oval"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-oval.jpg&quot;}}"
+                                                class="img-responsive"></a>
+                                    </figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/oval">OVAL</a>
+                                </article>
+                            </div>
+                            <div class="item">
+                                <article class="text-center">
+                                    <figure><a href="https://www.michaeltrio.com/loose-diamonds/marquise"><img
+                                                src="{{media url=&quot;landing/images/diamond-sample-marquise.jpg&quot;}}"
+                                                class="img-responsive"></a></figure>
+                                    <a href="https://www.michaeltrio.com/loose-diamonds/marquise">MARQUISE</a>
+                                </article>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class=" my-5">
+        <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0home/MT2_-_Custom_Made_-_768x400.png" alt="" class="w-100">
+        </div>
+        <div class="container home-custom-banner">
+            <div class="row">
+                <div class="col-sm-12 home-custom-banner-bg hidden-xs"></div>
+                <div class="col-sm-12 box">
+                    <div class="py-5">
+                        <h1>Customisation</h1>
+                        <p class="py-3">Every Story is unique. Celebrate your love story with a custom engagement ring,
+                            Tailor-made to suite te person you love.</p>
+
+                        <a class="btn btn-blue small-btn " href="#">Explore Now </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="best-seller-home pt-5">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-24 text-center">
+                    <div>
+                        <h1>Choose Your Setting Style</h1>
+                        <div id="best-seller-home" class="owl-carousel owl-theme img-slider my-5" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+            "0": {
+                "items":1
+            },
+           "375": {
+                "items":1
+            },
+            "480": {
+              "items":3
+          },
+            "768":{
+                "items":5
+            },
+            "1200":{
+              "items":5
+          }
+        }}}}}'>
+                            <div class="item">
+
+                                <a href="{{store url='MSR0013-18KW'}}">
+                                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-MSR0013-18KW.webp"
+                                        alt="" class="img-responsive m-auto">
+
+                                    <div class="for-title">Thin Knife Edge Solitaire</div>
+                                </a>
+
+                            </div>
+                            <div class="item">
+
+                                <a href="{{store url='MSR0033F-1-18KW'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-MSR0033F-1-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Channel Diamond Four-Pronged Tapered</div>
+                                </a>
+
+                            </div>
+                            <div class="item">
+
+                                <a href="{{store url='MSR0070-18KW'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-MSR0070-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Halo Diamond Pavé Gold Prongs</div>
+                                </a>
+
+                            </div>
+
+                            <div class="item">
+
+                                <a href="{{store url='NR0001-HE080-18KW'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-NR0001-HE080-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Channel Set Half Eternity Diamond</div>
+                                </a>
+
+                            </div>
+                            <div class="item">
+
+                                <a href="{{store url='WR0148F-1L-18KW'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-WR0148F-1L-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Pavé Four Prong Diamond</div>
+                                </a>
+
+                            </div>
+                            <div class="item">
+
+                                <a href="{{store url='WR0180F-18KW'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-WR0180F-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Pavé Twisted Shank</div>
+                                </a>
+
+                            </div>
+                            <div class="item">
+
+                                <a href="{{store url='wr0294-18kw'}}"><img
+                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/images/frontpage/bestseller-WR0294L-1-18KW.webp"
+                                        alt="" class=" m-auto">
+                                    <div class="for-title">Halo Pavé</div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-jewel bg-lightorange py-5">
+
+        <div class="container">
+            <p class="text-center mb-4">Delicate Jewellery pieces hand-crafted for any occasion. Explore our extensive
+                range
+                of jewellery
+                pieces from dainty to extravagant, made with love and quality as our outmost prioirty.</p>
+            <div class="row box d-flex hidden-xs">
+                <div class="mx-xs-3"><a href="https://www.michaeltrio.com/wedding-bands/women/" class="textblack">
+                        <div class="bg-orange home-jewel-box ">
+                            <div class="home-jewel-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-ring.jpg" alt=""
+                                    class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">Ring</h6>
+                        </div>
+                    </a></div>
+
+                <div class="mx-xs-3"> <a href="https://www.michaeltrio.com/wedding-bands/men/" class="textblack">
+                        <div class="bg-orange home-jewel-box">
+                            <div class="home-jewel-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-earring.jpg" alt=""
+                                    class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">Earrings</h6>
+
+                        </div>
+                    </a></div>
+
+                <div class="mx-xs-3">
+                    <a href="https://www.michaeltrio.com/wedding-bands/women/" class="textblack">
+                        <div class="bg-orange home-jewel-box">
+                            <div class="home-jewel-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-necklace.jpg" alt=""
+                                    class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">Necklace</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mx-xs-3">
+                    <a href="https://www.michaeltrio.com/wedding-bands/men/" class="textblack">
+                        <div class="bg-orange home-jewel-box">
+                            <div class="home-jewel-box">
+                                <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-bracelet.jpg" alt=""
+                                    class="w-100">
+                            </div>
+                            <h6 class="py-3 text-center">Bracelet</h6>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class=" visible-xs">
+                <div class="  box d-flex mb-3">
+                    <div class="mx-xs-3"><a href="https://www.michaeltrio.com/wedding-bands/women/" class="textblack">
+                            <div class="bg-orange home-jewel-box ">
+                                <div class="home-jewel-box">
+                                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-ring.jpg" alt=""
+                                        class="w-100">
+                                </div>
+                                <h6 class="py-3 text-center">Ring</h6>
+                            </div>
+                        </a></div>
+
+                    <div class="mx-xs-3"> <a href="https://www.michaeltrio.com/wedding-bands/men/" class="textblack">
+                            <div class="bg-orange home-jewel-box">
+                                <div class="home-jewel-box">
+                                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-earring.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h6 class="py-3 text-center">Earrings</h6>
+
+                            </div>
+                        </a></div>
+
+                </div>
+                <div class="  box d-flex ">
+
+
+                    <div class="mx-xs-3">
+                        <a href="https://www.michaeltrio.com/wedding-bands/women/" class="textblack">
+                            <div class="bg-orange home-jewel-box">
+                                <div class="home-jewel-box">
+                                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-necklace.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h6 class="py-3 text-center">Necklace</h6>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mx-xs-3">
+                        <a href="https://www.michaeltrio.com/wedding-bands/men/" class="textblack">
+                            <div class="bg-orange home-jewel-box">
+                                <div class="home-jewel-box">
+                                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/front-bracelet.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h6 class="py-3 text-center">Bracelet</h6>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="featured py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">Featured In</h3>
+            <div class="row">
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/bridestory.jpg" alt=""
+                        class="img-responsive">
+                </div>
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/blissful-brides.jpg" alt=""
+                        class="img-responsive">
+                </div>
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/kiss92.jpg" alt=""
+                        class="img-responsive">
+                </div>
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/mothership.jpg" alt=""
+                        class="img-responsive">
+                </div>
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/singapore-tatler.jpg" alt=""
+                        class="img-responsive">
+                </div>
+                <div class="col-sm-4 col-xs-8">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/the-smart-local.jpg" alt=""
+                        class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule pt-5 bg-cream">
+
+        <div class="container text-center">
+
+            <h1 class="mb-4">Schedule An Appointment With Us </h1>
+            <div class="row ">
+                <div class="col-sm-12 col-xs-24 p-0">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-sm-12 col-xs-24 p-0 box">
+                    <div class="py-5">
+                        <h3>Tanjong Pagar Showroom</h3>
+                        <p class="my-3">
+                            91 Tanjong Pagar Rd S088512 <br />
+                            (Mondays - Sundays: 12pm - 8.30pm)<br />
+                            +65 6299 0110
+                        </p>
+                        <a href="https://www.michaeltrio.com/make-an-appointment?location=jem"
+                            class="btn btn-blue small-btn">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-sm-12 col-xs-24 p-0 visible-xs">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-jem.jpg" alt="" class="w-100">
+                </div>
+
+                <div class="col-sm-12 col-xs-24 p-0 box">
+                    <div class="py-5">
+                        <h3>JEM Showroom</h3>
+                        <p class="my-3">
+
+                            50 Jurong Gateway<br />
+                            #01-60 S608549<br />
+                            (Mondays - Sundays: 11am - 9pm)<br />
+                            +65 6951 3296
+                        </p>
+                        <a href="https://www.michaeltrio.com/make-an-appointment?location=tp"
+                            class="btn btn-blue small-btn">Book
+                            Now</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-24 p-0 hidden-xs">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-jem.jpg" alt="" class="w-100">
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-sm-12 col-xs-24 p-0">
+                    <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-np.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-sm-12 col-xs-24 p-0 box">
+                    <div class="py-5">
+                        <h3>Northpoint City Showroom</h3>
+                        <p class="my-3">
+
+                            Yishun Ave 2, North Wing<br />
+                            #01-22 Northpoint City S769098<br />
+                            (Mondays - Sundays: 11am - 9.30pm)<br />
+                            +65 6969 1492
+                        </p>
+                        <a href="https://www.michaeltrio.com/make-an-appointment?location=np"
+                            class="btn btn-blue small-btn">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

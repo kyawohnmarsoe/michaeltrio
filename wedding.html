@@ -3,6 +3,666 @@
 
 <head>
   <style>
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+    .pb-sm-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .page-main {
+      padding: 0px;
+    }
+
+    .page-footer h5 {
+      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+      margin: 0 0 5px;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --lightblue: #E5F3FE;
+      --lighterblue: #F0F6FB;
+      --darkblue: #325683;
+      --lightorange: #FFECE6;
+      --lighterorange: #fff6f3;
+      --white: #ffffff;
+      --black: #606060;
+      --companyblue: #9BB8D3;
+      --cream: #F7F3F0;
+      --oragne: #FFB898;
+    }
+
+    .bg-cream {
+      background-color: var(--cream);
+    }
+
+    .bg-lighterorange {
+      background-color: var(--lighterorange);
+    }
+
+    .bg-lightorange {
+      background-color: var(--lightorange);
+    }
+
+    .bg-orange {
+      background-color: var(--oragne);
+    }
+
+    .bg-lighterblue {
+      background-color: var(--lighterblue);
+    }
+
+    .bg-lightblue {
+      background-color: var(--lightblue);
+    }
+
+    body {
+      color: var(--black);
+      font-size: 14px;
+    }
+
+    a.textblack {
+      color: var(--black);
+    }
+
+    a.textblack:hover {
+      color: var(--black);
+    }
+
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .p-wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      padding: 0 50px;
+    }
+
+
+
+    h1,
+    h3 {
+      font-family: Times New Roman;
+      font-style: normal;
+      font-weight: normal;
+      color: var(--black);
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: 0.05em;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 37px;
+
+    }
+
+    h5 {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+
+    }
+
+    h6 {
+      font-size: 17px;
+    }
+
+    .btn {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: normal;
+      border-radius: 5px;
+      /* height: 40px; */
+      padding: 10px;
+      display: inline-block;
+      margin: auto;
+      min-width: 217px;
+    }
+
+    .btn-blue {
+      color: var(--white) !important;
+      background-color: var(--companyblue);
+      transition: background-color 2s;
+    }
+
+    .btn-blue:hover {
+      color: var(--white);
+      background-color: var(--black);
+
+    }
+
+    .columns a.btn-blue-outline {
+      min-width: 120px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: var(--companyblue);
+      border: 2px solid var(--companyblue);
+      transition: all 1s;
+    }
+
+    .columns a.btn-blue-outline:hover {
+      color: var(--white);
+      background-color: var(--black);
+      border-color: transparent;
+    }
+
+    .columns a.btn-blue-outline.active {
+      color: var(--white);
+      background-color: var(--companyblue);
+    }
+
+    .studs-nav .btn {
+      display: inline-block;
+    }
+
+    .large-btn {
+      width: 347px;
+    }
+
+    .small-btn {
+      width: 217px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+      background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    .owl-item .item a:hover {
+      color: var(--black);
+    }
+
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+      background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+      background-color: var(--lighterblue);
+    }
+
+    .top8 {
+      padding-top: 8%;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .for-title {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .perfect-fit .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .diamond-image img {
+      width: 500px;
+    }
+
+    .owl-carousel .owl-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: auto; */
+    }
+
+    #diamonds-slider.owl-carousel .owl-item {
+      height: 250px;
+    }
+
+    #top-selling-slider.owl-carousel .owl-item {
+      align-items: flex-start;
+    }
+
+    .owl-carousel .owl-item img {
+      width: 100px;
+      transition: all 1s;
+    }
+
+
+    .owl-carousel .owl-item.center img {
+      width: 200px;
+      margin: auto;
+    }
+
+    .owl-carousel .owl-item.center {
+      margin: 0px 20px;
+    }
+
+    .owl-item article>a {
+      display: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .owl-item.center article>a {
+      margin-top: 10px;
+      display: block;
+    }
+
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+      top: auto;
+      bottom: -40px;
+    }
+
+    .owl-carousel .owl-nav [class*='owl-']:before {
+      font-size: 40px;
+    }
+
+    .columns a {
+      color: var(--black);
+    }
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .ct025 {
+      width: 10px;
+      margin: auto;
+    }
+
+    .ct030 {
+      width: 11px;
+      margin: auto;
+    }
+
+    .ct033 {
+      width: 12px;
+      margin: auto;
+    }
+
+    .ct050 {
+      width: 14px;
+      margin: auto;
+
+    }
+
+    .ct060 {
+      width: 14.3px;
+      margin: auto;
+
+    }
+
+    .ct070 {
+      width: 15px;
+      margin: auto;
+
+    }
+
+    .ct075 {
+      width: 15.5px;
+      margin: auto;
+
+    }
+
+    .ct080 {
+      width: 15.7px;
+      margin: auto;
+
+    }
+
+    .ct090 {
+      width: 16px;
+      margin: auto;
+
+    }
+
+    .ct100 {
+      margin: auto;
+      width: 18px;
+    }
+
+    .ct125 {
+      margin: auto;
+      width: 22px;
+    }
+
+    .ct150 {
+      margin: auto;
+      width: 25px;
+    }
+
+    .ct200 {
+      margin: auto;
+      width: 30px;
+    }
+
+    .diamond-thumbnail {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 300;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border 1s;
+    }
+
+    .diamond-thumbnail .diamond-size {
+      font-size: 11px;
+    }
+
+    .diamond-thumbnail.bg-white:hover {
+      border: 2px solid var(--companyblue);
+    }
+
+    .active .diamond-thumbnail.bg-white {
+      border: 2px solid var(--companyblue);
+    }
+
+    .diamond-thumbnail-img {
+      height: 70px;
+      padding: 10px 0px;
+      display: flex;
+    }
+
+    .diamond-price {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .diamond-quality {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .spinning-diamond {
+      width: 420px;
+      height: 420px;
+      border-radius: 20px;
+    }
+
+    .selling.No {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .selling.No .diamond-thumbnail.bg-white:hover {
+      border: 2px solid transparent;
+    }
+
+    .fa-green {
+      color: #5EE9AD;
+    }
+
+    .owl-carousel .owl-item a img:hover {
+      filter: contrast(130%);
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .desktop-show {
+      display: block;
+    }
+
+    .mobile-show {
+      display: none;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 1199.98px) {
+
+      h1 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      h3 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h5 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .btn {
+        /* height: 35px; */
+      }
+
+      .spinning-diamond {
+        width: 380px;
+        height: 380px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 767.98px) {
+
+
+
+      .mx-xs-3 {
+        margin: auto 15px !important;
+      }
+
+      .m-xs-auto {
+        margin: auto !important;
+      }
+
+      .pt-xs-3 {
+        padding-top: 1rem !important;
+      }
+
+      .spacing-xs-t {
+        padding-top: 20px !important;
+      }
+
+      .spacing-xs-b {
+        padding-bottom: 20px !important;
+      }
+
+      .pb-sm-5 {
+        padding-bottom: 0 !important;
+      }
+
+      .col-sm-12 {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      p {
+        padding: 0;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 22px;
+
+      }
+
+      .my-4 {
+        margin-top: 1.2rem !important;
+      }
+
+      .row {
+        display: block;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .perfect-fit-bg {
+        background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+      }
+
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      h5 {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 15px;
+        /* height: 30px; */
+      }
+
+      .large-btn {
+        width: 217px;
+      }
+
+      .diamond-image img {
+        width: 80%;
+      }
+
+      #diamonds-slider.owl-carousel .owl-item {
+        height: 200px;
+      }
+
+      .owl-carousel .owl-item img {
+        width: 70px;
+        transition: unset;
+      }
+
+      .owl-carousel .owl-item.center img {
+        width: 150px;
+      }
+
+      .owl-carousel .owl-item.center {
+        margin: 0px 20px;
+      }
+
+      .spinning-diamond {
+        width: 295px;
+        height: 295px;
+      }
+
+      .diamond-thumbnail .diamond-size {
+        font-size: 11px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+      .desktop-show {
+        display: none;
+      }
+
+      .mobile-show {
+        display: block;
+      }
+
+    }
+
     .wedding-banner {
       background-image: url(https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Banner-1920.jpg);
       background-size: cover;
@@ -67,10 +727,7 @@
       padding: 0;
     }
 
-    .for-title {
-      text-transform: uppercase;
-      font-weight: 500;
-    }
+
 
     @media (max-width: 1199.98px) {
       .wedding-banner {

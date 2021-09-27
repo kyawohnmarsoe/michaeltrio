@@ -663,371 +663,250 @@
 
         }
 
-        .custom-banner {
-            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1920.jpg);
-            background-size: cover;
-            background-position-x: center;
-            background-position-y: center;
+        .jewel-banner {
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery1_-_Banner_1920x400.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
 
         }
 
-        .custom-banner-bg {
-            background-color: transparent;
+        .gift-banner {
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
             height: 400px;
         }
 
-        .recent-custom img {
-            transition: all 2s;
-        }
-
-        .recent-custom img:hover {
-            transform: scale(1.5);
-        }
-
-        .process-icon {
-            width: 80px;
-        }
-
-        .things-to-note-2 .process-icon {
-            width: 40px;
-        }
-
-
-        .things-steps {
-
-            text-align: center;
-        }
-
-        .things-to-note {
-            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM4-banner-1200.jpg);
+        .bg-orange-img {
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_BG-_Pink_700x700_.jpg);
             background-size: cover;
-            background-position-x: right;
-            background-position-y: bottom;
-
         }
 
-        .things-to-note-bg {
-            background-color: transparent;
-            height: 400px;
+        .bg-blue-img {
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_BG-_Blue_700x700_.jpg.jpg);
+            background-size: cover;
         }
 
-        .process-no {
-            width: 30px;
+        .max-width-600 {
+            max-width: 600px;
         }
 
-        .visible-xs-inline {
-            display: none;
+        .d-sm-flex {
+            display: flex;
         }
 
-        @media (max-width: 1199.98px) {
-
-            .custom-banner {
-                background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1200.jpg);
-            }
+        .w-sm-50 {
+            width: 50%;
         }
 
         @media (max-width: 767.98px) {
-            .visible-xs-inline {
-                display: inline-block;
-            }
-
-            .custom-banner-bg {
-                background-color: var(--lightblue);
-                height: auto;
-            }
-
-            .custom-banner {
-                background-image: none;
-                padding-bottom: 0;
-            }
-
-            .process-icon {
-                width: 60px;
-            }
-
-            .process .process-icon {
-                padding: 0 10px;
-            }
-
-            .things-steps {
-                display: flex;
-                text-align: left;
-            }
-
-            .process-steps h3,
-            .process-steps h5,
-            .process-steps h6 {
-                display: inline-block;
-            }
-
-            .things-to-note {
+            .jewel-banner {
                 background-image: none;
             }
 
+            .gift-banner {
+                background-image: none;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <section class="custom-banner">
-
+    <section class="jewel-banner">
+        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery1_-_Banner_1920x400.jpg" alt=""
+            class="w-100 visible-xs ">
         <div class="container">
             <div class="row ">
-                <div class=" visible-xs ">
-
-                    <img src="https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_768.jpg"
-                        alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
-                </div>
-
-                <div class="col-sm-10 col-md-12 custom-banner-bg hidden-xs">
-
-                </div>
-
-                <div class="col-sm-14 col-md-12 box  custom-banner-bg py-5">
+                <div class="col-sm-14 banner-height-400 hidden-xs"></div>
+                <div class="col-sm-10 box py-xs-5">
                     <div>
-                        <h1>Custom Made Jewellery</h1>
-                        <p class="my-4">Design your ideal jewellery. At Michael Trio,
-                            we offer jewellery customisation service to help bring
-                            your idea to life. From material to style, let us know
-                            your preference and our team of designers
-                            and jewellers will do their magic. </p>
-
-                        <a href="https://www.michaeltrio.com/make-an-appointment" class="btn btn-blue large-btn "
-                            role="button">Schedule An Appointment</a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="recent-custom my-5 desktop-show">
-        <div class="container">
-            <h1 class="text-center  mb-4">Recent Customization Rating & Reviews</h1>
-            <div class="row flex-wrap">
-                <div class="col-xs-8 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/2---WR0148F-1L-18KW-RM15848.jpg"
-                            alt="" class="img-responsive w-100" />
-                    </div>
-                </div>
-                <div class="col-xs-8 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/3---MSR0085-RM17201.jpg" alt=""
-                            class="img-responsive w-100" />
-                    </div>
-                </div>
-                <div class="col-xs-8 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/5---WR0144-DSC04397.jpg" alt=""
-                            class="img-responsive w-100" />
+                        <h1 class="text-center ">Jewellery</h1>
+                        <p class="text-ceter py-3">Covetable jewellery pieces hand-crafted
+                            for any occasion. Explore our extensive
+                            collection of everyday jewellery</p>
+                        <a href="#" class="btn btn-blue large-btn">shop</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+    <section class="">
+        <div class="container d-sm-flex">
+            <div class="w-sm-50 bg-orange-img box py-5">
+                <div class="max-width-600 py-5">
+                    <div class="text-center"><img
+                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                            alt="" class="w-50 visible-xs m-auto"></div>
+                    <h1 class="text-center ">Ring</h1>
+                    <p class="text-ceter py-3">Classic, opulent, or delicate - regardless
+                        of the occasion, we have the perfect
+                        ring to complement every look.</p>
+                    <div class="text-center"><img
+                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                            alt="" class="w-50 hidden-xs"></div>
 
-    <section class="recent-custom my-5 mobile-show">
-        <div class="container">
-            <h1 class="text-center  mb-4">Recent Customization Rating & Reviews</h1>
-            <div class="row flex-wrap">
-                <div class="col-xs-24 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/2---WR0148F-1L-18KW-RM15848.jpg"
-                            alt="" class="img-responsive w-100" />
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/3---MSR0085-RM17201.jpg" alt=""
-                            class="img-responsive w-100" />
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-8 mb-3">
-                    <div class="w-100 overflow-hidden">
-                        <img src="https://www.michaeltrio.com/pub/media/0custompage/5---WR0144-DSC04397.jpg" alt=""
-                            class="img-responsive w-100" />
-                    </div>
                 </div>
             </div>
-        </div>
+            <div class="w-sm-50 bg-blue-img box py-5">
+                <div class="max-width-600 py-5">
+                    <div class="text-center"><img
+                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                            alt="" class="w-50 visible-xs m-auto"></div>
+                    <h1 class="text-center ">Necklace</h1>
+                    <p class="text-ceter py-3">Stunning hand-crafted necklaces from
+                        everyday essentials to statement pieces. </p>
+                    <div class="text-center"><img
+                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                            alt="" class="w-50 hidden-xs"></div>
 
-    </section>
-
-    <section class="process mb-5">
-        <div class="container">
-            <h1 class="text-center mb-4">Custom-Made Process</h1>
-            <div class="row mb-4">
-                <div class="col-xs-24 col-sm-8 bg-lighterorange">
-                    <div class="text-center py-5">
-
-                        <div class="process-steps">
-                            <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_1-40x40px.png"
-                                alt="" class="m-auto process-no hidden-xs">
-                            <div>
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_1-40x40px.png"
-                                    alt="" class="m-auto process-no visible-xs-inline">
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_1_Consultation.png"
-                                    alt="" class="m-auto py-3 process-icon" />
-                                <h5>Consultation</h5>
-                            </div>
-                        </div>
-
-
-
-                        <p class="px-4 pt-4 process-text">Feel free to bring along any materials that will help us
-                            better understand your ideal design. Need some help in your ideation process? Fret not, as
-                            we have a collection of sample products at our showrooms that might just give you some
-                            inspiration. </p>
-                    </div>
                 </div>
-                <div class="col-xs-24 col-sm-8 bg-lighterblue">
-                    <div class="text-center py-5">
-                        <div class="process-steps">
-                            <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_2-40x40px.png"
-                                alt="" class="m-auto process-no hidden-xs">
-                            <div>
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_2-40x40px.png"
-                                    alt="" class="m-auto process-no visible-xs-inline">
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_2_Design.png "
-                                    alt="" class="m-auto py-3 process-icon" />
-                                <h5>Design</h5>
-                            </div>
-                        </div>
-                        <p class="px-4 pt-4 process-text">Upon confirmation of the design, a deposit will be required
-                            and our designer will begin sketching the design in accordance with your preference. Once
-                            completed, a sketch of your customised item will be shared for final approval. </p>
-                    </div>
-                </div>
-                <div class="col-xs-24 col-sm-8 bg-lighterorange">
-                    <div class="text-center py-5">
-                        <div class="process-steps">
-                            <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_3-40x40px.png"
-                                alt="" class="m-auto process-no hidden-xs">
-                            <div>
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_3-40x40px.png"
-                                    alt="" class="m-auto process-no visible-xs-inline">
-                                <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_3_Casting-and-Setting.png"
-                                    alt="" class="m-auto py-3 process-icon" />
-                                <h5>Casting and Setting</h5>
-                            </div>
-                        </div>
-                        <p class="px-4 pt-4 process-text">Once the design is approved, production of your customised
-                            jewellery will commence and all you have to do is sit back and relax! </p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="https://www.michaeltrio.com/make-an-appointment" class="btn btn-blue large-btn "
-                    role="button">Schedule An Appointment</a>
             </div>
         </div>
     </section>
 
-    <section class="things-to-note ">
+    <section class="d-sm-flex">
+        <div class="w-sm-50 bg-orange-img box py-5">
+            <div class="max-width-600 py-5">
+                <div class="text-center"><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                        alt="" class="w-50 visible-xs m-auto"></div>
+                <h1 class="text-center ">Ring</h1>
+                <p class="text-ceter py-3">Classic, opulent, or delicate - regardless
+                    of the occasion, we have the perfect
+                    ring to complement every look.</p>
+                <div class="text-center"><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                        alt="" class="w-50 hidden-xs"></div>
 
+            </div>
+        </div>
+        <div class="w-sm-50 bg-blue-img box py-5">
+            <div class="max-width-600 py-5">
+                <div class="text-center"><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                        alt="" class="w-50 visible-xs m-auto"></div>
+                <h1 class="text-center ">Necklace</h1>
+                <p class="text-ceter py-3">Stunning hand-crafted necklaces from
+                    everyday essentials to statement pieces. </p>
+                <div class="text-center"><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
+                        alt="" class="w-50 hidden-xs"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="gift-banner">
+        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts.jpg" alt=""
+            class="w-100 visible-xs ">
         <div class="container">
             <div class="row ">
-
-                <div class="col-sm-12 box  things-to-note-bg  hidden-xs">
+                <div class="col-sm-12 banner-height-400 hidden-xs"></div>
+                <div class="col-sm-12 box py-xs-5">
                     <div>
-                        <h1>Things To Note
-                            for Customization</h1>
+                        <h1 class="text-center ">Gift</h1>
+                        <p class="text-ceter py-3">Shop our dainty jewllery pieces that make the perfect
+                            personalised gift for any special occasion. </p>
+                        <a href="#" class="btn btn-blue large-btn">shop</a>
                     </div>
                 </div>
-
-                <div class="col-sm-12 things-to-note-bg hidden-xs">
-
-                </div>
-
-                <div class="col-sm-12 box visible-xs mb-4">
-                    <div>
-                        <h1>Things To Note<br />
-                            for Customization</h1>
-                    </div>
-                </div>
-                <div class=" visible-xs ">
-
-                    <img src="https://www.michaeltrio.com/pub/media/0custompage/CM4-banner-768.jpg"
-                        alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
-                </div>
-
             </div>
-
-
         </div>
-
     </section>
 
-    <section class="things-to-note-2 ">
+    <section class="py-5">
         <div class="container">
-            <div class="row flex-wrap">
-                <div class=" col-sm-6 mb-3">
-                    <div class="things-steps">
-                        <div class="process-steps">
-                            <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_1_-_PRICE.png"
-                                alt="" class="m-auto py-3 process-icon" />
-                        </div>
+            <h1 class="text-center ">Dainity Ring Gifts</h1>
+            <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery4_-_Dainty_Ring_Gits.jpg" alt=""
+                class="w-100 visible-xs py-3">
 
-                        <div>
-                            <h6 class="px-3">PRICE</h6>
-                            <p class="px-3">Our custom design services
-                                start at a rate of SGD 1,000
-                                and above. </p>
-                        </div>
+            <div class="row py-4 px-5 hidden-xs">
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery4_-_-1.png" alt=""
+                            class="w-100">
                     </div>
                 </div>
-                <div class=" col-sm-6 mb-3">
-                    <div class="things-steps">
-                        <div class="process-steps"><img
-                                src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_2_-_DEPOSIT.png"
-                                alt="" class="m-auto py-3 process-icon" />
-
-                        </div>
-                        <div>
-                            <h6 class="px-3">DEPOSIT</h6>
-                            <p class="px-3">For all custom-made items, a minimum
-                                deposit of 50% will be required. </p>
-                        </div>
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery4_-_2.png" alt=""
+                            class="w-100">
                     </div>
                 </div>
-                <div class=" col-sm-6 mb-3">
-                    <div class="things-steps">
-                        <div class="process-steps"><img
-                                src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_3_-_TIME-FRAME.png"
-                                alt="" class="m-auto py-3 process-icon" />
-
-                        </div>
-                        <div>
-                            <h6 class="px-3">TIME-FRAME</h6>
-                            <p class="px-3">The crafting time normally takes 6-8 weeks
-                                upon confirmation of design. </p>
-                        </div>
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery4_-_3.png" alt=""
+                            class="w-100">
                     </div>
                 </div>
-                <div class=" col-sm-6 mb-3">
-                    <div class="things-steps">
-                        <div class="process-steps"><img
-                                src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_4_-_NON-REFUNDABLE.png"
-                                alt="" class="m-auto py-3 process-icon" />
-
-                        </div>
-                        <div>
-                            <h6 class="px-3">NON-REFUNDABLE</h6>
-                            <p class="px-3">All custom-made items are non-refundable at any
-                                stage of the customisation process. </p>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
+            <p class="text-center py-3 p-wrapper">Minimalist and classic dainty rings. Stacked or alone, our dainty
+                rings make the perfect
+                gift and a quintessential addition to any jewellery collection. </p>
+
+
         </div>
     </section>
+
+
+    <section class="py-5">
+
+        <div class="container">
+            <h1 class="text-center ">Love Imprint Engravable Gifts</h1>
+
+            <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery5_-_Love_Imprint_Engravable.jpg"
+                alt="" class="w-100 visible-xs py-3">
+
+            <div class="row py-4 px-5 hidden-xs">
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery5-4.png" alt=""
+                            class="w-100">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery5-5.png" alt=""
+                            class="w-100">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="bg-cream px-3">
+                        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery5-6.png" alt=""
+                            class="w-100">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center py-3 p-wrapper">Embrace and honour your uniqueness with our Love Imprint Engraveble
+                Series.
+                Add a personalised touch to your gift for that someone special. </p>
+
+        </div>
+    </section>
+
 
 </body>
 
