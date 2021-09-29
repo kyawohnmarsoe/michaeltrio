@@ -3,6 +3,666 @@
 
 <head>
   <style>
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+    .pb-sm-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .page-main {
+      padding: 0px;
+    }
+
+    .page-footer h5 {
+      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+      margin: 0 0 5px;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --lightblue: #E5F3FE;
+      --lighterblue: #F0F6FB;
+      --darkblue: #325683;
+      --lightorange: #FFECE6;
+      --lighterorange: #fff6f3;
+      --white: #ffffff;
+      --black: #606060;
+      --companyblue: #9BB8D3;
+      --cream: #F7F3F0;
+      --oragne: #FFB898;
+    }
+
+    .bg-cream {
+      background-color: var(--cream);
+    }
+
+    .bg-lighterorange {
+      background-color: var(--lighterorange);
+    }
+
+    .bg-lightorange {
+      background-color: var(--lightorange);
+    }
+
+    .bg-orange {
+      background-color: var(--oragne);
+    }
+
+    .bg-lighterblue {
+      background-color: var(--lighterblue);
+    }
+
+    .bg-lightblue {
+      background-color: var(--lightblue);
+    }
+
+    body {
+      color: var(--black);
+      font-size: 14px;
+    }
+
+    a.textblack {
+      color: var(--black);
+    }
+
+    a.textblack:hover {
+      color: var(--black);
+    }
+
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .p-wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      padding: 0 50px;
+    }
+
+
+
+    h1,
+    h3 {
+      font-family: Times New Roman;
+      font-style: normal;
+      font-weight: normal;
+      color: var(--black);
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: 0.05em;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 37px;
+
+    }
+
+    h5 {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+
+    }
+
+    h6 {
+      font-size: 17px;
+    }
+
+    .btn {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: normal;
+      border-radius: 5px;
+      /* height: 40px; */
+      padding: 10px;
+      display: inline-block;
+      margin: auto;
+      min-width: 217px;
+    }
+
+    .btn-blue {
+      color: var(--white) !important;
+      background-color: var(--companyblue);
+      transition: background-color 2s;
+    }
+
+    .btn-blue:hover {
+      color: var(--white);
+      background-color: var(--black);
+
+    }
+
+    .columns a.btn-blue-outline {
+      min-width: 120px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: var(--companyblue);
+      border: 2px solid var(--companyblue);
+      transition: all 1s;
+    }
+
+    .columns a.btn-blue-outline:hover {
+      color: var(--white);
+      background-color: var(--black);
+      border-color: transparent;
+    }
+
+    .columns a.btn-blue-outline.active {
+      color: var(--white);
+      background-color: var(--companyblue);
+    }
+
+    .studs-nav .btn {
+      display: inline-block;
+    }
+
+    .large-btn {
+      width: 347px;
+    }
+
+    .small-btn {
+      width: 217px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+      background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    .owl-item .item a:hover {
+      color: var(--black);
+    }
+
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+      background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+      background-color: var(--lighterblue);
+    }
+
+    .top8 {
+      padding-top: 8%;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .for-title {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .perfect-fit .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .diamond-image img {
+      width: 500px;
+    }
+
+    .owl-carousel .owl-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: auto; */
+    }
+
+    #diamonds-slider.owl-carousel .owl-item {
+      height: 250px;
+    }
+
+    #top-selling-slider.owl-carousel .owl-item {
+      align-items: flex-start;
+    }
+
+    .owl-carousel .owl-item img {
+      width: 100px;
+      transition: all 1s;
+    }
+
+
+    .owl-carousel .owl-item.center img {
+      width: 200px;
+      margin: auto;
+    }
+
+    .owl-carousel .owl-item.center {
+      margin: 0px 20px;
+    }
+
+    .owl-item article>a {
+      display: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .owl-item.center article>a {
+      margin-top: 10px;
+      display: block;
+    }
+
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+      top: auto;
+      bottom: -40px;
+    }
+
+    .owl-carousel .owl-nav [class*='owl-']:before {
+      font-size: 40px;
+    }
+
+    .columns a {
+      color: var(--black);
+    }
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .ct025 {
+      width: 10px;
+      margin: auto;
+    }
+
+    .ct030 {
+      width: 11px;
+      margin: auto;
+    }
+
+    .ct033 {
+      width: 12px;
+      margin: auto;
+    }
+
+    .ct050 {
+      width: 14px;
+      margin: auto;
+
+    }
+
+    .ct060 {
+      width: 14.3px;
+      margin: auto;
+
+    }
+
+    .ct070 {
+      width: 15px;
+      margin: auto;
+
+    }
+
+    .ct075 {
+      width: 15.5px;
+      margin: auto;
+
+    }
+
+    .ct080 {
+      width: 15.7px;
+      margin: auto;
+
+    }
+
+    .ct090 {
+      width: 16px;
+      margin: auto;
+
+    }
+
+    .ct100 {
+      margin: auto;
+      width: 18px;
+    }
+
+    .ct125 {
+      margin: auto;
+      width: 22px;
+    }
+
+    .ct150 {
+      margin: auto;
+      width: 25px;
+    }
+
+    .ct200 {
+      margin: auto;
+      width: 30px;
+    }
+
+    .diamond-thumbnail {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 300;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border 1s;
+    }
+
+    .diamond-thumbnail .diamond-size {
+      font-size: 11px;
+    }
+
+    .diamond-thumbnail.bg-white:hover {
+      border: 2px solid var(--companyblue);
+    }
+
+    .active .diamond-thumbnail.bg-white {
+      border: 2px solid var(--companyblue);
+    }
+
+    .diamond-thumbnail-img {
+      height: 70px;
+      padding: 10px 0px;
+      display: flex;
+    }
+
+    .diamond-price {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .diamond-quality {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .spinning-diamond {
+      width: 420px;
+      height: 420px;
+      border-radius: 20px;
+    }
+
+    .selling.No {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .selling.No .diamond-thumbnail.bg-white:hover {
+      border: 2px solid transparent;
+    }
+
+    .fa-green {
+      color: #5EE9AD;
+    }
+
+    .owl-carousel .owl-item a img:hover {
+      filter: contrast(130%);
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .desktop-show {
+      display: block;
+    }
+
+    .mobile-show {
+      display: none;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 1199.98px) {
+
+      h1 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      h3 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h5 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .btn {
+        /* height: 35px; */
+      }
+
+      .spinning-diamond {
+        width: 380px;
+        height: 380px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 767.98px) {
+
+
+
+      .mx-xs-3 {
+        margin: auto 15px !important;
+      }
+
+      .m-xs-auto {
+        margin: auto !important;
+      }
+
+      .pt-xs-3 {
+        padding-top: 1rem !important;
+      }
+
+      .spacing-xs-t {
+        padding-top: 20px !important;
+      }
+
+      .spacing-xs-b {
+        padding-bottom: 20px !important;
+      }
+
+      .pb-sm-5 {
+        padding-bottom: 0 !important;
+      }
+
+      .col-sm-12 {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      p {
+        padding: 0;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 22px;
+
+      }
+
+      .my-4 {
+        margin-top: 1.2rem !important;
+      }
+
+      .row {
+        display: block;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .perfect-fit-bg {
+        background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+      }
+
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      h5 {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 15px;
+        /* height: 30px; */
+      }
+
+      .large-btn {
+        width: 217px;
+      }
+
+      .diamond-image img {
+        width: 80%;
+      }
+
+      #diamonds-slider.owl-carousel .owl-item {
+        height: 200px;
+      }
+
+      .owl-carousel .owl-item img {
+        width: 70px;
+        transition: unset;
+      }
+
+      .owl-carousel .owl-item.center img {
+        width: 150px;
+      }
+
+      .owl-carousel .owl-item.center {
+        margin: 0px 20px;
+      }
+
+      .spinning-diamond {
+        width: 295px;
+        height: 295px;
+      }
+
+      .diamond-thumbnail .diamond-size {
+        font-size: 11px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+      .desktop-show {
+        display: none;
+      }
+
+      .mobile-show {
+        display: block;
+      }
+
+    }
+
     .diamond-banner {
       background-image: url(https://www.michaeltrio.com/pub/media/0newdiamondpage/MT2-Diamond-Banner-Desktop-1920-768.jpg);
       background-size: cover;
@@ -301,8 +961,8 @@
               Pure Hearts<sup>TM</sup> by Michael Trio combines the best of
               both worlds, presenting a diamond with a symmetrical
               balance of lights and specifications.</p>
-            <a href="https://www.michaeltrio.com/loose-diamonds/" class="btn btn-blue large-btn " role="button">View
-              Diamonds</a>
+            <a href="https://www.michaeltrio.com/loose-diamonds/" class="btn btn-blue large-btn " role="button">Explore
+              Pure Hearts</a>
           </div>
         </div>
 
@@ -490,12 +1150,12 @@
         </div>
         <div class="col-sm-12 box ">
           <div>
-            <h1>Lab Grown Diamond</h1>
+            <h1>Lab Grown Diamonds</h1>
 
             <p class="my-4">Our Lab Grown Diamonds and Earth Natural Diamonds offer identical sparkle <span
                 class="nowrap"> and chemical compositions</span>.</p>
             <a href="https://www.michaeltrio.com/loose-diamonds/lab-grown-diamonds" class="btn btn-blue large-btn "
-              role="button">Lab Grown</a>
+              role="button">Explore Lab Grown</a>
           </div>
         </div>
 
@@ -539,52 +1199,52 @@
     var diamondDesc = {
       round: {
         title: "ROUND BRILLIANT CUT",
-        text: "The round brilliant cut diamond is the most popular shape of diamond. For hundreds of years, diamond cutters have been working with this cut to maximize its brilliance and fire. While this cut offers great flexibility within the four C’s, you will want to select higher quality grades to bring out the most brilliance within a round diamond."
+        text: "The Round Brilliant cut diamond is by far the most coveted diamond shape. Aside from being the most iconic diamond shape, its cone-shaped structure maximises light refraction through the top of the diamond hence it sparkles brighter than diamonds of any other shape. A Round Brilliant cut diamond should have 58 facets with 33 facets on the crown and 25 facets on the pavilion. "
       },
       princess: {
 
         title: "PRINCESS CUT",
-        text: "Princess cut diamonds are exceptionally brilliant because of the way they are cut and are available in both square and rectangular shapes. The color that is emitted from princess cut diamonds is very unique. While the color of other diamond is displayed mainly in the center, the princess cut diamonds show distinct color in each of the corners as well."
+        text: "The Princess cut has four pointed corners and was previously known as a square-cut diamond. It gives top brilliance and sparkles more than other square shapes. This exquisite shape has a similar facet pattern as a Round Brilliant cut and contains 50-58 facets. "
       },
       emerald: {
 
         title: "EMERALD CUT",
-        text: "Emerald cut diamonds have a unique optical appearance because of the rectangular facets step-cut into the diamond’s pavilion. This cut showcases the diamond’s original clarity beautifully because of its large rectangular table which will also make inclusions and color more apparent."
+        text: "The Emerald cut is easily identified from its rectangular step-cut facets which give it its unique structure. An Emerald cut diamond has the same number of facets as a Round Brilliant cut and similarly, has 58 facets."
       },
       heart: {
 
         title: "HEART",
-        text: "Hearts are one of the most popular fancy cuts and that tradition hasn’t changed in over 600 years. In the 15th century, heart cut diamonds were gifted by royalty as a sign of friendship. Even Mary Queen of Scots once sent a heart-shaped diamond ring to Queen Elizabeth."
+        text: "The Heart cut is a classic symbol of love. The unique shape of a Heart diamond makes it a sweet choice for the romantic. When selecting a Heart diamond, symmetry would be a crucial factor to take note of. Ideally, the two halves of the heart should be symmetrical. A Heart diamond typically has 56-58 facets with 6-8 facets on the pavilion."
       },
       pear: {
 
         title: "PEAR SHAPED",
-        text: "Combining round and marquise cuts, the teardrop style of pear shaped diamonds is exceptional. The slender pear shape will give fingers and hands a slimmer appearance while creating a soft and delicate look. Pear shaped diamonds are cut to produce maximum brilliance, so it’s important to look for excellent symmetry."
+        text: "The Pear cut is a timeless vintage cut that combines the best attributes of a Round Brilliant cut and a Marquise cut diamond. Similar to a Round Brilliant cut diamond, a Pear cut diamond has 58 facets. Due to its unique shape, symmetry and ratio are two crucial aspects to look out for when selecting your diamond. "
       },
       asscher: {
 
         title: "ASSCHER CUT",
-        text: "Asscher cut diamonds are often mistaken for an emerald cut because of its similar cut style; however an asscher is square rather than rectangular. Created in the early 1920s, the asscher cut has recently resurged in popularity, especially amongst celebrities."
+        text: "The Asscher cut is a blend of the Princess and Emerald cut with 74 facets present. The Asscher cut is known for its x-shaped facet that can be seen from the top view. Because of its cropped corners, an Asscher cut diamond may appear octagonal and show slight colour at the corners."
       },
       cushion: {
 
         title: "CUSHION CUT",
-        text: "Sometimes called a pillow-cut diamond, the cushion cut is a timeless cut that has earned its name for its pillow shape. Cushion cut diamonds tend to have impeccable brilliance and clarity in their appearance which can be attributed to their rounded corners and larger facets. These diamonds are available in square and rectangular shapes."
+        text: "The Cushion cut, also referred to as the Mine or Old Mine cut, is a classic cut style that was particularly popular in the late 19th and early 20th centuries. The rounded corners give the diamond its soft and romantic appeal. The facets would vary depending on the category but a Cushion cut diamond is generally known to have 58-64 facets. "
       },
       radiant: {
 
         title: "RADIANT CUT",
-        text: "Perfect for those looking for a unique style, radiant cut diamonds feature uniquely trimmed corners which combines the lines of an emerald cut with the brilliance of a round diamond. The sparkle of this diamond cut looks beautiful when combined with a variety of other diamond cuts."
+        text: "The Radiant cut is a combination of the Emerald cut and the Round Brilliant cut. Created in 1977, this diamond shape is a popular choice for individuals who want the shape of an Emerald cut but also the brilliance of a Round Brilliant cut. With 70 facets, the Radiant cut is said to be one of the most brilliant diamond shapes available in the market. "
       },
       oval: {
 
         title: "OVAL CUT",
-        text: "Oval cut diamonds have a classic appearance with a modern twist! It is a popular cut in all types of jewelry, especially in engagement rings, making it easy to match with other jewelry. It has an incredible brilliance, similar to the round brilliant cut, but also has the advantage of accentuating long, slender finders."
+        text: "The Oval cut is a modified version of the classic Round Brilliant cut. This cut attains the brilliance of the Round Brilliant cut but in a unique shape. Invented in the mid-1900s, the relatively new Oval cut has proven to be an attractive style as its elongated shape creates the illusion of greater size. An Oval cut Diamond typically has 58 facets. "
       },
       marquise: {
 
         title: "MARQUISE CUT",
-        text: "A marquise cut diamond is a perfect shape for maximizing carat weight by emphasizing the size of the diamond. Its unique shape creates the effect of longer, more slender hands and fingers. The outline of a diamond is determined by its length to width ratio, which also provides an image of the shape and look of the diamond."
+        text: "The Marquise cut has a boat-like elongated elliptical shape. The boat-like shape of a Marquise cut diamond compliments the finger and the elongated body makes it appear larger than its actual carat weight. Similar to a Round Brilliant cut diamond, the Marquise cut diamond has 58 facets."
       }
     }
 

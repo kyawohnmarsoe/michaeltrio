@@ -1,29 +1,4 @@
 <style>
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
-    .pb-sm-5 {
-        padding-bottom: 3rem !important;
-    }
-
-    .page-main {
-        padding: 0px;
-    }
-
-    .page-footer h5 {
-        font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
-        margin: 0 0 5px;
-    }
-
-    .nowrap {
-        white-space: nowrap;
-        word-break: keep-all;
-    }
-
     * {
         box-sizing: border-box;
     }
@@ -64,6 +39,19 @@
     .bg-lightblue {
         background-color: var(--lightblue);
     }
+
+    .bg-white {
+        background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+        background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+        background-color: var(--lighterblue);
+    }
+
 
     body {
         color: var(--black);
@@ -202,37 +190,79 @@
         text-align: center;
     }
 
-    .custom-earrings-bg,
-    .custom-pendant-bg {
-        background-color: var(--lighterblue);
-    }
-
-    .perfect-fit-bg {
-        background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
-    }
-
-    .owl-item .item a:hover {
-        color: var(--black);
-    }
-
-    .bg-white {
-        background-color: var(--white);
-    }
-
-    .bg-lightgrey {
-        background-color: #FAFAFA;
-    }
-
-    .bg-lightgreyblue {
-        background-color: var(--lighterblue);
-    }
-
     .top8 {
         padding-top: 8%;
     }
 
     .row {
         display: flex;
+    }
+
+    .diamond-image img {
+        width: 500px;
+    }
+
+    .columns a {
+        color: var(--black);
+    }
+
+
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    .desktop-show {
+        display: block;
+    }
+
+    .mobile-show {
+        display: none;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .banner-height-500 {
+        height: 500px;
+    }
+
+    .banner-height-400 {
+        height: 400px;
+    }
+
+    .max-width-600 {
+        max-width: 600px;
+    }
+
+    .d-sm-flex {
+        display: flex;
+    }
+
+    .w-sm-50 {
+        width: 50%;
+    }
+
+    .w-80 {
+        width: 80%;
+    }
+
+    .pb-sm-5 {
+        padding-bottom: 3rem !important;
+    }
+
+    .pb-xs-5 {
+        padding-bottom: 0 !important;
+    }
+
+    .py-xs-5 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 
     .for-title {
@@ -249,8 +279,18 @@
         background-position-y: center;
     }
 
-    .diamond-image img {
-        width: 500px;
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+        background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+        background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .owl-item .item a:hover {
+        color: var(--black);
     }
 
     .owl-carousel .owl-item {
@@ -260,13 +300,6 @@
         /* height: auto; */
     }
 
-    #diamonds-slider.owl-carousel .owl-item {
-        height: 250px;
-    }
-
-    #top-selling-slider.owl-carousel .owl-item {
-        align-items: flex-start;
-    }
 
     .owl-carousel .owl-item img {
         width: 100px;
@@ -304,168 +337,33 @@
         font-size: 40px;
     }
 
-    .columns a {
-        color: var(--black);
-    }
-
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    .ct025 {
-        width: 10px;
-        margin: auto;
-    }
-
-    .ct030 {
-        width: 11px;
-        margin: auto;
-    }
-
-    .ct033 {
-        width: 12px;
-        margin: auto;
-    }
-
-    .ct050 {
-        width: 14px;
-        margin: auto;
-
-    }
-
-    .ct060 {
-        width: 14.3px;
-        margin: auto;
-
-    }
-
-    .ct070 {
-        width: 15px;
-        margin: auto;
-
-    }
-
-    .ct075 {
-        width: 15.5px;
-        margin: auto;
-
-    }
-
-    .ct080 {
-        width: 15.7px;
-        margin: auto;
-
-    }
-
-    .ct090 {
-        width: 16px;
-        margin: auto;
-
-    }
-
-    .ct100 {
-        margin: auto;
-        width: 18px;
-    }
-
-    .ct125 {
-        margin: auto;
-        width: 22px;
-    }
-
-    .ct150 {
-        margin: auto;
-        width: 25px;
-    }
-
-    .ct200 {
-        margin: auto;
-        width: 30px;
-    }
-
-    .diamond-thumbnail {
-        padding-top: 0px;
-        padding-bottom: 10px;
-        border-radius: 10px;
-        font-size: 11px;
-        font-weight: 300;
-        border: 2px solid transparent;
-        cursor: pointer;
-        transition: border 1s;
-    }
-
-    .diamond-thumbnail .diamond-size {
-        font-size: 11px;
-    }
-
-    .diamond-thumbnail.bg-white:hover {
-        border: 2px solid var(--companyblue);
-    }
-
-    .active .diamond-thumbnail.bg-white {
-        border: 2px solid var(--companyblue);
-    }
-
-    .diamond-thumbnail-img {
-        height: 70px;
-        padding: 10px 0px;
-        display: flex;
-    }
-
-    .diamond-price {
-        font-size: 14px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .diamond-quality {
-        font-size: 14px;
-        font-weight: 700;
-    }
-
-    .spinning-diamond {
-        width: 420px;
-        height: 420px;
-        border-radius: 20px;
-    }
-
-    .selling.No {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
-
-    .selling.No .diamond-thumbnail.bg-white:hover {
-        border: 2px solid transparent;
-    }
-
-    .fa-green {
-        color: #5EE9AD;
-    }
-
     .owl-carousel .owl-item a img:hover {
         filter: contrast(130%);
     }
 
-    .flex-wrap {
-        flex-wrap: wrap;
+    #diamonds-slider.owl-carousel .owl-item {
+        height: 250px;
     }
 
-    .overflow-hidden {
-        overflow: hidden;
+    #top-selling-slider.owl-carousel .owl-item {
+        align-items: flex-start;
     }
 
-    .desktop-show {
-        display: block;
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Old Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .page-main {
+        padding: 0px;
     }
 
-    .mobile-show {
-        display: none;
+    .page-footer h5 {
+        font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+        margin: 0 0 5px;
     }
 
-    .d-flex {
-        display: flex;
+    .nowrap {
+        white-space: nowrap;
+        word-break: keep-all;
     }
-
-
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -497,9 +395,6 @@
             width: 320px;
         }
 
-        .btn {
-            /* height: 35px; */
-        }
 
         .spinning-diamond {
             width: 380px;
@@ -511,15 +406,30 @@
             font-size: 12px;
         }
 
+        p {
+            padding: 0;
+        }
+
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 767.98px) {
 
+        .py-xs-5 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
 
+        .d-sm-flex {
+            display: block;
+        }
+
+        .w-sm-50 {
+            width: 100%;
+        }
 
         .mx-xs-3 {
             margin: auto 15px !important;
@@ -545,13 +455,18 @@
             padding-bottom: 0 !important;
         }
 
+        .pb-xs-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+
         .col-sm-12 {
             padding-left: 13px;
             padding-right: 13px;
-        }
-
-        p {
-            padding: 0;
         }
 
         .btn {

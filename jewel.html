@@ -4,14 +4,18 @@
 <head>
     <style>
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
 
         .pb-sm-5 {
             padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
         }
 
         .page-main {
@@ -469,6 +473,29 @@
             display: flex;
         }
 
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
 
 
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -515,15 +542,30 @@
                 font-size: 12px;
             }
 
+            p {
+                padding: 0;
+            }
+
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         @media (max-width: 767.98px) {
 
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
 
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
 
             .mx-xs-3 {
                 margin: auto 15px !important;
@@ -549,14 +591,21 @@
                 padding-bottom: 0 !important;
             }
 
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
             .col-sm-12 {
                 padding-left: 13px;
                 padding-right: 13px;
             }
 
-            p {
-                padding: 0;
-            }
+
 
             .btn {
                 font-size: 14px;
@@ -663,47 +712,41 @@
 
         }
 
-        .jewel-banner {
-            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery1_-_Banner_1920x400.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Jewellery Page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Jewellery Page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Jewellery Page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+        .jewel-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery1_-_Banner_1920x400.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: cover;
         }
 
         .gift-banner {
-            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts.jpg);
+            background-image: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts_1920x400.jpg);
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: bottom center;
+            background-size: cover;
         }
 
-        .banner-height-500 {
-            height: 500px;
-        }
-
-        .banner-height-400 {
-            height: 400px;
-        }
 
         .bg-orange-img {
-            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_BG-_Pink_700x700_.jpg);
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/orange.jpeg);
             background-size: cover;
         }
 
         .bg-blue-img {
-            background: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_BG-_Blue_700x700_.jpg.jpg);
+            background: url(https://www.michaeltrio.com/pub/media/0jewel/blue.jpeg);
             background-size: cover;
         }
 
-        .max-width-600 {
-            max-width: 600px;
-        }
 
-        .d-sm-flex {
-            display: flex;
-        }
+        @media (max-width: 1199.98px) {
+            .gift-banner {
+                background-image: url(https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts_1200x400.jpg);
 
-        .w-sm-50 {
-            width: 50%;
+            }
         }
 
         @media (max-width: 767.98px) {
@@ -715,122 +758,109 @@
                 background-image: none;
             }
 
-            .py-xs-5 {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-
-            .d-sm-flex {
-                display: block;
-            }
-
-            .w-sm-50 {
-                width: 100%;
-            }
         }
     </style>
 </head>
 
 <body>
     <section class="jewel-banner">
-        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery1_-_Banner_1920x400.jpg" alt=""
-            class="w-100 visible-xs ">
+        <img src="https://www.michaeltrio.com/pub/media/0jewel/Slice_1.png" alt="" class="w-100 visible-xs ">
         <div class="container">
             <div class="row ">
                 <div class="col-sm-14 banner-height-400 hidden-xs"></div>
                 <div class="col-sm-10 box py-xs-5">
                     <div>
                         <h1 class="text-center ">Jewellery</h1>
-                        <p class="text-ceter py-3">Covetable jewellery pieces hand-crafted
+                        <p class="text-center py-3">Covetable jewellery pieces hand-crafted
                             for any occasion. Explore our extensive
-                            collection of everyday jewellery</p>
-                        <a href="#" class="btn btn-blue large-btn">shop</a>
+                            collection of everyday jewellery.</p>
+                        <a href="#" class="btn btn-blue small-btn">Explore Jewellery</a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="">
-        <div class="container d-sm-flex">
-            <div class="w-sm-50 bg-orange-img box py-5">
-                <div class="max-width-600 py-5">
-                    <div class="text-center"><img
-                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                            alt="" class="w-50 visible-xs m-auto"></div>
-                    <h1 class="text-center ">Ring</h1>
-                    <p class="text-ceter py-3">Classic, opulent, or delicate - regardless
-                        of the occasion, we have the perfect
-                        ring to complement every look.</p>
-                    <div class="text-center"><img
-                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                            alt="" class="w-50 hidden-xs"></div>
-
-                </div>
-            </div>
-            <div class="w-sm-50 bg-blue-img box py-5">
-                <div class="max-width-600 py-5">
-                    <div class="text-center"><img
-                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                            alt="" class="w-50 visible-xs m-auto"></div>
-                    <h1 class="text-center ">Necklace</h1>
-                    <p class="text-ceter py-3">Stunning hand-crafted necklaces from
-                        everyday essentials to statement pieces. </p>
-                    <div class="text-center"><img
-                            src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                            alt="" class="w-50 hidden-xs"></div>
-
                 </div>
             </div>
         </div>
     </section>
 
     <section class="d-sm-flex">
-        <div class="w-sm-50 bg-orange-img box py-5">
-            <div class="max-width-600 py-5">
+        <div class="w-sm-50 bg-orange-img box py-xs-5">
+            <div class="max-width-600 ">
                 <div class="text-center"><img
                         src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                        alt="" class="w-50 visible-xs m-auto"></div>
-                <h1 class="text-center ">Ring</h1>
-                <p class="text-ceter py-3">Classic, opulent, or delicate - regardless
+                        alt="" class="w-80 visible-xs m-auto"></div>
+                <h1 class="text-center ">Rings</h1>
+                <p class="text-center py-3">Classic, opulent, or delicate - regardless
                     of the occasion, we have the perfect
                     ring to complement every look.</p>
                 <div class="text-center"><img
                         src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                        alt="" class="w-50 hidden-xs"></div>
+                        alt="" class="w-80 hidden-xs"></div>
 
             </div>
         </div>
-        <div class="w-sm-50 bg-blue-img box py-5">
-            <div class="max-width-600 py-5">
+        <div class="w-sm-50 bg-blue-img box pb-5">
+            <div class="max-width-600 ">
                 <div class="text-center"><img
-                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                        alt="" class="w-50 visible-xs m-auto"></div>
-                <h1 class="text-center ">Necklace</h1>
-                <p class="text-ceter py-3">Stunning hand-crafted necklaces from
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_2-4Nacklaces_-_700x700.png"
+                        alt="" class="w-80  m-auto"></div>
+                <h1 class="text-center ">Necklaces</h1>
+                <p class="text-center py-3">Stunning hand-crafted necklaces from
                     everyday essentials to statement pieces. </p>
                 <div class="text-center"><img
-                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_1-4Rings_-_700x700.png"
-                        alt="" class="w-50 hidden-xs"></div>
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery_-_2-4Nacklaces_-_700x700.png"
+                        alt="" class="w-80 hidden"></div>
 
             </div>
         </div>
     </section>
 
+    <section class="d-sm-flex">
+        <div class="w-sm-50 bg-orange-img text-center pb-xs-5 visible-xs">
+            <div class="max-width-600 m-auto">
+                <div class="text-center "><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery2_-_4-4Nacklaces2_-_700x400.png"
+                        alt="" class="w-100  m-auto"></div>
+                <h1 class="text-center pt-5">Bracelets</h1>
+                <p class="text-center py-3">Flatter every jewellery style to flatter
+                    every jewellery style. </p>
+            </div>
+        </div>
+        <div class="w-sm-50 bg-blue-img box ">
+            <div class="max-width-600 py-5">
+                <div class="text-center pb-xs-5"><img src="https://www.michaeltrio.com/pub/media/0jewel/jewellery-3.png"
+                        alt="" class="w-80 visible-xs m-auto"></div>
+                <h1 class="text-center ">Earrings</h1>
+                <p class="text-center py-3">From classic designs to creative twists,
+                    our exquisite hand-crafted earrings are a
+                    must-have fashion accessory. </p>
+                <div class="text-center"><img src="https://www.michaeltrio.com/pub/media/0jewel/jewellery-3.png" alt=""
+                        class="w-80 hidden-xs"></div>
 
-
+            </div>
+        </div>
+        <div class="w-sm-50 bg-orange-img text-center pb-xs-5 hidden-xs">
+            <div class="max-width-600 m-auto">
+                <div class="text-center "><img
+                        src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery2_-_4-4Nacklaces2_-_700x400.png"
+                        alt="" class="w-100  m-auto"></div>
+                <h1 class="text-center pt-5">Bracelets</h1>
+                <p class="text-center py-3">Flatter every jewellery style to flatter
+                    every jewellery style. </p>
+            </div>
+        </div>
+    </section>
 
     <section class="gift-banner">
-        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts.jpg" alt=""
+        <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery3_-_Gifts_768.400.jpg" alt=""
             class="w-100 visible-xs ">
         <div class="container">
             <div class="row ">
                 <div class="col-sm-12 banner-height-400 hidden-xs"></div>
                 <div class="col-sm-12 box py-xs-5">
                     <div>
-                        <h1 class="text-center ">Gift</h1>
-                        <p class="text-ceter py-3">Shop our dainty jewllery pieces that make the perfect
+                        <h1 class="text-center ">Gifts</h1>
+                        <p class="text-center py-3">Shop our dainty jewellery pieces that make the perfect
                             personalised gift for any special occasion. </p>
-                        <a href="#" class="btn btn-blue large-btn">shop</a>
+                        <a href="#" class="btn btn-blue small-btn">Explore Gifts</a>
                     </div>
                 </div>
             </div>
@@ -839,7 +869,7 @@
 
     <section class="py-5">
         <div class="container">
-            <h1 class="text-center ">Dainity Ring Gifts</h1>
+            <h1 class="text-center ">Dainty Ring Gifts</h1>
             <img src="https://www.michaeltrio.com/pub/media/0jewel/MT2_-_Jewellery4_-_Dainty_Ring_Gits.jpg" alt=""
                 class="w-100 visible-xs py-3">
 
