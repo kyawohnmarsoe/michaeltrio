@@ -3,30 +3,7 @@
 
 <head>
   <style>
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
-    .pb-sm-5 {
-      padding-bottom: 3rem !important;
-    }
-
-    .page-main {
-      padding: 0px;
-    }
-
-    .page-footer h5 {
-      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
-      margin: 0 0 5px;
-    }
-
-    .nowrap {
-      white-space: nowrap;
-      word-break: keep-all;
-    }
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     * {
       box-sizing: border-box;
@@ -69,8 +46,20 @@
       background-color: var(--lightblue);
     }
 
-    body {
-      color: var(--black);
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+      background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+      background-color: var(--lighterblue);
+    }
+
+
+    .mt2021 {
       font-size: 14px;
     }
 
@@ -83,15 +72,16 @@
     }
 
     html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
+    .mt2021,
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h3,
+    .mt2021 h4,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p {
       padding: 0;
+      color: var(--black);
     }
 
     .p-wrapper {
@@ -99,51 +89,16 @@
       margin: auto;
     }
 
-    p {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 24px;
-      letter-spacing: 0.05em;
-      padding: 0 50px;
+    .mt2021 .text-white {
+      color: white;
     }
 
-
-
-    h1,
-    h3 {
-      font-family: Times New Roman;
-      font-style: normal;
-      font-weight: normal;
-      color: var(--black);
-    }
-
-    h1 {
-      font-size: 36px;
-      line-height: 46px;
+    .mt2021 h1,
+    .mt2021 p {
       letter-spacing: 0.05em;
     }
 
-    h3 {
-      font-size: 32px;
-      line-height: 37px;
-
-    }
-
-    h5 {
-      font-family: Montserrat;
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 27px;
-
-    }
-
-    h6 {
-      font-size: 17px;
-    }
-
-    .btn {
+    .mt2021 .btn {
       font-size: 17px;
       line-height: 24px;
       font-weight: normal;
@@ -206,247 +161,20 @@
       text-align: center;
     }
 
-    .custom-earrings-bg,
-    .custom-pendant-bg {
-      background-color: var(--lighterblue);
-    }
-
-    .perfect-fit-bg {
-      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
-    }
-
-    .owl-item .item a:hover {
-      color: var(--black);
-    }
-
-    .bg-white {
-      background-color: var(--white);
-    }
-
-    .bg-lightgrey {
-      background-color: #FAFAFA;
-    }
-
-    .bg-lightgreyblue {
-      background-color: var(--lighterblue);
-    }
-
     .top8 {
       padding-top: 8%;
     }
 
-    .row {
+    .mt2021 .row {
       display: flex;
-    }
-
-    .for-title {
-      text-transform: uppercase;
-      font-weight: 500;
-      text-align: center;
-    }
-
-    .perfect-fit .diamond-image-bg {
-      height: 400px;
-      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
-      background-size: cover;
-      background-position-x: center;
-      background-position-y: center;
     }
 
     .diamond-image img {
       width: 500px;
     }
 
-    .owl-carousel .owl-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* height: auto; */
-    }
-
-    #diamonds-slider.owl-carousel .owl-item {
-      height: 250px;
-    }
-
-    #top-selling-slider.owl-carousel .owl-item {
-      align-items: flex-start;
-    }
-
-    .owl-carousel .owl-item img {
-      width: 100px;
-      transition: all 1s;
-    }
-
-
-    .owl-carousel .owl-item.center img {
-      width: 200px;
-      margin: auto;
-    }
-
-    .owl-carousel .owl-item.center {
-      margin: 0px 20px;
-    }
-
-    .owl-item article>a {
-      display: none;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    .owl-item.center article>a {
-      margin-top: 10px;
-      display: block;
-    }
-
-    .owl-carousel .owl-nav .owl-prev,
-    .owl-carousel .owl-nav .owl-next {
-      top: auto;
-      bottom: -40px;
-    }
-
-    .owl-carousel .owl-nav [class*='owl-']:before {
-      font-size: 40px;
-    }
-
     .columns a {
       color: var(--black);
-    }
-
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    .ct025 {
-      width: 10px;
-      margin: auto;
-    }
-
-    .ct030 {
-      width: 11px;
-      margin: auto;
-    }
-
-    .ct033 {
-      width: 12px;
-      margin: auto;
-    }
-
-    .ct050 {
-      width: 14px;
-      margin: auto;
-
-    }
-
-    .ct060 {
-      width: 14.3px;
-      margin: auto;
-
-    }
-
-    .ct070 {
-      width: 15px;
-      margin: auto;
-
-    }
-
-    .ct075 {
-      width: 15.5px;
-      margin: auto;
-
-    }
-
-    .ct080 {
-      width: 15.7px;
-      margin: auto;
-
-    }
-
-    .ct090 {
-      width: 16px;
-      margin: auto;
-
-    }
-
-    .ct100 {
-      margin: auto;
-      width: 18px;
-    }
-
-    .ct125 {
-      margin: auto;
-      width: 22px;
-    }
-
-    .ct150 {
-      margin: auto;
-      width: 25px;
-    }
-
-    .ct200 {
-      margin: auto;
-      width: 30px;
-    }
-
-    .diamond-thumbnail {
-      padding-top: 0px;
-      padding-bottom: 10px;
-      border-radius: 10px;
-      font-size: 11px;
-      font-weight: 300;
-      border: 2px solid transparent;
-      cursor: pointer;
-      transition: border 1s;
-    }
-
-    .diamond-thumbnail .diamond-size {
-      font-size: 11px;
-    }
-
-    .diamond-thumbnail.bg-white:hover {
-      border: 2px solid var(--companyblue);
-    }
-
-    .active .diamond-thumbnail.bg-white {
-      border: 2px solid var(--companyblue);
-    }
-
-    .diamond-thumbnail-img {
-      height: 70px;
-      padding: 10px 0px;
-      display: flex;
-    }
-
-    .diamond-price {
-      font-size: 14px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
-    .diamond-quality {
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .spinning-diamond {
-      width: 420px;
-      height: 420px;
-      border-radius: 20px;
-    }
-
-    .selling.No {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-
-    .selling.No .diamond-thumbnail.bg-white:hover {
-      border: 2px solid transparent;
-    }
-
-    .fa-green {
-      color: #5EE9AD;
-    }
-
-    .owl-carousel .owl-item a img:hover {
-      filter: contrast(130%);
     }
 
     .flex-wrap {
@@ -469,40 +197,131 @@
       display: flex;
     }
 
+    .banner-height-500 {
+      height: 500px;
+    }
+
+    .banner-height-400 {
+      height: 400px;
+    }
+
+    .max-width-600 {
+      max-width: 600px;
+    }
+
+    .d-sm-flex {
+      display: flex;
+    }
+
+    .w-sm-50 {
+      width: 50%;
+    }
+
+    .w-80 {
+      width: 80%;
+    }
+
+    .pb-sm-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .pb-xs-5 {
+      padding-bottom: 0 !important;
+    }
+
+    .py-xs-5 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .for-title {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .perfect-fit .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+      background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .mt2021 .owl-item .item a:hover {
+      color: var(--black);
+    }
+
+    .mt2021 .owl-carousel .owl-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: auto; */
+    }
 
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .mt2021 .owl-carousel .owl-item img {
+      width: 100px;
+      transition: all 1s;
+    }
+
+
+    .mt2021 .owl-carousel .owl-item.center img {
+      width: 200px;
+      margin: auto;
+    }
+
+    .mt2021 .owl-carousel .owl-item.center {
+      margin: 0px 20px;
+    }
+
+    .mt2021 .owl-item article>a {
+      display: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .mt2021 .owl-item.center article>a {
+      margin-top: 10px;
+      display: block;
+    }
+
+    .mt2021 .owl-carousel .owl-nav .owl-prev,
+    .mt2021 .owl-carousel .owl-nav .owl-next {
+      top: auto;
+      bottom: -40px;
+    }
+
+    .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+      font-size: 40px;
+    }
+
+    .mt2021 .owl-carousel .owl-item a img:hover {
+      filter: contrast(130%);
+    }
+
+    #diamonds-slider.owl-carousel .owl-item {
+      height: 250px;
+    }
+
+    #top-selling-slider.owl-carousel .owl-item {
+      align-items: flex-start;
+    }
 
     @media (max-width: 1199.98px) {
 
-      h1 {
-        font-size: 30px;
-        line-height: 34px;
-      }
-
-      h3 {
-        font-size: 25px;
-        line-height: 29px;
-      }
-
-      h5 {
-        font-size: 18px;
-        line-height: 25px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 22px;
-      }
-
       .diamond-image img {
         width: 320px;
-      }
-
-      .btn {
-        /* height: 35px; */
       }
 
       .spinning-diamond {
@@ -517,13 +336,21 @@
 
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 767.98px) {
 
+      .py-xs-5 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
 
+      .d-sm-flex {
+        display: block;
+      }
+
+      .w-sm-50 {
+        width: 100%;
+      }
 
       .mx-xs-3 {
         margin: auto 15px !important;
@@ -549,16 +376,21 @@
         padding-bottom: 0 !important;
       }
 
+      .pb-xs-5 {
+        padding-bottom: 3rem !important;
+      }
+
+      .py-xs-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
       .col-sm-12 {
         padding-left: 13px;
         padding-right: 13px;
       }
 
-      p {
-        padding: 0;
-      }
-
-      .btn {
+      .mt2021 .btn {
         font-size: 14px;
         line-height: 22px;
 
@@ -568,7 +400,7 @@
         margin-top: 1.2rem !important;
       }
 
-      .row {
+      .mt2021 .row {
         display: block;
       }
 
@@ -583,32 +415,11 @@
 
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 25px;
-        line-height: 29px;
-      }
 
-      h3 {
-        font-size: 20px;
-        line-height: 23px;
-      }
 
-      h5 {
-        font-size: 17px;
-        line-height: 20px;
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      .btn {
+      .mt2021 .btn {
         font-size: 14px;
         line-height: 15px;
         /* height: 30px; */
@@ -626,16 +437,16 @@
         height: 200px;
       }
 
-      .owl-carousel .owl-item img {
+      .mt2021 .owl-carousel .owl-item img {
         width: 70px;
         transition: unset;
       }
 
-      .owl-carousel .owl-item.center img {
+      .mt2021 .owl-carousel .owl-item.center img {
         width: 150px;
       }
 
-      .owl-carousel .owl-item.center {
+      .mt2021 .owl-carousel .owl-item.center {
         margin: 0px 20px;
       }
 
@@ -663,13 +474,340 @@
 
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    .font-weight-normal {
+      font-weight: 400;
+    }
+
+    .font-weight-light {
+      font-weight: 300;
+    }
+
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h4 {
+      font-family: 'Times New Roman';
+    }
+
+    .mt2021 h3,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p,
+    .mt2021 .h7,
+    .mt2021 .h8,
+    .mt2021 .h9,
+    .mt2021 .h10,
+    .mt2021 .h11,
+    .mt2021 .h12 {
+      font-family: 'Montserrat';
+    }
+
+    .mt2021 h1 {
+      font-size: 36px;
+    }
+
+    .mt2021 h2 {
+      font-size: 32px;
+    }
+
+    .mt2021 h3 {
+      font-size: 32px;
+    }
+
+    .mt2021 h4 {
+      font-size: 25px;
+    }
+
+    .mt2021 h5 {
+      font-size: 22px;
+    }
+
+    .mt2021 h6 {
+      font-size: 17px;
+    }
+
+    .mt2021 p {
+      font-size: 17px;
+    }
+
+    .h7 {
+      font-size: 18px;
+    }
+
+    .h8 {
+      font-size: 16px;
+    }
+
+    .h9 {
+      font-size: 14px;
+    }
+
+    .h10 {
+      font-size: 13px;
+    }
+
+    .h11 {
+      font-size: 12px;
+    }
+
+    .h12 {
+      font-size: 11px;
+    }
+
+    @media (max-width:767.98px) {
+      .mt2021 .mt2021 h1 {
+        font-size: 30px;
+      }
+
+      .mt2021 .mt2021 h2 {
+        font-size: 25px;
+      }
+
+      .mt2021 .mt2021 h3 {
+        font-size: 25px;
+      }
+
+      .mt2021 .mt2021 h4 {
+        font-size: 22px;
+      }
+
+      .mt2021 .mt2021 h5 {
+        font-size: 18px;
+      }
+
+      .mt2021 .mt2021 h6 {
+        font-size: 17px;
+      }
+
+      .mt2021 .mt2021 p {
+        font-size: 17px;
+      }
+
+      .h7 {
+        font-size: 16px;
+      }
+
+      .h8 {
+        font-size: 15px;
+      }
+
+    }
+
+    @media (max-width:480px) {
+      .mt2021 h1 {
+        font-size: 25px;
+      }
+
+      .mt2021 h2 {
+        font-size: 20px;
+      }
+
+      .mt2021 h3 {
+        font-size: 20px;
+      }
+
+      .mt2021 h4 {
+        font-size: 18px;
+      }
+
+      .mt2021 h5 {
+        font-size: 17px;
+      }
+
+      .mt2021 h6 {
+        font-size: 14px;
+      }
+
+      .mt2021 p {
+        font-size: 14px;
+      }
+
+      .h7 {
+        font-size: 15px;
+      }
+
+      .h8 {
+        font-size: 14px;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    .font-weight-normal {
+      font-weight: 400;
+    }
+
+    .font-weight-light {
+      font-weight: 300;
+    }
+
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h4 {
+      font-family: 'Times New Roman';
+    }
+
+    .mt2021 h3,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p,
+    .mt2021 .h7,
+    .mt2021 .h8,
+    .mt2021 .h9,
+    .mt2021 .h10,
+    .mt2021 .h11,
+    .mt2021 .h12 {
+      font-family: 'Montserrat';
+    }
+
+    .mt2021 h1 {
+      font-size: 36px;
+    }
+
+    .mt2021 h2 {
+      font-size: 32px;
+    }
+
+    .mt2021 h3 {
+      font-size: 32px;
+    }
+
+    .mt2021 h4 {
+      font-size: 25px;
+    }
+
+    .mt2021 h5 {
+      font-size: 22px;
+    }
+
+    .mt2021 h6 {
+      font-size: 17px;
+    }
+
+    .mt2021 p {
+      font-size: 17px;
+    }
+
+    .mt2021 .h7 {
+      font-size: 18px;
+    }
+
+    .mt2021 .h8 {
+      font-size: 16px;
+    }
+
+    .mt2021 .h9 {
+      font-size: 14px;
+    }
+
+    .mt2021 .h10 {
+      font-size: 13px;
+    }
+
+    .mt2021 .h11 {
+      font-size: 12px;
+    }
+
+    .mt2021 .h12 {
+      font-size: 11px;
+    }
+
+    @media (max-width:767.98px) {
+      .mt2021 .mt2021 h1 {
+        font-size: 30px;
+      }
+
+      .mt2021 .mt2021 h2 {
+        font-size: 25px;
+      }
+
+      .mt2021 .mt2021 h3 {
+        font-size: 25px;
+      }
+
+      .mt2021 .mt2021 h4 {
+        font-size: 22px;
+      }
+
+      .mt2021 .mt2021 h5 {
+        font-size: 18px;
+      }
+
+      .mt2021 .mt2021 h6 {
+        font-size: 17px;
+      }
+
+      .mt2021 .mt2021 p {
+        font-size: 17px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 16px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 15px;
+      }
+
+    }
+
+    @media (max-width:480px) {
+      .mt2021 h1 {
+        font-size: 25px;
+      }
+
+      .mt2021 h2 {
+        font-size: 20px;
+      }
+
+      .mt2021 h3 {
+        font-size: 20px;
+      }
+
+      .mt2021 h4 {
+        font-size: 18px;
+      }
+
+      .mt2021 h5 {
+        font-size: 17px;
+      }
+
+      .mt2021 h6 {
+        font-size: 14px;
+      }
+
+      .mt2021 p {
+        font-size: 14px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 15px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 14px;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Engagement @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Engagement @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     .engagement-banner-bg {
       background-color: transparent;
       height: 400px;
     }
 
     /* .engagement-banner {
-  background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
+background: linear-gradient(97.93deg, #F7E2DD 42.94%, #E9F8FF 54.12%);
 } */
 
     .engagement-banner {
@@ -788,7 +926,7 @@
 
     }
 
-    @media (max-width: 480 px) {
+    @media (max-width: 480px) {
       .engagement-banner-diamond img {
         width: 70%;
       }
@@ -806,57 +944,59 @@
 
 <body>
 
+  <div class="mt2021">
 
-  <section class="engagement-banner py-5 ">
+    <section class="engagement-banner py-5 ">
 
-    <div class="container">
-      <div class="row ">
-
-
-
-        <div class=" visible-xs ">
-
-          <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement---Banner-768-320.jpg"
-            alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
-        </div>
-
-        <div class="col-sm-10 engagement-banner-bg hidden-xs">
-
-        </div>
+      <div class="container">
+        <div class="row ">
 
 
-        <div class="col-sm-14 box pt-xs-3 pb-sm-5">
-          <div>
-            <h1>Engagement Rings</h1>
 
-            <p class="my-4 ">Create your unique engagement ring from either the setting or a diamond. Start from
-              our
-              engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range
-              of
-              loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
-            <a href="{{store url='loose-diamonds/all-diamonds'}}" class="btn btn-blue large-btn mb-2"
-              role="button">Start with Diamonds</a>
-            <a href="{{store url='engagement-rings/setting'}}" class="btn btn-blue large-btn " role="button">Start with
-              Setting</a>
+          <div class=" visible-xs ">
+
+            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement---Banner-768-320.jpg"
+              alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
           </div>
+
+          <div class="col-sm-10 engagement-banner-bg hidden-xs">
+
+          </div>
+
+
+          <div class="col-sm-14 box pt-xs-3 pb-sm-5">
+            <div>
+              <h1>Engagement Rings</h1>
+
+              <p class="my-4 ">Create your unique engagement ring from either the setting or a diamond. Start from
+                our
+                engagement ring setting and add a diamond or gemstone of your choice, or select from our extensive range
+                of
+                loose diamonds and complete it with a ring setting in your preferred choice of precious metal. </p>
+              <a href="{{store url='loose-diamonds/all-diamonds'}}" class="btn btn-blue large-btn mb-2"
+                role="button">Start with Diamonds</a>
+              <a href="{{store url='engagement-rings/setting'}}" class="btn btn-blue large-btn " role="button">Start
+                with
+                Setting</a>
+            </div>
+          </div>
+
         </div>
-
       </div>
-    </div>
 
 
-  </section>
+    </section>
 
 
 
-  <section class="choose-setting py-5">
+    <section class="choose-setting py-5">
 
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-24 text-center">
-          <div>
-            <h1>Choose Your Setting Style</h1>
-            <div id="choose-setting" class="owl-carousel owl-theme img-slider my-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-24 text-center">
+            <div>
+              <h1>Choose Your Setting Style</h1>
+              <div id="choose-setting" class="owl-carousel owl-theme img-slider my-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
         "0": {
             "items":1
         },
@@ -873,152 +1013,152 @@
           "items":5
       }
     }}}}}'>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/solitaire'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/solitaire'}}">Solitaire</a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/pave'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Pave-WR0175F-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/pave'}}">Pave</a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/channel-set'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Channel_Set-MSR0033F-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
-                </article>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/solitaire'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/solitaire'}}">Solitaire</a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/pave'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Pave-WR0175F-18KW.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/pave'}}">Pavé</a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/channel-set'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Channel_Set-MSR0033F-18KW.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
+                  </article>
+                </div>
+
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/side-stone'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Side_Stone-MSR0063-18KW.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/side-stone'}}">Side Stone</a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/vintage'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Vintage-msr0100-18kwr.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/vintage'}}">Vintage</a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="{{store url='engagement-rings/halo'}}"><img
+                          src="https://www.michaeltrio.com/pub/media/0newengagementpage/Halo-MSR0188-18kw.jpg"></a>
+                    </figure>
+                    <a href="{{store url='engagement-rings/halo'}}">Halo</a>
+                  </article>
+                </div>
+
               </div>
 
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/side-stone'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Side_Stone-MSR0063-18KW.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/side-stone'}}">Side Stone</a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/vintage'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Vintage-msr0100-18kwr.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/vintage'}}">Vintage</a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="{{store url='engagement-rings/halo'}}"><img
-                        src="https://www.michaeltrio.com/pub/media/0newengagementpage/Halo-MSR0188-18kw.jpg"></a>
-                  </figure>
-                  <a href="{{store url='engagement-rings/halo'}}">Halo</a>
-                </article>
-              </div>
 
             </div>
-
-
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-
-
-  <section class="create-your-own-engagement py-5 hidden-xs">
-
-    <div class="container">
-      <div class="row ">
-
-
-        <div class="col-sm-24 box ">
-          <h1>Create your own Engagement Ring</h1>
         </div>
       </div>
-
-      <div class="row ">
-
-        <div class="col-sm-6 box ">
-          <div>
-
-            <a href="{{store url='engagement-rings/setting'}}"><img
-                src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
-                alt="M2-Engagement---Step123---Setting.png" class="img-responsive">
-
-              <h5>Choose Setting</h5>
-
-              <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-sm-3 top8 ">
-          <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/M2-Engagement-Step123-150x150px-plus.png"
-            class="img-responsive">
-
-        </div>
-        <div class="col-sm-6  box">
-          <div>
-
-            <a href="{{store url='loose-diamonds/all-diamonds'}}"><img
-                src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
-                alt="M2-Engagement---Step123---Diamond-.png" class="img-responsive">
+    </section>
 
 
+    <section class="create-your-own-engagement py-5 hidden-xs">
 
-              <h5>Choose Diamond</h5>
-
-              <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-sm-3 top8 ">
-          <img
-            src="https://www.michaeltrio.com/pub/media/0newengagementpage/M2-Engagement-Step123-150x150px--equals-.png"
-            alt="M2-Engagement---Step123---Equal-.png" class="img-responsive">
-
-        </div>
-        <div class="col-sm-6 box ">
-          <div>
-
-            <img src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
-              alt="M2-Engagement---Step123---Engagementring.png" class="img-responsive">
+      <div class="container">
+        <div class="row ">
 
 
-
-            <h5>Complete Your Ring</h5>
-
-            <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-  <section class="create-your-own-engagement py-5 visible-xs">
-
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-24 text-center">
-          <div>
+          <div class="col-sm-24 box ">
             <h1>Create your own Engagement Ring</h1>
+          </div>
+        </div>
+
+        <div class="row ">
+
+          <div class="col-sm-6 box ">
+            <div>
+
+              <a href="{{store url='engagement-rings/setting'}}"><img
+                  src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
+                  alt="M2-Engagement---Step123---Setting.png" class="img-responsive">
+
+                <h5>Choose Setting</h5>
+
+                <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-sm-3 top8 ">
+            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/M2-Engagement-Step123-150x150px-plus.png"
+              class="img-responsive">
+
+          </div>
+          <div class="col-sm-6  box">
+            <div>
+
+              <a href="{{store url='loose-diamonds/all-diamonds'}}"><img
+                  src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
+                  alt="M2-Engagement---Step123---Diamond-.png" class="img-responsive">
 
 
-            <div id="create-your-own-engagement" class="owl-carousel owl-theme img-slider  " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":false,"autoWidth":false,"responsive":{
+
+                <h5>Choose Diamond</h5>
+
+                <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-sm-3 top8 ">
+            <img
+              src="https://www.michaeltrio.com/pub/media/0newengagementpage/M2-Engagement-Step123-150x150px--equals-.png"
+              alt="M2-Engagement---Step123---Equal-.png" class="img-responsive">
+
+          </div>
+          <div class="col-sm-6 box ">
+            <div>
+
+              <img src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
+                alt="M2-Engagement---Step123---Engagementring.png" class="img-responsive">
+
+
+
+              <h5>Complete Your Ring</h5>
+
+              <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="create-your-own-engagement py-5 visible-xs">
+
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-24 text-center">
+            <div>
+              <h1>Create your own Engagement Ring</h1>
+
+
+              <div id="create-your-own-engagement" class="owl-carousel owl-theme img-slider  " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":false,"autoWidth":false,"responsive":{
         "0": {
             "items":1
         },
@@ -1032,144 +1172,143 @@
           "items":3
       }
     }}}}}'>
-              <div class="item">
-                <article class="text-center">
-                  <a href="{{store url='engagement-rings/setting'}}">
-                    <figure><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Setting.png"></figure>
-                    <h5>1.Choose Setting</h5>
+                <div class="item">
+                  <article class="text-center">
+                    <a href="{{store url='engagement-rings/setting'}}">
+                      <figure><img
+                          src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Setting.png&quot;}}"
+                          class="img-responsive" alt="M2-Engagement---Step123---Setting.png"></figure>
+                      <h5>1.Choose Setting</h5>
 
-                    <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
-                  </a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <a href="{{store url='loose-diamonds/all-diamonds'}}">
-                    <figure><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Diamond-.png"></figure>
-                    <h5>2.Choose Diamond</h5>
+                      <p class="my-4">Select an engagement ring setting to pair with your diamond. </p>
+                    </a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <a href="{{store url='loose-diamonds/all-diamonds'}}">
+                      <figure><img
+                          src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Diamond-.png&quot;}}"
+                          class="img-responsive" alt="M2-Engagement---Step123---Diamond-.png"></figure>
+                      <h5>2.Choose Diamond</h5>
 
-                    <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
-                  </a>
-                </article>
-              </div>
-              <div class="item">
-                <article class="text-center">
-                  <figure><a href="#"><img
-                        src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
-                        class="img-responsive" alt="M2-Engagement---Step123---Engagementring.png"></a></figure>
-                  <h5>3.Complete Your Ring</h5>
+                      <p class="my-4">Choose from our extensive collection of loose diamonds. </p>
+                    </a>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="text-center">
+                    <figure><a href="#"><img
+                          src="{{media url=&quot;0newengagementpage/M2-Engagement---Step123---Engagementring.png&quot;}}"
+                          class="img-responsive" alt="M2-Engagement---Step123---Engagementring.png"></a></figure>
+                    <h5>3.Complete Your Ring</h5>
 
-                  <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
-                </article>
+                    <p class="my-4">Add your ring to the shopping cart or save it to your wish list. </p>
+                  </article>
+                </div>
+
+
               </div>
 
 
             </div>
+          </div>
 
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="custom-made py-5">
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-12 box diamond-image visible-xs">
+            <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
+              alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
 
           </div>
-        </div>
 
-      </div>
-    </div>
+          <div class="col-sm-12 box my-5">
+            <div>
+              <h1>Custom-Made <br />Engagement Rings</h1>
 
-
-  </section>
-
-
-  <section class="custom-made py-5">
-
-    <div class="container">
-      <div class="row ">
-        <div class="col-sm-12 box diamond-image visible-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
-            alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
-
-        </div>
-
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Custom Made <br />Propsoal Rings</h1>
-
-            <p class="my-4">Need some ring-spiration?
-              Get inspired by some of our custom made rings to help you get started on planning for your ideal
-              engagement
-              ring.</p>
-            <a href="{{store url='customisation'}}" class="btn btn-blue large-btn " role="button">Explore Custom
-              Made</a>
+              <p class="my-4">Need some ring-spiration? Get inspired by some of our custom-made rings to help you get
+                started on planning for your ideal engagement ring.</p>
+              <a href="{{store url='customisation'}}" class="btn btn-blue large-btn " role="button">Explore
+                Custom-Made</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-12 box diamond-image hidden-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
-            alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
+          <div class="col-sm-12 box diamond-image hidden-xs">
+            <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing_-p3-CustomMade_.png&quot;}}"
+              alt="MT2-Wedding-Landing_-p3-CustomMade_.png" />
 
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <section class="ready-to-ship ">
-
-    <div class="container">
-      <div class="row ready-to-ship-bg ">
-        <div class="visible-xs">
-          <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg&quot;}}"
-            alt="MT2-Wedding-Landing-p4-BOX.jpg" class="img-responsive w-100">
-        </div>
-
-        <div class="col-sm-12  diamond-image-bg hidden-xs">
-
-        </div>
-
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Ready to Ship</h1>
-            <p class="my-4">Ready to ship brings you propsoal ring you can get when you are in a rush.</p>
-            <!-- <a href="#" class="btn btn-blue large-btn " role="button">Ready to Ship</a> -->
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
 
 
-  </section>
+    </section>
 
-  <section class="perfect-fit mt-5">
 
-    <div class="container">
-      <div class="row perfect-fit-bg">
-        <div class="visible-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png"
-            alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
-        </div>
+    <section class="ready-to-ship ">
 
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Get the Perfect Fit</h1>
-            <p class="my-4 px-5">Find her ring size with our complimentary ring sizer!</p>
-            <a href="{{store url='request-ring-sizer'}}" class="btn btn-blue large-btn " role="button">Free Ring
-              Sizer</a>
+      <div class="container">
+        <div class="row ready-to-ship-bg ">
+          <div class="visible-xs">
+            <img src="{{media url=&quot;0newengagementpage/MT2-Wedding-Landing-p4-BOX.jpg&quot;}}"
+              alt="MT2-Wedding-Landing-p4-BOX.jpg" class="img-responsive w-100">
           </div>
+
+          <div class="col-sm-12  diamond-image-bg hidden-xs">
+
+          </div>
+
+          <div class="col-sm-12 box my-5">
+            <div>
+              <h1>Ready to Ship</h1>
+              <p class="my-4">Ready to ship brings you engagement ring you <br /> can get when you are in a rush.</p>
+              <!-- <a href="#" class="btn btn-blue large-btn " role="button">Ready to Ship</a> -->
+            </div>
+          </div>
+
         </div>
-
-        <div class="col-sm-12 diamond-image-bg hidden-xs">
-
-        </div>
-
       </div>
-    </div>
 
 
-  </section>
+    </section>
+
+    <section class="perfect-fit mt-5">
+
+      <div class="container">
+        <div class="row perfect-fit-bg">
+          <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png"
+              alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
+          </div>
+
+          <div class="col-sm-12 box my-5">
+            <div>
+              <h1>Get the Perfect Fit</h1>
+              <p class="my-4 px-3">Find her ring size with our complimentary ring sizer!</p>
+              <a href="{{store url='request-ring-sizer'}}" class="btn btn-blue large-btn " role="button">Free Ring
+                Sizer</a>
+            </div>
+          </div>
+
+          <div class="col-sm-12 diamond-image-bg hidden-xs">
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+  </div>
 
 </body>
 

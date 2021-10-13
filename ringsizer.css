@@ -1,0 +1,32 @@
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        p {
+            padding: 0;
+            letter-spacing: 0.02em;
+        }
+
+        button:hover {
+            border-color: transparent;
+        }
+
+        .ring-iframe {
+            width: 100%;
+            height: 350px;
+        }
+
+        .ring-sizer h1,
+        .ring-sizer h2,
+        .ring-sizer h3,
+        .ring-sizer h4,
+        .ring-sizer h5,
+        .ring-sizer h6,
+        .ring-sizer p,
+        .ring-sizer .h7,
+        .ring-sizer .h8,
+        .ring-sizer .h9,
+        .ring-sizer .h10,
+        .ring-sizer .h11,
+        .ring-sizer .h12 {
+            color: var(--black);
+        }

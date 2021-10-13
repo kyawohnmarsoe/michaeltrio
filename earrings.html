@@ -3,31 +3,6 @@
 
 <head>
   <style>
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ For All Device @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-
-
-    .pb-sm-5 {
-      padding-bottom: 3rem !important;
-    }
-
-    .page-main {
-      padding: 0px;
-    }
-
-    .page-footer h5 {
-      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
-      margin: 0 0 5px;
-    }
-
-    .nowrap {
-      white-space: nowrap;
-      word-break: keep-all;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -68,6 +43,19 @@
     .bg-lightblue {
       background-color: var(--lightblue);
     }
+
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+      background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+      background-color: var(--lighterblue);
+    }
+
 
     body {
       color: var(--black);
@@ -136,7 +124,6 @@
       font-weight: 300;
       font-size: 22px;
       line-height: 27px;
-
     }
 
     h6 {
@@ -206,37 +193,79 @@
       text-align: center;
     }
 
-    .custom-earrings-bg,
-    .custom-pendant-bg {
-      background-color: var(--lighterblue);
-    }
-
-    .perfect-fit-bg {
-      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
-    }
-
-    .owl-item .item a:hover {
-      color: var(--black);
-    }
-
-    .bg-white {
-      background-color: var(--white);
-    }
-
-    .bg-lightgrey {
-      background-color: #FAFAFA;
-    }
-
-    .bg-lightgreyblue {
-      background-color: var(--lighterblue);
-    }
-
     .top8 {
       padding-top: 8%;
     }
 
     .row {
       display: flex;
+    }
+
+    .diamond-image img {
+      width: 500px;
+    }
+
+    .columns a {
+      color: var(--black);
+    }
+
+
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .desktop-show {
+      display: block;
+    }
+
+    .mobile-show {
+      display: none;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .banner-height-500 {
+      height: 500px;
+    }
+
+    .banner-height-400 {
+      height: 400px;
+    }
+
+    .max-width-600 {
+      max-width: 600px;
+    }
+
+    .d-sm-flex {
+      display: flex;
+    }
+
+    .w-sm-50 {
+      width: 50%;
+    }
+
+    .w-80 {
+      width: 80%;
+    }
+
+    .pb-sm-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .pb-xs-5 {
+      padding-bottom: 0 !important;
+    }
+
+    .py-xs-5 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
 
     .for-title {
@@ -253,8 +282,18 @@
       background-position-y: center;
     }
 
-    .diamond-image img {
-      width: 500px;
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+      background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .owl-item .item a:hover {
+      color: var(--black);
     }
 
     .owl-carousel .owl-item {
@@ -264,13 +303,6 @@
       /* height: auto; */
     }
 
-    #diamonds-slider.owl-carousel .owl-item {
-      height: 250px;
-    }
-
-    #top-selling-slider.owl-carousel .owl-item {
-      align-items: flex-start;
-    }
 
     .owl-carousel .owl-item img {
       width: 100px;
@@ -308,12 +340,247 @@
       font-size: 40px;
     }
 
-    .columns a {
-      color: var(--black);
+    .owl-carousel .owl-item a img:hover {
+      filter: contrast(130%);
+    }
+
+    #diamonds-slider.owl-carousel .owl-item {
+      height: 250px;
+    }
+
+    #top-selling-slider.owl-carousel .owl-item {
+      align-items: flex-start;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Old Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .page-main {
+      padding: 0px;
+    }
+
+    .page-footer h5 {
+      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+      margin: 0 0 5px;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 1199.98px) {
+
+      h1 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      h3 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h5 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+
+      .spinning-diamond {
+        width: 380px;
+        height: 380px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+      p {
+        padding: 0;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 767.98px) {
+
+      .py-xs-5 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      .d-sm-flex {
+        display: block;
+      }
+
+      .w-sm-50 {
+        width: 100%;
+      }
+
+      .mx-xs-3 {
+        margin: auto 15px !important;
+      }
+
+      .m-xs-auto {
+        margin: auto !important;
+      }
+
+      .pt-xs-3 {
+        padding-top: 1rem !important;
+      }
+
+      .spacing-xs-t {
+        padding-top: 20px !important;
+      }
+
+      .spacing-xs-b {
+        padding-bottom: 20px !important;
+      }
+
+      .pb-sm-5 {
+        padding-bottom: 0 !important;
+      }
+
+      .pb-xs-5 {
+        padding-bottom: 3rem !important;
+      }
+
+      .py-xs-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      .col-sm-12 {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 22px;
+
+      }
+
+      .my-4 {
+        margin-top: 1.2rem !important;
+      }
+
+      .row {
+        display: block;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .perfect-fit-bg {
+        background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+      }
+
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      h5 {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .btn {
+        font-size: 14px;
+        line-height: 15px;
+        /* height: 30px; */
+      }
+
+      .large-btn {
+        width: 217px;
+      }
+
+      .diamond-image img {
+        width: 80%;
+      }
+
+      #diamonds-slider.owl-carousel .owl-item {
+        height: 200px;
+      }
+
+      .owl-carousel .owl-item img {
+        width: 70px;
+        transition: unset;
+      }
+
+      .owl-carousel .owl-item.center img {
+        width: 150px;
+      }
+
+      .owl-carousel .owl-item.center {
+        margin: 0px 20px;
+      }
+
+      .spinning-diamond {
+        width: 295px;
+        height: 295px;
+      }
+
+      .diamond-thumbnail .diamond-size {
+        font-size: 11px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+      .desktop-show {
+        display: none;
+      }
+
+      .mobile-show {
+        display: block;
+      }
+
     }
 
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .ct025 {
       width: 10px;
@@ -443,224 +710,6 @@
 
     .fa-green {
       color: #5EE9AD;
-    }
-
-    .owl-carousel .owl-item a img:hover {
-      filter: contrast(130%);
-    }
-
-    .flex-wrap {
-      flex-wrap: wrap;
-    }
-
-    .overflow-hidden {
-      overflow: hidden;
-    }
-
-    .desktop-show {
-      display: block;
-    }
-
-    .mobile-show {
-      display: none;
-    }
-
-    .d-flex {
-      display: flex;
-    }
-
-
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    @media (max-width: 1199.98px) {
-
-      h1 {
-        font-size: 30px;
-        line-height: 34px;
-      }
-
-      h3 {
-        font-size: 25px;
-        line-height: 29px;
-      }
-
-      h5 {
-        font-size: 18px;
-        line-height: 25px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 22px;
-      }
-
-      .diamond-image img {
-        width: 320px;
-      }
-
-      .btn {
-        /* height: 35px; */
-      }
-
-      .spinning-diamond {
-        width: 380px;
-        height: 380px;
-      }
-
-      .diamond-quality,
-      .diamond-price {
-        font-size: 12px;
-      }
-
-    }
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Xs Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    @media (max-width: 767.98px) {
-
-
-
-      .mx-xs-3 {
-        margin: auto 15px !important;
-      }
-
-      .m-xs-auto {
-        margin: auto !important;
-      }
-
-      .pt-xs-3 {
-        padding-top: 1rem !important;
-      }
-
-      .spacing-xs-t {
-        padding-top: 20px !important;
-      }
-
-      .spacing-xs-b {
-        padding-bottom: 20px !important;
-      }
-
-      .pb-sm-5 {
-        padding-bottom: 0 !important;
-      }
-
-      .col-sm-12 {
-        padding-left: 13px;
-        padding-right: 13px;
-      }
-
-      p {
-        padding: 0;
-      }
-
-      .btn {
-        font-size: 14px;
-        line-height: 22px;
-
-      }
-
-      .my-4 {
-        margin-top: 1.2rem !important;
-      }
-
-      .row {
-        display: block;
-      }
-
-      .diamond-image img {
-        width: 320px;
-      }
-
-      .perfect-fit-bg {
-        background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
-      }
-
-
-    }
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 25px;
-        line-height: 29px;
-      }
-
-      h3 {
-        font-size: 20px;
-        line-height: 23px;
-      }
-
-      h5 {
-        font-size: 17px;
-        line-height: 20px;
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      .btn {
-        font-size: 14px;
-        line-height: 15px;
-        /* height: 30px; */
-      }
-
-      .large-btn {
-        width: 217px;
-      }
-
-      .diamond-image img {
-        width: 80%;
-      }
-
-      #diamonds-slider.owl-carousel .owl-item {
-        height: 200px;
-      }
-
-      .owl-carousel .owl-item img {
-        width: 70px;
-        transition: unset;
-      }
-
-      .owl-carousel .owl-item.center img {
-        width: 150px;
-      }
-
-      .owl-carousel .owl-item.center {
-        margin: 0px 20px;
-      }
-
-      .spinning-diamond {
-        width: 295px;
-        height: 295px;
-      }
-
-      .diamond-thumbnail .diamond-size {
-        font-size: 11px;
-      }
-
-      .diamond-quality,
-      .diamond-price {
-        font-size: 12px;
-      }
-
-      .desktop-show {
-        display: none;
-      }
-
-      .mobile-show {
-        display: block;
-      }
-
     }
 
     .earrings-banner {
@@ -946,8 +995,10 @@
 
 
           <div id="EL2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-          <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-          <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+          <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">
+          </div>
+          <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">
+          </div>
           <div id="EL2020_NoItem" class="row earrings2021 text-center"
             style="flex-wrap: wrap;padding:0px 20px; display: none;">
             For customisation of Solitaire Studs, please contact us for availability and pricing. </div>

@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .h7 {
+            font-size: 18px;
+        }
+
+        .h8 {
+            font-size: 16px;
+        }
+
+        .h9 {
+            font-size: 14px;
+        }
+
+        .h10 {
+            font-size: 13px;
+        }
+
+        .h11 {
+            font-size: 12px;
+        }
+
+        .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 .mt2021 p {
+                font-size: 17px;
+            }
+
+            .h7 {
+                font-size: 16px;
+            }
+
+            .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .h7 {
+                font-size: 15px;
+            }
+
+            .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .h7 {
+            font-size: 18px;
+        }
+
+        .h8 {
+            font-size: 16px;
+        }
+
+        .h9 {
+            font-size: 14px;
+        }
+
+        .h10 {
+            font-size: 13px;
+        }
+
+        .h11 {
+            font-size: 12px;
+        }
+
+        .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 .mt2021 p {
+                font-size: 17px;
+            }
+
+            .h7 {
+                font-size: 16px;
+            }
+
+            .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .h7 {
+                font-size: 15px;
+            }
+
+            .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .about-small-wrapper {
+            max-width: 300px;
+        }
+
+        .couple-img-1 {
+            margin-top: -100px;
+            margin-bottom: 50px;
+            margin-left: 10%;
+            width: 80%;
+        }
+
+        h3.text-lightorange {
+            font-size: 50px;
+            color: #FFB493;
+            font-weight: 600;
+            line-height: 1.2em;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .about-bg-blue {
+            background-color: #9FB9D0;
+        }
+
+        .visible-480 {
+            display: none;
+        }
+
+        .bg-green {
+            background-color: #92BAAE;
+            min-height: 300px;
+        }
+
+        .bg-green .h3 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2em;
+        }
+
+        .about-large-wrapper {
+            max-width: 650px;
+        }
+
+        @media (max-width:991.98px) {
+            h3.text-lightorange {
+                font-size: 35px;
+            }
+
+
+        }
+
+        @media (max-width:767.98px) {
+
+
+            .couple-img-1 {
+                width: 75%;
+                margin-top: -81px;
+                margin-bottom: 50px;
+                margin-left: 6%;
+            }
+
+            .pl-xs-7 {
+                padding-left: 7rem;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem;
+            }
+
+            .pb-xs-3 {
+                padding-bottom: 2rem;
+            }
+
+            .about-small-wrapper {
+                max-width: 100%;
+            }
+
+
+        }
+
+        @media (max-width:480px) {
+            .pt-480-5 {
+                padding-top: 3rem;
+            }
+
+            .pl-xs-7 {
+                padding-left: 1rem;
+            }
+
+            .visible-480 {
+                display: block;
+            }
+
+            .couple-img-1 {
+                display: none;
+            }
+
+            .couple-img-1.visible-xs {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt2021">
+        <section>
+            <div class="container">
+                <div>
+                    <img src="https://www.michaeltrio.com/pub/media/0about/about.png" alt="" class="w-100">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-sm-24">
+                        <h3 class="text-center">How Do You Make Something Last Forever? </h3>
+                    </div>
+                </div>
+
+                <div class="row py-sm-5">
+                    <div class="col-sm-12">
+                        <div class="about-small-wrapper m-auto pb-xs-3">
+                            <p class="h9">
+                                <em>
+                                    Three sons, three generations, three values. Every engagement ring and fine
+                                    jewellery
+                                    piece
+                                    that bears our name is inspire d by the desire to create something lasting together,
+                                    the
+                                    lessons our father taught us, and these stories that have endured from over 40 years
+                                    ago.
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div>
+                            <p class="mb-3">
+                                Our story is a story of love.
+                            </p>
+                            <p class="mb-3">
+                                Of a boy for his father following in the family trade crafting precious metal regalia
+                                for
+                                sultans and royals.
+                            </p>
+                            <p class="mb-3">
+                                Of that boy, now a man, for the young woman who would be his wife.
+                            </p>
+                            <p class="mb-3">
+                                Of their sons who, seeing how devoted they were to each other, followed their footsteps
+                                with
+                                strong, loving unions of their own.
+                            </p>
+                            <p class="mb-3">
+                                Of three sons for their father, honouring his most cherished values of family, trust,
+                                and—above all—love, with a lasting tribute to his legacy, the Michael Trio company.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-bg-blue my-5">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0about/L1.jpg" alt="" class="w-100 visible-480">
+
+                    <div class="col-md-8 col-sm-10">
+                        <div>
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P1.jpg" alt=""
+                                class=" couple-img-1 hidden-xs">
+                            <img src="https://www.michaeltrio.com/pub/media/0about/L1.jpg" alt=""
+                                class=" couple-img-1 visible-xs">
+
+                        </div>
+                    </div>
+                    <div class="col-ms-16 col-sm-14 box">
+                        <div class="pl-xs-7 pb-xs-5 pt-480-5">
+                            <h3 class="text-left text-white">Every love has a story</h3>
+                            <h3 class="text-left text-lightorange pt-4">Make yours one that stands the test of time.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-24">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-10 pl-0 box hidden-xs">
+                        <div>
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P2.jpg" alt="" class="w-100 m-auto">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-14 box">
+                        <div class="text-left">
+                            <div>
+                                <p class="mb-3">
+                                    How we conduct our business makes it possible for us to make a quality jewellery
+                                    piece
+                                    faster and at a lower cost, efficiencies we pass on to you and that you benefit
+                                    from.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    When High Standards Meet Sincere Paragmatism
+                                </h5>
+                                <div class=" visible-xs mb-3">
+                                    <img src="https://www.michaeltrio.com/pub/media/0about/L2.jpg" alt=""
+                                        class="w-100 m-auto ">
+                                </div>
+                                <p class="mb-3">
+                                    We make our own jewellery, which means we do not stock large inventories, nor are
+                                    subject to
+                                    the prices and timetables of third party producers
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    Love Doesn't Have To Wait
+                                </h5>
+                                <p class="mb-3">
+                                    Jewellery retailers are able to furnish an engagement ring with little to no custom
+                                    work
+                                    in three to six months. We are proud to say that customising an engagement ring for
+                                    you
+                                    may take as little as one month. You may customise online or let our consultants
+                                    guide
+                                    you in-store. Either way, our team of designers assure that your preferences are
+                                    executed with care.
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    Or Sacrifice
+                                </h5>
+                                <p class="mb-3">
+                                    Our diamond stones are competitively priced at 20 to 40 per cent less than others on
+                                    the
+                                    market. This does not mean they are of lesser quality. On the contrary, we provide
+                                    better quality for your investment and reduce traditionally high mark-ups for three
+                                    reasons: one, we make our own jewellery; two, we do not have too many stores to
+                                    operate
+                                    and maintain; and three, we do not let you carry the extra cost of a middleman
+                                    because
+                                    there is no middleman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-24 bg-green box">
+                        <div class="py-5 ">
+                            <h3 class="text-center about-large-wrapper text-white">
+                                We make exceptional craftsmanship, service, and quality available at a remarkable price.
+
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class=" visible-xs mb-5">
+                        <img src="https://www.michaeltrio.com/pub/media/0about/L3.jpg" alt="" class="w-100 m-auto ">
+                    </div>
+                    <div class="col-sm-12 box">
+                        <div class="about-small-wrapper ">
+
+
+                            <p class="text-left mb-3">
+
+
+                                Many of the advantages we have as makers of fine jewellery lie in how our father began
+                                his
+                                business designing and crafting medallions for sultans and other royals.
+                            </p>
+                            <p class="text-left mb-3">
+                                Passing skills and lessons perfected over 40 years down to our generation, this
+                                invaluable
+                                expertise serves as the foundation for Michael Trio. Our gemstone and precious metal
+                                selection process is rigorous. Our level of craftsmanship is fine to the last detail.
+                            </p>
+                            <p class="text-left mb-3">
+                                One might even say that every jewellery piece is simply, literally, fit for royalty.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 pr-0">
+                        <div class="hidden-xs">
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P3.jpg" alt="" class="w-100 m-auto ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

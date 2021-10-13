@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .h7 {
+            font-size: 18px;
+        }
+
+        .h8 {
+            font-size: 16px;
+        }
+
+        .h9 {
+            font-size: 14px;
+        }
+
+        .h10 {
+            font-size: 13px;
+        }
+
+        .h11 {
+            font-size: 12px;
+        }
+
+        .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 .mt2021 p {
+                font-size: 17px;
+            }
+
+            .h7 {
+                font-size: 16px;
+            }
+
+            .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .h7 {
+                font-size: 15px;
+            }
+
+            .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ T&C @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ T&C @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        p {
+            padding: 0;
+            letter-spacing: 0.02em;
+            text-align: justify;
+        }
+
+        .terms ul,
+        .terms ol {
+            font-size: 14px;
+            text-align: justify;
+            padding-left: 20px;
+        }
+
+        .terms ul {
+            list-style-type: disc;
+        }
+
+        .terms ol {
+            list-style-type: auto;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .columns .terms a {
+            color: var(--companyblue);
+        }
+
+        .columns .terms a:hover {
+            color: var(--darkblue);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt2021">
+        <section class="terms">
+            <div class="container">
+                <h3 class="font-weight-normal">Privacy Policy</h3>
+                <div class="mb-5">
+                    <p class="h9">Thank you for visiting <a href="https://www.michaeltrio.com">www.michaeltrio.com</a>.
+                        We
+                        respect your
+                        privacy and understand your concerns on protecting the privacy of the personal information you
+                        provide to us. The information below describes our privacy policies. By visiting <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a>, you are confirming your
+                        agreement to
+                        the privacy terms described in this Privacy Policy.</p>
+                </div>
+
+                <div class="panel-group"
+                    data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'>
+                    <div class="mb-5">
+                        <div class="panel panel-default allow active" data-role="collapsible">
+                            <div class="panel-heading" data-role="trigger">
+                                <h5 class="font-weight-normal">Use of Information</h5>
+                            </div>
+                            <div class="panel-collapse collapse" data-role="content">
+                                <p class="h9">Michael Trio uses this information to confirm and process sales
+                                    transactions
+                                    or to
+                                    contact
+                                    you with
+                                    questions or communications about your order, or to respond to your customer service
+                                    inquiries.
+                                    This
+                                    information will be used to enhance and personalize your online shopping experience.
+                                </p>
+                                <p class="h9">Aggregated Information (information that does not personally identify you)
+                                    may
+                                    be used
+                                    in
+                                    many ways.
+                                    For example, we may combine information about your usage patterns with similar
+                                    information
+                                    obtained
+                                    from other users to help enhance our site and services (e.g., to learn which pages
+                                    are
+                                    visited
+                                    most
+                                    or what features are most attractive). Aggregated Information may occasionally be
+                                    shared
+                                    with
+                                    our
+                                    advertisers and business partners. Again, this information does not include any
+                                    Personally
+                                    Identifiable Information about you or allow anyone to identify you individually. We
+                                    may
+                                    use
+                                    Personally Identifiable Information collected by Michael Trio to communicate with
+                                    you
+                                    about your
+                                    registration and customization preferences; our Terms of Service and privacy policy;
+                                    services
+                                    and
+                                    products offered by Michael Trio and other topics we think you might find of
+                                    interest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h5 class="font-weight-normal">Security</h5>
+                    <p class="h9">We believe that Michael Trio has in place appropriate procedures to protect the
+                        security
+                        of personal
+                        information transmitted to us or by us. We have designed our website(s) to encrypt such
+                        information
+                        during transmission using Secure Sockets Layer software. However no transmission of data over
+                        the
+                        Internet or any other public network can be guaranteed to be 100% secure and, accordingly, we
+                        cannot
+                        guarantee or warrant the security of any information you disclose or transmit to us.</p>
+                </div>
+                <div class="mb-5">
+                    <h5 class="font-weight-normal">Disclosure of information</h5>
+                    <p class="h9">Personally Identifiable Information collected by Michael Trio may also be used for
+                        other
+                        purposes,
+                        including but not limited to site administration, troubleshooting, processing of e-commerce
+                        transactions, and other communications with you. Certain third parties who provide technical
+                        support
+                        for the operation of our site (our Web hosting service for example) may access such information.
+                        We
+                        will use your information only as permitted by law. In addition, from time to time as we
+                        continue to
+                        develop our business, we may sell, buy, merge or partner with other companies or businesses. In
+                        such
+                        transactions, user information may be among the transferred assets. We may also disclose your
+                        information in response to a court order, at other times when we believe we are reasonably
+                        required
+                        to do so by law, in connection with the collection of amounts you may owe us, and/or to law
+                        enforcement authorities whenever we deem it appropriate or necessary. Please note we may not
+                        provide
+                        you with notice prior to disclosure in such cases.</p>
+                </div>
+                <div class="mb-5">
+                    <h5 class="font-weight-normal">Terms of Use, Notice and Revisions</h5>
+                    <p class="h9">Welcome to our website. At <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a>,
+                        we always
+                        appreciate your business. If you would like to provide feedback about <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a> website, or recommend a way we
+                        can
+                        improve the buying experience, please
+                        <a href="mailto:service@michaeltrio.com"><strong>click here</strong></a>
+                        .
+                    </p>
+                    <p class="h9">In addition, we offer the <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a>
+                        Safe Purchase
+                        Guarantee to ensure your comfort when buying on a <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a> website. <a
+                            href="https://www.michaeltrio.com">www.michaeltrio.com</a> provides services to you subject
+                        to
+                        the terms and conditions included in this Terms of Use and other customer service pages which we
+                        have prepared to help make your shopping experience with Michael Trio as enjoyable and
+                        problem-free
+                        as possible. Please read them carefully. By visiting or using this website or any other Michael
+                        Trio website or service, you acknowledge that you have read and understood, and agree to be
+                        bound
+                        by, these Terms of Use. You also agree to comply with all applicable laws and regulations,
+                        including
+                        Singapore Copyright and Trademark laws. If you do not agree to these terms, please do not use
+                        any
+                        Michael Trio website.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

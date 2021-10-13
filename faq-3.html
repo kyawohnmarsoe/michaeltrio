@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .h7 {
+            font-size: 18px;
+        }
+
+        .h8 {
+            font-size: 16px;
+        }
+
+        .h9 {
+            font-size: 14px;
+        }
+
+        .h10 {
+            font-size: 13px;
+        }
+
+        .h11 {
+            font-size: 12px;
+        }
+
+        .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 .mt2021 p {
+                font-size: 17px;
+            }
+
+            .h7 {
+                font-size: 16px;
+            }
+
+            .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .h7 {
+                font-size: 15px;
+            }
+
+            .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+
+        .position-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        #faq .sticky {
+            position: fixed !important;
+            padding-right: 25px;
+            width: 300px;
+            top: 80px;
+            z-index: 99;
+        }
+
+        #faq #faq-menu {
+            /* position: absolute; */
+            width: 300px;
+            padding-right: 25px;
+
+        }
+
+        #faq .faq-group {
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+        }
+
+        #faq .faq-group a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            line-height: 50px;
+            padding: 0 10px 0 16px;
+            background-color: #4e5359;
+            color: #fff;
+            white-space: nowrap;
+            border-bottom: 1px solid #555a60;
+            text-overflow: ellipsis;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #faq .faq-group .selected {
+            background: #4b5055;
+        }
+
+        #faq .faq-group a.selected:before {
+            content: '';
+            display: block;
+            top: 0;
+            right: auto;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #6c88a2;
+            -webkit-transition: opacity .2s;
+            transition: opacity .2s;
+            position: absolute;
+        }
+
+        @media (max-width: 768px) {
+            #faq #faq-menu {
+                position: static;
+                width: auto;
+                padding-right: 0px;
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m2021">
+        <section id="faq">
+            <h1 class="text-center">Questions? Look here.</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 position-sticky">
+                    <div id="faq-menu" class="">
+                        <ul class="faq-group">
+                            <li><a href="#shipping" class="selected">Shipping</a></li>
+                            <li><a href="#14-day-return-policy" class="">14-Day Return Policy</a></li>
+                            <li><a href="#installments" class="">Installments</a></li>
+                            <li><a href="#orders-and-ring-sizes" class="">Orders and Ring Sizes</a></li>
+                            <li><a href="#custom-made-orders" class="">Custom Made Orders</a></li>
+                            <li><a href="#diamond-upgrade-programme" class="">Diamond Upgrade Programme</a></li>
+                            <li><a href="#diamond-price-match-programme" class="">Diamond Price Match Programme</a></li>
+                            <li><a href="#lifetime-warranty" class="">Lifetime Warranty</a></li>
+                            <li><a href="#conflict-free-diamonds" class="">Conflict-Free Diamonds</a></li>
+                            <li><a href="#refer-a-friend" class="">Refer-A-Friend</a></li>
+                            <li><a href="#locate-us" class="">Locate Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-18 col-md-18">
+                    <div>
+                        <!-- Shipping -->
+                        <div class="container-faq ">
+                            <h6>Shipping</h6>
+                            <div class="panel-group" id="shipping">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping1">Where do
+                                                you
+                                                ship?</a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                We ship our products both locally and internationally.
+                                            </p>
+                                            <p class="h9">
+                                                Please note that products shipped internationally may not be in
+                                                accordance
+                                                with destination
+                                                country or region standards, specifications, and labeling requirements.
+                                                The
+                                                customer is
+                                                responsible for determining that products can be lawfully and legally
+                                                imported into the
+                                                destination country or region.
+                                            </p>
+                                            <p class="h9">
+                                                Michael Trio currently ships to the following countries: Australia,
+                                                Austria,
+                                                Bermuda,
+                                                Brunei, Cambodia, Canada, China, Denmark, Finland, Germany, Greece, Hong
+                                                Kong, Indonesia,
+                                                Ireland, Italy, Japan, Malaysia, Netherlands, New Zealand, Norway,
+                                                Philippines, Portugal,
+                                                Singapore, South Korea, Spain, Sweden, Taiwan , Trinidad and Tobago,
+                                                United
+                                                Arab Emirates,
+                                                United Kingdom, and United States.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping2">Are
+                                                there
+                                                any restricted
+                                                zones/areas in Singapore that you do not deliver to?</a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                We deliver islandwide locally except to army camps, hotels, and the
+                                                following restricted
+                                                areas: Airline Road, Airport Cargo Road, Alps Avenue, Brani Terminal
+                                                Avenue,
+                                                Changi Airport
+                                                (only areas with restricted access), Jurong Island, Kusu Island, Pulau
+                                                Damar
+                                                Laut, Pulau
+                                                Busing, Pulau Tekong, Pulau Sakeng, Pulau Sebarok, Pulau Ubin, Rifle
+                                                Range,
+                                                Seletar
+                                                Aerospace, St John Island, Turn Club Avenue, and West Camp Road.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping3">What is
+                                                the
+                                                cost of
+                                                shipping?</a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Shipping is free for all products. Michael Trio provides quick and
+                                                efficient
+                                                shipping, with
+                                                full insurance coverage to all shipping destinations. All items will be
+                                                packaged securely
+                                                and will be fully insured while in transit to your destination.
+                                            </p>
+                                            <p class="h9">International customers will be responsible for any duties,
+                                                VAT,
+                                                taxes or
+                                                surcharges levied
+                                                or charged by their country. Please check with local authorities prior
+                                                to
+                                                placing your order
+                                                to confirm taxes and duties.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping4">
+                                                Shipping methods and duration
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                We currently offer 2 delivery options so that you can choose the one
+                                                that
+                                                best suits your
+                                                needs.
+                                            </p>
+                                            <ol>
+                                                <li>FREE Standard shipping: Deliver within 3-5 working days upon
+                                                    dispatch.
+                                                    Once shipped, a
+                                                    tracking number will be provided to you upon request. Please
+                                                    remember a
+                                                    signature will
+                                                    be required upon delivery.</li>
+                                                <li>FREE Store collection: If you prefer to pick up your purchase from
+                                                    our
+                                                    showroom, please
+                                                    indicate your preferred pick-up showroom location on the checkout
+                                                    page.
+                                                    Our sales
+                                                    representative will get in touch with you once your product is ready
+                                                    for
+                                                    collection.
+                                                </li>
+                                            </ol>
+                                            <p class="h9">Loose diamonds are shipped immediately after passing
+                                                inspection.
+                                                You'll see
+                                                an estimated
+                                                shipping and delivery date for each product on every product details
+                                                page.
+                                                These can also be
+                                                seen in your account dashboard and order confirmation email. Hereafter,
+                                                you
+                                                can expect your
+                                                delivery within the above timeframes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping5">
+                                                Are your shipments secure?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Yes. Our items are fully insured during transit and all purchases
+                                                require a
+                                                signature upon
+                                                delivery. To keep our customers protected, Michael Trio always:
+                                            </p>
+                                            <ol>
+                                                <li>Insure and register all items for their full value</li>
+                                                <li>Use only reliable shipping service for all orders to ensure that
+                                                    your
+                                                    package will be
+                                                    delivered in the fastest and safest manner</li>
+                                                <li>Require that all deliveries be made to a physical business or
+                                                    residential address</li>
+                                                <li>Prohibit delivery to PO Box address</li>
+                                                <li>Require a signature for all packages upon delivery</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping6">
+                                                How do I track my order?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Order status and tracking information can be found on the
+                                                <a href="https://www.michaeltrio.com/">MichaelTrio.com</a>
+                                                website here.
+                                            </p>
+                                            <p class="h9">
+                                                Please note: We will only ship your order once it has passed our
+                                                thorough
+                                                quality
+                                                inspection. Loose diamonds are shipped immediately after passing
+                                                inspection.
+                                                You'll see an
+                                                estimated shipping and delivery date for each product on every product
+                                                details page. These
+                                                can also be seen in your account dashboard and order confirmation email.
+                                                Hereafter, you can
+                                                expect your delivery within the above timeframes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping7">
+                                                What if my jewellery gets lost during shipment?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Michael Trio takes every precaution to ensure that your order arrives
+                                                safely. Your order
+                                                will be fully insured during transit, and we require a signature for all
+                                                packages.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping8">
+                                                I haven’t received my order. Who can I contact?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Your estimated delivery date will be in your order confirmation email &
+                                                your
+                                                account
+                                                dashboard - please allow until this date for your order to arrive.
+                                                Kindly
+                                                take note that
+                                                your parcel will take at least 3-5 working days to arrive upon dispatch.
+                                            </p>
+                                            <p class="h9">
+                                                If your estimated delivery date has passed, and there aren’t any known
+                                                delivery delays,
+                                                please email us at <a
+                                                    href="mailto:service@michaeltrio.com">service@michaeltrio.com</a> so
+                                                we
+                                                may further assist you.
+                                            </p>
+                                            <p class="h9">Due to the high volume of orders during the peak/festive
+                                                seasons,
+                                                there may
+                                                be a delay in
+                                                processing the orders and having them ready for pick-up and shipping.
+                                                Rest
+                                                assured that our
+                                                sales representative will get in touch with you to discuss the delay.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping9">
+                                                Do you deliver internationally?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Yes, we ship internationally. International orders over $500 in value
+                                                are
+                                                shipped via FedEx
+                                                International Priority or UPS Worldwide Express. International orders
+                                                under
+                                                $500 in value
+                                                are shipped via FedEx Economy or Singpost.
+                                            </p>
+                                            <p class="h9">
+                                                Please note that products shipped internationally may not be designed in
+                                                accordance with
+                                                destination country or region standards, specifications, and labeling
+                                                requirements. The
+                                                customer is responsible for determining that products can be lawfully
+                                                and
+                                                legally imported
+                                                into the destination country or region.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#shipping" href="#shipping10">
+                                                I'd like to place an international order. Do I pay customs fees to
+                                                Michael
+                                                Trio or the
+                                                courier?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="shipping10" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                When you place an international order, we will ship it to you for free.
+                                                Once
+                                                the package
+                                                arrives in your country, the courier will contact you to collect any
+                                                taxes
+                                                or duties.
+                                                Shipping is done via FedEx International Priority/UPS Worldwide Express
+                                                for
+                                                orders over
+                                                S$500 in value and usually takes two to three days. Packages valued
+                                                below
+                                                S$500 are sent via
+                                                Singpost.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 14-day -->
+                        <div class="container-faq pt-3" id="faq-14day">
+                            <h6> 14-Day Return Policy
+                            </h6>
+                            <div class="panel-group" id="14day">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#14day" href="#14day1">
+                                                Can I request for a return?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="14day1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                If, for any reason you are not completely satisfied with your order,
+                                                Michael
+                                                Trio offers a
+                                                14-day return guarantee for online orders. Please refer to the next
+                                                question
+                                                for further
+                                                information on the conditions for return.
+                                            </p>
+                                            <p class="h9">
+                                                Do note that products purchased during promotional periods, exclusive
+                                                campaigns or flash
+                                                sales cannot be refunded for cash, credit or exchanged for other goods
+                                                of
+                                                similar value.
+                                                Custom or special-ordered items are final and cannot be returned or
+                                                exchanged.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#14day" href="#14day2">
+                                                Returns policy and terms.
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="14day2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="mb-5">
+                                                <h6>For online purchases</h6>
+                                                <p class="h9">
+                                                    We accept returns for a full cash refund or exchange within 14 days
+                                                    from
+                                                    the
+                                                    delivered date.
+                                                    Charges for return shipping and insurance fees will be borne by the
+                                                    customer
+                                                    should it be
+                                                    required for the item to return to our warehouse in Singapore
+                                                </p>
+                                                <p class="h9">
+                                                    Singapore & International: Returns must reach us within 14 calendar
+                                                    days
+                                                    from the delivered
+                                                    date.
+                                                </p>
+                                                <p class="h9">
+                                                    Please note that to be eligible for return, item(s) must be in their
+                                                    original purchase
+                                                    condition (undamaged and in "new and unused condition"), including
+                                                    all
+                                                    product
+                                                    documentation, and shipped back to us within 14 days. Items showing
+                                                    obvious
+                                                    signs of wear or
+                                                    alteration by a jeweler other than Michael Trio will not be
+                                                    accepted.
+                                                </p>
+                                                <p class="h9">
+                                                    If an item was delivered with a diamond report, the return must be
+                                                    accompanied by the
+                                                    original laboratory grading report. Otherwise, customers will bear
+                                                    the
+                                                    cost
+                                                    of a replacement
+                                                    report.
+                                                </p>
+                                                <p class="h9">
+                                                    To expedite an exchange for a different product, we recommend
+                                                    returning
+                                                    the
+                                                    original item
+                                                    for a refund and placing a new order. Please allow two weeks for
+                                                    your
+                                                    refund
+                                                    to be
+                                                    processed.
+                                                </p>
+                                                <p class="h9">If a package or item delivered to you arrives damaged,
+                                                    please
+                                                    refuse the
+                                                    shipment or call us
+                                                    immediately at <a href="tel:+6562990110">+65 6299 0110</a>. Please
+                                                    retain
+                                                    all packing materials unless
+                                                    instructed
+                                                    otherwise by Michael Trio. Claims for damaged or missing items must
+                                                    be
+                                                    reported immediately
+                                                    or within five days of receipt of your order. Michael Trio is not
+                                                    responsible for lost or
+                                                    damaged returned shipments.</p>
+
+                                                <ul>
+                                                    <li>Purchase of custom or special-ordered items are final and cannot
+                                                        be
+                                                        returned or
+                                                        exchanged.</li>
+                                                    <li>A fee for engraving will not be refunded/a fee will be charged
+                                                        for
+                                                        removal of engraving
+                                                        in case of a return/exchange.</li>
+                                                    <li>Please note that for refund of online purchases, administrative
+                                                        costs
+                                                        will apply.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>For in-store purchases</h6>
+                                                <p class="h9">Purchases made in Michael Trio showrooms are only allowed
+                                                    to
+                                                    be
+                                                    refunded for
+                                                    store credits.
+                                                    However, customers may exchange item(s) at our showrooms within
+                                                    14-days
+                                                    from
+                                                    the purchase
+                                                    date.</p>
+                                                <p class="h9">Please note that to be eligible for return, item(s) must
+                                                    be in
+                                                    their original
+                                                    purchase
+                                                    condition (undamaged and in "new and unused condition"), including
+                                                    all
+                                                    product
+                                                    documentation, and shipped back to us within 14 days. Items showing
+                                                    obvious
+                                                    signs of wear or
+                                                    alteration by a jeweler other than Michael Trio will not be
+                                                    accepted.
+                                                </p>
+                                                <p class="h9">If an item was delivered with a diamond report, the return
+                                                    must be
+                                                    accompanied by the
+                                                    original laboratory grading report. Otherwise, customers will bear
+                                                    the
+                                                    cost
+                                                    of a replacement
+                                                    report.</p>
+                                                <ul>
+                                                    <li>Purchase of custom or special-ordered items are final and cannot
+                                                        be
+                                                        returned, exchanged
+                                                        or refunded.</li>
+                                                    <li>A fee for engraving will not be refunded / a fee will be charged
+                                                        for
+                                                        removal of
+                                                        engraving in case of a return/ exchange.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#14day" href="#14day3">
+                                                How do I return my item(s)?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="14day3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="mb-5">
+                                                <h6>
+                                                    Drop it off at one of our showrooms - It’s free!
+                                                </h6>
+                                                <p class="h9">
+                                                    Package your item(s) securely in the original packing materials. If
+                                                    your
+                                                    return is for
+                                                    refund or exchange, please include any diamond grading report(s) or
+                                                    appraisal(s). Diamond
+                                                    grading report(s) and appraisal(s) are not required for repairs and
+                                                    resizes.
+                                                    If an item was
+                                                    delivered with a diamond report, the return must be accompanied by
+                                                    the
+                                                    original laboratory
+                                                    grading report. Otherwise, customers will bear the cost for a
+                                                    replacement
+                                                    report.
+                                                </p>
+                                                <p class="h9">Drop your parcel off at any of our Singapore showrooms
+                                                    within
+                                                    14
+                                                    days from
+                                                    the delivered
+                                                    date. Our Diamond & Jewellery Consultant will assist you further for
+                                                    the
+                                                    refund/exchange
+                                                    process.</p>
+                                                <p class="h9">View our showroom locations here.</p>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>Mail it back to us.</h6>
+                                                <p class="h9">Initiate your return. Call <a href="tel:+6562990110">+65
+                                                        6299
+                                                        0110</a> to speak with our Diamond
+                                                    &
+                                                    Jewellery Consultant or
+                                                    email us at <a
+                                                        href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>.
+                                                    You
+                                                    will receive a return code as well
+                                                    as detailed
+                                                    instructions for returning your order.</p>
+                                                <p class="h9">Arrange shipping and insurance. You may return your
+                                                    item(s)
+                                                    using
+                                                    the carrier
+                                                    of your choice.
+                                                    We recommend sending your return via our preferred Parcel Pro
+                                                    insured
+                                                    FedEx
+                                                    or UPS carrier.
+                                                    Please be sure to confirm that you insure your jewellery to the
+                                                    value
+                                                    that
+                                                    was paid.
+                                                    Customers will be responsible for any return shipping costs and
+                                                    insurance
+                                                    fees.</p>
+                                                <p class="h9">Package your item(s) securely in the original packing
+                                                    materials.
+                                                    Clearly
+                                                    write your return
+                                                    code on the outside of the shipping box you are returning. If your
+                                                    return is
+                                                    for refund or
+                                                    exchange, please include any diamond grading report(s) or
+                                                    appraisal(s).
+                                                    Diamond grading
+                                                    report(s) and appraisal(s) are not required for repairs and resizes.
+                                                    If
+                                                    an
+                                                    item was
+                                                    delivered with a diamond report, the return must be accompanied by
+                                                    the
+                                                    original laboratory
+                                                    grading report. Otherwise, customers will bear the cost of a
+                                                    replacement
+                                                    report. For
+                                                    security reasons, do not write Michael Trio anywhere on the outside
+                                                    of
+                                                    the
+                                                    box.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#14day" href="#14day4">
+                                                How long does it take for a returned parcel to be processed?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="14day4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Once your return is received into our system, you will receive a
+                                                confirmation email. Your
+                                                return will be inspected by our quality assurance team. If there are any
+                                                questions regarding
+                                                your return, we will contact you. After inspection, your return will be
+                                                fully processed.
+                                            </p>
+
+                                            <p class="h9">
+                                                Returns will be processed within 14 business days (not inclusive of
+                                                weekends
+                                                and Singapore
+                                                public holidays) from the date we receive your return.
+                                            </p>
+                                            <p class="h9">
+                                                We will drop an email update once your return has been processed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#14day" href="#14day5">
+                                                Will there be any fees associated with my return?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="14day5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p class="h9">
+                                                Returns will be free of charge if you drop them off at any of our
+                                                showrooms.
+                                                You are only
+                                                liable for any return shipping costs and insurance fees if the return is
+                                                done through mail.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- installment  -->
+                        <div class="container-faq pt-3" id="faq-installment">
+                            <h6> Installments
+                            </h6>
+                            <div class="panel-group" id="installment">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#installment" href="#installment1">
+                                                Which Credit Card(s) can I use for installment payment?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="installment1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Currently, Michael Trio only accepts UOB Credit Card installment option
+                                                for
+                                                6 months or 12
+                                                months interest-free installments. However, do take note that payment
+                                                through installments
+                                                can only be processed for purchases made at our showroom, and is not
+                                                applicable for online
+                                                purchase.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- ringsize  -->
+                        <div class="container-faq pt-3" id="faq-ringsize">
+                            <h6>Orders and Ring Sizes
+                            </h6>
+                            <div class="panel-group" id="ringsize">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize1">
+                                                How do I find my ring size?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="ringsize1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                We provide complimentary ring-sizers to help you determine your ring
+                                                size.
+                                                You may request a
+                                                ring-sizer here. For alternative ways to find your ring size, you may
+                                                find
+                                                your ring size
+                                                here.
+                                            </p>
+
+                                            <iframe class="ring-iframe"
+                                                src="https://www.youtube.com/embed/KariIFPqLU8?rel=0&showinfo=1&modestbranding=1"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize2">
+                                                How tight should a ring be?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="ringsize2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                A proper ring size will fit comfortably snug, but will resist just a bit
+                                                when slid over the
+                                                knuckle. It should take 2-3 seconds to slide it over the knuckle and
+                                                this is
+                                                normal,
+                                                especially with men who typically have larger knuckles. If you size your
+                                                ring to your
+                                                knuckle, it will be too big on your finger.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize3">
+                                                What if I need to resize my ring?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="ringsize3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Excluding eternity rings and tension rings, we offer a 60-days free
+                                                resizing
+                                                service to all
+                                                online purchased rings and in-store purchased engagement rings.
+                                            </p>
+                                            <div class="ring-size-table">
+                                                <table class="table table-bordered mt-4 ">
+                                                    <tbody>
+                                                        <tr style="background-color:#f2f2f2;">
+                                                            <th>Item</th>
+                                                            <th>Store Purchase</th>
+                                                            <th>Online Purchase</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Engagement Rings</td>
+                                                            <td>One-time complimentary resizing service for all
+                                                                engagement
+                                                                rings, valid for 60 days from date of purchase.</td>
+                                                            <td rowspan="3" style="vertical-align: middle;">One-time
+                                                                complimentary resizing service for all rings* valid for
+                                                                60
+                                                                days from date of purchase.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Wedding Bands</td>
+                                                            <td>Additional charges will apply for resizing requests
+                                                                after
+                                                                collection.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Other Rings</td>
+                                                            <td>Additional charges will apply if customer requests for
+                                                                resizing after collection</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <p class="h9">
+                                                * Eternity rings and tension rings cannot be resized and have to be
+                                                re-manufactured, charges
+                                                may apply. Thus, we recommend finding your best fit before making the
+                                                purchase.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize4">
+                                                How long will the resizing process take?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="ringsize4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Our ring resizing process will take approximately 1-2 weeks.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- custom  -->
+                        <div class="container-faq pt-3" id="faq-custom">
+                            <h6>Custom Made Orders
+                            </h6>
+                            <div class="panel-group" id="custom">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#custom" href="#custom1">
+                                                Can I customise my engagement ring or wedding band?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="custom1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Definitely! At Michael Trio, we take pride in providing pristine service
+                                                and
+                                                the best
+                                                quality of engagement rings and wedding bands. Customising your own ring
+                                                design is a great
+                                                way to express your personality and style. Need advice on suitability
+                                                and
+                                                design
+                                                inspiration? Feel free to give us a call or send us an email with
+                                                pictures
+                                                of what you have
+                                                in mind.
+                                            </p>
+
+                                            <p class="h9">
+                                                View our recent custom-made orders here.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#custom" href="#custom2">
+                                                What are the custom options?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="custom2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Design Your Own: Build your own unique from scratch.<br />
+
+                                                Have it Customised: Tweak/modify an existing design to match your style
+                                                &
+                                                personality.<br />
+
+                                                Have it Now: Make minor adjustments to ready-made jewellery.
+                                            </p>
+
+                                            <p class="h9">
+                                                Customisation choices vary depending on whether you start from scratch,
+                                                modify an existing
+                                                design, or start with an in-stock piece. Familiarize yourself with the
+                                                design elements which
+                                                appeals most to you, then save favorite designs to your Design Page.
+                                            </p>
+                                            <p class="h9">
+                                                Questions? Call us Tanjong Pagar: <a href="tel:+6562990110">+65 6299
+                                                    0110</a> | JEM:<a href="tel:+6569513296">+65 6951 3296</a> |
+                                                Northpoint:
+                                                <a href="tel:+6569513296">+65 6951 3296</a> , live chat, or email us at
+                                                <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a> for
+                                                help or price
+                                                estimates from our
+                                                consultant team.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#custom" href="#custom3">
+                                                How long will the customisation process take?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="custom3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Good things are worth the wait! Your customized ring will take
+                                                approximately
+                                                8-12 weeks
+                                                depending on the level of customization required.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#custom" href="#custom4">
+                                                What is the process of jewellery customisation?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="custom4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <ol>
+                                                <li class="mb-5">
+                                                    <h6>Consultation</h6>
+                                                    <p class="h9">Arrange for an appointment virtually or at any of our
+                                                        3
+                                                        showrooms.
+                                                        Feel free to bring
+                                                        along any materials that will help us better understand your
+                                                        ideal
+                                                        design. Need some
+                                                        help in your ideation process? Fret not, as we have a collection
+                                                        of
+                                                        sample products
+                                                        at our showrooms that might just give you some inspiration</p>
+                                                </li>
+                                                <li class="mb-5">
+                                                    <h6>Design</h6>
+                                                    <p class="h9">Upon confirmation of the design, a deposit will be
+                                                        required and our
+                                                        designer will
+                                                        begin sketching the design in accordance with your preference.
+                                                        Once
+                                                        completed, a
+                                                        sketch of your customised item will be shared for final
+                                                        approval.
+                                                    </p>
+                                                </li>
+                                                <li class="mb-5">
+                                                    <h6>Casting and Setting</h6>
+                                                    <p class="h9">Once the design is approved, production of your
+                                                        customised
+                                                        jewellery
+                                                        will commence
+                                                        and all you have to do is sit back and relax!</p>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- upgrade  -->
+                        <div class="container-faq pt-3" id="faq-upgrade">
+                            <h6> Diamond Upgrade Programme
+                            </h6>
+                            <div class="panel-group" id="upgrade">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade1">
+                                                Can I upgrade any diamond?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="upgrade1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Any Certified Earth Natural Diamonds purchased directly from Michael
+                                                Trio is
+                                                eligible for
+                                                the Diamond Upgrade Programme.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade2">
+                                                How do I determine the price of my new diamond?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="upgrade2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Your new certified replacement diamond will have to be of at least 2X or
+                                                greater in value.
+                                                For example, a $5,000 diamond can be upgraded to a diamond that costs
+                                                $10,000. The original
+                                                diamond that is traded in must be in the original condition, accompanied
+                                                by
+                                                the original
+                                                laboratory grading report. Otherwise, customers will bear the cost of a
+                                                replacement report.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade3">
+                                                Can I reuse my ring setting?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="upgrade3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Definitely yes, if your diamond is set in a Michael Trio setting, and is
+                                                in
+                                                reusable
+                                                condition, we will be able to set your new diamond back onto the
+                                                original
+                                                ring setting. If
+                                                the new diamond does not fit, you may choose to modify it at an
+                                                additional
+                                                cost. For
+                                                settings that are not from Michael Trio, the diamond must be exchanged
+                                                without the setting.
+                                                If you wish to trade in your Michael Trio setting, any possible credit
+                                                exchange will be
+                                                determined on a case-by-case basis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade4">
+                                                Is the Michael Trio Diamond Upgrade Programme available internationally?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="upgrade4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Yes, it is. Please contact our Customer Service about the specifics of
+                                                international
+                                                returns.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- price  -->
+                        <div class="container-faq pt-3" id="faq-price">
+                            <h6>Diamond Price Match Programme
+                            </h6>
+                            <div class="panel-group" id="price">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price1">
+                                                What is the Michael Trio Diamond Price Match Programme?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Michael Trio strives to provide our customers with the confidence that
+                                                you
+                                                are paying the
+                                                best price for your diamond. Found a comparable diamond at a lower
+                                                price?
+                                                Call us at
+                                                <a href="tel:+6562990110">+65 6299 0110</a> and we will honor the price
+                                                as
+                                                long as it fulfills our Diamond
+                                                Price Match
+                                                criteria here.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price2">
+                                                What if I found a comparable diamond at a lower price after my purchase
+                                                from
+                                                Michael Trio?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                The Diamond Price Match Programme only applies before you purchase your
+                                                Michael Trio
+                                                diamond. If, for any reason you are not satisfied with your purchase
+                                                from
+                                                Michael Trio, you
+                                                may choose to return your diamond within 14-days from the purchase date.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price3">
+                                                What is considered a comparable diamond?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                A comparable diamond must possess the same characteristics (cut, colour,
+                                                clarity, carat, and
+                                                fluorescence) as the Michael Trio diamond to which you are comparing.
+                                                Michael Trio reserves
+                                                the right to review your request and decide, in sole discretion, whether
+                                                the
+                                                diamond is
+                                                comparable.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price4">
+                                                Can the comparable diamond be from any diamond retailer?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                We accept price comparisons from all local retail competitors who are
+                                                authorised
+                                                Singapore-based diamond retailers in order to ensure ethical sourcing.
+                                                We
+                                                will also price
+                                                match diamonds sold by major online retailers internationally. The
+                                                diamond
+                                                in comparison
+                                                must be in stock and available for purchase at a lower price at the time
+                                                of
+                                                your request.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price5">
+                                                How do I request a price match from Michael Trio?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                You may do so by visiting any of our showrooms, contact our customer
+                                                service
+                                                hotline at <a href="tel:+6562990110">+65 6299 0110</a> , or email to us
+                                                at
+                                                <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price6">
+                                                How do I show "proof" of the lower price?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                You will be required to provide a copy of the diamond's GIA grading
+                                                report
+                                                (issued within
+                                                the last year) together with proof of the lower price offered.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#price" href="#price7">
+                                                What if the comparable diamond is no longer in stock?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="price7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                The lower-priced diamond has to be in stock and available for purchase
+                                                at
+                                                the time of your
+                                                request. Expired offers will not be eligible for price comparison.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- lifetime  -->
+                        <div class="container-faq pt-3" id="faq-lifetime">
+                            <h6> Lifetime Warranty
+                            </h6>
+                            <div class="panel-group" id="lifetime">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#lifetime" href="#lifetime1">
+                                                What is included in Michael Trio's lifetime warranty?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="lifetime1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                We are committed to ensuring the quality of your purchase; we stand
+                                                behind
+                                                everything that
+                                                we sell and warrant that all items will be free from any manufacturing
+                                                defects at the time
+                                                of delivery. We will repair and maintain your jewellery for a lifetime.
+                                            </p>
+                                            <p class="h9">
+                                                Our lifetime warranty offers free cleaning & inspection service, prong
+                                                tightening, and
+                                                diamond upgrades.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#lifetime" href="#lifetime2">
+                                                Need additional services not covered by our lifetime warranty?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="lifetime2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                In the event that your jewellery requires services not covered under our
+                                                lifetime warranty,
+                                                your jewellery may be mailed back to our office for evaluation*. Once
+                                                inspected, should
+                                                charges apply, you will be notified prior to any work being performed to
+                                                service your
+                                                jewellery.
+                                            </p>
+
+                                            <p class="h9">
+                                                Please contact us if you have any questions or would like to return your
+                                                item(s) to take
+                                                advantage of our free lifetime warranty or request additional repair
+                                                work
+                                                needed to service
+                                                your Michael Trio jewellery.
+                                            </p>
+                                            <p class="h9">
+                                                * To send us your jewellery, Singapore customers may drop it off at one
+                                                of
+                                                our stores.
+                                                International customers will be subject to return shipping costs
+                                                applicable
+                                                to their order.
+                                                We will ship your item back to you free of charge.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- conflict free -->
+                        <div class="container-faq pt-3" id="faq-conflict">
+                            <h6>Conflict-Free Diamonds
+                            </h6>
+                            <div class="panel-group" id="conflict">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#conflict" href="#conflict1">
+                                                What are conflict-free diamonds?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="conflict1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                Conflict-free diamonds are gems that were not obtained due to human
+                                                rights
+                                                abuses, child
+                                                labor, violence, or environmental degradation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#conflict" href="#conflict2">
+                                                Are your diamonds conflict-free?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="conflict2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+
+                                            <p class="h9">
+                                                At Michael Trio, all diamonds are conflict-free. This is aligned with
+                                                our
+                                                brand value of
+                                                only sourcing from suppliers who meet our internal requirements.
+                                            </p>
+                                            <ol>
+                                                <li>We only purchase polished diamonds from professional members of the
+                                                    diamond trade.</li>
+                                                <li>We have contracts with our suppliers that guarantee their diamonds
+                                                    are
+                                                    conflict-free.
+                                                </li>
+                                            </ol>
+                                            <p class="h9">
+                                                When you shop at Michael Trio, you can be certain that your diamonds are
+                                                sourced from
+                                                reputable providers. Read more about our conflict-free diamonds here.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- refer a fri -->
+                        <div class="container-faq pt-3" id="faq-refer">
+                            <h6> Refer-A-Friend
+                            </h6>
+                            <div class="panel-group" id="refer">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#refer" href="#refer1">
+                                                How does Michael Trio's Refer-A-Friend Programme work?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="refer1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="mb-5">
+                                                <h6>Tanjong Pagar</h6>
+                                                <p class="h9">
+                                                    Have a friend you think would love Michael Trio's jewellery? We'd
+                                                    love
+                                                    to
+                                                    meet them too!
+                                                    Simply fill up and submit the google form here. Once completed, your
+                                                    friend
+                                                    will receive a
+                                                    promo code for $100 off their first purchase at Michael Trio.
+                                                </p>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>JEM</h6>
+                                                <p class="h9">
+                                                    After your friend has made a purchase with Michael Trio, you’ll get
+                                                    a
+                                                    choice
+                                                    of $100 off
+                                                    your next purchase at Michael Trio, a $50 NTUC voucher, or a $50
+                                                    CapitaLand
+                                                    voucher.
+                                                </p>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>Northpoint City</h6>
+                                                <p class="h9">
+                                                    You are not allowed to refer yourself and the promo code will not be
+                                                    stackable with any
+                                                    other ongoing discounts or offers. Duplicates and/or similar email
+                                                    addresses
+                                                    to previously
+                                                    registered ones are not allowed.
+                                                </p>
+                                                <p class="h9">
+                                                    For more information, you may refer to the Terms and Conditions
+                                                    here.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- locate us -->
+                        <div class="container-faq pt-3" id="faq-locate">
+                            <h6> Locate Us
+                            </h6>
+                            <div class="panel-group" id="locate">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#locate" href="#locate1">
+                                                Where are your showrooms located at?
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="locate1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="mb-5">
+                                                <h6>Tanjong Pagar</h6>
+                                                <p class="h9">
+                                                    Address: 91 Tanjong Pagar road Singapore 088512 (along the row of
+                                                    shophouses
+                                                    and
+                                                    eateries)<br />
+
+                                                    Operating hours: Mondays - Sundays | 12pm - 8.30pm (except certain
+                                                    public
+                                                    holidays)<br />
+
+                                                    Tel: <a href="tel:+6562990110">+65 6299 0110</a>
+                                                </p>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>JEM</h6>
+                                                <p class="h9">
+                                                    Address: 50 Jurong Gateway Road #01-78 Singapore 182889<br />
+
+                                                    Operating hours: Mondays - Sundays | 11am - 9.30pm<br />
+
+                                                    Tel: <a href="tel:+6569513296">+65 6951 3296</a>
+                                                </p>
+                                            </div>
+                                            <div class="mb-5">
+                                                <h6>Northpoint City</h6>
+                                                <p class="h9">
+                                                    Address: Yishun Ave 2, North Wing, #01-22 Northpoint City Singapore
+                                                    769098<br />
+
+                                                    Operating hours: Mondays - Sundays | 11am - 9.30pm<br />
+
+                                                    Tel: <a href="tel:+6569691492">+65 6969 1492</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+
+        require([
+            'jquery',
+            'jquery-ui-modules/tabs'
+        ], function ($, twbs, d, tabs, modal) {
+
+            $(document).ready(function () {
+
+                var stickyNavTop = $('#faq-menu').offset().top;
+                var hash = window.location.hash;
+
+                var stickyNav = function () {
+                    var scrollTop = $(window).scrollTop();
+
+                    // if (scrollTop > stickyNavTop) {
+                    //     $('#faq-menu').addClass('sticky').css('top', '');
+                    // } else {
+                    //     $('#faq-menu').removeClass('sticky').css('top', '');;
+                    // }
+
+                    //Auto select menu
+                    $('#faq-menu a').each(function (i, e) {
+                        if (scrollTop > $($(e).attr('href')).offset().top - 184) {
+                            $('#faq-menu').find('a').removeClass('selected');
+                            $(e).addClass('selected');
+                        }
+                    });
+
+
+                    // Reach at the bottom
+                    //if(scrollTop + $(window).height() >= ($(document).height()-50)) {
+                    //    $('#faq-menu').css('top', -258);
+
+                    //    $('#faq-menu').find('.selected').removeClass('selected');
+                    //    $('#faq-menu li').last().find('a').addClass('selected');
+                    //}
+
+                    //$('#faq-menu a').removeClass('selected');
+                    //$('#faq-menu a[href="'+ hash +'"]').addClass('selected');
+
+                };
+
+                if ($(window).width() > 768) {
+                    stickyNav();
+
+                    $(window).scroll(function () {
+                        stickyNav();
+                    });
+                }
+
+                $('#faq-menu a').click(function () {
+                    var id = $(this).attr('href');
+
+                    $('#faq-menu a').removeClass('selected');
+                    $(this).addClass('selected');
+
+                    var stop = ($(window).width() > 768) ? 84 : 180;
+
+                    window.history.pushState({}, null, BASE_URL + 'faq' + id);
+
+                    $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 1000);
+
+                    return false;
+                });
+
+                $('.faq-clk').click(function () {
+                    var href = $(this).attr('href');
+
+                    $(this).find('.fa').toggleClass('fa-chevron-up');
+                    $(href).slideToggle();
+
+                    return false;
+                })
+
+
+                // Auto scroll
+                if (hash) {
+                    $('#faq-menu a[href="' + hash + '"]').click();
+                }
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

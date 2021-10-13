@@ -1,0 +1,149 @@
+.home-engagement .btn {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.home-ring {
+    width: 90%;
+}
+
+#best-seller-home .for-title {
+    display: none;
+}
+
+#best-seller-home.owl-carousel .owl-item.center .for-title {
+    display: block;
+    width: 350px;
+}
+
+#best-seller-home.owl-carousel .owl-item {
+    height: 290px;
+
+}
+
+#best-seller-home.owl-carousel .owl-item img {
+    width: 210px;
+}
+
+#best-seller-home.owl-carousel .owl-item.center img {
+    width: 310px;
+}
+
+.home-diamond-banner {
+    background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.home-diamond-banner-height {
+    height: 400px;
+}
+
+#diamonds-slider .for-title {
+    display: none;
+}
+
+#diamonds-slider.owl-carousel .owl-item.center .for-title {
+    display: block;
+}
+
+.home-custom-banner {
+    background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/customisation-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-custom {
+    width: 700px;
+    margin: auto;
+
+}
+
+.home-custom-height {
+    height: 400px;
+}
+
+.home-jewel {
+    position: relative;
+    margin-top: 150px;
+}
+
+.home-jewel::before {
+    content: "jewellery";
+    position: absolute;
+    top: -114px;
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--lighterorange);
+    opacity: 0.7;
+}
+
+.home-diamond-banner .btn {
+    display: block;
+}
+
+
+@media (max-width: 767.98px) {
+
+
+    .home-jewel::before {
+        font-size: 5rem;
+        top: -80px;
+    }
+
+    .home-custom-banner {
+        background-image: none;
+    }
+
+    .home-custom-height {
+        height: auto;
+    }
+
+    .home-custom {
+        width: 100%;
+    }
+
+    .home-engagement {
+        text-align: center;
+        margin: auto;
+    }
+
+    .home-engagement .btn {
+        display: block;
+        margin-right: auto;
+    }
+
+    .home-ring {
+        width: 60%;
+    }
+
+    .home-diamond-banner {
+        background-image: url(https://d213t4exkgxsjh.cloudfront.net/assets/images/front-diamond-bg-sm.jpg);
+
+    }
+
+    .home-diamond-banner-height {
+        height: 300px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .home-custom {
+        width: 100%;
+    }
+
+    .home-jewel {
+        margin-top: 100px;
+    }
+
+    .home-jewel::before {
+        font-size: 4rem;
+        top: -65px;
+    }
+}

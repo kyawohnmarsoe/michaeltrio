@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        #faq .panel {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        #faq .panel-body {
+            padding: 15px;
+        }
+
+        #faq .panel-heading {
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        #faq .panel-heading>.dropdown .dropdown-toggle {
+            color: inherit;
+        }
+
+        #faq .panel-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: inherit;
+        }
+
+        #faq .panel-title>a,
+        #faq .panel-title>small,
+        #faq .panel-title>.small,
+        #faq .panel-title>small>a,
+        #faq .panel-title>.small>a {
+            color: inherit;
+        }
+
+        #faq .panel-footer {
+            padding: 10px 15px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ddd;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        #faq .panel>.list-group,
+        #faq .panel>.panel-collapse>.list-group {
+            margin-bottom: 0;
+        }
+
+        #faq .panel>.list-group .list-group-item,
+        #faq .panel>.panel-collapse>.list-group .list-group-item {
+            border-width: 1px 0;
+            border-radius: 0;
+        }
+
+        #faq .panel>.list-group:first-child .list-group-item:first-child,
+        #faq .panel>.panel-collapse>.list-group:first-child .list-group-item:first-child {
+            border-top: 0;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        #faq .panel>.list-group:last-child .list-group-item:last-child,
+        #faq .panel>.panel-collapse>.list-group:last-child .list-group-item:last-child {
+            border-bottom: 0;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        #faq .panel>.panel-heading+.panel-collapse>.list-group .list-group-item:first-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        #faq .panel-heading+.list-group .list-group-item:first-child {
+            border-top-width: 0;
+        }
+
+        #faq .list-group+.panel-footer {
+            border-top-width: 0;
+        }
+
+        #faq .panel>.table,
+        #faq .panel>.table-responsive>.table,
+        #faq .panel>.panel-collapse>.table {
+            margin-bottom: 0;
+        }
+
+        #faq .panel>.table caption,
+        #faq .panel>.table-responsive>.table caption,
+        #faq .panel>.panel-collapse>.table caption {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        #faq .panel>.table:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        #faq .panel>.table:first-child>thead:first-child>tr:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child,
+        #faq .panel>.table:first-child>tbody:first-child>tr:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        #faq .panel>.table:first-child>thead:first-child>tr:first-child td:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:first-child,
+        #faq .panel>.table:first-child>tbody:first-child>tr:first-child td:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:first-child,
+        #faq .panel>.table:first-child>thead:first-child>tr:first-child th:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:first-child,
+        #faq .panel>.table:first-child>tbody:first-child>tr:first-child th:first-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:first-child {
+            border-top-left-radius: 3px;
+        }
+
+        #faq .panel>.table:first-child>thead:first-child>tr:first-child td:last-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:last-child,
+        #faq .panel>.table:first-child>tbody:first-child>tr:first-child td:last-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:last-child,
+        #faq .panel>.table:first-child>thead:first-child>tr:first-child th:last-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:last-child,
+        #faq .panel>.table:first-child>tbody:first-child>tr:first-child th:last-child,
+        #faq .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:last-child {
+            border-top-right-radius: 3px;
+        }
+
+        #faq .panel>.table:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        #faq .panel>.table:last-child>tbody:last-child>tr:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child,
+        #faq .panel>.table:last-child>tfoot:last-child>tr:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        #faq .panel>.table:last-child>tbody:last-child>tr:last-child td:first-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:first-child,
+        #faq .panel>.table:last-child>tfoot:last-child>tr:last-child td:first-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:first-child,
+        #faq .panel>.table:last-child>tbody:last-child>tr:last-child th:first-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:first-child,
+        #faq .panel>.table:last-child>tfoot:last-child>tr:last-child th:first-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        #faq .panel>.table:last-child>tbody:last-child>tr:last-child td:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:last-child,
+        #faq .panel>.table:last-child>tfoot:last-child>tr:last-child td:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:last-child,
+        #faq .panel>.table:last-child>tbody:last-child>tr:last-child th:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:last-child,
+        #faq .panel>.table:last-child>tfoot:last-child>tr:last-child th:last-child,
+        #faq .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+        #faq .panel>.panel-body+.table,
+        #faq .panel>.panel-body+.table-responsive,
+        #faq .panel>.table+.panel-body,
+        #faq .panel>.table-responsive+.panel-body {
+            border-top: 1px solid #ddd;
+        }
+
+        #faq .panel>.table>tbody:first-child>tr:first-child th,
+        #faq .panel>.table>tbody:first-child>tr:first-child td {
+            border-top: 0;
+        }
+
+        #faq .panel>.table-bordered,
+        #faq .panel>.table-responsive>.table-bordered {
+            border: 0;
+        }
+
+        #faq .panel>.table-bordered>thead>tr>th:first-child,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr>th:first-child,
+        #faq .panel>.table-bordered>tbody>tr>th:first-child,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr>th:first-child,
+        #faq .panel>.table-bordered>tfoot>tr>th:first-child,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr>th:first-child,
+        #faq .panel>.table-bordered>thead>tr>td:first-child,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr>td:first-child,
+        #faq .panel>.table-bordered>tbody>tr>td:first-child,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr>td:first-child,
+        #faq .panel>.table-bordered>tfoot>tr>td:first-child,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+            border-left: 0;
+        }
+
+        #faq .panel>.table-bordered>thead>tr>th:last-child,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr>th:last-child,
+        #faq .panel>.table-bordered>tbody>tr>th:last-child,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr>th:last-child,
+        #faq .panel>.table-bordered>tfoot>tr>th:last-child,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr>th:last-child,
+        #faq .panel>.table-bordered>thead>tr>td:last-child,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr>td:last-child,
+        #faq .panel>.table-bordered>tbody>tr>td:last-child,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr>td:last-child,
+        #faq .panel>.table-bordered>tfoot>tr>td:last-child,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+            border-right: 0;
+        }
+
+        #faq .panel>.table-bordered>thead>tr:first-child>td,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr:first-child>td,
+        #faq .panel>.table-bordered>tbody>tr:first-child>td,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr:first-child>td,
+        #faq .panel>.table-bordered>thead>tr:first-child>th,
+        #faq .panel>.table-responsive>.table-bordered>thead>tr:first-child>th,
+        #faq .panel>.table-bordered>tbody>tr:first-child>th,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr:first-child>th {
+            border-bottom: 0;
+        }
+
+        #faq .panel>.table-bordered>tbody>tr:last-child>td,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr:last-child>td,
+        #faq .panel>.table-bordered>tfoot>tr:last-child>td,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>td,
+        #faq .panel>.table-bordered>tbody>tr:last-child>th,
+        #faq .panel>.table-responsive>.table-bordered>tbody>tr:last-child>th,
+        #faq .panel>.table-bordered>tfoot>tr:last-child>th,
+        #faq .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>th {
+            border-bottom: 0;
+        }
+
+        #faq .panel>.table-responsive {
+            margin-bottom: 0;
+            border: 0;
+        }
+
+        #faq .panel-group {
+            margin-bottom: 20px;
+        }
+
+        #faq .panel-group .panel {
+            margin-bottom: 0;
+            border-radius: 4px;
+        }
+
+        #faq .panel-group .panel+.panel {
+            margin-top: 5px;
+        }
+
+        #faq .panel-group .panel-heading {
+            border-bottom: 0;
+        }
+
+        #faq .panel-group .panel-heading+.panel-collapse>.panel-body,
+        #faq .panel-group .panel-heading+.panel-collapse>.list-group {
+            border-top: 1px solid #ddd;
+        }
+
+        #faq .panel-group .panel-footer {
+            border-top: 0;
+        }
+
+        #faq .panel-group .panel-footer+.panel-collapse .panel-body {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #faq .panel-default {
+            border-color: #ddd;
+        }
+
+        #faq .panel-default>.panel-heading {
+            color: #333333;
+            background-color: #f5f5f5;
+            border-color: #ddd;
+        }
+
+        #faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #ddd;
+        }
+
+        #faq .panel-default>.panel-heading .badge {
+            color: #f5f5f5;
+            background-color: #333333;
+        }
+
+        #faq .panel-default>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #ddd;
+        }
+
+        #faq .panel-primary {
+            border-color: #337ab7;
+        }
+
+        #faq .panel-primary>.panel-heading {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #337ab7;
+        }
+
+        #faq .panel-primary>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #337ab7;
+        }
+
+        #faq .panel-primary>.panel-heading .badge {
+            color: #337ab7;
+            background-color: #fff;
+        }
+
+        #faq .panel-primary>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #337ab7;
+        }
+
+        #faq .panel-success {
+            border-color: #d6e9c6;
+        }
+
+        #faq .panel-success>.panel-heading {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        #faq .panel-success>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #d6e9c6;
+        }
+
+        .panel-success>.panel-heading .badge {
+            color: #dff0d8;
+            background-color: #3c763d;
+        }
+
+        .panel-success>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #d6e9c6;
+        }
+
+        .panel-info {
+            border-color: #bce8f1;
+        }
+
+        .panel-info>.panel-heading {
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .panel-info>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #bce8f1;
+        }
+
+        .panel-info>.panel-heading .badge {
+            color: #d9edf7;
+            background-color: #31708f;
+        }
+
+        .panel-info>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #bce8f1;
+        }
+
+        .panel-warning {
+            border-color: #faebcc;
+        }
+
+        .panel-warning>.panel-heading {
+            color: #8a6d3b;
+            background-color: #fcf8e3;
+            border-color: #faebcc;
+        }
+
+        .panel-warning>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #faebcc;
+        }
+
+        .panel-warning>.panel-heading .badge {
+            color: #fcf8e3;
+            background-color: #8a6d3b;
+        }
+
+        .panel-warning>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #faebcc;
+        }
+
+        .panel-danger {
+            border-color: #ebccd1;
+        }
+
+        .panel-danger>.panel-heading {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+
+        .panel-danger>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #ebccd1;
+        }
+
+        .panel-danger>.panel-heading .badge {
+            color: #f2dede;
+            background-color: #a94442;
+        }
+
+        .panel-danger>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #ebccd1;
+        }
+
+        #faq h1 {
+            font-weight: 300;
+            margin-bottom: 45px;
+        }
+
+        #faq .faq-group {
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+        }
+
+        #faq .faq-group a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            line-height: 50px;
+            padding: 0 10px 0 16px;
+            background-color: #4e5359;
+            color: #fff;
+            white-space: nowrap;
+            border-bottom: 1px solid #555a60;
+            text-overflow: ellipsis;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #faq .faq-group .selected {
+            background: #4b5055;
+        }
+
+        #faq .faq-group a.selected:before {
+            content: '';
+            display: block;
+            top: 0;
+            right: auto;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #6c88a2;
+            -webkit-transition: opacity .2s;
+            transition: opacity .2s;
+            position: absolute;
+        }
+
+        #faq .panel-group .panel-title {
+            font-size: 20px;
+            font-weight: 300;
+            position: relative;
+        }
+
+        #faq .panel-group .panel-body p,
+        #faq .panel-group .panel-body {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        #faq .panel-group .panel-body ul li {
+            font-size: 14px;
+            padding: 6px 0;
+        }
+
+        #faq .panel-group a:focus {
+            text-decoration: none;
+        }
+
+        #faq .panel-group .panel-title a .fa {
+            float: right;
+            color: #6c88a2;
+        }
+
+        #faq .faq-item .faq-title {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 800;
+            color: #bbbbc7;
+            margin-top: 30px;
+        }
+
+        #faq .faq-item .faq-title:first-child {
+            margin-top: 0px;
+        }
+
+        #faq .panel-group .panel-default .panel-heading {
+            padding: 15px;
+        }
+
+        #faq .faq-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #faq .faq-scroll {
+            width: 100%;
+            height: auto;
+        }
+
+        #faq #faq-menu {
+            position: absolute;
+            width: 300px;
+            padding-right: 25px;
+        }
+
+        #faq .sticky {
+            position: fixed !important;
+            padding-right: 25px;
+            width: 300px;
+            top: 80px;
+            z-index: 99;
+        }
+
+        @media (max-width: 768px) {
+            #faq #faq-menu {
+                position: static;
+                width: auto;
+                padding-right: 0px;
+                margin-bottom: 35px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <section id="faq">
+        <h1 class="text-center">Questions? Look here.</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div id="faq-menu" class="">
+                    <ul class="faq-group">
+                        <li><a href="#shipping" class="selected">Shipping</a></li>
+                        <li><a href="#14-day-return-policy" class="">14-Day Return Policy</a></li>
+                        <li><a href="#installments" class="">Installments</a></li>
+                        <li><a href="#orders-and-ring-sizes" class="">Orders and Ring Sizes</a></li>
+                        <li><a href="#custom-made-orders" class="">Custom Made Orders</a></li>
+                        <li><a href="#diamond-upgrade-programme" class="">Diamond Upgrade Programme</a></li>
+                        <li><a href="#diamond-price-match-programme" class="">Diamond Price Match Programme</a></li>
+                        <li><a href="#lifetime-warranty" class="">Lifetime Warranty</a></li>
+                        <li><a href="#conflict-free-diamonds" class="">Conflict-Free Diamonds</a></li>
+                        <li><a href="#refer-a-friend" class="">Refer-A-Friend</a></li>
+                        <li><a href="#locate-us" class="">Locate Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-18 col-md-18">
+                <div class="faq-wrap">
+                    <div class="faq-scroll">
+                        <div class="faq-item" id="shipping">
+                            <h2 class="faq-title">Shipping</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh1">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol1"
+                                                aria-expanded="true" aria-controls="fcol1">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Where do you ship?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol1" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh1">
+                                        <div class="panel-body">
+                                            <p>We ship our products both locally and internationally.</p>
+                                            <p>Please note that products shipped internationally may not be in
+                                                accordance with destination country or region standards, specifications,
+                                                and labeling requirements. The customer is responsible for determining
+                                                that products can be lawfully and legally imported into the destination
+                                                country or region. </p>
+                                            <p>Michael Trio currently ships to the following countries: Australia,
+                                                Austria, Bermuda, Brunei, Cambodia, Canada, China, Denmark, Finland,
+                                                Germany, Greece, Hong Kong, Indonesia, Ireland, Italy, Japan, Malaysia,
+                                                Netherlands, New Zealand, Norway, Philippines, Portugal, Singapore,
+                                                South Korea, Spain, Sweden, Taiwan , Trinidad and Tobago, United Arab
+                                                Emirates, United Kingdom, and United States.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh2">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol2"
+                                                aria-expanded="true" aria-controls="fcol2">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Are there any restricted zones/areas in
+                                                        Singapore that you do not deliver to?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol2" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh2">
+                                        <div class="panel-body">
+                                            <p>We deliver islandwide locally except to army camps, hotels, and the
+                                                following restricted areas: Airline Road, Airport Cargo Road, Alps
+                                                Avenue, Brani Terminal Avenue, Changi Airport (only areas with
+                                                restricted access), Jurong Island, Kusu Island, Pulau Damar Laut, Pulau
+                                                Busing, Pulau Tekong, Pulau Sakeng, Pulau Sebarok, Pulau Ubin, Rifle
+                                                Range, Seletar Aerospace, St John Island, Turn Club Avenue, and West
+                                                Camp Road.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh3">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol3"
+                                                aria-expanded="true" aria-controls="fcol3">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What is the cost of shipping?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol3" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh3">
+                                        <div class="panel-body">
+                                            <p>
+                                                Shipping is free for all products. Michael Trio provides quick and
+                                                efficient shipping, with full insurance coverage to all shipping
+                                                destinations. All items will be packaged securely and will be fully
+                                                insured while in transit to your destination.
+                                            </p>
+                                            <p>
+                                                International customers will be responsible for any duties, VAT, taxes
+                                                or surcharges levied or charged by their country. Please check with
+                                                local authorities prior to placing your order to confirm taxes and
+                                                duties.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh4">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol4"
+                                                aria-expanded="true" aria-controls="fcol4">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Shipping methods and duration</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol4" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh4">
+                                        <div class="panel-body">
+                                            <p>We currently offer 2 delivery options so that you can choose the one that
+                                                best suits your needs.</p>
+                                            <p>
+                                                1. FREE Standard shipping: Deliver within 3-5 working days upon
+                                                dispatch. Once shipped, a tracking number will be provided to you upon
+                                                request. Please remember a signature will be required upon delivery.
+                                            </p>
+                                            <p>
+                                                2. FREE Store collection: If you prefer to pick up your purchase from
+                                                our showroom, please indicate your preferred pick-up showroom location
+                                                on the checkout page. Our sales representative will get in touch with
+                                                you once your product is ready for collection.
+                                            </p>
+                                            <p>
+                                                Loose diamonds are shipped immediately after passing inspection. You'll
+                                                see an estimated shipping and delivery date for each product on every
+                                                product details page. These can also be seen in your account dashboard
+                                                and order confirmation email. Hereafter, you can expect your delivery
+                                                within the above timeframes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh5">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol5"
+                                                aria-expanded="true" aria-controls="fcol5">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Are your shipments secure?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol5" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh5">
+                                        <div class="panel-body">
+                                            <p>
+                                                Yes. Our items are fully insured during transit and all purchases
+                                                require a signature upon delivery. To keep our customers protected,
+                                                Michael Trio always:
+                                            </p>
+                                            <ul>
+                                                <li style="list-style: none;">1) Insure and register all items for their
+                                                    full value</li>
+                                                <li style="list-style: none;">2) Use only reliable shipping service for
+                                                    all orders to ensure that your package will be delivered in the
+                                                    fastest and safest manner</li>
+                                                <li style="list-style: none;">3) Require that all deliveries be made to
+                                                    a physical business or residential address</li>
+                                                <li style="list-style: none;">4) Prohibit delivery to PO Box address
+                                                </li>
+                                                <li style="list-style: none;">5) Require a signature for all packages
+                                                    upon delivery</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh6">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol6"
+                                                aria-expanded="true" aria-controls="fcol6">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I track my order?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol6" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh6">
+                                        <div class="panel-body">
+                                            <p>Order status and tracking information can be found on the MichaelTrio.com
+                                                website <a
+                                                    href="https://www.michaeltrio.com/sales/order/history/">here</a>.
+                                            </p>
+                                            <p>
+                                                Please note: We will only ship your order once it has passed our
+                                                thorough quality inspection. Loose diamonds are shipped immediately
+                                                after passing inspection. You'll see an estimated shipping and delivery
+                                                date for each product on every product details page. These can also be
+                                                seen in your account dashboard and order confirmation email. Hereafter,
+                                                you can expect your delivery within the above timeframes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh7">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol7"
+                                                aria-expanded="true" aria-controls="fcol7">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What if my jewellery gets lost during
+                                                        shipment?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol7" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh7">
+                                        <div class="panel-body">
+                                            <p>Michael Trio takes every precaution to ensure that your order arrives
+                                                safely. Your order will be fully insured during transit, and we require
+                                                a signature for all packages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh8">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol8"
+                                                aria-expanded="true" aria-controls="fcol8">
+                                                <div class="row">
+                                                    <span class="col-xs-22">I haven’t received my order. Who can I
+                                                        contact?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol8" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh8">
+                                        <div class="panel-body">
+                                            <p>Your estimated delivery date will be in your order confirmation email
+                                                &amp; your account dashboard - please allow until this date for your
+                                                order to arrive. Kindly take note that your parcel will take at least
+                                                3-5 working days to arrive upon dispatch.</p>
+                                            <p>If your estimated delivery date has passed, and there aren’t any known
+                                                delivery delays, please email us at service@michaeltrio.com so we may
+                                                further assist you.</p>
+                                            <p>Due to the high volume of orders during the peak/festive seasons, there
+                                                may be a delay in processing the orders and having them ready for
+                                                pick-up and shipping. Rest assured that our sales representative will
+                                                get in touch with you to discuss the delay.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh9">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol9"
+                                                aria-expanded="true" aria-controls="fcol9">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Do you deliver internationally?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol9" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh9">
+                                        <div class="panel-body">
+                                            <p>Yes, we ship internationally. International orders over $500 in value are
+                                                shipped via FedEx International Priority or UPS Worldwide Express.
+                                                International orders under $500 in value are shipped via FedEx Economy
+                                                or Singpost.</p>
+                                            <p>Please note that products shipped internationally may not be designed in
+                                                accordance with destination country or region standards, specifications,
+                                                and labeling requirements. The customer is responsible for determining
+                                                that products can be lawfully and legally imported into the destination
+                                                country or region.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh10">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol10"
+                                                aria-expanded="true" aria-controls="fcol10">
+                                                <div class="row">
+                                                    <span class="col-xs-22">I'd like to place an international order. Do
+                                                        I pay customs fees to Michael Trio or the courier?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol10" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh10">
+                                        <div class="panel-body">
+                                            <p>When you place an international order, we will ship it to you for free.
+                                                Once the package arrives in your country, the courier will contact you
+                                                to collect any taxes or duties. Shipping is done via FedEx International
+                                                Priority/UPS Worldwide Express for orders over S$500 in value and
+                                                usually takes two to three days. Packages valued below S$500 are sent
+                                                via Singpost.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="14-day-return-policy">
+                            <h2 class="faq-title">14-Day Return Policy</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh11">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol11"
+                                                aria-expanded="true" aria-controls="fcol11">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Can I request for a return?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol11" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh11">
+                                        <div class="panel-body">
+                                            <p>If, for any reason you are not completely satisfied with your order,
+                                                Michael Trio offers a 14-day return guarantee for online orders. Please
+                                                refer to the next question for further information on the conditions for
+                                                return.</p>
+                                            <p>Do note that products purchased during promotional periods, exclusive
+                                                campaigns or flash sales cannot be refunded for cash, credit or
+                                                exchanged for other goods of similar value. Custom or special-ordered
+                                                items are final and cannot be returned or exchanged.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh12">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol12"
+                                                aria-expanded="true" aria-controls="fcol12">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Returns policy and terms.</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol12" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh12">
+                                        <div class="panel-body">
+                                            <p><strong>For online purchases</strong></p>
+                                            <p>We accept returns for a full <strong>cash refund</strong> or exchange
+                                                within 14 days from the delivered date. Charges for return shipping and
+                                                insurance fees will be borne by the customer should it be required for
+                                                the item to return to our warehouse in Singapore</p>
+                                            <p>Singapore &amp; International: Returns must reach us within 14 calendar
+                                                days from the delivered date.</p>
+                                            <p>Please note that to be eligible for return, item(s) must be in their
+                                                original purchase condition (undamaged and in "new and unused
+                                                condition"), including all product documentation, and shipped back to us
+                                                within 14 days. Items showing obvious signs of wear or alteration by a
+                                                jeweler other than Michael Trio will not be accepted.</p>
+                                            <p>If an item was delivered with a diamond report, the return must be
+                                                accompanied by the original laboratory grading report. Otherwise,
+                                                customers will bear the cost of a replacement report.</p>
+                                            <p>To expedite an exchange for a different product, we recommend returning
+                                                the original item for a refund and placing a new order. Please allow two
+                                                weeks for your refund to be processed.</p>
+                                            <p>If a package or item delivered to you arrives damaged, please refuse the
+                                                shipment or call us immediately at +65 6299 0110. Please retain all
+                                                packing materials unless instructed otherwise by Michael Trio. Claims
+                                                for damaged or missing items must be reported immediately or within five
+                                                days of receipt of your order. Michael Trio is not responsible for lost
+                                                or damaged returned shipments.</p>
+                                            <p>* Purchase of custom or special-ordered items are final and cannot be
+                                                returned or exchanged.</p>
+                                            <p>* A fee for engraving will not be refunded/a fee will be charged for
+                                                removal of engraving in case of a return/exchange.</p>
+                                            <p>* Please note that for refund of online purchases, administrative costs
+                                                will apply.</p>
+                                            <p class="mt-4"><strong>For in-store purchases</strong></p>
+                                            <p>Purchases made in Michael Trio showrooms are only allowed to be refunded
+                                                for <strong>store credits</strong>. However, customers may exchange
+                                                item(s) at our showrooms within 14-days from the purchase date.</p>
+                                            <p>Please note that to be eligible for return, item(s) must be in their
+                                                original purchase condition (undamaged and in "new and unused
+                                                condition"), including all product documentation, and shipped back to us
+                                                within 14 days. Items showing obvious signs of wear or alteration by a
+                                                jeweler other than Michael Trio will not be accepted.</p>
+                                            <p>If an item was delivered with a diamond report, the return must be
+                                                accompanied by the original laboratory grading report. Otherwise,
+                                                customers will bear the cost of a replacement report.</p>
+                                            <p>* Purchase of custom or special-ordered items are final and cannot be
+                                                returned, exchanged or refunded.</p>
+                                            <p>* A fee for engraving will not be refunded / a fee will be charged for
+                                                removal of engraving in case of a return/ exchange.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh13">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol13"
+                                                aria-expanded="true" aria-controls="fcol13">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I return my item(s)?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol13" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh13">
+                                        <div class="panel-body">
+                                            <p><strong>Drop it off at one of our showrooms - It’s free!</strong></p>
+                                            <p>Package your item(s) securely in the original packing materials. If your
+                                                return is for refund or exchange, please include any diamond grading
+                                                report(s) or appraisal(s). Diamond grading report(s) and appraisal(s)
+                                                are not required for repairs and resizes. If an item was delivered with
+                                                a diamond report, the return must be accompanied by the original
+                                                laboratory grading report. Otherwise, customers will bear the cost for a
+                                                replacement report.</p>
+                                            <p>Drop your parcel off at any of our Singapore showrooms within 14 days
+                                                from the delivered date. Our Diamond &amp; Jewellery Consultant will
+                                                assist you further for the refund/exchange process.</p>
+                                            <p>View our showroom locations <a
+                                                    href="https://www.michaeltrio.com/locations/">here</a>.</p>
+                                            <p class="mt-4"><strong>Mail it back to us.</strong></p>
+                                            <p>Initiate your return. Call +65 6299 0110 to speak with our Diamond &amp;
+                                                Jewellery Consultant or email us at service@michaeltrio.com. You will
+                                                receive a return code as well as detailed instructions for returning
+                                                your order.</p>
+                                            <p>Arrange shipping and insurance. You may return your item(s) using the
+                                                carrier of your choice. We recommend sending your return via our
+                                                preferred Parcel Pro insured FedEx or UPS carrier. Please be sure to
+                                                confirm that you insure your jewellery to the value that was paid.
+                                                Customers will be responsible for any return shipping costs and
+                                                insurance fees.</p>
+                                            <p>Package your item(s) securely in the original packing materials. Clearly
+                                                write your return code on the outside of the shipping box you are
+                                                returning. If your return is for refund or exchange, please include any
+                                                diamond grading report(s) or appraisal(s). Diamond grading report(s) and
+                                                appraisal(s) are not required for repairs and resizes. If an item was
+                                                delivered with a diamond report, the return must be accompanied by the
+                                                original laboratory grading report. Otherwise, customers will bear the
+                                                cost of a replacement report. For security reasons, do not write Michael
+                                                Trio anywhere on the outside of the box.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh14">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol14"
+                                                aria-expanded="true" aria-controls="fcol14">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How long does it take for a returned parcel
+                                                        to be processed?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol14" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh14">
+                                        <div class="panel-body">
+                                            <p>Once your return is received into our system, you will receive a
+                                                confirmation email. Your return will be inspected by our quality
+                                                assurance team. If there are any questions regarding your return, we
+                                                will contact you. After inspection, your return will be fully processed.
+                                            </p>
+                                            <p>Returns will be processed within 14 business days (not inclusive of
+                                                weekends and Singapore public holidays) from the date we receive your
+                                                return.</p>
+                                            <p>We will drop an email update once your return has been processed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh15">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol15"
+                                                aria-expanded="true" aria-controls="fcol15">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Will there be any fees associated with my
+                                                        return?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol15" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh15">
+                                        <div class="panel-body">
+                                            <p>Returns will be free of charge if you drop them off at any of our
+                                                showrooms. You are only liable for any return shipping costs and
+                                                insurance fees if the return is done through mail.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="installments">
+                            <h2 class="faq-title">Installments</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh16">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol16"
+                                                aria-expanded="true" aria-controls="fcol16">
+                                                Which Credit Card(s) can I use for installment payment? <i
+                                                    class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol16" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh16">
+                                        <div class="panel-body">
+                                            <p>Currently, Michael Trio only accepts UOB Credit Card installment option
+                                                for 6 months or 12 months interest-free installments. However, do take
+                                                note that payment through installments can only be processed for
+                                                purchases made at our showroom, and is not applicable for online
+                                                purchase.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="orders-and-ring-sizes">
+                            <h2 class="faq-title">Orders and Ring Sizes</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh17">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol17"
+                                                aria-expanded="true" aria-controls="fcol17">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I find my ring size?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol17" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh17">
+                                        <div class="panel-body">
+                                            <p>We provide complimentary ring-sizers to help you determine your ring
+                                                size. You may request a ring-sizer <a
+                                                    href="https://www.michaeltrio.com/request-ring-sizer/">here</a>. For
+                                                alternative ways to find your ring size, you may find your ring size <a
+                                                    href="https://d213t4exkgxsjh.cloudfront.net/assets/images/ring-sizer-chart.pdf">here</a>.
+                                            </p>
+                                            <div class="text-center">
+                                                <video width="560" height="340" controls="">
+                                                    <source
+                                                        src="https://d213t4exkgxsjh.cloudfront.net/assets/videos/ring-size-demo.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh18">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol18"
+                                                aria-expanded="true" aria-controls="fcol18">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How tight should a ring be?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol18" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh18">
+                                        <div class="panel-body">
+                                            <p>A proper ring size will fit comfortably snug, but will resist just a bit
+                                                when slid over the knuckle. It should take 2-3 seconds to slide it over
+                                                the knuckle and this is normal, especially with men who typically have
+                                                larger knuckles. If you size your ring to your knuckle, it will be too
+                                                big on your finger.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh19">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol19"
+                                                aria-expanded="true" aria-controls="fcol19">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What if I need to resize my ring?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol19" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh19">
+                                        <div class="panel-body">
+                                            <p>Excluding eternity rings and tension rings, we offer a 60-days free
+                                                resizing service to all online purchased rings and in-store purchased
+                                                engagement rings.</p>
+                                            <table class="table table-bordered mt-4">
+                                                <tbody>
+                                                    <tr style="background-color:#f2f2f2;">
+                                                        <th>Item</th>
+                                                        <th>Store Purchase</th>
+                                                        <th>Online Purchase</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Engagement Rings</td>
+                                                        <td>One-time complimentary resizing service for all engagement
+                                                            rings, valid for 60 days from date of purchase.</td>
+                                                        <td rowspan="3" style="vertical-align: middle;">One-time
+                                                            complimentary resizing service for all rings* valid for 60
+                                                            days from date of purchase.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wedding Bands</td>
+                                                        <td>Additional charges will apply for resizing requests after
+                                                            collection.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Other Rings</td>
+                                                        <td>Additional charges will apply if customer requests for
+                                                            resizing after collection</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>* Eternity rings and tension rings cannot be resized and have to be
+                                                re-manufactured, charges may apply. Thus, we recommend finding your best
+                                                fit before making the purchase.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh20">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol20"
+                                                aria-expanded="true" aria-controls="fcol20">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How long will the resizing process
+                                                        take?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol20" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh20">
+                                        <div class="panel-body">
+                                            <p>Our ring resizing process will take approximately 1-2 weeks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="custom-made-orders">
+                            <h2 class="faq-title">Custom Made Orders</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh21">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol21"
+                                                aria-expanded="true" aria-controls="fcol21">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Can I customise my engagement ring or
+                                                        wedding band?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol21" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh21">
+                                        <div class="panel-body">
+                                            <p>Definitely! At Michael Trio, we take pride in providing pristine service
+                                                and the best quality of engagement rings and wedding bands. Customising
+                                                your own ring design is a great way to express your personality and
+                                                style. Need advice on suitability and design inspiration? Feel free to
+                                                give us a call or send us an email with pictures of what you have in
+                                                mind.</p>
+                                            <p>View our recent custom-made orders <a
+                                                    href="https://www.michaeltrio.com/customisation/">here</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh22">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol22"
+                                                aria-expanded="true" aria-controls="fcol22">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What are the custom options?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol22" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh22">
+                                        <div class="panel-body">
+
+                                            <p>Design Your Own: Build your own unique from scratch</p>
+                                            <p>Have it Customised: Tweak/modify an existing design to match your style
+                                                &amp; personality</p>
+                                            <p>Have it Now: Make minor adjustments to ready-made jewellery</p>
+                                            <p>Customisation choices vary depending on whether you start from scratch,
+                                                modify an existing design, or start with an in-stock piece. Familiarize
+                                                yourself with the design elements which appeals most to you, then save
+                                                favorite designs to your Design Page.</p>
+                                            <p>Questions? Call us Tanjong Pagar: +65 6299 0110 | JEM: +65 6951 3296 |
+                                                Northpoint: +65 6951 3296, live chat, or email us at
+                                                service@michaeltrio.com for help or price estimates from our consultant
+                                                team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh23">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol23"
+                                                aria-expanded="true" aria-controls="fcol23">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How long will the customisation process
+                                                        take?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol23" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh23">
+                                        <div class="panel-body">
+                                            <p>Good things are worth the wait! Your customized ring will take
+                                                approximately 8-12 weeks depending on the level of customization
+                                                required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh24">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol24"
+                                                aria-expanded="true" aria-controls="fcol24">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What is the process of jewellery
+                                                        customisation?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol24" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh24">
+                                        <div class="panel-body">
+                                            <p>1) Consultation</p>
+                                            <p>Arrange for an appointment virtually or at any of our 3 showrooms. Feel
+                                                free to bring along any materials that will help us better understand
+                                                your ideal design. Need some help in your ideation process? Fret not, as
+                                                we have a collection of sample products at our showrooms that might just
+                                                give you some inspiration</p>
+                                            <p>2) Design</p>
+                                            <p>Upon confirmation of the design, a deposit will be required and our
+                                                designer will begin sketching the design in accordance with your
+                                                preference. Once completed, a sketch of your customised item will be
+                                                shared for final approval.</p>
+                                            <p>3) Casting and Setting</p>
+                                            <p>Once the design is approved, production of your customised jewellery will
+                                                commence and all you have to do is sit back and relax!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="diamond-upgrade-programme">
+                            <h2 class="faq-title">Diamond Upgrade Programme</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh25">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol25"
+                                                aria-expanded="true" aria-controls="fcol25">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Can I upgrade any diamond?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol25" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh25">
+                                        <div class="panel-body">
+                                            <p>Any Certified Earth Natural Diamonds purchased directly from Michael Trio
+                                                is eligible for the Diamond Upgrade Programme.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh26">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol26"
+                                                aria-expanded="true" aria-controls="fcol26">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I determine the price of my new
+                                                        diamond?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol26" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh26">
+                                        <div class="panel-body">
+                                            <p>Your new certified replacement diamond will have to be of at least 2X or
+                                                greater in value. For example, a $5,000 diamond can be upgraded to a
+                                                diamond that costs $10,000. The original diamond that is traded in must
+                                                be in the original condition, accompanied by the original laboratory
+                                                grading report. Otherwise, customers will bear the cost of a replacement
+                                                report.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh27">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol27"
+                                                aria-expanded="true" aria-controls="fcol27">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Can I reuse my ring setting?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol27" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh27">
+                                        <div class="panel-body">
+                                            <p>Definitely yes, if your diamond is set in a Michael Trio setting, and is
+                                                in reusable condition, we will be able to set your new diamond back onto
+                                                the original ring setting. If the new diamond does not fit, you may
+                                                choose to modify it at an additional cost. For settings that are not
+                                                from Michael Trio, the diamond must be exchanged without the setting. If
+                                                you wish to trade in your Michael Trio setting, any possible credit
+                                                exchange will be determined on a case-by-case basis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh28">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol28"
+                                                aria-expanded="true" aria-controls="fcol28">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Is the Michael Trio Diamond Upgrade
+                                                        Programme available internationally?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol28" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh28">
+                                        <div class="panel-body">
+                                            <p>Yes, it is. Please contact our Customer Service about the specifics of
+                                                international returns.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="diamond-price-match-programme">
+                            <h2 class="faq-title">Diamond Price Match Programme</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh29">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol29"
+                                                aria-expanded="true" aria-controls="fcol29">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What is the Michael Trio Diamond Price Match
+                                                        Programme?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol29" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh29">
+                                        <div class="panel-body">
+                                            <p>Michael Trio strives to provide our customers with the confidence that
+                                                you are paying the best price for your diamond. Found a comparable
+                                                diamond at a lower price? Call us at +65 6299 0110 and we will honor the
+                                                price as long as it fulfills our Diamond Price Match criteria <a
+                                                    href="https://www.michaeltrio.com/terms-and-conditions-for-diamond-price-match-guarantee">here</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh30">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol30"
+                                                aria-expanded="true" aria-controls="fcol30">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What if I found a comparable diamond at a
+                                                        lower price after my purchase from Michael Trio?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol30" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh30">
+                                        <div class="panel-body">
+                                            <p>The Diamond Price Match Programme only applies before you purchase your
+                                                Michael Trio diamond. If, for any reason you are not satisfied with your
+                                                purchase from Michael Trio, you may choose to return your diamond within
+                                                14-days from the purchase date.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh31">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol31"
+                                                aria-expanded="true" aria-controls="fcol31">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What is considered a comparable
+                                                        diamond?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol31" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh31">
+                                        <div class="panel-body">
+                                            <p>A comparable diamond must possess the same characteristics (cut, colour,
+                                                clarity, carat, and fluorescence) as the Michael Trio diamond to which
+                                                you are comparing. Michael Trio reserves the right to review your
+                                                request and decide, in sole discretion, whether the diamond is
+                                                comparable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh32">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol32"
+                                                aria-expanded="true" aria-controls="fcol32">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Can the comparable diamond be from any
+                                                        diamond retailer?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol32" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh32">
+                                        <div class="panel-body">
+                                            <p>We accept price comparisons from all local retail competitors who are
+                                                authorised Singapore-based diamond retailers in order to ensure ethical
+                                                sourcing. We will also price match diamonds sold by major online
+                                                retailers internationally. The diamond in comparison must be in stock
+                                                and available for purchase at a lower price at the time of your request.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh33">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol33"
+                                                aria-expanded="true" aria-controls="fcol33">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I request a price match from Michael
+                                                        Trio?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol33" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh33" style="display: block;">
+                                        <div class="panel-body">
+                                            <p>You may do so by visiting any of our showrooms, contact our customer
+                                                service hotline at +65 6299 0110, or email to us at
+                                                service@michaeltrio.com.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh34">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol34"
+                                                aria-expanded="true" aria-controls="fcol34">
+                                                <div class="row">
+                                                    <span class="col-xs-22">How do I show "proof" of the lower
+                                                        price?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol34" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh34">
+                                        <div class="panel-body">
+                                            <p>You will be required to provide a copy of the diamond's GIA grading
+                                                report (issued within the last year) together with proof of the lower
+                                                price offered.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh35">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol35"
+                                                aria-expanded="true" aria-controls="fcol35">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What if the comparable diamond is no longer
+                                                        in stock?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol35" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh35">
+                                        <div class="panel-body">
+                                            <p>The lower-priced diamond has to be in stock and available for purchase at
+                                                the time of your request. Expired offers will not be eligible for price
+                                                comparison.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="lifetime-warranty">
+                            <h2 class="faq-title">Lifetime Warranty</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh36">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol36"
+                                                aria-expanded="true" aria-controls="fcol36">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What is included in Michael Trio's lifetime
+                                                        warranty?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol36" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh36">
+                                        <div class="panel-body">
+                                            <p>We are committed to ensuring the quality of your purchase; we stand
+                                                behind everything that we sell and warrant that all items will be free
+                                                from any manufacturing defects at the time of delivery. We will repair
+                                                and maintain your jewellery for a lifetime.</p>
+                                            <p>Our lifetime warranty offers free cleaning &amp; inspection service,
+                                                prong tightening, and diamond upgrades.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh37">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol37"
+                                                aria-expanded="true" aria-controls="fcol37">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Need additional services not covered by our
+                                                        lifetime warranty?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol37" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh37">
+                                        <div class="panel-body">
+                                            <p>In the event that your jewellery requires services not covered under our
+                                                lifetime warranty, your jewellery may be mailed back to our office for
+                                                evaluation*. Once inspected, should charges apply, you will be notified
+                                                prior to any work being performed to service your jewellery.</p>
+                                            <p>Please <a href="https://www.michaeltrio.com/contacts/">contact us</a> if
+                                                you have any questions or would like to return your item(s) to take
+                                                advantage of our free lifetime warranty or request additional repair
+                                                work needed to service your Michael Trio jewellery.</p>
+                                            <p>* To send us your jewellery, Singapore customers may drop it off at one
+                                                of our <a href="https://www.michaeltrio.com/contacts/">stores</a>.
+                                                International customers will be subject to return shipping costs
+                                                applicable to their order. We will ship your item back to you free of
+                                                charge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="conflict-free-diamonds">
+                            <h2 class="faq-title">Conflict-Free Diamonds</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh38">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol38"
+                                                aria-expanded="true" aria-controls="fcol38">
+                                                <div class="row">
+                                                    <span class="col-xs-22">What are conflict-free diamonds?</span>
+                                                    <span class="col-xs-2"><i
+                                                            class="fa fa-chevron-down fa-chevron-up"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol38" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh38" style="display: none;">
+                                        <div class="panel-body">
+                                            <p>Conflict-free diamonds are gems that were not obtained due to human
+                                                rights abuses, child labor, violence, or environmental degradation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh39">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol39"
+                                                aria-expanded="true" aria-controls="fcol39">
+                                                <div class="row">
+                                                    <span class="col-xs-22">Are your diamonds conflict-free?</span>
+                                                    <span class="col-xs-2"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol39" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh39">
+                                        <div class="panel-body">
+                                            <p>At Michael Trio, all diamonds are conflict-free. This is aligned with our
+                                                brand value of only sourcing from suppliers who meet our internal
+                                                requirements.</p>
+                                            <ul class="mt-3">
+                                                <li style="list-style: none;">1) We only purchase polished diamonds from
+                                                    professional members of the diamond trade.</li>
+                                                <li style="list-style: none;">2) We have contracts with our suppliers
+                                                    that guarantee their diamonds are conflict-free.</li>
+                                            </ul>
+                                            <p class="mt-3">When you shop at Michael Trio, you can be certain that your
+                                                diamonds are sourced from reputable providers. Read more about our
+                                                conflict-free diamonds <a
+                                                    href="https://www.michaeltrio.com/conflict-free-diamonds/">here</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="refer-a-friend">
+                            <h2 class="faq-title">Refer-A-Friend</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh40">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol40"
+                                                aria-expanded="true" aria-controls="fcol40">
+                                                How does Michael Trio's Refer-A-Friend Programme work? <i
+                                                    class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol40" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh40">
+                                        <div class="panel-body">
+                                            <p>Have a friend you think would love Michael Trio's jewellery? We'd love to
+                                                meet them too! Simply fill up and submit the google form <a
+                                                    href="https://www.michaeltrio.com/refer-a-friend/">here</a>. Once
+                                                completed, your friend will receive a promo code for $100 off their
+                                                first purchase at Michael Trio.</p>
+                                            <p>After your friend has made a purchase with Michael Trio, you’ll get a
+                                                choice of $100 off your next purchase at Michael Trio, a $50 NTUC
+                                                voucher, or a $50 CapitaLand voucher.</p>
+                                            <p>You are not allowed to refer yourself and the promo code will not be
+                                                stackable with any other ongoing discounts or offers. Duplicates and/or
+                                                similar email addresses to previously registered ones are not allowed.
+                                            </p>
+                                            <p>For more information, you may refer to the Terms and Conditions <a
+                                                    href="https://www.michaeltrio.com/terms-condition/">here</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item" id="locate-us">
+                            <h2 class="faq-title">Locate Us</h2>
+                            <div class="panel-group" id="faq-acc" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="fh41">
+                                        <h4 class="panel-title">
+                                            <a role="button" class="faq-clk" data-parent="#faq-acc" href="#fcol41"
+                                                aria-expanded="true" aria-controls="fcol41">
+                                                Where are your showrooms located at? <i class="fa fa-chevron-down"></i>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="fcol41" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="fh41">
+                                        <div class="panel-body">
+                                            <p><strong>Tanjong Pagar</strong></p>
+                                            <p>Address: 91 Tanjong Pagar road Singapore 088512 (along the row of
+                                                shophouses and eateries)</p>
+                                            <p>Operating hours: Mondays - Sundays | 12pm - 8.30pm (except certain public
+                                                holidays)</p>
+                                            <p>Tel: +65 6299 0110</p>
+                                            <p class="mt-4"><strong>JEM</strong></p>
+                                            <p>Address: 50 Jurong Gateway Road #01-78 Singapore 182889</p>
+                                            <p>Operating hours: Mondays - Sundays | 11am - 9.30pm</p>
+                                            <p>Tel: +65 6951 3296</p>
+                                            <p class="mt-4"><strong>Northpoint City</strong></p>
+                                            <p>Address: Yishun Ave 2, North Wing, #01-22 Northpoint City Singapore
+                                                769098</p>
+                                            <p>Operating hours: Mondays - Sundays | 11am - 9.30pm</p>
+                                            <p>Tel: +65 6969 1492</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+
+        require([
+            'jquery',
+            'jquery-ui-modules/tabs'
+        ], function ($, twbs, d, tabs, modal) {
+
+            $(document).ready(function () {
+
+                var stickyNavTop = $('#faq-menu').offset().top;
+                var hash = window.location.hash;
+
+                var stickyNav = function () {
+                    var scrollTop = $(window).scrollTop();
+
+                    if (scrollTop > stickyNavTop) {
+                        $('#faq-menu').addClass('sticky').css('top', '');
+                    } else {
+                        $('#faq-menu').removeClass('sticky').css('top', '');;
+                    }
+
+                    //Auto select menu
+                    $('#faq-menu a').each(function (i, e) {
+                        if (scrollTop > $($(e).attr('href')).offset().top - 184) {
+                            $('#faq-menu').find('a').removeClass('selected');
+                            $(e).addClass('selected');
+                        }
+                    });
+
+
+                    // Reach at the bottom
+                    //if(scrollTop + $(window).height() >= ($(document).height()-50)) {
+                    //    $('#faq-menu').css('top', -258);
+
+                    //    $('#faq-menu').find('.selected').removeClass('selected');
+                    //    $('#faq-menu li').last().find('a').addClass('selected');
+                    //}
+
+                    //$('#faq-menu a').removeClass('selected');
+                    //$('#faq-menu a[href="'+ hash +'"]').addClass('selected');
+
+                };
+
+                if ($(window).width() > 768) {
+                    stickyNav();
+
+                    $(window).scroll(function () {
+                        stickyNav();
+                    });
+                }
+
+                $('#faq-menu a').click(function () {
+                    var id = $(this).attr('href');
+
+                    $('#faq-menu a').removeClass('selected');
+                    $(this).addClass('selected');
+
+                    var stop = ($(window).width() > 768) ? 84 : 180;
+
+                    window.history.pushState({}, null, BASE_URL + 'faq' + id);
+
+                    $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 1000);
+
+                    return false;
+                });
+
+                $('.faq-clk').click(function () {
+                    var href = $(this).attr('href');
+
+                    $(this).find('.fa').toggleClass('fa-chevron-up');
+                    $(href).slideToggle();
+
+                    return false;
+                })
+
+
+                // Auto scroll
+                if (hash) {
+                    $('#faq-menu a[href="' + hash + '"]').click();
+                }
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

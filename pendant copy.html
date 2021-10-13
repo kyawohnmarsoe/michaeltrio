@@ -57,7 +57,8 @@
     }
 
 
-    .mt2021 {
+    body {
+      color: var(--black);
       font-size: 14px;
     }
 
@@ -70,17 +71,15 @@
     }
 
     html,
-    body.mt2021,
-    .mt2021 h1,
-    .mt2021 h2,
-    .mt2021 h3,
-    .mt2021 h4,
-    .mt2021 h5,
-    .mt2021 h6,
-    .mt2021 p {
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin: 0;
       padding: 0;
-      color: var(--black);
     }
 
     .p-wrapper {
@@ -88,12 +87,50 @@
       margin: auto;
     }
 
-    .mt2021 h1,
-    .mt2021 p {
+    p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      padding: 0 50px;
+    }
+
+
+
+    h1,
+    h3 {
+      font-family: Times New Roman;
+      font-style: normal;
+      font-weight: normal;
+      color: var(--black);
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
       letter-spacing: 0.05em;
     }
 
-    .mt2021 .btn {
+    h3 {
+      font-size: 32px;
+      line-height: 37px;
+
+    }
+
+    h5 {
+      font-family: Montserrat;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    h6 {
+      font-size: 17px;
+    }
+
+    .btn {
       font-size: 17px;
       line-height: 24px;
       font-weight: normal;
@@ -160,7 +197,7 @@
       padding-top: 8%;
     }
 
-    .mt2021 .row {
+    .row {
       display: flex;
     }
 
@@ -255,11 +292,11 @@
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    .mt2021 .owl-item .item a:hover {
+    .owl-item .item a:hover {
       color: var(--black);
     }
 
-    .mt2021 .owl-carousel .owl-item {
+    .owl-carousel .owl-item {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -267,43 +304,43 @@
     }
 
 
-    .mt2021 .owl-carousel .owl-item img {
+    .owl-carousel .owl-item img {
       width: 100px;
       transition: all 1s;
     }
 
 
-    .mt2021 .owl-carousel .owl-item.center img {
+    .owl-carousel .owl-item.center img {
       width: 200px;
       margin: auto;
     }
 
-    .mt2021 .owl-carousel .owl-item.center {
+    .owl-carousel .owl-item.center {
       margin: 0px 20px;
     }
 
-    .mt2021 .owl-item article>a {
+    .owl-item article>a {
       display: none;
       font-weight: 500;
       text-transform: uppercase;
     }
 
-    .mt2021 .owl-item.center article>a {
+    .owl-item.center article>a {
       margin-top: 10px;
       display: block;
     }
 
-    .mt2021 .owl-carousel .owl-nav .owl-prev,
-    .mt2021 .owl-carousel .owl-nav .owl-next {
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
       top: auto;
       bottom: -40px;
     }
 
-    .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+    .owl-carousel .owl-nav [class*='owl-']:before {
       font-size: 40px;
     }
 
-    .mt2021 .owl-carousel .owl-item a img:hover {
+    .owl-carousel .owl-item a img:hover {
       filter: contrast(130%);
     }
 
@@ -315,15 +352,52 @@
       align-items: flex-start;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Old Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+    .page-main {
+      padding: 0px;
+    }
+
+    .page-footer h5 {
+      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
+      margin: 0 0 5px;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+      word-break: keep-all;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 1199.98px) {
 
+      h1 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+
+      h3 {
+        font-size: 25px;
+        line-height: 29px;
+      }
+
+      h5 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
       .diamond-image img {
         width: 320px;
       }
+
 
       .spinning-diamond {
         width: 380px;
@@ -335,8 +409,13 @@
         font-size: 12px;
       }
 
+      p {
+        padding: 0;
+      }
+
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -393,7 +472,7 @@
         padding-right: 13px;
       }
 
-      .mt2021 .btn {
+      .btn {
         font-size: 14px;
         line-height: 22px;
 
@@ -403,7 +482,7 @@
         margin-top: 1.2rem !important;
       }
 
-      .mt2021 .row {
+      .row {
         display: block;
       }
 
@@ -420,11 +499,30 @@
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 480px) {
+      h1 {
+        font-size: 25px;
+        line-height: 29px;
+      }
 
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+      }
 
-      .mt2021 .btn {
+      h5 {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .btn {
         font-size: 14px;
         line-height: 15px;
         /* height: 30px; */
@@ -442,16 +540,16 @@
         height: 200px;
       }
 
-      .mt2021 .owl-carousel .owl-item img {
+      .owl-carousel .owl-item img {
         width: 70px;
         transition: unset;
       }
 
-      .mt2021 .owl-carousel .owl-item.center img {
+      .owl-carousel .owl-item.center img {
         width: 150px;
       }
 
-      .mt2021 .owl-carousel .owl-item.center {
+      .owl-carousel .owl-item.center {
         margin: 0px 20px;
       }
 
@@ -480,168 +578,7 @@
     }
 
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    .font-weight-bold {
-      font-weight: 700;
-    }
-
-    .font-weight-normal {
-      font-weight: 400;
-    }
-
-    .font-weight-light {
-      font-weight: 300;
-    }
-
-    .mt2021 h1,
-    .mt2021 h2,
-    .mt2021 h4 {
-      font-family: 'Times New Roman';
-    }
-
-    .mt2021 h3,
-    .mt2021 h5,
-    .mt2021 h6,
-    .mt2021 p,
-    .mt2021 .h7,
-    .mt2021 .h8,
-    .mt2021 .h9,
-    .mt2021 .h10,
-    .mt2021 .h11,
-    .mt2021 .h12 {
-      font-family: 'Montserrat';
-    }
-
-    .mt2021 h1 {
-      font-size: 36px;
-    }
-
-    .mt2021 h2 {
-      font-size: 32px;
-    }
-
-    .mt2021 h3 {
-      font-size: 32px;
-    }
-
-    .mt2021 h4 {
-      font-size: 25px;
-    }
-
-    .mt2021 h5 {
-      font-size: 22px;
-    }
-
-    .mt2021 h6 {
-      font-size: 17px;
-    }
-
-    .mt2021 p {
-      font-size: 17px;
-    }
-
-    .h7 {
-      font-size: 18px;
-    }
-
-    .h8 {
-      font-size: 16px;
-    }
-
-    .h9 {
-      font-size: 14px;
-    }
-
-    .h10 {
-      font-size: 13px;
-    }
-
-    .h11 {
-      font-size: 12px;
-    }
-
-    .h12 {
-      font-size: 11px;
-    }
-
-    @media (max-width:767.98px) {
-      .mt2021 .mt2021 h1 {
-        font-size: 30px;
-      }
-
-      .mt2021 .mt2021 h2 {
-        font-size: 25px;
-      }
-
-      .mt2021 .mt2021 h3 {
-        font-size: 25px;
-      }
-
-      .mt2021 .mt2021 h4 {
-        font-size: 22px;
-      }
-
-      .mt2021 .mt2021 h5 {
-        font-size: 18px;
-      }
-
-      .mt2021 .mt2021 h6 {
-        font-size: 17px;
-      }
-
-      .mt2021 .mt2021 p {
-        font-size: 17px;
-      }
-
-      .h7 {
-        font-size: 16px;
-      }
-
-      .h8 {
-        font-size: 15px;
-      }
-
-    }
-
-    @media (max-width:480px) {
-      .mt2021 h1 {
-        font-size: 25px;
-      }
-
-      .mt2021 h2 {
-        font-size: 20px;
-      }
-
-      .mt2021 h3 {
-        font-size: 20px;
-      }
-
-      .mt2021 h4 {
-        font-size: 18px;
-      }
-
-      .mt2021 h5 {
-        font-size: 17px;
-      }
-
-      .mt2021 h6 {
-        font-size: 14px;
-      }
-
-      .mt2021 p {
-        font-size: 14px;
-      }
-
-      .h7 {
-        font-size: 15px;
-      }
-
-      .h8 {
-        font-size: 14px;
-      }
-
-    }
-
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -775,25 +712,6 @@
       color: #5EE9AD;
     }
 
-
-    .earrings-banner {
-      background-color: var(--lighterblue);
-    }
-
-    .earrings-banner p,
-    .earrings-banner h1,
-    .earrings-banner h3 {
-      color: black;
-    }
-
-    .custom-earrings .diamond-image-bg {
-      height: 400px;
-      background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
-      background-size: cover;
-      background-position-x: center;
-      background-position-y: center;
-    }
-
     .pandent-banner {
       background-color: var(--lighterblue);
     }
@@ -812,7 +730,6 @@
       background-position-y: center;
     }
   </style>
-
 </head>
 
 <body class="mt2021">

@@ -1,4 +1,5 @@
-<style>
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .ct025 {
@@ -130,4 +131,40 @@
     .fa-green {
         color: #5EE9AD;
     }
-</style>
+
+
+    .earrings-banner {
+        background-color: var(--lighterblue);
+    }
+
+    .earrings-banner p,
+    .earrings-banner h1,
+    .earrings-banner h3 {
+        color: black;
+    }
+
+    .custom-earrings .diamond-image-bg {
+        height: 400px;
+        background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    .pandent-banner {
+        background-color: var(--lighterblue);
+    }
+
+    .pandent-banner p,
+    .pandent-banner h1,
+    .pandent-banner h3 {
+        color: black;
+    }
+
+    .custom-pendant .diamond-image-bg {
+        height: 400px;
+        background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
