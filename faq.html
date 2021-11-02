@@ -1,8 +1,1797 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Panel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .mt2021 .panel {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        }
+
+        .mt2021 .panel-body {
+            padding: 15px;
+        }
+
+        .mt2021 .panel-heading {
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .mt2021 .panel-heading>.dropdown .dropdown-toggle {
+            color: inherit;
+        }
+
+        .mt2021 .panel-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: inherit;
+            font-weight: 500;
+        }
+
+        .mt2021 .panel-title>a,
+        .mt2021 .panel-title>small,
+        .mt2021 .panel-title>.small,
+        .mt2021 .panel-title>small>a,
+        .mt2021 .panel-title>.small>a {
+            color: inherit;
+        }
+
+        .mt2021 .panel-footer {
+            padding: 10px 15px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ddd;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.list-group,
+        .mt2021 .panel>.panel-collapse>.list-group {
+            margin-bottom: 0;
+        }
+
+        .mt2021 .panel>.list-group .list-group-item,
+        .mt2021 .panel>.panel-collapse>.list-group .list-group-item {
+            border-width: 1px 0;
+            border-radius: 0;
+        }
+
+        .mt2021 .panel>.list-group:first-child .list-group-item:first-child,
+        .mt2021 .panel>.panel-collapse>.list-group:first-child .list-group-item:first-child {
+            border-top: 0;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .mt2021 .panel>.list-group:last-child .list-group-item:last-child,
+        .mt2021 .panel>.panel-collapse>.list-group:last-child .list-group-item:last-child {
+            border-bottom: 0;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.panel-heading+.panel-collapse>.list-group .list-group-item:first-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .mt2021 .panel-heading+.list-group .list-group-item:first-child {
+            border-top-width: 0;
+        }
+
+        .list-group+.panel-footer {
+            border-top-width: 0;
+        }
+
+        .mt2021 .panel>.table,
+        .mt2021 .panel>.table-responsive>.table,
+        .mt2021 .panel>.panel-collapse>.table {
+            margin-bottom: 0;
+        }
+
+        .mt2021 .panel>.table caption,
+        .mt2021 .panel>.table-responsive>.table caption,
+        .mt2021 .panel>.panel-collapse>.table caption {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .mt2021 .panel>.table:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:first-child>thead:first-child>tr:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child,
+        .mt2021 .panel>.table:first-child>tbody:first-child>tr:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:first-child>thead:first-child>tr:first-child td:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:first-child,
+        .mt2021 .panel>.table:first-child>tbody:first-child>tr:first-child td:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:first-child,
+        .mt2021 .panel>.table:first-child>thead:first-child>tr:first-child th:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:first-child,
+        .mt2021 .panel>.table:first-child>tbody:first-child>tr:first-child th:first-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:first-child {
+            border-top-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:first-child>thead:first-child>tr:first-child td:last-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:last-child,
+        .mt2021 .panel>.table:first-child>tbody:first-child>tr:first-child td:last-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:last-child,
+        .mt2021 .panel>.table:first-child>thead:first-child>tr:first-child th:last-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:last-child,
+        .mt2021 .panel>.table:first-child>tbody:first-child>tr:first-child th:last-child,
+        .mt2021 .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:last-child {
+            border-top-right-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:last-child>tbody:last-child>tr:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child,
+        .mt2021 .panel>.table:last-child>tfoot:last-child>tr:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:last-child>tbody:last-child>tr:last-child td:first-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:first-child,
+        .mt2021 .panel>.table:last-child>tfoot:last-child>tr:last-child td:first-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:first-child,
+        .mt2021 .panel>.table:last-child>tbody:last-child>tr:last-child th:first-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:first-child,
+        .mt2021 .panel>.table:last-child>tfoot:last-child>tr:last-child th:first-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        .mt2021 .panel>.table:last-child>tbody:last-child>tr:last-child td:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:last-child,
+        .mt2021 .panel>.table:last-child>tfoot:last-child>tr:last-child td:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:last-child,
+        .mt2021 .panel>.table:last-child>tbody:last-child>tr:last-child th:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:last-child,
+        .mt2021 .panel>.table:last-child>tfoot:last-child>tr:last-child th:last-child,
+        .mt2021 .panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+        .mt2021 .panel>.panel-body+.table,
+        .mt2021 .panel>.panel-body+.table-responsive,
+        .mt2021 .panel>.table+.panel-body,
+        .mt2021 .panel>.table-responsive+.panel-body {
+            border-top: 1px solid #ddd;
+        }
+
+        .mt2021 .panel>.table>tbody:first-child>tr:first-child th,
+        .mt2021 .panel>.table>tbody:first-child>tr:first-child td {
+            border-top: 0;
+        }
+
+        .mt2021 .panel>.table-bordered,
+        .mt2021 .panel>.table-responsive>.table-bordered {
+            border: 0;
+        }
+
+        .mt2021 .panel>.table-bordered>thead>tr>th:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr>th:first-child,
+        .mt2021 .panel>.table-bordered>tbody>tr>th:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr>th:first-child,
+        .mt2021 .panel>.table-bordered>tfoot>tr>th:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr>th:first-child,
+        .mt2021 .panel>.table-bordered>thead>tr>td:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr>td:first-child,
+        .mt2021 .panel>.table-bordered>tbody>tr>td:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr>td:first-child,
+        .mt2021 .panel>.table-bordered>tfoot>tr>td:first-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+            border-left: 0;
+        }
+
+        .mt2021 .panel>.table-bordered>thead>tr>th:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr>th:last-child,
+        .mt2021 .panel>.table-bordered>tbody>tr>th:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr>th:last-child,
+        .mt2021 .panel>.table-bordered>tfoot>tr>th:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr>th:last-child,
+        .mt2021 .panel>.table-bordered>thead>tr>td:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr>td:last-child,
+        .mt2021 .panel>.table-bordered>tbody>tr>td:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr>td:last-child,
+        .mt2021 .panel>.table-bordered>tfoot>tr>td:last-child,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+            border-right: 0;
+        }
+
+        .mt2021 .panel>.table-bordered>thead>tr:first-child>td,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr:first-child>td,
+        .mt2021 .panel>.table-bordered>tbody>tr:first-child>td,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr:first-child>td,
+        .mt2021 .panel>.table-bordered>thead>tr:first-child>th,
+        .mt2021 .panel>.table-responsive>.table-bordered>thead>tr:first-child>th,
+        .mt2021 .panel>.table-bordered>tbody>tr:first-child>th,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr:first-child>th {
+            border-bottom: 0;
+        }
+
+        .mt2021 .panel>.table-bordered>tbody>tr:last-child>td,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr:last-child>td,
+        .mt2021 .panel>.table-bordered>tfoot>tr:last-child>td,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>td,
+        .mt2021 .panel>.table-bordered>tbody>tr:last-child>th,
+        .mt2021 .panel>.table-responsive>.table-bordered>tbody>tr:last-child>th,
+        .mt2021 .panel>.table-bordered>tfoot>tr:last-child>th,
+        .mt2021 .panel>.table-responsive>.table-bordered>tfoot>tr:last-child>th {
+            border-bottom: 0;
+        }
+
+        .mt2021 .panel>.table-responsive {
+            margin-bottom: 0;
+            border: 0;
+        }
+
+        .mt2021 .panel-group {
+            margin-bottom: 20px;
+        }
+
+        .mt2021 .panel-group .panel {
+            margin-bottom: 0;
+            border-radius: 4px;
+        }
+
+        .mt2021 .panel-group .panel+.panel {
+            margin-top: 5px;
+        }
+
+        .mt2021 .panel-group .panel-heading {
+            border-bottom: 0;
+        }
+
+        .mt2021 .panel-group .panel-heading+.panel-collapse>.panel-body,
+        .mt2021 .panel-group .panel-heading+.panel-collapse>.list-group {
+            border-top: 1px solid #ddd;
+        }
+
+        .mt2021 .panel-group .panel-footer {
+            border-top: 0;
+        }
+
+        .mt2021 .panel-group .panel-footer+.panel-collapse .panel-body {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mt2021 .panel-default {
+            border-color: #ddd;
+        }
+
+        .mt2021 .panel-default>.panel-heading {
+            color: #333;
+            background-color: #f5f5f5;
+            border-color: #ddd;
+        }
+
+        .mt2021 .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #ddd;
+        }
+
+        .mt2021 .panel-default>.panel-heading .badge {
+            color: #f5f5f5;
+            background-color: #333;
+        }
+
+        .mt2021 .panel-default>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #ddd;
+        }
+
+        .mt2021 .panel-primary {
+            border-color: #337ab7;
+        }
+
+        .mt2021 .panel-primary>.panel-heading {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #337ab7;
+        }
+
+        .mt2021 .panel-primary>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #337ab7;
+        }
+
+        .mt2021 .panel-primary>.panel-heading .badge {
+            color: #337ab7;
+            background-color: #fff;
+        }
+
+        .mt2021 .panel-primary>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #337ab7;
+        }
+
+        .mt2021 .panel-success {
+            .mt2021 border-color: #d6e9c6;
+        }
+
+        .mt2021 .panel-success>.panel-heading {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        .mt2021 .panel-success>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #d6e9c6;
+        }
+
+        .mt2021 .panel-success>.panel-heading .badge {
+            color: #dff0d8;
+            background-color: #3c763d;
+        }
+
+        .mt2021 .panel-success>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #d6e9c6;
+        }
+
+        .mt2021 .panel-info {
+            border-color: #bce8f1;
+        }
+
+        .mt2021 .panel-info>.panel-heading {
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .mt2021 .panel-info>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #bce8f1;
+        }
+
+        .mt2021 .panel-info>.panel-heading .badge {
+            color: #d9edf7;
+            background-color: #31708f;
+        }
+
+        .mt2021 .panel-info>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #bce8f1;
+        }
+
+        .mt2021 .panel-warning {
+            border-color: #faebcc;
+        }
+
+        .mt2021 .panel-warning>.panel-heading {
+            color: #8a6d3b;
+            background-color: #fcf8e3;
+            border-color: #faebcc;
+        }
+
+        .mt2021 .panel-warning>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #faebcc;
+        }
+
+        .mt2021 .panel-warning>.panel-heading .badge {
+            color: #fcf8e3;
+            background-color: #8a6d3b;
+        }
+
+        .mt2021 .panel-warning>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #faebcc;
+        }
+
+        .mt2021 .panel-danger {
+            border-color: #ebccd1;
+        }
+
+        .mt2021 .panel-danger>.panel-heading {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+
+        .mt2021 .panel-danger>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: #ebccd1;
+        }
+
+        .mt2021 .panel-danger>.panel-heading .badge {
+            color: #f2dede;
+            background-color: #a94442;
+        }
+
+        .mt2021 .panel-danger>.panel-footer+.panel-collapse>.panel-body {
+            border-bottom-color: #ebccd1;
+        }
+
+        .mt2021 .panel-body:before,
+        .mt2021 .panel-body:after,
+        .mt2021 .modal-footer:before,
+        .mt2021 .modal-footer:after {
+            display: table;
+            content: " ";
+        }
+
+        .clearfix:after,
+        .dl-horizontal dd:after,
+        .container:after,
+        .container-fluid:after,
+        .row:after,
+        .form-horizontal .form-group:after,
+        .btn-toolbar:after,
+        .btn-group-vertical>.btn-group:after,
+        .nav:after,
+        .navbar:after,
+        .navbar-header:after,
+        .navbar-collapse:after,
+        .pager:after,
+        .mt2021 .panel-body:after,
+        .modal-footer:after {
+            clear: both;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Nav @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .mt2021 .nav {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .mt2021 .nav>li {
+            position: relative;
+            display: block;
+        }
+
+        .mt2021 .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .mt2021 .nav>li>a:hover,
+        .mt2021 .nav>li>a:focus {
+            text-decoration: none;
+            /* background-color: #eee; */
+        }
+
+        .mt2021 .nav>li.disabled>a {
+            color: #777;
+        }
+
+        .mt2021 .nav>li.disabled>a:hover,
+        .mt2021 .nav>li.disabled>a:focus {
+            color: #777;
+            text-decoration: none;
+            cursor: not-allowed;
+            background-color: transparent;
+        }
+
+        .mt2021 .nav .open>a,
+        .mt2021 .nav .open>a:hover,
+        .mt2021 .nav .open>a:focus {
+            background-color: #eee;
+            border-color: #337ab7;
+        }
+
+        .mt2021 .nav .nav-divider {
+            height: 1px;
+            margin: 9px 0;
+            overflow: hidden;
+            background-color: #e5e5e5;
+        }
+
+        .mt2021 .nav>li>a>img {
+            max-width: none;
+        }
+
+        .mt2021 .nav-tabs {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mt2021 .nav-tabs>li {
+            float: left;
+            margin-bottom: -1px;
+        }
+
+        .mt2021 .nav-tabs>li>a {
+            margin-right: 2px;
+            line-height: 1.42857143;
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .mt2021 .nav-tabs>li>a:hover {
+            border-color: #eee #eee #ddd;
+        }
+
+        .mt2021 .nav-tabs>li.active>a,
+        .mt2021 .nav-tabs>li.active>a:hover,
+        .mt2021 .nav-tabs>li.active>a:focus {
+            color: #555;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+        }
+
+        .mt2021 .nav-tabs.nav-justified {
+            width: 100%;
+            border-bottom: 0;
+        }
+
+        .mt2021 .nav-tabs.nav-justified>li {
+            float: none;
+        }
+
+        .mt2021 .nav-tabs.nav-justified>li>a {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .mt2021 .nav-tabs.nav-justified>.dropdown .dropdown-menu {
+            top: auto;
+            left: auto;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .nav-tabs.nav-justified>li {
+                display: table-cell;
+                width: 1%;
+            }
+
+            .mt2021 .nav-tabs.nav-justified>li>a {
+                margin-bottom: 0;
+            }
+        }
+
+        .mt2021 .nav-tabs.nav-justified>li>a {
+            margin-right: 0;
+            border-radius: 4px;
+        }
+
+        .mt2021 .nav-tabs.nav-justified>.active>a,
+        .mt2021 .nav-tabs.nav-justified>.active>a:hover,
+        .mt2021 .nav-tabs.nav-justified>.active>a:focus {
+            border: 1px solid #ddd;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .nav-tabs.nav-justified>li>a {
+                border-bottom: 1px solid #ddd;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .mt2021 .nav-tabs.nav-justified>.active>a,
+            .mt2021 .nav-tabs.nav-justified>.active>a:hover,
+            .mt2021 .nav-tabs.nav-justified>.active>a:focus {
+                border-bottom-color: #fff;
+            }
+        }
+
+        .mt2021 .nav-pills>li {
+            float: left;
+        }
+
+        .mt2021 .nav-pills>li>a {
+            border-radius: 4px;
+        }
+
+        .mt2021 .nav-pills>li+li {
+            margin-left: 2px;
+        }
+
+        .mt2021 .nav-pills>li.active>a,
+        .mt2021 .nav-pills>li.active>a:hover,
+        .mt2021 .nav-pills>li.active>a:focus {
+            color: #fff;
+            background-color: #337ab7;
+        }
+
+        .mt2021 .nav-stacked>li {
+            float: none;
+        }
+
+        .mt2021 .nav-stacked>li+li {
+            margin-top: 2px;
+            margin-left: 0;
+        }
+
+        .mt2021 .nav-justified {
+            width: 100%;
+        }
+
+        .mt2021 .nav-justified>li {
+            float: none;
+        }
+
+        .mt2021 .nav-justified>li>a {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .mt2021 .nav-justified>.dropdown .dropdown-menu {
+            top: auto;
+            left: auto;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .nav-justified>li {
+                display: table-cell;
+                width: 1%;
+            }
+
+            .mt2021 .nav-justified>li>a {
+                margin-bottom: 0;
+            }
+        }
+
+        .mt2021 .nav-tabs-justified {
+            border-bottom: 0;
+        }
+
+        .mt2021 .nav-tabs-justified>li>a {
+            margin-right: 0;
+            border-radius: 4px;
+        }
+
+        .mt2021 .nav-tabs-justified>.active>a,
+        .mt2021 .nav-tabs-justified>.active>a:hover,
+        .mt2021 .nav-tabs-justified>.active>a:focus {
+            border: 1px solid #ddd;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .nav-tabs-justified>li>a {
+                border-bottom: 1px solid #ddd;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .mt2021 .nav-tabs-justified>.active>a,
+            .mt2021 .nav-tabs-justified>.active>a:hover,
+            .mt2021 .nav-tabs-justified>.active>a:focus {
+                border-bottom-color: #fff;
+            }
+        }
+
+        .tab-content>.tab-pane {
+            display: none;
+        }
+
+        .tab-content>.active {
+            display: block;
+        }
+
+        .mt2021 .nav-tabs .dropdown-menu {
+            margin-top: -1px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .mt2021 .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar {
+                border-radius: 4px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-header {
+                float: left;
+            }
+        }
+
+        .mt2021 .navbar-collapse {
+            padding-right: 15px;
+            padding-left: 15px;
+            overflow-x: visible;
+            -webkit-overflow-scrolling: touch;
+            border-top: 1px solid transparent;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+        }
+
+        .mt2021 .navbar-collapse.in {
+            overflow-y: auto;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-collapse {
+                width: auto;
+                border-top: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .mt2021 .navbar-collapse.collapse {
+                display: block !important;
+                height: auto !important;
+                padding-bottom: 0;
+                overflow: visible !important;
+            }
+
+            .mt2021 .navbar-collapse.in {
+                overflow-y: visible;
+            }
+
+            .mt2021 .navbar-fixed-top .navbar-collapse,
+            .mt2021 .navbar-static-top .navbar-collapse,
+            .mt2021 .navbar-fixed-bottom .navbar-collapse {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        .mt2021 .navbar-fixed-top .navbar-collapse,
+        .mt2021 .navbar-fixed-bottom .navbar-collapse {
+            max-height: 340px;
+        }
+
+        @media (max-device-width: 480px) and (orientation: landscape) {
+
+            .mt2021 .navbar-fixed-top .navbar-collapse,
+            .mt2021 .navbar-fixed-bottom .navbar-collapse {
+                max-height: 200px;
+            }
+        }
+
+        .mt2021 .container>.navbar-header,
+        .mt2021 .container-fluid>.navbar-header,
+        .mt2021 .container>.navbar-collapse,
+        .mt2021 .container-fluid>.navbar-collapse {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        @media (min-width: 768px) {
+
+            .mt2021 .container>.navbar-header,
+            .mt2021 .container-fluid>.navbar-header,
+            .mt2021 .container>.navbar-collapse,
+            .mt2021 .container-fluid>.navbar-collapse {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+
+        .mt2021 .navbar-static-top {
+            z-index: 1000;
+            border-width: 0 0 1px;
+        }
+
+        @media (min-width: 768px) {
+            ..mt2021 navbar-static-top {
+                border-radius: 0;
+            }
+        }
+
+        .mt2021 .navbar-fixed-top,
+        .mt2021 .navbar-fixed-bottom {
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+
+        @media (min-width: 768px) {
+
+            .mt2021 .navbar-fixed-top,
+            .mt2021 .navbar-fixed-bottom {
+                border-radius: 0;
+            }
+        }
+
+        .mt2021 .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+
+        .mt2021 .navbar-fixed-bottom {
+            bottom: 0;
+            margin-bottom: 0;
+            border-width: 1px 0 0;
+        }
+
+        .mt2021 .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .mt2021 .navbar-brand:hover,
+        .mt2021 .navbar-brand:focus {
+            text-decoration: none;
+        }
+
+        .mt2021 .navbar-brand>img {
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+
+            .mt2021 .navbar>.container .navbar-brand,
+            .mt2021 .navbar>.container-fluid .navbar-brand {
+                margin-left: -15px;
+            }
+        }
+
+        .mt2021 .navbar-toggle {
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin-top: 8px;
+            margin-right: 15px;
+            margin-bottom: 8px;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .mt2021 .navbar-toggle:focus {
+            outline: 0;
+        }
+
+        .mt2021 .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+        }
+
+        .mt2021 .navbar-toggle .icon-bar+.icon-bar {
+            margin-top: 4px;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-toggle {
+                display: none;
+            }
+        }
+
+        .mt2021 .navbar-nav {
+            margin: 7.5px -15px;
+        }
+
+        .mt2021 .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .mt2021 .navbar-nav .open .dropdown-menu {
+                position: static;
+                float: none;
+                width: auto;
+                margin-top: 0;
+                background-color: transparent;
+                border: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .mt2021 .navbar-nav .open .dropdown-menu>li>a,
+            .mt2021 .navbar-nav .open .dropdown-menu .dropdown-header {
+                padding: 5px 15px 5px 25px;
+            }
+
+            .mt2021 .navbar-nav .open .dropdown-menu>li>a {
+                line-height: 20px;
+            }
+
+            .mt2021 .navbar-nav .open .dropdown-menu>li>a:hover,
+            .mt2021 .navbar-nav .open .dropdown-menu>li>a:focus {
+                background-image: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-nav {
+                float: left;
+                margin: 0;
+            }
+
+            .mt2021 .navbar-nav>li {
+                float: left;
+            }
+
+            .mt2021 .navbar-nav>li>a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .mt2021 .navbar-form {
+            padding: 10px 15px;
+            margin-top: 8px;
+            margin-right: -15px;
+            margin-bottom: 8px;
+            margin-left: -15px;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-form .form-group {
+                display: inline-block;
+                margin-bottom: 0;
+                vertical-align: middle;
+            }
+
+            .mt2021 .navbar-form .form-control {
+                display: inline-block;
+                width: auto;
+                vertical-align: middle;
+            }
+
+            .mt2021 .navbar-form .form-control-static {
+                display: inline-block;
+            }
+
+            .mt2021 .navbar-form .input-group {
+                display: inline-table;
+                vertical-align: middle;
+            }
+
+            .mt2021 .navbar-form .input-group .input-group-addon,
+            .mt2021 .navbar-form .input-group .input-group-btn,
+            .mt2021 .navbar-form .input-group .form-control {
+                width: auto;
+            }
+
+            .mt2021 .navbar-form .input-group>.form-control {
+                width: 100%;
+            }
+
+            .mt2021 .navbar-form .control-label {
+                margin-bottom: 0;
+                vertical-align: middle;
+            }
+
+            .mt2021 .navbar-form .radio,
+            .mt2021 .navbar-form .checkbox {
+                display: inline-block;
+                margin-top: 0;
+                margin-bottom: 0;
+                vertical-align: middle;
+            }
+
+            .mt2021 .navbar-form .radio label,
+            .mt2021 .navbar-form .checkbox label {
+                padding-left: 0;
+            }
+
+            .mt2021 .navbar-form .radio input[type="radio"],
+            .mt2021 .navbar-form .checkbox input[type="checkbox"] {
+                position: relative;
+                margin-left: 0;
+            }
+
+            .mt2021 .navbar-form .has-feedback .form-control-feedback {
+                top: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .mt2021 .navbar-form .form-group {
+                margin-bottom: 5px;
+            }
+
+            .mt2021 .navbar-form .form-group:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-form {
+                width: auto;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-right: 0;
+                margin-left: 0;
+                border: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+
+        .mt2021 .navbar-nav>li>.dropdown-menu {
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .mt2021 .navbar-fixed-bottom .navbar-nav>li>.dropdown-menu {
+            margin-bottom: 0;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .mt2021 .navbar-btn {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .mt2021 .navbar-btn.btn-sm {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .mt2021 .navbar-btn.btn-xs {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+        .mt2021 .navbar-text {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-text {
+                float: left;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mt2021 .navbar-left {
+                float: left !important;
+            }
+
+            .mt2021 .navbar-right {
+                float: right !important;
+                margin-right: -15px;
+            }
+
+            .mt2021 .navbar-right~.navbar-right {
+                margin-right: 0;
+            }
+        }
+
+        .mt2021 .navbar-default {
+            background-color: #f8f8f8;
+            border-color: #e7e7e7;
+        }
+
+        .mt2021 .navbar-default .navbar-brand {
+            color: #777;
+        }
+
+        .mt2021 .navbar-default .navbar-brand:hover,
+        .mt2021 .navbar-default .navbar-brand:focus {
+            color: #5e5e5e;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-default .navbar-text {
+            color: #777;
+        }
+
+        .mt2021 .navbar-default .navbar-nav>li>a {
+            color: #777;
+        }
+
+        .mt2021 .navbar-default .navbar-nav>li>a:hover,
+        .mt2021 .navbar-default .navbar-nav>li>a:focus {
+            color: #333;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-default .navbar-nav>.active>a,
+        .mt2021 .navbar-default .navbar-nav>.active>a:hover,
+        .mt2021 .navbar-default .navbar-nav>.active>a:focus {
+            color: #555;
+            background-color: #e7e7e7;
+        }
+
+        .mt2021 .navbar-default .navbar-nav>.disabled>a,
+        .mt2021 .navbar-default .navbar-nav>.disabled>a:hover,
+        .mt2021 .navbar-default .navbar-nav>.disabled>a:focus {
+            color: #ccc;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-default .navbar-toggle {
+            border-color: #ddd;
+        }
+
+        .mt2021 .navbar-default .navbar-toggle:hover,
+        .mt2021 .navbar-default .navbar-toggle:focus {
+            background-color: #ddd;
+        }
+
+        .mt2021 .navbar-default .navbar-toggle .icon-bar {
+            background-color: #888;
+        }
+
+        .mt2021 .navbar-default .navbar-collapse,
+        .mt2021 .navbar-default .navbar-form {
+            border-color: #e7e7e7;
+        }
+
+        .mt2021 .navbar-default .navbar-nav>.open>a,
+        .mt2021 .navbar-default .navbar-nav>.open>a:hover,
+        .mt2021 .navbar-default .navbar-nav>.open>a:focus {
+            color: #555;
+            background-color: #e7e7e7;
+        }
+
+        @media (max-width: 767px) {
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+                color: #777;
+            }
+
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+                color: #333;
+                background-color: transparent;
+            }
+
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+                color: #555;
+                background-color: #e7e7e7;
+            }
+
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+            .mt2021 .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+                color: #ccc;
+                background-color: transparent;
+            }
+        }
+
+        .mt2021 .navbar-default .navbar-link {
+            color: #777;
+        }
+
+        .mt2021 .navbar-default .navbar-link:hover {
+            color: #333;
+        }
+
+        .mt2021 .navbar-default .btn-link {
+            color: #777;
+        }
+
+        .mt2021 .navbar-default .btn-link:hover,
+        .mt2021 .navbar-default .btn-link:focus {
+            color: #333;
+        }
+
+        .mt2021 .navbar-default .btn-link[disabled]:hover,
+        fieldset[disabled] .navbar-default .btn-link:hover,
+        .mt2021 .navbar-default .btn-link[disabled]:focus,
+        fieldset[disabled] .navbar-default .btn-link:focus {
+            color: #ccc;
+        }
+
+        .mt2021 .navbar-inverse {
+            background-color: #222;
+            border-color: #080808;
+        }
+
+        .mt2021 .navbar-inverse .navbar-brand {
+            color: #9d9d9d;
+        }
+
+        .mt2021 .navbar-inverse .navbar-brand:hover,
+        .mt2021 .navbar-inverse .navbar-brand:focus {
+            color: #fff;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-inverse .navbar-text {
+            color: #9d9d9d;
+        }
+
+        .mt2021 .navbar-inverse .navbar-nav>li>a {
+            color: #9d9d9d;
+        }
+
+        .mt2021 .navbar-inverse .navbar-nav>li>a:hover,
+        .mt2021 .navbar-inverse .navbar-nav>li>a:focus {
+            color: #fff;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-inverse .navbar-nav>.active>a,
+        .mt2021 .navbar-inverse .navbar-nav>.active>a:hover,
+        .mt2021 .navbar-inverse .navbar-nav>.active>a:focus {
+            color: #fff;
+            background-color: #080808;
+        }
+
+        .mt2021 .navbar-inverse .navbar-nav>.disabled>a,
+        .mt2021 .navbar-inverse .navbar-nav>.disabled>a:hover,
+        .mt2021 .navbar-inverse .navbar-nav>.disabled>a:focus {
+            color: #444;
+            background-color: transparent;
+        }
+
+        .mt2021 .navbar-inverse .navbar-toggle {
+            border-color: #333;
+        }
+
+        .mt2021 .navbar-inverse .navbar-toggle:hover,
+        .mt2021 .navbar-inverse .navbar-toggle:focus {
+            background-color: #333;
+        }
+
+        .mt2021 .navbar-inverse .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+        .mt2021 .navbar-inverse .navbar-collapse,
+        .mt2021 .navbar-inverse .navbar-form {
+            border-color: #101010;
+        }
+
+        .mt2021 .navbar-inverse .navbar-nav>.open>a,
+        .mt2021 .navbar-inverse .navbar-nav>.open>a:hover,
+        .mt2021 .navbar-inverse .navbar-nav>.open>a:focus {
+            color: #fff;
+            background-color: #080808;
+        }
+
+        @media (max-width: 767px) {
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
+                border-color: #080808;
+            }
+
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+                background-color: #080808;
+            }
+
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+                color: #9d9d9d;
+            }
+
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+                color: #fff;
+                background-color: transparent;
+            }
+
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover,
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus {
+                color: #fff;
+                background-color: #080808;
+            }
+
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+            .mt2021 .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+                color: #444;
+                background-color: transparent;
+            }
+        }
+
+        .mt2021 .navbar-inverse .navbar-link {
+            color: #9d9d9d;
+        }
+
+        .mt2021 .navbar-inverse .navbar-link:hover {
+            color: #fff;
+        }
+
+        .mt2021 .navbar-inverse .btn-link {
+            color: #9d9d9d;
+        }
+
+        .mt2021 .navbar-inverse .btn-link:hover,
+        .mt2021 .navbar-inverse .btn-link:focus {
+            color: #fff;
+        }
+
+        .mt2021 .navbar-inverse .btn-link[disabled]:hover,
+        fieldset[disabled] .navbar-inverse .btn-link:hover,
+        .mt2021 .navbar-inverse .btn-link[disabled]:focus,
+        fieldset[disabled] .navbar-inverse .btn-link:focus {
+            color: #444;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .mt2021 .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         .font-weight-bold {
             font-weight: 700;
@@ -63,64 +1852,64 @@
             font-size: 17px;
         }
 
-        .h7 {
+        .mt2021 .h7 {
             font-size: 18px;
         }
 
-        .h8 {
+        .mt2021 .h8 {
             font-size: 16px;
         }
 
-        .h9 {
+        .mt2021 .h9 {
             font-size: 14px;
         }
 
-        .h10 {
+        .mt2021 .h10 {
             font-size: 13px;
         }
 
-        .h11 {
+        .mt2021 .h11 {
             font-size: 12px;
         }
 
-        .h12 {
+        .mt2021 .h12 {
             font-size: 11px;
         }
 
         @media (max-width:767.98px) {
-            .mt2021 .mt2021 h1 {
+            .mt2021 h1 {
                 font-size: 30px;
             }
 
-            .mt2021 .mt2021 h2 {
+            .mt2021 h2 {
                 font-size: 25px;
             }
 
-            .mt2021 .mt2021 h3 {
+            .mt2021 h3 {
                 font-size: 25px;
             }
 
-            .mt2021 .mt2021 h4 {
+            .mt2021 h4 {
                 font-size: 22px;
             }
 
-            .mt2021 .mt2021 h5 {
+            .mt2021 h5 {
                 font-size: 18px;
             }
 
-            .mt2021 .mt2021 h6 {
+            .mt2021 h6 {
                 font-size: 17px;
             }
 
-            .mt2021 .mt2021 p {
+            .mt2021 p {
                 font-size: 17px;
             }
 
-            .h7 {
+            .mt2021 .h7 {
                 font-size: 16px;
             }
 
-            .h8 {
+            .mt2021 .h8 {
                 font-size: 15px;
             }
 
@@ -155,125 +1944,286 @@
                 font-size: 14px;
             }
 
-            .h7 {
+            .mt2021 .h7 {
                 font-size: 15px;
             }
 
-            .h8 {
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+            .mt2021 .panel-title {
                 font-size: 14px;
             }
 
         }
 
 
-        .position-sticky {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FAQs @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        html {
+            scroll-behavior: smooth;
         }
 
-        #faq .sticky {
-            position: fixed !important;
-            padding-right: 25px;
-            width: 300px;
-            top: 80px;
-            z-index: 99;
+        p {
+            padding: 0;
+            letter-spacing: 0.02em;
+            text-align: justify;
         }
 
-        #faq #faq-menu {
-            /* position: absolute; */
-            width: 300px;
-            padding-right: 25px;
-
-        }
-
-        #faq .faq-group {
-            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
-        }
-
-        #faq .faq-group a {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            line-height: 50px;
-            padding: 0 10px 0 16px;
-            background-color: #4e5359;
-            color: #fff;
-            white-space: nowrap;
-            border-bottom: 1px solid #555a60;
-            text-overflow: ellipsis;
-            font-weight: 600;
+        .faqs ul,
+        .faqs ol {
             font-size: 14px;
-            cursor: pointer;
+            text-align: justify;
+            padding-left: 20px;
         }
 
-        #faq .faq-group .selected {
-            background: #4b5055;
+        .mt2021 .faqs ul {
+            list-style-type: disc;
         }
 
-        #faq .faq-group a.selected:before {
+        .faqs .nav>li>a {
+            padding: 15px;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .mt2021 .faqs ol {
+            list-style-type: auto;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+
+
+        .mt2021 .panel-title a:after {
+            font-family: FontAwesome;
+            content: "\f107";
+            float: right;
+            margin-left: 15px;
+        }
+
+        .mt2021 .panel.active .panel-title a:after {
+            content: "\f106";
+        }
+
+
+        .mt2021 .panel-title>a {
+            display: block;
+            color: var(--black);
+        }
+
+        .mt2021 .panel-title>a:hover {
+            color: var(--black);
+        }
+
+        .faqs p a {
+            color: #afcad6 !important;
+            font-weight: 600;
+        }
+
+        .faqs p a:hover {
+            animation: pulse;
+            animation-duration: 1s;
+        }
+
+        @keyframes pulse {
+            0% {
+                color: #6397c9;
+            }
+
+            25% {
+                color: #45a5d1;
+            }
+
+            50% {
+                color: #6397c9;
+            }
+
+            100% {
+                color: #45a5d1;
+            }
+        }
+
+        .faqs nav ul {
+            padding: 0;
+            background-color: #4b5055;
+        }
+
+        .faqs nav ul li {
+            border-bottom: 1px solid #555a60;
+        }
+
+
+
+        .faqs nav ul li {
+            position: relative;
+        }
+
+
+
+
+
+        .faqs .panel-default>.panel-heading {
+            transition: all ease 1s;
+        }
+
+        .faqs .panel-default>.panel-heading:focus-within {
+            animation: panel-pulse;
+            animation-duration: 1s;
+        }
+
+        @keyframes panel-pulse {
+            25% {
+                background-color: #ddd8d8;
+                -webkit-transition: opacity .4s;
+                transition: opacity .4s;
+            }
+
+            100% {
+                background-color: #fff;
+                -webkit-transition: opacity .8s;
+                transition: opacity .8s;
+            }
+        }
+
+        .faqs nav ul li a {
+            color: white !important;
+            transition: all ease 1s;
+        }
+
+        .faqs nav ul li a:hover {
+            background-color: transparent;
+        }
+
+        .faqs nav ul li a:active {
+            background-color: transparent;
+        }
+
+        .faqs nav ul li a:focus-within {
+            animation: nav-pulse;
+            animation-duration: 1s;
+        }
+
+        @keyframes nav-pulse {
+            25% {
+                background-color: #555a60;
+                -webkit-transition: opacity .4s;
+                transition: opacity .4s;
+            }
+
+            100% {
+                background-color: #6c88a2;
+                -webkit-transition: opacity .8s;
+                transition: opacity .8s;
+            }
+        }
+
+        .faqs nav ul li a.selected::before {
             content: '';
             display: block;
             top: 0;
-            right: auto;
-            left: 0;
+            right: 0px;
+            left: 0px;
             height: 100%;
             width: 5px;
             background-color: #6c88a2;
             -webkit-transition: opacity .2s;
             transition: opacity .2s;
             position: absolute;
+            z-index: 3;
         }
 
-        @media (max-width: 768px) {
-            #faq #faq-menu {
-                position: static;
-                width: auto;
-                padding-right: 0px;
-                margin-bottom: 35px;
+
+
+
+        .faqs table th {
+            font-size: 14px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+
+        .faqs table td {
+            font-size: 14px;
+            font-family: 'Montserrat';
+        }
+
+
+
+        .faqs .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 120px;
+            width: 280px;
+            float: left;
+        }
+
+
+
+        .ring-iframe {
+            width: 100%;
+            height: 350px;
+        }
+
+        .mt2021 .panel-body:after {
+            clear: none;
+        }
+
+
+        @media (min-width: 992px) {
+            .left-space-300 {
+                margin-left: 300px;
             }
         }
     </style>
 </head>
 
-<body>
-    <div class="m2021">
-        <section id="faq">
-            <h1 class="text-center">Questions? Look here.</h1>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 position-sticky">
-                    <div id="faq-menu" class="">
-                        <ul class="faq-group">
-                            <li><a href="#shipping" class="selected">Shipping</a></li>
-                            <li><a href="#14-day-return-policy" class="">14-Day Return Policy</a></li>
-                            <li><a href="#installments" class="">Installments</a></li>
-                            <li><a href="#orders-and-ring-sizes" class="">Orders and Ring Sizes</a></li>
-                            <li><a href="#custom-made-orders" class="">Custom Made Orders</a></li>
-                            <li><a href="#diamond-upgrade-programme" class="">Diamond Upgrade Programme</a></li>
-                            <li><a href="#diamond-price-match-programme" class="">Diamond Price Match Programme</a></li>
-                            <li><a href="#lifetime-warranty" class="">Lifetime Warranty</a></li>
-                            <li><a href="#conflict-free-diamonds" class="">Conflict-Free Diamonds</a></li>
-                            <li><a href="#refer-a-friend" class="">Refer-A-Friend</a></li>
-                            <li><a href="#locate-us" class="">Locate Us</a></li>
+<body data-spy="scroll" data-target=".navbar">
+    <div class="mt2021">
+        <section class="faqs pb-5" id="faq-shipping">
+            <div class="container pb-5">
+                <h3 class="text-center mb-5">Questions? Look here.</h3>
+                <div class="">
+
+
+                    <nav id="faq-menu" class="navbar my-affix-div hidden-xs hidden-sm pt-3 " data-spy="affix"
+                        data-offset-top="300" data-offset-bottom="700">
+
+                        <ul class="nav  nav-stacked affix_div">
+                            <li class="active"><a href="#faq-shipping">Shipping</a></li>
+                            <li><a href="#faq-14day">14-Day Return Policy</a></li>
+                            <li><a href="#faq-installment">Installments</a></li>
+                            <li><a href="#faq-ringsize">Orders and Ring Sizes</a></li>
+                            <li><a href="#faq-custom">Custom Made Orders</a></li>
+                            <li><a href="#faq-upgrade">Diamond Upgrade Programme</a></li>
+                            <li><a href="#faq-price">Diamond Price Match Programme</a></li>
+                            <li><a href="#faq-lifetime">Lifetime Warranty</a></li>
+                            <li><a href="#faq-conflict">Conflict-Free Diamonds</a></li>
+                            <li><a href="#faq-refer">Refer-A-Friend</a></li>
+                            <li><a href="#faq-locate">Locate Us</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-sm-18 col-md-18">
-                    <div>
+                    </nav>
+
+
+
+                    <div class="left-space-300 ">
                         <!-- Shipping -->
                         <div class="container-faq ">
                             <h6>Shipping</h6>
-                            <div class="panel-group" id="shipping">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="shipping">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping1">Where do
                                                 you
                                                 ship?</a>
                                         </h3>
                                     </div>
-                                    <div id="shipping1" class="panel-collapse collapse">
+                                    <div id="shipping1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 We ship our products both locally and internationally.
@@ -306,8 +2256,8 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping2">Are
                                                 there
@@ -315,7 +2265,7 @@
                                                 zones/areas in Singapore that you do not deliver to?</a>
                                         </h3>
                                     </div>
-                                    <div id="shipping2" class="panel-collapse collapse">
+                                    <div id="shipping2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 We deliver islandwide locally except to army camps, hotels, and the
@@ -335,8 +2285,8 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping3">What is
                                                 the
@@ -344,7 +2294,7 @@
                                                 shipping?</a>
                                         </h3>
                                     </div>
-                                    <div id="shipping3" class="panel-collapse collapse">
+                                    <div id="shipping3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Shipping is free for all products. Michael Trio provides quick and
@@ -366,15 +2316,15 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping4">
                                                 Shipping methods and duration
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping4" class="panel-collapse collapse">
+                                    <div id="shipping4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 We currently offer 2 delivery options so that you can choose the one
@@ -416,15 +2366,15 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping5">
                                                 Are your shipments secure?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping5" class="panel-collapse collapse">
+                                    <div id="shipping5" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Yes. Our items are fully insured during transit and all purchases
@@ -447,47 +2397,42 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping6">
                                                 How do I track my order?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping6" class="panel-collapse collapse">
+                                    <div id="shipping6" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
-                                                Order status and tracking information can be found on the
-                                                <a href="https://www.michaeltrio.com/">MichaelTrio.com</a>
-                                                website here.
+                                                Order status and tracking information can be found on our website
+                                                <a href="https://www.michaeltrio.com/">here</a>
+                                                .
                                             </p>
                                             <p class="h9">
                                                 Please note: We will only ship your order once it has passed our
-                                                thorough
-                                                quality
-                                                inspection. Loose diamonds are shipped immediately after passing
-                                                inspection.
-                                                You'll see an
-                                                estimated shipping and delivery date for each product on every product
-                                                details page. These
-                                                can also be seen in your account dashboard and order confirmation email.
-                                                Hereafter, you can
-                                                expect your delivery within the above timeframes.
+                                                thorough quality inspection. Loose diamonds are shipped immediately
+                                                after passing inspection. You'll see an estimated shipping and delivery
+                                                date for each product on every product details page. These can also be
+                                                seen in your account dashboard and order confirmation email. Hereafter,
+                                                you can expect your delivery within the above timeframes.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping7">
                                                 What if my jewellery gets lost during shipment?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping7" class="panel-collapse collapse">
+                                    <div id="shipping7" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Michael Trio takes every precaution to ensure that your order arrives
@@ -500,15 +2445,15 @@
                                 </div>
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping8">
                                                 I haven’t received my order. Who can I contact?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping8" class="panel-collapse collapse">
+                                    <div id="shipping8" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Your estimated delivery date will be in your order confirmation email &
@@ -540,15 +2485,15 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping9">
                                                 Do you deliver internationally?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping9" class="panel-collapse collapse">
+                                    <div id="shipping9" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Yes, we ship internationally. International orders over $500 in value
@@ -573,8 +2518,8 @@
                                 </div>
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#shipping" href="#shipping10">
                                                 I'd like to place an international order. Do I pay customs fees to
@@ -584,7 +2529,7 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="shipping10" class="panel-collapse collapse">
+                                    <div id="shipping10" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 When you place an international order, we will ship it to you for free.
@@ -611,16 +2556,18 @@
                         <div class="container-faq pt-3" id="faq-14day">
                             <h6> 14-Day Return Policy
                             </h6>
-                            <div class="panel-group" id="14day">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="14day">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#14day" href="#14day1">
                                                 Can I request for a return?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="14day1" class="panel-collapse collapse">
+                                    <div id="14day1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 If, for any reason you are not completely satisfied with your order,
@@ -643,20 +2590,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#14day" href="#14day2">
                                                 Returns policy and terms.
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="14day2" class="panel-collapse collapse">
+                                    <div id="14day2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <div class="mb-5">
                                                 <h6>For online purchases</h6>
                                                 <p class="h9">
-                                                    We accept returns for a full cash refund or exchange within 14 days
+                                                    We accept returns for a full <strong>cash refund</strong> or
+                                                    exchange within 14 days
                                                     from
                                                     the
                                                     delivered date.
@@ -738,12 +2686,13 @@
                                                     to
                                                     be
                                                     refunded for
-                                                    store credits.
+                                                    <strong>store credits</strong>.
                                                     However, customers may exchange item(s) at our showrooms within
                                                     14-days
                                                     from
                                                     the purchase
-                                                    date.</p>
+                                                    date.
+                                                </p>
                                                 <p class="h9">Please note that to be eligible for return, item(s) must
                                                     be in
                                                     their original
@@ -779,15 +2728,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#14day" href="#14day3">
                                                 How do I return my item(s)?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="14day3" class="panel-collapse collapse">
+                                    <div id="14day3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <div class="mb-5">
                                                 <h6>
@@ -818,7 +2767,8 @@
                                                     the
                                                     refund/exchange
                                                     process.</p>
-                                                <p class="h9">View our showroom locations here.</p>
+                                                <p class="h9">View our showroom locations <a
+                                                        href="https://www.michaeltrio.com/locations">here</a>.</p>
                                             </div>
                                             <div class="mb-5">
                                                 <h6>Mail it back to us.</h6>
@@ -879,15 +2829,15 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#14day" href="#14day4">
                                                 How long does it take for a returned parcel to be processed?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="14day4" class="panel-collapse collapse">
+                                    <div id="14day4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Once your return is received into our system, you will receive a
@@ -911,15 +2861,15 @@
                                     </div>
                                 </div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#14day" href="#14day5">
                                                 Will there be any fees associated with my return?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="14day5" class="panel-collapse collapse">
+                                    <div id="14day5" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <p class="h9">
                                                 Returns will be free of charge if you drop them off at any of our
@@ -939,16 +2889,18 @@
                         <div class="container-faq pt-3" id="faq-installment">
                             <h6> Installments
                             </h6>
-                            <div class="panel-group" id="installment">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="installment">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#installment" href="#installment1">
                                                 Which Credit Card(s) can I use for installment payment?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="installment1" class="panel-collapse collapse">
+                                    <div id="installment1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -972,26 +2924,32 @@
                         <div class="container-faq pt-3" id="faq-ringsize">
                             <h6>Orders and Ring Sizes
                             </h6>
-                            <div class="panel-group" id="ringsize">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="ringsize">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize1">
                                                 How do I find my ring size?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="ringsize1" class="panel-collapse collapse">
+                                    <div id="ringsize1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
                                                 We provide complimentary ring-sizers to help you determine your ring
                                                 size.
                                                 You may request a
-                                                ring-sizer here. For alternative ways to find your ring size, you may
+                                                ring-sizer <a
+                                                    href="https://www.michaeltrio.com/request-ring-sizer">here</a>. For
+                                                alternative ways to find your ring
+                                                size, you may
                                                 find
                                                 your ring size
-                                                here.
+                                                <a
+                                                    href="https://d213t4exkgxsjh.cloudfront.net/assets/images/ring-sizer-chart.pdf">here</a>.
                                             </p>
 
                                             <iframe class="ring-iframe"
@@ -1005,19 +2963,19 @@
                                 </div>
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize2">
                                                 How tight should a ring be?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="ringsize2" class="panel-collapse collapse">
+                                    <div id="ringsize2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
-                                                A proper ring size will fit comfortably snug, but will resist just a bit
+                                                Proper ring size will fit comfortably snug, but will resist just a bit
                                                 when slid over the
                                                 knuckle. It should take 2-3 seconds to slide it over the knuckle and
                                                 this is
@@ -1032,15 +2990,15 @@
                                 </div>
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize3">
                                                 What if I need to resize my ring?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="ringsize3" class="panel-collapse collapse">
+                                    <div id="ringsize3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1093,15 +3051,15 @@
                                 </div>
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#ringsize" href="#ringsize4">
                                                 How long will the resizing process take?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="ringsize4" class="panel-collapse collapse">
+                                    <div id="ringsize4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1120,16 +3078,18 @@
                         <div class="container-faq pt-3" id="faq-custom">
                             <h6>Custom Made Orders
                             </h6>
-                            <div class="panel-group" id="custom">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="custom">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#custom" href="#custom1">
                                                 Can I customise my engagement ring or wedding band?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="custom1" class="panel-collapse collapse">
+                                    <div id="custom1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1148,20 +3108,21 @@
                                             </p>
 
                                             <p class="h9">
-                                                View our recent custom-made orders here.
+                                                View our recent custom-made orders <a
+                                                    href="https://www.michaeltrio.com/customisation">here</a>.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#custom" href="#custom2">
                                                 What are the custom options?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="custom2" class="panel-collapse collapse">
+                                    <div id="custom2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1194,15 +3155,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#custom" href="#custom3">
                                                 How long will the customisation process take?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="custom3" class="panel-collapse collapse">
+                                    <div id="custom3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1214,15 +3175,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#custom" href="#custom4">
                                                 What is the process of jewellery customisation?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="custom4" class="panel-collapse collapse">
+                                    <div id="custom4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <ol>
@@ -1272,16 +3233,18 @@
                         <div class="container-faq pt-3" id="faq-upgrade">
                             <h6> Diamond Upgrade Programme
                             </h6>
-                            <div class="panel-group" id="upgrade">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="upgrade">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade1">
                                                 Can I upgrade any diamond?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="upgrade1" class="panel-collapse collapse">
+                                    <div id="upgrade1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1294,15 +3257,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade2">
                                                 How do I determine the price of my new diamond?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="upgrade2" class="panel-collapse collapse">
+                                    <div id="upgrade2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1319,15 +3282,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade3">
                                                 Can I reuse my ring setting?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="upgrade3" class="panel-collapse collapse">
+                                    <div id="upgrade3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1349,19 +3312,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#upgrade" href="#upgrade4">
                                                 Is the Michael Trio Diamond Upgrade Programme available internationally?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="upgrade4" class="panel-collapse collapse">
+                                    <div id="upgrade4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
-                                                Yes, it is. Please contact our Customer Service about the specifics of
+                                                Yes, it is. Please contact our <a
+                                                    href="https://www.michaeltrio.com/contacts">Customer Service</a>
+                                                about the
+                                                specifics of
                                                 international
                                                 returns.
 
@@ -1378,16 +3344,18 @@
                         <div class="container-faq pt-3" id="faq-price">
                             <h6>Diamond Price Match Programme
                             </h6>
-                            <div class="panel-group" id="price">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="price">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price1">
                                                 What is the Michael Trio Diamond Price Match Programme?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price1" class="panel-collapse collapse">
+                                    <div id="price1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1401,14 +3369,15 @@
                                                 as
                                                 long as it fulfills our Diamond
                                                 Price Match
-                                                criteria here.
+                                                criteria <a
+                                                    href="https://www.michaeltrio.com/terms-and-conditions-for-diamond-price-match-guarantee">here</a>.
                                             </p>
 
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price2">
                                                 What if I found a comparable diamond at a lower price after my purchase
@@ -1417,7 +3386,7 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price2" class="panel-collapse collapse">
+                                    <div id="price2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1431,15 +3400,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price3">
                                                 What is considered a comparable diamond?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price3" class="panel-collapse collapse">
+                                    <div id="price3" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1455,15 +3424,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price4">
                                                 Can the comparable diamond be from any diamond retailer?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price4" class="panel-collapse collapse">
+                                    <div id="price4" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1483,15 +3452,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price5">
                                                 How do I request a price match from Michael Trio?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price5" class="panel-collapse collapse">
+                                    <div id="price5" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1505,15 +3474,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price6">
                                                 How do I show "proof" of the lower price?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price6" class="panel-collapse collapse">
+                                    <div id="price6" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1526,15 +3495,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#price" href="#price7">
                                                 What if the comparable diamond is no longer in stock?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="price7" class="panel-collapse collapse">
+                                    <div id="price7" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1557,16 +3526,18 @@
                         <div class="container-faq pt-3" id="faq-lifetime">
                             <h6> Lifetime Warranty
                             </h6>
-                            <div class="panel-group" id="lifetime">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="lifetime">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#lifetime" href="#lifetime1">
                                                 What is included in Michael Trio's lifetime warranty?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="lifetime1" class="panel-collapse collapse">
+                                    <div id="lifetime1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1585,15 +3556,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#lifetime" href="#lifetime2">
                                                 Need additional services not covered by our lifetime warranty?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="lifetime2" class="panel-collapse collapse">
+                                    <div id="lifetime2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1607,7 +3578,9 @@
                                             </p>
 
                                             <p class="h9">
-                                                Please contact us if you have any questions or would like to return your
+                                                Please <a href="https://www.michaeltrio.com/contacts">contact us</a> if
+                                                you have any questions or would like
+                                                to return your
                                                 item(s) to take
                                                 advantage of our free lifetime warranty or request additional repair
                                                 work
@@ -1617,7 +3590,7 @@
                                             <p class="h9">
                                                 * To send us your jewellery, Singapore customers may drop it off at one
                                                 of
-                                                our stores.
+                                                our <a href="https://www.michaeltrio.com/contacts">stores</a>.
                                                 International customers will be subject to return shipping costs
                                                 applicable
                                                 to their order.
@@ -1635,16 +3608,18 @@
                         <div class="container-faq pt-3" id="faq-conflict">
                             <h6>Conflict-Free Diamonds
                             </h6>
-                            <div class="panel-group" id="conflict">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="conflict">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#conflict" href="#conflict1">
                                                 What are conflict-free diamonds?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="conflict1" class="panel-collapse collapse">
+                                    <div id="conflict1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1656,15 +3631,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#conflict" href="#conflict2">
                                                 Are your diamonds conflict-free?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="conflict2" class="panel-collapse collapse">
+                                    <div id="conflict2" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
 
                                             <p class="h9">
@@ -1684,7 +3659,8 @@
                                             <p class="h9">
                                                 When you shop at Michael Trio, you can be certain that your diamonds are
                                                 sourced from
-                                                reputable providers. Read more about our conflict-free diamonds here.
+                                                reputable providers. Read more about our conflict-free diamonds <a
+                                                    href="https://www.michaeltrio.com/conflict-free-diamond">here</a>.
                                             </p>
                                         </div>
                                     </div>
@@ -1697,55 +3673,50 @@
                         <div class="container-faq pt-3" id="faq-refer">
                             <h6> Refer-A-Friend
                             </h6>
-                            <div class="panel-group" id="refer">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="refer">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#refer" href="#refer1">
                                                 How does Michael Trio's Refer-A-Friend Programme work?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="refer1" class="panel-collapse collapse">
+                                    <div id="refer1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <div class="mb-5">
-                                                <h6>Tanjong Pagar</h6>
+
                                                 <p class="h9">
-                                                    Have a friend you think would love Michael Trio's jewellery? We'd
-                                                    love
-                                                    to
-                                                    meet them too!
-                                                    Simply fill up and submit the google form here. Once completed, your
-                                                    friend
-                                                    will receive a
-                                                    promo code for $100 off their first purchase at Michael Trio.
+                                                    Have a friend you think would love Michael Trio’s jewellery? We’d
+                                                    love to meet them too! Simply fill up and submit the google form
+                                                    <a href="https://www.michaeltrio.com/refer-a-friend">here</a>. Once
+                                                    completed, your friend will receive a promo code for $100
+                                                    off their first purchase at Michael Trio.
                                                 </p>
                                             </div>
                                             <div class="mb-5">
-                                                <h6>JEM</h6>
+
                                                 <p class="h9">
                                                     After your friend has made a purchase with Michael Trio, you’ll get
-                                                    a
-                                                    choice
-                                                    of $100 off
-                                                    your next purchase at Michael Trio, a $50 NTUC voucher, or a $50
-                                                    CapitaLand
-                                                    voucher.
+                                                    a choice of $100 off your next purchase at Michael Trio, a $50 NTUC
+                                                    voucher, or a $50 CapitaLand voucher.
+
                                                 </p>
                                             </div>
                                             <div class="mb-5">
-                                                <h6>Northpoint City</h6>
+
                                                 <p class="h9">
                                                     You are not allowed to refer yourself and the promo code will not be
-                                                    stackable with any
-                                                    other ongoing discounts or offers. Duplicates and/or similar email
-                                                    addresses
-                                                    to previously
-                                                    registered ones are not allowed.
+                                                    stackable with any other ongoing discounts or offers. Duplicates
+                                                    and/or similar email addresses to previously registered ones are not
+                                                    allowed.
+
                                                 </p>
                                                 <p class="h9">
                                                     For more information, you may refer to the Terms and Conditions
-                                                    here.
+                                                    <a href="https://www.michaeltrio.com/terms-condition">here</a>.
                                                 </p>
                                             </div>
                                         </div>
@@ -1759,16 +3730,18 @@
                         <div class="container-faq pt-3" id="faq-locate">
                             <h6> Locate Us
                             </h6>
-                            <div class="panel-group" id="locate">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
+                            <div class="panel-group"
+                                data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
+                                id="locate">
+                                <div class="panel panel-default" data-role="collapsible">
+                                    <div class="panel-heading" data-role="trigger">
                                         <h3 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#locate" href="#locate1">
                                                 Where are your showrooms located at?
                                             </a>
                                         </h3>
                                     </div>
-                                    <div id="locate1" class="panel-collapse collapse">
+                                    <div id="locate1" class="panel-collapse collapse" data-role="content">
                                         <div class="panel-body">
                                             <div class="mb-5">
                                                 <h6>Tanjong Pagar</h6>
@@ -1813,25 +3786,24 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
-
         </section>
-
-
-
     </div>
+
 
     <script type="text/javascript">
 
         require([
             'jquery',
             'jquery-ui-modules/tabs'
-        ], function ($, twbs, d, tabs, modal) {
+        ], function ($) {
 
             $(document).ready(function () {
 
-                var stickyNavTop = $('#faq-menu').offset().top;
+                // var stickyNavTop = $('#faq-menu').offset().top;
                 var hash = window.location.hash;
 
                 var stickyNav = function () {
@@ -1881,21 +3853,21 @@
 
                     var stop = ($(window).width() > 768) ? 84 : 180;
 
-                    window.history.pushState({}, null, BASE_URL + 'faq' + id);
+                    window.history.pushState({}, null, BASE_URL + 'new-faq' + id);
 
-                    $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 1000);
+                    $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 100);
 
                     return false;
                 });
 
-                $('.faq-clk').click(function () {
-                    var href = $(this).attr('href');
+                // $('.faq-clk').click(function () {
+                //     var href = $(this).attr('href');
 
-                    $(this).find('.fa').toggleClass('fa-chevron-up');
-                    $(href).slideToggle();
+                //     $(this).find('.fa').toggleClass('fa-chevron-up');
+                //     $(href).slideToggle();
 
-                    return false;
-                })
+                //     return false;
+                // })
 
 
                 // Auto scroll

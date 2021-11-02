@@ -3,6 +3,8 @@
 
 <head>
   <style>
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     * {
       box-sizing: border-box;
     }
@@ -57,8 +59,7 @@
     }
 
 
-    body {
-      color: var(--black);
+    .mt2021 {
       font-size: 14px;
     }
 
@@ -71,15 +72,16 @@
     }
 
     html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
+    .mt2021,
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h3,
+    .mt2021 h4,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p {
       padding: 0;
+      color: var(--black);
     }
 
     .p-wrapper {
@@ -87,50 +89,16 @@
       margin: auto;
     }
 
-    p {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 24px;
-      letter-spacing: 0.05em;
-      padding: 0 50px;
+    .mt2021 .text-white {
+      color: white;
     }
 
-
-
-    h1,
-    h3 {
-      font-family: Times New Roman;
-      font-style: normal;
-      font-weight: normal;
-      color: var(--black);
-    }
-
-    h1 {
-      font-size: 36px;
-      line-height: 46px;
+    .mt2021 h1,
+    .mt2021 p {
       letter-spacing: 0.05em;
     }
 
-    h3 {
-      font-size: 32px;
-      line-height: 37px;
-
-    }
-
-    h5 {
-      font-family: Montserrat;
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 27px;
-    }
-
-    h6 {
-      font-size: 17px;
-    }
-
-    .btn {
+    .mt2021 .btn {
       font-size: 17px;
       line-height: 24px;
       font-weight: normal;
@@ -182,7 +150,7 @@
       width: 347px;
     }
 
-    .small-btn {
+    .mt2021 .small-btn {
       width: 217px;
     }
 
@@ -197,7 +165,7 @@
       padding-top: 8%;
     }
 
-    .row {
+    .mt2021 .row {
       display: flex;
     }
 
@@ -208,8 +176,6 @@
     .columns a {
       color: var(--black);
     }
-
-
 
     .flex-wrap {
       flex-wrap: wrap;
@@ -292,11 +258,11 @@
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    .owl-item .item a:hover {
+    .mt2021 .owl-item .item a:hover {
       color: var(--black);
     }
 
-    .owl-carousel .owl-item {
+    .mt2021 .owl-carousel .owl-item {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -304,43 +270,43 @@
     }
 
 
-    .owl-carousel .owl-item img {
+    .mt2021 .owl-carousel .owl-item img {
       width: 100px;
       transition: all 1s;
     }
 
 
-    .owl-carousel .owl-item.center img {
+    .mt2021 .owl-carousel .owl-item.center img {
       width: 200px;
       margin: auto;
     }
 
-    .owl-carousel .owl-item.center {
+    .mt2021 .owl-carousel .owl-item.center {
       margin: 0px 20px;
     }
 
-    .owl-item article>a {
+    .mt2021 .owl-item article>a {
       display: none;
       font-weight: 500;
       text-transform: uppercase;
     }
 
-    .owl-item.center article>a {
+    .mt2021 .owl-item.center article>a {
       margin-top: 10px;
       display: block;
     }
 
-    .owl-carousel .owl-nav .owl-prev,
-    .owl-carousel .owl-nav .owl-next {
+    .mt2021 .owl-carousel .owl-nav .owl-prev,
+    .mt2021 .owl-carousel .owl-nav .owl-next {
       top: auto;
       bottom: -40px;
     }
 
-    .owl-carousel .owl-nav [class*='owl-']:before {
+    .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
       font-size: 40px;
     }
 
-    .owl-carousel .owl-item a img:hover {
+    .mt2021 .owl-carousel .owl-item a img:hover {
       filter: contrast(130%);
     }
 
@@ -352,52 +318,11 @@
       align-items: flex-start;
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Old Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-    .page-main {
-      padding: 0px;
-    }
-
-    .page-footer h5 {
-      font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
-      margin: 0 0 5px;
-    }
-
-    .nowrap {
-      white-space: nowrap;
-      word-break: keep-all;
-    }
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
     @media (max-width: 1199.98px) {
-
-      h1 {
-        font-size: 30px;
-        line-height: 34px;
-      }
-
-      h3 {
-        font-size: 25px;
-        line-height: 29px;
-      }
-
-      h5 {
-        font-size: 18px;
-        line-height: 25px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 22px;
-      }
 
       .diamond-image img {
         width: 320px;
       }
-
 
       .spinning-diamond {
         width: 380px;
@@ -409,15 +334,8 @@
         font-size: 12px;
       }
 
-      p {
-        padding: 0;
-      }
-
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 767.98px) {
 
@@ -472,7 +390,7 @@
         padding-right: 13px;
       }
 
-      .btn {
+      .mt2021 .btn {
         font-size: 14px;
         line-height: 22px;
 
@@ -482,7 +400,7 @@
         margin-top: 1.2rem !important;
       }
 
-      .row {
+      .mt2021 .row {
         display: block;
       }
 
@@ -497,32 +415,11 @@
 
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 25px;
-        line-height: 29px;
-      }
 
-      h3 {
-        font-size: 20px;
-        line-height: 23px;
-      }
 
-      h5 {
-        font-size: 17px;
-        line-height: 20px;
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      .btn {
+      .mt2021 .btn {
         font-size: 14px;
         line-height: 15px;
         /* height: 30px; */
@@ -540,16 +437,16 @@
         height: 200px;
       }
 
-      .owl-carousel .owl-item img {
+      .mt2021 .owl-carousel .owl-item img {
         width: 70px;
         transition: unset;
       }
 
-      .owl-carousel .owl-item.center img {
+      .mt2021 .owl-carousel .owl-item.center img {
         width: 150px;
       }
 
-      .owl-carousel .owl-item.center {
+      .mt2021 .owl-carousel .owl-item.center {
         margin: 0px 20px;
       }
 
@@ -577,7 +474,170 @@
 
     }
 
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Wedding @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    .font-weight-normal {
+      font-weight: 400;
+    }
+
+    .font-weight-light {
+      font-weight: 300;
+    }
+
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h4 {
+      font-family: 'Times New Roman';
+    }
+
+    .mt2021 h3,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p,
+    .mt2021 .h7,
+    .mt2021 .h8,
+    .mt2021 .h9,
+    .mt2021 .h10,
+    .mt2021 .h11,
+    .mt2021 .h12 {
+      font-family: 'Montserrat';
+    }
+
+    .mt2021 h1 {
+      font-size: 36px;
+    }
+
+    .mt2021 h2 {
+      font-size: 32px;
+    }
+
+    .mt2021 h3 {
+      font-size: 32px;
+    }
+
+    .mt2021 h4 {
+      font-size: 25px;
+    }
+
+    .mt2021 h5 {
+      font-size: 22px;
+    }
+
+    .mt2021 h6 {
+      font-size: 17px;
+    }
+
+    .mt2021 p {
+      font-size: 17px;
+    }
+
+    .mt2021 .h7 {
+      font-size: 18px;
+    }
+
+    .mt2021 .h8 {
+      font-size: 16px;
+    }
+
+    .mt2021 .h9 {
+      font-size: 14px;
+    }
+
+    .mt2021 .h10 {
+      font-size: 13px;
+    }
+
+    .mt2021 .h11 {
+      font-size: 12px;
+    }
+
+    .mt2021 .h12 {
+      font-size: 11px;
+    }
+
+    @media (max-width:767.98px) {
+      .mt2021 h1 {
+        font-size: 30px;
+      }
+
+      .mt2021 h2 {
+        font-size: 25px;
+      }
+
+      .mt2021 h3 {
+        font-size: 25px;
+      }
+
+      .mt2021 h4 {
+        font-size: 22px;
+      }
+
+      .mt2021 h5 {
+        font-size: 18px;
+      }
+
+      .mt2021 h6 {
+        font-size: 17px;
+      }
+
+      .mt2021 p {
+        font-size: 17px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 16px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 15px;
+      }
+
+    }
+
+    @media (max-width:480px) {
+      .mt2021 h1 {
+        font-size: 25px;
+      }
+
+      .mt2021 h2 {
+        font-size: 20px;
+      }
+
+      .mt2021 h3 {
+        font-size: 20px;
+      }
+
+      .mt2021 h4 {
+        font-size: 18px;
+      }
+
+      .mt2021 h5 {
+        font-size: 17px;
+      }
+
+      .mt2021 h6 {
+        font-size: 14px;
+      }
+
+      .mt2021 p {
+        font-size: 14px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 15px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 14px;
+      }
+
+    }
+
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Wedding @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Wedding @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -694,53 +754,54 @@
 </head>
 
 <body>
+  <div class="mt2021">
 
 
-  <section class="wedding-banner">
+    <section class="wedding-banner">
 
-    <div class="container">
-      <div class="row ">
-        <div class=" visible-xs ">
+      <div class="container">
+        <div class="row ">
+          <div class=" visible-xs ">
 
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Bannder_-_768.jpg"
-            alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
-        </div>
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Bannder_-_768.jpg"
+              alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
+          </div>
 
-        <div class="col-sm-12 wedding-banner-bg hidden-xs">
-
-        </div>
-
-        <div class="col-sm-12 box  wedding-banner-bg py-5">
-          <div>
-            <h1>Wedding Bands</h1>
-            <p class="my-4">A wedding band is a symbol of commitment; a promise, a pledge, and a vow.</p>
-
-            <a href="https://www.michaeltrio.com/wedding-bands/women" class="btn btn-blue large-btn "
-              role="button">Explore Wedding Bands</a>
+          <div class="col-sm-12 wedding-banner-bg hidden-xs">
 
           </div>
-        </div>
 
+          <div class="col-sm-12 box  wedding-banner-bg py-5">
+            <div>
+              <h1>Wedding Bands</h1>
+              <p class="my-4">A wedding band is a symbol of commitment; a promise, a pledge, and a vow.</p>
+
+              <a href="https://www.michaeltrio.com/wedding-bands/women" class="btn btn-blue large-btn "
+                role="button">Explore Wedding Bands</a>
+
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
 
-  </section>
+    </section>
 
-  <section class="wedding-bands py-5">
-    <div class="container">
+    <section class="wedding-bands py-5">
+      <div class="container">
 
-      <h1 class="text-center">Wedding Bands</h1>
+        <h1 class="text-center">Wedding Bands</h1>
 
-      <h3 class="text-center py-3">For Her</h3>
+        <h3 class="text-center py-3">For Her</h3>
 
-      <div class="row box for-her-bg mb-4">
-        <div class="col-xs-24 p-0 visible-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Picture768x300.jpg" class="w-100"
-            alt="">
-        </div>
-        <div class="col-sm-18 col-xs-24 ">
+        <div class="row box for-her-bg mb-4">
+          <div class="col-xs-24 p-0 visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Picture768x300.jpg" class="w-100"
+              alt="">
+          </div>
+          <div class="col-sm-18 col-xs-24 ">
 
-          <div id="for-her-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
+            <div id="for-her-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
             "0": {
                 "items":1
             },
@@ -754,62 +815,62 @@
               "items":5
           }
         }}}}}'>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/classic">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Classic300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Classic</div>
-              </a>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/classic">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Classic300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Classic</div>
+                </a>
+              </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/eternity">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Eternity300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Eternity</div>
+                </a>
+              </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/diamond">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Diamond300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Diamond</div>
+                </a>
+              </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/dainty">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Dainty300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Dainty</div>
+                </a>
+              </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/alternative">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Alternative300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Alternative</div>
+                </a>
+              </div>
             </div>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/eternity">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Eternity300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Eternity</div>
-              </a>
-            </div>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/diamond">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Diamond300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Diamond</div>
-              </a>
-            </div>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/dainty">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Dainty300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Dainty</div>
-              </a>
-            </div>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/women/alternative">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Alternative300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Alternative</div>
-              </a>
-            </div>
+
+          </div>
+
+
+          <div class="col-sm-6 p-0 hidden-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg" class="w-100" alt="">
           </div>
 
         </div>
 
 
-        <div class="col-sm-6 p-0 hidden-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg" class="w-100" alt="">
-        </div>
 
-      </div>
-
-
-
-      <h3 class="text-center pb-3">For Him</h3>
-      <div class="row box for-him-bg">
-        <div class="col-sm-6 p-0 visible-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture768x300.jpg" class="w-100"
-            alt="">
-        </div>
-        <div class="col-sm-6 p-0 hidden-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture.jpg" class="w-100" alt="">
-        </div>
+        <h3 class="text-center pb-3">For Him</h3>
+        <div class="row box for-him-bg">
+          <div class="col-sm-6 p-0 visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture768x300.jpg" class="w-100"
+              alt="">
+          </div>
+          <div class="col-sm-6 p-0 hidden-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture.jpg" class="w-100" alt="">
+          </div>
 
 
-        <div class="col-sm-18 col-xs-24">
-          <div id="for-him-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
+          <div class="col-sm-18 col-xs-24">
+            <div id="for-him-slider" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":false,"autoWidth":false,"autoplay":false,"responsive":{
             "0": {
                 "items":1
             },
@@ -823,69 +884,69 @@
               "items":3
           }
         }}}}}'>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/classic">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Classic300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Classic</div>
-              </a>
-            </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/classic">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Classic300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Classic</div>
+                </a>
+              </div>
 
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/diamond">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Diamond</div>
-              </a>
-            </div>
-            <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/alternative">
-                <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Alternative300.png"
-                  class="img-responsive" alt="">
-                <div class="for-title">Alternative</div>
-              </a>
-            </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/diamond">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Diamond</div>
+                </a>
+              </div>
+              <div class="item"><a href="https://www.michaeltrio.com/wedding-bands/men/alternative">
+                  <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Alternative300.png"
+                    class="img-responsive" alt="">
+                  <div class="for-title">Alternative</div>
+                </a>
+              </div>
 
 
+            </div>
           </div>
-        </div>
 
 
-      </div>
-
-    </div>
-  </section>
-
-  <section class="lab py-5">
-
-    <div class="container">
-      <div class="row ">
-        <div class="col-sm-12 box diamond-image ">
-          <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Custommade.jpg"
-            alt="Diamond-P3-No-BG.jpg">
-        </div>
-        <div class="col-sm-12 box ">
-          <div>
-            <h1>Custom Made Wedding Bands</h1>
-
-            <p class="my-4">Design your perfect wedding band. Select from our range of wedding bands styles, customise
-              it with diamonds, the precious metal of your choice and preferred metal finishing.</p>
-            <a href="https://www.michaeltrio.com/customisation" class="btn btn-blue large-btn " role="button">Learn
-              More</a>
-          </div>
         </div>
 
       </div>
-    </div>
+    </section>
+
+    <section class="lab py-5">
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-12 box diamond-image ">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-Custommade.jpg"
+              alt="Diamond-P3-No-BG.jpg">
+          </div>
+          <div class="col-sm-12 box ">
+            <div>
+              <h1>Custom-Made Wedding Bands</h1>
+
+              <p class="my-4">Design your perfect wedding band. Select from our range of wedding bands styles, customise
+                it with diamonds, the precious metal of your choice and preferred metal finishing. </p>
+              <a href="https://www.michaeltrio.com/customisation" class="btn btn-blue large-btn " role="button">Explore
+                Custom-Made</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
 
-  </section>
+    </section>
 
-  <section class="top-selling-bands py-5">
+    <section class="top-selling-bands py-5">
 
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-24 text-center">
-          <div>
-            <h1>Top selling Wedding Bands</h1>
-            <div id="top-selling-slider" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-24 text-center">
+            <div>
+              <h1>Top Selling Wedding Bands</h1>
+              <div id="top-selling-slider" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
               "0": {
                   "items":1
               },
@@ -899,117 +960,118 @@
                 "items":5
             }
           }}}}}'>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0136b-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/1WR0136B-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Classic Glossy Finished with Diamond Wedding Ring in 18K White Gold</div>
-                </a>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0136b-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/1WR0136B-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Classic Glossy Finished with Diamond Wedding Ring in 18K White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0042b-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/2WR0042B-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Satin Finished with Channel Set Diamond Ring in 18K White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0006b-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/3WR0006B-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Glossy Tone with Milgrain Edge with Groove Ring in 18k White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0135b-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/4WR0135B-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Classic Indented with Glossy Finished Diamond Ring in 18K White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0129a-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/5WR0129A-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Glossy Carved Design Ring in 18K white Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0280a-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/6WR0280A-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Brushed Curve Steps Diamond Ring in 18k White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0065a-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/7WR0065A-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Indented Matte Inlay Ring with 18k White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0045a-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/8WR0045A-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0018a-18kw"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/9WR0018A-18KW.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="https://www.michaeltrio.com/wr0098b-18kwr"><img
+                      src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/10WR0098B-18KWR.jpg"
+                      class="img-responsive m-auto" alt="">
+                    <div class="for-title">Dual Tone Contrasted Finish with Flush Set Diamond Ring in 18K White and Rose
+                      Gold</div>
+                  </a>
+                </div>
+
               </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0042b-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/2WR0042B-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Satin Finished with Channel Set Diamond Ring in 18K White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0006b-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/3WR0006B-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Glossy Tone with Milgrain Edge with Groove Ring in 18k White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0135b-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/4WR0135B-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Classic Indented with Glossy Finished Diamond Ring in 18K White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0129a-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/5WR0129A-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Glossy Carved Design Ring in 18K white Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0280a-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/6WR0280A-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Brushed Curve Steps Diamond Ring in 18k White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0065a-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/7WR0065A-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Indented Matte Inlay Ring with 18k White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0045a-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/8WR0045A-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0018a-18kw"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/9WR0018A-18KW.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Glossy Crossovered Ring in 18k White Gold</div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://www.michaeltrio.com/wr0098b-18kwr"><img
-                    src="https://www.michaeltrio.com/pub/media/0newweddingpage/top10slider/10WR0098B-18KWR.jpg"
-                    class="img-responsive m-auto" alt="">
-                  <div class="for-title">Dual Tone Contrasted Finish with Flush Set Diamond Ring in 18K White and Rose
-                    Gold</div>
-                </a>
-              </div>
+
 
             </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
+
+
+    <section class="perfect-fit mt-5">
+
+      <div class="container">
+        <div class="row perfect-fit-bg">
+          <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png"
+              alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
+          </div>
+
+          <div class="col-sm-12 box my-5">
+            <div>
+              <h1>Get The Perfect Fit</h1>
+              <p class="my-4 px-3">Find her ring size with our complimentary ring sizer!</p>
+              <a href="{{store url='request-ring-sizer'}}" class="btn btn-blue large-btn " role="button">Free Ring
+                Sizer</a>
+            </div>
+          </div>
+
+          <div class="col-sm-12 diamond-image-bg hidden-xs">
 
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
-  </section>
 
 
-  <section class="perfect-fit mt-5">
+    </section>
 
-    <div class="container">
-      <div class="row perfect-fit-bg">
-        <div class="visible-xs">
-          <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png"
-            alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
-        </div>
-
-        <div class="col-sm-12 box my-5">
-          <div>
-            <h1>Get the Perfect Fit</h1>
-            <p class="my-4 px-5">Find her ring size with our complimentary ring sizer!</p>
-            <a href="{{store url='request-ring-sizer'}}" class="btn btn-blue large-btn " role="button">Free Ring
-              Sizer</a>
-          </div>
-        </div>
-
-        <div class="col-sm-12 diamond-image-bg hidden-xs">
-
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
+  </div>
 </body>
 
 </html>

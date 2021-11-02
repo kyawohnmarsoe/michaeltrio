@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap" rel="stylesheet">
-
     <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
         * {
             box-sizing: border-box;
         }
@@ -61,8 +59,7 @@
         }
 
 
-        body {
-            color: var(--black);
+        .mt2021 {
             font-size: 14px;
         }
 
@@ -75,15 +72,16 @@
         }
 
         html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
             padding: 0;
+            color: var(--black);
         }
 
         .p-wrapper {
@@ -91,51 +89,16 @@
             margin: auto;
         }
 
-        p {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 17px;
-            line-height: 24px;
-            letter-spacing: 0.05em;
-            padding: 0 50px;
+        .mt2021 .text-white {
+            color: white;
         }
 
-
-
-        h1,
-        h3 {
-            font-family: Times New Roman;
-            font-style: normal;
-            font-weight: normal;
-            color: var(--black);
-        }
-
-        h1 {
-            font-size: 36px;
-            line-height: 46px;
+        .mt2021 h1,
+        .mt2021 p {
             letter-spacing: 0.05em;
         }
 
-        h3 {
-            font-size: 32px;
-            line-height: 37px;
-
-        }
-
-        h5 {
-            font-family: Montserrat;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 27px;
-
-        }
-
-        h6 {
-            font-size: 17px;
-        }
-
-        .btn {
+        .mt2021 .btn {
             font-size: 17px;
             line-height: 24px;
             font-weight: normal;
@@ -187,7 +150,7 @@
             width: 347px;
         }
 
-        .small-btn {
+        .mt2021 .small-btn {
             width: 217px;
         }
 
@@ -202,7 +165,7 @@
             padding-top: 8%;
         }
 
-        .row {
+        .mt2021 .row {
             display: flex;
         }
 
@@ -213,8 +176,6 @@
         .columns a {
             color: var(--black);
         }
-
-
 
         .flex-wrap {
             flex-wrap: wrap;
@@ -242,10 +203,6 @@
 
         .banner-height-400 {
             height: 400px;
-        }
-
-        .banner-height-300 {
-            height: 300px;
         }
 
         .max-width-600 {
@@ -301,11 +258,11 @@
         }
 
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        .owl-item .item a:hover {
+        .mt2021 .owl-item .item a:hover {
             color: var(--black);
         }
 
-        .owl-carousel .owl-item {
+        .mt2021 .owl-carousel .owl-item {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -313,43 +270,43 @@
         }
 
 
-        .owl-carousel .owl-item img {
+        .mt2021 .owl-carousel .owl-item img {
             width: 100px;
             transition: all 1s;
         }
 
 
-        .owl-carousel .owl-item.center img {
+        .mt2021 .owl-carousel .owl-item.center img {
             width: 200px;
             margin: auto;
         }
 
-        .owl-carousel .owl-item.center {
+        .mt2021 .owl-carousel .owl-item.center {
             margin: 0px 20px;
         }
 
-        .owl-item article>a {
+        .mt2021 .owl-item article>a {
             display: none;
             font-weight: 500;
             text-transform: uppercase;
         }
 
-        .owl-item.center article>a {
+        .mt2021 .owl-item.center article>a {
             margin-top: 10px;
             display: block;
         }
 
-        .owl-carousel .owl-nav .owl-prev,
-        .owl-carousel .owl-nav .owl-next {
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
             top: auto;
             bottom: -40px;
         }
 
-        .owl-carousel .owl-nav [class*='owl-']:before {
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
             font-size: 40px;
         }
 
-        .owl-carousel .owl-item a img:hover {
+        .mt2021 .owl-carousel .owl-item a img:hover {
             filter: contrast(130%);
         }
 
@@ -361,52 +318,11 @@
             align-items: flex-start;
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Old Page CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-        .page-main {
-            padding: 0px;
-        }
-
-        .page-footer h5 {
-            font: 500 14px/1.35 Montserrat, Helvetica Neue, Verdana, Arial, sans-serif;
-            margin: 0 0 5px;
-        }
-
-        .nowrap {
-            white-space: nowrap;
-            word-break: keep-all;
-        }
-
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Medium Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
         @media (max-width: 1199.98px) {
-
-            h1 {
-                font-size: 30px;
-                line-height: 34px;
-            }
-
-            h3 {
-                font-size: 25px;
-                line-height: 29px;
-            }
-
-            h5 {
-                font-size: 18px;
-                line-height: 25px;
-            }
-
-            p {
-                font-size: 16px;
-                line-height: 22px;
-            }
 
             .diamond-image img {
                 width: 320px;
             }
-
 
             .spinning-diamond {
                 width: 380px;
@@ -418,15 +334,8 @@
                 font-size: 12px;
             }
 
-            p {
-                padding: 0;
-            }
-
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Small Devices @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         @media (max-width: 767.98px) {
 
@@ -481,7 +390,7 @@
                 padding-right: 13px;
             }
 
-            .btn {
+            .mt2021 .btn {
                 font-size: 14px;
                 line-height: 22px;
 
@@ -491,7 +400,7 @@
                 margin-top: 1.2rem !important;
             }
 
-            .row {
+            .mt2021 .row {
                 display: block;
             }
 
@@ -506,32 +415,11 @@
 
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Mobile Phone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         @media (max-width: 480px) {
-            h1 {
-                font-size: 25px;
-                line-height: 29px;
-            }
 
-            h3 {
-                font-size: 20px;
-                line-height: 23px;
-            }
 
-            h5 {
-                font-size: 17px;
-                line-height: 20px;
-            }
-
-            p {
-                font-size: 14px;
-                line-height: 22px;
-            }
-
-            .btn {
+            .mt2021 .btn {
                 font-size: 14px;
                 line-height: 15px;
                 /* height: 30px; */
@@ -549,16 +437,16 @@
                 height: 200px;
             }
 
-            .owl-carousel .owl-item img {
+            .mt2021 .owl-carousel .owl-item img {
                 width: 70px;
                 transition: unset;
             }
 
-            .owl-carousel .owl-item.center img {
+            .mt2021 .owl-carousel .owl-item.center img {
                 width: 150px;
             }
 
-            .owl-carousel .owl-item.center {
+            .mt2021 .owl-carousel .owl-item.center {
                 margin: 0px 20px;
             }
 
@@ -586,7 +474,170 @@
 
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Gemstone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Gemstone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Gemstone @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         :root {
@@ -644,39 +695,42 @@
             }
         }
     </style>
+
 </head>
 
 <body>
-    <section class="gemstone-banner">
-        <img src="https://www.michaeltrio.com/pub/media/0gemstone/gemstone-banner.jpeg" alt=""
-            class="w-100 visible-xs mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 banner-height-400 hidden-xs"></div>
-                <div class="col-sm-12 box ">
-                    <div>
-                        <h1 class="text-center mb-3">Gemstones</h1>
-                        <h3 class="text-center">Available in 360 view</h3>
-                        <p class="text-center py-3">Experience the vivid colours of our Natural Gemstones right before
-                            your
-                            very eyes. Take your pick from Sapphire, Ruby and more.</p>
-                        <a href="https://www.michaeltrio.com/gemstones/ruby" class="btn btn-blue small-btn">Shop
-                            Gemstones</a>
+    <div class="mt2021">
+        <section class="gemstone-banner">
+            <img src="https://www.michaeltrio.com/pub/media/0gemstone/gemstone-banner.jpeg" alt=""
+                class="w-100 visible-xs mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 banner-height-400 hidden-xs"></div>
+                    <div class="col-sm-12 box ">
+                        <div>
+                            <h1 class="text-center mb-3">Gemstones</h1>
+                            <h3 class="text-center">Available in 360 view</h3>
+                            <p class="text-center py-3">Experience the vivid colours of our Natural Gemstones right
+                                before
+                                your
+                                very eyes. Take your pick from Sapphire, Ruby and more.</p>
+                            <a href="https://www.michaeltrio.com/gemstones/ruby" class="btn btn-blue small-btn">Shop
+                                Gemstones</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="diamond-by-shape py-5">
+        <section class="diamond-by-shape py-5">
 
-        <div class="container ">
-            <div class="row">
-                <div class="col-xs-24 ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xs-24 ">
 
-                    <h1 class="text-center">Shop by Gemstones</h1>
-                    <div class="my-5">
-                        <div id="diamonds-slider" class="owl-carousel owl-theme img-slider mb-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                        <h1 class="text-center">Shop by Gemstones</h1>
+                        <div class="my-5">
+                            <div id="diamonds-slider" class="owl-carousel owl-theme img-slider mb-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
                                 "0": {
                                     "items":1
                                 },
@@ -690,224 +744,229 @@
                                   "items":7
                               }
                             }}}}}'>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-ruby.jpg"
-                                                class="img-responsive">
-                                        </figure>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-ruby.jpg"
+                                                    class="img-responsive">
+                                            </figure>
 
-                                        <div class="for-title pt-3 diamond-name">Ruby</div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#"></a>
-                                <article class="text-center">
-                                    <figure>
-                                        <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-emerald.jpg"
-                                            class="img-responsive">
-                                    </figure>
-                                    <div class="for-title pt-3 diamond-name">Emerald</div>
-                                </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
+                                            <div class="for-title pt-3 diamond-name">Ruby</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"></a>
                                     <article class="text-center">
                                         <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-sapphire.jpg"
+                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-emerald.jpg"
                                                 class="img-responsive">
                                         </figure>
-                                        <div class="for-title pt-3 diamond-name">Sapphire</div>
+                                        <div class="for-title pt-3 diamond-name">Emerald</div>
                                     </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-topaz.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Topza</div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-morganite.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Morganite</div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-sapphire.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Sapphire</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-topaz.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Topza</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-morganite.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Morganite</div>
 
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-tanzanite.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Tanzanite</div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-spinel.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Spinel</div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-aquamarine.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Aquamarine</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-tanzanite.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Tanzanite</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-spinel.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Spinel</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-aquamarine.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Aquamarine</div>
 
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-alexandrite.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Alexandrite</div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <article class="text-center">
-                                        <figure>
-                                            <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-tourmaline.jpg"
-                                                class="img-responsive">
-                                        </figure>
-                                        <div class="for-title pt-3 diamond-name">Tourmaline</div>
-                                    </article>
-                                </a>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-alexandrite.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Alexandrite</div>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <article class="text-center">
+                                            <figure>
+                                                <img src="https://www.michaeltrio.com/pub/media/gemstone/gemstone-tourmaline.jpg"
+                                                    class="img-responsive">
+                                            </figure>
+                                            <div class="for-title pt-3 diamond-name">Tourmaline</div>
+                                        </article>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+
+
                     </div>
 
-
-
                 </div>
-
             </div>
+        </section>
+
+
+        <div class="container pb-3">
+            <h1 class="text-center mb-3">Design Your Own</h1>
+            <p class="text-center pt-3 pb-5 p-wrapper">Select from our large selection of loose gemstones and matching
+                your
+                gem
+                with a
+                beautiful setting in the precious metal of your choice.</p>
         </div>
-    </section>
 
 
-    <div class="container pb-3">
-        <h1 class="text-center mb-3">Design Your Own</h1>
-        <p class="text-center pt-3 pb-5 p-wrapper">Select from our large selection of loose gemstones and matching your
-            gem
-            with a
-            beautiful setting in the precious metal of your choice.</p>
-    </div>
-
-
-    <section class="bg-lightorange gemstone-ring-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10 gemstone-ring-wrapper ">
-                    <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-Gemstone.png" alt=""
-                        class="gemstone-ring">
-                </div>
-                <div class="col-sm-10 box hidden-xs">
-                    <div>
-                        <div> <a href="https://www.michaeltrio.com/gemstones/ruby"
-                                class="btn btn-blue large-btn mb-2">Start With A Gemstones</a></div>
-                        <div> <a href="https://www.michaeltrio.com/engagement-rings/setting/"
-                                class="btn btn-blue large-btn">Start With A Setting</a></div>
+        <section class="bg-lightorange gemstone-ring-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10 gemstone-ring-wrapper ">
+                        <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-Gemstone.png" alt=""
+                            class="gemstone-ring">
+                    </div>
+                    <div class="col-sm-10 box hidden-xs">
+                        <div>
+                            <div> <a href="https://www.michaeltrio.com/gemstones/ruby"
+                                    class="btn btn-blue large-btn mb-2">Start With A Gemstones</a></div>
+                            <div> <a href="https://www.michaeltrio.com/engagement-rings/setting/"
+                                    class="btn btn-blue large-btn">Start With A Setting</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="container pt-5 pb-3 box visible-xs">
-        <div>
-            <div> <a href="https://www.michaeltrio.com/gemstones/ruby" class="btn btn-blue large-btn mb-2">Start With A
-                    Gemstones</a></div>
-            <div> <a href="https://www.michaeltrio.com/engagement-rings/setting/" class="btn btn-blue large-btn">Start
-                    With A Setting</a></div>
+        <div class="container pt-5 pb-3 box visible-xs">
+            <div>
+                <div> <a href="https://www.michaeltrio.com/gemstones/ruby" class="btn btn-blue large-btn mb-2">Start
+                        With A
+                        Gemstones</a></div>
+                <div> <a href="https://www.michaeltrio.com/engagement-rings/setting/"
+                        class="btn btn-blue large-btn">Start
+                        With A Setting</a></div>
+            </div>
         </div>
+
+
+        <section class="gems-jewels">
+            <div class="container pt-5 pb-3">
+                <h1 class="text-center mb-4">Shop by Style</h1>
+                <p class="text-center mb-5 p-wrapper">Propose with a unique, colorful gemstone ring or choose a vibrant
+                    gemstone ring,
+                    pendant or earrings for a special occasion.</p>
+                <div class="row d-block">
+
+                    <div class="col-sm-8 col-xs-24">
+                        <a href="https://www.michaeltrio.com/jewellery/rings/gemstone/" class="textblack">
+                            <div class="bg-orange mb-3">
+
+                                <div class="overflow-hidden">
+                                    <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-_jewellery-1.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h5 class="py-3 for-title">Gemstone Ring</h5>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-xs-24">
+                        <a href="https://www.michaeltrio.com/jewellery/earrings/gemstone/" class="textblack">
+                            <div class="bg-orange mb-3">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-jewellery-2.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h5 class="py-3 for-title">Gemstone Earrings</h5>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-8 col-xs-24">
+                        <a href="https://www.michaeltrio.com/jewellery/necklaces/gemstone/" class="textblack">
+                            <div class="bg-orange mb-3">
+                                <div class="overflow-hidden">
+                                    <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-jewellery-3.jpg"
+                                        alt="" class="w-100">
+                                </div>
+                                <h5 class="py-3 for-title">Gemstone Pendant</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="text-center py-3">
+                    <a href="https://www.michaeltrio.com/gemstones/ruby/" class="btn btn-blue small-btn">Shop
+                        Gemstones</a>
+                </div>
+            </div>
+        </section>
     </div>
-
-
-    <section class="gems-jewels">
-        <div class="container pt-5 pb-3">
-            <h1 class="text-center mb-4">Shop by Style</h1>
-            <p class="text-center mb-5 p-wrapper">Propose with a unique, colorful gemstone ring or choose a vibrant
-                gemstone ring,
-                pendant or earrings for a special occasion.</p>
-            <div class="row d-block">
-
-                <div class="col-sm-8 col-xs-24">
-                    <a href="https://www.michaeltrio.com/jewellery/rings/gemstone/" class="textblack">
-                        <div class="bg-orange mb-3">
-
-                            <div class="overflow-hidden">
-                                <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-_jewellery-1.jpg"
-                                    alt="" class="w-100">
-                            </div>
-                            <h5 class="py-3 for-title">Gemstone Ring</h5>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-8 col-xs-24">
-                    <a href="https://www.michaeltrio.com/jewellery/earrings/gemstone/" class="textblack">
-                        <div class="bg-orange mb-3">
-                            <div class="overflow-hidden">
-                                <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-jewellery-2.jpg"
-                                    alt="" class="w-100">
-                            </div>
-                            <h5 class="py-3 for-title">Gemstone Earrings</h5>
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-8 col-xs-24">
-                    <a href="https://www.michaeltrio.com/jewellery/necklaces/gemstone/" class="textblack">
-                        <div class="bg-orange mb-3">
-                            <div class="overflow-hidden">
-                                <img src="https://www.michaeltrio.com/pub/media/0gemstone/MTM2-Gemstones-jewellery-3.jpg"
-                                    alt="" class="w-100">
-                            </div>
-                            <h5 class="py-3 for-title">Gemstone Pendant</h5>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="text-center py-3">
-                <a href="https://www.michaeltrio.com/gemstones/ruby/" class="btn btn-blue small-btn">Shop Gemstones</a>
-            </div>
-        </div>
-    </section>
 
 
 </body>

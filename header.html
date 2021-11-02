@@ -1,0 +1,87 @@
+<body>
+    <referenceContainer name="header.container" htmlClass="page-header header-style-09">
+        <container name="header-panel-top" htmlTag="div" htmlClass="header-top" before="-">
+            <container name="header-panel-right-top-info" htmlTag="div">
+                <block class="Magento\Cms\Block\Block" name="header_ad">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">header_ad</argument>
+                    </arguments>
+                </block>
+            </container>
+
+            <container name="header-panel-wrap" htmlTag="div" htmlClass="container topbar2">
+                <container name="header-panel-row-top" htmlTag="div" htmlClass="row" after="skip_to_content">
+                    <container name="header-panel-left-top" htmlTag="div" htmlClass="col-sm-12 col-md-12">
+                        <block name="header-extra-text" class="Jewel\ThemeLayoutPro\Block\Header"
+                            template="Jewel_ThemeLayoutPro::layout/header-content.phtml" />
+                    </container>
+
+                    <container name="header-panel-right-top" htmlTag="div" htmlClass="top-links col-sm-12 col-md-12" />
+                </container>
+            </container>
+
+        </container>
+    </referenceContainer>
+
+
+    <referenceContainer name="header.panel">
+        <container name="header-panel-row" htmlTag="div" htmlClass="row cdz-fix-left" after="skip_to_content">
+            <container name="header-panel-left" htmlTag="div" htmlClass="col-sm-11 col-md-4 header-panel-left" />
+            <container name="header-panel-middle" htmlTag="div" htmlClass="col-sm-24 col-md-16 header-panel-middle" />
+            <container name="header-panel-right" htmlTag="div" htmlClass="col-sm-11 col-md-4 header-panel-right" />
+            <container name="header-search-container" htmlId="header-search-container" htmlTag="div"
+                htmlClass="col-sm-24 header-search-container" />
+        </container>
+
+    </referenceContainer>
+
+    <referenceBlock name="top.links">
+        <action method="setData">
+            <argument name="name" xsi:type="string">css_class</argument>
+            <argument name="value" xsi:type="string">header links visible-xs</argument>
+        </action>
+    </referenceBlock>
+
+    <referenceBlock name="top.links.features">
+        <block class="Magento\Framework\View\Element\Template" name="links.features.search"
+            template="Magento_Search::search-trigger.phtml" before="-">
+            <arguments>
+                <argument name="html_class" xsi:type="string">search-link</argument>
+            </arguments>
+        </block>
+        <!--
+        <block class="Magento\Framework\View\Element\Template" name="links.features.linkslist" template="Magento_Theme::html/custom-li.phtml"  after="-">
+            <arguments>
+                <argument name="html_class" xsi:type="string">linkslist-link</argument>
+            </arguments>
+        </block>-->
+
+    </referenceBlock>
+    <referenceBlock name="utilities.toggle.linkslist">
+        <action method="setDirection">
+            <argument name="value" xsi:type="string">right</argument>
+        </action>
+    </referenceBlock>
+
+    <move element="header-store-info" destination="header-panel-top" />
+    <move element="top.links.features" destination="header-panel-right" />
+    <move element="mobi-cart-placeholder" destination="header-search-container" />
+    <move element="top.search" destination="header-search-container" />
+    <move element="header-links-list" destination="utilities.sidebar.right" />
+    <!--
+    <move element="links.features.cart" destination="header-panel-top" after="authorization-link-features" before="links.features.linkslist" />-->
+
+    <move element="utilities.toggle.linkslist" destination="links.features.linkslist" />
+
+    <move element="logo" destination="header-panel-left" />
+    <move element="catalog.topnav" destination="header-panel-middle" after="-" />
+    <move element="store-menu-placeholder" destination="store.menu" />
+
+    <referenceBlock name="header-contact-link" remove="true" />
+
+    <move element="currency" destination="header-panel-right-top" />
+    <move element="minicart" destination="header-panel-right-top" />
+    <move element="wish-list-link-features" destination="header-panel-right-top" />
+    <move element="authorization-link-features" destination="header-panel-right-top" />
+
+</body>

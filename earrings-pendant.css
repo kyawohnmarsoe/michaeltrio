@@ -1,79 +1,78 @@
-
-    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .ct025 {
         width: 10px;
         margin: auto;
-    }
-
-    .ct030 {
+      }
+  
+      .ct030 {
         width: 11px;
         margin: auto;
-    }
-
-    .ct033 {
+      }
+  
+      .ct033 {
         width: 12px;
         margin: auto;
-    }
-
-    .ct050 {
+      }
+  
+      .ct050 {
         width: 14px;
         margin: auto;
-
-    }
-
-    .ct060 {
+  
+      }
+  
+      .ct060 {
         width: 14.3px;
         margin: auto;
-
-    }
-
-    .ct070 {
+  
+      }
+  
+      .ct070 {
         width: 15px;
         margin: auto;
-
-    }
-
-    .ct075 {
+  
+      }
+  
+      .ct075 {
         width: 15.5px;
         margin: auto;
-
-    }
-
-    .ct080 {
+  
+      }
+  
+      .ct080 {
         width: 15.7px;
         margin: auto;
-
-    }
-
-    .ct090 {
+  
+      }
+  
+      .ct090 {
         width: 16px;
         margin: auto;
-
-    }
-
-    .ct100 {
+  
+      }
+  
+      .ct100 {
         margin: auto;
         width: 18px;
-    }
-
-    .ct125 {
+      }
+  
+      .ct125 {
         margin: auto;
         width: 22px;
-    }
-
-    .ct150 {
+      }
+  
+      .ct150 {
         margin: auto;
         width: 25px;
-    }
-
-    .ct200 {
+      }
+  
+      .ct200 {
         margin: auto;
         width: 30px;
-    }
-
-    .diamond-thumbnail {
+      }
+  
+      .diamond-thumbnail {
         padding-top: 0px;
         padding-bottom: 10px;
         border-radius: 10px;
@@ -82,89 +81,89 @@
         border: 2px solid transparent;
         cursor: pointer;
         transition: border 1s;
-    }
-
-    .diamond-thumbnail .diamond-size {
+      }
+  
+      .diamond-thumbnail .diamond-size {
         font-size: 11px;
-    }
-
-    .diamond-thumbnail.bg-white:hover {
+      }
+  
+      .diamond-thumbnail.bg-white:hover {
         border: 2px solid var(--companyblue);
-    }
-
-    .active .diamond-thumbnail.bg-white {
+      }
+  
+      .active .diamond-thumbnail.bg-white {
         border: 2px solid var(--companyblue);
-    }
-
-    .diamond-thumbnail-img {
+      }
+  
+      .diamond-thumbnail-img {
         height: 70px;
         padding: 10px 0px;
         display: flex;
-    }
-
-    .diamond-price {
+      }
+  
+      .diamond-price {
         font-size: 14px;
         margin-top: 10px;
         margin-bottom: 20px;
-    }
-
-    .diamond-quality {
+      }
+  
+      .diamond-quality {
         font-size: 14px;
         font-weight: 700;
-    }
-
-    .spinning-diamond {
+      }
+  
+      .spinning-diamond {
         width: 420px;
         height: 420px;
         border-radius: 20px;
-    }
-
-    .selling.No {
+      }
+  
+      .selling.No {
         opacity: 0.5;
         cursor: not-allowed;
-    }
-
-    .selling.No .diamond-thumbnail.bg-white:hover {
+      }
+  
+      .selling.No .diamond-thumbnail.bg-white:hover {
         border: 2px solid transparent;
-    }
-
-    .fa-green {
+      }
+  
+      .fa-green {
         color: #5EE9AD;
-    }
-
-
-    .earrings-banner {
+      }
+  
+  
+      .earrings-banner {
         background-color: var(--lighterblue);
-    }
-
-    .earrings-banner p,
-    .earrings-banner h1,
-    .earrings-banner h3 {
+      }
+  
+      .earrings-banner p,
+      .earrings-banner h1,
+      .earrings-banner h3 {
         color: black;
-    }
-
-    .custom-earrings .diamond-image-bg {
+      }
+  
+      .custom-earrings .diamond-image-bg {
         height: 400px;
         background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
-    }
-
-    .pandent-banner {
+      }
+  
+      .pandent-banner {
         background-color: var(--lighterblue);
-    }
-
-    .pandent-banner p,
-    .pandent-banner h1,
-    .pandent-banner h3 {
+      }
+  
+      .pandent-banner p,
+      .pandent-banner h1,
+      .pandent-banner h3 {
         color: black;
-    }
-
-    .custom-pendant .diamond-image-bg {
+      }
+  
+      .custom-pendant .diamond-image-bg {
         height: 400px;
         background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
-    }
+      }

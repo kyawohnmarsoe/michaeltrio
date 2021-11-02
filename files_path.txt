@@ -1,0 +1,17 @@
+/Applications/MAMP/htdocs/michaeltrio/michaeltrio-git-main/app/code/Jewel/ThemeLayoutPro/view/frontend/templates/layout/header-content.phtml
+
+/Applications/MAMP/htdocs/michaeltrio/michaeltrio-git-main/app/design/frontend/Jewel/Michaeltrio/SG/Magento_Theme/templates/html/store-menu-placeholder.phtml
+
+
+/Applications/MAMP/htdocs/michaeltrio/michaeltrio-git-main/app/design/frontend/Jewel/Michaeltrio/SG/Magento_Directory/templates/currency.phtml
+
+/Applications/MAMP/htdocs/michaeltrio/michaeltrio-git-main/app/design/frontend/Jewel/Michaeltrio/SG/Magento_Theme/layout/default.xml
+
+
+
+
+
+{{block class="Magento\Directory\Block\Currency" name="currency" template="Magento_Directory::currency.phtml" id_modifier="test"}}
+
+
+

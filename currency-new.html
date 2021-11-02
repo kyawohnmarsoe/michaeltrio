@@ -1,0 +1,15 @@
+<script>
+    require(['jquery'], function ($) {
+
+        $(document).ready(function () {
+            $('#switcher-currency-test').find('.switcher-option').click(function () {
+                sessionStorage.clear();
+            });
+
+        });
+    });
+</script>
+
+
+{{block class="Magento\Directory\Block\Currency" name="currency" template="Magento_Directory::currency.phtml"
+id_modifier="test"}}
