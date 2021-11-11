@@ -1,18 +1,19 @@
 <footer class="page-footer">
-    <!-- <div class="footer content">
+    <div class="footer content">
         <script type="text/javascript">
             require(['jquery', 'domReady!'], function ($) {
                 $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
                     .appendTo('#newsletter-validate-detail');
             });
         </script>
-    </div> -->
+    </div>
 
 
     <style>
         footer .footer-company-info h5 a,
         footer .footer-company-info h5 {
             color: #fff !important;
+            font-size: 18px;
         }
 
         .footer-collapse {
@@ -23,10 +24,12 @@
             margin-top: 0;
         }
 
+
+
         @media only screen and (max-width: 767px) {
-            /* #v1 {
-                display: none;
-            } */
+            .footer-collapse.active {
+                text-decoration: underline;
+            }
 
             .page-footer {
                 padding-bottom: 0;
@@ -88,6 +91,13 @@
                 padding: auto;
             }
 
+            .btn-blue.grey {
+                background-color: #606060;
+            }
+
+            .page-footer .footer-link li {
+                padding: 8px 0;
+            }
 
 
         }
@@ -176,7 +186,7 @@
                                                         d="M474.67.63l4.86,7.1a.11.11,0,0,0,.18,0l4.86-7.1a.11.11,0,0,0-.09-.17h-9.72a.11.11,0,0,0-.09.17">
                                                     </path>
                                                 </svg> </span>
-                                            <div class="whois mt-4 mb-4 pr-4" style="line-height:17px;">
+                                            <div class="whois mt-4 mb-4 pr-4" style="line-height:24px;">
                                                 At Michael Trio, we specialise in providing exceptional craftsmanship,
                                                 service, and quality at a remarkable price. Our Mission is to create
                                                 jewellery pieces that are sincere, thoughtful, and honest. Every love
@@ -194,7 +204,7 @@
                                                 <ul id="footer-content-2" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='about-us'}}">Our Story</a></li>
-                                                    <li><a href="{{store url='locations'}}">Locations</a></li>
+                                                    <li><a href="{{store url='locations'}}">Showrooms</a></li>
                                                     <li><a href="{{store url='contacts'}}">Contact Us</a></li>
                                                     <li><a href="{{store url='reviews'}}">Customer Reviews</a></li>
                                                     <li><a href="{{store url='terms-condition'}}">Terms &amp;
@@ -254,52 +264,6 @@
 
                 <div class="footer-content-bottom">
                     <div class="container">
-                        <div class="newsletter-content visible-xs mb-4">
-                            <div class="title mb-3">
-                                Sign up for our newsletter
-                            </div>
-                            <div class="block newsletter">
-                                <!-- <div class="title"><strong>Newsletter</strong></div> -->
-                                <div class="content">
-                                    <form class="form subscribe m-auto" novalidate="novalidate"
-                                        action="https://www.michaeltrio.com/newsletter/subscriber/new/" method="post"
-                                        id="newsletter-validate-detail">
-
-                                        <div class="input-group field newsletter">
-                                            <input name="email" type="email" id="newsletter"
-                                                placeholder="Enter you email address"
-                                                data-validate="{required:true, 'validate-email':true}"
-                                                class="form-control">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default btn-grey" type="button">Submit</button>
-                                            </span>
-                                        </div>
-
-
-                                        <!-- <div class="field newsletter">
-                                                <label class="label" for="newsletter">
-                                                    <span>Sign Up for Our
-                                                        Newsletter:</span>
-                                                </label>
-                                                <div class="control">
-                                                    <input name="email" type="email" id="newsletter"
-                                                        placeholder="Enter you email address"
-                                                        data-validate="{required:true, 'validate-email':true}">
-                                                    <input type="submit" value="Submit" class="" />
-                                                </div>
-                                            </div> -->
-
-                                        <!-- <div class="actions">
-                                                <button class="action subscribe primary" title="Subscribe"
-                                                    type="submit">
-                                                    <span>Subscribe</span>
-                                                </button>
-                                            </div> -->
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="row">
                             <div class="col-sm-12 visible-xs mb-4">
@@ -345,45 +309,13 @@
         <div class="footer-style-10">
             <div class="main-footer">
 
-                <div class="footer-content-middle hidden-xs">
-                    <div class="container">
-                        <div class="footer content">
-                            <div class="row middle-top">
-                                <div class="col-sm-14">
-                                    <div class="newsletter-content">
-                                        <span class="title">
-                                            Be the first to save!
-                                        </span>
-                                        {{block
-                                        class="Magento\Newsletter\Block\Subscribe" name="cdz.newsletter"
-                                        template="subscribe.phtml"}}
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-10">
-                                    <div class="footer-social hover-iconsocial">
-                                        <span class="title">Stay
-                                            Connected</span>
-                                        <p class="social"><a class="spin circle"
-                                                href="https://www.facebook.com/michaeltriojewels"><span
-                                                    class="fa fa-facebook">facebook</span></a> <a
-                                                href="https://instagram.com/michaeltrio/"><span
-                                                    class="fa fa-instagram">instagram</span></a> <a
-                                                href="https://www.youtube.com/channel/UCDA5wCS594VZcW4gqTx2GDw/"><span
-                                                    class="fa fa-youtube">youtube</span></a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="footer-content-middle footer-company-info">
                     <div class="container">
                         <div class="footer content">
                             <!--social--->
                             <div class="row middle-bottom">
-                                <div class="col-sm-8">
+
+                                <div class="col-sm-8 visible-xs">
                                     <div class="footer-box">
                                         <div id="footer-content-1">
                                             <span class="logo-w"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -425,7 +357,7 @@
                                                         d="M474.67.63l4.86,7.1a.11.11,0,0,0,.18,0l4.86-7.1a.11.11,0,0,0-.09-.17h-9.72a.11.11,0,0,0-.09.17">
                                                     </path>
                                                 </svg> </span>
-                                            <div class="whois mt-4 mb-4 pr-4" style="line-height:17px;">
+                                            <div class="whois mt-4 mb-4 pr-4" style="line-height:24px;">
                                                 At Michael Trio, we specialise in providing exceptional craftsmanship,
                                                 service, and quality at a remarkable price. Our Mission is to create
                                                 jewellery pieces that are sincere, thoughtful, and honest. Every love
@@ -435,58 +367,135 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div class="col-sm-16">
                                     <div class="row">
+                                        <!-- show rooms -->
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
                                             "collapsible":{
-                                                "animate":{ "duration" :1000, "easing":"easeOutCubic"},
+                                                
+                                                "icons": {"header": "downarrow", "activeHeader": "uparrow"}
+                                            }}'>
+                                                <h5 class="footer-collapse" data-role="title">Showrooms</h5>
+                                                <ul class="footer-link hover-link01" data-role="content">
+
+                                                    <li>
+                                                        <h5 class=""> Tanjong Pagar</h5>
+
+                                                        <p class="h9 ">
+                                                            91 Tanjong Pagar Road<br>
+                                                            Singapore 088512<br>
+                                                            Monday - Sunday: 12pm - 8.30pm<br>
+                                                            (Last appointment at 7:30pm)
+                                                        </p>
+                                                        <p class="h9 company-contact">
+                                                            Call: <a href="tel:+6562990110"> +65 6299 0110</a><br>
+                                                            Email: <a
+                                                                href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
+                                                        </p>
+
+                                                    </li>
+
+                                                    <li>
+                                                        <h5> JEM</h5>
+
+                                                        <p class="h9 ">
+                                                            50 Jurong Gateway Rd, #01-60,<br>
+                                                            Singapore 608549 <br>
+                                                            Monday - Thursday: 11am - 9pm <br>
+                                                            (Last appointment at 8pm) <br>
+                                                            Friday - Sunday: 11am - 9.30pm <br>
+                                                            (Last appointment at 8.30pm)
+                                                        </p>
+                                                        <p class="h9 company-contact">
+                                                            Call: <a href="tel:+6569513296"> +65 6951 3296</a><br>
+                                                            Email: <a
+                                                                href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
+                                                        </p>
+
+
+
+                                                    </li>
+
+                                                    <li>
+                                                        <h5> Northpoint City</h5>
+                                                        <div class="">
+                                                            <p class="h9 ">
+                                                                Yishun Ave 2, North Wing, #01-22 Northpoint City<br>
+                                                                Singapore 769098<br>
+                                                                Monday - Thursday: 11am - 9pm<br>
+                                                                (Last appointment at 8pm)<br>
+                                                                Friday - Sunday: 11am - 9.30pm<br>
+                                                                (Last appointment at 8.30pm)
+                                                            </p>
+                                                            <p class="h9 company-contact">
+                                                                Call: <a href="tel:+6569691492"> +65 6969 1492</a><br>
+                                                                Email: <a
+                                                                    href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
+                                                            </p>
+                                                        </div>
+
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- show rooms end -->
+                                        <div class="col-sm-8">
+                                            <div class="footer-box" data-mage-init='{
+                                            "collapsible":{
+                                                
                                                 "icons": {"header": "downarrow", "activeHeader": "uparrow"}
                                             }}'>
                                                 <h5 class="footer-collapse" data-role="title">About</h5>
                                                 <ul id="footer-content-2" class="footer-link hover-link01"
                                                     data-role="content">
-                                                    <li><a href="{{store url='about-us'}}">Our Story</a></li>
-                                                    <li><a href="{{store url='locations'}}">Locations</a></li>
-                                                    <li><a href="{{store url='contacts'}}">Contact Us</a></li>
-                                                    <li><a href="{{store url='reviews'}}">Customer Reviews</a></li>
-                                                    <li><a href="{{store url='terms-condition'}}">Terms &amp;
+                                                    <li><a href="{{store url='about-us'}}"> Our Story</a></li>
+                                                    <li><a href="{{store url='contacts'}}"> Contact Us</a></li>
+                                                    <li><a href="{{store url='reviews'}}"> Customer Reviews</a></li>
+                                                    <li><a href="{{store url='terms-condition'}}"> Terms &amp;
                                                             Conditions</a>
                                                     </li>
-                                                    <li><a href="{{store url='privacy-policy'}}">Privacy</a></li>
-                                                    <li><a href="{{store url=''}}faq#conflict-free-diamonds">Conflict
+                                                    <li><a href="{{store url='privacy-policy'}}"> Privacy</a></li>
+                                                    <li><a href="{{store url=''}}faq#conflict-free-diamonds"> Conflict
                                                             Free
                                                             Diamonds</a></li>
-                                                    <li><a href="{{store url='blog/share-your-love-story'}}">Submit Love
+                                                    <li><a href="{{store url='blog/share-your-love-story'}}"> Submit
+                                                            Love
                                                             Story</a></li>
-                                                    <li><a href="{{store url='faq'}}">FAQs</a></li>
+                                                    <li><a href="{{store url='faq'}}"> FAQs</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
                                             "collapsible":{
-                                                "animate":{ "duration" :1000, "easing":"easeOutCubic"},
+                                                
                                                 "icons": {"header": "downarrow", "activeHeader": "uparrow"}
                                             }}'>
                                                 <h5 class="footer-collapse" data-role="title">Customer Service</h5>
                                                 <ul id="footer-content-3" class="footer-link hover-link01"
                                                     data-role="content">
-                                                    <li><a href="{{store url='faq'}}">Free Shipping Worldwide</a></li>
-                                                    <li><a href="{{store url=''}}faq#custom-made-products">Custom Made
+                                                    <li><a href="{{store url='faq'}}"> Free Shipping Worldwide</a></li>
+                                                    <li><a href="{{store url=''}}faq#custom-made-products"> Custom Made
                                                             Orders</a></li>
-                                                    <li><a href="{{store url=''}}faq#14-day-return-policy">14-Day
+                                                    <li><a href="{{store url=''}}faq#14-day-return-policy"> 14-Day
                                                             Returns</a></li>
-                                                    <li><a href="{{store url=''}}faq#ring-size--resizing-">Ring Size
+                                                    <li><a href="{{store url=''}}faq#ring-size--resizing-"> Ring Size
                                                             &amp;
                                                             Resizing</a></li>
-                                                    <li><a href="{{store url=''}}faq#diamond-upgrade-program">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-upgrade-program"> Diamond
                                                             Upgrade Program</a></li>
-                                                    <li><a href="{{store url=''}}faq#diamond-price-match-program">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-price-match-program">
+                                                            Diamond
                                                             Price Matching</a></li>
-                                                    <li><a href="{{store url=''}}faq#lifetime-warranty">Lifetime
+                                                    <li><a href="{{store url=''}}faq#lifetime-warranty"> Lifetime
                                                             Warranty</a></li>
-                                                    <li><a href="{{store url='request-ring-sizer'}}">Free Ring Sizer</a>
+                                                    <li><a href="{{store url='request-ring-sizer'}}"> Free Ring
+                                                            Sizer</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -494,15 +503,15 @@
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
                                             "collapsible":{
-                                                "animate":{ "duration" :1000, "easing":"easeOutCubic"},
+                                                
                                                 "icons": {"header": "downarrow", "activeHeader": "uparrow"}
                                             }}'>
                                                 <h5 class="footer-collapse" data-role="title">Account</h5>
                                                 <ul id="footer-content-4" class="footer-link hover-link01"
                                                     data-role="content">
-                                                    <li><a href="{{store url='customer/account'}}">Sign In</a></li>
-                                                    <li><a href="{{store url='checkout/cart'}}">View Cart</a></li>
-                                                    <li><a href="{{store url='wishlist'}}">My Wishlist</a></li>
+                                                    <li><a href="{{store url='customer/account'}}"> Sign In</a></li>
+                                                    <li><a href="{{store url='checkout/cart'}}"> View Cart</a></li>
+                                                    <li><a href="{{store url='wishlist'}}"> My Wishlist</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -524,38 +533,17 @@
                                 <div class="content">
                                     <form class="form subscribe m-auto" novalidate="novalidate"
                                         action="https://www.michaeltrio.com/newsletter/subscriber/new/" method="post"
-                                        id="newsletter-validate-detail">
+                                        id="newsletter-validate-detail1">
 
                                         <div class="input-group field newsletter">
-                                            <input name="email" type="email" id="newsletter"
+                                            <input name="email" type="email" id="newsletter1"
                                                 placeholder="Enter you email address"
                                                 data-validate="{required:true, 'validate-email':true}"
                                                 class="form-control">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default btn-grey" type="button">Submit</button>
+                                                <button class="btn btn-default btn-grey" type="submit">Submit</button>
                                             </span>
                                         </div>
-
-
-                                        <!-- <div class="field newsletter">
-                                            <label class="label" for="newsletter">
-                                                <span>Sign Up for Our
-                                                    Newsletter:</span>
-                                            </label>
-                                            <div class="control">
-                                                <input name="email" type="email" id="newsletter"
-                                                    placeholder="Enter you email address"
-                                                    data-validate="{required:true, 'validate-email':true}">
-                                                <input type="submit" value="Submit" class="" />
-                                            </div>
-                                        </div> -->
-
-                                        <!-- <div class="actions">
-                                            <button class="action subscribe primary" title="Subscribe"
-                                                type="submit">
-                                                <span>Subscribe</span>
-                                            </button>
-                                        </div> -->
 
                                     </form>
                                 </div>
@@ -602,3 +590,21 @@
     </div>
 
 </footer>
+
+<script>
+    require(['jquery'], function ($) {
+        $(document).ready(function () {
+
+            $(".footer-collapse").click(function () {
+                var x = $(this).attr("aria-selected");
+                if (x === "true") {
+                    $(this).removeClass("active");
+                } else if (x === "false") {
+                    $(this).addClass("active");
+                }
+
+            });
+
+        });
+    });
+</script>

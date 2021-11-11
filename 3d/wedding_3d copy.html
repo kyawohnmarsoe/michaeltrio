@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --lightblue: #E5F3FE;
+      --lighterblue: #F0F6FB;
+      --darkblue: #325683;
+      --lightorange: #FFECE6;
+      --lighterorange: #fff6f3;
+      --white: #ffffff;
+      --black: #606060;
+      --companyblue: #9BB8D3;
+      --cream: #F7F3F0;
+      --oragne: #FFB898;
+    }
+
+    .bg-cream {
+      background-color: var(--cream);
+    }
+
+    .bg-lighterorange {
+      background-color: var(--lighterorange);
+    }
+
+    .bg-lightorange {
+      background-color: var(--lightorange);
+    }
+
+    .bg-orange {
+      background-color: var(--oragne);
+    }
+
+    .bg-lighterblue {
+      background-color: var(--lighterblue);
+    }
+
+    .bg-lightblue {
+      background-color: var(--lightblue);
+    }
+
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-lightgrey {
+      background-color: #FAFAFA;
+    }
+
+    .bg-lightgreyblue {
+      background-color: var(--lighterblue);
+    }
+
+
+    .mt2021 {
+      font-size: 14px;
+    }
+
+    a.textblack {
+      color: var(--black);
+    }
+
+    a.textblack:hover {
+      color: var(--black);
+    }
+
+    html,
+    .mt2021,
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h3,
+    .mt2021 h4,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p {
+      padding: 0;
+      color: var(--black);
+    }
+
+    .p-wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .mt2021 .text-white {
+      color: white;
+    }
+
+    .mt2021 h1,
+    .mt2021 p {
+      letter-spacing: 0.05em;
+    }
+
+    .mt2021 .btn {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: normal;
+      border-radius: 5px;
+      /* height: 40px; */
+      padding: 10px;
+      display: inline-block;
+      margin: auto;
+      min-width: 217px;
+    }
+
+    .btn-blue {
+      color: var(--white) !important;
+      background-color: var(--companyblue);
+      transition: background-color 2s;
+    }
+
+    .btn-blue:hover {
+      color: var(--white);
+      background-color: var(--black);
+
+    }
+
+    .columns a.btn-blue-outline {
+      min-width: 120px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: var(--companyblue);
+      border: 2px solid var(--companyblue);
+      transition: all 1s;
+    }
+
+    .columns a.btn-blue-outline:hover {
+      color: var(--white);
+      background-color: var(--black);
+      border-color: transparent;
+    }
+
+    .columns a.btn-blue-outline.active {
+      color: var(--white);
+      background-color: var(--companyblue);
+    }
+
+    .studs-nav .btn {
+      display: inline-block;
+    }
+
+    .large-btn {
+      width: 347px;
+    }
+
+    .mt2021 .small-btn {
+      width: 217px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .top8 {
+      padding-top: 8%;
+    }
+
+    .mt2021 .row {
+      display: flex;
+    }
+
+    .diamond-image img {
+      width: 500px;
+    }
+
+    .columns a {
+      color: var(--black);
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .desktop-show {
+      display: block;
+    }
+
+    .mobile-show {
+      display: none;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .banner-height-500 {
+      height: 500px;
+    }
+
+    .banner-height-400 {
+      height: 400px;
+    }
+
+    .max-width-600 {
+      max-width: 600px;
+    }
+
+    .d-sm-flex {
+      display: flex;
+    }
+
+    .w-sm-50 {
+      width: 50%;
+    }
+
+    .w-80 {
+      width: 80%;
+    }
+
+    .pb-sm-5 {
+      padding-bottom: 3rem !important;
+    }
+
+    .pb-xs-5 {
+      padding-bottom: 0 !important;
+    }
+
+    .py-xs-5 {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    .for-title {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .perfect-fit .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .custom-earrings-bg,
+    .custom-pendant-bg {
+      background-color: var(--lighterblue);
+    }
+
+    .perfect-fit-bg {
+      background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .mt2021 .owl-item .item a:hover {
+      color: var(--black);
+    }
+
+    .mt2021 .owl-carousel .owl-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: auto; */
+    }
+
+
+    .mt2021 .owl-carousel .owl-item img {
+      width: 100px;
+      transition: all 1s;
+    }
+
+
+    .mt2021 .owl-carousel .owl-item.center img {
+      width: 200px;
+      margin: auto;
+    }
+
+    .mt2021 .owl-carousel .owl-item.center {
+      margin: 0px 20px;
+    }
+
+    .mt2021 .owl-item article>a {
+      display: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .mt2021 .owl-item.center article>a {
+      margin-top: 10px;
+      display: block;
+    }
+
+    .mt2021 .owl-carousel .owl-nav .owl-prev,
+    .mt2021 .owl-carousel .owl-nav .owl-next {
+      top: auto;
+      bottom: -40px;
+    }
+
+    .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+      font-size: 40px;
+    }
+
+    .mt2021 .owl-carousel .owl-item a img:hover {
+      filter: contrast(130%);
+    }
+
+    #diamonds-slider.owl-carousel .owl-item {
+      height: 250px;
+    }
+
+    #top-selling-slider.owl-carousel .owl-item {
+      align-items: flex-start;
+    }
+
+    @media (max-width: 1199.98px) {
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .spinning-diamond {
+        width: 380px;
+        height: 380px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+    }
+
+
+    @media (max-width: 767.98px) {
+
+      .py-xs-5 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      .d-sm-flex {
+        display: block;
+      }
+
+      .w-sm-50 {
+        width: 100%;
+      }
+
+      .mx-xs-3 {
+        margin: auto 15px !important;
+      }
+
+      .m-xs-auto {
+        margin: auto !important;
+      }
+
+      .pt-xs-3 {
+        padding-top: 1rem !important;
+      }
+
+      .spacing-xs-t {
+        padding-top: 20px !important;
+      }
+
+      .spacing-xs-b {
+        padding-bottom: 20px !important;
+      }
+
+      .pb-sm-5 {
+        padding-bottom: 0 !important;
+      }
+
+      .pb-xs-5 {
+        padding-bottom: 3rem !important;
+      }
+
+      .py-xs-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+
+      .col-sm-12 {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      .mt2021 .btn {
+        font-size: 14px;
+        line-height: 22px;
+
+      }
+
+      .my-4 {
+        margin-top: 1.2rem !important;
+      }
+
+      .mt2021 .row {
+        display: block;
+      }
+
+      .diamond-image img {
+        width: 320px;
+      }
+
+      .perfect-fit-bg {
+        background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+      }
+
+
+    }
+
+
+    @media (max-width: 480px) {
+
+
+      .mt2021 .btn {
+        font-size: 14px;
+        line-height: 15px;
+        /* height: 30px; */
+      }
+
+      .large-btn {
+        width: 217px;
+      }
+
+      .diamond-image img {
+        width: 80%;
+      }
+
+      #diamonds-slider.owl-carousel .owl-item {
+        height: 200px;
+      }
+
+      .mt2021 .owl-carousel .owl-item img {
+        width: 70px;
+        transition: unset;
+      }
+
+      .mt2021 .owl-carousel .owl-item.center img {
+        width: 150px;
+      }
+
+      .mt2021 .owl-carousel .owl-item.center {
+        margin: 0px 20px;
+      }
+
+      .spinning-diamond {
+        width: 295px;
+        height: 295px;
+      }
+
+      .diamond-thumbnail .diamond-size {
+        font-size: 11px;
+      }
+
+      .diamond-quality,
+      .diamond-price {
+        font-size: 12px;
+      }
+
+      .desktop-show {
+        display: none;
+      }
+
+      .mobile-show {
+        display: block;
+      }
+
+    }
+
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    .font-weight-normal {
+      font-weight: 400;
+    }
+
+    .font-weight-light {
+      font-weight: 300;
+    }
+
+    .mt2021 h1,
+    .mt2021 h2,
+    .mt2021 h4 {
+      font-family: 'Times New Roman';
+    }
+
+    .mt2021 h3,
+    .mt2021 h5,
+    .mt2021 h6,
+    .mt2021 p,
+    .mt2021 .h7,
+    .mt2021 .h8,
+    .mt2021 .h9,
+    .mt2021 .h10,
+    .mt2021 .h11,
+    .mt2021 .h12 {
+      font-family: 'Montserrat';
+    }
+
+    .mt2021 h1 {
+      font-size: 36px;
+    }
+
+    .mt2021 h2 {
+      font-size: 32px;
+    }
+
+    .mt2021 h3 {
+      font-size: 32px;
+    }
+
+    .mt2021 h4 {
+      font-size: 25px;
+    }
+
+    .mt2021 h5 {
+      font-size: 22px;
+    }
+
+    .mt2021 h6 {
+      font-size: 17px;
+    }
+
+    .mt2021 p {
+      font-size: 17px;
+    }
+
+    .mt2021 .h7 {
+      font-size: 18px;
+    }
+
+    .mt2021 .h8 {
+      font-size: 16px;
+    }
+
+    .mt2021 .h9 {
+      font-size: 14px;
+    }
+
+    .mt2021 .h10 {
+      font-size: 13px;
+    }
+
+    .mt2021 .h11 {
+      font-size: 12px;
+    }
+
+    .mt2021 .h12 {
+      font-size: 11px;
+    }
+
+    @media (max-width:767.98px) {
+      .mt2021 h1 {
+        font-size: 30px;
+      }
+
+      .mt2021 h2 {
+        font-size: 25px;
+      }
+
+      .mt2021 h3 {
+        font-size: 25px;
+      }
+
+      .mt2021 h4 {
+        font-size: 22px;
+      }
+
+      .mt2021 h5 {
+        font-size: 18px;
+      }
+
+      .mt2021 h6 {
+        font-size: 17px;
+      }
+
+      .mt2021 p {
+        font-size: 17px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 16px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 15px;
+      }
+
+    }
+
+    @media (max-width:480px) {
+      .mt2021 h1 {
+        font-size: 25px;
+      }
+
+      .mt2021 h2 {
+        font-size: 20px;
+      }
+
+      .mt2021 h3 {
+        font-size: 20px;
+      }
+
+      .mt2021 h4 {
+        font-size: 18px;
+      }
+
+      .mt2021 h5 {
+        font-size: 17px;
+      }
+
+      .mt2021 h6 {
+        font-size: 14px;
+      }
+
+      .mt2021 p {
+        font-size: 14px;
+      }
+
+      .mt2021 .h7 {
+        font-size: 15px;
+      }
+
+      .mt2021 .h8 {
+        font-size: 14px;
+      }
+
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Earrings && Pendants @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .ct025 {
+      width: 10px;
+      margin: auto;
+    }
+
+    .ct030 {
+      width: 11px;
+      margin: auto;
+    }
+
+    .ct033 {
+      width: 12px;
+      margin: auto;
+    }
+
+    .ct050 {
+      width: 14px;
+      margin: auto;
+
+    }
+
+    .ct060 {
+      width: 14.3px;
+      margin: auto;
+
+    }
+
+    .ct070 {
+      width: 15px;
+      margin: auto;
+
+    }
+
+    .ct075 {
+      width: 15.5px;
+      margin: auto;
+
+    }
+
+    .ct080 {
+      width: 15.7px;
+      margin: auto;
+
+    }
+
+    .ct090 {
+      width: 16px;
+      margin: auto;
+
+    }
+
+    .ct100 {
+      margin: auto;
+      width: 18px;
+    }
+
+    .ct125 {
+      margin: auto;
+      width: 22px;
+    }
+
+    .ct150 {
+      margin: auto;
+      width: 25px;
+    }
+
+    .ct200 {
+      margin: auto;
+      width: 30px;
+    }
+
+    .diamond-thumbnail {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 300;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border 1s;
+    }
+
+    .diamond-thumbnail .diamond-size {
+      font-size: 11px;
+    }
+
+    .diamond-thumbnail.bg-white:hover {
+      border: 2px solid var(--companyblue);
+    }
+
+    .active .diamond-thumbnail.bg-white {
+      border: 2px solid var(--companyblue);
+    }
+
+    .diamond-thumbnail-img {
+      height: 70px;
+      padding: 10px 0px;
+      display: flex;
+    }
+
+    .diamond-price {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .diamond-quality {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .spinning-diamond {
+      width: 420px;
+      height: 420px;
+      border-radius: 20px;
+    }
+
+    .selling.No {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .selling.No .diamond-thumbnail.bg-white:hover {
+      border: 2px solid transparent;
+    }
+
+    .fa-green {
+      color: #5EE9AD;
+    }
+
+
+    .earrings-banner {
+      background-color: var(--lighterblue);
+    }
+
+    .earrings-banner p,
+    .earrings-banner h1,
+    .earrings-banner h3 {
+      color: black;
+    }
+
+    .custom-earrings .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/catalog/jewellery/custom-sol-earring-bg.jpg);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .pandent-banner {
+      background-color: var(--lighterblue);
+    }
+
+    .pandent-banner p,
+    .pandent-banner h1,
+    .pandent-banner h3 {
+      color: black;
+    }
+
+    .custom-pendant .diamond-image-bg {
+      height: 400px;
+      background-image: url(https://www.michaeltrio.com/pub/media/0newpendant/Pendant_Contect_Us-_768x432.jpg);
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Wedding 3D @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .wedding3D .diamond-thumbnail-img {
+      height: auto;
+      padding: 10px 10px;
+    }
+
+
+    .wedding3D .btn-white-gold,
+    .wedding3D .btn-yellow-gold,
+    .wedding3D .btn-rose-gold,
+    .wedding3D .btn-platinum {
+      border: 2px solid #CDCDCD;
+      color: #000;
+      min-width: 96px;
+      transition: border 1s;
+      margin-bottom: 15px;
+      font-size: 12px;
+      padding: 5px;
+
+    }
+
+    .btn-white-gold {
+      background: linear-gradient(270deg, #EAEAEA 6%, #FFFFFF 47.5%, #EAEAEA 89%);
+    }
+
+    .btn-yellow-gold {
+      background: linear-gradient(270deg, #FFD378 6%, #FFEEC9 47.5%, #FFD378 89%);
+    }
+
+    .btn-rose-gold {
+      background: linear-gradient(270deg, #E6AA92 6%, #FFE1D5 47.5%, #E6AA92 89%);
+    }
+
+    .btn-platinum {
+      background: linear-gradient(270deg, #EAEAEA 6%, #FFFFFF 47.5%, #EAEAEA 89%);
+    }
+
+    .wedding3D .btn-white-gold:hover,
+    .wedding3D .btn-yellow-gold:hover,
+    .wedding3D .btn-rose-gold:hover,
+    .wedding3D .btn-platinum:hover {
+      border: 2px solid var(--darkblue);
+      /* font-weight: 500; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mt2021">
+
+    <div class="wedding3D">
+
+
+      <section class="pt-5 pb-4">
+        <div class="container">
+          <div class="row ">
+            <div class="col-xs-24">
+              <h1 class="text-center">Diamond Solitaire Collection</h1>
+              <h3 class="text-center">by michael trio</h3>
+              <div class="studs-nav pt-3">
+
+                <a href="https://www.michaeltrio.com/jewellery/earrings/studs" class="btn btn-blue-outline "
+                  role="button">Earrings (Studs) </a>
+
+                <a href="https://www.michaeltrio.com/jewellery/pendant/studs" class="btn btn-blue-outline"
+                  role="button">Pendants </a>
+
+                <a href="https://www.michaeltrio.com/jewellery/pendant/studs" class="btn btn-blue-outline active"
+                  role="button">Wedding Bands </a>
+                <!-- <a href="#" class="btn btn-blue-outline" role="button">Bracelets </a> -->
+
+                <!-- <a href="#" class="btn btn-blue-outline" role="button">Rings </a> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="earrings-banner py-5">
+
+        <div class="container ">
+
+          <div class="row text-center">
+            <div class="col-xs-24">
+              <h1>Classic Wedding Bands </h1>
+              <h3>Solitaire studs </h3>
+              <p class="my-4 p-wrapper">
+                Classical, Tradition, Simplicity Those are the words thought of when creating Michael Trio wedding
+                Bands.
+                The symbol of married spouses declaring their life-love love of fidelity to each other.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <section class="bg-lightgrey py-5">
+
+        <div class="container">
+          <div class="row ">
+            <div class="col-sm-24 text-center">
+              <h1>Low Dome Wedding Bands</h1>
+
+              <p class="my-4 p-wrapper">Low dome wedding bands is almost the same as high dome it is a little bit more
+                comfortable to wear with less metal being used so it will be lighter in weight which make it more
+                afforable, and it astill have a traditional look.</p>
+
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-sm-12 text-center pb-4">
+              <!-- <iframe src='//spins0.arqspin.com/iframe.html?spin=3vmk8z2pe36u&is=0.16' class="spinning-diamond"
+            scrolling='no' frameborder='0' ></iframe> -->
+              <div id="wbLowDome_3D"></div>
+              <h3 class="my-4">18K Gold</h3>
+              <div>
+                <div class="btn btn-white-gold" onclick="renderData(wbLowDome, 'wbLowDome', 'WhiteGold')">White
+                  Gold</div>
+                <div class="btn btn-yellow-gold" onclick="renderData(wbLowDome, 'wbLowDome', 'YellowGold')">Yellow Gold
+                </div>
+                <div class="btn btn-rose-gold" onclick="renderData(wbLowDome, 'wbLowDome', 'RoseGold')">Rose
+                  Gold</div>
+                <div class="btn btn-platinum" onclick="renderData(wbLowDome, 'wbLowDome', 'Platinum')">Platinum</div>
+              </div>
+
+            </div>
+            <div class="col-sm-12  ">
+
+
+              <div class="col-xs-24  ">
+                <h1 class="text-center  pt-4"> Choose Your Ring Width </h1>
+              </div>
+
+
+              <div id="wbLowDome" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px;display: block; ">
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+      <section class="bg-lightgrey py-5">
+
+        <div class="container">
+          <div class="row ">
+            <div class="col-sm-24 text-center">
+              <h1>High Dome Wedding Bands </h1>
+
+              <p class="my-4 p-wrapper">High dome wedding ban Reflects light from every angle this look is very classic
+                and traditional. it is polish and formal.</p>
+
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-sm-12 text-center pb-4">
+              <!-- <iframe src='//spins0.arqspin.com/iframe.html?spin=3vmk8z2pe36u&is=0.16' class="spinning-diamond"
+            scrolling='no' frameborder='0' ></iframe> -->
+              <div id="wbHighDome_3D"></div>
+              <h3 class="my-4">18K Gold</h3>
+              <div>
+                <div class="btn btn-white-gold" onclick="renderData(wbHighDome, 'wbHighDome', 'WhiteGold')">White
+                  Gold</div>
+                <div class="btn btn-yellow-gold" onclick="renderData(wbHighDome, 'wbHighDome', 'YellowGold')">Yellow
+                  Gold
+                </div>
+                <div class="btn btn-rose-gold" onclick="renderData(wbHighDome, 'wbHighDome', 'RoseGold')">Rose
+                  Gold</div>
+                <div class="btn btn-platinum" onclick="renderData(wbHighDome, 'wbHighDome', 'Platinum')">Platinum</div>
+              </div>
+
+            </div>
+            <div class="col-sm-12  ">
+
+
+              <div class="col-xs-24  ">
+                <h1 class="text-center  pt-4"> Choose Your Ring Width </h1>
+              </div>
+
+
+              <div id="wbHighDome" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px;display: block; ">
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+      <section class="bg-lightgrey py-5">
+
+        <div class="container">
+          <div class="row ">
+            <div class="col-sm-24 text-center">
+              <h1>Flat Dome Wedding Bands </h1>
+
+              <p class="my-4 p-wrapper">Flat dome wedding band has a odern non-traditional look, with a defined edge and
+                a cylindrical</p>
+
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-sm-12 text-center pb-4">
+              <!-- <iframe src='//spins0.arqspin.com/iframe.html?spin=3vmk8z2pe36u&is=0.16' class="spinning-diamond"
+            scrolling='no' frameborder='0' ></iframe> -->
+              <div id="wbFlatDome_3D"></div>
+              <h3 class="my-4">18K Gold</h3>
+              <div>
+                <div class="btn btn-white-gold" onclick="renderData(wbFlatDome, 'wbFlatDome', 'WhiteGold')">White
+                  Gold</div>
+                <div class="btn btn-yellow-gold" onclick="renderData(wbFlatDome, 'wbFlatDome', 'YellowGold')">Yellow
+                  Gold
+                </div>
+                <div class="btn btn-rose-gold" onclick="renderData(wbFlatDome, 'wbFlatDome', 'RoseGold')">Rose
+                  Gold</div>
+                <div class="btn btn-platinum" onclick="renderData(wbFlatDome, 'wbFlatDome', 'Platinum')">Platinum</div>
+              </div>
+
+            </div>
+            <div class="col-sm-12  ">
+
+
+              <div class="col-xs-24  ">
+                <h1 class="text-center  pt-4"> Choose Your Ring Width </h1>
+              </div>
+
+
+              <div id="wbFlatDome" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px;display: block; ">
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <script>
+
+
+
+
+    var wbLowDome = {
+      "WhiteGold": [
+        {
+          "SKU": "WR0001-2MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-2mm-18kw",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-3MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-3mm-18kw",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-4MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-4mm-18kw",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-5MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-5mm-18kw",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-6MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-6mm-18kw",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-7MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-7mm-18kw",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-8MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0001-8mm-18kw",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-8MM-18KW.png"
+        }
+      ],
+      "YellowGold": [
+        {
+          "SKU": "WR0001-2MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-2mm-18ky",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-2MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-3MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-3mm-18ky",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-3MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-4MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-4mm-18ky",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-4MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-5MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-5mm-18ky",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-5MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-6MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-6mm-18ky",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-6MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-7MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-7mm-18ky",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-7MM-18KY.png"
+        },
+        {
+          "SKU": "WR0001-8MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0001-8mm-18ky",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-8MM-18KY.png"
+        }
+      ],
+      "RoseGold": [
+        {
+          "SKU": "WR0001-2MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-2mm-18kR",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-2MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-3MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-3mm-18kR",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-3MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-4MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-4mm-18kR",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-4MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-5MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-5mm-18kR",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-5MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-6MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-6mm-18kR",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-6MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-7MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-7mm-18kR",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-7MM-18KR.png"
+        },
+        {
+          "SKU": "WR0001-8MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0001-8mm-18kR",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-8MM-18KR.png"
+        }
+      ],
+      "Platinum": [
+        {
+          "SKU": "WR0001-2MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-2mm-pt900",
+          "Size": "2mm",
+          "Price": "SG$812",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-3MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-3mm-pt900",
+          "Size": "3mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-4MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-4mm-pt900",
+          "Size": "4mm",
+          "Price": "SG$1,681",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-5MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-5mm-pt900",
+          "Size": "5mm",
+          "Price": "SG$1,999",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-6MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-6mm-pt900",
+          "Size": "6mm",
+          "Price": "SG$2,205",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-7MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-7mm-pt900",
+          "Size": "7mm",
+          "Price": "SG$3,093",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0001-8MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0001-8mm-pt900",
+          "Size": "8mm",
+          "Price": "SG$3,953",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0001-8MM-18KW.png"
+        }
+      ]
+    }
+    var wbHighDome = {
+      "WhiteGold": [
+        {
+          "SKU": "WR0002-2MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-2mm-18kw",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-3MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-3mm-18kw",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-4MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-4mm-18kw",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-5MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-5mm-18kw",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-6MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-6mm-18kw",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-7MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-7mm-18kw",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-8MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0002-8mm-18kw",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-8MM-18KW.png"
+        }
+      ],
+      "YellowGold": [
+        {
+          "SKU": "WR0002-2MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-2mm-18ky",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-2MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-3MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-3mm-18ky",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-3MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-4MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-4mm-18ky",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-4MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-5MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-5mm-18ky",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-5MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-6MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-6mm-18ky",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-6MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-7MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-7mm-18ky",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-7MM-18KY.png"
+        },
+        {
+          "SKU": "WR0002-8MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0002-8mm-18ky",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-8MM-18KY.png"
+        }
+      ],
+      "RoseGold": [
+        {
+          "SKU": "WR0002-2MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-2mm-18kR",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-2MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-3MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-3mm-18kR",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-3MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-4MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-4mm-18kR",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-4MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-5MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-5mm-18kR",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-5MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-6MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-6mm-18kR",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-6MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-7MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-7mm-18kR",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-7MM-18KR.png"
+        },
+        {
+          "SKU": "WR0002-8MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0002-8mm-18kR",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-8MM-18KR.png"
+        }
+      ],
+      "Platinum": [
+        {
+          "SKU": "WR0002-2MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-2mm-pt900",
+          "Size": "2mm",
+          "Price": "SG$812",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-3MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-3mm-pt900",
+          "Size": "3mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-4MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-4mm-pt900",
+          "Size": "4mm",
+          "Price": "SG$1,681",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-5MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-5mm-pt900",
+          "Size": "5mm",
+          "Price": "SG$1,999",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-6MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-6mm-pt900",
+          "Size": "6mm",
+          "Price": "SG$2,205",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-7MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-7mm-pt900",
+          "Size": "7mm",
+          "Price": "SG$3,093",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0002-8MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0002-8mm-pt900",
+          "Size": "8mm",
+          "Price": "SG$3,953",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0002-8MM-18KW.png"
+        }
+      ]
+    }
+    var wbFlatDome = {
+      "WhiteGold": [
+        {
+          "SKU": "WR0003-2MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-2mm-18kw",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-3MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-3mm-18kw",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-4MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-4mm-18kw",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-5MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-5mm-18kw",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-6MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-6mm-18kw",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-7MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-7mm-18kw",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-8MM-18KW",
+          "URL": "https://www.michaeltrio.com/wr0003-8mm-18kw",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-8MM-18KW.png"
+        }
+      ],
+      "YellowGold": [
+        {
+          "SKU": "WR0003-2MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-2mm-18ky",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-2MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-3MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-3mm-18ky",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-3MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-4MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-4mm-18ky",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-4MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-5MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-5mm-18ky",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-5MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-6MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-6mm-18ky",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-6MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-7MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-7mm-18ky",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-7MM-18KY.png"
+        },
+        {
+          "SKU": "WR0003-8MM-18KY",
+          "URL": "https://www.michaeltrio.com/wr0003-8mm-18ky",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-8MM-18KY.png"
+        }
+      ],
+      "RoseGold": [
+        {
+          "SKU": "WR0003-2MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-2mm-18kR",
+          "Size": "2mm",
+          "Price": "SG$532",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-2MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-3MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-3mm-18kR",
+          "Size": "3mm",
+          "Price": "SG$840",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-3MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-4MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-4mm-18kR",
+          "Size": "4mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-4MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-5MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-5mm-18kR",
+          "Size": "5mm",
+          "Price": "SG$1,438",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-5MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-6MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-6mm-18kR",
+          "Size": "6mm",
+          "Price": "SG$1,775",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-6MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-7MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-7mm-18kR",
+          "Size": "7mm",
+          "Price": "SG$2,055",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-7MM-18KR.png"
+        },
+        {
+          "SKU": "WR0003-8MM-18KR",
+          "URL": "https://www.michaeltrio.com/wr0003-8mm-18kR",
+          "Size": "8mm",
+          "Price": "SG$2,709",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-8MM-18KR.png"
+        }
+      ],
+      "Platinum": [
+        {
+          "SKU": "WR0003-2MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-2mm-pt900",
+          "Size": "2mm",
+          "Price": "SG$812",
+          "ClassName": "mm2",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-2MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-3MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-3mm-pt900",
+          "Size": "3mm",
+          "Price": "SG$1,214",
+          "ClassName": "mm3",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-3MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-4MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-4mm-pt900",
+          "Size": "4mm",
+          "Price": "SG$1,681",
+          "ClassName": "mm4",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-4MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-5MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-5mm-pt900",
+          "Size": "5mm",
+          "Price": "SG$1,999",
+          "ClassName": "mm5",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-5MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-6MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-6mm-pt900",
+          "Size": "6mm",
+          "Price": "SG$2,205",
+          "ClassName": "mm6",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-6MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-7MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-7mm-pt900",
+          "Size": "7mm",
+          "Price": "SG$3,093",
+          "ClassName": "mm7",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-7MM-18KW.png"
+        },
+        {
+          "SKU": "WR0003-8MM-pt900",
+          "URL": "https://www.michaeltrio.com/wr0003-8mm-pt900",
+          "Size": "8mm",
+          "Price": "SG$3,953",
+          "ClassName": "mm8",
+          "Selling": "Yes",
+          "Image": "https://www.michaeltrio.com/pub/media/0classicWedding3D/WR0003-8MM-18KW.png"
+        }
+      ]
+    }
+
+    const dome3D = {
+      "wbLowDome": {
+        "WhiteGold": "https://spinzam.com/shot/embed/?idx=109480",
+        "YellowGold": "https://spinzam.com/shot/embed/?idx=109481",
+        "RoseGold": "https://spinzam.com/shot/embed/?idx=109479",
+        "Platinum": "https://spinzam.com/shot/embed/?idx=109480",
+      },
+      "wbHighDome": {
+        "WhiteGold": "https://spinzam.com/shot/embed/?idx=105309",
+        "YellowGold": "https://spinzam.com/shot/embed/?idx=105307",
+        "RoseGold": "https://spinzam.com/shot/embed/?idx=105295",
+        "Platinum": "https://spinzam.com/shot/embed/?idx=105309",
+      },
+      "wbFlatDome": {
+        "WhiteGold": "https://spinzam.com/shot/embed/?idx=105288",
+        "YellowGold": "https://spinzam.com/shot/embed/?idx=109481",
+        "RoseGold": "https://spinzam.com/shot/embed/?idx=109479",
+        "Platinum": "https://spinzam.com/shot/embed/?idx=105288",
+      }
+    }
+
+    window.onload = function () {
+
+      renderData(wbLowDome, 'wbLowDome', 'WhiteGold');
+      renderData(wbHighDome, 'wbHighDome', 'WhiteGold');
+      renderData(wbFlatDome, 'wbFlatDome', 'WhiteGold');
+
+    };
+
+
+
+    function renderData(domeType, id, color) {
+
+
+      let domeURL = "";
+      domeURL += "<iframe src='" + dome3D[id][color] + "' class='spinning-diamond' scrolling='no' frameborder='0'></iframe>";
+
+      let id_3D = `${id}_3D`;
+      console.log(id_3D);
+
+      let data = "";
+      domeType[color].forEach(function (diamond) {
+        data += '<div class="col-sm-6 col-xs-8 text-center selling ' + diamond.Selling + '"><a href="' + diamond.URL + '"><div class="diamond-thumbnail bg-white"> <div class="diamond-thumbnail-img"> <img src="' + diamond.Image + '" alt="" class="img-responsive m-auto ' + diamond.ClassName + '"></div> <div class="diamond-size">' + diamond.Size + '</div> </div><div class="diamond-price">' + diamond.Price + '</div> </a></div>';
+      });
+
+      document.getElementById(id).innerHTML = data;
+      document.getElementById(id_3D).innerHTML = domeURL;
+
+    }
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
