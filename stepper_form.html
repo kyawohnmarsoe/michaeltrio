@@ -12,9 +12,7 @@
         /* Optional theme */
 
         /*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
-        body {
-            margin-top: 30px;
-        }
+
 
         .stepwizard-step p {
             margin-top: 0px;
@@ -81,15 +79,15 @@
                     <p><small>Shipper</small></p>
                 </div>
                 <div class="stepwizard-step col-xs-3">
-                    <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle disabled">2</a>
                     <p><small>Destination</small></p>
                 </div>
                 <div class="stepwizard-step col-xs-3">
-                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle disabled">3</a>
                     <p><small>Schedule</small></p>
                 </div>
                 <div class="stepwizard-step col-xs-3">
-                    <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                    <a href="#step-4" type="button" class="btn btn-default btn-circle disabled">4</a>
                     <p><small>Cargo</small></p>
                 </div>
             </div>
@@ -173,6 +171,7 @@
             </div>
         </form>
     </div>
+
     <script>
         require(['jquery'], function ($) {
 
@@ -190,7 +189,7 @@
                         $item = $(this);
 
                     if (!$item.hasClass('disabled')) {
-                        navListItems.removeClass('btn-success').addClass('btn-default');
+                        // navListItems.removeClass('btn-success').addClass('btn-default');
                         $item.addClass('btn-success');
                         allWells.hide();
                         $target.show();
@@ -213,7 +212,7 @@
                         }
                     }
 
-                    if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+                    if (isValid) nextStepWizard.removeClass('disabled').trigger('click');
                 });
 
                 $('div.setup-panel div a.btn-success').trigger('click');

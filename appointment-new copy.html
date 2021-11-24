@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 140px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .mt2021 .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Appointment @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .light-blue-border {
+            border: 2px solid var(--companyblue);
+        }
+
+        .mt2021 .btn-blue-outline {
+            min-width: 140px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .mt2021 .btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .mt2021 .btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .mt2021 .showrooms-group .btn-blue-outline {
+            display: block;
+            min-width: 100%;
+        }
+
+        .mt2021 .bg-lightyellow {
+            background-color: #FFFCF3;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Stepper Form @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .go-back {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .int-image {
+            width: 65px;
+        }
+
+        .int-type {
+            cursor: pointer;
+        }
+
+        .int-type.active {
+            background-color: #9BB8D3;
+        }
+
+        .go-back {
+            cursor: pointer;
+            color: var(--companyblue);
+            text-transform: uppercase;
+        }
+
+
+
+
+
+        /* Latest compiled and minified CSS included as External Resource*/
+
+        /* Optional theme */
+
+        /*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
+
+
+        .stepwizard-step p {
+            margin-top: 0px;
+            color: #666;
+
+        }
+
+        .stepwizard-row {
+            /* display: table-row; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .stepwizard {
+            display: table;
+            width: 100%;
+            position: relative;
+        }
+
+        .stepwizard-step button[disabled] {
+            /*opacity: 1 !important;
+    filter: alpha(opacity=100) !important;*/
+        }
+
+        .stepwizard .btn.disabled,
+        .stepwizard .btn[disabled],
+        .stepwizard fieldset[disabled] .btn {
+            opacity: 1 !important;
+            color: #bbb;
+        }
+
+        /* .stepwizard-row:before {
+            bottom: 14px;
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            z-index: 0;
+        } */
+
+        .stepwizard-step {
+            display: table-cell;
+            text-align: center;
+            position: relative;
+            height: 66px;
+        }
+
+        .stepwizard .btn-suc {
+            background-color: var(--companyblue);
+        }
+
+        .stepwizard .btn-suc:hover {
+            border-color: var(--darkblue);
+        }
+
+        .mt2021 .stepwizard .btn {
+            min-width: auto;
+            border-radius: 15px;
+        }
+
+        .mt2021 .btn-circle {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.428571429;
+            border-radius: 15px;
+            border: 4px solid var(--companyblue);
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 46%;
+        }
+
+        .mt2021 .stepwizard-step:before,
+        .mt2021 .stepwizard-step::after {
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: var(--companyblue);
+            position: absolute;
+            bottom: 8px;
+
+        }
+
+        .mt2021 .stepwizard-step:before {
+            left: 0;
+        }
+
+        .mt2021 .stepwizard-step:after {
+            right: 0;
+        }
+
+        .mt2021 .stepwizard-step:first-child:before {
+            content: none;
+        }
+
+        .mt2021 .stepwizard-step:last-child:after {
+            content: none;
+        }
+
+
+        #reviewTable {
+            margin: auto;
+        }
+
+        #reviewTable .verticalStepCircle.row {
+            line-height: 50px;
+            position: relative;
+            display: flex;
+
+        }
+
+        #reviewTable .row {
+            line-height: 40px;
+
+        }
+
+        #reviewTable .verticalStepCircle:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: var(--companyblue);
+            border: 4px solid var(--companyblue);
+            border-radius: 15px;
+            display: inline-block;
+            position: absolute;
+            bottom: 16px;
+            left: -40px;
+        }
+
+        #reviewTable .verticalStepCircle:after {
+            content: "";
+            width: 4px;
+            height: 50px;
+            position: absolute;
+            bottom: 16px;
+            left: -33px;
+            background-color: var(--companyblue);
+        }
+
+        #reviewTable .verticalStepCircle:first-child:after {
+            content: none;
+        }
+
+        .reviewTableWrapper {
+            max-width: 500px;
+            margin: auto;
+            padding-left: 50px;
+        }
+
+        .verticalStepCircle .title {
+            font-weight: 700;
+        }
+
+        #appointmentForm .light-blue-border {
+            border-radius: 8px;
+        }
+
+        .mt2021 .appointmentPage p {
+            font-size: 14px;
+        }
+
+        .mt2021 .appointmentPage .h11 {
+            font-size: 12px;
+        }
+
+        .appointmentWrapper {
+            max-width: 788px;
+            margin: auto;
+        }
+
+        .mt2021 .appointmentPage .btn {
+            font-size: 14px;
+        }
+
+        .text-lightblue {
+            color: var(--companyblue);
+        }
+
+        #appointmentForm input[type="text"],
+        #appointmentForm input[type="email"] {
+            width: 100%;
+            border-color: #000;
+            height: 27px;
+            line-height: 27px;
+        }
+
+
+        #appointmentForm textarea {
+            width: 100%;
+            border-color: #000;
+            height: auto;
+            line-height: 27px;
+            margin-top: 10px;
+        }
+
+        #appointmentForm textarea:focus {
+            outline: none !important;
+            border-color: #000 !important;
+            box-shadow: none;
+        }
+
+        #appointmentForm input[type="date"],
+        #appointmentForm select {
+            width: 100%;
+            border: 1px solid #000;
+            padding-left: 5px;
+            border-radius: 0px;
+            height: 30px;
+        }
+
+        #showroomSelect {
+            background-color: #9BB8D3;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        #professional-services.owl-theme .owl-dots .owl-dot span {
+            background-color: #FFCDB6;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #E48A62;
+        }
+
+        #professional-services.owl-theme .owl-dots .owl-dot.active span,
+        #professional-services.owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #E48A62;
+        }
+
+        #what-to-expect.owl-theme .owl-dots .owl-dot span {
+            background-color: #FFEEB6;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #E4C562;
+        }
+
+        #what-to-expect.owl-theme .owl-dots .owl-dot.active span,
+        #what-to-expect.owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #E4C562;
+        }
+
+        #LocationPlaceHolder button {
+            display: none;
+        }
+
+        .btn-current:before {
+            font-family: FontAwesome;
+            content: "\f0d7";
+            position: absolute;
+            top: -30px;
+            left: 0px;
+            color: var(--companyblue);
+            font-size: 20px;
+        }
+
+        .title-current {
+            text-decoration: underline;
+        }
+
+        @media (max-width:767.98px) {
+
+            #showroomImage,
+            #LocationImage {
+                margin-bottom: 20px;
+            }
+
+            .mt2021 .btn-circle {
+                left: 40%;
+            }
+
+            .reviewTableWrapper {
+                padding-left: 22px;
+                font-size: 13px;
+            }
+
+            #reviewTable .verticalStepCircle:after {
+                left: -18px;
+            }
+
+            #reviewTable .verticalStepCircle:before {
+                left: -26px
+            }
+        }
+
+        @media (max-width:394.98px) {
+
+            #reviewTable .verticalStepCircle:before,
+            #reviewTable .verticalStepCircle:after {
+                content: none;
+            }
+
+            .reviewTableWrapper {
+                padding-left: 5px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mt2021">
+
+        <div class="appointmentPage">
+
+            <!-- Main  -->
+            <div id="appointmentMain" style="display: block;">
+                <section class="bg-lightblue py-5">
+                    <div class="container appointmentWrapper">
+                        <h1 class="text-center">Appointments</h1>
+                    </div>
+                </section>
+                <section class="pt-5">
+                    <div class="container appointmentWrapper">
+                        <h3 class="text-center mb-4">Showrooms</h3>
+                        <div class="text-center m-auto" id="selectCountry">
+                            <button class="btn btn-blue-outline active">Singapore</button>
+                            <button class="btn btn-blue-outline">Malaysia</button>
+                        </div>
+                        <div>
+
+                            <p class="py-4">
+                                While we try our best to accept walk-in customers, we would advise that you make an
+                                appointment
+                                before coming down to our showroom. The appointment usually lasts for an hour, where our
+                                consultants will do our best to answer your queries, provide more knowledge and help you
+                                make
+                                the best decisions about your desired engagement ring, wedding bands or other
+                                jewelleries.
+                            </p>
+                            <div class="row ">
+                                <div class="col-md-6 showrooms-group hidden-xs pl-0 pr-4">
+                                    <button class="btn btn-blue-outline active" onclick="renderShowroom('tp')">Tanjong
+                                        Pagar</button>
+                                    <button class="btn btn-blue-outline " onclick="renderShowroom('jem')">Jem</button>
+                                    <button class="btn btn-blue-outline " onclick="renderShowroom('np')">North
+                                        Point</button>
+                                    <button class="btn btn-blue-outline " onclick="renderShowroom('tam')">Tampines
+                                    </button>
+
+                                </div>
+
+                                <div class="col-md-6 showrooms-group visible-xs bg-lightblue">
+                                    <select id="showroomSelect" onchange="showroomSelect()">
+                                        <option value="tp"> Tanjong Pagar</option>
+                                        <option value="jem"> Jem</option>
+                                        <option value="np"> North Point</option>
+                                        <option value="tam">Tampines</option>
+                                    </select>
+
+                                </div>
+
+
+
+                                <div class="col-md-18 bg-lightblue row py-3">
+                                    <div class="col-sm-12 box" id="showroomImage">
+
+                                    </div>
+                                    <div class="col-sm-12 box">
+                                        <div id="showroomPlaceHolder">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-5">
+                                <div class="col-md-24 light-blue-border box p-0">
+                                    <div class="col-md-5 col-sm-6 col-xs-8 p-0">
+                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png"
+                                            alt="" class="w-100">
+                                    </div>
+                                    <div class="col-md-19 col-sm-18 col-xs-16 text-center box">
+                                        <div>
+                                            <div>Change to:</div>
+                                            <h3 class="text-lightblue">Virtual appointments</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Main  -->
+
+            <!-- Form  -->
+
+            <div id="appointmentForm" style="display: none;">
+                <section class="bg-lightblue py-5">
+                    <div class="container">
+                        <h1 class="text-center" id="appointmentHeading"></h1>
+                    </div>
+                </section>
+                <section class="pt-5">
+                    <div class="container">
+                        <div class="stepwizard">
+                            <div class="stepwizard-row setup-panel">
+                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                    <p class="title-current"><small>Pax</small></p>
+                                    <a href="#step-1" type="button" class="btn btn-suc btn-circle "></a>
+
+                                </div>
+                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                    <p><small>Time & Date</small></p>
+                                    <a href="#step-2" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                    <p><small>Interested In</small></p>
+                                    <a href="#step-3" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                    <p><small>Details</small></p>
+                                    <a href="#step-4" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="container appointmentWrapper">
+                        <form role="form" onsubmit="addCustomer(event)">
+                            <!-- Pax -->
+                            <div class="panel panel-primary setup-content" id="step-1">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5 pb-4">
+                                        <div class="col-xs-24 light-blue-border p-0">
+                                            <span class="go-back"
+                                                onclick="changeStep('appointmentForm','appointmentMain')">
+                                                &#60;
+                                                Back
+                                            </span>
+                                            <div class="py-5 text-center m-auto " style="max-width:600px;">
+                                                <h3 class="text-center mb-4">Pax</h3>
+                                                <p class="mb-3">
+                                                    How many person?
+                                                </p>
+                                                <p class="mb-4 ">
+                                                    In compliance to current government guidelines, all appointments
+                                                    made
+                                                    will be
+                                                    restricted
+                                                    to
+                                                    a maximum of 2 person.
+                                                </p>
+                                                <div class="text-center m-auto" id="selectPax">
+                                                    <div class="btn btn-blue-outline" onclick="addPax(1,event)">
+                                                        1 Person
+
+                                                    </div>
+
+                                                    <div class="btn btn-blue-outline" name="noOfPax"
+                                                        onclick="addPax(2,event)">
+                                                        2 Persons
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary pull-right nextBtn" type="button"
+                                        disabled>Next</button>
+                                </div>
+                            </div>
+                            <!-- Time / Date -->
+                            <div class="panel panel-primary setup-content" id="step-2">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5 pb-4">
+                                        <div class="col-xs-24 light-blue-border  p-0">
+                                            <span class="go-back" onclick="changeStep('step-2','step-1')"> &#60; Back
+                                            </span>
+
+                                            <div class="py-5">
+                                                <h3 class="text-center mb-4">Time / Date</h3>
+                                                <div class="row justify-content-center">
+                                                    <div class="px-5 text-center col-xs-24 col-sm-10 col-md-8 mb-3">
+                                                        <h6 class="mb-3">Appointment Date</h6>
+                                                        <input type="date" onchange="addDate(event)">
+                                                    </div>
+                                                    <div class="px-5 text-center col-xs-24 col-sm-10 col-md-8 mb-3">
+
+                                                        <h6 class="mb-3">Appointment Time</h6>
+                                                        <div id="appointmentTime"></div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary pull-right nextBtn" type="button"
+                                        disabled>Next</button>
+                                </div>
+                            </div>
+                            <!-- Interested In -->
+                            <div class="panel panel-primary setup-content" id="step-3">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5 pb-4">
+                                        <div class="col-xs-24 light-blue-border  p-0">
+                                            <span class="go-back" onclick="changeStep('step-3','step-2')"> &#60;
+                                                Back
+                                            </span>
+
+                                            <div class="py-5">
+                                                <h3 class="text-center mb-4">Interested In</h3>
+
+                                                <div class="row justify-content-center px-5">
+                                                    <div class="mx-2 col-sm-12">
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(0,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"
+                                                                alt="" class="int-image">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Engagment Rings</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(1,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/catalog/product/cache/9af470cc50afd104cf53e659bbf96ad3/p/8/p8244-14kw_1_1.jpg"
+                                                                alt="" class="int-image">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Jewellery</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="mx-2 col-sm-12">
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(2,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                                                                alt="" class="int-image">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Wedding Bands</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(3,event)">
+
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Item Collection</h6>
+                                                                    <p class="h11">15 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(4,event)">
+
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Ring Resizing / Polishing</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary nextBtn pull-right" type="button"
+                                        disabled>Next</button>
+                                </div>
+                            </div>
+                            <!-- Customer -->
+                            <div class="panel panel-primary setup-content" id="step-4">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5 pb-4">
+                                        <div class="col-xs-24 light-blue-border  p-0">
+                                            <span class="go-back" onclick="changeStep('step-4','step-3')"> &#60;
+                                                Back
+                                            </span>
+
+                                            <div class="py-5">
+                                                <h3 class="text-center mb-4">Details</h3>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-xs-24 col-sm-8 px-5">
+                                                        <div class="mb-4">
+                                                            <h6>Name</h6>
+                                                            <input type="text" required id="customerName"
+                                                                name="customerName">
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <h6>Email</h6>
+                                                            <input type="email" required id="email" name="email">
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <h6>Phone Number</h6>
+                                                            <input type="text" required id="contactNumber"
+                                                                name="contactNumber">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-24 col-sm-8 px-5">
+                                                        <div class="mb-4">
+                                                            <h6>Budget</h6>
+                                                            <input type="text" required id="budget" name="budget">
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <h6>Remarks</h6>
+                                                            <textarea required id="remarks" name="remarks"
+                                                                rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary pull-right" type="submit">Review
+                                        Booking</button>
+                                </div>
+                            </div>
+                            <!-- Review -->
+                            <div class="panel panel-primary setup-content p-wrapper" id="step-5">
+
+                                <div class="panel-body">
+                                    <div class="pt-5 pb-4">
+                                        <h3 class="text-center mb-4">Appointment Summary</h3>
+                                        <div class="col-md-24 bg-lightblue row py-3 mb-5">
+                                            <div class="col-sm-12 box" id="LocationImage">
+
+                                            </div>
+                                            <div class="col-sm-12 box">
+                                                <div id="LocationPlaceHolder">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="reviewTable">
+
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div id="sucMsg"></div>
+                                        <!-- sendEmail -->
+                                        <button class="btn btn-primary m-auto " type="button"
+                                            onclick="confirmBooking()">Confirm Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </section>
+
+
+
+            </div>
+            <!-- End Form  -->
+
+
+            <section class="bg-lightorange py-5">
+                <div class="container text-center appointmentWrapper hidden-xs">
+                    <h3 class="mb-4">Professional Service</h3>
+                    <div class="row">
+                        <div class="col-sm-8 px-3">
+                            <h6 class="mb-3"> 1-to-1 Attention </h6>
+                            <p>
+                                Personalized consultation and guidance in a one-on-one appointment.
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-3">
+                            <h6 class="mb-3"> Guidance and Education </h6>
+                            <p>
+                                Learn about the “four Cs” in a fun, low pressure environment.
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-3">
+                            <h6 class="mb-3"> Unique to You </h6>
+                            <p>
+                                Appointments curated based on your individual preferences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center appointmentWrapper visible-xs">
+                    <h3 class="mb-3">Professional Service</h3>
+                    <div class="row">
+                        <div id="professional-services" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                            "0": {
+                                "items":1
+                            }
+                        }}}}}'>
+                            <div class="item px-5">
+                                <h6 class="mb-3"> 1-to-1 Attention </h6>
+                                <p>
+                                    Personalized consultation and guidance in a one-on-one appointment.
+                                </p>
+                            </div>
+                            <div class="item px-5">
+                                <h6 class="mb-3"> Guidance and Education </h6>
+                                <p>
+                                    Learn about the “four Cs” in a fun, low pressure environment.
+                                </p>
+                            </div>
+                            <div class="item px-5">
+                                <h6 class="mb-3"> Unique to You </h6>
+                                <p>
+                                    Appointments curated based on your individual preferences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-lightyellow py-5">
+                <div class="container text-center appointmentWrapper hidden-xs">
+                    <h3 class="mb-4">What to Expect</h3>
+                    <div class="row">
+                        <div class="col-sm-8 px-3">
+
+                            <p>
+                                Enjoy a complimentary 60 minute appointment in Shop
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-3">
+
+                            <p>
+                                Shop alongside a jewelry specialist for a curated shopping experience.
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-3 px-3">
+
+                            <p>
+                                Get expert styling advice on everything engagement rings, wedding rings, and fine
+                                jewelry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center appointmentWrapper visible-xs">
+                    <h3 class="mb-3">What to Expect</h3>
+                    <div class="row">
+                        <div id="what-to-expect" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                            "0": {
+                                "items":1
+                            }
+                        }}}}}'>
+                            <div class="item px-5">
+
+                                <p>
+                                    Enjoy a complimentary 60 minute appointment in Shop
+                                </p>
+                            </div>
+                            <div class="item px-5">
+
+                                <p>
+                                    Shop alongside a jewelry specialist for a curated shopping experience.
+                                </p>
+                            </div>
+                            <div class="item px-5">
+
+                                <p>
+                                    Get expert styling advice on everything engagement rings, wedding rings, and fine
+                                    jewelry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script>
+        const showrooms = {
+            "tp": {
+                "title": "Tanjong Pagar Showroom",
+                "body": '<p class="mb-2">91 Tanjong Pagar Road S088512 </p><p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last appointment at 7:30pm) </span></p>',
+                "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg",
+                "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
+            },
+            "jem": {
+                "title": "Jem Showroom",
+                "body": '<p class="mb-2">50 Jurong Gateway Rd, #01-60,<br>S608549</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-3"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
+
+                "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-jem.jpg",
+                "appointmentTime": ['11:00 pm', '11:30 pm', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
+
+            },
+            "np": {
+                "title": "North Point City Showroom",
+                "body": '<p class="mb-2">Yishun Ave 2, North Wing, <br>#01-22 Northpoint City S769098</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-2"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
+                "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-np.jpg",
+                "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
+            },
+            "tam": {
+                "title": "Tampines Showroom",
+                "body": "91 Tanjong Pagar Road S088512",
+                "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg",
+                "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
+            }
+        }
+
+        const interest = ['Engagment Rings(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
+        let bookingData = {
+            "location": "",
+            "pax": "",
+            "date": "",
+            "time": "",
+            "interest": "",
+            "customer": {
+                "customerName": "",
+                "email": "",
+                "contactNumber": "",
+                "budget": "",
+                "remarks": "NIL"
+            }
+        };
+
+
+        window.onload = function () {
+            renderShowroom("tp");
+        }
+
+        let appointmentTime = [];
+        let LocationPlaceHolder = "", LocationImage = "";
+
+
+        function renderShowroom(location) {
+
+            // this.classList.add("active");
+
+            const showroom = showrooms[location];
+
+
+            const data = `<h6 class="mb-3">${showroom.title}</h6>
+                                        ${showroom.body} 
+                                    <button class="btn btn-blue " onclick="changeStep('appointmentMain','appointmentForm')">Book Appointment</button>`;
+
+            document.getElementById('showroomPlaceHolder').innerHTML = data;
+            LocationPlaceHolder = data;
+            // console.log(LocationPlaceHolder);
+
+            let image = `<img src="${showroom.image}" alt=""
+                                    class="w-100">`;
+
+            document.getElementById('showroomImage').innerHTML = image;
+            LocationImage = image;
+            // console.log(LocationImage);
+
+
+            bookingData['location'] = showroom.title;
+            appointmentTime = showroom.appointmentTime;
+
+        }
+
+        function showroomSelect() {
+            renderShowroom(document.getElementById("showroomSelect").value);
+        }
+
+        function changeStep(currentId, changeId) {
+            const data = `Appointment @ ${bookingData.location}`;
+            document.getElementById('appointmentHeading').innerHTML = data;
+            document.getElementById(currentId).style.display = "none";
+            document.getElementById(changeId).style.display = "block";
+            getAppointmentTime();
+        }
+
+
+
+        function getAppointmentTime() {
+            // console.log( appointmentTime);
+            let data = "<select onchange='addTime(event)'>";
+
+            for (let i = 0; i < appointmentTime.length; i++) {
+                data += `<option value="${appointmentTime[i]}">${appointmentTime[i]}</option>`;
+            }
+
+            data += `</select>`;
+
+            document.getElementById('appointmentTime').innerHTML = data;
+
+        }
+
+
+        function addPax(pax, e) {
+            bookingData['pax'] = pax;
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+            x.disabled = false;
+
+        }
+
+        function addDate(e) {
+            bookingData['date'] = e.target.value;
+            if (bookingData['date'] && bookingData['time']) {
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+                x.disabled = false;
+            }
+
+        }
+
+        function addTime(e) {
+            bookingData['time'] = e.target.value;
+            if (bookingData['date'] && bookingData['time']) {
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+                x.disabled = false;
+            }
+        }
+        function addInterest(index, e) {
+            bookingData['interest'] = interest[index];
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+            x.disabled = false;
+
+        }
+
+        function addCustomer(e) {
+            e.preventDefault();
+
+            bookingData['customer']['customerName'] = document.getElementById("customerName").value;
+            bookingData['customer']['email'] = document.getElementById("email").value;
+            bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
+            bookingData['customer']['budget'] = document.getElementById("budget").value;
+            bookingData['customer']['remarks'] = document.getElementById("remarks").value;
+
+            changeStep('step-4', 'step-5');
+
+            reviewBooking();
+        }
+
+        function reviewBooking() {
+
+            const data = `  <div class="reviewTableWrapper">
+            <div>
+                <div class="verticalStepCircle row">
+                    <div class="col-xs-8 title">Location : </div>
+                    <div class="col-xs-16">${bookingData.location}</div>
+                </div>
+
+                <div class="verticalStepCircle row">
+                    <div class="col-xs-8 title">Pax : </div>
+                    <div class="col-xs-16">${bookingData.pax}</div>
+                </div>
+
+                <div class="verticalStepCircle row">
+                    <div class="col-xs-8 title">Time & Date : </div>
+                    <div class="col-xs-16">${bookingData.date} (${bookingData.time})</div>
+                </div>
+
+                <div class="verticalStepCircle row">
+                    <div class="col-xs-8 title">Interested In : </div>
+                    <div class="col-xs-16">${bookingData.interest}</div>
+                </div>
+
+                <div class="verticalStepCircle row">
+                    <div class="col-xs-24 title">Customer Details : </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">Name : </div>
+                    <div class="col-xs-16">${bookingData.customer.customerName}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">Email : </div>
+                    <div class="col-xs-16">${bookingData.customer.email}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">Number : </div>
+                    <div class="col-xs-16">${bookingData.customer.contactNumber}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">Budget : </div>
+                    <div class="col-xs-16">${bookingData.customer.budget}</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">Remarks : </div>
+                    <div class="col-xs-16">${bookingData.customer.remarks}</div>
+                </div>
+
+            </div>
+        </div>`;
+
+            document.getElementById('reviewTable').innerHTML = data;
+
+            document.getElementById('LocationPlaceHolder').innerHTML = LocationPlaceHolder;
+            document.getElementById('LocationImage').innerHTML = LocationImage;
+
+            // changeStep('booking-5', 'booking-6');
+
+        }
+
+        function confirmBooking() {
+            console.log(bookingData);
+            const sucMsg = `<div class="alert alert-success" role="alert">Booking Success!</div>`;
+            document.getElementById('sucMsg').innerHTML = sucMsg;
+            setTimeout(function () {
+                location.reload();
+            }, 1000);
+            // Email Function Here 
+        }
+
+
+        require(['jquery'], function ($) {
+            $(document).ready(function () {
+                $(".showrooms-group .btn-blue-outline").click(function () {
+                    $('.showrooms-group .btn-blue-outline').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                $("#selectCountry .btn-blue-outline").click(function () {
+                    $('#selectCountry .btn-blue-outline').removeClass('active');
+                    $(this).addClass('active');
+                });
+                $("#selectPax .btn-blue-outline").click(function () {
+                    $('#selectPax .btn-blue-outline').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                $(".int-type").click(function () {
+                    $('.int-type').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        });
+    </script>
+
+    <script>
+        require(['jquery'], function ($) {
+
+            $(document).ready(function () {
+
+                var navListItems = $('div.setup-panel div a'),
+                    allTitles = $('div.setup-panel div p'),
+                    allWells = $('.setup-content'),
+                    allNextBtn = $('.nextBtn');
+
+                allWells.hide();
+
+                navListItems.click(function (e) {
+                    e.preventDefault();
+                    var $target = $($(this).attr('href')),
+                        $item = $(this);
+
+                    if (!$item.hasClass('disabled')) {
+                        navListItems.removeClass('btn-current').addClass('btn-default');
+                        allTitles.removeClass('title-current');
+                        $item.addClass('btn-suc');
+                        $item.addClass('btn-current');
+                        $item.parent().children('p').addClass('title-current');
+                        allWells.hide();
+                        $target.show();
+                        $target.find('input:eq(0)').focus();
+                    }
+                });
+
+                allNextBtn.click(function () {
+                    var curStep = $(this).closest(".setup-content"),
+                        curStepBtn = curStep.attr("id"),
+                        nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                        curInputs = curStep.find("input[type='text'],input[type='url']"),
+                        isValid = true;
+
+                    $(".form-group").removeClass("has-error");
+                    for (var i = 0; i < curInputs.length; i++) {
+                        if (!curInputs[i].validity.valid) {
+                            isValid = false;
+                            $(curInputs[i]).closest(".form-group").addClass("has-error");
+                        }
+                    }
+
+                    if (isValid) nextStepWizard.removeClass('disabled').trigger('click');
+                });
+
+                $('div.setup-panel div a.btn-suc').trigger('click');
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
