@@ -896,7 +896,7 @@
             font-size: 14px;
         }
 
-        .text-lightblue {
+        .mt2021 .text-lightblue {
             color: var(--companyblue);
         }
 
@@ -932,13 +932,18 @@
             height: 30px;
         }
 
+        .mt2021 #appointmentForm .panel-body {
+            padding: 0px;
+        }
+
         #showroomSelect {
-            background-color: #9BB8D3;
+            background-color: #fff;
+            border: 2px solid #9BB8D3;
             width: 100%;
             margin-bottom: 10px;
-            margin-top: 10px;
+            margin-top: 20px;
             border-radius: 5px;
-            color: var(--white);
+            color: #9BB8D3;
             text-align: center;
         }
 
@@ -989,6 +994,15 @@
             cursor: not-allowed;
         }
 
+        /* .mt2021 a.change-to-virtual {
+            transition: all 1s;
+        }
+
+        .mt2021 a.change-to-virtual:hover {
+            background-color: var(--companyblue);
+        } */
+
+
         @media (max-width:767.98px) {
 
             #showroomImage,
@@ -1012,6 +1026,23 @@
             #reviewTable .verticalStepCircle:before {
                 left: -26px
             }
+
+            .mt2021 .virtual-image {
+                margin-bottom: 20px;
+            }
+
+            .light-blue-border {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .remove-row-margin-only-on-small {
+                margin: 0;
+            }
+
+            .reviewTableWrapper {
+                max-width: 400px;
+            }
         }
 
         @media (max-width:394.98px) {
@@ -1023,6 +1054,15 @@
 
             .reviewTableWrapper {
                 padding-left: 5px;
+            }
+
+            .mt2021 #appointmentForm .small,
+            small {
+                font-size: 75%;
+            }
+
+            .reviewTableWrapper {
+                font-size: 11px;
             }
 
         }
@@ -1051,7 +1091,7 @@
                             <div class=" bg-lightblue row py-3">
                                 <div class="col-sm-8 col-md-8 box">
                                     <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png" alt=""
-                                        class="w-100">
+                                        class="w-100 virtual-image">
                                 </div>
                                 <div class="col-sm-16 col-md-16 box">
                                     <div>
@@ -1070,18 +1110,20 @@
                                 </div>
                             </div>
 
-                            <div class="row py-5">
-                                <div class="col-md-24 light-blue-border box py-4">
-                                    <div>
-                                        <div>Change to:</div>
-                                        <h1>Showrooms</h1>
-                                        <div class="text-center m-auto">
+                            <div class="row py-5 remove-row-margin-only-on-small">
+                                <div class="col-md-24 col-xs-24 light-blue-border box py-4">
+                                    <a href="http://new.michaeltrio.com/new-appointment" class="textblack">
+                                        <div>
+                                            <div>Change to:</div>
+                                            <h1>Showrooms</h1>
+                                            <!-- <div class="text-center m-auto">
                                             <a href="http://new.michaeltrio.com/new-appointment"
                                                 class="btn btn-blue-outline ">Singapore</a>
                                             <a href="http://new.michaeltrio.com/new-appointment"
                                                 class="btn btn-blue-outline">Malaysia</a>
+                                        </div> -->
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -1103,23 +1145,23 @@
                     <div class="container">
                         <div class="stepwizard">
                             <div class="stepwizard-row setup-panel">
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
-                                    <p> <a href="#step-1" class="step-title"><small>Plaform</small></a></p>
+                                <div class="stepwizard-step step-1 col-xs-6 col-sm-3 px-0">
+                                    <p> <a href="#step-1" class="step-title"><small>Platform</small></a></p>
                                     <a href="#step-1" type="button" class="btn btn-suc btn-circle "></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
-                                    <p><a href="#step-2" class=" step-title disabled"><small>Time & Date</small></a></p>
+                                <div class="stepwizard-step step-2 col-xs-6 col-sm-3 px-0">
+                                    <p><a href="#step-2" class=" step-title disabled"><small>Date & Time</small></a></p>
                                     <a href="#step-2" type="button" class="btn btn-default btn-circle disabled"></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                <div class="stepwizard-step step-3 col-xs-6 col-sm-3 px-0">
                                     <p><a href="#step-3" class=" step-title disabled"><small>Interested In</small></a>
                                     </p>
                                     <a href="#step-3" type="button" class="btn btn-default btn-circle disabled"></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                <div class="stepwizard-step step-4 col-xs-6 col-sm-3 px-0">
                                     <p><a href="#step-4" class=" step-title disabled"><small>Details</small></a></p>
                                     <a href="#step-4" type="button" class="btn btn-default btn-circle disabled"></a>
 
@@ -1137,7 +1179,7 @@
                             <div class="panel panel-primary setup-content" id="step-1">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border p-0">
                                             <span class="go-back"
                                                 onclick="changeStep('appointmentForm','appointmentMain')">
@@ -1145,7 +1187,7 @@
                                                 Back
                                             </span>
                                             <div class="py-5 text-center m-auto " style="max-width:600px;">
-                                                <h3 class="text-center mb-4">Plaform</h3>
+                                                <h3 class="text-center mb-4">Platform</h3>
 
                                                 <div class="row justify-content-center px-5">
                                                     <div class="mx-2 col-sm-12">
@@ -1178,7 +1220,7 @@
                                                                     <h6>Whats App</h6>
 
                                                                     <ul class="h11">
-                                                                        <li> Chat with our Sale Stuff </li>
+                                                                        <li> Chat with our Sale Staff </li>
                                                                         <li> On a laptop or Phone</li>
                                                                         <li> Option for Video or Voice call.</li>
                                                                     </ul>
@@ -1199,16 +1241,16 @@
                                 </div>
                             </div>
                             <!-- Time / Date -->
-                            <div class="panel panel-primary setup-content" id="step-2">
+                            <div class="panel panel-primary setup-content " id="step-2">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-2','step-1')"> &#60; Back
                                             </span>
 
                                             <div class="py-5">
-                                                <h3 class="text-center mb-4">Time / Date</h3>
+                                                <h3 class="text-center mb-4">Date / Time</h3>
                                                 <div class="row justify-content-center">
                                                     <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
                                                         <h6 class="mb-3">Appointment Date</h6>
@@ -1219,7 +1261,7 @@
                                                         <div class="field">
 
                                                             <input type="text" class="input-text" id="example-date"
-                                                                style="width: auto" name="example-date"
+                                                                style="width: 100%" name="example-date"
                                                                 onchange="addDate(event)" />
                                                         </div>
                                                         <script>
@@ -1260,7 +1302,7 @@
                             <div class="panel panel-primary setup-content" id="step-3">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-3','step-2')"> &#60;
                                                 Back
@@ -1269,12 +1311,12 @@
                                             <div class="py-5">
                                                 <h3 class="text-center mb-4">Interested In</h3>
 
-                                                <div class="row justify-content-center px-5">
-                                                    <div class="mx-2 col-sm-12">
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                <div class="row justify-content-center px-3">
+                                                    <div class="mx-2 col-sm-12 col-xs-24">
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(0,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"
-                                                                alt="" class="int-image">
+                                                                alt="" class="int-image m-auto">
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Engagment Rings</h6>
@@ -1282,11 +1324,11 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(1,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/catalog/product/cache/9af470cc50afd104cf53e659bbf96ad3/p/8/p8244-14kw_1_1.jpg"
-                                                                alt="" class="int-image">
-                                                            <div class="box w-100">
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100 ">
                                                                 <div>
                                                                     <h6>Jewellery</h6>
                                                                     <p class="h11">45-60 Minute Appointment</p>
@@ -1296,22 +1338,22 @@
                                                     </div>
 
 
-                                                    <div class="mx-2 col-sm-12">
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                    <div class="mx-2 col-sm-12 col-xs-24">
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(2,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
-                                                                alt="" class="int-image">
-                                                            <div class="box w-100">
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100 ">
                                                                 <div>
                                                                     <h6>Wedding Bands</h6>
                                                                     <p class="h11">45-60 Minute Appointment</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(2,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
-                                                                alt="" class="int-image">
+                                                                alt="" class="int-image m-auto">
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Custom</h6>
@@ -1332,10 +1374,10 @@
                                 </div>
                             </div>
                             <!-- Customer -->
-                            <div class="panel panel-primary setup-content" id="step-4">
+                            <div class="panel panel-primary setup-content " id="step-4">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-4','step-3')"> &#60;
                                                 Back
@@ -1388,7 +1430,7 @@
                                         <div class="col-md-24 bg-lightblue row py-3 mb-5">
                                             <div class="col-sm-8 col-md-8 box">
                                                 <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png"
-                                                    alt="" class="w-100">
+                                                    alt="" class="w-100 virtual-image">
                                             </div>
                                             <div class="col-sm-16 col-md-16 box">
                                                 <div>
@@ -1416,7 +1458,7 @@
 
                                     </div>
 
-                                    <div class="text-center">
+                                    <div class="text-center pt-4">
                                         <div id="sucMsg"></div>
                                         <!-- sendEmail -->
                                         <button class="btn btn-primary m-auto " type="button"
@@ -1580,6 +1622,18 @@
             document.getElementById(currentId).style.display = "none";
             document.getElementById(changeId).style.display = "block";
             getAppointmentTime();
+
+            let x = document.getElementsByClassName('stepwizard-step');
+            for (let i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+            }
+
+            if (changeId === 'step-1' || changeId === 'step-2' || changeId === 'step-3' || changeId === 'step-4') {
+                document.getElementsByClassName(changeId)[0].classList.add("active");
+                console.log(changeId);
+            } else if (changeId === 'appointmentForm') {
+                document.getElementsByClassName('step-1')[0].classList.add("active");
+            }
         }
 
         function getAppointmentTime() {
@@ -1656,7 +1710,7 @@
                 </div>
 
                 <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Time & Date : </div>
+                    <div class="col-xs-8 title">Date & Time : </div>
                     <div class="col-xs-16">${bookingData.date} (${bookingData.time})</div>
                 </div>
 

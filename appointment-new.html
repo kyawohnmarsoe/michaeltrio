@@ -896,7 +896,7 @@
             font-size: 14px;
         }
 
-        .text-lightblue {
+        .mt2021 .text-lightblue {
             color: var(--companyblue);
         }
 
@@ -932,13 +932,18 @@
             height: 30px;
         }
 
+        .mt2021 #appointmentForm .panel-body {
+            padding: 0px;
+        }
+
         #showroomSelect {
-            background-color: #9BB8D3;
+            background-color: #fff;
+            border: 2px solid #9BB8D3;
             width: 100%;
             margin-bottom: 10px;
-            margin-top: 10px;
+            margin-top: 20px;
             border-radius: 5px;
-            color: var(--white);
+            color: #9BB8D3;
             text-align: center;
         }
 
@@ -989,6 +994,15 @@
             cursor: not-allowed;
         }
 
+        /* .mt2021 a.change-to-virtual {
+            transition: all 1s;
+        }
+
+        .mt2021 a.change-to-virtual:hover {
+            background-color: var(--companyblue);
+        } */
+
+
         @media (max-width:767.98px) {
 
             #showroomImage,
@@ -1012,6 +1026,23 @@
             #reviewTable .verticalStepCircle:before {
                 left: -26px
             }
+
+            .mt2021 .virtual-image {
+                margin-bottom: 20px;
+            }
+
+            .light-blue-border {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .remove-row-margin-only-on-small {
+                margin: 0;
+            }
+
+            .reviewTableWrapper {
+                max-width: 400px;
+            }
         }
 
         @media (max-width:394.98px) {
@@ -1023,6 +1054,15 @@
 
             .reviewTableWrapper {
                 padding-left: 5px;
+            }
+
+            .mt2021 #appointmentForm .small,
+            small {
+                font-size: 75%;
+            }
+
+            .reviewTableWrapper {
+                font-size: 11px;
             }
 
         }
@@ -1045,8 +1085,8 @@
                 </section>
                 <section class="pt-5">
                     <div class="container appointmentWrapper">
-                        <h3 class="text-center mb-4">Showrooms</h3>
-                        <div class="text-center m-auto" id="selectCountry">
+                        <h3 class="text-center ">Showrooms</h3>
+                        <div class="text-center m-auto" id="selectCountry" style="display: none;">
                             <button class="btn btn-blue-outline active">Singapore</button>
                             <button class="btn btn-blue-outline">Malaysia</button>
                         </div>
@@ -1068,7 +1108,8 @@
                                     <button class="btn btn-blue-outline " onclick="renderShowroom('jem')">Jem</button>
                                     <button class="btn btn-blue-outline " onclick="renderShowroom('np')">North
                                         Point</button>
-                                    <button class="btn btn-blue-outline " onclick="renderShowroom('tam')">Tampines
+                                    <button class="btn btn-blue-outline " onclick="renderShowroom('tam')"
+                                        disabled>Tampines
                                     </button>
 
                                 </div>
@@ -1087,18 +1128,27 @@
 
                                 <div class="col-md-18 bg-lightblue row py-3">
                                     <div class="col-sm-12 box" id="showroomImage">
-
+                                        <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg"
+                                            alt="" class="w-100">
                                     </div>
                                     <div class="col-sm-12 box">
                                         <div id="showroomPlaceHolder">
+                                            <h6 class="mb-3">Tanjong Pagar Showroom
+                                            </h6>
+                                            <p class="mb-2">91 Tanjong Pagar Road S088512 </p>
+                                            <p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last
+                                                    appointment at 7:30pm) </span></p>
+                                            <button class="btn btn-blue "
+                                                onclick="changeStep('appointmentMain','appointmentForm')">Book
+                                                Appointment</button>
 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row py-5">
-                                <a href="http://new.michaeltrio.com/new-virtual">
-                                    <div class="col-md-24 light-blue-border box p-0">
+                            <div class="row py-5 remove-row-margin-only-on-small">
+                                <a href="http://new.michaeltrio.com/new-virtual" class="change-to-virtual textblack">
+                                    <div class="col-md-24 col-xs-24 light-blue-border box p-0">
                                         <div class="col-md-5 col-sm-6 col-xs-8 p-0">
                                             <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png"
                                                 alt="" class="w-100">
@@ -1131,23 +1181,24 @@
                     <div class="container">
                         <div class="stepwizard">
                             <div class="stepwizard-row setup-panel">
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                <div class="stepwizard-step step-1 col-xs-6 col-sm-3 px-0">
                                     <p> <a href="#step-1" class="step-title"><small>Pax</small></a></p>
                                     <a href="#step-1" type="button" class="btn btn-suc btn-circle "></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
-                                    <p><a href="#step-2" class=" step-title disabled"><small>Time & Date</small></a></p>
+                                <div class="stepwizard-step step-2 col-xs-6 col-sm-3 px-0">
+                                    <p><a href="#step-2" class=" step-title disabled"><small> Date & Time</small></a>
+                                    </p>
                                     <a href="#step-2" type="button" class="btn btn-default btn-circle disabled"></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                <div class="stepwizard-step step-3 col-xs-6 col-sm-3 px-0">
                                     <p><a href="#step-3" class=" step-title disabled"><small>Interested In</small></a>
                                     </p>
                                     <a href="#step-3" type="button" class="btn btn-default btn-circle disabled"></a>
 
                                 </div>
-                                <div class="stepwizard-step col-xs-6 col-sm-3">
+                                <div class="stepwizard-step step-4 col-xs-6 col-sm-3 px-0">
                                     <p><a href="#step-4" class=" step-title disabled"><small>Details</small></a></p>
                                     <a href="#step-4" type="button" class="btn btn-default btn-circle disabled"></a>
 
@@ -1164,7 +1215,7 @@
                             <div class="panel panel-primary setup-content" id="step-1">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border p-0">
                                             <span class="go-back"
                                                 onclick="changeStep('appointmentForm','appointmentMain')">
@@ -1208,13 +1259,13 @@
                             <div class="panel panel-primary setup-content" id="step-2">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-2','step-1')"> &#60; Back
                                             </span>
 
                                             <div class="py-5">
-                                                <h3 class="text-center mb-4">Time / Date</h3>
+                                                <h3 class="text-center mb-4">Date / Time</h3>
                                                 <div class="row justify-content-center">
                                                     <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
                                                         <h6 class="mb-3">Appointment Date</h6>
@@ -1225,7 +1276,7 @@
                                                         <div class="field">
 
                                                             <input type="text" class="input-text" id="example-date"
-                                                                style="width: auto" name="example-date"
+                                                                style="width: 100%" name="example-date"
                                                                 onchange="addDate(event)" />
                                                         </div>
                                                         <script>
@@ -1268,7 +1319,7 @@
                             <div class="panel panel-primary setup-content" id="step-3">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-3','step-2')"> &#60;
                                                 Back
@@ -1277,8 +1328,8 @@
                                             <div class="py-5">
                                                 <h3 class="text-center mb-4">Interested In</h3>
 
-                                                <div class="row justify-content-center px-5">
-                                                    <div class="mx-2 col-sm-12">
+                                                <div class="row justify-content-center px-3">
+                                                    <div class=" col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(0,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"
@@ -1314,7 +1365,7 @@
                                                     </div>
 
 
-                                                    <div class="mx-2 col-sm-12">
+                                                    <div class=" col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(2,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
@@ -1362,7 +1413,7 @@
                             <div class="panel panel-primary setup-content" id="step-4">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4">
+                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
                                         <div class="col-xs-24 light-blue-border  p-0">
                                             <span class="go-back" onclick="changeStep('step-4','step-3')"> &#60;
                                                 Back
@@ -1427,7 +1478,7 @@
                                     <div id="reviewTable">
 
                                     </div>
-                                    <div class="text-center">
+                                    <div class="text-center pt-4">
                                         <div id="sucMsg"></div>
                                         <!-- sendEmail -->
                                         <button class="btn btn-primary m-auto " type="button"
@@ -1589,15 +1640,15 @@
             },
             "tam": {
                 "title": "Tampines Showroom",
-                "body": "91 Tanjong Pagar Road S088512",
-                "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg",
+                "body": "",
+                "image": "",
                 "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
             }
         }
 
         const interest = ['Engagment Rings(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
         let bookingData = {
-            "location": "",
+            "location": "Tanjong Pagar Showroom",
             "pax": "",
             "date": "",
             "time": "",
@@ -1613,11 +1664,15 @@
 
 
         window.onload = function () {
-            renderShowroom("tp");
+
+            // renderShowroom("tp");
         }
 
-        let appointmentTime = [];
-        let LocationPlaceHolder = "", LocationImage = "";
+        let appointmentTime = showrooms.tp.appointmentTime;
+
+        let LocationPlaceHolder = showrooms.tp.body;
+        let LocationImage = `<img src="${showrooms.tp.image}" alt=""
+                                    class="w-100">` ;
 
 
         function renderShowroom(location) {
@@ -1658,6 +1713,19 @@
             document.getElementById(currentId).style.display = "none";
             document.getElementById(changeId).style.display = "block";
             getAppointmentTime();
+
+            let x = document.getElementsByClassName('stepwizard-step');
+            for (let i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+            }
+
+            if (changeId === 'step-1' || changeId === 'step-2' || changeId === 'step-3' || changeId === 'step-4') {
+                document.getElementsByClassName(changeId)[0].classList.add("active");
+                console.log(changeId);
+            } else if (changeId === 'appointmentForm') {
+                document.getElementsByClassName('step-1')[0].classList.add("active");
+            }
+
         }
 
 
@@ -1686,7 +1754,7 @@
         }
 
         function addDate(e) {
-            console.log(e.target.value);
+
             bookingData['date'] = e.target.value;
             if (bookingData['date'] && bookingData['time']) {
                 let x = e.target.closest('.panel-body').querySelector(".btn-primary");
@@ -1738,7 +1806,7 @@
                 </div>
 
                 <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Time & Date : </div>
+                    <div class="col-xs-8 title">Date & Time : </div>
                     <div class="col-xs-16">${bookingData.date} (${bookingData.time})</div>
                 </div>
 
@@ -1819,6 +1887,13 @@
                     $('.int-type').removeClass('active');
                     $(this).addClass('active');
                 });
+
+                // $(".go-back").click(function () {
+                //     $('.stepwizard-step').removeClass('active');
+                //     $id = $(this).closest('.setup-content').attr('id');
+                //     $('.' + $id).addClass('active');
+
+                // });
             });
         });
     </script>
@@ -1840,8 +1915,7 @@
                     e.preventDefault();
                     var $target = $($(this).attr('href')),
                         $item = $(this);
-                    console.log($target);
-                    console.log($item);
+
 
                     if (!$item.hasClass('disabled')) {
                         // $item.addClass('btn-suc');
@@ -1881,7 +1955,7 @@
                         nextStepWizard_title = $('div.setup-panel div p a[href="#' + curStepBtn + '"]').closest('.stepwizard-step').next().children("p").children("a"),
                         curInputs = curStep.find("input[type='text'],input[type='url']"),
                         isValid = true;
-                    console.log(nextStepWizard);
+
 
                     $(".form-group").removeClass("has-error");
                     for (var i = 0; i < curInputs.length; i++) {
