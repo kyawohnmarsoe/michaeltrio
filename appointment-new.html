@@ -110,15 +110,19 @@
             min-width: 217px;
         }
 
-        .btn-blue {
+        .mt2021 .btn-blue {
             color: var(--white) !important;
-            background-color: var(--companyblue);
+            background-color: var(--companyblue) !important;
             transition: background-color 2s;
+            border: none !important;
+
         }
 
-        .btn-blue:hover {
-            color: var(--white);
-            background-color: var(--black);
+        .mt2021 .btn-blue:hover {
+            color: var(--white) !important;
+            background-color: var(--black) !important;
+            border: none !important;
+
 
         }
 
@@ -318,6 +322,28 @@
             align-items: flex-start;
         }
 
+        .mt2021 .more {
+            display: none;
+        }
+
+        #appointmentHeading hr {
+            background-color: black;
+            display: inline-block;
+            width: 80%;
+        }
+
+        .mt2021 #appointmentHeading h3 {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .mt2021 #appointmentHeading h5 {
+            font-weight: 400;
+        }
+
+
+
+
 
         @media (max-width: 1199.98px) {
 
@@ -339,6 +365,10 @@
 
 
         @media (max-width: 767.98px) {
+            #appointmentHeading hr {
+
+                width: 100%;
+            }
 
             .py-xs-5 {
                 padding-top: 3rem;
@@ -418,6 +448,17 @@
 
 
         @media (max-width: 480px) {
+            .mobile-align-center {
+                text-align: center;
+            }
+
+            .mt2021 .mobile-align-center .pull-right {
+                float: none !important;
+            }
+
+            h3.title-blue {
+                font-size: 16px;
+            }
 
 
             .mt2021 .btn {
@@ -948,7 +989,7 @@
         }
 
         #professional-services.owl-theme .owl-dots .owl-dot span {
-            background-color: #FFCDB6;
+            background-color: #fff;
             width: 11px;
             height: 11px;
             border: 1px solid #E48A62;
@@ -960,7 +1001,7 @@
         }
 
         #what-to-expect.owl-theme .owl-dots .owl-dot span {
-            background-color: #FFEEB6;
+            background-color: #fff;
             width: 11px;
             height: 11px;
             border: 1px solid #E4C562;
@@ -1001,9 +1042,25 @@
         .mt2021 a.change-to-virtual:hover {
             background-color: var(--companyblue);
         } */
+        .collection-desktop {
+            display: flex;
+        }
+
+        .collection-mobile {
+            display: none;
+
+        }
 
 
         @media (max-width:767.98px) {
+            .collection-desktop {
+                display: none;
+            }
+
+            .collection-mobile {
+                display: flex;
+
+            }
 
             #showroomImage,
             #LocationImage {
@@ -1080,19 +1137,19 @@
             <div id="appointmentMain" style="display: block;">
                 <section class="bg-lightblue py-5">
                     <div class="container appointmentWrapper">
-                        <h1 class="text-center">Appointments</h1>
+                        <h1 class="text-center ">Book An Appointment</h1>
                     </div>
                 </section>
                 <section class="pt-5">
                     <div class="container appointmentWrapper">
-                        <h3 class="text-center ">Showrooms</h3>
+                        <!-- <h3 class="text-center ">Showrooms</h3> -->
                         <div class="text-center m-auto" id="selectCountry" style="display: none;">
                             <button class="btn btn-blue-outline active">Singapore</button>
                             <button class="btn btn-blue-outline">Malaysia</button>
                         </div>
                         <div>
 
-                            <p class="py-4">
+                            <p class="py-4 p-wrapper text-center hidden-xs">
                                 While we try our best to accept walk-in customers, we would advise that you make an
                                 appointment
                                 before coming down to our showroom. The appointment usually lasts for an hour, where our
@@ -1101,16 +1158,30 @@
                                 the best decisions about your desired engagement ring, wedding bands or other
                                 jewelleries.
                             </p>
+                            <p class="py-4 p-wrapper text-center visible-xs">
+                                While we try our best to accept walk-in customers, we would advise <span
+                                    class="dots">...</span>
+                                <span class="more"> that you make an
+                                    appointment
+                                    before coming down to our showroom. The appointment usually lasts for an hour, where
+                                    our
+                                    consultants will do our best to answer your queries, provide more knowledge and help
+                                    you
+                                    make
+                                    the best decisions about your desired engagement ring, wedding bands or other
+                                    jewelleries. </span>
+                                <span class="text-lightblue read-more">Read more</span>
+                            </p>
                             <div class="row ">
                                 <div class="col-md-6 showrooms-group hidden-xs pl-0 pr-4">
                                     <button class="btn btn-blue-outline active" onclick="renderShowroom('tp')">Tanjong
                                         Pagar</button>
                                     <button class="btn btn-blue-outline " onclick="renderShowroom('jem')">Jem</button>
-                                    <button class="btn btn-blue-outline " onclick="renderShowroom('np')">North
-                                        Point</button>
-                                    <button class="btn btn-blue-outline " onclick="renderShowroom('tam')"
+                                    <button class="btn btn-blue-outline " onclick="renderShowroom('np')">Northpoint
+                                        City</button>
+                                    <!-- <button class="btn btn-blue-outline " onclick="renderShowroom('tam')"
                                         disabled>Tampines
-                                    </button>
+                                    </button> -->
 
                                 </div>
 
@@ -1118,8 +1189,8 @@
                                     <select id="showroomSelect" onchange="showroomSelect()">
                                         <option value="tp"> Tanjong Pagar</option>
                                         <option value="jem"> Jem</option>
-                                        <option value="np"> North Point</option>
-                                        <option value="tam">Tampines</option>
+                                        <option value="np"> Northpoint City</option>
+                                        <!-- <option value="tam">Tampines</option> -->
                                     </select>
 
                                 </div>
@@ -1133,7 +1204,7 @@
                                     </div>
                                     <div class="col-sm-12 box">
                                         <div id="showroomPlaceHolder">
-                                            <h6 class="mb-3">Tanjong Pagar Showroom
+                                            <h6 class="mb-3">Tanjong Pagar
                                             </h6>
                                             <p class="mb-2">91 Tanjong Pagar Road S088512 </p>
                                             <p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last
@@ -1146,17 +1217,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row py-5 remove-row-margin-only-on-small">
+                            <div class="row py-5 remove-row-margin-only-on-small mr-0 " style="display: block;">
                                 <a href="http://new.michaeltrio.com/new-virtual" class="change-to-virtual textblack">
                                     <div class="col-md-24 col-xs-24 light-blue-border box p-0">
                                         <div class="col-md-5 col-sm-6 col-xs-8 p-0">
-                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png"
+                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/virtual.jpg"
                                                 alt="" class="w-100">
                                         </div>
                                         <div class="col-md-19 col-sm-18 col-xs-16 text-center box">
                                             <div>
                                                 <div>Change to:</div>
-                                                <h3 class="text-lightblue">Virtual appointments</h3>
+                                                <h3 class="text-lightblue title-blue">Virtual Appointment</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -1174,7 +1245,7 @@
             <div id="appointmentForm" style="display: none;">
                 <section class="bg-lightblue py-5">
                     <div class="container">
-                        <h1 class="text-center" id="appointmentHeading"></h1>
+                        <div class="text-center" id="appointmentHeading"></div>
                     </div>
                 </section>
                 <section class="pt-5">
@@ -1182,7 +1253,7 @@
                         <div class="stepwizard">
                             <div class="stepwizard-row setup-panel">
                                 <div class="stepwizard-step step-1 col-xs-6 col-sm-3 px-0">
-                                    <p> <a href="#step-1" class="step-title"><small>Pax</small></a></p>
+                                    <p> <a href="#step-1" class="step-title"><small>Customer</small></a></p>
                                     <a href="#step-1" type="button" class="btn btn-suc btn-circle "></a>
 
                                 </div>
@@ -1223,17 +1294,9 @@
                                                 Back
                                             </span>
                                             <div class="py-5 text-center m-auto " style="max-width:600px;">
-                                                <h3 class="text-center mb-4">Pax</h3>
-                                                <p class="mb-3">
-                                                    How many person?
-                                                </p>
-                                                <p class="mb-4 ">
-                                                    In compliance to current government guidelines, all appointments
-                                                    made
-                                                    will be
-                                                    restricted
-                                                    to
-                                                    a maximum of 2 person.
+                                                <!-- <h3 class="text-center mb-4">Pax</h3> -->
+                                                <p class="mb-4">
+                                                    I would like to book an appointment for
                                                 </p>
                                                 <div class="text-center m-auto" id="selectPax">
                                                     <div class="btn btn-blue-outline" onclick="addPax(1,event)">
@@ -1243,16 +1306,24 @@
 
                                                     <div class="btn btn-blue-outline" name="noOfPax"
                                                         onclick="addPax(2,event)">
-                                                        2 Persons
+                                                        2 Person
 
                                                     </div>
 
                                                 </div>
+                                                <p class="mt-4 ">
+                                                    * Please note that in compliance with the current government
+                                                    guidelines, all appointments made will be restricted to a maximum of
+                                                    2 people.
+                                                </p>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right nextBtn" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right nextBtn" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Time / Date -->
@@ -1265,7 +1336,7 @@
                                             </span>
 
                                             <div class="py-5">
-                                                <h3 class="text-center mb-4">Date / Time</h3>
+                                                <h3 class="text-center mb-4">Date & Time Preference</h3>
                                                 <div class="row justify-content-center">
                                                     <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
                                                         <h6 class="mb-3">Appointment Date</h6>
@@ -1277,7 +1348,7 @@
 
                                                             <input type="text" class="input-text" id="example-date"
                                                                 style="width: 100%" name="example-date"
-                                                                onchange="addDate(event)" />
+                                                                onchange="addDate(event)" placeholder="dd/mm/yyyy" />
                                                         </div>
                                                         <script>
                                                             require([
@@ -1311,8 +1382,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right nextBtn" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right nextBtn" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Interested In -->
@@ -1332,18 +1405,18 @@
                                                     <div class=" col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(0,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/proposal_ring.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
-                                                                    <h6>Engagment Rings</h6>
+                                                                    <h6>Engagement Ring</h6>
                                                                     <p class="h11">45-60 Minute Appointment</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(1,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/catalog/product/cache/9af470cc50afd104cf53e659bbf96ad3/p/8/p8244-14kw_1_1.jpg"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/jewellery.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1352,9 +1425,10 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
-                                                            style="display: flex;" onclick="addInterest(3,event)">
-
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 collection-desktop"
+                                                            onclick="addInterest(3,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/item_collection.png"
+                                                                alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Item Collection</h6>
@@ -1368,7 +1442,7 @@
                                                     <div class=" col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/wedding-bands.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1379,7 +1453,7 @@
                                                         </div>
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/custom.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1389,9 +1463,22 @@
                                                             </div>
                                                         </div>
 
+                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 collection-mobile"
+                                                            onclick="addInterest(3,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/item_collection.png"
+                                                                alt="" class="int-image">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Item Collection</h6>
+                                                                    <p class="h11">15 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(4,event)">
-
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/polish.png"
+                                                                alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Ring Resizing / Polishing</h6>
@@ -1405,8 +1492,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary nextBtn pull-right" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary nextBtn pull-right" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Customer -->
@@ -1441,20 +1530,21 @@
                                                     <div class="col-xs-24 col-sm-10 col-md-10 px-5">
                                                         <div class="mb-4">
                                                             <h6>Budget</h6>
-                                                            <input type="text" required id="budget" name="budget">
+                                                            <input type="text" id="budget" name="budget">
                                                         </div>
                                                         <div class="mb-4">
                                                             <h6>Remarks</h6>
-                                                            <textarea required id="remarks" name="remarks"
-                                                                rows="3"></textarea>
+                                                            <textarea id="remarks" name="remarks" rows="3"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right" type="submit">Review
-                                        Booking</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right" type="submit">Review
+                                            Booking</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Review -->
@@ -1501,30 +1591,33 @@
 
             <section class="bg-lightorange py-5">
                 <div class="container text-center appointmentWrapper hidden-xs">
-                    <h3 class="mb-4">Professional Service</h3>
+                    <h3 class="mb-4">In-Store Experience</h3>
                     <div class="row">
                         <div class="col-sm-8 px-3">
                             <h6 class="mb-3"> 1-to-1 Attention </h6>
                             <p>
-                                Personalized consultation and guidance in a one-on-one appointment.
+                                Start your Michael Trio journey with a personalised 60 minute consultation with our
+                                dedicated jewellery experts.
                             </p>
                         </div>
                         <div class="col-sm-8 px-3">
-                            <h6 class="mb-3"> Guidance and Education </h6>
+                            <h6 class="mb-3"> Guidence </h6>
                             <p>
-                                Learn about the “four Cs” in a fun, low pressure environment.
+                                Learn the 4Cs and get insights from our experts on engagement rings, wedding bands, and
+                                fine jewellery.
                             </p>
                         </div>
                         <div class="col-sm-8 px-3">
-                            <h6 class="mb-3"> Unique to You </h6>
+                            <h6 class="mb-3"> Curated For You </h6>
                             <p>
-                                Appointments curated based on your individual preferences.
+                                Based on your interests and needs, our dedicated jewellery experts will curate a
+                                selection for you.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="container text-center appointmentWrapper visible-xs">
-                    <h3 class="mb-3">Professional Service</h3>
+                    <h3 class="mb-3">In-Store Experience</h3>
                     <div class="row">
                         <div id="professional-services" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
                             "0": {
@@ -1534,19 +1627,22 @@
                             <div class="item px-5">
                                 <h6 class="mb-3"> 1-to-1 Attention </h6>
                                 <p>
-                                    Personalized consultation and guidance in a one-on-one appointment.
+                                    Start your Michael Trio journey with a personalised 60 minute consultation with our
+                                    dedicated jewellery experts.
                                 </p>
                             </div>
                             <div class="item px-5">
-                                <h6 class="mb-3"> Guidance and Education </h6>
+                                <h6 class="mb-3"> Guidence </h6>
                                 <p>
-                                    Learn about the “four Cs” in a fun, low pressure environment.
+                                    Learn the 4Cs and get insights from our experts on engagement rings, wedding bands,
+                                    and fine jewellery.
                                 </p>
                             </div>
                             <div class="item px-5">
-                                <h6 class="mb-3"> Unique to You </h6>
+                                <h6 class="mb-3"> Curated For You </h6>
                                 <p>
-                                    Appointments curated based on your individual preferences.
+                                    Based on your interests and needs, our dedicated jewellery experts will curate a
+                                    selection for you.
                                 </p>
                             </div>
                         </div>
@@ -1554,7 +1650,7 @@
                 </div>
             </section>
 
-            <section class="bg-lightyellow py-5">
+            <!-- <section class="bg-lightyellow py-5">
                 <div class="container text-center appointmentWrapper hidden-xs">
                     <h3 class="mb-4">What to Expect</h3>
                     <div class="row">
@@ -1609,7 +1705,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+
         </div>
 
 
@@ -1618,37 +1715,37 @@
     <script>
         const showrooms = {
             "tp": {
-                "title": "Tanjong Pagar Showroom",
+                "title": "Tanjong Pagar",
                 "body": '<p class="mb-2">91 Tanjong Pagar Road S088512 </p><p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last appointment at 7:30pm) </span></p>',
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg",
                 "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
             },
             "jem": {
-                "title": "Jem Showroom",
+                "title": "Jem",
                 "body": '<p class="mb-2">50 Jurong Gateway Rd, #01-60,<br>S608549</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-3"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
 
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-jem.jpg",
-                "appointmentTime": ['11:00 pm', '11:30 pm', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
+                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
 
             },
             "np": {
-                "title": "North Point City Showroom",
+                "title": "Northpoint City",
                 "body": '<p class="mb-2">Yishun Ave 2, North Wing, <br>#01-22 Northpoint City S769098</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-2"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-np.jpg",
-                "appointmentTime": ['11:00 pm', '11:30 pm', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
+                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
 
             },
             "tam": {
-                "title": "Tampines Showroom",
+                "title": "Tampines",
                 "body": "",
                 "image": "",
                 "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
             }
         }
 
-        const interest = ['Engagment Rings(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
+        const interest = ['Engagement Ring(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
         let bookingData = {
-            "location": "Tanjong Pagar Showroom",
+            "location": "Tanjong Pagar",
             "pax": "",
             "date": "",
             "time": "",
@@ -1684,7 +1781,7 @@
 
             const data = `<h6 class="mb-3">${showroom.title}</h6>
                                         ${showroom.body} 
-                                    <button class="btn btn-blue " onclick="changeStep('appointmentMain','appointmentForm')">Book Appointment</button>`;
+                                    <button class="btn btn-blue " onclick="changeStep('appointmentMain','appointmentForm')">Book An Appointment</button>`;
 
             document.getElementById('showroomPlaceHolder').innerHTML = data;
             LocationPlaceHolder = data;
@@ -1708,7 +1805,8 @@
         }
 
         function changeStep(currentId, changeId) {
-            const data = `Appointment @ ${bookingData.location}`;
+            // const data = `Appointment @ ${bookingData.location}`;
+            const data = `<h3>Your Private Appointment</h3><hr><h5 class="text-uppercase">${bookingData.location}</h5>`;
             document.getElementById('appointmentHeading').innerHTML = data;
             document.getElementById(currentId).style.display = "none";
             document.getElementById(changeId).style.display = "block";
@@ -1925,7 +2023,7 @@
 
                         allWells.hide();
                         $target.show();
-                        $target.find('input:eq(0)').focus();
+                        // $target.find('input:eq(0)').focus();
                     }
                 });
 
@@ -1944,7 +2042,7 @@
 
                         allWells.hide();
                         $target.show();
-                        $target.find('input:eq(0)').focus();
+                        // $target.find('input:eq(0)').focus();
                     }
                 });
 
@@ -1977,6 +2075,29 @@
             });
 
         });
+
+
+        const readMore = document.getElementsByClassName('read-more');
+        for (let i = 0; i < readMore.length; i++) {
+            readMore[i].addEventListener('click', function () {
+
+                const para = readMore[i].closest('.p-wrapper');
+                var dots = para.querySelector(".dots");
+                var moreText = para.querySelector(".more");
+                var btnText = para.querySelector(".read-more");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+
+            });
+        }
 
 
     </script>

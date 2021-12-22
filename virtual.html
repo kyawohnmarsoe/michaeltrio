@@ -110,16 +110,17 @@
             min-width: 217px;
         }
 
-        .btn-blue {
+        .mt2021 .btn-blue {
             color: var(--white) !important;
-            background-color: var(--companyblue);
+            background-color: var(--companyblue) !important;
             transition: background-color 2s;
+            border: none !important;
         }
 
-        .btn-blue:hover {
-            color: var(--white);
-            background-color: var(--black);
-
+        .mt2021 .btn-blue:hover {
+            color: var(--white) !important;
+            background-color: var(--black) !important;
+            border: none !important;
         }
 
         .columns a.btn-blue-outline {
@@ -418,7 +419,13 @@
 
 
         @media (max-width: 480px) {
+            .mobile-align-center {
+                text-align: center;
+            }
 
+            .mt2021 .mobile-align-center .pull-right {
+                float: none !important;
+            }
 
             .mt2021 .btn {
                 font-size: 14px;
@@ -948,7 +955,7 @@
         }
 
         #professional-services.owl-theme .owl-dots .owl-dot span {
-            background-color: #FFCDB6;
+            background-color: #fff;
             width: 11px;
             height: 11px;
             border: 1px solid #E48A62;
@@ -960,7 +967,7 @@
         }
 
         #what-to-expect.owl-theme .owl-dots .owl-dot span {
-            background-color: #FFEEB6;
+            background-color: #fff;
             width: 11px;
             height: 11px;
             border: 1px solid #E4C562;
@@ -1079,32 +1086,32 @@
             <div id="appointmentMain" style="display: block;">
                 <section class="bg-lightblue py-5">
                     <div class="container appointmentWrapper">
-                        <h1 class="text-center">Appointments</h1>
+                        <h1 class="text-center">Book An Appointment</h1>
                     </div>
                 </section>
                 <section class="pt-5">
                     <div class="container appointmentWrapper">
-                        <h3 class="text-center mb-4">Virtual Appointments</h3>
+                        <h3 class="text-center mb-4">Virtual Appointment</h3>
 
                         <div>
 
                             <div class=" bg-lightblue row py-3">
                                 <div class="col-sm-8 col-md-8 box">
-                                    <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png" alt=""
+                                    <img src="https://www.michaeltrio.com/pub/media/0appointment/virtual.jpg" alt=""
                                         class="w-100 virtual-image">
                                 </div>
                                 <div class="col-sm-16 col-md-16 box">
                                     <div>
 
                                         <p class="mb-3">
-                                            Our virtual appointments offer jewelry specialists from the comfort of
-                                            your own
-                                            home. Enjoy a personalized video consultation to learn more about our
-                                            products
-                                            and receive valuable diamond and gemstone education.
+                                            Enjoy the Michael Trio experience at the comfort of your home. Request for a
+                                            complimentary zoom consultation and our jewellery experts will guide you
+                                            through the process of customising your ideal jewellery.
+
                                         </p>
                                         <button class="btn btn-blue"
-                                            onclick="changeStep('appointmentMain','appointmentForm')">Book Now</button>
+                                            onclick="changeStep('appointmentMain','appointmentForm')">Book An
+                                            Appointment</button>
                                     </div>
 
                                 </div>
@@ -1115,7 +1122,7 @@
                                     <a href="http://new.michaeltrio.com/new-appointment" class="textblack">
                                         <div>
                                             <div>Change to:</div>
-                                            <h1>Showrooms</h1>
+                                            <h1>Showroom</h1>
                                             <!-- <div class="text-center m-auto">
                                             <a href="http://new.michaeltrio.com/new-appointment"
                                                 class="btn btn-blue-outline ">Singapore</a>
@@ -1190,19 +1197,23 @@
                                                 <h3 class="text-center mb-4">Platform</h3>
 
                                                 <div class="row justify-content-center px-5">
-                                                    <div class="mx-2 col-sm-12">
-                                                        <div class="light-blue-border platform-type mb-3 p-3  mx-0 "
-                                                            style="display: flex;" onclick="addPlatform('Zoom',event)">
+                                                    <div
+                                                        class="mx-2 col-sm-12 light-blue-border box platform-type mb-3">
+                                                        <div class="   p-3  mx-0 " style="display: flex;"
+                                                            onclick="addPlatform('Zoom',event)">
 
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Zoom</h6>
 
-                                                                    <ul class="h11">
+                                                                    <!-- <ul class="h11">
                                                                         <li>45-60 Minute Appointment </li>
                                                                         <li> VIdeo Call</li>
                                                                         <li> On a laptop or Phone</li>
-                                                                    </ul>
+                                                                    </ul> -->
+                                                                    <p class="h11">Chat with our jewellery experts via a
+                                                                        complimnentary 60 minute video appointment on
+                                                                        Zoom </p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1210,20 +1221,22 @@
                                                     </div>
 
 
-                                                    <div class="mx-2 col-sm-12">
-                                                        <div class="light-blue-border platform-type mb-3 p-3  mx-0"
-                                                            style="display: flex;"
+                                                    <div
+                                                        class="mx-2 col-sm-12 light-blue-border box platform-type mb-3">
+                                                        <div class="  p-3  mx-0" style="display: flex;"
                                                             onclick="addPlatform('Whatsapp',event)">
 
                                                             <div class="box w-100">
                                                                 <div>
                                                                     <h6>Whats App</h6>
 
-                                                                    <ul class="h11">
+                                                                    <!-- <ul class="h11">
                                                                         <li> Chat with our Sale Staff </li>
                                                                         <li> On a laptop or Phone</li>
                                                                         <li> Option for Video or Voice call.</li>
-                                                                    </ul>
+                                                                    </ul> -->
+                                                                    <p class="h11">Chat with our jewellery experts via
+                                                                        WhatsApp voice or video call </p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1236,8 +1249,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right nextBtn" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right nextBtn" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Time / Date -->
@@ -1250,7 +1265,7 @@
                                             </span>
 
                                             <div class="py-5">
-                                                <h3 class="text-center mb-4">Date / Time</h3>
+                                                <h3 class="text-center mb-4">Date & Time Preference</h3>
                                                 <div class="row justify-content-center">
                                                     <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
                                                         <h6 class="mb-3">Appointment Date</h6>
@@ -1262,7 +1277,7 @@
 
                                                             <input type="text" class="input-text" id="example-date"
                                                                 style="width: 100%" name="example-date"
-                                                                onchange="addDate(event)" />
+                                                                onchange="addDate(event)" placeholder="dd/mm/yyyy" />
                                                         </div>
                                                         <script>
                                                             require([
@@ -1294,8 +1309,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right nextBtn" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right nextBtn" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Interested In -->
@@ -1315,18 +1332,18 @@
                                                     <div class="mx-2 col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(0,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/proposal_ring.png"
                                                                 alt="" class="int-image m-auto">
                                                             <div class="box w-100">
                                                                 <div>
-                                                                    <h6>Engagment Rings</h6>
+                                                                    <h6>Engagement Ring</h6>
                                                                     <p class="h11">45-60 Minute Appointment</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(1,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/catalog/product/cache/9af470cc50afd104cf53e659bbf96ad3/p/8/p8244-14kw_1_1.jpg"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/jewellery.png"
                                                                 alt="" class="int-image m-auto">
                                                             <div class="box w-100 ">
                                                                 <div>
@@ -1341,7 +1358,7 @@
                                                     <div class="mx-2 col-sm-12 col-xs-24">
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/wedding-bands.png"
                                                                 alt="" class="int-image m-auto">
                                                             <div class="box w-100 ">
                                                                 <div>
@@ -1352,7 +1369,7 @@
                                                         </div>
                                                         <div class="light-blue-border int-type mb-3 p-3  mx-0 text-center"
                                                             style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Diamond300.png"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/custom.png"
                                                                 alt="" class="int-image m-auto">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1369,8 +1386,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary nextBtn pull-right" type="button"
-                                        disabled>Next</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary nextBtn pull-right" type="button"
+                                            disabled>Next</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Customer -->
@@ -1405,20 +1424,21 @@
                                                     <div class="col-xs-24 col-sm-10 col-md-10 px-5">
                                                         <div class="mb-4">
                                                             <h6>Budget</h6>
-                                                            <input type="text" required id="budget" name="budget">
+                                                            <input type="text" id="budget" name="budget">
                                                         </div>
                                                         <div class="mb-4">
                                                             <h6>Remarks</h6>
-                                                            <textarea required id="remarks" name="remarks"
-                                                                rows="3"></textarea>
+                                                            <textarea id="remarks" name="remarks" rows="3"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary pull-right" type="submit">Review
-                                        Booking</button>
+                                    <div class="mobile-align-center">
+                                        <button class="btn btn-primary pull-right" type="submit">Review
+                                            Booking</button>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Review -->
@@ -1429,20 +1449,16 @@
                                         <h3 class="text-center mb-4">Appointment Summary</h3>
                                         <div class="col-md-24 bg-lightblue row py-3 mb-5">
                                             <div class="col-sm-8 col-md-8 box">
-                                                <img src="https://www.michaeltrio.com/pub/media/0appointment/Untitled-1.png"
+                                                <img src="https://www.michaeltrio.com/pub/media/0appointment/virtual.jpg"
                                                     alt="" class="w-100 virtual-image">
                                             </div>
                                             <div class="col-sm-16 col-md-16 box">
                                                 <div>
 
                                                     <p class="mb-3">
-                                                        Our virtual appointments offer jewelry specialists from the
-                                                        comfort of
-                                                        your own
-                                                        home. Enjoy a personalized video consultation to learn more
-                                                        about our
-                                                        products
-                                                        and receive valuable diamond and gemstone education.
+                                                        Enjoy the Michael Trio experience at the comfort of your home.
+                                                        Our jewellery experts will guide and advise on everything you
+                                                        need to know to customise your ideal jewellery.
                                                     </p>
 
                                                 </div>
@@ -1480,30 +1496,33 @@
 
             <section class="bg-lightorange py-5">
                 <div class="container text-center appointmentWrapper hidden-xs">
-                    <h3 class="mb-4">Professional Service</h3>
+                    <h3 class="mb-4">Virtual Experience</h3>
                     <div class="row">
                         <div class="col-sm-8 px-3">
                             <h6 class="mb-3"> 1-to-1 Attention </h6>
                             <p>
-                                Personalized consultation and guidance in a one-on-one appointment.
+                                Start your Michael Trio journey with a personalised 60 minute zoom consultation with our
+                                dedicated jewellery experts.
                             </p>
                         </div>
                         <div class="col-sm-8 px-3">
-                            <h6 class="mb-3"> Guidance and Education </h6>
+                            <h6 class="mb-3"> Guidence </h6>
                             <p>
-                                Learn about the “four Cs” in a fun, low pressure environment.
+                                Learn the 4Cs and get insights from our experts on engagement rings, wedding bands, and
+                                fine jewellery.
                             </p>
                         </div>
                         <div class="col-sm-8 px-3">
-                            <h6 class="mb-3"> Unique to You </h6>
+                            <h6 class="mb-3"> Curated For You </h6>
                             <p>
-                                Appointments curated based on your individual preferences.
+                                Based on your interests and needs, our dedicated jewellery experts will curate a
+                                selection for you.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="container text-center appointmentWrapper visible-xs">
-                    <h3 class="mb-3">Professional Service</h3>
+                    <h3 class="mb-3">Virtual Experience</h3>
                     <div class="row">
                         <div id="professional-services" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
                             "0": {
@@ -1513,19 +1532,22 @@
                             <div class="item px-5">
                                 <h6 class="mb-3"> 1-to-1 Attention </h6>
                                 <p>
-                                    Personalized consultation and guidance in a one-on-one appointment.
+                                    Start your Michael Trio journey with a personalised 60 minute zoom consultation with
+                                    our dedicated jewellery experts.
                                 </p>
                             </div>
                             <div class="item px-5">
-                                <h6 class="mb-3"> Guidance and Education </h6>
+                                <h6 class="mb-3"> Guidence </h6>
                                 <p>
-                                    Learn about the “four Cs” in a fun, low pressure environment.
+                                    Learn the 4Cs and get insights from our experts on engagement rings, wedding bands,
+                                    and fine jewellery.
                                 </p>
                             </div>
                             <div class="item px-5">
-                                <h6 class="mb-3"> Unique to You </h6>
+                                <h6 class="mb-3"> Curated For You </h6>
                                 <p>
-                                    Appointments curated based on your individual preferences.
+                                    Based on your interests and needs, our dedicated jewellery experts will curate a
+                                    selection for you.
                                 </p>
                             </div>
                         </div>
@@ -1533,7 +1555,7 @@
                 </div>
             </section>
 
-            <section class="bg-lightyellow py-5">
+            <!-- <section class="bg-lightyellow py-5">
                 <div class="container text-center appointmentWrapper hidden-xs">
                     <h3 class="mb-4">What to Expect</h3>
                     <div class="row">
@@ -1588,14 +1610,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+
         </div>
 
 
     </div>
 
     <script>
-        const interest = ['Engagment Rings(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
+        const interest = ['Engagement Ring(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
 
         let bookingData = {
             "location": "Online Virtual Appointment",
@@ -1816,7 +1839,7 @@
 
                         allWells.hide();
                         $target.show();
-                        $target.find('input:eq(0)').focus();
+                        // $target.find('input:eq(0)').focus();
                     }
                 });
 
@@ -1834,7 +1857,7 @@
 
                         allWells.hide();
                         $target.show();
-                        $target.find('input:eq(0)').focus();
+                        // $target.find('input:eq(0)').focus();
                     }
                 });
 

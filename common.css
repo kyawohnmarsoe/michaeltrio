@@ -310,7 +310,13 @@
     #top-selling-slider.owl-carousel .owl-item {
         align-items: flex-start;
     }
-
+    .mt2021 .more {
+        display: none;
+      }
+  
+     .mt2021 .text-lightblue {
+        color: var(--companyblue);
+      }
 
     @media (max-width: 1199.98px) {
 
