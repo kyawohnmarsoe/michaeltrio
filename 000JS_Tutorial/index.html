@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <input type="text" id="salary" name="salary"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" minlength="7"
+        onchange="myFunction(this.value)" />
+
+    <script>
+        function myFunction(val) {
+            val.length < 7 && alert("Phone number should be at least 7");
+        }
+    </script>
+
+</body>
+
+</html>

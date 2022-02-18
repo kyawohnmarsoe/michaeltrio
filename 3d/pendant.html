@@ -593,6 +593,11 @@
       margin-bottom: 20px;
     }
 
+    .diamond-price .price-container .price {
+      font-size: 14px;
+
+    }
+
     .diamond-quality {
       font-size: 14px;
       font-weight: 700;
@@ -781,6 +786,22 @@
 
     @media (max-width: 480px) {
 
+      .mt2021 .reduce-padding-mobile .row.earrings2021 {
+        padding: 0 10px !important;
+      }
+
+      .mt2021 .reduce-padding-mobile.col-sm-12,
+      .mt2021 .reduce-padding-mobile.col-xs-24 {
+        padding: 0 5px;
+      }
+
+      .mt2021 .reduce-padding-mobile .col-xs-8 {
+        padding: 5px;
+      }
+
+      .diamond-price .price-container .price {
+        font-size: 12px;
+      }
 
       .mt2021 .btn {
         font-size: 14px;
@@ -907,7 +928,7 @@
             <iframe src='//spins0.arqspin.com/iframe.html?spin=f8zucozfk120&is=0.16' class="spinning-diamond"
               scrolling='no' frameborder='0'></iframe>
           </div>
-          <div class="col-sm-12  ">
+          <div class="col-sm-12 reduce-padding-mobile ">
 
             <h1 class="text-center"> Diamond Type</h1>
 
@@ -958,9 +979,9 @@
             </div>
 
 
-            <div id="PL2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="PISI2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="PGVS2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+            <div id="PL2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="PISI2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="PGVS2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
 
 
 
@@ -1015,7 +1036,7 @@
       "SKU": "MDP0001-L030-14KW",
       "URL": "{{store url='mdp0001-l030-14kw'}}",
       "Size": "0.30ctw",
-      "Price": "SG$635",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-L030-14KW"}}`,
       "ClassName": "ct030",
       "Selling": "Yes"
     },
@@ -1023,7 +1044,7 @@
       "SKU": "MDP0001-L050-14KW",
       "URL": "{{store url='mdp0001-l050-14kw'}}",
       "Size": "0.50ctw",
-      "Price": "SG$1,196",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-L050-14KW"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1031,7 +1052,7 @@
       "SKU": "MDP0001-L070-14KW",
       "URL": "{{store url='mdp0001-l070-14kw'}}",
       "Size": "0.70ctw",
-      "Price": "SG$2,056",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-L070-14KW"}}`,
       "ClassName": "ct070",
       "Selling": "Yes"
     },
@@ -1039,7 +1060,7 @@
       "SKU": "MDP0001-L100-14KW",
       "URL": "{{store url='mdp0001-l100-14kw'}}",
       "Size": "1.00ctw",
-      "Price": "SG$4,672",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-L100-14KW"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     },
@@ -1047,7 +1068,7 @@
       "SKU": "MDP0001-L150-14KW",
       "URL": "{{store url='mdp0001-l150-14kw'}}",
       "Size": "1.50ctw",
-      "Price": "SG$7,074",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-L150-14KW"}}`,
       "ClassName": "ct150",
       "Selling": "Yes"
     }]
@@ -1055,7 +1076,7 @@
       "SKU": "MDP0001-ISI030-14KW",
       "URL": "{{store url='MDP0001-ISI030-14KW'}}",
       "Size": "0.30ctw",
-      "Price": "SG$785",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-ISI030-14KW"}}`,
       "ClassName": "ct030",
       "Selling": "Yes"
     },
@@ -1063,7 +1084,7 @@
       "SKU": "MDP0001-ISI050-14KW",
       "URL": "{{store url='MDP0001-ISI050-14KW'}}",
       "Size": "0.50ctw",
-      "Price": "SG$1,953",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-ISI050-14KW"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1071,7 +1092,7 @@
       "SKU": "MDP0001-ISI070-14KW",
       "URL": "{{store url='MDP0001-ISI070-14KW'}}",
       "Size": "0.70ctw",
-      "Price": "SG$3,887",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-ISI070-14KW"}}`,
       "ClassName": "ct070",
       "Selling": "Yes"
     },
@@ -1079,7 +1100,7 @@
       "SKU": "MDP0001-ISI100-14KW",
       "URL": "{{store url='MDP0001-ISI100-14KW'}}",
       "Size": "1.00ctw",
-      "Price": "SG$6,691",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-ISI100-14KW"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     }]
@@ -1087,7 +1108,7 @@
       "SKU": "MDP0001-GVS030-14KW",
       "URL": "{{store url='MDP0001-GVS030-14KW'}}",
       "Size": "0.30ctw",
-      "Price": "SG$934",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-GVS030-14KW"}}`,
       "ClassName": "ct030",
       "Selling": "Yes"
     },
@@ -1095,7 +1116,7 @@
       "SKU": "MDP0001-GVS050-14KW",
       "URL": "{{store url='MDP0001-GVS050-14KW'}}",
       "Size": "0.50ctw",
-      "Price": "SG$2,532",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-GVS050-14KW"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1103,7 +1124,7 @@
       "SKU": "MDP0001-GVS070-14KW",
       "URL": "{{store url='MDP0001-GVS070-14KW'}}",
       "Size": "0.70ctw",
-      "Price": "SG$4,953",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-GVS070-14KW"}}`,
       "ClassName": "ct070",
       "Selling": "Yes"
     },
@@ -1111,7 +1132,7 @@
       "SKU": "MDP0001-GVS100-14KW",
       "URL": "{{store url='MDP0001-GVS100-14KW'}}",
       "Size": "1.00ctw",
-      "Price": "SG$11,196",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-GVS100-14KW"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     }]
@@ -1139,7 +1160,7 @@
       }
 
       diamondType.forEach(function (diamond) {
-        data += '<div class="col-sm-6 col-xs-8 text-center selling ' + diamond.Selling + '"><a href="' + diamond.URL + '"><div class="diamond-thumbnail bg-white"> <div class="diamond-thumbnail-img"> <img src="' + cutImg + '" alt="" class="' + diamond.ClassName + '"></div> <div class="diamond-size">' + diamond.Size + '</div> </div><div class="diamond-price">' + diamond.Price + '</div> </a></div>';
+        data += `<div class="col-sm-6 col-xs-8 text-center selling ${diamond.Selling}"><a href="${diamond.URL}"><div class="diamond-thumbnail bg-white"> <div class="diamond-thumbnail-img"> <img src="${cutImg}" alt="" class="${diamond.ClassName}"></div> <div class="diamond-size">${diamond.Size}</div> </div><div class="diamond-price">${diamond.Price}</div> </a></div>`;
       });
 
       document.getElementById(id).innerHTML = data;

@@ -108,6 +108,12 @@
             display: inline-block;
             margin: auto;
             min-width: 217px;
+            outline: none;
+        }
+
+        .mt2021 .btn:focus,
+        .mt2021 .btn:active {
+            outline: none;
         }
 
         .mt2021 .btn-blue {
@@ -115,15 +121,18 @@
             background-color: var(--companyblue) !important;
             transition: background-color 2s;
             border: none !important;
-
         }
 
         .mt2021 .btn-blue:hover {
             color: var(--white) !important;
             background-color: var(--black) !important;
             border: none !important;
+        }
 
-
+        .mt2021 .btn-primary:hover {
+            color: var(--white) !important;
+            background-color: var(--black) !important;
+            /* border: none !important; */
         }
 
         .columns a.btn-blue-outline {
@@ -132,7 +141,7 @@
             margin-bottom: 10px;
             color: var(--companyblue);
             border: 2px solid var(--companyblue);
-            transition: all 1s;
+            transition: background-color 1s;
         }
 
         .columns a.btn-blue-outline:hover {
@@ -191,6 +200,10 @@
 
         .desktop-show {
             display: block;
+        }
+
+        .desktop-margin-top {
+            margin-top: 3rem;
         }
 
         .mobile-show {
@@ -322,28 +335,6 @@
             align-items: flex-start;
         }
 
-        .mt2021 .more {
-            display: none;
-        }
-
-        #appointmentHeading hr {
-            background-color: black;
-            display: inline-block;
-            width: 80%;
-        }
-
-        .mt2021 #appointmentHeading h3 {
-            font-size: 40px;
-            font-weight: 300;
-        }
-
-        .mt2021 #appointmentHeading h5 {
-            font-weight: 400;
-        }
-
-
-
-
 
         @media (max-width: 1199.98px) {
 
@@ -365,9 +356,12 @@
 
 
         @media (max-width: 767.98px) {
-            #appointmentHeading hr {
+            .desktop-margin-top {
+                margin-top: 0px;
+            }
 
-                width: 100%;
+            .mb-5.remove-margin-mobile {
+                margin-bottom: 0 !important;
             }
 
             .py-xs-5 {
@@ -448,23 +442,18 @@
 
 
         @media (max-width: 480px) {
-            .mobile-align-center {
+            .mobile-align-center text-center {
                 text-align: center;
             }
 
-            .mt2021 .mobile-align-center .pull-right {
+            .mt2021 .mobile-align-center text-center . {
                 float: none !important;
             }
-
-            h3.title-blue {
-                font-size: 16px;
-            }
-
 
             .mt2021 .btn {
                 font-size: 14px;
                 line-height: 15px;
-                /* height: 30px; */
+                height: 40px;
             }
 
             .large-btn {
@@ -544,7 +533,10 @@
         .mt2021 .h9,
         .mt2021 .h10,
         .mt2021 .h11,
-        .mt2021 .h12 {
+        .mt2021 .h12,
+        .mt2021 .h13,
+        .mt2021 .h14,
+        .mt2021 .h15 {
             font-family: 'Montserrat';
         }
 
@@ -600,6 +592,18 @@
             font-size: 11px;
         }
 
+        .mt2021 .h13 {
+            font-size: 10px;
+        }
+
+        .mt2021 .h14 {
+            font-size: 9px;
+        }
+
+        .mt2021 .h15 {
+            font-size: 8px;
+        }
+
         @media (max-width:767.98px) {
             .mt2021 h1 {
                 font-size: 30px;
@@ -640,6 +644,12 @@
         }
 
         @media (max-width:480px) {
+
+            .mt2021 .appointmentPage h1 {
+                font-size: 28px;
+                margin-bottom: 0;
+            }
+
             .mt2021 h1 {
                 font-size: 25px;
             }
@@ -686,11 +696,11 @@
 
         .mt2021 .btn-blue-outline {
             min-width: 140px;
-            margin-bottom: 10px;
-            margin-right: 10px;
+            /* margin-bottom: 10px; */
+            /* margin-right: 10px; */
             color: var(--companyblue);
             border: 2px solid var(--companyblue);
-            transition: all 1s;
+            transition: background-color 1s;
         }
 
         .mt2021 .btn-blue-outline:hover {
@@ -709,6 +719,11 @@
             min-width: 100%;
         }
 
+        .mt2021 .showrooms-group .btn-blue-outline:focus,
+        .mt2021 .showrooms-group .btn-blue-outline:active {
+            outline: none;
+        }
+
         .mt2021 .bg-lightyellow {
             background-color: #FFFCF3;
         }
@@ -716,38 +731,41 @@
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Stepper Form @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         .go-back {
+            display: none;
             position: absolute;
             left: 10px;
-            top: 10px;
+            top: 0px;
+            cursor: pointer;
+            color: var(--companyblue);
+            text-transform: uppercase;
         }
+
+
 
         .justify-content-center {
             justify-content: center;
         }
 
         .int-image {
-            width: 65px;
-            height: 65px;
+            width: 88px;
+            height: 88px;
+            border-radius: 8px 0 0 8px;
         }
 
         .int-type,
-        .platform-type {
+        .platform-type .light-blue-border {
             cursor: pointer;
         }
 
         .int-type.active,
-        .platform-type.active {
-            background-color: #9BB8D3;
+        .platform-type.active .light-blue-border {
+            /* background-color: #9BB8D3; */
+            background-color: #F0F6FB;
         }
 
 
 
 
-        .go-back {
-            cursor: pointer;
-            color: var(--companyblue);
-            text-transform: uppercase;
-        }
 
 
 
@@ -780,7 +798,7 @@
 
         .stepwizard-step button[disabled] {
             /*opacity: 1 !important;
-    filter: alpha(opacity=100) !important;*/
+        filter: alpha(opacity=100) !important;*/
         }
 
         .stepwizard .btn.disabled,
@@ -791,20 +809,20 @@
         }
 
         /* .stepwizard-row:before {
-            bottom: 14px;
-            position: absolute;
-            content: " ";
-            width: 100%;
-            height: 1px;
-            background-color: #ccc;
-            z-index: 0;
-        } */
+                bottom: 14px;
+                position: absolute;
+                content: " ";
+                width: 100%;
+                height: 1px;
+                background-color: #ccc;
+                z-index: 0;
+            } */
 
         .stepwizard-step {
             display: table-cell;
             text-align: center;
             position: relative;
-            height: 66px;
+            height: 40px;
         }
 
         .stepwizard .btn-suc {
@@ -907,9 +925,10 @@
         }
 
         .reviewTableWrapper {
-            max-width: 500px;
+            max-width: 550px;
             margin: auto;
             padding-left: 50px;
+            padding-right: 50px;
         }
 
         .verticalStepCircle .title {
@@ -920,8 +939,15 @@
             border-radius: 8px;
         }
 
+        #appointmentForm hr {
+            border-top: 1px solid #9f9898;
+        }
+
+
         .mt2021 .appointmentPage p {
             font-size: 14px;
+            /* word-spacing: 3px; */
+            /* padding: 0 5px; */
         }
 
         .mt2021 .appointmentPage .h11 {
@@ -929,7 +955,7 @@
         }
 
         .appointmentWrapper {
-            max-width: 788px;
+            max-width: 790px;
             margin: auto;
         }
 
@@ -942,36 +968,50 @@
         }
 
         #appointmentForm input[type="text"],
-        #appointmentForm input[type="email"] {
+        #appointmentForm input[type="email"],
+        #appointmentForm input[type="number"] {
             width: 100%;
-            border-color: #000;
-            height: 27px;
+            border-color: var(--companyblue);
+            height: 35px;
             line-height: 27px;
+            border-width: 1px;
+
         }
+
 
 
         #appointmentForm textarea {
             width: 100%;
-            border-color: #000;
             height: auto;
-            line-height: 27px;
-            margin-top: 10px;
+            /* margin-top: 10px; */
+            border-color: var(--companyblue);
+            line-height: 24px;
+            border-width: 1px;
         }
 
         #appointmentForm textarea:focus {
             outline: none !important;
-            border-color: #000 !important;
+            border-color: var(--companyblue) !important;
             box-shadow: none;
+            outline: none;
         }
 
         #appointmentForm input[type="date"],
         #appointmentForm select {
             width: 100%;
-            border: 1px solid #000;
             padding-left: 5px;
             border-radius: 0px;
-            height: 30px;
+            border-color: var(--companyblue);
+            height: 35px;
+            line-height: 27px;
+            border-width: 1px;
         }
+
+        #appointmentForm select:active,
+        #appointmentForm select:focus {
+            outline: none;
+        }
+
 
         .mt2021 #appointmentForm .panel-body {
             padding: 0px;
@@ -1024,6 +1064,7 @@
             left: 0px;
             color: var(--companyblue);
             font-size: 20px;
+            display: none;
 
         }
 
@@ -1031,34 +1072,116 @@
             text-decoration: underline !important;
         }
 
+        .step-title {
+            display: none;
+        }
+
         a.disabled {
             cursor: not-allowed;
         }
 
         /* .mt2021 a.change-to-virtual {
-            transition: all 1s;
+                transition: all 1s;
+            }
+    
+            .mt2021 a.change-to-virtual:hover {
+                background-color: var(--companyblue);
+            } */
+
+        .v-exp img {
+            border-radius: 50%;
+            border: 0px;
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
         }
 
-        .mt2021 a.change-to-virtual:hover {
-            background-color: var(--companyblue);
-        } */
+        .mt2021 #appointmentForm .small,
+        small {
+            font-size: 95%;
+        }
+
+        .margin-lg-r10 {
+            margin-right: 10px !important;
+
+        }
+
+        .margin-lg-b10 {
+
+            margin-bottom: 10px !important;
+        }
+
+        .margin-sm-b10 {
+
+            margin-bottom: 0px !important;
+        }
+
+        .mx-lg-10 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #finalDetail p {
+            line-height: 22px;
+        }
+
+        .text-underline {
+            text-decoration: underline;
+        }
+
+        a.text-underline {
+            text-decoration: underline !important;
+        }
+
+        .mt2021 .formBtnGroup .btn-blue-outline {
+            min-width: 217px;
+        }
+
         .collection-desktop {
             display: flex;
         }
 
         .collection-mobile {
             display: none;
-
         }
 
 
         @media (max-width:767.98px) {
+
+
             .collection-desktop {
                 display: none;
             }
 
             .collection-mobile {
-                display: flex;
+                display: block;
+            }
+
+            .mx-lg-10 {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .margin-lg-r10 {
+                margin-right: 0px !important;
+
+            }
+
+            .margin-lg-b10 {
+
+                margin-bottom: 0px !important;
+            }
+
+            .margin-sm-b10 {
+
+                margin-bottom: 10px !important;
+            }
+
+            .mt2021 #appointmentForm .small,
+            small {
+                font-size: 95%;
+            }
+
+            #reviewTable .row {
+                line-height: 30px;
 
             }
 
@@ -1073,7 +1196,10 @@
 
             .reviewTableWrapper {
                 padding-left: 22px;
+                padding-right: 22px;
                 font-size: 13px;
+                max-width: 422px;
+
             }
 
             #reviewTable .verticalStepCircle:after {
@@ -1097,12 +1223,20 @@
                 margin: 0;
             }
 
-            .reviewTableWrapper {
-                max-width: 400px;
-            }
+
         }
 
-        @media (max-width:394.98px) {
+        @media (max-width:445px) {
+
+            .mt2021 .formBtnGroup {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .mt2021 .formBtnGroup .btn {
+                min-width: 47%;
+                margin: 0;
+            }
 
             #reviewTable .verticalStepCircle:before,
             #reviewTable .verticalStepCircle:after {
@@ -1111,7 +1245,14 @@
 
             .reviewTableWrapper {
                 padding-left: 5px;
+                padding-right: 5px;
+
             }
+        }
+
+        @media (max-width:394.98px) {
+
+
 
             .mt2021 #appointmentForm .small,
             small {
@@ -1124,7 +1265,6 @@
 
         }
     </style>
-
 </head>
 
 <body>
@@ -1135,12 +1275,12 @@
 
             <!-- Main  -->
             <div id="appointmentMain" style="display: block;">
-                <section class="bg-lightblue py-5">
+                <section class="bg-lightblue py-3">
                     <div class="container appointmentWrapper">
-                        <h1 class="text-center ">Book An Appointment</h1>
+                        <h1 class="text-center ">Book Appointment</h1>
                     </div>
                 </section>
-                <section class="pt-5">
+                <section class="pt-4">
                     <div class="container appointmentWrapper">
                         <!-- <h3 class="text-center ">Showrooms</h3> -->
                         <div class="text-center m-auto" id="selectCountry" style="display: none;">
@@ -1151,45 +1291,47 @@
 
                             <p class="py-4 p-wrapper text-center hidden-xs">
                                 While we try our best to accept walk-in customers, we would advise that you make an
-                                appointment
-                                before coming down to our showroom. The appointment usually lasts for an hour, where our
-                                consultants will do our best to answer your queries, provide more knowledge and help you
-                                make
-                                the best decisions about your desired engagement ring, wedding bands or other
-                                jewelleries.
+                                appointment before coming down to our showrooms!
+                                <br><br>
+                                Book your appointment now and enjoy a free consultation to learn more about our products
+                                and receive valuable diamond and gemstone education!
+
                             </p>
-                            <p class="py-4 p-wrapper text-center visible-xs">
-                                While we try our best to accept walk-in customers, we would advise <span
+                            <p class="pb-4 p-wrapper text-center visible-xs">
+                                While we try our best to accept walk-in customers, we would advise<span
                                     class="dots">...</span>
                                 <span class="more"> that you make an
-                                    appointment
-                                    before coming down to our showroom. The appointment usually lasts for an hour, where
-                                    our
-                                    consultants will do our best to answer your queries, provide more knowledge and help
-                                    you
-                                    make
-                                    the best decisions about your desired engagement ring, wedding bands or other
-                                    jewelleries. </span>
-                                <span class="text-lightblue read-more">Read more</span>
+                                    appointment before coming down to our showrooms!
+                                    <br><br>
+                                    Book your appointment now and enjoy a free consultation to learn more about our
+                                    products
+                                    and receive valuable diamond and gemstone education! </span>
+                                <br><span class="text-lightblue read-more text-center">Read more</span>
                             </p>
                             <div class="row ">
-                                <div class="col-md-6 showrooms-group hidden-xs pl-0 pr-4">
-                                    <button class="btn btn-blue-outline active" onclick="renderShowroom('tp')">Tanjong
-                                        Pagar</button>
-                                    <button class="btn btn-blue-outline " onclick="renderShowroom('jem')">Jem</button>
-                                    <button class="btn btn-blue-outline " onclick="renderShowroom('np')">Northpoint
-                                        City</button>
+                                <div class="col-md-7 showrooms-group hidden-xs p-0">
+                                    <button class="btn btn-blue-outline active ml-0 margin-lg-b10"
+                                        onclick="renderShowroom('tp')">
+                                        Tanjong Pagar Showroom</button>
+                                    <button class="btn btn-blue-outline ml-0 margin-lg-b10"
+                                        onclick="renderShowroom('jem')">
+                                        JEM Showroom
+                                    </button>
+                                    <button class="btn btn-blue-outline ml-0 margin-lg-b10"
+                                        onclick="renderShowroom('np')">
+                                        Northpoint City Showroom
+                                    </button>
                                     <!-- <button class="btn btn-blue-outline " onclick="renderShowroom('tam')"
                                         disabled>Tampines
                                     </button> -->
 
                                 </div>
 
-                                <div class="col-md-6 showrooms-group visible-xs bg-lightblue">
+                                <div class="col-md-7 showrooms-group visible-xs bg-lightblue text-center">
                                     <select id="showroomSelect" onchange="showroomSelect()">
-                                        <option value="tp"> Tanjong Pagar</option>
-                                        <option value="jem"> Jem</option>
-                                        <option value="np"> Northpoint City</option>
+                                        <option value="tp"> Tanjong Pagar Showroom</option>
+                                        <option value="jem"> JEM Showroom</option>
+                                        <option value="np"> Northpoint City Showroom</option>
                                         <!-- <option value="tam">Tampines</option> -->
                                     </select>
 
@@ -1197,27 +1339,32 @@
 
 
 
-                                <div class="col-md-18 bg-lightblue row py-3">
-                                    <div class="col-sm-12 box" id="showroomImage">
+                                <div class="col-md-17 bg-lightblue  py-3 lg-flex-sm-block">
+                                    <div class="col-sm-12 box px-0" id="showroomImage">
                                         <img src="https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg"
                                             alt="" class="w-100">
                                     </div>
-                                    <div class="col-sm-12 box">
+                                    <div class="col-sm-12 box ">
                                         <div id="showroomPlaceHolder">
-                                            <h6 class="mb-3">Tanjong Pagar
+                                            <h6 class="mb-3"><i>Tanjong Pagar Showroom</i>
                                             </h6>
-                                            <p class="mb-2">91 Tanjong Pagar Road S088512 </p>
-                                            <p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last
-                                                    appointment at 7:30pm) </span></p>
-                                            <button class="btn btn-blue "
+                                            <p class="mb-3 h10">91 Tanjong Pagar Road S088512 </p>
+                                            <div class="mb-3 h11">
+                                                Monday - Sunday: 12pm - 8.30pm
+
+                                            </div>
+
+                                            <button class="btn btn-blue mb-3 text-uppercase "
                                                 onclick="changeStep('appointmentMain','appointmentForm')">Book
                                                 Appointment</button>
+                                            <div class="h13"> *Last appointment will be 1 hour before closing!
+                                            </div>
 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row py-5 remove-row-margin-only-on-small mr-0 " style="display: block;">
+                            <div class="row py-5 remove-row-margin-only-on-small " style="display: block;">
                                 <a href="http://new.michaeltrio.com/new-virtual" class="change-to-virtual textblack">
                                     <div class="col-md-24 col-xs-24 light-blue-border box p-0">
                                         <div class="col-md-5 col-sm-6 col-xs-8 p-0">
@@ -1248,7 +1395,7 @@
                         <div class="text-center" id="appointmentHeading"></div>
                     </div>
                 </section>
-                <section class="pt-5">
+                <section class="pt-0">
                     <div class="container">
                         <div class="stepwizard">
                             <div class="stepwizard-row setup-panel">
@@ -1264,7 +1411,7 @@
 
                                 </div>
                                 <div class="stepwizard-step step-3 col-xs-6 col-sm-3 px-0">
-                                    <p><a href="#step-3" class=" step-title disabled"><small>Interested In</small></a>
+                                    <p><a href="#step-3" class=" step-title disabled"><small>Interest</small></a>
                                     </p>
                                     <a href="#step-3" type="button" class="btn btn-default btn-circle disabled"></a>
 
@@ -1286,31 +1433,42 @@
                             <div class="panel panel-primary setup-content" id="step-1">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
-                                        <div class="col-xs-24 light-blue-border p-0">
+                                    <div class="row pt-5 remove-row-margin-only-on-small">
+                                        <div class="col-xs-24  p-0">
                                             <span class="go-back"
                                                 onclick="changeStep('appointmentForm','appointmentMain')">
                                                 &#60;
                                                 Back
                                             </span>
-                                            <div class="py-5 text-center m-auto " style="max-width:600px;">
+                                            <div class="py-3 text-center m-auto ">
                                                 <!-- <h3 class="text-center mb-4">Pax</h3> -->
-                                                <p class="mb-4">
-                                                    I would like to book an appointment for
+                                                <p class="mb-4 mb-0">
+                                                    I would like to book appointment for
                                                 </p>
-                                                <div class="text-center m-auto" id="selectPax">
-                                                    <div class="btn btn-blue-outline" onclick="addPax(1,event)">
+
+                                                <div class=" mobile-align-center text-center " id="selectPax">
+                                                    <div class="col-xs-24 formBtnGroup mb-4">
+                                                        <button class="btn btn-blue-outline  margin-lg-r10 "
+                                                            type="button" onclick="addPax(1,event)"> 1 Person</button>
+                                                        <button class="btn btn-blue-outline " type="button"
+                                                            onclick="addPax(2,event)"> 2 Person</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="text-center m-auto" id="selectPax">
+                                                    <div class="btn btn-blue-outline margin-lg-r10 margin-sm-b10"
+                                                        onclick="addPax(1,event)">
                                                         1 Person
 
                                                     </div>
-
                                                     <div class="btn btn-blue-outline" name="noOfPax"
                                                         onclick="addPax(2,event)">
                                                         2 Person
 
                                                     </div>
+                                                </div> -->
 
-                                                </div>
+
                                                 <p class="mt-4 ">
                                                     * Please note that in compliance with the current government
                                                     guidelines, all appointments made will be restricted to a maximum of
@@ -1320,25 +1478,34 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mobile-align-center">
-                                        <button class="btn btn-primary pull-right nextBtn" type="button"
-                                            disabled>Next</button>
+
+
+
+                                    <div class=" mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('appointmentForm','appointmentMain')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                             <!-- Time / Date -->
                             <div class="panel panel-primary setup-content" id="step-2">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
-                                        <div class="col-xs-24 light-blue-border  p-0">
+                                    <div class="row pt-5 remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
                                             <span class="go-back" onclick="changeStep('step-2','step-1')"> &#60; Back
                                             </span>
 
-                                            <div class="py-5">
-                                                <h3 class="text-center mb-4">Date & Time Preference</h3>
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Date & Time
+                                                    Preference</h3>
                                                 <div class="row justify-content-center">
-                                                    <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
+                                                    <div class=" text-center col-xs-24 col-sm-10 col-md-10 mb-3">
                                                         <h6 class="mb-3">Appointment Date</h6>
                                                         <!-- <input type="date" onchange="addDate(event)"
                                                             id="AppointmentDate"
@@ -1346,8 +1513,8 @@
                                                             value="20-12-2021"> -->
                                                         <div class="field">
 
-                                                            <input type="text" class="input-text" id="example-date"
-                                                                style="width: 100%" name="example-date"
+                                                            <input type="text" class="input-text" id="app-date"
+                                                                style="width: 100%" name="app-date" required
                                                                 onchange="addDate(event)" placeholder="dd/mm/yyyy" />
                                                         </div>
                                                         <script>
@@ -1356,13 +1523,13 @@
                                                                 'mage/translate',
                                                                 'mage/calendar'
                                                             ], function ($, $t) {
-                                                                $('#example-date').calendar({
+                                                                $('#app-date').calendar({
                                                                     changeMonth: true,
                                                                     changeYear: true,
                                                                     showButtonPanel: true,
                                                                     currentText: $t('Go Today'),
                                                                     closeText: $t('Close'),
-                                                                    showWeek: true,
+                                                                    showWeek: false,
                                                                     dateFormat: 'dd/MM/yyyy',
                                                                     minDate: '0'
                                                                 });
@@ -1371,7 +1538,7 @@
 
 
                                                     </div>
-                                                    <div class="px-5 text-center col-xs-24 col-sm-10 col-md-10 mb-3">
+                                                    <div class=" text-center col-xs-24 col-sm-10 col-md-10 mb-3">
 
                                                         <h6 class="mb-3">Appointment Time</h6>
                                                         <div id="appointmentTime"></div>
@@ -1382,9 +1549,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mobile-align-center">
-                                        <button class="btn btn-primary pull-right nextBtn" type="button"
-                                            disabled>Next</button>
+
+
+                                    <div class="row mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-2','step-1')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1392,20 +1565,21 @@
                             <div class="panel panel-primary setup-content" id="step-3">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
-                                        <div class="col-xs-24 light-blue-border  p-0">
+                                    <div class="row pt-5 remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
                                             <span class="go-back" onclick="changeStep('step-3','step-2')"> &#60;
                                                 Back
                                             </span>
 
-                                            <div class="py-5">
-                                                <h3 class="text-center mb-4">Interested In</h3>
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Interested In
+                                                </h3>
 
                                                 <div class="row justify-content-center px-3">
-                                                    <div class=" col-sm-12 col-xs-24">
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
+                                                    <div class=" col-sm-12 col-xs-24 ">
+                                                        <div class="light-blue-border int-type mb-3  mx-0"
                                                             style="display: flex;" onclick="addInterest(0,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/proposal_ring.png"
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/PR.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1414,9 +1588,9 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
-                                                            style="display: flex;" onclick="addInterest(1,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/jewellery.png"
+                                                        <div class="light-blue-border int-type mb-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(2,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/jewelry.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1425,8 +1599,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 collection-desktop"
-                                                            onclick="addInterest(3,event)">
+                                                        <div class="light-blue-border int-type mb-3  mx-0 collection-desktop"
+                                                            onclick="addInterest(4,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0appointment/item_collection.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
@@ -1439,10 +1613,10 @@
                                                     </div>
 
 
-                                                    <div class=" col-sm-12 col-xs-24">
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
-                                                            style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/wedding-bands.png"
+                                                    <div class=" col-sm-12 col-xs-24 ">
+                                                        <div class="light-blue-border int-type mb-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(1,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/WB.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
@@ -1451,20 +1625,20 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
-                                                            style="display: flex;" onclick="addInterest(2,event)">
-                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/custom.png"
+                                                        <div class="light-blue-border int-type mb-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(3,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/custom-made.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
                                                                 <div>
-                                                                    <h6>Custom</h6>
+                                                                    <h6>Custom-Made Jewellery</h6>
                                                                     <p class="h11">45-60 Minute Appointment</p>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0 collection-mobile"
-                                                            onclick="addInterest(3,event)">
+                                                        <div class="light-blue-border int-type mb-3  mx-0 collection-mobile"
+                                                            onclick="addInterest(4,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0appointment/item_collection.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
@@ -1475,8 +1649,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="light-blue-border int-type mb-3 p-3  mx-0"
-                                                            style="display: flex;" onclick="addInterest(4,event)">
+                                                        <div class="light-blue-border int-type mb-3  mx-0"
+                                                            style="display: flex;" onclick="addInterest(5,event)">
                                                             <img src="https://www.michaeltrio.com/pub/media/0appointment/polish.png"
                                                                 alt="" class="int-image">
                                                             <div class="box w-100">
@@ -1492,9 +1666,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mobile-align-center">
-                                        <button class="btn btn-primary nextBtn pull-right" type="button"
-                                            disabled>Next</button>
+                                    <div class="row mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-3','step-2')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1502,58 +1680,80 @@
                             <div class="panel panel-primary setup-content" id="step-4">
 
                                 <div class="panel-body">
-                                    <div class="row pt-5 pb-4 remove-row-margin-only-on-small">
-                                        <div class="col-xs-24 light-blue-border  p-0">
+                                    <div class="row pt-5 remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
                                             <span class="go-back" onclick="changeStep('step-4','step-3')"> &#60;
                                                 Back
                                             </span>
 
-                                            <div class="py-5">
-                                                <h3 class="text-center mb-4">Details</h3>
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Final Details
+                                                </h3>
                                                 <div class="row justify-content-center">
                                                     <div class="col-xs-24 col-sm-10 col-md-10 px-5">
-                                                        <div class="mb-4">
-                                                            <h6>Name</h6>
+                                                        <div class="mb-3">
+
                                                             <input type="text" required id="customerName"
-                                                                name="customerName">
+                                                                name="customerName" placeholder="First Name">
                                                         </div>
-                                                        <div class="mb-4">
-                                                            <h6>Email</h6>
-                                                            <input type="email" required id="email" name="email">
+                                                        <div class="mb-3">
+
+                                                            <input type="text" required id="customerName2"
+                                                                name="customerName2" placeholder="Last Name">
                                                         </div>
-                                                        <div class="mb-4">
-                                                            <h6>Phone Number</h6>
-                                                            <input type="text" required id="contactNumber"
-                                                                name="contactNumber">
+                                                        <div class="mb-3">
+
+                                                            <input type="email" required id="email" name="email"
+                                                                placeholder="Email Address">
                                                         </div>
+
                                                     </div>
                                                     <div class="col-xs-24 col-sm-10 col-md-10 px-5">
-                                                        <div class="mb-4">
+                                                        <div class="mb-3">
+
+
+                                                            <input type="text" id="contactNumber" name="contactNumber"
+                                                                placeholder="Phone Number" required
+                                                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                                                minlength="7" onchange="phoneValidation(this.value)" />
+                                                            <small class="text-danger" style="display: none;"
+                                                                id="errorMsgPhone">Please
+                                                                enter valid phone
+                                                                number.</small>
+
+                                                        </div>
+                                                        <!-- <div class="mb-3">
                                                             <h6>Budget</h6>
                                                             <input type="text" id="budget" name="budget">
-                                                        </div>
-                                                        <div class="mb-4">
-                                                            <h6>Remarks</h6>
-                                                            <textarea id="remarks" name="remarks" rows="3"></textarea>
+                                                        </div> -->
+                                                        <div class="mb-3">
+
+                                                            <textarea id="remarks" name="remarks" rows="3"
+                                                                placeholder="Message (Optional)"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mobile-align-center">
-                                        <button class="btn btn-primary pull-right" type="submit">Review
-                                            Booking</button>
+                                    <div class=" mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-4','step-3')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Review -->
                             <div class="panel panel-primary setup-content p-wrapper" id="step-5">
 
                                 <div class="panel-body">
                                     <div class="pt-5 pb-4">
                                         <h3 class="text-center mb-4">Appointment Summary</h3>
-                                        <div class="col-md-24 bg-lightblue row py-3 mb-5">
+                                        <div class="col-md-24 bg-lightblue row py-3 mb-5 remove-margin-mobile">
                                             <div class="col-sm-12 box" id="LocationImage">
 
                                             </div>
@@ -1568,12 +1768,14 @@
                                     <div id="reviewTable">
 
                                     </div>
-                                    <div class="text-center pt-4">
+
+                                    <!-- <div class="text-center pt-4">
                                         <div id="sucMsg"></div>
-                                        <!-- sendEmail -->
+                                      
                                         <button class="btn btn-primary m-auto " type="button"
                                             onclick="confirmBooking()">Confirm Booking</button>
-                                    </div>
+                                    </div> -->
+
                                 </div>
                             </div>
 
@@ -1588,36 +1790,44 @@
             </div>
             <!-- End Form  -->
 
-
-            <section class="bg-lightorange py-5">
-                <div class="container text-center appointmentWrapper hidden-xs">
-                    <h3 class="mb-4">In-Store Experience</h3>
+            <section class="bg-lightorange py-5 ">
+                <div class="container text-center   hidden-xs v-exp" style="max-width: 980px;">
+                    <h3 class="mb-5">Michael Trio's Virtual Appointment Experience</h3>
                     <div class="row">
-                        <div class="col-sm-8 px-3">
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/1-1.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
                             <h6 class="mb-3"> 1-to-1 Attention </h6>
+
+
                             <p>
-                                Start your Michael Trio journey with a personalised 60 minute consultation with our
-                                dedicated jewellery experts.
+                                Personalised one-to-one appointment with our jewellery expert.
                             </p>
                         </div>
-                        <div class="col-sm-8 px-3">
-                            <h6 class="mb-3"> Guidence </h6>
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/guidance.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
+                            <h6 class="mb-3"> Guidance </h6>
+
+
                             <p>
-                                Learn the 4Cs and get insights from our experts on engagement rings, wedding bands, and
-                                fine jewellery.
+                                Learn about diamonds, gemstones and more in a fun and relaxing enviroment.
                             </p>
                         </div>
-                        <div class="col-sm-8 px-3">
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
                             <h6 class="mb-3"> Curated For You </h6>
+
+
                             <p>
-                                Based on your interests and needs, our dedicated jewellery experts will curate a
-                                selection for you.
+                                Appointment curated to your personal preference and style.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="container text-center appointmentWrapper visible-xs">
-                    <h3 class="mb-3">In-Store Experience</h3>
+                <div class="container text-center appointmentWrapper visible-xs v-exp">
+                    <h3 class="mb-3">Michael Trio's Virtual <br>Appointment Experience</h3>
                     <div class="row">
                         <div id="professional-services" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
                             "0": {
@@ -1625,30 +1835,40 @@
                             }
                         }}}}}'>
                             <div class="item px-5">
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/1-1.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
                                 <h6 class="mb-3"> 1-to-1 Attention </h6>
+
+
                                 <p>
-                                    Start your Michael Trio journey with a personalised 60 minute consultation with our
-                                    dedicated jewellery experts.
+                                    Personalised one-to-one appointment with our jewellery expert.
                                 </p>
                             </div>
                             <div class="item px-5">
-                                <h6 class="mb-3"> Guidence </h6>
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/guidance.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
+                                <h6 class="mb-3"> Guidance</h6>
+
+
                                 <p>
-                                    Learn the 4Cs and get insights from our experts on engagement rings, wedding bands,
-                                    and fine jewellery.
+                                    Learn about diamonds, gemstones and more in a fun and relaxing enviroment.
                                 </p>
                             </div>
                             <div class="item px-5">
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
                                 <h6 class="mb-3"> Curated For You </h6>
+
+
                                 <p>
-                                    Based on your interests and needs, our dedicated jewellery experts will curate a
-                                    selection for you.
+                                    Appointment curated to your personal preference and style.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <!-- <section class="bg-lightyellow py-5">
                 <div class="container text-center appointmentWrapper hidden-xs">
@@ -1715,24 +1935,24 @@
     <script>
         const showrooms = {
             "tp": {
-                "title": "Tanjong Pagar",
-                "body": '<p class="mb-2">91 Tanjong Pagar Road S088512 </p><p class="mb-3"> Monday - Sunday: 12pm - 8.30pm<br><span class="h9"> (Last appointment at 7:30pm) </span></p>',
+                "title": `<i>Tanjong Pagar Showroom</i> `,
+                "body": '<p class="mb-3">91 Tanjong Pagar Road S088512 </p>  <div class="mb-3 h11">  Monday - Sunday: 12pm - 8.30pm </div>',
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-tjp.jpg",
                 "appointmentTime": ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm']
             },
             "jem": {
-                "title": "Jem",
-                "body": '<p class="mb-2">50 Jurong Gateway Rd, #01-60,<br>S608549</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-3"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
+                "title": `<i>JEM Showroom</i> `,
+                "body": '<p class="mb-3">50 Jurong Gateway Road, #01-60, S608549</p><div class="mb-3 h11"> Monday - Thursday: 11am - 9pm </br> Friday - Sunday: 11am - 9.30pm</div>',
 
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-jem.jpg",
-                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
+                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm']
 
             },
             "np": {
-                "title": "Northpoint City",
-                "body": '<p class="mb-2">Yishun Ave 2, North Wing, <br>#01-22 Northpoint City S769098</p><p class="mb-2"> Monday - Thursday: 11am - 9pm<br><span class="h9"> (Last appointment at 8pm) </span></p><p class="mb-2"> Friday - Sunday: 11am - 9.30pm<br><span class="h9"> (Last appointment at 8.30pm) </span></p>',
+                "title": `<i>Northpoint City Showroom</i> `,
+                "body": '<p class="mb-3">Yishun Avenue 2, North Wing, <br>#01-22 Northpoint City S769098</p><div class="mb-3 h11"> Monday - Thursday: 11am - 9pm </br> Friday - Sunday: 11am - 9.30pm</div>',
                 "image": "https://d213t4exkgxsjh.cloudfront.net/assets/images/store-np.jpg",
-                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm', '8:30 pm']
+                "appointmentTime": ['11:00 am', '11:30 am', '12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm', '8:00 pm']
 
             },
             "tam": {
@@ -1743,9 +1963,11 @@
             }
         }
 
-        const interest = ['Engagement Ring(45-60 mins)', 'Jewellery(45-60 mins)', 'Jewellery(45-60 mins)', 'Item Collection(15 mins)', 'Ring Resizing / Polishing'];
+        const interest = ['Engagement Ring (45-60 mins)', 'Wedding Bands (45-60 mins)', 'Jewellery (45-60 mins)', 'Custom-Made (45-60 mins)', 'Item Collection (15 mins)', 'Ring Resizing / Polishing (15 mins)'];
+
+
         let bookingData = {
-            "location": "Tanjong Pagar",
+            "location": "tp",
             "pax": "",
             "date": "",
             "time": "",
@@ -1765,9 +1987,14 @@
             // renderShowroom("tp");
         }
 
+
+
         let appointmentTime = showrooms.tp.appointmentTime;
 
-        let LocationPlaceHolder = showrooms.tp.body;
+        // let LocationPlaceHolder = showrooms.tp.body;
+        let LocationPlaceHolder = `<h6 class="mb-3">${showrooms.tp.title}</h6>
+                                        ${showrooms.tp.body} 
+                                    <button class="btn btn-blue mb-3 text-uppercase " onclick="changeStep('appointmentMain','appointmentForm')">Book Appointment</button><div class="h13"> *Last appointment will be 1 hour before closing!</div>`;
         let LocationImage = `<img src="${showrooms.tp.image}" alt=""
                                     class="w-100">` ;
 
@@ -1781,7 +2008,7 @@
 
             const data = `<h6 class="mb-3">${showroom.title}</h6>
                                         ${showroom.body} 
-                                    <button class="btn btn-blue " onclick="changeStep('appointmentMain','appointmentForm')">Book An Appointment</button>`;
+                                    <button class="btn btn-blue mb-3 text-uppercase " onclick="changeStep('appointmentMain','appointmentForm')">Book Appointment</button><div class="h13"> *Last appointment will be 1 hour before closing!</div>`;
 
             document.getElementById('showroomPlaceHolder').innerHTML = data;
             LocationPlaceHolder = data;
@@ -1795,7 +2022,7 @@
             // console.log(LocationImage);
 
 
-            bookingData['location'] = showroom.title;
+            bookingData['location'] = location;
             appointmentTime = showroom.appointmentTime;
 
         }
@@ -1806,7 +2033,7 @@
 
         function changeStep(currentId, changeId) {
             // const data = `Appointment @ ${bookingData.location}`;
-            const data = `<h3>Your Private Appointment</h3><hr><h5 class="text-uppercase">${bookingData.location}</h5>`;
+            const data = `<h3>Your Appointment</h3><hr><h5 class="text-uppercase">${showrooms[bookingData.location].title}</h5>`;
             document.getElementById('appointmentHeading').innerHTML = data;
             document.getElementById(currentId).style.display = "none";
             document.getElementById(changeId).style.display = "block";
@@ -1846,7 +2073,7 @@
 
         function addPax(pax, e) {
             bookingData['pax'] = pax;
-            let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
             x.disabled = false;
 
         }
@@ -1855,7 +2082,7 @@
 
             bookingData['date'] = e.target.value;
             if (bookingData['date'] && bookingData['time']) {
-                let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
                 x.disabled = false;
             }
 
@@ -1864,91 +2091,119 @@
         function addTime(e) {
             bookingData['time'] = e.target.value;
             if (bookingData['date'] && bookingData['time']) {
-                let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
                 x.disabled = false;
             }
         }
         function addInterest(index, e) {
             bookingData['interest'] = interest[index];
-            let x = e.target.closest('.panel-body').querySelector(".btn-primary");
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
             x.disabled = false;
 
         }
 
         function addCustomer(e) {
             e.preventDefault();
+            const contactNumber = document.getElementById("contactNumber").value;
 
-            bookingData['customer']['customerName'] = document.getElementById("customerName").value;
-            bookingData['customer']['email'] = document.getElementById("email").value;
-            bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
-            bookingData['customer']['budget'] = document.getElementById("budget").value;
-            bookingData['customer']['remarks'] = document.getElementById("remarks").value;
-
-            changeStep('step-4', 'step-5');
-
-            reviewBooking();
+            if (contactNumber && contactNumber.length >= 7) {
+                document.getElementById("errorMsgPhone").style.display = "none";
+                bookingData['customer']['customerName'] = document.getElementById("customerName").value;
+                bookingData['customer']['email'] = document.getElementById("email").value;
+                bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
+                bookingData['customer']['budget'] = "";
+                bookingData['customer']['remarks'] = document.getElementById("remarks").value;
+                changeStep('step-4', 'step-5');
+                reviewBooking();
+            } else {
+                document.getElementById("errorMsgPhone").style.display = "block";
+            }
         }
+
 
         function reviewBooking() {
 
+            let submitUrl = BASE_URL + 'customer/post/getappointment';
+            let formKey = jQuery('input[name="form_key"]').val();
+            let appDate = jQuery('#app-date').val();
+            let form = '<form method="post" action="' + submitUrl + '"><form>';
+            let location = showrooms[bookingData.location].title;
+
             const data = `  <div class="reviewTableWrapper">
-            <div>
-                <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Location : </div>
-                    <div class="col-xs-16">${bookingData.location}</div>
-                </div>
+        <input name="form_key" type="hidden" value="${formKey}">
+        <input type="hidden" name="shop-location" value="${bookingData.location}"/>
+            <input type="hidden" name="location" value="${bookingData.location}"/>
+            <input type="hidden" name="pax" value="${bookingData.pax}"/>
+            <input type="hidden" name="book_date" value="${appDate}"/>
+            <input type="hidden" name="book_time" value="${bookingData.time}"/>
+            <input type="hidden" name="interested" value="${bookingData.interest}"/>
+            <input type="hidden" name="name" value="${bookingData.customer.customerName}"/>
+            <input type="hidden" name="email" value="${bookingData.customer.email}"/>
+            <input type="hidden" name="contact" value="${bookingData.customer.contactNumber}"/>
+            <input type="hidden" name="budget" value="${bookingData.customer.budget}"/>
+            <input type="hidden" name="remarks" value="${bookingData.customer.remarks}"/>
+    <div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Location : </div>
+            <div class="col-xs-16">${location}</div>
+        </div>
 
-                <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Pax : </div>
-                    <div class="col-xs-16">${bookingData.pax}</div>
-                </div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Pax : </div>
+            <div class="col-xs-16">${bookingData.pax}</div>
+        </div>
 
-                <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Date & Time : </div>
-                    <div class="col-xs-16">${bookingData.date} (${bookingData.time})</div>
-                </div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Date & Time : </div>
+            <div class="col-xs-16">${appDate} (${bookingData.time})</div>
+        </div>
 
-                <div class="verticalStepCircle row">
-                    <div class="col-xs-8 title">Interested In : </div>
-                    <div class="col-xs-16">${bookingData.interest}</div>
-                </div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Interest : </div>
+            <div class="col-xs-16">${bookingData.interest}</div>
+        </div>
 
-                <div class="verticalStepCircle row">
-                    <div class="col-xs-24 title">Customer Details : </div>
-                </div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-24 title">Customer Details : </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-xs-8">Name : </div>
-                    <div class="col-xs-16">${bookingData.customer.customerName}</div>
-                </div>
+        <div class="row">
+            <div class="col-xs-8">Name : </div>
+            <div class="col-xs-16">${bookingData.customer.customerName}</div>
+        </div>
 
-                <div class="row">
-                    <div class="col-xs-8">Email : </div>
-                    <div class="col-xs-16">${bookingData.customer.email}</div>
-                </div>
+        <div class="row">
+            <div class="col-xs-8">Email : </div>
+            <div class="col-xs-16">${bookingData.customer.email}</div>
+        </div>
 
-                <div class="row">
-                    <div class="col-xs-8">Number : </div>
-                    <div class="col-xs-16">${bookingData.customer.contactNumber}</div>
-                </div>
+        <div class="row">
+            <div class="col-xs-8">Number : </div>
+            <div class="col-xs-16">${bookingData.customer.contactNumber}</div>
+        </div>
 
-                <div class="row">
-                    <div class="col-xs-8">Budget : </div>
-                    <div class="col-xs-16">${bookingData.customer.budget}</div>
-                </div>
+     
 
-                <div class="row">
-                    <div class="col-xs-8">Remarks : </div>
-                    <div class="col-xs-16">${bookingData.customer.remarks}</div>
-                </div>
+        <div class="row">
+            <div class="col-xs-8">Remarks : </div>
+            <div class="col-xs-16">${bookingData.customer.remarks}</div>
+        </div>
 
-            </div>
-        </div>`;
+    </div>
+    <div class="text-center">
+    <button class="btn btn-primary m-auto" type="submit">Confirm Booking</button>
+    <div class="h13 pt-3"> A summary of your appointment request will be sent to the email address provided. </div>
+
+    </div>
+    
+</div>`;
 
             document.getElementById('reviewTable').innerHTML = data;
 
             document.getElementById('LocationPlaceHolder').innerHTML = LocationPlaceHolder;
             document.getElementById('LocationImage').innerHTML = LocationImage;
+
+            jQuery('.reviewTableWrapper').wrapInner(form);
 
             // changeStep('booking-5', 'booking-6');
 
@@ -1994,6 +2249,15 @@
                 // });
             });
         });
+
+
+        function phoneValidation(val) {
+            if (val.length < 7) {
+                document.getElementById("errorMsgPhone").style.display = "block";
+            } else {
+                document.getElementById("errorMsgPhone").style.display = "none";
+            }
+        }
     </script>
 
     <script>

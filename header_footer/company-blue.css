@@ -1,0 +1,19 @@
+:root {
+    --companyblue: #9BB8D3;
+    --black: #606060;
+}
+
+.btn-primary{
+    background-color: var(--companyblue);
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+    /* min-width: 217px; */
+}
+.btn-primary:hover{
+    background-color: var(--black);
+}

@@ -7,10 +7,7 @@
                 $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
                     .appendTo('#newsletter-validate-detail');
             });
-
-
         </script>
-
     </div>
 
 
@@ -138,7 +135,6 @@
                                     <div class="newsletter-content">
                                         {{widget type="Magento\Cms\Block\Widget\Block"
                                         template="widget/static_block/default.phtml" block_id="78"}}
-
                                     </div>
                                 </div>
 
@@ -232,7 +228,7 @@
                                                             Conditions</a>
                                                     </li>
                                                     <li><a href="{{store url='privacy-policy'}}">Privacy</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-conflict">Conflict
+                                                    <li><a href="{{store url=''}}faq#conflict-free-diamonds">Conflict
                                                             Free
                                                             Diamonds</a></li>
                                                     <!-- <li><a href="{{store url='blog/share-your-love-story'}}">Submit Love
@@ -247,18 +243,18 @@
                                                 <ul id="footer-content-3" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='faq'}}">Free Shipping Worldwide</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-custom">Custom-Made
+                                                    <li><a href="{{store url=''}}faq#custom-made-products">Custom-Made
                                                             Orders</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-14day">14-Day
+                                                    <li><a href="{{store url=''}}faq#14-day-return-policy">14-Day
                                                             Returns</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-ringsize">Ring Size
+                                                    <li><a href="{{store url=''}}faq#ring-size--resizing-">Ring Size
                                                             &amp;
                                                             Resizing</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-upgrade">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-upgrade-program">Diamond
                                                             Upgrade Program</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-price">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-price-match-program">Diamond
                                                             Price Matching</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-lifetime">Lifetime
+                                                    <li><a href="{{store url=''}}faq#lifetime-warranty">Lifetime
                                                             Warranty</a></li>
                                                     <li><a href="{{store url='request-ring-sizer'}}">Free Ring Sizer</a>
                                                     </li>
@@ -481,12 +477,12 @@
                                                             Conditions</a>
                                                     </li>
                                                     <li><a href="{{store url='privacy-policy'}}"> Privacy</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-conflict"> Conflict
+                                                    <li><a href="{{store url=''}}faq#conflict-free-diamonds"> Conflict
                                                             Free
                                                             Diamonds</a></li>
-                                                    <li><a href="{{store url='refer-a-friend'}}">
-                                                            Refer A Friend
-                                                        </a></li>
+                                                    <!-- <li><a href="{{store url='blog/share-your-love-story'}}"> Submit
+                                                            Love
+                                                            Story</a></li> -->
                                                     <li><a href="{{store url='faq'}}"> FAQs</a></li>
                                                 </ul>
                                             </div>
@@ -501,18 +497,19 @@
                                                 <ul id="footer-content-3" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='faq'}}"> Free Shipping Worldwide</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-custom">Custom-Made
+                                                    <li><a href="{{store url=''}}faq#custom-made-products"> Custom-Made
                                                             Orders</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-14day">14-Day
+                                                    <li><a href="{{store url=''}}faq#14-day-return-policy"> 14-Day
                                                             Returns</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-ringsize">Ring Size
+                                                    <li><a href="{{store url=''}}faq#ring-size--resizing-"> Ring Size
                                                             &amp;
                                                             Resizing</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-upgrade">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-upgrade-program"> Diamond
                                                             Upgrade Program</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-price">Diamond
+                                                    <li><a href="{{store url=''}}faq#diamond-price-match-program">
+                                                            Diamond
                                                             Price Matching</a></li>
-                                                    <li><a href="{{store url=''}}faq#faq-lifetime">Lifetime
+                                                    <li><a href="{{store url=''}}faq#lifetime-warranty"> Lifetime
                                                             Warranty</a></li>
                                                     <li><a href="{{store url='request-ring-sizer'}}"> Free Ring
                                                             Sizer</a>
@@ -535,7 +532,6 @@
                                                 </ul>
                                             </div>
                                         </div>
-
 
                                         <div class="col-sm-8">
                                             <a href="{{store url='request-ring-sizer'}}" style="text-decoration: none;">
@@ -624,6 +620,7 @@
 <script>
     require(['jquery'], function ($) {
         $(document).ready(function () {
+
             $(".footer-collapse").click(function () {
                 var x = $(this).attr("aria-selected");
                 if (x === "true") {
@@ -631,7 +628,9 @@
                 } else if (x === "false") {
                     $(this).addClass("active");
                 }
+
             });
+
         });
     });
 </script>

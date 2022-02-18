@@ -1,0 +1,18 @@
+<script>
+
+    let SKU = "WR0003-8MM-pt900";
+    console.log(SKU);
+    let updatedPrice = "";
+    updatedPrice = `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDP0001-GVS100-14KW"}}`;
+
+
+    console.log(updatedPrice);
+
+    let updatedSKU = `update price - ${SKU}`;
+    console.log(updatedSKU);
+    updatedPrice = '{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="' + SKU + ' "}}';
+
+
+    console.log(updatedPrice);
+
+</script>

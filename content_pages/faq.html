@@ -2201,7 +2201,7 @@
                             <li><a href="#faq-price">Diamond Price Match Programme</a></li>
                             <li><a href="#faq-lifetime">Lifetime Warranty</a></li>
                             <li><a href="#faq-conflict">Conflict-Free Diamonds</a></li>
-                            <li><a href="#faq-refer">Refer-A-Friend</a></li>
+                            <li class="only-sg"><a href="#faq-refer">Refer-A-Friend</a></li>
                             <li><a href="#faq-locate">Locate Us</a></li>
                         </ul>
                     </nav>
@@ -3669,7 +3669,7 @@
                         </div>
 
                         <!-- refer a fri -->
-                        <div class="container-faq pt-3" id="faq-refer">
+                        <div class="container-faq pt-3 only-sg" id="faq-refer">
                             <h6> Refer-A-Friend
                             </h6>
                             <div class="panel-group"
@@ -3852,7 +3852,7 @@
 
                     var stop = ($(window).width() > 768) ? 84 : 180;
 
-                    window.history.pushState({}, null, BASE_URL + 'new-faq' + id);
+                    window.history.pushState({}, null, BASE_URL + 'faq' + id);
 
                     $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 100);
 

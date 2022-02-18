@@ -242,7 +242,7 @@
 
     .perfect-fit .diamond-image-bg {
       height: 400px;
-      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+      background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/kiss.png);
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -705,6 +705,19 @@
       padding: 0;
     }
 
+    .show-below-480 {
+      display: none;
+    }
+
+    .hide-below-480 {
+      display: block;
+    }
+
+    .mt2021 h3.forher-background,
+    .mt2021 h3.forhim-background {
+      margin-bottom: 0px;
+    }
+
 
 
     @media (max-width: 1199.98px) {
@@ -715,6 +728,13 @@
     }
 
     @media (max-width: 767.98px) {
+      .forher-background {
+        background-color: var(--lightorange);
+      }
+
+      .forhim-background {
+        background-color: var(--lightblue);
+      }
 
       .wedding-banner-bg {
         height: auto;
@@ -748,6 +768,16 @@
       #for-him-slider {
         padding: 0;
         margin: 40px auto;
+      }
+    }
+
+    @media (max-width:480px) {
+      .show-below-480 {
+        display: block;
+      }
+
+      .hide-below-480 {
+        display: none;
       }
     }
   </style>
@@ -792,12 +822,16 @@
 
         <!-- <h1 class="text-center">Wedding Bands</h1> -->
 
-        <h3 class="text-center py-3">For Her</h3>
+        <div class="row" style="display: block;">
+          <h3 class="text-center py-3 forher-background">For Her</h3>
+        </div>
 
-        <div class="row box for-her-bg mb-4">
+        <div class="row box for-her-bg ">
           <div class="col-xs-24 p-0 visible-xs">
-            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Picture768x300.jpg" class="w-100"
-              alt="">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Picture768x300.jpg"
+              class="w-100 hide-below-480" alt="">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg"
+              class="w-100 show-below-480" alt="">
           </div>
           <div class="col-sm-18 col-xs-24 ">
 
@@ -851,18 +885,23 @@
 
 
           <div class="col-sm-6 p-0 hidden-xs">
-            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg" class="w-100" alt="">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-W-Pictuer.jpg" class="w-100 " alt="">
+
           </div>
 
         </div>
 
 
+        <div class="row" style="display: block;">
+          <h3 class="text-center py-3 forhim-background">For Him</h3>
+        </div>
 
-        <h3 class="text-center pb-3">For Him</h3>
         <div class="row box for-him-bg">
           <div class="col-sm-6 p-0 visible-xs">
-            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture768x300.jpg" class="w-100"
-              alt="">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture768x300.jpg"
+              class="w-100 hide-below-480" alt="">
+            <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture.jpg"
+              class="w-100 show-below-480" alt="">
           </div>
           <div class="col-sm-6 p-0 hidden-xs">
             <img src="https://www.michaeltrio.com/pub/media/0newweddingpage/MT2-WB-M-Picture.jpg" class="w-100" alt="">
@@ -1048,7 +1087,7 @@
       <div class="container">
         <div class="row perfect-fit-bg">
           <div class="visible-xs">
-            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png"
+            <img src="https://www.michaeltrio.com/pub/media/0newengagementpage/kiss.png"
               alt="MT2-Wedding-Landing_-p5_Kiss.png" class="img-responsive w-100">
           </div>
 

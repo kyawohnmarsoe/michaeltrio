@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <style>
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -88,10 +87,6 @@
         .p-wrapper {
             max-width: 900px;
             margin: auto;
-        }
-
-        .mt2021 .text-white {
-            color: white;
         }
 
         .mt2021 h1,
@@ -476,7 +471,6 @@
         }
 
 
-
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         .font-weight-bold {
             font-weight: 700;
@@ -537,27 +531,27 @@
             font-size: 17px;
         }
 
-        .mt2021 .h7 {
+        .h7 {
             font-size: 18px;
         }
 
-        .mt2021 .h8 {
+        .h8 {
             font-size: 16px;
         }
 
-        .mt2021 .h9 {
+        .h9 {
             font-size: 14px;
         }
 
-        .mt2021 .h10 {
+        .h10 {
             font-size: 13px;
         }
 
-        .mt2021 .h11 {
+        .h11 {
             font-size: 12px;
         }
 
-        .mt2021 .h12 {
+        .h12 {
             font-size: 11px;
         }
 
@@ -590,11 +584,11 @@
                 font-size: 17px;
             }
 
-            .mt2021 .h7 {
+            .h7 {
                 font-size: 16px;
             }
 
-            .mt2021 .h8 {
+            .h8 {
                 font-size: 15px;
             }
 
@@ -629,128 +623,354 @@
                 font-size: 14px;
             }
 
-            .mt2021 .h7 {
+            .h7 {
                 font-size: 15px;
             }
 
-            .mt2021 .h8 {
+            .h8 {
                 font-size: 14px;
             }
 
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ About @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-        p {
-            padding: 0;
-            letter-spacing: 0.02em;
+        .about-small-wrapper {
+            max-width: 300px;
         }
 
-        button:hover {
-            border-color: transparent;
+        .couple-img-1 {
+            margin-top: -150px;
+            /* margin-bottom: 50px; */
+            /* margin-left: 10%; */
+            width: 80%;
         }
 
-        .ring-iframe {
-            width: 100%;
-            height: 350px;
+        h3.text-lightorange {
+            font-size: 38px;
+            color: #FFB493;
+            font-weight: 600;
+            line-height: 1.2em;
         }
 
-        .ring-sizer h1,
-        .ring-sizer h2,
-        .ring-sizer h3,
-        .ring-sizer h4,
-        .ring-sizer h5,
-        .ring-sizer h6,
-        .ring-sizer p,
-        .ring-sizer .h7,
-        .ring-sizer .h8,
-        .ring-sizer .h9,
-        .ring-sizer .h10,
-        .ring-sizer .h11,
-        .ring-sizer .h12 {
-            color: var(--black);
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .about-bg-blue {
+            background-color: #9FB9D0;
+        }
+
+        .visible-480 {
+            display: none;
+        }
+
+        .bg-green {
+            background-color: #92BAAE;
+            min-height: 300px;
+        }
+
+        .bg-green .h3 {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.2em;
+        }
+
+        .about-large-wrapper {
+            max-width: 650px;
+        }
+
+        @media (max-width:991.98px) {
+            h3.text-lightorange {
+                font-size: 35px;
+            }
+
+
+        }
+
+        @media (max-width:767.98px) {
+
+
+            .couple-img-1 {
+                width: 75%;
+                margin-top: -81px;
+                margin-bottom: 50px;
+                margin-left: 6%;
+            }
+
+            .pl-xs-7 {
+                padding-left: 7rem;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem;
+            }
+
+            .pb-xs-3 {
+                padding-bottom: 2rem;
+            }
+
+            .about-small-wrapper {
+                max-width: 100%;
+            }
+
+
+        }
+
+        @media (max-width:480px) {
+            .pt-480-5 {
+                padding-top: 3rem;
+            }
+
+            .pl-xs-7 {
+                padding-left: 1rem;
+            }
+
+            .visible-480 {
+                display: block;
+            }
+
+            .couple-img-1 {
+                display: none;
+            }
+
+            .couple-img-1.visible-xs {
+                display: none !important;
+            }
         }
     </style>
-
-
-    <script>
-        require(['jquery'], function ($) {
-
-            $(document).ready(function () {
-
-                var submit = $('button');
-                submit.removeClass(" action submit primary");
-                submit.addClass("btn btn-blue small-btn");
-
-            });
-        });
-    </script>
 </head>
 
 <body>
-
-    <div class="mt2021 mt-3">
-        <section class="ring-sizer">
+    <div class="mt2021">
+        <section>
             <div class="container">
+                <div>
+                    <img src="https://www.michaeltrio.com/pub/media/0about/about.png" alt="" class="w-100">
+                </div>
+            </div>
+        </section>
 
-                <h3 class="pl-2">Complimentary Ring Sizer</h3>
+        <section>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-sm-24">
+                        <h3 class="text-center">How Do You Make Something Last Forever? </h3>
+                    </div>
+                </div>
 
-                <div class=" pt-3 ">
-
-                    <div class="col-md-12 ">
-                        <div class="row">
-                            <div class="col-md-20 col-sm-24">
-                                <p class="h9 mb-3" style="display:none;">
-                                    Michael trio would be glad to send you a complimentary ring sizer. Simply enter your
-                                    information below and we'll send you one right away.
-                                </p>
-                                <p class="h9 mb-3">Complete the form below and we'll send a complimentary ring sizer
-                                    your way!</p>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="mb-5 ">
-                            {{block class="Michaeltrio\Customer\Block\RingSizer"
-                            template='Michaeltrio_Customer::ring-sizer.phtml'}}
-                        </div>
-
-
-
-                        <div>
-                            <h5 class=" mb-4 font-weight-normal">Free Shipping Worldwide</h5>
-                            <div class="mb-3">
-                                <h6 class="font-weight-normal">International</h6>
-                                <p class="h9">Requests may take between 1-3 weeks to receive.</p>
-                            </div>
-
-                            <div class="mb-3">
-                                <h6 class="font-weight-normal">Singapore &amp; Malaysia</h6>
-                                <p class="h9">Requests should reach you between 3-7 working days.</p>
-                            </div>
+                <div class="row py-sm-5">
+                    <div class="col-sm-12">
+                        <div class="about-small-wrapper m-auto pb-xs-3">
+                            <p class="h9">
+                                <em>
+                                    Three sons, three generations, three values. Every engagement ring and fine
+                                    jewellery
+                                    piece
+                                    that bears our name is inspire d by the desire to create something lasting together,
+                                    the
+                                    lessons our father taught us, and these stories that have endured from over 40 years
+                                    ago.
+                                </em>
+                            </p>
                         </div>
                     </div>
+                    <div class="col-sm-12 ">
+                        <div>
+                            <p class="mb-3">
+                                Our story is a story of love.
+                            </p>
+                            <p class="mb-3">
+                                Of a boy for his father following in the family trade crafting precious metal regalia
+                                for
+                                sultans and royals.
+                            </p>
+                            <p class="mb-3">
+                                Of that boy, now a man, for the young woman who would be his wife.
+                            </p>
+                            <p class="mb-3">
+                                Of their sons who, seeing how devoted they were to each other, followed their footsteps
+                                with
+                                strong, loving unions of their own.
+                            </p>
+                            <p class="mb-3">
+                                Of three sons for their father, honouring his most cherished values of family, trust,
+                                and—above all—love, with a lasting tribute to his legacy, the Michael Trio company.
 
-                    <div class="col-md-12">
-                        <div class="mb-5 ">
-                            <iframe class="ring-iframe"
-                                src="https://www.youtube.com/embed/KariIFPqLU8?rel=0&showinfo=1&modestbranding=1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row about-bg-blue my-5">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0about/L1.jpg" alt="" class="w-100 visible-480">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="text-center">
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P1.jpg" alt=""
+                                class=" couple-img-1 hidden-xs">
+                            <img src="https://www.michaeltrio.com/pub/media/0about/L1.jpg" alt=""
+                                class=" couple-img-1 visible-xs">
+
+                        </div>
+                    </div>
+                    <div class="col-ms-12 col-sm-12 box">
+                        <div class="pl-xs-7 pb-xs-5 pt-480-5">
+                            <h3 class="text-left text-white">Every love has a story</h3>
+                            <h3 class="text-left text-lightorange pt-4">Make yours one that stands the test of time.
+                            </h3>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-24">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-10 pl-0 box hidden-xs">
+                        <div>
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P2.jpg" alt="" class="w-100 m-auto">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-14 box">
+                        <div class="text-left">
+                            <div>
+                                <p class="mb-3">
+                                    How we conduct our business makes it possible for us to make a quality jewellery
+                                    piece
+                                    faster and at a lower cost, efficiencies we pass on to you and that you benefit
+                                    from.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    When High Standards Meet Sincere Paragmatism
+                                </h5>
+                                <div class=" visible-xs mb-3">
+                                    <img src="https://www.michaeltrio.com/pub/media/0about/L2.jpg" alt=""
+                                        class="w-100 m-auto ">
+                                </div>
+                                <p class="mb-3">
+                                    We make our own jewellery, which means we do not stock large inventories, nor are
+                                    subject to
+                                    the prices and timetables of third party producers
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    Love Doesn't Have To Wait
+                                </h5>
+                                <p class="mb-3">
+                                    Jewellery retailers are able to furnish an engagement ring with little to no custom
+                                    work
+                                    in three to six months. We are proud to say that customising an engagement ring for
+                                    you
+                                    may take as little as one month. You may customise online or let our consultants
+                                    guide
+                                    you in-store. Either way, our team of designers assure that your preferences are
+                                    executed with care.
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <h5 class="mb-3">
+
+                                    Or Sacrifice
+                                </h5>
+                                <p class="mb-3">
+                                    Our diamond stones are competitively priced at 20 to 40 per cent less than others on
+                                    the
+                                    market. This does not mean they are of lesser quality. On the contrary, we provide
+                                    better quality for your investment and reduce traditionally high mark-ups for three
+                                    reasons: one, we make our own jewellery; two, we do not have too many stores to
+                                    operate
+                                    and maintain; and three, we do not let you carry the extra cost of a middleman
+                                    because
+                                    there is no middleman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-24 bg-green box">
+                        <div class="py-5 ">
+                            <h3 class="text-center about-large-wrapper text-white">
+                                We make exceptional craftsmanship, service, and quality available at a remarkable price.
+
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class=" visible-xs mb-5">
+                        <img src="https://www.michaeltrio.com/pub/media/0about/L3.jpg" alt="" class="w-100 m-auto ">
+                    </div>
+                    <div class="col-sm-12 box">
+                        <div class="about-small-wrapper ">
+
+
+                            <p class="text-left mb-3">
+
+
+                                Many of the advantages we have as makers of fine jewellery lie in how our father began
+                                his
+                                business designing and crafting medallions for sultans and other royals.
+                            </p>
+                            <p class="text-left mb-3">
+                                Passing skills and lessons perfected over 40 years down to our generation, this
+                                invaluable
+                                expertise serves as the foundation for Michael Trio. Our gemstone and precious metal
+                                selection process is rigorous. Our level of craftsmanship is fine to the last detail.
+                            </p>
+                            <p class="text-left mb-3">
+                                One might even say that every jewellery piece is simply, literally, fit for royalty.
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 pr-0">
+                        <div class="hidden-xs">
+                            <img src="https://www.michaeltrio.com/pub/media/0about/P3.jpg" alt="" class="w-100 m-auto ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
     </div>
-
-
 </body>
 
 </html>

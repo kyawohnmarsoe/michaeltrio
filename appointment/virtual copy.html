@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .mt2021 .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue) !important;
+            transition: background-color 2s;
+            border: none !important;
+        }
+
+        .mt2021 .btn-blue:hover {
+            color: var(--white) !important;
+            background-color: var(--black) !important;
+            border: none !important;
+        }
+
+        .mt2021 .btn-primary:hover {
+            color: var(--white) !important;
+            background-color: var(--black) !important;
+            /* border: none !important; */
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 140px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .mt2021 .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .desktop-margin-top {
+            margin-top: 3rem;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+            .desktop-margin-top {
+                margin-top: 0px;
+            }
+
+            .mb-5.remove-margin-mobile {
+                margin-bottom: 0 !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+            .mobile-align-center text-center {
+                text-align: center;
+            }
+
+            .mt2021 .mobile-align-center text-center . {
+                float: none !important;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                height: 40px;
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12,
+        .mt2021 .h13,
+        .mt2021 .h14,
+        .mt2021 .h15 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        .mt2021 .h13 {
+            font-size: 10px;
+        }
+
+        .mt2021 .h14 {
+            font-size: 9px;
+        }
+
+        .mt2021 .h15 {
+            font-size: 8px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 .appointmentPage h1 {
+                font-size: 28px;
+                margin-bottom: 0;
+            }
+
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Appointment @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .light-blue-border {
+            border: 2px solid var(--companyblue);
+        }
+
+        .mt2021 .btn-blue-outline {
+            min-width: 140px;
+            /* margin-bottom: 10px; */
+            /* margin-right: 10px; */
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .mt2021 .btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .mt2021 .btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .mt2021 .showrooms-group .btn-blue-outline {
+            display: block;
+            min-width: 100%;
+        }
+
+        .mt2021 .showrooms-group .btn-blue-outline:focus,
+        .mt2021 .showrooms-group .btn-blue-outline:active {
+            outline: none;
+        }
+
+        .mt2021 .bg-lightyellow {
+            background-color: #FFFCF3;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Stepper Form @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        .go-back {
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 0px;
+            cursor: pointer;
+            color: var(--companyblue);
+            text-transform: uppercase;
+        }
+
+
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .int-image {
+            width: 88px;
+            height: 88px;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .int-type,
+        .platform-type .light-blue-border {
+            cursor: pointer;
+        }
+
+        .int-type.active,
+        .platform-type.active .light-blue-border {
+            /* background-color: #9BB8D3; */
+            background-color: #F0F6FB;
+        }
+
+
+
+
+
+
+
+
+
+        /* Latest compiled and minified CSS included as External Resource*/
+
+        /* Optional theme */
+
+        /*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
+
+
+        .stepwizard-step p {
+            margin-top: 0px;
+            color: #666;
+
+        }
+
+        .stepwizard-row {
+            /* display: table-row; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .stepwizard {
+            display: table;
+            width: 100%;
+            position: relative;
+        }
+
+        .stepwizard-step button[disabled] {
+            /*opacity: 1 !important;
+    filter: alpha(opacity=100) !important;*/
+        }
+
+        .stepwizard .btn.disabled,
+        .stepwizard .btn[disabled],
+        .stepwizard fieldset[disabled] .btn {
+            opacity: 1 !important;
+            color: #bbb;
+        }
+
+        /* .stepwizard-row:before {
+            bottom: 14px;
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            z-index: 0;
+        } */
+
+        .stepwizard-step {
+            display: table-cell;
+            text-align: center;
+            position: relative;
+            height: 40px;
+        }
+
+        .stepwizard .btn-suc {
+            background-color: var(--companyblue);
+        }
+
+        .stepwizard .btn-suc:hover {
+            border-color: var(--darkblue);
+        }
+
+        .mt2021 .stepwizard .btn {
+            min-width: auto;
+            border-radius: 15px;
+        }
+
+        .mt2021 .btn-circle {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.428571429;
+            border-radius: 15px;
+            border: 4px solid var(--companyblue);
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 46%;
+        }
+
+        .mt2021 .stepwizard-step:before,
+        .mt2021 .stepwizard-step::after {
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: var(--companyblue);
+            position: absolute;
+            bottom: 8px;
+
+        }
+
+        .mt2021 .stepwizard-step:before {
+            left: 0;
+        }
+
+        .mt2021 .stepwizard-step:after {
+            right: 0;
+        }
+
+        .mt2021 .stepwizard-step:first-child:before {
+            content: none;
+        }
+
+        .mt2021 .stepwizard-step:last-child:after {
+            content: none;
+        }
+
+
+        #reviewTable {
+            margin: auto;
+        }
+
+        #reviewTable .verticalStepCircle.row {
+            line-height: 50px;
+            position: relative;
+            display: flex;
+
+        }
+
+        #reviewTable .row {
+            line-height: 40px;
+
+        }
+
+        #reviewTable .verticalStepCircle:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: var(--companyblue);
+            border: 4px solid var(--companyblue);
+            border-radius: 15px;
+            display: inline-block;
+            position: absolute;
+            bottom: 16px;
+            left: -40px;
+        }
+
+        #reviewTable .verticalStepCircle:after {
+            content: "";
+            width: 4px;
+            height: 50px;
+            position: absolute;
+            bottom: 16px;
+            left: -33px;
+            background-color: var(--companyblue);
+        }
+
+        #reviewTable .verticalStepCircle:first-child:after {
+            content: none;
+        }
+
+        .reviewTableWrapper {
+            max-width: 550px;
+            margin: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .verticalStepCircle .title {
+            font-weight: 700;
+        }
+
+        #appointmentForm .light-blue-border {
+            border-radius: 8px;
+        }
+
+        .mt2021 .appointmentPage p {
+            font-size: 14px;
+            /* word-spacing: 3px; */
+            /* padding: 0 5px; */
+        }
+
+        .mt2021 .appointmentPage .h11 {
+            font-size: 12px;
+        }
+
+        .appointmentWrapper {
+            max-width: 790px;
+            margin: auto;
+        }
+
+        .mt2021 .appointmentPage .btn {
+            font-size: 14px;
+        }
+
+        .mt2021 .text-lightblue {
+            color: var(--companyblue);
+        }
+
+        #appointmentForm input[type="text"],
+        #appointmentForm input[type="email"],
+        #appointmentForm input[type="number"] {
+            width: 100%;
+            border-color: var(--companyblue);
+            height: 35px;
+            line-height: 27px;
+            border-width: 1px;
+        }
+
+
+
+        #appointmentForm textarea {
+            width: 100%;
+            height: auto;
+            /* margin-top: 10px; */
+            border-color: var(--companyblue);
+            line-height: 24px;
+            border-width: 1px;
+        }
+
+        #appointmentForm textarea:focus {
+            outline: none !important;
+            border-color: var(--companyblue) !important;
+            box-shadow: none;
+            outline: none;
+        }
+
+        #appointmentForm input[type="date"],
+        #appointmentForm select {
+            width: 100%;
+            padding-left: 5px;
+            border-radius: 0px;
+            border-color: var(--companyblue);
+            height: 35px;
+            line-height: 27px;
+            border-width: 1px;
+        }
+
+        .mt2021 #appointmentForm .panel-body {
+            padding: 0px;
+        }
+
+        #showroomSelect {
+            background-color: #fff;
+            border: 2px solid #9BB8D3;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: #9BB8D3;
+            text-align: center;
+        }
+
+        #professional-services.owl-theme .owl-dots .owl-dot span {
+            background-color: #fff;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #E48A62;
+        }
+
+        #professional-services.owl-theme .owl-dots .owl-dot.active span,
+        #professional-services.owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #E48A62;
+        }
+
+        #what-to-expect.owl-theme .owl-dots .owl-dot span {
+            background-color: #fff;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #E4C562;
+        }
+
+        #what-to-expect.owl-theme .owl-dots .owl-dot.active span,
+        #what-to-expect.owl-theme .owl-dots .owl-dot:hover span {
+            background-color: #E4C562;
+        }
+
+        #LocationPlaceHolder button {
+            display: none;
+        }
+
+        .stepwizard-step.active .btn:before {
+            font-family: FontAwesome;
+            content: "\f0d7";
+            position: absolute;
+            top: -30px;
+            left: 0px;
+            color: var(--companyblue);
+            font-size: 20px;
+            display: none;
+
+        }
+
+        .stepwizard-step.active .step-title {
+            text-decoration: underline !important;
+        }
+
+        .step-title {
+            display: none;
+        }
+
+        a.disabled {
+            cursor: not-allowed;
+        }
+
+        /* .mt2021 a.change-to-virtual {
+            transition: all 1s;
+        }
+
+        .mt2021 a.change-to-virtual:hover {
+            background-color: var(--companyblue);
+        } */
+
+        .v-exp img {
+            border-radius: 50%;
+            border: 0px;
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        }
+
+        .mt2021 #appointmentForm .small,
+        small {
+            font-size: 95%;
+        }
+
+        .margin-lg-r10 {
+            margin-right: 10px !important;
+
+        }
+
+        .margin-lg-b10 {
+
+            margin-bottom: 10px !important;
+        }
+
+        .margin-sm-b10 {
+
+            margin-bottom: 0px !important;
+        }
+
+        .mx-lg-10 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #finalDetail p {
+            line-height: 22px;
+        }
+
+        @media (max-width:767.98px) {
+            .mx-lg-10 {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .margin-lg-r10 {
+                margin-right: 0px !important;
+
+            }
+
+            .margin-lg-b10 {
+
+                margin-bottom: 0px !important;
+            }
+
+            .margin-sm-b10 {
+
+                margin-bottom: 10px !important;
+            }
+
+            .mt2021 #appointmentForm .small,
+            small {
+                font-size: 95%;
+            }
+
+            #reviewTable .row {
+                line-height: 30px;
+
+            }
+
+            #showroomImage,
+            #LocationImage {
+                margin-bottom: 20px;
+            }
+
+            .mt2021 .btn-circle {
+                left: 40%;
+            }
+
+            .reviewTableWrapper {
+                padding-left: 22px;
+                padding-right: 22px;
+                font-size: 13px;
+                max-width: 422px;
+
+            }
+
+            #reviewTable .verticalStepCircle:after {
+                left: -18px;
+            }
+
+            #reviewTable .verticalStepCircle:before {
+                left: -26px
+            }
+
+            .mt2021 .virtual-image {
+                margin-bottom: 20px;
+            }
+
+            .light-blue-border {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .remove-row-margin-only-on-small {
+                margin: 0;
+            }
+
+
+        }
+
+        @media (max-width:445px) {
+
+            .mt2021 .formBtnGroup {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .mt2021 .formBtnGroup .btn {
+                min-width: 47%;
+                margin: 0;
+            }
+
+            #reviewTable .verticalStepCircle:before,
+            #reviewTable .verticalStepCircle:after {
+                content: none;
+            }
+
+            .reviewTableWrapper {
+                padding-left: 5px;
+                padding-right: 5px;
+
+            }
+        }
+
+        @media (max-width:394.98px) {
+
+
+
+            .mt2021 #appointmentForm .small,
+            small {
+                font-size: 75%;
+            }
+
+            .reviewTableWrapper {
+                font-size: 11px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mt2021">
+
+        <div class="appointmentPage">
+
+            <!-- Main  -->
+            <div id="appointmentMain" style="display: block;">
+                <section class="bg-lightblue py-3">
+                    <div class="container appointmentWrapper">
+                        <h1 class="text-center">Virtual Appointment</h1>
+                    </div>
+                </section>
+                <section class="desktop-margin-top">
+                    <div class="container appointmentWrapper">
+                        <!-- <h3 class="text-center mb-4"></h3> -->
+
+                        <div class="ch-store">
+
+                            <div class=" bg-lightblue row py-3">
+                                <div class="col-sm-8 col-md-8 box">
+                                    <img src="https://www.michaeltrio.com/pub/media/0appointment/virtual.jpg" alt=""
+                                        class="w-100 virtual-image">
+                                </div>
+                                <div class="col-sm-16 col-md-16 box">
+                                    <div class="py-3">
+
+                                        <p class="mb-3">
+                                            Enjoy the Michael Trio experience at the comfort of your home.
+                                            <br><br>
+                                            Request for a
+                                            complimentary Google Hangouts consultation and our jewellery experts will
+                                            guide you
+                                            through the process of customising your ideal jewellery.
+
+                                        </p>
+                                        <button class="btn btn-blue"
+                                            onclick="changeStep('appointmentMain','appointmentForm')">Book
+                                            Appointment</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row py-5 remove-row-margin-only-on-small">
+                                <div class="col-md-24 col-xs-24 light-blue-border box py-4">
+                                    <a href="http://new.michaeltrio.com/new-appointment" class="textblack">
+                                        <div>
+                                            <div>Change to:</div>
+                                            <h1>In-Store Appointment</h1>
+                                            <!-- <div class="text-center m-auto">
+                                            <a href="http://new.michaeltrio.com/new-appointment"
+                                                class="btn btn-blue-outline ">Singapore</a>
+                                            <a href="http://new.michaeltrio.com/new-appointment"
+                                                class="btn btn-blue-outline">Malaysia</a>
+                                        </div> -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Main  -->
+
+            <!-- Form  -->
+
+            <div id="appointmentForm" style="display: none;">
+                <section class="bg-lightblue py-5">
+                    <div class="container">
+                        <h1 class="text-center">Virtual Appointment</h1>
+                    </div>
+                </section>
+                <section class="pt-0">
+                    <div class="container">
+                        <div class="stepwizard">
+                            <div class="stepwizard-row setup-panel">
+                                <div class="stepwizard-step step-1 col-xs-6 col-sm-3 px-0">
+                                    <p> <a href="#step-1" class="step-title"><small>Platform</small></a></p>
+                                    <a href="#step-1" type="button" class="btn btn-suc btn-circle "></a>
+
+                                </div>
+                                <div class="stepwizard-step step-2 col-xs-6 col-sm-3 px-0">
+                                    <p><a href="#step-2" class=" step-title disabled"><small>Date & Time</small></a></p>
+                                    <a href="#step-2" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                                <div class="stepwizard-step step-3 col-xs-6 col-sm-3 px-0">
+                                    <p><a href="#step-3" class=" step-title disabled"><small>Interest</small></a>
+                                    </p>
+                                    <a href="#step-3" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                                <div class="stepwizard-step step-4 col-xs-6 col-sm-3 px-0">
+                                    <p><a href="#step-4" class=" step-title disabled"><small>Details</small></a></p>
+                                    <a href="#step-4" type="button" class="btn btn-default btn-circle disabled"></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <div class="container appointmentWrapper">
+                        <form role="form" onsubmit="addCustomer(event)">
+                            <!-- Platform -->
+                            <div class="panel panel-primary setup-content" id="step-1">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5  remove-row-margin-only-on-small">
+                                        <div class="col-xs-24  p-0">
+                                            <span class="go-back"
+                                                onclick="changeStep('appointmentForm','appointmentMain')">
+                                                &#60;
+                                                Back
+                                            </span>
+                                            <div class="py-3 text-center m-auto ">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Choose Your
+                                                    Platform
+                                                </h3>
+
+                                                <p class="mb-4 ">
+                                                    Enjoy a complimentary 40 - 60 minute appointment&nbsp;via
+                                                    Google&nbsp;Hangouts&nbsp;or&nbsp;WhatsApp!
+
+                                                </p>
+
+                                                <div class="row justify-content-center ">
+
+                                                    <div class=" col-sm-12  box platform-type mb-3 ">
+                                                        <div class="mx-lg-10 light-blue-border w-100">
+
+                                                            <div class="   p-3  mx-0 " style="display: flex;"
+                                                                onclick="addPlatform('Google Hangouts',event)">
+
+
+                                                                <div class="box w-100">
+                                                                    <div>
+                                                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/Google-Hangouts.png"
+                                                                            alt="" style="width:60px;" />
+                                                                        <h6 class="pt-3">Google Hangouts</h6>
+
+                                                                        <!-- <ul class="h11">
+                                                                        <li>45-60 Minute Appointment </li>
+                                                                        <li> VIdeo Call</li>
+                                                                        <li> On a laptop or Phone</li>
+                                                                    </ul> -->
+                                                                        <p class="h11">
+                                                                            Talk to us via Google Hangouts
+
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                    <div class=" col-sm-12 box  platform-type mb-3 ">
+                                                        <div class="mx-lg-10 light-blue-border w-100">
+                                                            <div class="  p-3  mx-0" style="display: flex;"
+                                                                onclick="addPlatform('WhatsApp',event)">
+
+                                                                <div class=" w-100">
+                                                                    <div>
+                                                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/whatsapp-icon.png"
+                                                                            alt="" style="width:60px;" />
+                                                                        <h6 class="pt-3">WhatsApp</h6>
+
+                                                                        <!-- <ul class="h11">
+                                                                        <li> Chat with our Sale Staff </li>
+                                                                        <li> On a laptop or Phone</li>
+                                                                        <li> Option for Video or Voice call.</li>
+                                                                    </ul> -->
+                                                                        <p class="h11">Chat with us via WhatsApp
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('appointmentForm','appointmentMain')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <!-- Time / Date -->
+                            <div class="panel panel-primary setup-content " id="step-2">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5  remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
+                                            <span class="go-back" onclick="changeStep('step-2','step-1')"> &#60; Back
+                                            </span>
+
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Date & Time
+                                                    Preference</h3>
+                                                <div class="row justify-content-center">
+                                                    <div class=" text-center col-xs-24 col-sm-10 col-md-10 mb-3">
+                                                        <h6 class="mb-3">Appointment Date</h6>
+                                                        <!-- <input type="date" onchange="addDate(event)"
+                                                            id="AppointmentDate"
+                                                            onfocus="this.min=new Date().toISOString().split('T')[0]"
+                                                            value="20-12-2021"> -->
+                                                        <div class="field">
+
+                                                            <input type="text" class="input-text" id="app-date"
+                                                                style="width: 100%" name="app-date" required
+                                                                onchange="addDate(event)" placeholder="dd/mm/yyyy" />
+                                                        </div>
+                                                        <script>
+                                                            require([
+                                                                'jquery',
+                                                                'mage/translate',
+                                                                'mage/calendar'
+                                                            ], function ($, $t) {
+                                                                $('#app-date').calendar({
+                                                                    changeMonth: true,
+                                                                    changeYear: true,
+                                                                    showButtonPanel: true,
+                                                                    currentText: $t('Go Today'),
+                                                                    closeText: $t('Close'),
+                                                                    showWeek: false,
+                                                                    dateFormat: 'dd/MM/yyyy',
+                                                                    minDate: '0'
+                                                                });
+                                                            })
+                                                        </script>
+                                                    </div>
+                                                    <div class=" text-center col-xs-24 col-sm-10 col-md-10 mb-3">
+
+                                                        <h6 class="mb-3">Appointment Time</h6>
+                                                        <div id="appointmentTime"></div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-2','step-1')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Interested In -->
+                            <div class="panel panel-primary setup-content" id="step-3">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5  remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
+                                            <span class="go-back" onclick="changeStep('step-3','step-2')"> &#60;
+                                                Back
+                                            </span>
+
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-4 text-lightblue text-uppercase">Interested In
+                                                </h3>
+
+                                                <div class="row justify-content-center ">
+                                                    <div class="col-sm-12 col-xs-24 ">
+                                                        <div class="light-blue-border int-type mb-3 mx-0 text-center"
+                                                            style="display: flex;" onclick="addInterest(0,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/PR.png"
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Engagement Ring</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="light-blue-border int-type mb-3 mx-0 text-center"
+                                                            style="display: flex;" onclick="addInterest(2,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/jewelry.png"
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100 ">
+                                                                <div>
+                                                                    <h6>Jewellery</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-sm-12 col-xs-24 ">
+                                                        <div class="light-blue-border int-type mb-3 mx-0 text-center"
+                                                            style="display: flex;" onclick="addInterest(1,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/WB.png"
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100 ">
+                                                                <div>
+                                                                    <h6>Wedding Bands</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="light-blue-border int-type mb-3 mx-0 text-center"
+                                                            style="display: flex;" onclick="addInterest(3,event)">
+                                                            <img src="https://www.michaeltrio.com/pub/media/0appointment/custom-made.png"
+                                                                alt="" class="int-image m-auto">
+                                                            <div class="box w-100">
+                                                                <div>
+                                                                    <h6>Custom-Made Jewellery</h6>
+                                                                    <p class="h11">45-60 Minute Appointment</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-3','step-2')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="button"
+                                                disabled>Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Customer -->
+                            <div class="panel panel-primary setup-content " id="step-4">
+
+                                <div class="panel-body">
+                                    <div class="row pt-5  remove-row-margin-only-on-small">
+                                        <div class="col-xs-24   p-0">
+                                            <span class="go-back" onclick="changeStep('step-4','step-3')"> &#60;
+                                                Back
+                                            </span>
+
+                                            <div class="py-3">
+                                                <h3 class="text-center mb-3 text-lightblue text-uppercase">Final Details
+                                                </h3>
+
+                                                <div id="finalDetail" class="text-center mb-4">
+                                                </div>
+
+                                                <div class="row justify-content-center">
+                                                    <div class="col-xs-24 col-sm-10 col-md-10 ">
+                                                        <div class="mb-3">
+
+                                                            <input type="text" required id="customerName"
+                                                                name="customerName" placeholder="First Name">
+                                                        </div>
+                                                        <div class="mb-3">
+
+                                                            <input type="text" required id="customerName2"
+                                                                name="customerName2" placeholder="Last Name">
+                                                        </div>
+                                                        <div class="mb-3">
+
+                                                            <input type="email" required id="email" name="email"
+                                                                placeholder="Email Address">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-xs-24 col-sm-10 col-md-10 ">
+                                                        <div class="mb-3">
+
+
+                                                            <input type="text" id="contactNumber" name="contactNumber"
+                                                                placeholder="Phone Number" required
+                                                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                                                minlength="7" onchange="phoneValidation(this.value)" />
+                                                            <small class="text-danger" style="display: none;"
+                                                                id="errorMsgPhone">Please
+                                                                enter valid phone
+                                                                number.</small>
+
+                                                        </div>
+                                                        <!-- <div class="mb-3">
+                                                            <h6>Budget</h6>
+                                                            <input type="text" id="budget" name="budget">
+                                                        </div> -->
+                                                        <div class="mb-3">
+
+                                                            <textarea id="remarks" name="remarks" rows="3"
+                                                                placeholder="Message (Optional)"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mobile-align-center text-center ">
+                                        <div class="col-xs-24 formBtnGroup">
+                                            <button class="btn btn-primary  margin-lg-r10 " type="button"
+                                                onclick="changeStep('step-4','step-3')">Back</button>
+                                            <button class="btn btn-primary btn-primary-next nextBtn" type="submit">Book
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Review -->
+                            <div class="panel panel-primary setup-content p-wrapper" id="step-5">
+
+                                <div class="panel-body">
+                                    <div class="pt-5 pb-4">
+                                        <h3 class="text-center mb-4">Appointment Summary</h3>
+                                        <div class="col-md-24 bg-lightblue row py-3 mb-5 remove-margin-mobile">
+                                            <div class="col-sm-8 col-md-8 box">
+                                                <img src="https://www.michaeltrio.com/pub/media/0appointment/virtual.jpg"
+                                                    alt="" class="w-100 virtual-image">
+                                            </div>
+                                            <div class="col-sm-16 col-md-16 box">
+                                                <div>
+
+                                                    <p class="mb-3">
+                                                        Enjoy the Michael Trio experience at the comfort of your home.
+                                                        <br><br>
+                                                        Request for a complimentary Google Hangouts consultation and our
+                                                        jewellery
+                                                        experts will guide you through the process of customising your
+                                                        ideal jewellery.
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div id="reviewTable">
+
+                                    </div>
+
+                                    <!-- <div class="text-center pt-4">
+                                        <div id="sucMsg"></div>
+                                        <button class="btn btn-primary m-auto " type="button"
+                                            onclick="confirmBooking()">Confirm Booking</button>
+                                    </div> -->
+
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </section>
+
+
+
+            </div>
+            <!-- End Form  -->
+
+            <section class="bg-lightorange py-5 ">
+                <div class="container text-center   hidden-xs v-exp" style="max-width: 980px;">
+                    <h3 class="mb-5">Michael Trio's Virtual Appointment Experience</h3>
+                    <div class="row">
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/1-1.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
+                            <h6 class="mb-3"> 1-to-1 Attention </h6>
+
+
+                            <p>
+                                Personalised one-to-one appointment with our jewellery expert.
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/guidance.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
+                            <h6 class="mb-3"> Guidance </h6>
+
+
+                            <p>
+                                Learn about diamonds, gemstones and more in a fun and relaxing enviroment.
+                            </p>
+                        </div>
+                        <div class="col-sm-8 px-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png" alt=""
+                                class="w-75 mb-3 mx-auto" />
+                            <h6 class="mb-3"> Curated For You </h6>
+
+
+                            <p>
+                                Appointment curated to your personal preference and style.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center appointmentWrapper visible-xs v-exp">
+                    <h3 class="mb-3">Michael Trio's Virtual <br>Appointment Experience</h3>
+                    <div class="row">
+                        <div id="professional-services" class="owl-carousel owl-theme img-slider my-4" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":false,"dots":true,"center":false,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
+                            "0": {
+                                "items":1
+                            }
+                        }}}}}'>
+                            <div class="item px-5">
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/1-1.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
+                                <h6 class="mb-3"> 1-to-1 Attention </h6>
+
+
+                                <p>
+                                    Personalised one-to-one appointment with our jewellery expert.
+                                </p>
+                            </div>
+                            <div class="item px-5">
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/guidance.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
+                                <h6 class="mb-3"> Guidance</h6>
+
+
+                                <p>
+                                    Learn about diamonds, gemstones and more in a fun and relaxing enviroment.
+                                </p>
+                            </div>
+                            <div class="item px-5">
+                                <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png" alt=""
+                                    class="w-75 mb-3 mx-auto" />
+                                <h6 class="mb-3"> Curated For You </h6>
+
+
+                                <p>
+                                    Appointment curated to your personal preference and style.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+    <script>
+        const interest = ['Engagement Ring (45-60 mins)', 'Wedding Bands (45-60 mins)', 'Jewellery (45-60 mins)', 'Custom-Made (45-60 mins)', 'Item Collection (15 mins)', 'Ring Resizing / Polishing (15 mins)'];
+
+        let bookingData = {
+            "location": "Online Virtual Appointment",
+            "platform": "",
+            "date": "",
+            "time": "",
+            "interest": "",
+            "customer": {
+                "customerName": "",
+                "customerName2": "",
+                "email": "",
+                "contactNumber": "",
+                "budget": "",
+                "remarks": "NIL"
+            }
+        };
+
+
+
+
+        let appointmentTime = ['12:00 pm', '12:30 pm', '1:00 pm', '1:30 pm', '2:00 pm', '2:30 pm', '3:00 pm', '3:30 pm', '4:00 pm', '4:30 pm', '5:00 pm', '5:30 pm', '6:00 pm', '6:30 pm', '7:00 pm', '7:30 pm'];
+
+
+        function changeStep(currentId, changeId) {
+            document.getElementById(currentId).style.display = "none";
+            document.getElementById(changeId).style.display = "block";
+            getAppointmentTime();
+
+            let x = document.getElementsByClassName('stepwizard-step');
+            for (let i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+            }
+
+            if (changeId === 'step-1' || changeId === 'step-2' || changeId === 'step-3' || changeId === 'step-4') {
+                document.getElementsByClassName(changeId)[0].classList.add("active");
+                console.log(changeId);
+            } else if (changeId === 'appointmentForm') {
+                document.getElementsByClassName('step-1')[0].classList.add("active");
+            }
+        }
+
+        function getAppointmentTime() {
+            // console.log( appointmentTime);
+            let data = "<select onchange='addTime(event)'>";
+
+            for (let i = 0; i < appointmentTime.length; i++) {
+                data += `<option value="${appointmentTime[i]}">${appointmentTime[i]}</option>`;
+            }
+
+            data += `</select>`;
+
+            document.getElementById('appointmentTime').innerHTML = data;
+            bookingData['time'] = appointmentTime[0];
+
+        }
+
+        function addPlatform(platform, e) {
+            bookingData['platform'] = platform;
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
+            x.disabled = false;
+
+        }
+
+        function addDate(e) {
+            bookingData['date'] = e.target.value;
+            if (bookingData['date'] && bookingData['time']) {
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
+                x.disabled = false;
+            }
+
+        }
+
+
+
+        function addTime(e) {
+            bookingData['time'] = e.target.value;
+            if (bookingData['date'] && bookingData['time']) {
+                let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
+                x.disabled = false;
+            }
+        }
+
+        function addInterest(index, e) {
+            bookingData['interest'] = interest[index];
+            let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
+            x.disabled = false;
+            let appDate = jQuery('#app-date').val();
+            let finalDetail = `<h4 class="mb-3">Michael Trio Virtual Appointment</h4> <p>Chat with us at the confort of your home <br> ${bookingData.time} Malaysia Time , ${appDate} </p>`;
+            document.getElementById("finalDetail").innerHTML = finalDetail;
+
+        }
+
+        function addCustomer(e) {
+            e.preventDefault();
+            const contactNumber = document.getElementById("contactNumber").value;
+
+            if (contactNumber && contactNumber.length >= 7) {
+                document.getElementById("errorMsgPhone").style.display = "none";
+                bookingData['customer']['customerName'] = document.getElementById("customerName").value;
+                bookingData['customer']['customerName2'] = document.getElementById("customerName2").value;
+                bookingData['customer']['email'] = document.getElementById("email").value;
+                bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
+                bookingData['customer']['budget'] = "";
+                bookingData['customer']['remarks'] = document.getElementById("remarks").value;
+
+
+                // changeStep('step-4', 'step-5');
+                // reviewBooking();
+            } else {
+                document.getElementById("errorMsgPhone").style.display = "block";
+            }
+        }
+
+        function reviewBooking() {
+
+            let submitUrl = BASE_URL + 'customer/post/getmyappointment';
+            let formKey = jQuery('input[name="form_key"]').val();
+            let appDate = jQuery('#app-date').val();
+            let form = '<form method="post" action="' + submitUrl + '" id="finalSubmit"><form>';
+
+            const data = `  <div class="reviewTableWrapper">
+        <input name="form_key" type="hidden" value="${formKey}">
+            <input type="hidden" name="location" value="${bookingData.location}"/>
+            <input type="hidden" name="platform" value="${bookingData.platform}"/>
+            <input type="hidden" name="book_date" value="${appDate}"/>
+            <input type="hidden" name="book_time" value="${bookingData.time}"/>
+            <input type="hidden" name="interested" value="${bookingData.interest}"/>
+            <input type="hidden" name="name" value="${bookingData.customer.customerName}+${bookingData.customer.customerName2}"/>
+            <input type="hidden" name="email" value="${bookingData.customer.email}"/>
+            <input type="hidden" name="contact" value="${bookingData.customer.contactNumber}"/>
+            <input type="hidden" name="budget" value="${bookingData.customer.budget}"/>
+            <input type="hidden" name="remarks" value="${bookingData.customer.remarks}"/>
+    <div>
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Location : </div>
+            <div class="col-xs-16">${bookingData.location}</div>
+        </div>
+
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Platform : </div>
+            <div class="col-xs-16">${bookingData.platform}</div>
+        </div>
+
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Date & Time : </div>
+            <div class="col-xs-16">${bookingData.date} (${bookingData.time})</div>
+        </div>
+
+        <div class="verticalStepCircle row">
+            <div class="col-xs-8 title">Interest : </div>
+            <div class="col-xs-16">${bookingData.interest}</div>
+        </div>
+
+        <div class="verticalStepCircle row">
+            <div class="col-xs-24 title">Customer Details : </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8">Name : </div>
+            <div class="col-xs-16">${bookingData.customer.customerName} ${bookingData.customer.customerName2}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8">Email : </div>
+            <div class="col-xs-16">${bookingData.customer.email}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8">Number : </div>
+            <div class="col-xs-16">${bookingData.customer.contactNumber}</div>
+        </div>
+
+      
+
+        <div class="row">
+            <div class="col-xs-8">Remarks : </div>
+            <div class="col-xs-16">${bookingData.customer.remarks}</div>
+        </div>
+
+        <div class="text-center">
+        <button class="btn btn-primary m-auto" type="submit">Confirm Booking</button>
+        <div class="h13 pt-3"> A summary of your appointment request will be sent to the email address provided. </div>
+        </div>
+
+    </div>
+</div>`;
+
+            document.getElementById('reviewTable').innerHTML = data;
+
+            jQuery('.reviewTableWrapper').wrapInner(form);
+
+            // changeStep('booking-5', 'booking-6');
+
+        }
+
+
+        require(['jquery'], function ($) {
+            $(document).ready(function () {
+                $(".showrooms-group .btn-blue-outline").click(function () {
+                    $('.showrooms-group .btn-blue-outline').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+
+                $(".int-type").click(function () {
+                    $('.int-type').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+                $(".platform-type").click(function () {
+                    $('.platform-type').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        });
+
+
+        function phoneValidation(val) {
+            if (val.length < 7) {
+                document.getElementById("errorMsgPhone").style.display = "block";
+            } else {
+                document.getElementById("errorMsgPhone").style.display = "none";
+            }
+        }
+
+    </script>
+
+    <script>
+        require(['jquery'], function ($) {
+
+            $(document).ready(function () {
+
+                var navListItems = $('div.setup-panel div a.btn'),
+                    allStepTitles = $('a.step-title'),
+                    allWells = $('.setup-content'),
+                    allNextBtn = $('.nextBtn'),
+                    allStepwizard = $('.stepwizard-step');
+
+                allWells.hide();
+
+                allStepTitles.click(function (e) {
+                    e.preventDefault();
+                    var $target = $($(this).attr('href')),
+                        $item = $(this);
+
+
+                    if (!$item.hasClass('disabled')) {
+                        // $item.addClass('btn-suc');
+
+                        allStepwizard.removeClass('active');
+                        $item.closest('.stepwizard-step').addClass('active');
+
+                        allWells.hide();
+                        $target.show();
+                        // $target.find('input:eq(0)').focus();
+                    }
+                });
+
+                navListItems.click(function (e) {
+                    e.preventDefault();
+                    var $target = $($(this).attr('href')),
+                        $item = $(this);
+                    // console.log($item.closest('.'));
+
+                    if (!$item.hasClass('disabled')) {
+                        $item.addClass('btn-suc');
+
+                        allStepwizard.removeClass('active');
+                        $item.closest('.stepwizard-step').addClass('active');
+
+                        allWells.hide();
+                        $target.show();
+                        // $target.find('input:eq(0)').focus();
+                    }
+                });
+
+                allNextBtn.click(function () {
+                    var curStep = $(this).closest(".setup-content"),
+                        curStepBtn = curStep.attr("id"),
+                        nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                        nextStepWizard_title = $('div.setup-panel div p a[href="#' + curStepBtn + '"]').closest('.stepwizard-step').next().children("p").children("a"),
+
+                        curInputs = curStep.find("input[type='text'],input[type='url']"),
+                        isValid = true;
+
+                    $(".form-group").removeClass("has-error");
+                    for (var i = 0; i < curInputs.length; i++) {
+                        if (!curInputs[i].validity.valid) {
+                            isValid = false;
+                            $(curInputs[i]).closest(".form-group").addClass("has-error");
+                        }
+                    }
+
+                    if (isValid) {
+                        nextStepWizard.removeClass('disabled').trigger('click');
+                        nextStepWizard_title.removeClass('disabled').trigger('click');
+
+
+                    };
+                });
+
+                $('div.setup-panel div a.btn-suc').trigger('click');
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>

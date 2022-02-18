@@ -592,6 +592,11 @@
       margin-bottom: 20px;
     }
 
+    .diamond-price .price-container .price {
+      font-size: 14px;
+
+    }
+
     .diamond-quality {
       font-size: 14px;
       font-weight: 700;
@@ -779,7 +784,22 @@
 
 
     @media (max-width: 480px) {
+      .mt2021 .reduce-padding-mobile .row.earrings2021 {
+        padding: 0 10px !important;
+      }
 
+      .mt2021 .reduce-padding-mobile.col-sm-12,
+      .mt2021 .reduce-padding-mobile.col-xs-24 {
+        padding: 0 5px;
+      }
+
+      .mt2021 .reduce-padding-mobile .col-xs-8 {
+        padding: 5px;
+      }
+
+      .diamond-price .price-container .price {
+        font-size: 12px;
+      }
 
       .mt2021 .btn {
         font-size: 14px;
@@ -911,7 +931,7 @@
             <iframe src='//spins0.arqspin.com/iframe.html?spin=3vmk8z2pe36u&is=0.16' class="spinning-diamond"
               scrolling='no' frameborder='0'></iframe>
           </div>
-          <div class="col-sm-12  ">
+          <div class="col-sm-12 reduce-padding-mobile ">
 
             <h1 class="text-center"> Diamond Type</h1>
 
@@ -964,9 +984,9 @@
             </div>
 
 
-            <div id="EL2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="EISI2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="EGVS2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+            <div id="EL2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="EISI2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="EGVS2021" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
 
 
 
@@ -1011,7 +1031,7 @@
               scrolling="no" frameborder="0"></iframe>
 
           </div>
-          <div class="col-sm-12  ">
+          <div class="col-sm-12 reduce-padding-mobile ">
 
             <h1 class="text-center"> Diamond Type</h1>
 
@@ -1063,11 +1083,11 @@
 
 
 
-            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="EISI2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div id="EGVS2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
+            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="EISI2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div id="EGVS2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
             <div id="EISI2020_NoItem" class="row earrings2021 text-center"
-              style="flex-wrap: wrap;padding:0px 20px; display: none;">
+              style="flex-wrap: wrap;padding:0px 15px; display: none;">
               For customisation of Solitaire Studs, please contact us for availability and pricing. </div>
 
 
@@ -1111,7 +1131,7 @@
             <iframe src="//spins0.arqspin.com/iframe.html?spin=fgx31qimqin7&amp;is=0.16" class="spinning-diamond"
               scrolling="no" frameborder="0"></iframe>
           </div>
-          <div class="col-sm-12  ">
+          <div class="col-sm-12 reduce-padding-mobile">
 
             <h1 class="text-center"> Diamond Type</h1>
 
@@ -1163,13 +1183,13 @@
 
 
 
-            <div id="EL2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;"> </div>
-            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">
+            <div id="EL2020" class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;"> </div>
+            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;">
             </div>
-            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 20px; display: none;">
+            <div class="row earrings2021" style="flex-wrap: wrap;padding:0px 15px; display: none;">
             </div>
             <div id="EL2020_NoItem" class="row earrings2021 text-center"
-              style="flex-wrap: wrap;padding:0px 20px; display: none;">
+              style="flex-wrap: wrap;padding:0px 15px; display: none;">
               For customisation of Solitaire Studs, please contact us for availability and pricing. </div>
 
 
@@ -1230,7 +1250,7 @@
         "SKU": "MDE0006-GVS025-14KW",
         "URL": " {{store url='MDE0006-GVS025-14KW'}}",
         "Size": "0.25ctw",
-        "Price": "SG$654",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS025-14KW"}}`,
         "ClassName": "ct025",
         "Selling": "Yes"
       },
@@ -1238,7 +1258,7 @@
         "SKU": "MDE0006-GVS050-14KW",
         "URL": " {{store url='MDE0006-GVS050-14KW'}}",
         "Size": "0.50ctw",
-        "Price": "SG$1,289",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS050-14KW"}}`,
         "ClassName": "ct050",
         "Selling": "Yes"
       },
@@ -1246,7 +1266,7 @@
         "SKU": "MDE0006-GVS075-14KW",
         "URL": " {{store url='MDE0006-GVS075-14KW'}}",
         "Size": "0.75ctw",
-        "Price": "SG$2,308",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS075-14KW"}}`,
         "ClassName": "ct075",
         "Selling": "Yes"
       },
@@ -1254,7 +1274,7 @@
         "SKU": "MDE0006-GVS100-14KW",
         "URL": " {{store url='MDE0006-GVS100-14KW'}}",
         "Size": "1.00ctw",
-        "Price": "SG$3,654",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS100-14KW"}}`,
         "ClassName": "ct100",
         "Selling": "Yes"
       },
@@ -1262,7 +1282,7 @@
         "SKU": "MDE0006-GVS125-14KW",
         "URL": " {{store url='MDE0006-GVS125-14KW'}}",
         "Size": "1.25ctw",
-        "Price": "SG$6,766",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS125-14KW"}}`,
         "ClassName": "ct125",
         "Selling": "Yes"
       },
@@ -1270,7 +1290,7 @@
         "SKU": "MDE0006-GVS150-14KW",
         "URL": " {{store url='MDE0006-GVS150-14KW'}}",
         "Size": "1.50ctw",
-        "Price": "SG$7,794",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS150-14KW"}}`,
         "ClassName": "ct150",
         "Selling": "Yes"
       },
@@ -1278,7 +1298,7 @@
         "SKU": "MDE0006-GVS200-14KW",
         "URL": " {{store url='MDE0006-GVS200-14KW'}}",
         "Size": "2.00ctw",
-        "Price": "SG$15,700",
+        "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-GVS200-14KW"}}`,
         "ClassName": "ct200",
         "Selling": "Yes"
       }]
@@ -1286,7 +1306,7 @@
       "SKU": "MDE0006-ISI025-14KW",
       "URL": " {{store url='MDE0006-ISI025-14KW'}}",
       "Size": "0.25ctw",
-      "Price": "SG$439",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI025-14KW"}}`,
       "ClassName": "ct025",
       "Selling": "Yes"
     },
@@ -1294,7 +1314,7 @@
       "SKU": "MDE0006-ISI050-14KW",
       "URL": " {{store url='MDE0006-ISI050-14KW'}}",
       "Size": "0.50ctw",
-      "Price": "SG$1,056",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI050-14KW"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1302,7 +1322,7 @@
       "SKU": "MDE0006-ISI075-14KW",
       "URL": " {{store url='MDE0006-ISI075-14KW'}}",
       "Size": "0.75ctw",
-      "Price": "SG$2,009",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI075-14KW"}}`,
       "ClassName": "ct075",
       "Selling": "Yes"
     },
@@ -1310,7 +1330,7 @@
       "SKU": "MDE0006-ISI100-14KW",
       "URL": " {{store url='MDE0006-ISI100-14KW'}}",
       "Size": "1.00ctw",
-      "Price": "SG$3,420",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI100-14KW"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     },
@@ -1318,7 +1338,7 @@
       "SKU": "MDE0006-ISI125-14KW",
       "URL": " {{store url='MDE0006-ISI125-14KW'}}",
       "Size": "1.25ctw",
-      "Price": "SG$4,327",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI125-14KW"}}`,
       "ClassName": "ct125",
       "Selling": "Yes"
     },
@@ -1326,7 +1346,7 @@
       "SKU": "MDE0006-ISI150-14KW",
       "URL": " {{store url='MDE0006-ISI150-14KW'}}",
       "Size": "1.50ctw",
-      "Price": "SG$6,878",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI150-14KW"}}`,
       "ClassName": "ct150",
       "Selling": "Yes"
     },
@@ -1334,7 +1354,7 @@
       "SKU": "MDE0006-ISI200-14KW",
       "URL": " {{store url='MDE0006-ISI200-14KW'}}",
       "Size": "2.00ctw",
-      "Price": "SG$12,897",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-ISI200-14KW"}}`,
       "ClassName": "ct200",
       "Selling": "Yes"
     }]
@@ -1342,7 +1362,7 @@
       "SKU": "MDE0006-L025-14KW",
       "URL": " {{store url='mde0006-l025-14kw'}}",
       "Size": "0.25ctw",
-      "Price": "SG$392",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L025-14KW"}}`,
       "ClassName": "ct025",
       "Selling": "Yes"
     },
@@ -1350,7 +1370,7 @@
       "SKU": "MDE0006-L050-14KW",
       "URL": " {{store url='mde0006-l050-14kw'}}",
       "Size": "0.50ctw",
-      "Price": "SG$747",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L050-14KW"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1358,7 +1378,7 @@
       "SKU": "MDE0006-L075-14KW",
       "URL": " {{store url='mde0006-l075-14kw'}}",
       "Size": "0.75ctw",
-      "Price": "SG$1,215",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L075-14KW"}}`,
       "ClassName": "ct075",
       "Selling": "Yes"
     },
@@ -1366,7 +1386,7 @@
       "SKU": "MDE0006-L100-14KW",
       "URL": " {{store url='mde0006-l100-14kw'}}",
       "Size": "1.00ctw",
-      "Price": "SG$2,140",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L100-14KW"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     },
@@ -1374,7 +1394,7 @@
       "SKU": "MDE0006-L125-14KW",
       "URL": " {{store url='mde0006-l125-14kw'}}",
       "Size": "1.25ctw",
-      "Price": "SG$2,803",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L125-14KW"}}`,
       "ClassName": "ct125",
       "Selling": "Yes"
     },
@@ -1382,7 +1402,7 @@
       "SKU": "MDE0006-L150-14KW",
       "URL": " {{store url='mde0006-l150-14kw'}}",
       "Size": "1.50ctw",
-      "Price": "SG$3,392",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L150-14KW"}}`,
       "ClassName": "ct150",
       "Selling": "Yes"
     },
@@ -1390,19 +1410,17 @@
       "SKU": "MDE0006-L200-14KW",
       "URL": " {{store url='mde0006-l200-14kw'}}",
       "Size": "2.00ctw",
-      "Price": "SG$6,261",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="MDE0006-L200-14KW"}}`,
       "ClassName": "ct200",
       "Selling": "Yes"
     }]
-
-
 
 
     var EL2020 = [{
       "SKU": "mde0008-gvs025-18kw",
       "URL": " {{store url='mde0008-gvs025-18kw'}}",
       "Size": "0.25ctw",
-      "Price": "SG$635",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0008-gvs025-18kw"}}`,
       "ClassName": "ct025",
       "Selling": "Yes"
     },
@@ -1410,7 +1428,7 @@
       "SKU": "mde0008-gvs060-18kw",
       "URL": " {{store url='mde0008-gvs060-18kw'}}",
       "Size": "0.60ctw",
-      "Price": "SG$2,149",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0008-gvs060-18kw"}}`,
       "ClassName": "ct060",
       "Selling": "Yes"
     },
@@ -1418,7 +1436,7 @@
       "SKU": "mde0008-gvs080-18kw",
       "URL": " {{store url='mde0008-gvs080-18kw'}}",
       "Size": "0.80ctw",
-      "Price": "SG$2,953",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0008-gvs080-18kw"}}`,
       "ClassName": "ct080",
       "Selling": "Yes"
     },
@@ -1426,7 +1444,7 @@
       "SKU": "mde0008-gvs100-18kw",
       "URL": " {{store url='mde0008-gvs100-18kw'}}",
       "Size": "1.00ctw",
-      "Price": "SG$3,486",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0008-gvs100-18kw"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     }];
@@ -1434,7 +1452,8 @@
       "SKU": "mde0006-gvs025-18kw",
       "URL": " {{store url='mde0006-gvs025-18kw'}}",
       "Size": "0.25ctw",
-      "Price": "SG$622",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs025-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct025",
       "Selling": "Yes"
     },
@@ -1442,7 +1461,8 @@
       "SKU": "mde0006-gvs033-18kw",
       "URL": " {{store url='mde0006-gvs033-18kw'}}",
       "Size": "0.33ctw",
-      "Price": "SG$1,214",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs033-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct033",
       "Selling": "Yes"
     },
@@ -1450,7 +1470,8 @@
       "SKU": "mde0006-gvs050-18kw",
       "URL": " {{store url='mde0006-gvs050-18kw'}}",
       "Size": "0.50ctw",
-      "Price": "SG$1,494",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs050-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1458,7 +1479,8 @@
       "SKU": "mde0006-gvs080-18kw",
       "URL": " {{store url='mde0006-gvs080-18kw'}}",
       "Size": "0.80ctw",
-      "Price": "SG$2,710",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs080-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct080",
       "Selling": "Yes"
     },
@@ -1466,7 +1488,8 @@
       "SKU": "mde0006-gvs090-18kw",
       "URL": " {{store url='mde0006-gvs090-18kw'}}",
       "Size": "0.90ctw",
-      "Price": "SG$2,981",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs090-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct090",
       "Selling": "Yes"
     },
@@ -1474,7 +1497,8 @@
       "SKU": "mde0006-gvs100-18kw",
       "URL": " {{store url='mde0006-gvs100-18kw'}}",
       "Size": "1.00ctw",
-      "Price": "SG$4,914",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-gvs100-18kw"}}`,
+      "ClassName": "ct025",
       "ClassName": "ct100",
       "Selling": "Yes"
     }];
@@ -1482,7 +1506,7 @@
       "SKU": "mde0006-isi025-18kw",
       "URL": " {{store url='mde0006-isi025-18kw'}}",
       "Size": "0.25ctw",
-      "Price": "SG$523",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi025-18kw"}}`,
       "ClassName": "ct025",
       "Selling": "Yes"
     },
@@ -1490,7 +1514,7 @@
       "SKU": "mde0006-isi033-18kw",
       "URL": " {{store url='mde0006-isi033-18kw'}}",
       "Size": "0.33ctw",
-      "Price": "SG$850",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi033-18kw"}}`,
       "ClassName": "ct033",
       "Selling": "Yes"
     },
@@ -1498,7 +1522,7 @@
       "SKU": "mde0006-isi050-18kw",
       "URL": " {{store url='mde0006-isi050-18kw'}}",
       "Size": "0.50ctw",
-      "Price": "SG$1,120",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi050-18kw"}}`,
       "ClassName": "ct050",
       "Selling": "Yes"
     },
@@ -1506,7 +1530,7 @@
       "SKU": "mde0006-isi075-18kw",
       "URL": " {{store url='mde0006-isi075-18kw'}}",
       "Size": "0.75ctw",
-      "Price": "SG$2,112",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi075-18kw"}}`,
       "ClassName": "ct075",
       "Selling": "Yes"
     },
@@ -1514,7 +1538,7 @@
       "SKU": "mde0006-isi080-18kw",
       "URL": " {{store url='mde0006-isi080-18kw'}}",
       "Size": "0.80ctw",
-      "Price": "SG$2,224",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi080-18kw"}}`,
       "ClassName": "ct100",
       "Selling": "Yes"
     },
@@ -1522,7 +1546,7 @@
       "SKU": "mde0006-isi100-18kw",
       "URL": " {{store url='mde0006-isi100-18kw'}}",
       "Size": "1.00ctw",
-      "Price": "SG$3,158",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi100-18kw"}}`,
       "ClassName": "ct125",
       "Selling": "Yes"
     },
@@ -1530,7 +1554,7 @@
       "SKU": "mde0006-isi150-18kw",
       "URL": " {{store url='mde0006-isi150-18kw'}}",
       "Size": "1.50ctw",
-      "Price": "SG$5,831",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi150-18kw"}}`,
       "ClassName": "ct150",
       "Selling": "Yes"
     },
@@ -1538,17 +1562,13 @@
       "SKU": "mde0006-isi200-18kw",
       "URL": " {{store url='mde0006-isi200-18kw'}}",
       "Size": "2.00ctw",
-      "Price": "SG$11,775",
+      "Price": `{{block class="Michaeltrio\Catalog\Block\Product\EmbedList" template="Michaeltrio_Catalog::product/embed-product.phtml" varSkus="mde0006-isi200-18kw"}}`,
       "ClassName": "ct200",
       "Selling": "Yes"
     }];
 
-    //  window.onresize = function(){
-    //   window.location.reload(); 
-    //  };
+
     window.onload = function () {
-
-
 
       renderData(EL2021, 'EL2021', 'round');
       renderData(EISI2021, 'EISI2021', 'round');

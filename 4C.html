@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <style>
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -21,6 +20,7 @@
             --companyblue: #9BB8D3;
             --cream: #F7F3F0;
             --oragne: #FFB898;
+            font-size: 17px;
         }
 
         .bg-cream {
@@ -111,13 +111,19 @@
             min-width: 217px;
         }
 
-        .btn-blue {
+        .mt2021 .locations .btn {
+            font-size: 14px;
+            line-height: 17px;
+            padding: auto;
+        }
+
+        .mt2021 .btn-blue {
             color: var(--white) !important;
             background-color: var(--companyblue);
             transition: background-color 2s;
         }
 
-        .btn-blue:hover {
+        .mt2021 .btn-blue:hover {
             color: var(--white);
             background-color: var(--black);
 
@@ -319,6 +325,14 @@
             align-items: flex-start;
         }
 
+        .mt2021 .more {
+            display: none;
+        }
+
+        .mt2021 .text-lightblue {
+            color: var(--companyblue);
+        }
+
         @media (max-width: 1199.98px) {
 
             .diamond-image img {
@@ -475,8 +489,6 @@
 
         }
 
-
-
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         .font-weight-bold {
             font-weight: 700;
@@ -505,7 +517,10 @@
         .mt2021 .h9,
         .mt2021 .h10,
         .mt2021 .h11,
-        .mt2021 .h12 {
+        .mt2021 .h12,
+        .mt2021 .h13,
+        .mt2021 .h14,
+        .mt2021 .h15 {
             font-family: 'Montserrat';
         }
 
@@ -559,6 +574,18 @@
 
         .mt2021 .h12 {
             font-size: 11px;
+        }
+
+        .mt2021 .h13 {
+            font-size: 10px;
+        }
+
+        .mt2021 .h14 {
+            font-size: 9px;
+        }
+
+        .mt2021 .h15 {
+            font-size: 8px;
         }
 
         @media (max-width:767.98px) {
@@ -639,118 +666,256 @@
 
         }
 
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Ring-sizer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-        p {
-            padding: 0;
-            letter-spacing: 0.02em;
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .d-flex {
+            display: flex;
         }
 
-        button:hover {
-            border-color: transparent;
+        .align-items-end {
+            align-items: flex-end;
         }
 
-        .ring-iframe {
+        .fourC .borderline-right {
+            border-right: 1px solid black;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 4C of Diamond @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .fourC .product.data.items {
+            position: relative;
+        }
+
+        .fourC .product.data.items>.item.title>.switch {
+            min-width: 48px;
+            padding: 5px;
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 7px;
+            background-color: white;
+        }
+
+        .fourC .product.data.items>.item.title>.switch {
+            height: auto;
+        }
+
+        .borderbox-black {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 50px 50px 0px 50px;
+        }
+
+        .fourC .product.data.items>.item.content {
+            margin-top: 55px;
+            padding: 10px 0;
+            border: 0px;
+            font-size: 12px;
+            float: right;
+            margin-left: -100%;
             width: 100%;
-            height: 350px;
+
         }
 
-        .ring-sizer h1,
-        .ring-sizer h2,
-        .ring-sizer h3,
-        .ring-sizer h4,
-        .ring-sizer h5,
-        .ring-sizer h6,
-        .ring-sizer p,
-        .ring-sizer .h7,
-        .ring-sizer .h8,
-        .ring-sizer .h9,
-        .ring-sizer .h10,
-        .ring-sizer .h11,
-        .ring-sizer .h12 {
-            color: var(--black);
+        .fourC .carat .product.data.items>.item.content::before {
+            content: "";
+            height: 5px;
+            width: 314px;
+            position: absolute;
+            top: 47px;
+            left: 0;
+            background-color: var(--companyblue);
+        }
+
+        .carat-space {
+            padding: 50px 25px 0px 25px;
+        }
+
+        .fourC .product.data.items>.item.title {
+            width: auto;
+            float: left;
+            margin: 0 5px 0 0;
+        }
+
+        .fourC .product.data.items>.item.title:focus {
+            outline: none;
+        }
+
+        .fourC .product.data.items>.item.title.active>.switch,
+        .fourC .product.data.items>.item.title.active>.switch:focus,
+        .fourC .product.data.items>.item.title.active>.switch:hover {
+            padding-bottom: 5px;
+            background-color: var(--lightblue);
+        }
+
+        #caratImageHolder {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        @media (max-width:767.98px) {
+            .fourC .borderline-right {
+                border-right: none;
+            }
+
+            .carat-space {
+                padding: 0px;
+            }
+
+            .fourC .borderbox-black {
+                padding: 50px;
+            }
+
+            #caratImageHolder {
+                max-width: 70%;
+            }
+
+
+        }
+
+        @media (max-width:480px) {
+
+            .fourC .borderbox-black {
+                padding: 20px;
+            }
+
+            .fourC .product.data.items>.item.title>.switch {
+                font-size: 0.8rem;
+                min-width: 38px;
+                line-height: 23px;
+            }
+
+            .fourC .carat .product.data.items>.item.content::before {
+                width: 255px;
+            }
+
+            #caratImageHolder {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width:320px) {
+
+            .fourC .borderbox-black {
+                padding: 10px;
+            }
+
+
         }
     </style>
-
-
-    <script>
-        require(['jquery'], function ($) {
-
-            $(document).ready(function () {
-
-                var submit = $('button');
-                submit.removeClass(" action submit primary");
-                submit.addClass("btn btn-blue small-btn");
-
-            });
-        });
-    </script>
 </head>
 
 <body>
 
-    <div class="mt2021 mt-3">
-        <section class="ring-sizer">
-            <div class="container">
-
-                <h3 class="pl-2">Complimentary Ring Sizer</h3>
-
-                <div class=" pt-3 ">
-
-                    <div class="col-md-12 ">
-                        <div class="row">
-                            <div class="col-md-20 col-sm-24">
-                                <p class="h9 mb-3" style="display:none;">
-                                    Michael trio would be glad to send you a complimentary ring sizer. Simply enter your
-                                    information below and we'll send you one right away.
-                                </p>
-                                <p class="h9 mb-3">Complete the form below and we'll send a complimentary ring sizer
-                                    your way!</p>
-                            </div>
-
-                        </div>
+    <div class="mt2021 fourC">
 
 
+        <div class="container" style="max-width: 900px;">
+            <div class="borderbox-black carat ">
 
-                        <div class="mb-5 ">
-                            {{block class="Michaeltrio\Customer\Block\RingSizer"
-                            template='Michaeltrio_Customer::ring-sizer.phtml'}}
-                        </div>
-
-
-
-                        <div>
-                            <h5 class=" mb-4 font-weight-normal">Free Shipping Worldwide</h5>
-                            <div class="mb-3">
-                                <h6 class="font-weight-normal">International</h6>
-                                <p class="h9">Requests may take between 1-3 weeks to receive.</p>
-                            </div>
-
-                            <div class="mb-3">
-                                <h6 class="font-weight-normal">Singapore &amp; Malaysia</h6>
-                                <p class="h9">Requests should reach you between 3-7 working days.</p>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-10 col-xs-24 borderline-right">
+                        <h4>Carat</h4>
+                        <p class="h10">Diamond Carat : 0.30</p>
                     </div>
+                    <div class="col-md-18 col-sm-14 col-xs-24 d-flex align-items-end ">
+                        <p class="h11">Diamonds and gemstones are weighed in carats. Carat measures the weight of a
+                            diamond and is
+                            often confused with size. One carat (cts) is equal to 0.2grams.</p>
+                    </div>
+                </div>
 
-                    <div class="col-md-12">
-                        <div class="mb-5 ">
-                            <iframe class="ring-iframe"
-                                src="https://www.youtube.com/embed/KariIFPqLU8?rel=0&showinfo=1&modestbranding=1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+
+                <div class="row">
+                    <div class="col-md-10 col-sm-10 col-xs-24 text-center">
+                        <img src="https://www.michaeltrio.com/pub/media/0new4C/Carat-03.png" alt=""
+                            id="caratImageHolder">
+                    </div>
+                    <div class="col-md-14 col-sm-14 col-xs-24 ">
+                        <div class="carat-space">
+                            <div id="carat" class="product data items"
+                                data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}'>
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-03">0.3</a>
+                                </div>
+                                <div id="carat-03" class="item content" data-role="content-hide">
+                                    0.3</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-05">0.5</a>
+                                </div>
+                                <div id="carat-05" class="item content" data-role="content-hide">0.5</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-07">0.7</a>
+                                </div>
+                                <div id="carat-07" class="item content" data-role="content-hide">0.7</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-10">1</a>
+                                </div>
+                                <div id="carat-10" class="item content" data-role="content-hide">1</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-15">1.5</a>
+                                </div>
+                                <div id="carat-15" class="item content" data-role="content-hide">1.5</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-20">2</a>
+                                </div>
+                                <div id="carat-20" class="item content" data-role="content-hide">
+                                    The interactive slider above
+                                    shows an estimate
+                                    of
+                                    the different carat size in relation to the hand.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+
+            </div>
+        </div>
+
 
     </div>
 
 
+
+
+
+    <script>
+        const images = {
+            "carat-03": "https://www.michaeltrio.com/pub/media/0new4C/Carat-03.png",
+            "carat-05": "https://www.michaeltrio.com/pub/media/0new4C/Carat-05.png",
+            "carat-07": "https://www.michaeltrio.com/pub/media/0new4C/Carat-07.png",
+            "carat-10": "https://www.michaeltrio.com/pub/media/0new4C/Carat-10.png",
+            "carat-15": "https://www.michaeltrio.com/pub/media/0new4C/Carat-15.png",
+            "carat-20": "https://www.michaeltrio.com/pub/media/0new4C/Carat-20.png",
+
+        }
+        require([
+            'jquery',
+            'tabs'], function ($) {
+                $('#carat').tabs();
+                $('.switch').click(function () {
+                    var clickedID = $(this).attr('href').replace('#', '');
+                    if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('color')) {
+                        var image = $('#colorImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    }
+
+                });
+            });
+    </script>
 </body>
 
 </html>

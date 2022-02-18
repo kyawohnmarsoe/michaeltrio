@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .mt2021 .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Custom Page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Custom Page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+        .custom-banner {
+            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1920.jpg);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+        }
+
+        .custom-banner-bg {
+            background-color: transparent;
+            height: 400px;
+        }
+
+        .recent-custom img {
+            transition: all 2s;
+        }
+
+        .recent-custom img:hover {
+            transform: scale(1.2);
+        }
+
+        .process-icon {
+            width: 80px;
+        }
+
+        .things-to-note-2 .process-icon {
+            width: 40px;
+        }
+
+        .mt2021 .things-to-note-2 p {
+            font-size: 15px;
+        }
+
+
+        .things-steps {
+
+            text-align: center;
+        }
+
+        .things-to-note {
+            background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM4-banner-1200.jpg);
+            background-size: cover;
+            background-position-x: right;
+            background-position-y: bottom;
+
+        }
+
+        .things-to-note-bg {
+            background-color: transparent;
+            height: 400px;
+        }
+
+        .process-no {
+            width: 30px;
+        }
+
+        .visible-xs-inline {
+            display: none;
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .custom-banner {
+                background-image: url(https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_1200.jpg);
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .visible-xs-inline {
+                display: inline-block;
+            }
+
+            .custom-banner-bg {
+                background-color: var(--lightblue);
+                height: auto;
+            }
+
+            .custom-banner {
+                background-image: none;
+                padding-bottom: 0;
+            }
+
+            .process-icon {
+                width: 60px;
+            }
+
+            .process .process-icon {
+                padding: 0 10px;
+            }
+
+            .things-steps {
+                display: flex;
+                text-align: left;
+            }
+
+            .process-steps h3,
+            .process-steps h5,
+            .process-steps h6 {
+                display: inline-block;
+            }
+
+            .things-to-note {
+                background-image: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt2021">
+        <section class="custom-banner">
+
+            <div class="container">
+                <div class="row ">
+                    <div class=" visible-xs ">
+
+                        <img src="https://www.michaeltrio.com/pub/media/0custompage/CM1_-_Banner_-_768.jpg"
+                            alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
+                    </div>
+
+                    <div class="col-sm-10 col-md-12 custom-banner-bg hidden-xs">
+
+                    </div>
+
+                    <div class="col-sm-14 col-md-12 box  custom-banner-bg py-5">
+                        <div>
+                            <h1>Custom-Made Jewellery</h1>
+                            <p class="my-4">Design your ideal jewellery. At Michael Trio, we offer jewellery
+                                customisation services to help bring your idea to life. From material to style, let us
+                                know your preference and our team of designers and jewellers will do their magic. </p>
+
+                            <a href="{{store url='virtual-appointment'}}" class="btn btn-blue large-btn "
+                                role="button">Schedule An Appointment</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="recent-custom my-5 desktop-show">
+            <div class="container">
+                <h1 class="text-center  mb-4">Recent Customisation Rating & Reviews</h1>
+                <div class="row flex-wrap">
+                    <div class="col-xs-8 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/1.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/2.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/3.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="recent-custom my-5 mobile-show">
+            <div class="container">
+                <h1 class="text-center  mb-4">Recent Customisation Rating & Reviews</h1>
+                <div class="row flex-wrap">
+                    <div class="col-xs-24 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/1.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                    <div class="col-xs-24 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/2.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                    <div class="col-xs-24 col-sm-8 mb-3">
+                        <div class="w-100 overflow-hidden">
+                            <img src="https://www.michaeltrio.com/pub/media/0custompage/3.jpg" alt=""
+                                class="img-responsive w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="process mb-5">
+            <div class="container">
+                <h1 class="text-center mb-4">Custom-Made Process</h1>
+                <div class="row mb-4">
+                    <div class="col-xs-24 col-sm-8 bg-lighterorange">
+                        <div class="text-center py-5">
+
+                            <div class="process-steps">
+                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_1-40x40px.png"
+                                    alt="" class="m-auto process-no hidden-xs">
+                                <div>
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_1-40x40px.png"
+                                        alt="" class="m-auto process-no visible-xs-inline">
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_1_Consultation.png"
+                                        alt="" class="m-auto py-3 process-icon" />
+                                    <h5>Consultation</h5>
+                                </div>
+                            </div>
+
+
+
+                            <p class="px-4 pt-4 process-text">Feel free to bring along any materials that will help us
+                                better understand your ideal design. Need some help in your ideation process? Fret not,
+                                as
+                                we have a collection of sample products at our showrooms that might just give you some
+                                inspiration. </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-24 col-sm-8 bg-lighterblue">
+                        <div class="text-center py-5">
+                            <div class="process-steps">
+                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_2-40x40px.png"
+                                    alt="" class="m-auto process-no hidden-xs">
+                                <div>
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_2-40x40px.png"
+                                        alt="" class="m-auto process-no visible-xs-inline">
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_2_Design.png "
+                                        alt="" class="m-auto py-3 process-icon" />
+                                    <h5>Design</h5>
+                                </div>
+                            </div>
+                            <p class="px-4 pt-4 process-text">Upon confirmation of the design, a deposit will be
+                                required
+                                and our designer will begin sketching the design in accordance with your preference.
+                                Once
+                                completed, a sketch of your customised item will be shared for final approval. </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-24 col-sm-8 bg-lighterorange">
+                        <div class="text-center py-5">
+                            <div class="process-steps">
+                                <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_3-40x40px.png"
+                                    alt="" class="m-auto process-no hidden-xs">
+                                <div>
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/M2-_CustomMade_-_Process_-_3-40x40px.png"
+                                        alt="" class="m-auto process-no visible-xs-inline">
+                                    <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2-CM3_-_3_Casting-and-Setting.png"
+                                        alt="" class="m-auto py-3 process-icon" />
+                                    <h5>Casting and Setting</h5>
+                                </div>
+                            </div>
+                            <p class="px-4 pt-4 process-text">Once the design is approved, production of your customised
+                                jewellery will commence and all you have to do is sit back and relax! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="{{store url='virtual-appointment'}}" class="btn btn-blue large-btn " role="button">Schedule
+                        An Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="things-to-note ">
+
+            <div class="container">
+                <div class="row ">
+
+                    <div class="col-sm-12 box  things-to-note-bg  hidden-xs">
+                        <div>
+                            <h1>Things To Note for Customisation</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 things-to-note-bg hidden-xs">
+
+                    </div>
+
+                    <div class="col-sm-12 box visible-xs mb-4">
+                        <div>
+                            <h1>Things To Note <br />
+                                for Customisation</h1>
+                        </div>
+                    </div>
+                    <div class=" visible-xs ">
+
+                        <img src="https://www.michaeltrio.com/pub/media/0custompage/CM4-banner-768.jpg"
+                            alt="MT2-Diamond-Landing-Banner768-320.jpg" class="img-responsive w-100">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="things-to-note-2 ">
+            <div class="container">
+                <div class="row flex-wrap">
+                    <div class=" col-sm-6 mb-3">
+                        <div class="things-steps">
+                            <div class="process-steps">
+                                <img src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_1_-_PRICE.png"
+                                    alt="" class="m-auto py-3 process-icon" />
+                            </div>
+
+                            <div>
+                                <h6 class="px-3">PRICE</h6>
+                                <p class="px-3">Our custom design service starts from RM 3,000, inclusive of a
+                                    non-refundable RM 1,000 design fee. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 mb-3">
+                        <div class="things-steps">
+                            <div class="process-steps"><img
+                                    src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_2_-_DEPOSIT.png"
+                                    alt="" class="m-auto py-3 process-icon" />
+
+                            </div>
+                            <div>
+                                <h6 class="px-3">DEPOSIT</h6>
+                                <p class="px-3">Upon confirmation of design, a minimum deposit of 50% based on the quote
+                                    will be required. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 mb-3">
+                        <div class="things-steps">
+                            <div class="process-steps"><img
+                                    src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_3_-_TIME-FRAME.png"
+                                    alt="" class="m-auto py-3 process-icon" />
+
+                            </div>
+                            <div>
+                                <h6 class="px-3">TIME-FRAME</h6>
+                                <p class="px-3">The crafting time normally takes 6-8 weeks from start to&nbsp;end. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 mb-3">
+                        <div class="things-steps">
+                            <div class="process-steps"><img
+                                    src="https://www.michaeltrio.com/pub/media/0custompage/MT2_-_CM4_-_4_-_NON-REFUNDABLE.png"
+                                    alt="" class="m-auto py-3 process-icon" />
+
+                            </div>
+                            <div>
+                                <h6 class="px-3">NON-REFUNDABLE</h6>
+                                <p class="px-3">Upon collection, all custom-made items will not be refundable. </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

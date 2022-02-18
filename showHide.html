@@ -1,0 +1,23 @@
+<script>
+    require(['jquery'], function ($) {
+        $(document).ready(function () {
+
+            var currentURL = $(location).attr('href');
+            console.log(currentURL);
+
+            var result = currentURL.search("/my");
+            console.log(result);
+
+            if (currentURL.search("/my") !== -1) {
+                console.log('my');
+                $(".only-sg").hide();
+                $(".only-my").show();
+            } else {
+                console.log('sg');
+                $(".only-my").hide();
+                $(".only-sg").show();
+            }
+
+        });
+    });
+</script>

@@ -1,0 +1,247 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>mailChimp_ProductMail - Responsive E-mail Template</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,100,400" rel="stylesheet" type="text/css">
+</head>
+
+<body style="font-family:Roboto,Open Sans,Arial,Tahoma, Helvetica, sans-serif; color:#000000;font-size:14px;">
+
+
+    <div style="width: 600px;">
+
+        <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <a href="https://www.michaeltrio.com/" style="text-decoration: none;">
+                            <img src="https://d213t4exkgxsjh.cloudfront.net/logo/michaeltrio-logov2.png" width="260">
+                        </a>
+                    </td>
+                    <td style="text-align: right;"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td colspan="2" style="padding: 0px 15px;">
+
+                        <h3>APPOINTMENT WITH US</h3>
+
+                        <p>Dear <b>{{var customer_name}}</b>,</p>
+
+                        <p style="line-height: 25px;">
+                            We are happy to have received your request to schedule an appointment with our
+                            representative at:
+                        </p>
+
+                        <table style="margin-top: 30px;" border="0">
+                            <tr>
+                                <td style="padding-right: 35px;">Time:</td>
+                                <td><b>{{var app_time}}</b></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 35px;">Date:</td>
+                                <td><b>{{var app_date}}</b></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-right: 35px;">Communication:</td>
+                                <td>{{var communication}}</td>
+                            </tr>
+                        </table>
+
+
+                        <p style="margin-top: 30px;">
+                            Our sale representative will contact you within 24 hours to confirm your appointment.
+                        </p>
+
+                        <div
+                            style="background-color: #f8f8f8;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-top: 15px;padding-bottom: 15px;margin-top: 40px;padding-left:15px;">
+                            <table border="0">
+                                <tr>
+                                    <td style="padding-right: 35px;">Name:</td>
+                                    <td>{{var customer_name}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Email:</td>
+                                    <td>{{var customer_email}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Contact Info:</td>
+                                    <td>{{var phone}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Communication:</td>
+                                    <td>{{var communication}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Interested in:</td>
+                                    <td>{{var interested | raw}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Appointment Date:</td>
+                                    <td>{{var app_date}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Appointment Time:</td>
+                                    <td>{{var app_time}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 35px;">Comments:</td>
+                                    <td>{{var comments}}</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="padding: 15px;">
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                            <tbody>
+                                <tr>
+                                    <td style="padding-right:20px;text-align: center; width: 33%;">
+
+                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png"
+                                            alt="icon-facebook" style="max-width:95%;" border="0" hspace="0" vspace="0">
+
+                                        <p style="text-align: center; text-transform: uppercase; padding-top:5px;
+                                            color: #9BB8D3;">Proposal Rings</p>
+                                    </td>
+                                    <td style="padding-right:10px;padding-left:10px;text-align: center; width: 33%;">
+
+                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png"
+                                            alt="icon-instagram" style="max-width:95%;" border="0" hspace="0" vspace="0"
+                                            mc:edit="iconinstagramcolor tb16">
+
+                                        <p style="text-align: center; text-transform: uppercase; padding-top:5px;
+                                            color: #9BB8D3;">Wedding Bands</p>
+                                    </td>
+                                    <td style="padding-left:20px;text-align: center; width: 33%;">
+
+                                        <img src="https://www.michaeltrio.com/pub/media/0appointment/Unique.png"
+                                            alt="icon-instagram" style="max-width:95%;" border="0" hspace="0" vspace="0"
+                                            mc:edit="iconinstagramcolor tb16">
+
+                                        <p style="text-align: center; text-transform: uppercase; padding-top:5px;
+                                            color: #9BB8D3;">Custom-Made</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 style="margin-bottom: 10px; text-align: center; text-transform: uppercase;">Need More Help?
+                        </h3>
+                        <p style="margin-bottom: 20px; text-align: center;">
+                            Our Jewellery experts are available from
+                            <br>
+                            Monday - Sunday 12PM - 7 PM
+                        </p>
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                            <tbody>
+                                <tr>
+                                    <td style="padding-right:45px;text-align: center;">
+                                        <a href="https://www.facebook.com/michaeltriojewels" target="_blank"
+                                            style="text-decoration: none;">
+                                            <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/6c569477-3260-42a5-bf82-eea5a986a917.png"
+                                                width="60" alt="icon-facebook" style="max-width:60px;" border="0"
+                                                hspace="0" vspace="0">
+                                        </a>
+                                        <p style="text-transform: uppercase;margin-top:5px;">Chat</p>
+                                    </td>
+                                    <td style="padding-right:45px;text-align: center;">
+                                        <a href="https://www.instagram.com/michaeltrio/" target="_blank"
+                                            style="text-decoration: none;">
+                                            <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/5b4db41f-9fcc-45f9-a2a4-a609a563b9c2.png"
+                                                width="60" alt="icon-instagram" style="max-width:60px;" border="0"
+                                                hspace="0" vspace="0" mc:edit="iconinstagramcolor tb16">
+                                        </a>
+                                        <p style="text-transform: uppercase;margin-top:5px;">Email</p>
+                                    </td>
+                                    <td style="padding-right:0px;text-align: center;">
+                                        <a href="mailto:service@michaeltrio.com" style="text-decoration: none;">
+                                            <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/e120670e-8737-46e5-8eed-afa0476c9676.png"
+                                                width="60" alt="icon-instagram" style="max-width:60px;" border="0"
+                                                hspace="0" vspace="0" mc:edit="iconinstagramcolor tb16">
+                                        </a>
+                                        <p style="text-transform: uppercase;margin-top:5px;">Call</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%"
+                            style="margin-bottom:20px;">
+                            <tr style="background-color: #9BB8D3;text-transform: uppercase;text-align: center;">
+                                <td style="padding:10px;color:#fff;letter-spacing: 1px;">
+                                    REFER A FRIEND AND GET UP
+                                    TO RM
+                                    300! <a href="https://www.michaeltrio.com/refer-a-friend"
+                                        style="color: #fff; text-decoration: underline !important;"><i>LEARN
+                                            MORE></i></a></td>
+
+
+                            </tr>
+                        </table>
+
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                            <tr>
+                                <td style="padding-right:25px;">
+                                    <a href="https://www.facebook.com/michaeltriojewels" target="_blank"
+                                        style="text-decoration: none;">
+                                        <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/6c569477-3260-42a5-bf82-eea5a986a917.png"
+                                            width="30" alt="icon-facebook" style="max-width:30px;" border="0" hspace="0"
+                                            vspace="0">
+                                    </a>
+                                </td>
+                                <td style="padding-right:25px;">
+                                    <a href="https://www.instagram.com/michaeltrio/" target="_blank"
+                                        style="text-decoration: none;">
+                                        <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/5b4db41f-9fcc-45f9-a2a4-a609a563b9c2.png"
+                                            width="30" alt="icon-instagram" style="max-width:30px;" border="0"
+                                            hspace="0" vspace="0" mc:edit="iconinstagramcolor tb16">
+                                    </a>
+                                </td>
+                                <td style="padding-right:25px;">
+                                    <a href="mailto:service@michaeltrio.com" style="text-decoration: none;">
+                                        <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/e120670e-8737-46e5-8eed-afa0476c9676.png"
+                                            width="30" alt="icon-instagram" style="max-width:30px;" border="0"
+                                            hspace="0" vspace="0" mc:edit="iconinstagramcolor tb16">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.youtube.com/watch?v=jt6xoxg0vXo" target="_blank"
+                                        style="text-decoration: none;">
+                                        <img src="https://gallery.mailchimp.com/e8d96232202faf40650998a75/images/504a616c-09df-4620-a353-15e8e7ac7f1c.png"
+                                            width="30" alt="icon-instagram" style="max-width:30px;" border="0"
+                                            hspace="0" vspace="0" mc:edit="iconinstagramcolor tb16">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <p style="text-align:center ;">
+                            You are receiving this email following your recent Michael Trio request.<br>
+                            If you have questions, please email service@michaeltrio.com with you request.
+                        </p>
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+
+</html>

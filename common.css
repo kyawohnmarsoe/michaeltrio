@@ -102,14 +102,19 @@
         margin: auto;
         min-width: 217px;
     }
+    .mt2021 .locations .btn{
+        font-size: 14px;
+        line-height: 17px;
+        padding: auto;
+    }
 
-    .btn-blue {
+    .mt2021 .btn-blue {
         color: var(--white) !important;
         background-color: var(--companyblue);
         transition: background-color 2s;
     }
 
-    .btn-blue:hover {
+    .mt2021 .btn-blue:hover {
         color: var(--white);
         background-color: var(--black);
 

@@ -707,55 +707,41 @@
 
 
 
-        .wedding3D .btn-WhiteGold,
-        .wedding3D .btn-YellowGold,
-        .wedding3D .btn-RoseGold,
-        .wedding3D .btn-Platinum {
+        .wedding3D .btn-white-gold,
+        .wedding3D .btn-yellow-gold,
+        .wedding3D .btn-rose-gold,
+        .wedding3D .btn-platinum {
+            border: 2px solid #CDCDCD;
             color: #000;
-            min-width: 0;
-            width: 30px;
-            height: 30px;
+            min-width: 96px;
             transition: border 1s;
-            margin-bottom: 0;
-            line-height: 26px;
-            font-size: 10px;
-            padding: 0;
-            border-radius: 50%;
-            cursor: pointer;
+            margin-bottom: 15px;
+            font-size: 12px;
+            padding: 5px;
 
         }
 
-        .btn-WhiteGold {
-            border: 3px solid #d5d7d8;
+        .btn-white-gold {
+            background: linear-gradient(270deg, #EAEAEA 6%, #FFFFFF 47.5%, #EAEAEA 89%);
         }
 
-        .btn-YellowGold {
-            border: 3px solid #f1ca8b;
+        .btn-yellow-gold {
+            background: linear-gradient(270deg, #FFD378 6%, #FFEEC9 47.5%, #FFD378 89%);
         }
 
-        .btn-RoseGold {
-            border: 3px solid #e2a79f;
+        .btn-rose-gold {
+            background: linear-gradient(270deg, #E6AA92 6%, #FFE1D5 47.5%, #E6AA92 89%);
         }
 
-        .btn-Platinum {
-            border: 3px solid #757575;
+        .btn-platinum {
+            background: linear-gradient(270deg, #EAEAEA 6%, #FFFFFF 47.5%, #EAEAEA 89%);
         }
 
-        .wedding3D .btn-outer-border {
-            display: inline-block;
-            padding: 2px 6px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            margin: 0 2px;
-        }
-
-        .wedding3D .btn-outer-border:hover {
-            border: 1px solid var(--darkblue);
-            /* font-weight: 500; */
-        }
-
-        .wedding3D .btn-outer-border.active {
-            border: 1px solid var(--darkblue);
+        .wedding3D .btn-white-gold:hover,
+        .wedding3D .btn-yellow-gold:hover,
+        .wedding3D .btn-rose-gold:hover,
+        .wedding3D .btn-platinum:hover {
+            border: 2px solid var(--darkblue);
             /* font-weight: 500; */
         }
 
@@ -995,29 +981,20 @@
 
                             <div id="channelSet_3D">
                             </div>
-                            <h3 class="my-4" id="channelSet_3DTitle">18K Gold</h3>
-                            <div class="btn-color-group channelSet">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold"
-                                        onclick="renderData(channelSet, 'channelSet', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold"
+                                    onclick="renderData(channelSet, 'channelSet', 'WhiteGold')">White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold"
+                                    onclick="renderData(channelSet, 'channelSet', 'YellowGold')">Yellow
+                                    Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold"
-                                        onclick="renderData(channelSet, 'channelSet', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold"
-                                        onclick="renderData(channelSet, 'channelSet', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum"
-                                        onclick="renderData(channelSet, 'channelSet', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold"
+                                    onclick="renderData(channelSet, 'channelSet', 'RoseGold')">Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum"
+                                    onclick="renderData(channelSet, 'channelSet', 'Platinum')">Platinum</div>
                             </div>
 
                         </div>
@@ -1066,29 +1043,21 @@
 
 
                             <div id="sharedProngSet_3D"></div>
-                            <h3 class="my-4 " id="sharedProngSet_3DTitle">18K Gold</h3>
-                            <div class="btn-color-group sharedProngSet">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold"
-                                        onclick="renderData(sharedProngSet, 'sharedProngSet', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold"
+                                    onclick="renderData(sharedProngSet, 'sharedProngSet', 'WhiteGold')">White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold"
+                                    onclick="renderData(sharedProngSet, 'sharedProngSet', 'YellowGold')">Yellow Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold"
-                                        onclick="renderData(sharedProngSet, 'sharedProngSet', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold"
-                                        onclick="renderData(sharedProngSet, 'sharedProngSet', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum"
-                                        onclick="renderData(sharedProngSet, 'sharedProngSet', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold"
+                                    onclick="renderData(sharedProngSet, 'sharedProngSet', 'RoseGold')">
+                                    Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum"
+                                    onclick="renderData(sharedProngSet, 'sharedProngSet', 'Platinum')">
+                                    Platinum</div>
                             </div>
 
                         </div>
@@ -1136,29 +1105,20 @@
 
 
                             <div id="surfaceProngSet_3D"></div>
-                            <h3 class="my-4" id="surfaceProngSet_3DTitle">18K Gold</h3>
-                            <div class="btn-color-group surfaceProngSet">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold"
-                                        onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold"
+                                    onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'WhiteGold')">White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold"
+                                    onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'YellowGold')">Yellow
+                                    Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold"
-                                        onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold"
-                                        onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum"
-                                        onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold"
+                                    onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'RoseGold')">Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum"
+                                    onclick="renderData(surfaceProngSet, 'surfaceProngSet', 'Platinum')">Platinum</div>
                             </div>
 
                         </div>
@@ -1206,25 +1166,19 @@
 
 
                             <div id="vProng_3D"></div>
-                            <h3 class="my-4" id="vProng_3DTitle">18K Gold</h3>
-                            <div class="btn-color-group vProng">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold" onclick="renderData(vProng, 'vProng', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold" onclick="renderData(vProng, 'vProng', 'WhiteGold')">
+                                    White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold" onclick="renderData(vProng, 'vProng', 'YellowGold')">
+                                    Yellow
+                                    Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold" onclick="renderData(vProng, 'vProng', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold" onclick="renderData(vProng, 'vProng', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum" onclick="renderData(vProng, 'vProng', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold" onclick="renderData(vProng, 'vProng', 'RoseGold')">Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum" onclick="renderData(vProng, 'vProng', 'Platinum')">
+                                    Platinum</div>
                             </div>
 
                         </div>
@@ -1272,29 +1226,23 @@
 
 
                             <div id="doubleProngsSet_3D"></div>
-                            <h3 class="my-4" id="doubleProngsSet_3DTitle">18K Gold</h3>
-                            <div class="btn-color-group doubleProngsSet">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold"
-                                        onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold"
+                                    onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'WhiteGold')">
+                                    White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold"
+                                    onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'YellowGold')">
+                                    Yellow
+                                    Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold"
-                                        onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold"
-                                        onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum"
-                                        onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold"
+                                    onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'RoseGold')">Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum"
+                                    onclick="renderData(doubleProngsSet, 'doubleProngsSet', 'Platinum')">
+                                    Platinum</div>
                             </div>
 
                         </div>
@@ -1342,30 +1290,23 @@
 
 
                             <div id="classicSurfaceProng_3D"></div>
-                            <h3 class="my-4" id="classicSurfaceProng_3DTitle">18K Gold</h3>
-
-                            <div class="btn-color-group classicSurfaceProng">
-                                <div class="btn-outer-border">
-                                    <div class="btn-WhiteGold"
-                                        onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'WhiteGold')">
-                                        18K</div>
+                            <h3 class="my-4">18K Gold</h3>
+                            <div>
+                                <div class="btn btn-white-gold"
+                                    onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'WhiteGold')">
+                                    White
+                                    Gold</div>
+                                <div class="btn btn-yellow-gold"
+                                    onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'YellowGold')">
+                                    Yellow
+                                    Gold
                                 </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-YellowGold"
-                                        onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'YellowGold')">
-                                        18K
-                                    </div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-RoseGold"
-                                        onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'RoseGold')">
-                                        18K</div>
-                                </div>
-                                <div class="btn-outer-border">
-                                    <div class="btn-Platinum"
-                                        onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'Platinum')">
-                                        PT</div>
-                                </div>
+                                <div class="btn btn-rose-gold"
+                                    onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'RoseGold')">Rose
+                                    Gold</div>
+                                <div class="btn btn-platinum"
+                                    onclick="renderData(classicSurfaceProng, 'classicSurfaceProng', 'Platinum')">
+                                    Platinum</div>
                             </div>
 
                         </div>
@@ -2564,48 +2505,6 @@
             }
         }
 
-        const dome3DTitle = {
-            "channelSet": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            },
-            "sharedProngSet": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            },
-            "surfaceProngSet": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            }
-            ,
-            "vProng": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            }
-            ,
-            "doubleProngsSet": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            }
-            ,
-            "classicSurfaceProng": {
-                "WhiteGold": "18K White Gold",
-                "YellowGold": "18K Yellow Gold",
-                "RoseGold": "18K Rose Gold",
-                "Platinum": "Platinum",
-            }
-        }
-
         window.onload = function () {
 
             renderData(channelSet, 'channelSet', 'WhiteGold');
@@ -2615,21 +2514,14 @@
             renderData(doubleProngsSet, 'doubleProngsSet', 'WhiteGold');
             renderData(classicSurfaceProng, 'classicSurfaceProng', 'WhiteGold');
 
-        };
 
-        renderData(channelSet, 'channelSet', 'WhiteGold');
-        renderData(sharedProngSet, 'sharedProngSet', 'WhiteGold');
-        renderData(surfaceProngSet, 'surfaceProngSet', 'WhiteGold');
-        renderData(vProng, 'vProng', 'WhiteGold');
-        renderData(doubleProngsSet, 'doubleProngsSet', 'WhiteGold');
-        renderData(classicSurfaceProng, 'classicSurfaceProng', 'WhiteGold');
+        }
 
 
 
         function renderData(domeType, id, color) {
             let domeURL = ``;
             let id_3D = `${id}_3D`;
-            let id_3DTitle = `${id}_3DTitle`;
             let data = "";
 
 
@@ -2643,45 +2535,31 @@
 
             document.getElementById(id).innerHTML = data;
             document.getElementById(id_3D).innerHTML = domeURL;
-            document.getElementById(id_3DTitle).innerHTML = dome3DTitle[id][color];
-
-            setActiveBtn(id, color);
 
 
         }
 
+        const readMore = document.getElementsByClassName('read-more');
+        for (let i = 0; i < readMore.length; i++) {
+            readMore[i].addEventListener('click', function () {
 
-        function setActiveBtn(id, color) {
-            const btnGroup = document.querySelector(`.${id}`);
-            const allBtn = btnGroup.querySelectorAll('.btn-outer-border');
-            for (const btn of allBtn) {
-                btn.classList.remove('active');
-            }
+                const para = readMore[i].closest('.p-wrapper');
+                var dots = para.querySelector(".dots");
+                var moreText = para.querySelector(".more");
+                var btnText = para.querySelector(".read-more");
 
-            btnGroup.querySelector(`.btn-${color}`).closest('.btn-outer-border').classList.add('active');
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+
+            });
         }
-
-        // const readMore = document.getElementsByClassName('read-more');
-        // for (let i = 0; i < readMore.length; i++) {
-        //     readMore[i].addEventListener('click', function () {
-
-        //         const para = readMore[i].closest('.p-wrapper');
-        //         var dots = para.querySelector(".dots");
-        //         var moreText = para.querySelector(".more");
-        //         var btnText = para.querySelector(".read-more");
-
-        //         if (dots.style.display === "none") {
-        //             dots.style.display = "inline";
-        //             btnText.innerHTML = "Read more";
-        //             moreText.style.display = "none";
-        //         } else {
-        //             dots.style.display = "none";
-        //             btnText.innerHTML = "Read less";
-        //             moreText.style.display = "inline";
-        //         }
-
-        //     });
-        // }
 
 
     </script>
