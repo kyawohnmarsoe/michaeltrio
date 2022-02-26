@@ -2182,7 +2182,7 @@
 
 <body data-spy="scroll" data-target=".navbar">
     <div class="mt2021">
-        <section class="faqs pb-5" id="faq-shipping">
+        <section class="faqs pb-5">
             <div class="container pb-5">
                 <h3 class="text-center mb-5">Questions? Look here.</h3>
                 <div class="">
@@ -2210,7 +2210,7 @@
 
                     <div class="left-space-300 ">
                         <!-- Shipping -->
-                        <div class="container-faq ">
+                        <div class="container-faq" id="faq-shipping">
                             <h6>Shipping</h6>
                             <div class="panel-group"
                                 data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": false, "multipleCollapsible": false}}'
@@ -3725,6 +3725,8 @@
                             </div>
                         </div>
 
+
+
                         <!-- locate us -->
                         <div class="container-faq pt-3" id="faq-locate">
                             <h6> Locate Us
@@ -3845,16 +3847,24 @@
                 }
 
                 $('#faq-menu a').click(function () {
+                    console.log('Clicked function working ...');
                     var id = $(this).attr('href');
-
                     $('#faq-menu a').removeClass('selected');
                     $(this).addClass('selected');
 
                     var stop = ($(window).width() > 768) ? 84 : 180;
 
-                    window.history.pushState({}, null, BASE_URL + 'faq' + id);
+                    var history = BASE_URL + 'test-page' + id;
+                    window.history.pushState({}, null, history);
 
                     $('html, body').animate({ scrollTop: $(id).offset().top - stop }, 100);
+
+                    console.log('id ' + id);
+                    console.log('id offset top ' + $('#faq-shipping').offset().top);
+                    console.log('id offset top ' + $('#faq-14day').offset().top);
+                    console.log('id offset top ' + $('#faq-lifetime').offset().top);
+                    console.log('id offset top ' + $('#faq-locate').offset().top);
+
 
                     return false;
                 });
@@ -3871,10 +3881,14 @@
 
                 // Auto scroll
                 if (hash) {
+
                     // $('#faq-menu a[href="' + hash + '"]').click();
                     setTimeout(() => {
                         $('#faq-menu a[href="' + hash + '"]').click();
                     }, 1000);
+
+                    return false;
+
                 }
 
             });

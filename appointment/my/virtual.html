@@ -998,7 +998,7 @@
             height: auto;
             /* margin-top: 10px; */
             border-color: var(--companyblue);
-            line-height: 24px;
+            line-height: 24.5px;
             border-width: 1px;
         }
 
@@ -1687,6 +1687,19 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-xs-24 col-sm-10 col-md-10 ">
+                                                        <div class="mb-3">
+
+                                                            <div class="mb-3" style="width: 49%;float: left;">
+                                                                <input type="text" required id="countryCode"
+                                                                    name="countryCode" placeholder="Country Code"
+                                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                                            </div>
+                                                            <div class="mb-3" style="width: 49%;float: right;">
+                                                                <input type="text" id="areaCode" name="areaCode"
+                                                                    placeholder="Area Code"
+                                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                                            </div>
+                                                        </div>
 
                                                         <div class="mb-3">
 
@@ -1712,7 +1725,7 @@
 
                                                         <div class="mb-0">
 
-                                                            <textarea id="remarks" name="remarks" rows="3"
+                                                            <textarea id="remarks" name="remarks" rows="5"
                                                                 placeholder="Message (Optional)"></textarea>
                                                         </div>
                                                     </div>
@@ -1908,6 +1921,8 @@
                 "customerName": "",
                 "customerName2": "",
                 "email": "",
+                "countryCode": "",
+                "areaCode": "",
                 "contactNumber": "",
                 "budget": "",
                 "remarks": "NIL"
@@ -2000,6 +2015,8 @@
                 bookingData['customer']['customerName'] = document.getElementById("customerName").value;
                 bookingData['customer']['customerName2'] = document.getElementById("customerName2").value;
                 bookingData['customer']['email'] = document.getElementById("email").value;
+                bookingData['customer']['countryCode'] = document.getElementById("countryCode").value;
+                bookingData['customer']['areaCode'] = document.getElementById("areaCode").value;
                 bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
                 bookingData['customer']['budget'] = "";
                 bookingData['customer']['remarks'] = document.getElementById("remarks").value;

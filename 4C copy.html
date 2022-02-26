@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --lightblue: #E5F3FE;
+            --lighterblue: #F0F6FB;
+            --darkblue: #325683;
+            --lightorange: #FFECE6;
+            --lighterorange: #fff6f3;
+            --white: #ffffff;
+            --black: #606060;
+            --companyblue: #9BB8D3;
+            --cream: #F7F3F0;
+            --oragne: #FFB898;
+            font-size: 17px;
+        }
+
+        .bg-cream {
+            background-color: var(--cream);
+        }
+
+        .bg-lighterorange {
+            background-color: var(--lighterorange);
+        }
+
+        .bg-lightorange {
+            background-color: var(--lightorange);
+        }
+
+        .bg-orange {
+            background-color: var(--oragne);
+        }
+
+        .bg-lighterblue {
+            background-color: var(--lighterblue);
+        }
+
+        .bg-lightblue {
+            background-color: var(--lightblue);
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .bg-lightgrey {
+            background-color: #FAFAFA;
+        }
+
+        .bg-lightgreyblue {
+            background-color: var(--lighterblue);
+        }
+
+
+        .mt2021 {
+            font-size: 14px;
+        }
+
+        a.textblack {
+            color: var(--black);
+        }
+
+        a.textblack:hover {
+            color: var(--black);
+        }
+
+        html,
+        .mt2021,
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h3,
+        .mt2021 h4,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            padding: 0;
+            color: var(--black);
+        }
+
+        .p-wrapper {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .mt2021 .text-white {
+            color: white;
+        }
+
+        .mt2021 h1,
+        .mt2021 p {
+            letter-spacing: 0.05em;
+        }
+
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .mt2021 .locations .btn {
+            font-size: 14px;
+            line-height: 17px;
+            padding: auto;
+        }
+
+        .mt2021 .btn-blue {
+            color: var(--white) !important;
+            background-color: var(--companyblue);
+            transition: background-color 2s;
+        }
+
+        .mt2021 .btn-blue:hover {
+            color: var(--white);
+            background-color: var(--black);
+
+        }
+
+        .columns a.btn-blue-outline {
+            min-width: 120px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--companyblue);
+            border: 2px solid var(--companyblue);
+            transition: all 1s;
+        }
+
+        .columns a.btn-blue-outline:hover {
+            color: var(--white);
+            background-color: var(--black);
+            border-color: transparent;
+        }
+
+        .columns a.btn-blue-outline.active {
+            color: var(--white);
+            background-color: var(--companyblue);
+        }
+
+        .studs-nav .btn {
+            display: inline-block;
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .mt2021 .small-btn {
+            width: 217px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .top8 {
+            padding-top: 8%;
+        }
+
+        .mt2021 .row {
+            display: flex;
+        }
+
+        .diamond-image img {
+            width: 500px;
+        }
+
+        .columns a {
+            color: var(--black);
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .desktop-show {
+            display: block;
+        }
+
+        .mobile-show {
+            display: none;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .banner-height-500 {
+            height: 500px;
+        }
+
+        .banner-height-400 {
+            height: 400px;
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .d-sm-flex {
+            display: flex;
+        }
+
+        .w-sm-50 {
+            width: 50%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .pb-sm-5 {
+            padding-bottom: 3rem !important;
+        }
+
+        .pb-xs-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .py-xs-5 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .for-title {
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .perfect-fit .diamond-image-bg {
+            height: 400px;
+            background-image: url(https://www.michaeltrio.com/pub/media/0newengagementpage/MT2-Engagement-Landing-P5_Kiss.png);
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .custom-earrings-bg,
+        .custom-pendant-bg {
+            background-color: var(--lighterblue);
+        }
+
+        .perfect-fit-bg {
+            background: linear-gradient(270.2deg, #F5F5F5 -1.17%, #C4C4C4 -1.16%, rgba(205, 205, 205, 0) 102.86%);
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Owl Carousel @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .mt2021 .owl-item .item a:hover {
+            color: var(--black);
+        }
+
+        .mt2021 .owl-carousel .owl-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: auto; */
+        }
+
+
+        .mt2021 .owl-carousel .owl-item img {
+            width: 100px;
+            transition: all 1s;
+        }
+
+
+        .mt2021 .owl-carousel .owl-item.center img {
+            width: 200px;
+            margin: auto;
+        }
+
+        .mt2021 .owl-carousel .owl-item.center {
+            margin: 0px 20px;
+        }
+
+        .mt2021 .owl-item article>a {
+            display: none;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .mt2021 .owl-item.center article>a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        .mt2021 .owl-carousel .owl-nav .owl-prev,
+        .mt2021 .owl-carousel .owl-nav .owl-next {
+            top: auto;
+            bottom: -40px;
+        }
+
+        .mt2021 .owl-carousel .owl-nav [class*='owl-']:before {
+            font-size: 40px;
+        }
+
+        .mt2021 .owl-carousel .owl-item a img:hover {
+            filter: contrast(130%);
+        }
+
+        #diamonds-slider.owl-carousel .owl-item {
+            height: 250px;
+        }
+
+        #top-selling-slider.owl-carousel .owl-item {
+            align-items: flex-start;
+        }
+
+        .mt2021 .more {
+            display: none;
+        }
+
+        .mt2021 .text-lightblue {
+            color: var(--companyblue);
+        }
+
+        @media (max-width: 1199.98px) {
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .spinning-diamond {
+                width: 380px;
+                height: 380px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 767.98px) {
+
+            .py-xs-5 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .d-sm-flex {
+                display: block;
+            }
+
+            .w-sm-50 {
+                width: 100%;
+            }
+
+            .mx-xs-3 {
+                margin: auto 15px !important;
+            }
+
+            .m-xs-auto {
+                margin: auto !important;
+            }
+
+            .pt-xs-3 {
+                padding-top: 1rem !important;
+            }
+
+            .spacing-xs-t {
+                padding-top: 20px !important;
+            }
+
+            .spacing-xs-b {
+                padding-bottom: 20px !important;
+            }
+
+            .pb-sm-5 {
+                padding-bottom: 0 !important;
+            }
+
+            .pb-xs-5 {
+                padding-bottom: 3rem !important;
+            }
+
+            .py-xs-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .col-sm-12 {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+            .my-4 {
+                margin-top: 1.2rem !important;
+            }
+
+            .mt2021 .row {
+                display: block;
+            }
+
+            .diamond-image img {
+                width: 320px;
+            }
+
+            .perfect-fit-bg {
+                background: linear-gradient(175.67deg, #F5F5F5 -9.43%, #C4C4C4 -9.42%, rgba(205, 205, 205, 0) 95.82%);
+            }
+
+
+        }
+
+
+        @media (max-width: 480px) {
+
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            .diamond-image img {
+                width: 80%;
+            }
+
+            #diamonds-slider.owl-carousel .owl-item {
+                height: 200px;
+            }
+
+            .mt2021 .owl-carousel .owl-item img {
+                width: 70px;
+                transition: unset;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center img {
+                width: 150px;
+            }
+
+            .mt2021 .owl-carousel .owl-item.center {
+                margin: 0px 20px;
+            }
+
+            .spinning-diamond {
+                width: 295px;
+                height: 295px;
+            }
+
+            .diamond-thumbnail .diamond-size {
+                font-size: 11px;
+            }
+
+            .diamond-quality,
+            .diamond-price {
+                font-size: 12px;
+            }
+
+            .desktop-show {
+                display: none;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Fonts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .font-weight-bold {
+            font-weight: 700;
+        }
+
+        .font-weight-normal {
+            font-weight: 400;
+        }
+
+        .font-weight-light {
+            font-weight: 300;
+        }
+
+        .mt2021 h1,
+        .mt2021 h2,
+        .mt2021 h4 {
+            font-family: 'Times New Roman';
+        }
+
+        .mt2021 h3,
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p,
+        .mt2021 .h7,
+        .mt2021 .h8,
+        .mt2021 .h9,
+        .mt2021 .h10,
+        .mt2021 .h11,
+        .mt2021 .h12,
+        .mt2021 .h13,
+        .mt2021 .h14,
+        .mt2021 .h15 {
+            font-family: 'Montserrat';
+        }
+
+        .mt2021 h1 {
+            font-size: 36px;
+        }
+
+        .mt2021 h2 {
+            font-size: 32px;
+        }
+
+        .mt2021 h3 {
+            font-size: 32px;
+        }
+
+        .mt2021 h4 {
+            font-size: 25px;
+        }
+
+        .mt2021 h5 {
+            font-size: 22px;
+        }
+
+        .mt2021 h6 {
+            font-size: 17px;
+        }
+
+        .mt2021 p {
+            font-size: 17px;
+        }
+
+        .mt2021 .h7 {
+            font-size: 18px;
+        }
+
+        .mt2021 .h8 {
+            font-size: 16px;
+        }
+
+        .mt2021 .h9 {
+            font-size: 14px;
+        }
+
+        .mt2021 .h10 {
+            font-size: 13px;
+        }
+
+        .mt2021 .h11 {
+            font-size: 12px;
+        }
+
+        .mt2021 .h12 {
+            font-size: 11px;
+        }
+
+        .mt2021 .h13 {
+            font-size: 10px;
+        }
+
+        .mt2021 .h14 {
+            font-size: 9px;
+        }
+
+        .mt2021 .h15 {
+            font-size: 8px;
+        }
+
+        @media (max-width:767.98px) {
+            .mt2021 h1 {
+                font-size: 30px;
+            }
+
+            .mt2021 h2 {
+                font-size: 25px;
+            }
+
+            .mt2021 h3 {
+                font-size: 25px;
+            }
+
+            .mt2021 h4 {
+                font-size: 22px;
+            }
+
+            .mt2021 h5 {
+                font-size: 18px;
+            }
+
+            .mt2021 h6 {
+                font-size: 17px;
+            }
+
+            .mt2021 p {
+                font-size: 17px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 16px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:480px) {
+            .mt2021 h1 {
+                font-size: 25px;
+            }
+
+            .mt2021 h2 {
+                font-size: 20px;
+            }
+
+            .mt2021 h3 {
+                font-size: 20px;
+            }
+
+            .mt2021 h4 {
+                font-size: 18px;
+            }
+
+            .mt2021 h5 {
+                font-size: 17px;
+            }
+
+            .mt2021 h6 {
+                font-size: 14px;
+            }
+
+            .mt2021 p {
+                font-size: 14px;
+            }
+
+            .mt2021 .h7 {
+                font-size: 15px;
+            }
+
+            .mt2021 .h8 {
+                font-size: 14px;
+            }
+
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-end {
+            align-items: flex-end;
+        }
+
+        .fourC .borderline-right {
+            border-right: 1px solid black;
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 4C of Diamond @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        .fourC .product.data.items {
+            position: relative;
+        }
+
+        .fourC .product.data.items>.item.title>.switch {
+            min-width: 48px;
+            padding: 5px;
+            font-size: 1rem;
+            color: black;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 7px;
+            background-color: white;
+        }
+
+        .fourC .product.data.items>.item.title>.switch {
+            height: auto;
+        }
+
+        .borderbox-black {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 50px 50px 0px 50px;
+        }
+
+        .fourC .product.data.items>.item.content {
+            margin-top: 55px;
+            padding: 10px 0;
+            border: 0px;
+            font-size: 12px;
+            float: right;
+            margin-left: -100%;
+            width: 100%;
+
+        }
+
+        .fourC .carat .product.data.items>.item.content::before {
+            content: "";
+            height: 5px;
+            width: 314px;
+            position: absolute;
+            top: 47px;
+            left: 0;
+            background-color: var(--companyblue);
+        }
+
+        .carat-space {
+            padding: 50px 25px 0px 25px;
+        }
+
+        .fourC .product.data.items>.item.title {
+            width: auto;
+            float: left;
+            margin: 0 5px 0 0;
+        }
+
+        .fourC .product.data.items>.item.title:focus {
+            outline: none;
+        }
+
+        .fourC .product.data.items>.item.title.active>.switch,
+        .fourC .product.data.items>.item.title.active>.switch:focus,
+        .fourC .product.data.items>.item.title.active>.switch:hover {
+            padding-bottom: 5px;
+            background-color: var(--lightblue);
+        }
+
+        #caratImageHolder {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        @media (max-width:767.98px) {
+            .fourC .borderline-right {
+                border-right: none;
+            }
+
+            .carat-space {
+                padding: 0px;
+            }
+
+            .fourC .borderbox-black {
+                padding: 50px;
+            }
+
+            #caratImageHolder {
+                max-width: 70%;
+            }
+
+
+        }
+
+        @media (max-width:480px) {
+
+            .fourC .borderbox-black {
+                padding: 20px;
+            }
+
+            .fourC .product.data.items>.item.title>.switch {
+                font-size: 0.8rem;
+                min-width: 38px;
+                line-height: 23px;
+            }
+
+            .fourC .carat .product.data.items>.item.content::before {
+                width: 255px;
+            }
+
+            #caratImageHolder {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width:320px) {
+
+            .fourC .borderbox-black {
+                padding: 10px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mt2021 fourC">
+
+
+        <div class="container" style="max-width: 900px;">
+            <div class="borderbox-black carat ">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-10 col-xs-24 borderline-right">
+                        <h4>Carat</h4>
+                        <p class="h10">Diamond Carat : 0.30</p>
+                    </div>
+                    <div class="col-md-18 col-sm-14 col-xs-24 d-flex align-items-end ">
+                        <p class="h11">Diamonds and gemstones are weighed in carats. Carat measures the weight of a
+                            diamond and is
+                            often confused with size. One carat (cts) is equal to 0.2grams.</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-10 col-sm-10 col-xs-24 text-center">
+                        <img src="https://www.michaeltrio.com/pub/media/0new4C/Carat-03.png" alt=""
+                            id="caratImageHolder">
+                    </div>
+                    <div class="col-md-14 col-sm-14 col-xs-24 ">
+                        <div class="carat-space">
+                            <div id="carat" class="product data items"
+                                data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}'>
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-03">0.3</a>
+                                </div>
+                                <div id="carat-03" class="item content" data-role="content-hide">
+                                    0.3</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-05">0.5</a>
+                                </div>
+                                <div id="carat-05" class="item content" data-role="content-hide">0.5</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-07">0.7</a>
+                                </div>
+                                <div id="carat-07" class="item content" data-role="content-hide">0.7</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-10">1</a>
+                                </div>
+                                <div id="carat-10" class="item content" data-role="content-hide">1</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-15">1.5</a>
+                                </div>
+                                <div id="carat-15" class="item content" data-role="content-hide">1.5</div>
+
+                                <div class="item title" data-role="collapsible">
+                                    <a class="switch" data-toggle="trigger" href="#carat-20">2</a>
+                                </div>
+                                <div id="carat-20" class="item content" data-role="content-hide">
+                                    The interactive slider above
+                                    shows an estimate
+                                    of
+                                    the different carat size in relation to the hand.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        const images = {
+            "carat-03": "https://www.michaeltrio.com/pub/media/0new4C/Carat-03.png",
+            "carat-05": "https://www.michaeltrio.com/pub/media/0new4C/Carat-05.png",
+            "carat-07": "https://www.michaeltrio.com/pub/media/0new4C/Carat-07.png",
+            "carat-10": "https://www.michaeltrio.com/pub/media/0new4C/Carat-10.png",
+            "carat-15": "https://www.michaeltrio.com/pub/media/0new4C/Carat-15.png",
+            "carat-20": "https://www.michaeltrio.com/pub/media/0new4C/Carat-20.png",
+
+        }
+        require([
+            'jquery',
+            'tabs'], function ($) {
+                $('#carat').tabs();
+                $('.switch').click(function () {
+                    var clickedID = $(this).attr('href').replace('#', '');
+                    if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('color')) {
+                        var image = $('#colorImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    } else if (clickedID.includes('carat')) {
+                        var image = $('#caratImageHolder').attr('src', images[clickedID]);
+                    }
+
+                });
+            });
+    </script>
+</body>
+
+</html>
