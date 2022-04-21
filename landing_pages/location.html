@@ -670,6 +670,14 @@
 
         }
 
+        .tam-bg {
+            background-image: url(https://www.michaeltrio.com/pub/media/0appointment/tampines_shop_pic.jpg);
+            background-size: cover;
+            background-position: top center;
+            min-height: 450px;
+
+        }
+
         .mt2021 a {
             color: var(--companyblue);
         }
@@ -678,7 +686,8 @@
 
             .jem-bg,
             .tanjong-bg,
-            .np-bg {
+            .np-bg,
+            .tam-bg {
                 background-image: none;
                 min-height: auto;
             }
@@ -693,7 +702,7 @@
         <section>
 
             <h3 class="my-5 text-center"> Our Showrooms</h3>
-            <div class="container mb-5 bg-lightblue">
+            <div class="container mb-5 bg-lightblue" id="tp">
                 <div class="row">
                     <div class="col-sm-12 box p-0 tanjong-bg">
                         <div class="w-100">
@@ -733,7 +742,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mb-5 bg-lightblue">
+            <div class="container mb-5 bg-lightblue" id="jem">
                 <div class="row">
                     <div class="col-sm-12 box p-0 jem-bg">
                         <div class="w-100">
@@ -777,7 +786,7 @@
 
 
 
-            <div class="container bg-lightblue">
+            <div class="container mb-5 bg-lightblue" id="np">
                 <div class="row">
                     <div class="col-sm-12 box p-0 np-bg">
                         <div class="w-100">
@@ -819,6 +828,51 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container bg-lightblue" id="tam">
+                <div class="row">
+                    <div class="col-sm-12 box p-0 tam-bg">
+                        <div class="w-100">
+                            <img src="https://www.michaeltrio.com/pub/media/0appointment/tampines_shop_pic.jpg" alt=""
+                                class="w-100 visible-xs">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 box px-4 py-5">
+                        <div class="text-left">
+                            <h3 class="mb-3 ">TAMPINES 1</h3>
+                            <p class="h9 mb-3">
+                                10 Tampines Central 1, #01-13,<br />
+                                Singapore 529536<br />
+
+                                Monday - Thursday: 11am - 9pm<br />
+
+                                Friday - Sunday: 11am - 9.30pm<br />
+
+                            </p>
+
+                            <p class="h9">
+                                Call: <a href="tel:+6569667525"> +65 6966 7525</a><br />
+
+                                Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
+                            </p>
+                            <div class="py-3 only-sg">
+                                <a href="{{store url='make-an-appointment'}}" class="btn btn-blue large-btn">Schedule An
+                                    Appointment </a>
+                            </div>
+                            <div class="py-3 only-my">
+                                <a href="{{store url='make-an-appointment'}}" class="btn btn-blue large-btn">Schedule A
+                                    Virtual Appointment </a>
+                            </div>
+
+                            <div class="h13"> *Last appointment will be 1 hour before closing!
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <div class="section">

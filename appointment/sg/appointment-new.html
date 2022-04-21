@@ -996,7 +996,7 @@
             height: auto;
             /* margin-top: 10px; */
             border-color: var(--companyblue);
-            line-height: 24.5px;
+            line-height: 24px;
             border-width: 1px;
         }
 
@@ -1335,9 +1335,9 @@
                                         onclick="renderShowroom('np')">
                                         Northpoint City Showroom
                                     </button>
-                                    <!-- <button class="btn btn-blue-outline " onclick="renderShowroom('tam')"
-                                        disabled>Tampines
-                                    </button> -->
+                                    <button class="btn btn-blue-outline ml-0 margin-lg-b10"
+                                        onclick="renderShowroom('tam')">Tampines 1 Showroom
+                                    </button>
 
                                 </div>
 
@@ -1346,7 +1346,7 @@
                                         <option value="tp"> Tanjong Pagar Showroom</option>
                                         <option value="jem"> JEM Showroom</option>
                                         <option value="np"> Northpoint City Showroom</option>
-                                        <!-- <option value="tam">Tampines</option> -->
+                                        <option value="tam">Tampines 1 Showroom</option>
                                     </select>
 
                                 </div>
@@ -1504,6 +1504,8 @@
                                             <div class="py-3">
                                                 <h3 class="text-center mb-4 text-lightblue text-uppercase">Date & Time
                                                     Preference</h3>
+
+                                                <!-- <div id="tamMsg" class=" text-danger my-3 text-center"></div> -->
 
                                                 <div class="row justify-content-center">
                                                     <div class=" text-center col-xs-24 col-sm-10 col-md-10 mb-3">
@@ -1716,21 +1718,6 @@
 
                                                 <div class="row justify-content-center">
                                                     <div class="col-xs-24 col-sm-10 col-md-10 ">
-
-                                                        <div class="mb-3">
-
-                                                            <div class="mb-3" style="width: 49%;float: left;">
-                                                                <input type="text" required id="countryCode"
-                                                                    name="countryCode" placeholder="Country Code"
-                                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                                                            </div>
-                                                            <div class="mb-3" style="width: 49%;float: right;">
-                                                                <input type="text" id="areaCode" name="areaCode"
-                                                                    placeholder="Area Code"
-                                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                                                            </div>
-                                                        </div>
-
                                                         <div class="mb-3">
 
 
@@ -1757,7 +1744,7 @@
 
                                                         <div class="mb-0">
 
-                                                            <textarea id="remarks" name="remarks" rows="5"
+                                                            <textarea id="remarks" name="remarks" rows="3"
                                                                 placeholder="Message (Optional)"></textarea>
                                                         </div>
                                                     </div>
@@ -1929,10 +1916,13 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
 
             },
             "tam": {
-                "title": "Tampines",
-                "body": "",
-                "image": "",
-                "appointmentTime": ['12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM', '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM', '5:00 PM', '5:30 PM', '6:00 PM', '6:30 PM', '7:00 PM', '7:30 PM']
+                "title": `Tampines 1 Showroom `,
+                "body": `<p class="mb-3">10 Tampines Central 1, #01-13, <br>S529536</p><div class="mb-3 h11"> Monday - Thursday: 11am - 9pm </br> Friday - Sunday: 11am - 9.30pm</div><p class="mb-3 h11">
+Call: <a href="tel:+6569667525"> +65 6966 7525</a><br>
+Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
+</p>`,
+                "image": "https://www.michaeltrio.com/pub/media/0appointment/tampines_shop_pic.jpg",
+                "appointmentTime": ['11:00 AM', '11:30 AM', '12:00 PM', '12:30 PM', '1:00 PM', '1:30 PM', '2:00 PM', '2:30 PM', '3:00 PM', '3:30 PM', '4:00 PM', '4:30 PM', '5:00 PM', '5:30 PM', '6:00 PM', '6:30 PM', '7:00 PM', '7:30 PM', '8:00 PM']
             }
         }
 
@@ -1949,8 +1939,6 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
                 "customerName": "",
                 "customerName2": "",
                 "email": "",
-                "countryCode": "",
-                "areaCode": "",
                 "contactNumber": "",
                 "budget": "",
                 "remarks": "NIL"
@@ -1975,10 +1963,23 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
         let LocationImage = `<img src="${showrooms.tp.image}" alt=""
                                     class="w-100">` ;
 
+        let tamMsg = ``;
+
+
+
 
         function renderShowroom(location) {
 
-            // this.classList.add("active");
+
+            // if (location === 'tam') {
+            //     tamMsg = `Our Tampines Showroom will open on
+            //                                       the 14 April 2022 ( Thursday )<br>
+            //                                       First appointment will be at 3.00PM.`;
+            // } else {
+            //     tamMsg = ``;
+            // }
+
+
 
             const showroom = showrooms[location];
 
@@ -2025,10 +2026,14 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
 
             if (changeId === 'step-1' || changeId === 'step-2' || changeId === 'step-3' || changeId === 'step-4') {
                 document.getElementsByClassName(changeId)[0].classList.add("active");
-                console.log(changeId);
+                // console.log(changeId);
             } else if (changeId === 'appointmentForm') {
                 document.getElementsByClassName('step-1')[0].classList.add("active");
             }
+
+
+
+
 
         }
 
@@ -2071,6 +2076,11 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
             document.getElementById('appointmentTime').innerHTML = data;
             bookingData['time'] = appointmentTimeByDay[0];
 
+
+            // document.getElementById('tamMsg').innerHTML = tamMsg;
+
+
+
         }
 
 
@@ -2079,10 +2089,12 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
             let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
             x.disabled = false;
 
+
         }
 
-        function addDate(e) {
 
+
+        function addDate(e) {
             bookingData['date'] = e.target.value;
             if (bookingData['date'] && bookingData['time']) {
                 let x = e.target.closest('.panel-body').querySelector(".btn-primary-next");
@@ -2091,6 +2103,9 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
             getAppointmentTime();
 
         }
+
+
+
 
         function addTime(e) {
             bookingData['time'] = e.target.value;
@@ -2121,9 +2136,8 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
                 document.getElementById("errorMsgPhone").style.display = "none";
                 bookingData['customer']['customerName'] = document.getElementById("customerName").value;
                 bookingData['customer']['customerName2'] = document.getElementById("customerName2").value;
+
                 bookingData['customer']['email'] = document.getElementById("email").value;
-                bookingData['customer']['countryCode'] = document.getElementById("countryCode").value;
-                bookingData['customer']['areaCode'] = document.getElementById("areaCode").value;
                 bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
                 bookingData['customer']['budget'] = "";
                 bookingData['customer']['remarks'] = document.getElementById("remarks").value;
@@ -2274,6 +2288,7 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
                         nextStepWizard_title = $('div.setup-panel div p a[href="#' + curStepBtn + '"]').closest('.stepwizard-step').next().children("p").children("a"),
                         curInputs = curStep.find("input[type='text'],input[type='url']"),
                         isValid = true;
+
 
 
                     $(".form-group").removeClass("has-error");

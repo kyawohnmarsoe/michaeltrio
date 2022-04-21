@@ -9,6 +9,11 @@
             box-sizing: border-box;
         }
 
+        *:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+
         :root {
             --lightblue: #E5F3FE;
             --lighterblue: #F0F6FB;
@@ -679,9 +684,23 @@
             border-right: 1px solid black;
         }
 
+        .fourC #accordion .allow.active {
+            outline: none;
+            border: 0px;
+        }
+
+        .fourC #accordion .allow:focus {
+            outline: none;
+            border: 0px;
+        }
+
+        #pstone-comparison-info h1.title {
+            font-size: 24px;
+        }
+
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 4C of Diamond @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
         .borderbox-black {
-            border: 1px solid black;
+            border: 1px solid #8080807d;
             border-radius: 0px 0px 5px 5px;
             padding: 50px 50px 0px 50px;
             border-top: 0;
@@ -689,7 +708,7 @@
 
         .borderbox-black-title {
             margin-bottom: 0;
-            border: 1px solid black;
+            border: 1px solid #8080807d;
             /* border-radius: 5px 5px 0px 0px; */
             border-radius: 5px;
 
@@ -753,15 +772,14 @@
         .fourC .product.data.items>.item.title.active>.switch,
         .fourC .product.data.items>.item.title.active>.switch:focus,
         .fourC .product.data.items>.item.title.active>.switch:hover {
-            padding-bottom: 5px;
+            padding-bottom: 3px;
             background-color: var(--lightblue);
             border-color: var(--companyblue);
 
         }
 
         .fourC .product.data.items>.item.title>.switch {
-            min-width: 48px;
-            padding: 5px;
+            padding: 3px 5px;
             font-size: 0.8rem;
             color: black;
             font-weight: 500;
@@ -771,7 +789,21 @@
             border-radius: 7px;
             background-color: white;
             height: auto;
+            min-width: 48px;
+
         }
+
+        .fourC .clarity .product.data.items>.item.title>.switch {
+            /* max-width: 90px; */
+            font-size: 0.8rem;
+
+        }
+
+        .fourC .cut .product.data.items>.item.title>.switch {
+            min-width: 76px;
+
+        }
+
 
         .fourC .product.data.items>.item.content {
             margin-top: 55px;
@@ -824,14 +856,8 @@
             background-color: var(--companyblue);
         }
 
-        .fourC .clarity .product.data.items>.item.title>.switch {
-            /* max-width: 90px; */
-            font-size: 0.8rem;
-        }
 
-        .fourC .cut .product.data.items>.item.title>.switch {
-            min-width: 76px;
-        }
+
 
         @media(max-width:1024px) {
             .colour-space {
@@ -911,50 +937,53 @@
             }
 
             .fourC .carat .product.data.items>.item.title {
-                margin-right: 9.6px;
+                margin-right: 3px;
+                width: calc(100%/6 - 3px);
             }
 
             .fourC .colour .product.data.items>.item.title {
                 margin-right: 3px;
+                width: calc(100%/10 - 3px);
             }
 
             .fourC .clarity .product.data.items>.item.title {
-                margin-right: 5px;
+                margin-right: 3px;
+                width: calc(100%/6 - 3px);
             }
 
             .fourC .cut .product.data.items>.item.title {
-                margin-right: 7px;
+                margin-right: 3px;
+                width: calc(100%/4 - 8px);
             }
 
+            .fourC .cut .product.data.items>.item.title.pure-heart {
+                margin-right: 0px;
+                width: calc(100%/4 + 15px);
+            }
 
             .fourC .product.data.items>.item.title>.switch {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
+                min-width: 0px;
+                padding: 3px;
             }
 
-            .fourC .carat .product.data.items>.item.title>.switch {
-                min-width: 44px;
-            }
-
+            .fourC .carat .product.data.items>.item.title>.switch,
             .fourC .colour .product.data.items>.item.title>.switch {
-                min-width: 29px;
+                min-width: 0px;
             }
 
-            .fourC .clarity .product.data.items>.item.title>.switch {
-                max-width: 60px;
-                min-width: 27px;
+
+            .fourC .clarity .product.data.items>.item.title>.switch,
+            .fourC .cut .product.data.items>.item.title>.switch {
                 line-height: 13px;
-                font-size: 0.8rem;
+                font-size: 0.7rem;
                 height: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            }
+                min-width: 0px;
 
-            .fourC .cut .product.data.items>.item.title>.switch {
-                min-width: 45px;
-                max-width: 120px;
             }
-
 
             .fourC .carat .product.data.items>.item.content::before {
                 width: 100%;
@@ -984,70 +1013,49 @@
                 padding: 12px;
             }
 
-            .fourC .product.data.items>.item.title {
-                margin-right: 2px;
-            }
-
-            .fourC .carat .product.data.items>.item.title {
-                margin-right: 5px;
-            }
-
-            .fourC .colour .product.data.items>.item.title {
-                margin-right: 6px;
-            }
-
-
             .fourC .product.data.items>.item.title>.switch {
-                font-size: 0.8rem;
-                min-width: 38px;
                 line-height: 23px;
             }
 
-            .fourC .carat .product.data.items>.item.title>.switch {
-                min-width: 47px;
+            .fourC .clarity .product.data.items>.item.title>.switch {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 13px;
             }
 
             .fourC .product.data.items>.item.content {
                 padding-top: 0px;
             }
 
+        }
 
-            .fourC .colour .product.data.items>.item.title>.switch {
-                min-width: 25px;
+        @media (max-width:350px) {
+
+            .fourC .carat .product.data.items>.item.content::before {
+                top: 43px;
             }
 
-            .fourC .clarity .product.data.items>.item.title {
-                margin-right: 4px;
+            .fourC .colour .product.data.items>.item.content::before {
+                top: 43px;
             }
 
-            .fourC .clarity .product.data.items>.item.title>.switch {
-                max-width: 58px;
-                font-size: 0.8rem;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-width: 25px;
-                line-height: 13px;
+            .fourC .clarity .product.data.items>.item.content::before {
+                top: 50px;
+            }
 
+            .fourC .cut .product.data.items>.item.content::before {
+                top: 47px;
             }
 
             .fourC .clarity .product.data.items>.item.content {
-                margin-top: 64px;
+                margin-top: 60px;
             }
 
-
-
-            .fourC .cut .product.data.items>.item.title {
-                margin-right: 5px;
+            .fourC .cut .product.data.items>.item.content {
+                margin-top: 60px;
             }
-
-            .fourC .cut .product.data.items>.item.title>.switch {
-                font-size: 0.8rem;
-                min-width: 35px;
-            }
-
-
         }
     </style>
 </head>
@@ -1070,14 +1078,14 @@
                 </div>
                 <div data-role="content">
                     <!-- carat  -->
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <div class="borderbox-black carat ">
 
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-24 borderline-right">
                                     <h4>Carat</h4>
-                                    <p class="h10">Diamond Carat : <span id="carat-image-title"> <strong>0.3</strong>
-                                        </span> </p>
+                                    <p class="h10">Diamond Carat :<strong> <span id="carat-image-title"> 0.3
+                                            </span> </strong></p>
                                 </div>
                                 <div class="col-md-18 col-sm-18 col-xs-24 d-flex align-items-end ">
                                     <p class="h11 hidden-xs">Diamonds and gemstones are weighed in carats. Carat
@@ -1153,14 +1161,14 @@
                 </div>
                 <div data-role="content">
                     <!-- color  -->
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <div class="borderbox-black colour ">
 
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-24 borderline-right">
                                     <h4>Colour</h4>
-                                    <p class="h10">Diamond Colour : <span id="colour-image-title"> <strong>M</strong>
-                                        </span> </p>
+                                    <p class="h10">Diamond Colour : <strong><span id="colour-image-title"> M
+                                            </span></strong> </p>
                                 </div>
                                 <div class="col-md-18 col-sm-18 col-xs-24 d-flex align-items-end ">
                                     <p class="h11 hidden-xs">
@@ -1178,7 +1186,7 @@
 
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-24 text-center">
-                                    <img src="https://www.michaeltrio.com/pub/media/0new4C/colour-D.png" alt=""
+                                    <img src="https://www.michaeltrio.com/pub/media/0new4C/colour-M.png" alt=""
                                         id="colour-image" class="imageHolder">
                                 </div>
                                 <div class="col-md-16 col-sm-16 col-xs-24 ">
@@ -1305,14 +1313,14 @@
                 </div>
                 <div data-role="content">
                     <!-- clarity  -->
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <div class="borderbox-black clarity ">
 
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-24 borderline-right">
                                     <h4>Clarity</h4>
-                                    <p class="h10"> Diamond Clarity : <span id="clarity-image-title">
-                                            <strong>FL</strong> </span> </p>
+                                    <p class="h10"> Diamond Clarity : <strong><span id="clarity-image-title">
+                                                I1 & I2 & I3 </span></strong> </p>
                                 </div>
                                 <div class="col-md-18 col-sm-18 col-xs-24 d-flex align-items-end ">
                                     <p class="h11 hidden-xs">
@@ -1330,26 +1338,37 @@
 
                             <div class="row">
                                 <div class="col-md-8 col-sm-8 col-xs-24 text-center">
-                                    <img src="https://www.michaeltrio.com/pub/media/0new4C/clarity-FL.png" alt=""
+                                    <img src="https://www.michaeltrio.com/pub/media/0new4C/clarity-I1I2I3.png" alt=""
                                         id="clarity-image" class="imageHolder">
                                 </div>
                                 <div class="col-md-16 col-sm-16 col-xs-24 ">
                                     <div class="clarity-space">
                                         <div id="clarity" class="product data items"
                                             data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 0, "disabledState": "disabled"}}'>
+
                                             <div class="item title active" data-role="collapsible">
-                                                <a class="switch" data-toggle="trigger" href="#clarity-FL">FL</a>
+                                                <a class="switch" data-toggle="trigger" href="#clarity-I1I2I3">
+                                                    I1 & I2 & I3</a>
                                             </div>
-                                            <div id="clarity-FL" class="item content" data-role="content">
-                                                No inclusions and blemishes visible under 10x magnification
+                                            <div id="clarity-I1I2I3" class="item content" data-role="content">
+                                                Inclusions are obvious under 10x magnification, brilliance and beauty
+                                                likely
+                                                affected. At Michael Trio, we do not offer I1, I2, and I3 diamonds.
                                             </div>
 
                                             <div class="item title" data-role="collapsible">
-                                                <a class="switch" data-toggle="trigger" href="#clarity-IF">IF</a>
+                                                <a class="switch" data-toggle="trigger" href="#clarity-SI1SI2">SI1 &
+                                                    SI2</a>
                                             </div>
-                                            <div id="clarity-IF" class="item content" data-role="content">
-                                                Small surface blemishes with no inclusions visible under 10x
-                                                magnification
+                                            <div id="clarity-SI1SI2" class="item content" data-role="content">
+                                                Inclusions noticeable under 10x magnification.
+                                            </div>
+                                            <div class="item title" data-role="collapsible">
+                                                <a class="switch" data-toggle="trigger" href="#clarity-VS1">VS1 &
+                                                    VS2</a>
+                                            </div>
+                                            <div id="clarity-VS1" class="item content" data-role="content">
+                                                Minor inclusions observed with effort under 10x magnification.
                                             </div>
 
                                             <div class="item title" data-role="collapsible">
@@ -1359,37 +1378,22 @@
                                             <div id="clarity-VVS1" class="item content" data-role="content">
                                                 Miniscule inclusions that are difficult for trained eyes to see under
                                                 10x
-                                                magnification
+                                                magnification.
                                             </div>
-
+                                            <div class="item title" data-role="collapsible">
+                                                <a class="switch" data-toggle="trigger" href="#clarity-IF">IF</a>
+                                            </div>
+                                            <div id="clarity-IF" class="item content" data-role="content">
+                                                Small surface blemishes with no inclusions visible under 10x
+                                                magnification.
+                                            </div>
 
 
                                             <div class="item title" data-role="collapsible">
-                                                <a class="switch" data-toggle="trigger" href="#clarity-VS1">VS1 &
-                                                    VS2</a>
+                                                <a class="switch" data-toggle="trigger" href="#clarity-FL">FL</a>
                                             </div>
-                                            <div id="clarity-VS1" class="item content" data-role="content">
-                                                Minor inclusions observed with effort under 10x magnification
-                                            </div>
-
-
-
-                                            <div class="item title" data-role="collapsible">
-                                                <a class="switch" data-toggle="trigger" href="#clarity-SI1SI2">SI1 &
-                                                    SI2</a>
-                                            </div>
-                                            <div id="clarity-SI1SI2" class="item content" data-role="content">
-                                                Inclusions noticeable under 10x magnification
-                                            </div>
-
-                                            <div class="item title" data-role="collapsible">
-                                                <a class="switch" data-toggle="trigger" href="#clarity-I1I2I3">I1 & I2 &
-                                                    I3</a>
-                                            </div>
-                                            <div id="clarity-I1I2I3" class="item content" data-role="content">
-                                                Inclusions are obvious under 10x magnification, brilliance and beauty
-                                                likely
-                                                affected. At Michael Trio, we do not offer I1, I2, and I3 diamonds
+                                            <div id="clarity-FL" class="item content" data-role="content">
+                                                No inclusions and blemishes visible under 10x magnification.
                                             </div>
 
                                         </div>
@@ -1412,14 +1416,14 @@
                 </div>
                 <div data-role="content">
                     <!-- cut  -->
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <div class="borderbox-black cut ">
 
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-24 borderline-right">
                                     <h4>Cut</h4>
-                                    <p class="h10">Diamond Cut : <span id="cut-image-title"> <strong>Good</strong>
-                                        </span> </p>
+                                    <p class="h10">Diamond Cut : <strong><span id="cut-image-title"> Good
+                                            </span> </strong></p>
                                 </div>
                                 <div class="col-md-18 col-sm-18 col-xs-24 d-flex align-items-end ">
                                     <p class="h11 hidden-xs">
@@ -1463,7 +1467,7 @@
                                                 A high-quality cut that reflects almost as much light as an Ideal cut,
                                                 while
                                                 at a
-                                                substantially lower cost
+                                                substantially lower cost.
                                             </div>
 
                                             <div class="item title" data-role="collapsible">
@@ -1478,9 +1482,10 @@
                                                 diamonds are Ideal cut.
                                             </div>
 
-                                            <div class="item title" data-role="collapsible">
+                                            <div class="item title pure-heart" data-role="collapsible">
                                                 <a class="switch" data-toggle="trigger" href="#cut-pureheart">
-                                                    Pure Hearts <small><sup>TM</sup></small>
+                                                    Pure <span
+                                                        style="white-space:nowrap;">&nbsp;Hearts<small><sup>TM</sup></small></span>
                                                 </a>
                                             </div>
                                             <div id="cut-pureheart" class="item content" data-role="content">
@@ -1523,7 +1528,7 @@
                 $('#cut').tabs();
                 $('.switch').click(function () {
                     var clickedID = $(this).attr('href').replace('#', '');
-                    var clickedTitle = $(this).text();
+                    var clickedTitle = $(this).html();
 
                     console.log(this);
 
@@ -1543,7 +1548,7 @@
                     console.log(image);
 
                     $(image).attr('src', `https://www.michaeltrio.com/pub/media/0new4C/${clickedID}.png`);
-                    $(`${image}-title`).text(clickedTitle);
+                    $(`${image}-title`).html(clickedTitle);
 
 
                 });

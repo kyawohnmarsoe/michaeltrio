@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success-message {
+            color: green;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        document.body.innerHTML = `
+            <div class="success-message"></div>
+            <div class="error-message"></div>
+            
+            <form id="feedback" onsubmit="validateInput(event)">
+                <input type="radio" id="delighted" name="delighted" required  /> Delighted
+                <input type="checkbox" id="donate" name="donate"  /> Donate<br />
+
+                <input type="radio" id="notDelighted" name="delighted" required /> Not delighted
+                <input type="text" id="reason" name="reason" oninput="checkEmpty()" /> Reason<br />
+
+                <input type="submit" value="Submit" />
+            </form>`;
+
+        let delighted = document.querySelector('#delighted');
+        let donate = document.querySelector('#donate');
+        let notDelighted = document.querySelector('#notDelighted');
+        let reason = document.querySelector('#reason');
+        let successMsg = "";
+        let errorMsg = "";
+
+        delighted.onclick = function () {
+            delighted.checked = true;
+            donate.disabled = false;
+            donate.checked = true;
+            notDelighted.checked = false;
+            reason.value = "";
+            reason.disabled = true;
+        }
+
+        notDelighted.onclick = function () {
+            delighted.checked = false;
+            donate.checked = false;
+            donate.disabled = true;
+            notDelighted.checked = true;
+            reason.disabled = false;
+        }
+
+        delighted.click();
+
+        function checkEmpty() {
+            reason.value = reason.value ? reason.value.trimStart() : '';
+        }
+
+        function validateInput(event) {
+            event.preventDefault();
+
+            if (delighted.checked === true) {
+                if (donate.checked === true) {
+                    successMsg = 'Success .. Delighted and Donate';
+                    errorMsg = '';
+                } else {
+                    successMsg = '';
+                    errorMsg = 'Error .. You Need to check Donate';
+                }
+            } else {
+                if (reason.value === "") {
+                    successMsg = '';
+                    errorMsg = 'Error .. You Need to fill Reason';
+                } else {
+                    successMsg = 'Success .. Not delighted';
+                    errorMsg = '';
+                }
+
+            }
+
+
+            document.getElementsByClassName("success-message")[0].innerHTML = successMsg;
+            document.getElementsByClassName("error-message")[0].innerHTML = errorMsg;
+        }
+
+    </script>
+</body>
+
+</html>
