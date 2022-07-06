@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .no-submenu.ed-top-sec {
+            margin-bottom: -46px !important;
+        }
+
+        .no-submenu .second-bar {
+            display: none;
+        }
+
+        .ed-top-sec {
+            max-width: none !important;
+            padding: 0 !important;
+            margin-bottom: -82px !important;
+            position: relative;
+        }
+
+        .top-bar {
+            height: 46px;
+            box-shadow: 0 2px 3px 0 rgb(20 26 46 / 17%);
+            clear: both;
+            position: relative;
+            background: #fff;
+        }
+
+        .second-bar {
+            height: 36px;
+            width: 100%;
+            background-color: rgba(250, 250, 250, .9);
+            box-shadow: 0 17px 53px 0 rgb(20 26 46 / 17%);
+        }
+
+        .edu-center {
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            background: #9bb8d3;
+        }
+
+
+        .edu-nav {
+            box-shadow: 0 3px 27px 0 rgb(20 26 46 / 17%);
+            background: #fff;
+        }
+
+        ul.edu-nav {
+            padding: 10px;
+        }
+
+        .edu-nav li {
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .edu-nav li:hover {
+            background: #f7f7f7;
+            cursor: pointer;
+        }
+
+        .edu-nav li.active {
+            border-right: 6px solid #9bb8d3;
+            background: #f7f7f7;
+        }
+
+        .edu-nav img {
+            margin-right: 15px;
+        }
+
+        .diamond-nav {
+            height: 46px;
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+        .diamond-nav li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0px 7px;
+        }
+
+        .diamond-nav li.active {
+            border-bottom: 6px solid #9bb8d3;
+        }
+
+        .cut-nav {
+            height: 36px;
+            line-height: 36px;
+            white-space: nowrap;
+            overflow: auto;
+            /* margin-bottom: 14px; */
+        }
+
+        .cut-nav li {
+            display: inline;
+            padding: 7px;
+        }
+
+        .cut-nav li.active a {
+            color: #9bb8d3;
+        }
+
+        .large-display-none {
+            display: none;
+        }
+
+        @media (max-width: 1199.98px) {
+            .medium-display-none {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 767.98px) {
+            .small-display-none {
+                display: none;
+            }
+
+            .large-display-none {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="edu-center large-display-none">
+        <div>Education Center</div>
+
+        <select id="eduDropdown" onchange="eduSelect()">
+            <option value="{{store url=''}}education/diamonds/4cs-cut" selected> Loose Diamonds</option>
+            <option value="{{store url=''}}education"> Engagement Rings</option>
+            <option value="{{store url=''}}education"> Natural Gemstones</option>
+            <option value="{{store url=''}}education">Wedding Ring</option>
+            <option value="{{store url=''}}education">Fine Jewellery</option>
+        </select>
+    </div>
+
+    <div class="ed-top-sec no-submenu">
+        <div class="top-bar"></div>
+        <div class="second-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-6 small-display-none">
+                <div class="edu-center">Education Center</div>
+
+                <ul class="edu-nav">
+                    <li class="active">
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Loose Diamonds</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Engagement Rings</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Natural Gemstones</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Wedding Ring</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Fine Jewellery</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-16 col-md-18">
+
+                <ul class="diamond-nav">
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/4cs-cut">4CS</a>
+                    </li>
+                    <li class="active">
+                        <a href="{{store url=''}}education/diamonds/shapes">Shapes</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/anatomy">Anatomy</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/ideal-cut">Ideal Cut</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/fancy-color-intensity">Fancy Color</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/grading-certficate">Grading</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/how-choose-perfect-diamond">Choose a Diamond</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/diamond-care">Diamond Care</a>
+                    </li>
+                </ul>
+
+
+                <div class="ed-content  mt-3">
+                    <div id="educationLeft  ">
+                        <div style="padding-top:0px;">
+
+                            <img align="left" src="https://ion.r2net.com/Images/Education/Diamonds/diamond-shapes.jpg"
+                                alt="Diamond Cut" title="Diamond Cut" class="pr-3 medium-display-none ">
+
+                        </div>
+                    </div>
+
+                    <div id="educationMain">
+                        <div classname="CategoryText">
+                            <h1>Diamond Shapes</h1>
+
+                            <div classname="content categoryDetails" categoryid="1" subcategoryid="2">
+                                <p>
+                                    Diamonds come in many different shapes. Each diamond shape
+                                    possesses its own unique qualities, so exploring and learning
+                                    about the various shapes is worth your while. James Allen offers
+                                    the highest quality certified diamonds to satisfy all tastes.
+                                </p>
+
+                                <table cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td height="253" valign="top">
+                                                <h3>Asscher Cut Diamonds</h3>
+                                                <p>
+                                                    The Asscher Cut Diamond, also called a "Square
+                                                    Emerald-Cut", is made using a step-cut process and has
+                                                    cropped corners. Because of the cropped corners, an
+                                                    Asscher Cut Diamond appears almost octagonal at first
+                                                    glance. They are bright, shiny, and clear in appearance.
+                                                    Like Emerald-Cut Diamonds, they have the clarity of
+                                                    glacier-water ice, allowing you to see all the way through
+                                                    the stone. However, since inclusions are obvious to the
+                                                    naked eye with Asscher Cut Diamonds, it is important to
+                                                    get one that is flawless or as close to flawless as
+                                                    possible.
+                                                </p>
+
+                                                <a href="{{store url=''}}loose-diamonds/asscher-cut/">
+                                                    SHOP ASSCHER CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="245" valign="top">
+                                                <h3>Brilliant Cut Diamonds</h3>
+                                                <p>
+                                                    The Round Diamond, or Brilliant Cut Diamond, is by far the
+                                                    most popular shape for diamond engagement rings. It is
+                                                    cone-shaped to maximize light return through the top of
+                                                    the diamond. It is cut to have 58 facets: 33 on the crown
+                                                    and 25 on the pavilion. The relationship between the angle
+                                                    of the crown (above the girdle) and the pavilion (below
+                                                    the girdle) is complementary. A steep crown angle is
+                                                    complemented by a shallower pavilion angle, and vice
+                                                    versa.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/round-cut/">
+                                                    SHOP BRILLIANT CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="250" valign="top">
+                                                <h3>Cushion Cut Diamonds</h3>
+                                                <p>
+                                                    The Cushion Cut Diamond is an antique cut that has a
+                                                    classic, romantic appeal. It is considered a cross between
+                                                    the Old Mine Cut, which was popular in the late 19th and
+                                                    early 20th centuries, and a modern Oval-Cut Diamond. The
+                                                    Old Mine Cut featured large facets and rounded corners,
+                                                    since the cutting was all done by hand at the time. They
+                                                    were designed to catch the beauty of candlelight. The
+                                                    Cushion-Cut Diamond contains 58 facets.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/cushion-cut/">
+                                                    SHOP CUSHION CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="250" valign="top">
+                                                <h3>Emerald Cut Diamonds</h3>
+                                                <p>
+                                                    The Emerald-Cut Diamond is a very popular style known for
+                                                    its beauty and precision. While it lacks the brilliance of
+                                                    diamonds cut with triangular and kite-shaped facets, it
+                                                    more than makes up for it in its extreme clarity – it’s
+                                                    like looking into glacier-pure ice. The Emerald-Cut
+                                                    diamond is named so because this style of cut was
+                                                    originally used only on emeralds. It is called a step-cut,
+                                                    which is the cut most commonly used on square or
+                                                    rectangular diamonds.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/emerald-cut/">
+                                                    SHOP EMERALD CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="247" valign="top">
+                                                <h3>Heart Diamonds</h3>
+                                                <p>
+                                                    The Heart Shaped Diamond has a cleft at the top and
+                                                    exhibits superior brilliance. It is among the most
+                                                    romantic of the diamond shapes. When selecting a heart
+                                                    shaped diamond, symmetry is essential, as the two halves
+                                                    of the heart must be identical. The split between the two
+                                                    lobes should be obvious and sharp, and the wings should
+                                                    have a round shape. Generally, heart shapes diamonds of
+                                                    less than .50 carats are not a good choice. As opposed to
+                                                    other diamond shapes, they appear smaller, especially
+                                                    after set in prongs. Bezel and three prong settings are
+                                                    best for small heart shaped diamonds.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/heart-shaped/">
+                                                    SHOP HEART SHAPE DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="248" valign="top">
+                                                <h3>Marquise Diamonds</h3>
+                                                <p>
+                                                    The Marquise-Cut Diamond is a boat-shaped brilliant stone
+                                                    that is considered to be a "classic" shape for diamond
+                                                    engagement rings. As with all 'fancy cut' diamonds, color
+                                                    and clarity are the two most important qualities in this
+                                                    particular style of cut. The Marquise-Cut Diamond uses a
+                                                    cutting process similar to that of a Round Brilliant
+                                                    Diamond, but the diamond cutter maximizes the carat weight
+                                                    of the gem by elongating it into its distinctive
+                                                    ''boat-shape''. This way, they can eliminate all
+                                                    inclusions while maintaining as much of the unblemished
+                                                    stone as possible. However, because of the elongated
+                                                    shape, color and clarity imperfections are more obvious
+                                                    than they are in a traditional Round Brilliant Diamonds.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/marquise-cut/">
+                                                    SHOP MARQUISE CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="250" valign="top">
+                                                <h3>Oval Diamonds</h3>
+                                                <p>
+                                                    The Oval Cut Diamond is a modified version of the most
+                                                    popular cut, the Round Brilliant. It is the perfect choice
+                                                    for buyers who are looking for characteristics similar to
+                                                    the Round "Ideal" Cut, but would like something in a shape
+                                                    that is more unusual. Oval Cut diamonds also create the
+                                                    optical illusion of length and serve to elegantly elongate
+                                                    fingers.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/oval-cut/">
+                                                    SHOP OVAL CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="245" valign="top">
+                                                <h3>Pear Diamonds</h3>
+                                                <p>
+                                                    The Pear Shaped Diamond combines the tradition and
+                                                    brilliance of a round cut with a less common shape to
+                                                    create an unusual diamond that can still make light
+                                                    'dance' as it does in the traditional Round Brilliant Cut.
+                                                    It is probably the most subjective diamond shape, as its
+                                                    size and proportions are really a matter of taste. The
+                                                    diamond usually contains 58 facets, allowing for light to
+                                                    pass through it much the same way as in a Round, but makes
+                                                    more of an impression because of its much less common
+                                                    shape.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/pear-shaped/">
+                                                    SHOP PEAR SHAPE DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="250" valign="top">
+                                                <h3>Princess Cut Diamonds</h3>
+                                                <p>
+                                                    The Princess cut diamonds can make the perfect engagement
+                                                    rings since they are very clear. Their exquisite shape
+                                                    makes them an exotic treasure, as they are designed for
+                                                    getting top brilliance from their square cut. When
+                                                    purchasing a Princess Cut diamond, make sure that the
+                                                    setting for your ring protects the four pointed corners.
+                                                    The Princess Cut diamond allows more acceptably for flaws.
+                                                </p>
+                                                <a href="{{store url=''}}loose-diamonds/princess-cut/">
+                                                    SHOP PRINCESS CUT DIAMONDS
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="245" valign="top">
+                                                <h3>Radiant Cut Diamonds</h3>
+                                                <p>
+                                                    The Radiant Cut Diamond combines the more stylish square
+                                                    or rectangular shape with the brilliance of the more
+                                                    traditional Round Cut. It combines two diamond cutting
+                                                    styles-the Round Cut style and the Emerald Cut style, to
+                                                    create a non-traditional, yet still brilliant, diamond.
+                                                    This cut, created in 1977 by Henry Grossbard, was designed
+                                                    to maintain the beauty of each different type of diamond,
+                                                    while still creating something altogether different from
+                                                    anything available at the time.
+                                                </p>
+                                                <div>
+                                                    <a href="{{store url=''}}loose-diamonds/radiant-cut/">
+                                                        SHOP RADIANT CUT DIAMONDS
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="80" valign="middle">
+                                                <a href="/loose-diamonds/">SHOP ALL DIAMOND SHAPES</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function eduSelect() {
+            location.href = document.getElementById('eduDropdown').value;;
+        }
+    </script>
+</body>
+
+</html>

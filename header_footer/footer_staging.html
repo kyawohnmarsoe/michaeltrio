@@ -1,8 +1,22 @@
+<script>
+    window.onload = function () {
+
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+
+        const allBtn = document.querySelectorAll('.fpop .total-btn');
+        for (let i = 0; i < allBtn.length; i++) {
+            allBtn[i].addEventListener('click', function () {
+                allBtn[i].closest('.fpop').style.display = "none";
+            });
+        }
+    }
+
+
+</script>
+
 <footer class="page-footer">
     <div class="footer content">
         <script type="text/javascript">
-            document.getElementById('year1').innerHTML = new Date().getFullYear();
-            document.getElementById('year2').innerHTML = new Date().getFullYear();
             require(['jquery', 'domReady!'], function ($) {
                 $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
                     .appendTo('#newsletter-validate-detail');
@@ -12,19 +26,6 @@
 
 
     <style>
-        .page-footer .block.newsletter {
-            float: none;
-            width: auto;
-        }
-
-        .page-footer .block.newsletter .newsletter {
-            margin-right: 0px;
-        }
-
-        .page-footer .block.newsletter input {
-            margin-right: 15px;
-        }
-
         footer .footer-company-info h5 a,
         footer .footer-company-info h5 {
             color: #fff !important;
@@ -42,15 +43,9 @@
 
 
         @media only screen and (max-width: 767px) {
-
-            footer .footer-company-info h5 a,
-            footer .footer-company-info h5 {
-                font-weight: 300;
-            }
-
-            .footer-collapse.active {
-                text-decoration: underline;
-            }
+            /* #v1 {
+                    display: none;
+                } */
 
             .page-footer {
                 padding-bottom: 0;
@@ -116,9 +111,24 @@
                 background-color: #606060;
             }
 
+            /* footer .company-contact a {
+                    color: #325683 !important;
+                } */
+            .footer ul {
+                padding-left: 10px !important;
+            }
+
+            .footer ul li:before {
+                content: '-';
+                position: absolute;
+                margin-left: -10px;
+            }
+
             .page-footer .footer-link li {
                 padding: 8px 0;
             }
+
+
 
 
         }
@@ -131,14 +141,18 @@
                     <div class="container">
                         <div class="footer content">
                             <div class="row middle-top">
-                                <div class="col-sm-14 col-md-14">
+                                <div class="col-sm-14">
                                     <div class="newsletter-content">
-                                        {{widget type="Magento\Cms\Block\Widget\Block"
-                                        template="widget/static_block/default.phtml" block_id="78"}}
+                                        <span class="title">
+                                            Be the first to save!
+                                        </span>
+                                        {{block
+                                        class="Magento\Newsletter\Block\Subscribe" name="cdz.newsletter"
+                                        template="subscribe.phtml"}}
                                     </div>
                                 </div>
 
-                                <div class="col-sm-10 col-md-10">
+                                <div class="col-sm-10">
                                     <div class="footer-social hover-iconsocial">
                                         <span class="title">Stay
                                             Connected</span>
@@ -221,7 +235,7 @@
                                                 <ul id="footer-content-2" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='about-us'}}">Our Story</a></li>
-                                                    <li><a href="{{store url='locations'}}">Showrooms</a></li>
+                                                    <li><a href="{{store url='locations'}}">Locations</a></li>
                                                     <li><a href="{{store url='contacts'}}">Contact Us</a></li>
                                                     <li><a href="{{store url='reviews'}}">Customer Reviews</a></li>
                                                     <li><a href="{{store url='terms-condition'}}">Terms &amp;
@@ -231,8 +245,8 @@
                                                     <li><a href="{{store url=''}}faq#conflict-free-diamonds">Conflict
                                                             Free
                                                             Diamonds</a></li>
-                                                    <!-- <li><a href="{{store url='blog/share-your-love-story'}}">Submit Love
-                                                            Story</a></li> -->
+                                                    <li><a href="{{store url='blog/share-your-love-story'}}">Submit Love
+                                                            Story</a></li>
                                                     <li><a href="{{store url='faq'}}">FAQs</a></li>
                                                 </ul>
                                             </div>
@@ -243,7 +257,7 @@
                                                 <ul id="footer-content-3" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='faq'}}">Free Shipping Worldwide</a></li>
-                                                    <li><a href="{{store url=''}}faq#custom-made-products">Custom-Made
+                                                    <li><a href="{{store url=''}}faq#custom-made-products">Custom Made
                                                             Orders</a></li>
                                                     <li><a href="{{store url=''}}faq#14-day-return-policy">14-Day
                                                             Returns</a></li>
@@ -281,17 +295,61 @@
 
                 <div class="footer-content-bottom">
                     <div class="container">
+                        <div class="newsletter-content visible-xs mb-4">
+                            <div class="title mb-3">
+                                Sign up for our newsletter
+                            </div>
+                            <div class="block newsletter">
+                                <!-- <div class="title"><strong>Newsletter</strong></div> -->
+                                <div class="content">
+                                    <form class="form subscribe m-auto" novalidate="novalidate"
+                                        action="https://www.michaeltrio.com/newsletter/subscriber/new/" method="post"
+                                        id="newsletter-validate-detail">
+
+                                        <div class="input-group field newsletter">
+                                            <input name="email" type="email" id="newsletter"
+                                                placeholder="Enter you email address"
+                                                data-validate="{required:true, 'validate-email':true}"
+                                                class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default btn-grey" type="button">Submit</button>
+                                            </span>
+                                        </div>
+
+
+                                        <!-- <div class="field newsletter">
+                                                    <label class="label" for="newsletter">
+                                                        <span>Sign Up for Our
+                                                            Newsletter:</span>
+                                                    </label>
+                                                    <div class="control">
+                                                        <input name="email" type="email" id="newsletter"
+                                                            placeholder="Enter you email address"
+                                                            data-validate="{required:true, 'validate-email':true}">
+                                                        <input type="submit" value="Submit" class="" />
+                                                    </div>
+                                                </div> -->
+
+                                        <!-- <div class="actions">
+                                                    <button class="action subscribe primary" title="Subscribe"
+                                                        type="submit">
+                                                        <span>Subscribe</span>
+                                                    </button>
+                                                </div> -->
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-sm-12 visible-xs mb-4">
                                 <div class="footer-payment">
-                                    <!-- <ul class="third-party">
+                                    <ul class="third-party">
                                         <li class="Visa"></li>
                                         <li class="Master"></li>
                                         <li class="American"></li>
-                                    </ul> -->
-                                    <img src="https://www.michaeltrio.com/pub/media/0menu/3rdparty.png" alt=""
-                                        style="width: 200px;" />
+                                    </ul>
                                 </div>
                             </div>
 
@@ -299,10 +357,13 @@
                                 <div class="footer-address">
                                     <div>
                                         <p style="line-height: 1.35;
-            font: 400 13px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
-            padding: 0;">© <a href="{{store url=''}}store-admin/login" rel="nofollow" style="color: #ffffff;">Michael
+                font: 400 13px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
+                padding: 0;">© <a href="{{store url=""}}store-admin/login" rel="nofollow"
+                                                style="color: #ffffff;">Michael
                                                 Trio
-                                                Pte Ltd <span id="year1"></span></a>. All Rights Reserved.
+                                                Pte Ltd
+                                                <script>new Date().getFullYear()</script>
+                                            </a>. All Rights Reserved.
                                         <p>
                                     </div>
                                 </div>
@@ -310,13 +371,11 @@
 
                             <div class="col-sm-12 hidden-xs">
                                 <div class="footer-payment">
-                                    <!-- <ul class="third-party">
+                                    <ul class="third-party">
                                         <li class="Visa"></li>
                                         <li class="Master"></li>
                                         <li class="American"></li>
-                                    </ul> -->
-                                    <img src="https://www.michaeltrio.com/pub/media/0menu/3rdparty.png" alt=""
-                                        style="width: 200px;" />
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -329,6 +388,39 @@
     <div class="footer-style-10 visible-xs" id="v2">
         <div class="footer-style-10">
             <div class="main-footer">
+
+                <div class="footer-content-middle hidden-xs">
+                    <div class="container">
+                        <div class="footer content">
+                            <div class="row middle-top">
+                                <div class="col-sm-14">
+                                    <div class="newsletter-content">
+                                        <span class="title">
+                                            Be the first to save!
+                                        </span>
+                                        {{block
+                                        class="Magento\Newsletter\Block\Subscribe" name="cdz.newsletter"
+                                        template="subscribe.phtml"}}
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-10">
+                                    <div class="footer-social hover-iconsocial">
+                                        <span class="title">Stay
+                                            Connected</span>
+                                        <p class="social"><a class="spin circle"
+                                                href="https://www.facebook.com/michaeltriojewels"><span
+                                                    class="fa fa-facebook">facebook</span></a> <a
+                                                href="https://instagram.com/michaeltrio/"><span
+                                                    class="fa fa-instagram">instagram</span></a> <a
+                                                href="https://www.youtube.com/channel/UCDA5wCS594VZcW4gqTx2GDw/"><span
+                                                    class="fa fa-youtube">youtube</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="footer-content-middle footer-company-info">
                     <div class="container">
@@ -395,10 +487,10 @@
                                         <!-- show rooms -->
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
-                                            "collapsible":{
-                                                
-                                                "icons": {"header": "downarrow", "activeHeader": "uparrow"}
-                                            }}'>
+                                                "collapsible":{
+                                                    
+                                                    "icons": {"header": "downarrow", "activeHeader": "uparrow"}
+                                                }}'>
                                                 <h5 class="footer-collapse" data-role="title">Showrooms</h5>
                                                 <ul class="footer-link hover-link01" data-role="content">
 
@@ -467,14 +559,15 @@
                                         <!-- show rooms end -->
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
-                                            "collapsible":{
-                                                
-                                                "icons": {"header": "downarrow", "activeHeader": "uparrow"}
-                                            }}'>
+                                                "collapsible":{
+                                                    
+                                                    "icons": {"header": "downarrow", "activeHeader": "uparrow"}
+                                                }}'>
                                                 <h5 class="footer-collapse" data-role="title">About</h5>
                                                 <ul id="footer-content-2" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='about-us'}}"> Our Story</a></li>
+                                                    <li><a href="{{store url='locations'}}"> Locations</a></li>
                                                     <li><a href="{{store url='contacts'}}"> Contact Us</a></li>
                                                     <li><a href="{{store url='reviews'}}"> Customer Reviews</a></li>
                                                     <li><a href="{{store url='terms-condition'}}"> Terms &amp;
@@ -484,24 +577,24 @@
                                                     <li><a href="{{store url=''}}faq#conflict-free-diamonds"> Conflict
                                                             Free
                                                             Diamonds</a></li>
-                                                    <!-- <li><a href="{{store url='blog/share-your-love-story'}}"> Submit
+                                                    <li><a href="{{store url='blog/share-your-love-story'}}"> Submit
                                                             Love
-                                                            Story</a></li> -->
+                                                            Story</a></li>
                                                     <li><a href="{{store url='faq'}}"> FAQs</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
-                                            "collapsible":{
-                                                
-                                                "icons": {"header": "downarrow", "activeHeader": "uparrow"}
-                                            }}'>
+                                                "collapsible":{
+                                                    
+                                                    "icons": {"header": "downarrow", "activeHeader": "uparrow"}
+                                                }}'>
                                                 <h5 class="footer-collapse" data-role="title">Customer Service</h5>
                                                 <ul id="footer-content-3" class="footer-link hover-link01"
                                                     data-role="content">
                                                     <li><a href="{{store url='faq'}}"> Free Shipping Worldwide</a></li>
-                                                    <li><a href="{{store url=''}}faq#custom-made-products"> Custom-Made
+                                                    <li><a href="{{store url=''}}faq#custom-made-products"> Custom Made
                                                             Orders</a></li>
                                                     <li><a href="{{store url=''}}faq#14-day-return-policy"> 14-Day
                                                             Returns</a></li>
@@ -523,10 +616,10 @@
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="footer-box" data-mage-init='{
-                                            "collapsible":{
-                                                
-                                                "icons": {"header": "downarrow", "activeHeader": "uparrow"}
-                                            }}'>
+                                                "collapsible":{
+                                                    
+                                                    "icons": {"header": "downarrow", "activeHeader": "uparrow"}
+                                                }}'>
                                                 <h5 class="footer-collapse" data-role="title">Account</h5>
                                                 <ul id="footer-content-4" class="footer-link hover-link01"
                                                     data-role="content">
@@ -535,12 +628,6 @@
                                                     <li><a href="{{store url='wishlist'}}"> My Wishlist</a></li>
                                                 </ul>
                                             </div>
-                                        </div>
-
-                                        <div class="col-sm-8">
-                                            <a href="{{store url='request-ring-sizer'}}" style="text-decoration: none;">
-                                                <h5 class="footer-collapse" data-role="title"> Free Ring sizer</h5>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -553,27 +640,45 @@
                     <div class="container">
                         <div class="newsletter-content visible-xs mb-4">
                             <div class="title mb-3">
-                                Subscribe To Our Newsletter!
-
-                                <p>Send me Michael Trio news, updates and offers.</p>
+                                Sign up for our newsletter
                             </div>
-
                             <div class="block newsletter">
                                 <!-- <div class="title"><strong>Newsletter</strong></div> -->
                                 <div class="content">
                                     <form class="form subscribe m-auto" novalidate="novalidate"
                                         action="https://www.michaeltrio.com/newsletter/subscriber/new/" method="post"
-                                        id="newsletter-validate-detail1">
+                                        id="newsletter-validate-detail">
 
                                         <div class="input-group field newsletter">
-                                            <input name="email" type="email" id="newsletter1"
-                                                placeholder="Enter your email address"
+                                            <input name="email" type="email" id="newsletter"
+                                                placeholder="Enter you email address"
                                                 data-validate="{required:true, 'validate-email':true}"
                                                 class="form-control">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default btn-grey" type="submit">Submit</button>
+                                                <button class="btn btn-default btn-grey" type="button">Submit</button>
                                             </span>
                                         </div>
+
+
+                                        <!-- <div class="field newsletter">
+                                                <label class="label" for="newsletter">
+                                                    <span>Sign Up for Our
+                                                        Newsletter:</span>
+                                                </label>
+                                                <div class="control">
+                                                    <input name="email" type="email" id="newsletter"
+                                                        placeholder="Enter you email address"
+                                                        data-validate="{required:true, 'validate-email':true}">
+                                                    <input type="submit" value="Submit" class="" />
+                                                </div>
+                                            </div> -->
+
+                                        <!-- <div class="actions">
+                                                <button class="action subscribe primary" title="Subscribe"
+                                                    type="submit">
+                                                    <span>Subscribe</span>
+                                                </button>
+                                            </div> -->
 
                                     </form>
                                 </div>
@@ -582,138 +687,23 @@
 
                         <div class="row">
                             <div class="col-sm-12 visible-xs mb-4">
-
-
-                                <div class="text-center mb-4 contact-icons">
-                                    <h2 class="mb-2" style="color: #606060;
-                                    font-weight: 500;
-                                    font-family: 'Montserrat';
-                                    font-size: 15px;">Contact Us</h2>
-                                    <div style="display:flex;justify-content:center;">
-
-                                        <a href="https://api.whatsapp.com/send?phone=6588259691">
-                                            <div class=""
-                                                style="width: 60px;text-align: center; padding: 5px 0;margin-right: 8px;">
-                                                <div style="margin-bottom: 0px;">
-                                                    <!-- <img src="{{media url=&quot;0menu/image_202.png&quot;}}" alt="" style="width:53%;" /> -->
-
-                                                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="50" height="50" fill="#9bb8d3" />
-                                                        <circle cx="25.3125" cy="24" r="20" fill="#606060" />
-                                                        <path
-                                                            d="M22.586 18.8865C22.1678 16.9349 20.4951 14.1469 19.1011 14.0075C17.7071 13.8681 16.1737 15.6803 15.424 17.7713C14.7653 22.4595 17.1169 26.0365 20.0599 29.0551C22.8933 32.1769 26.6105 35.2071 31.3301 34.8358C33.463 34.2152 35.3654 32.7953 35.3114 31.3954C35.2573 29.9955 32.5767 28.1556 30.6543 27.619C28.9827 27.5168 29.2642 29.5468 27.7524 29.7405C25.9012 29.9778 24.6601 28.3581 22.7085 26.6853C21.3145 24.7337 19.9416 23.4867 20.2914 21.6534C20.5771 20.1563 22.586 20.5612 22.586 18.8865Z"
-                                                            fill="#9bb8d3" />
-                                                        <path
-                                                            d="M8.87656 33.8861L17.2126 41.2137L3.46243 46.641L8.87656 33.8861Z"
-                                                            fill="#606060" />
-                                                    </svg>
-
-                                                </div>
-                                                <div style="font-size: 10px;color:#606060;">Whatsapp</div>
-                                            </div>
-                                        </a>
-
-                                        <div id="open-phone-numbers-2" class="only-sg">
-                                            <div class=""
-                                                style="width: 60px;text-align: center; padding: 5px 0;margin-right: 8px;">
-                                                <div style="margin-bottom: 0px;">
-                                                    <!-- <img src="{{media url=&quot;0menu/image_201.png&quot;}}" alt="" style="width:53%;" /> -->
-                                                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="50" height="50" fill="#9bb8d3" />
-                                                        <path
-                                                            d="M20.4561 14.04C19.6824 10.4296 16.5877 5.27186 14.0088 5.01396C11.43 4.75606 8.59319 8.10863 7.20627 11.9769C5.98768 20.65 10.3381 27.2675 15.7828 32.8519C21.0244 38.6273 27.9014 44.2331 36.6326 43.5462C40.5784 42.3981 44.0979 39.7712 43.9979 37.1814C43.8979 34.5916 38.9387 31.1879 35.3823 30.1952C32.2898 30.0061 32.8107 33.7615 30.0139 34.1199C26.5892 34.5588 24.2931 31.5625 20.6826 28.4678C18.1037 24.8574 15.5638 22.5504 16.2109 19.1588C16.7394 16.3891 20.4561 17.1383 20.4561 14.04Z"
-                                                            fill="#606060" />
-                                                    </svg>
-
-
-                                                </div>
-                                                <div style="font-size: 10px;color:#606060;">Call</div>
-                                            </div>
-                                        </div>
-
-                                        <a href="tel:+6588259691" class="only-my">
-                                            <div class=""
-                                                style="width: 60px;text-align: center; padding: 5px 0;margin-right: 8px;">
-                                                <div style="margin-bottom: 0px;">
-                                                    <!-- <img src="{{media url=&quot;0menu/image_201.png&quot;}}" alt="" style="width:53%;" /> -->
-                                                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="50" height="50" fill="#9bb8d3" />
-                                                        <path
-                                                            d="M20.4561 14.04C19.6824 10.4296 16.5877 5.27186 14.0088 5.01396C11.43 4.75606 8.59319 8.10863 7.20627 11.9769C5.98768 20.65 10.3381 27.2675 15.7828 32.8519C21.0244 38.6273 27.9014 44.2331 36.6326 43.5462C40.5784 42.3981 44.0979 39.7712 43.9979 37.1814C43.8979 34.5916 38.9387 31.1879 35.3823 30.1952C32.2898 30.0061 32.8107 33.7615 30.0139 34.1199C26.5892 34.5588 24.2931 31.5625 20.6826 28.4678C18.1037 24.8574 15.5638 22.5504 16.2109 19.1588C16.7394 16.3891 20.4561 17.1383 20.4561 14.04Z"
-                                                            fill="#606060" />
-                                                    </svg>
-
-                                                </div>
-                                                <div style="font-size: 10px;color:#606060;">Call</div>
-                                            </div>
-                                        </a>
-
-                                        <a href="mailto:service@michaeltrio.com">
-                                            <div class=""
-                                                style="width: 60px;text-align: center; padding: 5px 0;margin-right: 8px;">
-                                                <div style="margin-bottom: 0px;">
-                                                    <!-- <img src="{{media url=&quot;0menu/image_200.png&quot;}}" alt="" style="width:53%;" /> -->
-                                                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="50" height="50" fill="#9bb8d3" />
-                                                        <rect x="6" y="14" width="37" height="22" rx="2"
-                                                            fill="#606060" />
-                                                        <path d="M5 14.5L25 29L44 14.5" stroke="#9bb8d3" />
-                                                    </svg>
-
-
-                                                </div>
-                                                <div style="font-size: 10px;color:#606060;">Email</div>
-                                            </div>
-                                        </a>
-
-                                        <a href="javascript:$zopim.livechat.window.show();">
-                                            <div class="" style="width: 60px;text-align: center; padding: 5px 0;">
-                                                <div style="margin-bottom: 0px;">
-                                                    <!-- <img src="{{media url=&quot;0menu/image_199.png&quot;}}" alt="" style="width:53%;" /> -->
-                                                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <rect width="50" height="50" fill="9bb8d3" />
-                                                        <rect x="6.76562" y="9" width="37" height="22" rx="5"
-                                                            fill="#606060" />
-                                                        <path
-                                                            d="M10.5302 25.5972L19.7662 28.9997L6.26624 41.9997L10.5302 25.5972Z"
-                                                            fill="#606060" />
-                                                    </svg>
-
-                                                </div>
-                                                <div style="font-size: 10px;color:#606060;">Chat</div>
-                                            </div>
-                                        </a>
-
-
-
-                                    </div>
-                                </div>
-
                                 <div class="footer-payment">
-                                    <!-- <ul class="third-party">
+                                    <ul class="third-party">
                                         <li class="Visa"></li>
                                         <li class="Master"></li>
                                         <li class="American"></li>
-                                    </ul> -->
-
-                                    <img src="https://www.michaeltrio.com/pub/media/0menu/3rdparty.png" alt=""
-                                        style="width: 200px;" />
+                                    </ul>
                                 </div>
-
                             </div>
 
                             <div class="col-sm-12">
                                 <div class="footer-address">
                                     <div>
                                         <p style="line-height: 1.35;
-        font: 400 13px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
-        padding: 0;">© <a href="{{store url=''}}store-admin/login" rel="nofollow" style="color: #ffffff;">Michael Trio
-                                                Pte Ltd <span id="year2"></span></a>. All Rights Reserved.
+            font: 400 13px/1.35 Montserrat,Helvetica Neue,Verdana,Arial,sans-serif;
+            padding: 0;">© <a href="{{store url=""}}store-admin/login" rel="nofollow" style="color: #ffffff;">Michael
+                                                Trio
+                                                Pte Ltd <span id="year"></span></a>. All Rights Reserved.
                                         <p>
                                     </div>
                                 </div>
@@ -721,14 +711,11 @@
 
                             <div class="col-sm-12 hidden-xs">
                                 <div class="footer-payment">
-                                    <!-- <ul class="third-party">
+                                    <ul class="third-party">
                                         <li class="Visa"></li>
                                         <li class="Master"></li>
                                         <li class="American"></li>
-                                    </ul> -->
-
-                                    <img src="https://www.michaeltrio.com/pub/media/0menu/3rdparty.png" alt=""
-                                        style="width: 200px;" />
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -737,145 +724,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 
-
 {{block class="Michaeltrio\Customer\Block\Contact" name="modal.contact" template="contact-modal.phtml"}}
-
-
-<div class="modals-wrapper">
-
-    <aside role="dialog" class=" modal-popup store-phone-modal                modal-slide                _inner-scroll "
-        aria-describedby="phone-numbers" data-role="modal" data-type="popup" tabindex="0" style="z-index: 912;"
-        id="phone-numbers-modal">
-        <div data-role="focusable-start" tabindex="0"></div>
-        <div class="modal-inner-wrap" data-role="focusable-scope">
-            <header class="modal-header">
-
-                <button class="action-close" data-role="closeBtn" type="button" id="close-phone-numbers">
-                    <span>Close</span>
-                </button>
-            </header>
-
-            <div id="phone-numbers" class="modal-content" data-role="content">
-                <div id="store-phone-popup-2" style="display: block;" class="mt-2">
-                    <div class="store-logo"><img class="small-logo"
-                            src="//d213t4exkgxsjh.cloudfront.net/logo/michaeltrio-wlogov2.svg" alt="Michaeltrio"></div>
-                    <div class="row" style="justify-content: center;
-                align-items: center;
-                display: flex;
-                height: 50px;">
-                        <div class="col-xs-16">
-                            <div class="">
-
-                                <h4>Tanjong Pagar Showroom</h4>
-
-
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="">
-                                <a href="tel:+6562990110" class="btn btn-primary" style="width: 100%;">CALL</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 50px;">
-                        <div class="col-xs-16">
-                            <div class="">
-
-                                <h4>JEM Showroom</h4>
-
-
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="">
-                                <a href="tel:+6569513296" class="btn btn-primary" style="width: 100%;">CALL</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 50px;">
-                        <div class="col-xs-16">
-                            <div class="">
-
-                                <h4>Northpoint City Showroom</h4>
-
-
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="">
-                                <a href="tel:+6569691492" class="btn btn-primary" style="width: 100%;">CALL</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 50px;">
-                        <div class="col-xs-16">
-                            <div class="">
-
-                                <h4>Tampines 1 Showroom</h4>
-
-
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="">
-                                <a href="tel:+6569667525" class="btn btn-primary" style="width: 100%;">CALL</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div data-role="focusable-end" tabindex="0"></div>
-    </aside>
-</div>
-
-<script>
-    require(['jquery'], function ($) {
-        $(document).ready(function () {
-            $("#open-phone-numbers").click(function () {
-                $("#phone-numbers-modal").addClass("_show");
-            });
-
-            $("#close-phone-numbers").click(function () {
-                $("#phone-numbers-modal").removeClass("_show");
-            });
-
-            $("#open-phone-numbers-2").click(function () {
-                $("#phone-numbers-modal").addClass("_show");
-            });
-
-
-        });
-    });
-</script>
-
-
-<script>
-    require(['jquery'], function ($) {
-        $(document).ready(function () {
-
-            $(".footer-collapse").click(function () {
-                var x = $(this).attr("aria-selected");
-                if (x === "true") {
-                    $(this).removeClass("active");
-                } else if (x === "false") {
-                    $(this).addClass("active");
-                }
-
-            });
-
-        });
-    });
-</script>

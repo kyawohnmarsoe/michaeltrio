@@ -1947,8 +1947,31 @@ Email: <a href="mailto:service@michaeltrio.com">service@michaeltrio.com</a>
 
 
         window.onload = function () {
+            let showroomName = location.hash.replace('#', '');
 
-            // renderShowroom("tp");
+            let allBtn = document.getElementsByClassName('showrooms-group')[0].getElementsByClassName('btn-blue-outline');
+
+            for (i = 0; i < allBtn.length; i++) {
+                allBtn[i].classList.remove("active");
+            }
+
+            if (showroomName == 'tp') {
+                allBtn[0].classList.add("active");
+                renderShowroom(showroomName);
+            } else if (showroomName == 'jem') {
+                allBtn[1].classList.add("active");
+                renderShowroom(showroomName);
+            } else if (showroomName == 'np') {
+                allBtn[2].classList.add("active");
+                renderShowroom(showroomName);
+            } else if (showroomName == 'tam') {
+                allBtn[3].classList.add("active");
+                renderShowroom(showroomName);
+            } else {
+                allBtn[0].classList.add("active");
+                renderShowroom('tp');
+            }
+
         }
 
 

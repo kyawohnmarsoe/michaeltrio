@@ -2,6 +2,13 @@
 .sc-7dvmpp-1.gCdMUP{
     display: none;
     }
+    a.sc-7dvmpp-1.ileyeC{
+        display: none !important;
+
+    }
+    .q8c6tt-2.hnGCKT{
+        margin:0px !important;
+    }
     
     .checkout-index-index .totals.charge {
         display: none !important;
@@ -170,8 +177,9 @@
           }
         
         .zopim {
-            display: none !important;
+            /* display: none !important; */
         }
+      
         
         .meshim_widget_components_mobileChatButton_Button{
             display: none !important;
@@ -443,6 +451,7 @@
       }
       .nav-sections-item-title.active a{
           font-weight: 500;
+          text-decoration: underline !important;
       }
       .cdz-menu:not(.cdz-toggle-menu) .groupmenu-drop .groupdrop-title a, .cdz-menu:not(.cdz-toggle-menu) .groupmenu-drop a{
           color: #000;

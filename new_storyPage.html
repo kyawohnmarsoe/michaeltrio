@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .mt2021 .btn {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: normal;
+            border-radius: 5px;
+            /* height: 40px; */
+            padding: 10px;
+            display: inline-block;
+            margin: auto;
+            min-width: 217px;
+        }
+
+        .mt2021 .btn-blue {
+            color: #fff !important;
+            background-color: #9bb8d3;
+            transition: background-color 2s;
+        }
+
+        .mt2021 .btn-blue:hover {
+            color: #fff !important;
+            background-color: #606060;
+
+        }
+
+        .large-btn {
+            width: 347px;
+        }
+
+        .appoint-tp,
+        .appoint-jem,
+        .appoint-np,
+        .appoint-tam {
+            cursor: pointer;
+        }
+
+        .appoint-tp:hover,
+        .appoint-jem:hover,
+        .appoint-np:hover,
+        .appoint-tam:hover {
+            opacity: 0.9;
+        }
+
+        .new-storyPage {
+            background: #efedee;
+        }
+
+        .three-sons-block {
+            font-size: 23px;
+            font-family: inherit;
+            color: #606060;
+            text-align: center;
+            background: #cbd4d9;
+            font-weight: 600;
+        }
+
+        .new-storyPage .title {
+            font-size: 36px;
+            font-family: 'Times New Roman';
+            letter-spacing: 0.05em;
+            color: inherit;
+            text-align: center;
+            font-weight: 400;
+            color: #606060;
+        }
+
+        .new-storyPage p {
+            font-size: 17px;
+            /* word-spacing: 0.3rem; */
+            /* line-height: 1.9rem; */
+            color: #606060;
+            letter-spacing: 0.05em;
+        }
+
+        .two-rings {
+            max-width: 500px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .two-rings-block {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .block-space-small {
+            width: 100%;
+            height: 50px;
+        }
+
+        .block-space-large {
+            width: 100%;
+            height: 100px;
+        }
+
+        .one-ring-bg {
+            background-image: url(https://www.michaeltrio.com/pub/media/0story/03.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .d-md-flex {
+            display: flex;
+        }
+
+        .three-words img {
+            width: 135px;
+        }
+
+        .pl-md-5 {
+            padding-left: 40px;
+        }
+
+        .mb-md-5 {
+            margin-bottom: 40px;
+        }
+
+        .showroom-name {
+            font-size: 1.2rem;
+            font-family: inherit;
+            color: inherit;
+            text-align: center;
+            font-weight: 500;
+            align-self: center;
+        }
+
+        .d-flex-d-md-block {
+            display: block;
+        }
+
+        .w-100-w-sm-50 {
+            width: 100%;
+        }
+
+        h5.timeline-title {
+            font-size: 22px;
+            color: #606060;
+            font-weight: 500;
+        }
+
+        .br-md-1 {
+            border-right: 1px solid #96aab1;
+        }
+
+        .timeline-wapper {
+            width: 92%;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Timeline  */
+
+        .timeline {
+            counter-reset: test 20;
+            position: relative;
+        }
+
+        .timeline li {
+            list-style: none;
+            float: left;
+            width: 20%;
+            position: relative;
+            text-align: center;
+            /* text-transform: uppercase; */
+            max-width: 125px;
+        }
+
+        .timeline.mt-timeline li {
+            width: 33.33%;
+            max-width: 125px;
+        }
+
+        ul:nth-child(1) {
+            /* color: #96aab1; */
+        }
+
+        ul.timeline {
+            padding-inline-start: 40px;
+        }
+
+
+        .timeline li:before {
+            /* counter-increment: test; */
+            /* content: counter(test); */
+            content: "";
+            width: 10px;
+            height: 10px;
+            /* border: 3px solid #96aab1; */
+            border-radius: 50%;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto 10px auto;
+            background: #96aab1;
+            color: #000;
+            transition: all ease-in-out .3s;
+            cursor: pointer;
+        }
+
+        .timeline li:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #96aab1;
+            top: 4px;
+            left: -50%;
+            z-index: 2;
+            transition: all ease-in-out .3s;
+        }
+
+        .timeline li:first-child:after {
+            content: none;
+        }
+
+        .timeline li.active-tl {
+            color: #555555;
+        }
+
+        .timeline li.active-tl:before {
+            background: #96aab1;
+            color: #F1F1F1;
+        }
+
+        .timeline li.active-tl+li:after {
+            background: #96aab1;
+        }
+
+        .timeline-icon {
+            max-width: 100px;
+            width: 100%;
+            margin-bottom: 15px;
+            margin-top: 7px;
+        }
+
+        /* Timeline End */
+
+
+        .quote-icon-open {
+            margin-top: -20px;
+            max-width: 40px;
+        }
+
+        .quote-icon-close {
+            margin-top: -6px;
+            max-width: 40px;
+
+        }
+
+        @media(max-width:991.98px) {
+            .timeline-wapper {
+                width: 85%;
+                margin: auto;
+            }
+
+            .mt-timeline-wapper {
+                width: 55%;
+                margin: auto;
+
+            }
+
+            .d-md-flex {
+                display: block;
+            }
+        }
+
+        @media(max-width:767.98px) {
+            .quote-icon-open {
+                margin-top: -20px;
+                max-width: 20px
+            }
+
+            .quote-icon-close {
+                margin-top: -6px;
+                max-width: 20px
+            }
+
+            .mt2021 .btn {
+                font-size: 14px;
+                line-height: 15px;
+                /* height: 30px; */
+            }
+
+            .large-btn {
+                width: 217px;
+            }
+
+            h5.timeline-title {
+                font-size: 17px;
+            }
+
+            .br-md-1 {
+                border-right: none;
+            }
+
+            .w-100-w-sm-50 {
+                width: 50%;
+            }
+
+
+
+            .d-flex-d-md-block {
+                display: flex;
+
+            }
+
+
+
+            .pl-md-5 {
+                padding-left: 0px;
+            }
+
+            .mb-md-5 {
+                margin-bottom: 20px;
+            }
+
+            .two-rings {
+                max-width: 80%;
+                margin-top: -45px;
+            }
+
+            .two-rings-block {
+                max-width: 500px;
+            }
+
+            .new-storyPage p {
+                font-size: 14px;
+                /* word-spacing: 0.1rem; */
+                /* line-height: 1.4rem; */
+            }
+
+            .three-words p {
+                padding-left: 20px;
+            }
+
+            .new-storyPage .title {
+                font-size: 25px;
+            }
+
+            .block-space-small {
+                height: 30px;
+            }
+
+            .block-space-small {
+                height: 70px;
+            }
+
+            .three-sons-block {
+                font-size: 18px;
+            }
+
+            .timeline-wapper {
+                width: 100%;
+                margin: auto;
+
+            }
+
+            .mt-timeline-wapper {
+                width: 65%;
+                margin: auto;
+
+
+            }
+
+        }
+
+        @media (max-width:445px) {
+            ul.timeline {
+                padding-inline-start: 0px;
+            }
+
+            .timeline li {
+                font-size: 11px;
+                max-width: 80px;
+            }
+
+            .timeline.mt-timeline li {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt2021 new-storyPage">
+
+        <!-- Banner -->
+        <div class="hidden-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0story/01.jpg" alt="" class="w-100 ">
+            <img src="https://www.michaeltrio.com/pub/media/0story/02.jpg" alt="" class="w-100 ">
+
+        </div>
+        <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0story/m01.jpg" alt="" class="w-100 ">
+            <img src="https://www.michaeltrio.com/pub/media/0story/m02.jpg" alt="" class="w-100 ">
+
+        </div>
+
+        <div class="three-sons-block">
+            <div class="container py-5">
+                <img src="https://www.michaeltrio.com/pub/media/0story/open.png" alt="" class="quote-icon-open">
+                THREE SONS, THREE GENERATIONS, THREE VALUES.
+                <img src="https://www.michaeltrio.com/pub/media/0story/close.png" alt="" class="quote-icon-close">
+
+            </div>
+        </div>
+
+
+        <div class=" container text-center">
+            <img src="https://www.michaeltrio.com/pub/media/0story/03.png" alt="" class="two-rings">
+            <div class="two-rings-block">
+                <p>
+                    Michael Trio is a homegrown custom jewellery brand, founded in 2012 as an ode to our late father.
+                    With over 40 years of experience in the jewellery industry, our mission is to provide quality
+                    products and exceptional services at a remarkable price.
+
+
+
+                </p>
+                <p>
+                    From sourcing raw materials to delivering an exceptional online-to-offline retail experience, we
+                    adopted the vertical integration model which allows us to reduce cost and at the same time make your
+                    jewellery-buying experience a memorable one!
+                </p>
+            </div>
+        </div>
+        <div class="block-space-small"></div>
+
+        <div class="container">
+            <div class="row d-md-flex">
+                <div class="col-md-10 one-ring-bg">
+                    <img src="https://www.michaeltrio.com/pub/media/0story/03.jpg" alt=""
+                        class="w-100 visible-xs visible-sm">
+                </div>
+
+                <div class="block-space-small visible-xs"></div>
+
+                <div class="col-md-14 three-words">
+                    <div class="pl-md-5">
+                        <div class="pb-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0story/family.png" alt="">
+                            <p>Family
+                                At the core of our business, are the family ties that bind us together. We value our
+                                people
+                                and relationships above all else.</p>
+                        </div>
+
+                        <div class="pb-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0story/trust.png" alt="">
+                            <p>The long-standing history of our company was built on trust. We believe that trust is in
+                                honoring our word and commitment with integrity.</p>
+                        </div>
+
+                        <div class="pb-2">
+                            <img src="https://www.michaeltrio.com/pub/media/0story/love.png" alt="">
+                            <p>Our business is grounded in love – one that brings two
+                                people together, one that seeks to encourage, and one that goes beyond generations to
+                                come.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="block-space-large"></div>
+
+        <!-- Inspiration Banner -->
+        <div class="hidden-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0story/04.jpg" alt="" class="w-100">
+        </div>
+        <div class="visible-xs">
+            <img src="https://www.michaeltrio.com/pub/media/0story/m05.jpg" alt="" class="w-100">
+        </div>
+
+        <div class="block-space-small"></div>
+
+        <div class=" container text-center">
+
+            <h1 class="mb-md-5 title">Our Inspiration</h1>
+
+
+            <div class="two-rings-block">
+                <p>
+                    A story of love, a love between mom and dad.
+
+                </p>
+                <p>At the end of the day, what matters most is the 0.9-carat yellow gold, classic ring. Mom still wears
+                    her wedding ring to this day, despite having many other bigger diamond rings.</p>
+                <p>This is a story of love that goes beyond <strong><em>“Till death do us part”</em></strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="block-space-large"></div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <img src="https://www.michaeltrio.com/pub/media/0story/06.png" alt="" class="w-100">
+            </div>
+            <div class="col-sm-8 hidden-xs">
+                <img src="https://www.michaeltrio.com/pub/media/0story/07.png" alt="" class="w-100">
+            </div>
+            <div class="col-sm-8 hidden-xs">
+                <img src="https://www.michaeltrio.com/pub/media/0story/08.jpg" alt="" class="w-100">
+            </div>
+        </div>
+
+        <div class="block-space-large"></div>
+
+        <div class=" container text-center">
+
+            <h1 class="mb-md-5 title">Expect Lower Markups</h1>
+
+
+            <div class="two-rings-block">
+                <p>
+                    With lesser steps, we reduce the cost, bringing you the diamonds at a lower price.
+                    Come down to our showrooms where our knowledgeable consultants will be able to assist in delivering
+                    your needs</p>
+            </div>
+
+            <div class="block-space-small"></div>
+
+
+            <div class="row">
+                <div class="col-md-14 text-center br-md-1">
+                    <h5 class="timeline-title mb-3">Traditional Retail <span class="hidden-xs"><br><br></span></h5>
+                    <div class="timeline-wapper ">
+                        <ul class="timeline">
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-01.png" alt=""
+                                    class="timeline-icon">
+                                <div>Sourcing <br>
+                                    diamond</div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-02.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Retail<br>
+                                    Cost
+                                </div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-03.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Inventory<br>
+                                    Investment
+                                </div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-04.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Low<br>
+                                    Inventory<br>
+                                    Turnover
+                                </div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-05.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    High<br>
+                                    markup
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block-space-small visible-xs " style="clear: both;"></div>
+
+                <div class="col-md-10 text-center">
+                    <h5 class="timeline-title mb-3">Michael Trio<br>
+                        ( how we do it differently )</h5>
+                    <div class="mt-timeline-wapper">
+                        <ul class="timeline mt-timeline">
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-01.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Sourcing<br>
+                                    diamond
+                                </div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-02.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Retail<br>
+                                    Cost
+                                </div>
+                            </li>
+                            <li><img src="https://www.michaeltrio.com/pub/media/0story/png-06.png" alt=""
+                                    class="timeline-icon">
+                                <div>
+                                    Satisfied<br>
+                                    Customer
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="block-space-large"></div>
+
+        <div class=" text-center">
+
+            <h1 class="container  mb-md-5 title">Our Showrooms</h1>
+
+
+            <div class="row">
+                <div class="col-sm-6 d-flex-d-md-block">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/10.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-tp">
+
+
+
+
+                    <div class="w-100-w-sm-50 appoint-tp d-flex-d-md-block">
+                        <h5 class="showroom-name w-100 py-4 ">Tanjong Pagar Showroom</h5>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 d-flex-d-md-block">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/11.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-jem hidden-xs">
+
+
+
+                    <div class="w-100-w-sm-50 appoint-jem d-flex-d-md-block">
+                        <h5 class="showroom-name w-100 py-4 ">JEM Showroom</h5>
+                    </div>
+
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/11.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-jem visible-xs">
+
+                </div>
+                <div class="col-sm-6 d-flex-d-md-block">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/12.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-np">
+
+
+                    <div class="w-100-w-sm-50 appoint-np d-flex-d-md-block">
+                        <h5 class="showroom-name w-100 py-4 ">North Point Showroom</h5>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 d-flex-d-md-block">
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/13.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-tam hidden-xs">
+
+
+                    <div class="w-100-w-sm-50 appoint-tam d-flex-d-md-block">
+                        <h5 class="showroom-name w-100 py-4 ">Tampines One Showroom</h5>
+                    </div>
+
+
+                    <img src="https://www.michaeltrio.com/pub/media/0story/13.jpg" alt=""
+                        class="w-100-w-sm-50 appoint-tam visible-xs">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="block-space-small"></div>
+
+        <div class="container text-center">
+            <a href="{{store url=''}}make-an-appointment" class="btn btn-blue large-btn mb-2" role="button">
+                Make Appointment
+            </a>
+        </div>
+
+        <div class="block-space-small"></div>
+
+
+
+    </div>
+
+    <script>
+
+        require(['jquery'], function ($) {
+
+            $(document).ready(function () {
+                let currentURL = location.href;
+                let siteURL = '';
+                if (currentURL.includes('/my/')) {
+                    siteURL = "/my/virtual-appointment";
+                } else {
+                    siteURL = "/make-an-appointment";
+                }
+
+                $('.appoint-tp').click(function () {
+                    location.href = `${siteURL}#tp`;
+                });
+                $('.appoint-jem').click(function () {
+                    location.href = `${siteURL}#jem`;
+                });
+                $('.appoint-np').click(function () {
+                    location.href = `${siteURL}#np`;
+                });
+                $('.appoint-tam').click(function () {
+                    location.href = `${siteURL}#tam`;
+                });
+
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

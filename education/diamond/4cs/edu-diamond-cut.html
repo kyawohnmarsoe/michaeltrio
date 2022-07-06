@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .ed-top-sec {
+            max-width: none !important;
+            padding: 0 !important;
+            margin-bottom: -82px !important;
+            position: relative;
+        }
+
+        .top-bar {
+            height: 46px;
+            box-shadow: 0 2px 3px 0 rgb(20 26 46 / 17%);
+            clear: both;
+            position: relative;
+            background: #fff;
+        }
+
+        .second-bar {
+            height: 36px;
+            width: 100%;
+            background-color: rgba(250, 250, 250, .9);
+            box-shadow: 0 17px 53px 0 rgb(20 26 46 / 17%);
+        }
+
+        .edu-center {
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            background: #9bb8d3;
+        }
+
+        .edu-nav {
+            box-shadow: 0 3px 27px 0 rgb(20 26 46 / 17%);
+            background: #fff;
+        }
+
+        ul.edu-nav {
+            padding: 10px;
+        }
+
+        .edu-nav li {
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .edu-nav li:hover {
+            background: #f7f7f7;
+            cursor: pointer;
+        }
+
+        .edu-nav li.active {
+            border-right: 6px solid #9bb8d3;
+            background: #f7f7f7;
+        }
+
+        .edu-nav img {
+            margin-right: 15px;
+        }
+
+        .diamond-nav {
+            height: 46px;
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+        .diamond-nav li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0px 7px;
+        }
+
+        .diamond-nav li.active {
+            border-bottom: 6px solid #9bb8d3;
+        }
+
+        .cut-nav {
+            height: 36px;
+            line-height: 36px;
+            white-space: nowrap;
+            overflow: auto;
+            /* margin-bottom: 14px; */
+        }
+
+        .cut-nav li {
+            display: inline;
+            padding: 7px;
+        }
+
+        .cut-nav li.active a {
+            color: #9bb8d3;
+        }
+
+        .large-display-none {
+            display: none;
+        }
+
+        @media (max-width: 1199.98px) {
+            .medium-display-none {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 767.98px) {
+            .small-display-none {
+                display: none;
+            }
+
+            .large-display-none {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="edu-center large-display-none">
+        <div>Education Center</div>
+
+        <select id="eduDropdown" onchange="eduSelect()">
+            <option value="{{store url=''}}education/diamonds/4cs-cut" selected> Loose Diamonds</option>
+            <option value="{{store url=''}}education"> Engagement Rings</option>
+            <option value="{{store url=''}}education"> Natural Gemstones</option>
+            <option value="{{store url=''}}education">Wedding Ring</option>
+            <option value="{{store url=''}}education">Fine Jewellery</option>
+        </select>
+    </div>
+
+    <div class="ed-top-sec">
+        <div class="top-bar"></div>
+        <div class="second-bar"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-6 small-display-none">
+                <div class="edu-center">Education Center</div>
+
+                <ul class="edu-nav">
+                    <li class="active">
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Loose Diamonds</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Engagement Rings</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Natural Gemstones</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Wedding Ring</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://source.unsplash.com/hmwvQJepxOQ/400x400" alt=""
+                                class="img-circle w-25"> Fine Jewellery</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-16 col-md-18">
+
+                <ul class="diamond-nav">
+                    <li class="active">
+                        <a href="{{store url=''}}education/diamonds/4cs-cut">4CS</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/shapes">Shapes</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/anatomy">Anatomy</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/ideal-cut">Ideal Cut</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/fancy-color-intensity">Fancy Color</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/grading-certficate">Grading</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/how-choose-perfect-diamond">Choose a Diamond</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/diamond-care">Diamond Care</a>
+                    </li>
+                </ul>
+
+                <ul class="cut-nav">
+                    <li class="active">
+                        <a href="{{store url=''}}education/diamonds/4cs-cut">Cut</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/4cs-color">Color</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/4cs-clarity">Clarity</a>
+                    </li>
+                    <li>
+                        <a href="{{store url=''}}education/diamonds/4cs-carat">Carat Weight</a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="ed-content mt-3">
+                    <div id="educationLeft  ">
+                        <div style="padding-top:0px;">
+
+                            <img align="left" src="https://ion.r2net.com/Images/Education/Diamonds/diamond-cut.jpg"
+                                width="305" height="335" alt="Diamond Cut" title="Diamond Cut"
+                                class="pr-3 medium-display-none ">
+
+                        </div>
+                    </div>
+
+                    <div id="educationMain">
+
+                        <div>
+                            <h1 classname="top_pad_h2">Diamond Cut</h1>
+
+                            <div classname="content categoryDetails" categoryid="1" subcategoryid="1"
+                                secondsubcategoryid="1">
+                                <div classname="CategoryText">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>
+                                                        The cut of a diamond not only refers to the diamond’s
+                                                        shape, it also refers to how effectively the diamond
+                                                        returns light back to the viewer’s eye. A well-cut
+                                                        diamond will appear very brilliant and fiery, while a
+                                                        poorly cut diamond can appear dark and lifeless,
+                                                        regardless of its{" "}
+                                                        <a href="/education/diamonds/4cs-color/" title="Diamod color">
+                                                            color
+                                                        </a>{" "}
+                                                        or{" "}
+                                                        <a href="/education/diamond/4cs-clarity/"
+                                                            title="Diamond clarity">
+                                                            clarity
+                                                        </a>
+                                                        .
+                                                    </p>
+                                                    <p>
+                                                        Not only do well-cut diamonds appear more brilliant,
+                                                        they also tend to appear larger than other diamonds of
+                                                        the same carat weight. An "ideal" diamond has both
+                                                        increased brilliance and diameter relative to more
+                                                        deeply-cut diamonds.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2">
+                                                    <h3>Ideal cut diamonds</h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p>
+                                                        An Ideal Cut Diamond is a round, brilliant, or princess
+                                                        cut diamond that is cut to ideal proportions and angles,
+                                                        and has excellent polish and symmetry ratings. An Ideal
+                                                        Cut Diamond is perfectly proportioned to refract light,
+                                                        producing that fire and brilliance up through to the
+                                                        table and crown. James Allen offers a nice selection of
+                                                        Ideal Cut Diamonds know at True Hearts<sup>TM</sup>
+                                                    </p>
+                                                    <h3>
+                                                        Hearts and Arrows True Hearts<sup>TM</sup>
+                                                    </h3>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p>
+                                                        Seen from above, a Hearts and Arrows diamond shows an
+                                                        arrow pattern. When displayed on its pavilion side, the
+                                                        diamond presents the eye with 8 hearts with tiny 'v'
+                                                        shapes. Genuine Hearts and Arrows have these patterns
+                                                        visible at a single glance, indicating that the diamond
+                                                        has perfect optical symmetry.
+                                                    </p>
+                                                    <p>
+                                                        Our Hearts and Arrows collection are the ultimate
+                                                        expression of love - that's why we call them TrueHearts
+                                                        <sup>TM</sup>. Every diamond from our TrueHearts
+                                                        <sup>TM</sup> collection is a lasting masterpiece, a
+                                                        perfect diamond.
+                                                    </p>
+                                                    <p>
+                                                        Hearts and Arrows diamonds are sold under many names -
+                                                        Hearts on Fire and Leo Diamonds are two popular
+                                                        examples. At James Allen, we take pride in presenting
+                                                        only the finest Hearts and Arrows diamonds money can buy
+                                                        - every single TrueHearts<sup>TM</sup> diamond we sell
+                                                        is cut and polished at 100X magnification. Furthermore,
+                                                        our exclusive Diamond Display Technology<sup>TM</sup>{" "}
+                                                        lets you see any True Hearts<sup>TM</sup> diamond
+                                                        magnified in 360° so you can see exactly what you are
+                                                        getting.
+                                                    </p>
+                                                    <h3>
+                                                        Understanding Brilliance, Dispersion &amp; Scintillation
+                                                    </h3>
+                                                    <p>
+                                                        A well-cut diamonds exhibit three different properties:
+                                                        brilliance, dispersion and scintillation. As light
+                                                        strikes a diamond's surface, it will either reflect off
+                                                        the table of a polished stone or enter the diamond. The
+                                                        light that is reflected off the diamond is known as the
+                                                        diamond's brilliance. As light travels through a stone,
+                                                        some of the light rays are separated into flashes of
+                                                        color. This is known as dispersion. The result of
+                                                        dispersion—the separation of white light into its
+                                                        spectral colors— is known as fire. Scintillation is
+                                                        flashes of color that are viewable as an observer moves
+                                                        a diamond back and forth.
+                                                    </p>
+                                                    <div>
+                                                        <a href="/loose-diamonds/all-diamonds/">
+                                                            SHOP DIAMONDS
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function eduSelect() {
+            location.href = document.getElementById('eduDropdown').value;;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <style>
+        .mt2021 .share-the-love {
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #898989;
+        }
+
+        .mt2021 .refer-desc {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6e818d;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .mt2021 .refer-tc {
+            max-width: 80%;
+            margin: auto;
+        }
+
+
+        .mt2021 h5,
+        .mt2021 h6,
+        .mt2021 p {
+            color: #000;
+        }
+
+        .voucher-bg {
+            background: #f2f2f2;
+            padding: 20px 0px;
+        }
+
+        .mt2021 .voucher-price {
+            font-size: 55px;
+            text-transform: uppercase;
+            font-style: italic;
+            color: #000;
+        }
+
+        .mt2021 .voucher-title {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .friend-form .form-horizontal {
+            font-size: 17px;
+            letter-spacing: 1px;
+            color: #000;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .friend-form .form-horizontal .control-label {
+            text-align: left;
+            line-height: 40px;
+            padding-top: 0;
+        }
+
+        .friend-form .form-horizontal .form-group {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .friend-form input[type=text],
+        .friend-form input[type=password],
+        .friend-form input[type=url],
+        .friend-form input[type=tel],
+        .friend-form input[type=search],
+        .friend-form input[type=number],
+        .friend-form input[type=datetime],
+        .friend-form input[type=email] {
+            border-width: 1px;
+        }
+
+        .success-popup {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            z-index: 999;
+            background-color: #8ad0d06e;
+            overflow: hidden;
+            display: none;
+            cursor: pointer;
+
+        }
+
+        .success-inner {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            height: auto;
+            padding: 50px;
+            background: #ffffffde;
+            font-size: 18px;
+            margin-top: 10%;
+            color: green;
+            border: 1px solid #80808057;
+            position: relative;
+
+        }
+
+        .success-popup-close {
+            font-size: 20px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #4f4949db;
+            cursor: pointer;
+        }
+
+
+        @media(max-width:767.98px) {
+            .mt2021 .share-the-love {
+                font-size: 30px;
+            }
+
+            .voucher-bg {
+                max-width: 300px;
+                min-height: 120px;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .friend-form .form-horizontal {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .friend-form-btn {
+                display: flex;
+                justify-content: start;
+            }
+
+            .friend-form-btn .btn {
+                min-width: 140px;
+                margin: 0;
+            }
+
+            .friend-form .form-horizontal .control-label {
+
+                line-height: 30px;
+            }
+
+            .friend-form h5 {
+                line-height: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .friend-form .form-horizontal {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="mt2021 new-friendPage">
+        <img src="https://www.michaeltrio.com/pub/media/0story/friend_desktop.jpg" alt="" class="w-100 hidden-xs">
+        <img src="https://www.michaeltrio.com/pub/media/0story/friend_mobile.jpg" alt="" class="w-100 visible-xs">
+
+
+
+        <div class="container text-center ">
+            <div class="row mb-5">
+                <div class="col-md-24">
+                    <h1 class="share-the-love mt-5 mb-4">Share The Love</h1>
+                    <hr>
+                    <p class="refer-desc mb-5 mt-4">
+
+                        Refer Your Friends And Get Up To <span style="color:#c88d70;font-weight: 600;">$100</span> Worth
+                        of Voucher!
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-sm-8 mb-3">
+                            <div class="voucher-bg">
+                                <div>
+                                    <h1 class="voucher-price">$100</h1>
+                                    <h4 class="voucher-title">Michael Trio<br> Voucher</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 mb-3">
+                            <div class="voucher-bg">
+                                <div>
+                                    <h1 class="voucher-price">$50</h1>
+                                    <h4 class="voucher-title">NTUC Fairprice<br> Voucher</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 mb-3">
+                            <div class="voucher-bg">
+                                <div>
+                                    <h1 class="voucher-price">$50</h1>
+                                    <h4 class="voucher-title">Capitaland<br> Voucher</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p class="refer-tc mb-3 mt-4">
+                        After you fill in all your details, a copy of your referral code will be sent to your email so
+                        that you may share it with your friends, even if you do not know their email addresses!"
+                    </p>
+                    <p class="refer-tc ">
+                        <a href="#terms" style="color:#6e818d;">*T&Cs apply.</a> Please refer to the last page of this
+                        form
+                        for the full T&Cs.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 friend-form">
+
+            <form class="form-horizontal" action="https://sheetdb.io/api/v1/7d3l60egk1toh" method="post"
+                id="sheetdb-form">
+
+                <div class="customer-info mb-5">
+
+                    <div class="col-sm-24">
+                        <h5 class="mb-4">Please enter your information</h5>
+                    </div>
+
+                    <input id="date" type="hidden" name="data[date]" required>
+                    <script> document.getElementById("date").value = new Date().toDateString().replace(/ /g, "-");</script>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4" for="first_name">First Name: <span
+                                class="text-danger">*</span> </label>
+                        <div class="col-sm-16 col-md-12">
+                            <input type="text" class="form-control" id="first_name" name="data[first_name]" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4" for="last_name">Last Name: <span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-16 col-md-12">
+                            <input type="text" class="form-control" id="last_name" name="data[last_name]" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4" for="email">Email: <span
+                                class="text-danger">*</span></label>
+                        <div class="col-sm-16 col-md-12">
+                            <input type="email" class="form-control" id="email" name="data[email]" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-16">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="data[receive_offer]"> <small
+                                        style="color: #b5b5b5;">Receive special offer and
+                                        gift
+                                        ideas from Michael
+                                        Trio</small></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="friend-info ">
+                    <div class="col-sm-24">
+                        <h5 class="mb-4 ">Please enter your friend's information</h5>
+                    </div>
+                    <div class="form-group col-sm-8">
+                        <label class="control-label " for="first_name">First Name: <span
+                                class="text-danger">*</span></label>
+                        <div>
+                            <input type="text" class="form-control" id="f1_first_name" name="data[f1_first_name]"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-8">
+                        <label class="control-label " for="last_name">Last Name: <span
+                                class="text-danger">*</span></label>
+                        <div>
+                            <input type="text" class="form-control" id="f1_last_name" name="data[f1_last_name]"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-8">
+                        <label class="control-label " for="email">Email: <span class="text-danger">*</span></label>
+                        <div>
+                            <input type="email" class="form-control" id="f1_email" name="data[f1_email]" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-sm-24">
+                        <label class="control-label " for="email">Include An Optional Message To Your Friend(s):</label>
+                        <div>
+                            <textarea class="form-control" id="f1_message" rows="5" name="data[f1_message]">
+                            </textarea>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="clear:both;"></div>
+
+                <!-- Referrer  -->
+                <div class="mt-4">
+                    <div class="col-sm-24">
+                        <h5 class="mb-4 ">Referrer Details</h5>
+                        <p class="mb-4 ">Referrer Details
+                            Please fill in your address below. We will be mailing you the voucher via Singpost within 20
+                            days after your friend has collected their order. </p>
+                    </div>
+
+                    <div class="form-group col-sm-24">
+                        <label class="control-label " for="home_address">Your (House/Mailing) Address: <span
+                                class="text-danger">*</span></label>
+                        <div>
+                            <!-- <textarea class="form-control" id="home_address" rows="5" name="data[home_address]"
+                                required>
+                            </textarea> -->
+                            <input type="text" class="form-control" id="home_address" name="data[home_address]"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-24">
+                        <label class="control-label"> Choice of Rewards Voucher:
+                            <span class="text-danger">*</span></label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[rewards_voucher]" required
+                                id="voucher_1" value="SGD$100 Michael Trio Voucher">
+                            <label class="form-check-label" for="voucher_1">
+                                SGD$100 Michael Trio Voucher
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[rewards_voucher]" required
+                                id="voucher_2" value="$50 NTUC Voucher">
+                            <label class="form-check-label" for="voucher_2">
+                                $50 NTUC Voucher
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[rewards_voucher]" required
+                                id="voucher_3" value="$50 CapitaLand Voucher">
+                            <label class="form-check-label" for="voucher_3">
+                                $50 CapitaLand Voucher
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div style="clear:both;"></div>
+                <hr>
+
+                <!-- T&C Section  -->
+                <div class="mt-4" id="terms">
+                    <div class="col-sm-24">
+                        <h5 class="mb-4 ">Terms & Conditions</h5>
+
+                    </div>
+
+                    <div class="col-sm-24">
+                        <h6 class="mb-2 ">Part 1 - Your Friend (Referee)</h6>
+                        <p class="mb-4 ">
+                            - Refer a Friend and we will send them a SGD$100 Michael Trio voucher for their first
+                            purchase.<br>
+                            - A minimum spend of SGD$1000 is required.<br>
+                            - Referee must be a new customer to Michael Trio.<br>
+                            - Discount code is not stackable with other promotional discounts or offers. Please use the
+                            discount code when checking out. </p>
+                    </div>
+
+                    <div class="col-sm-24">
+                        <h6 class="mb-2 ">Part 2 - All About You (Referrer)</h6>
+                        <p class="mb-4 ">
+                            - Upon submission of referral, please allow 5 working days for the unique code to be mailed
+                            out to your friend.<br>
+                            - Unique referral code must be keyed in during check out or presented in-store.<br>
+                            - Upon successful referee purchase and collection of the order, you will receive your choice
+                            of rewards voucher* as indicated during the Google form submission.<br><br>
+
+                            *Rewards voucher options:<br>
+                            SGD$100 Michael Trio Rewards Voucher, minimum spend $500 required<br>
+                            $50 NTUC Voucher<br>
+                            $50 CapitaLand Voucher<br>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-24">
+                        <h6 class="mb-2 ">Part 3 - The Rules</h6>
+                        <p class="mb-4 ">
+                            - SGD$100 Michael Trio rewards vouchers will not be stackable with any other ongoing
+                            promotions.<br>
+                            - Please check with management or store consultants before using vouchers during promotional
+                            period.<br>
+                            - The voucher is non-accumulative, non-replaceable, non-exchangeable for cash, and not for
+                            sale.<br>
+                            - The voucher is not applicable for the purchase of loose diamond(s).<br>
+                            - The voucher has a validity period of 1 year from the mailing date.<br>
+                            - In the event of a dispute, our management reserves the final say on the outcome of the
+                            voucher.<br>
+                            - If complaints are received from people unrelated to you or similar entries to your email
+                            were received, you will forfeit the rights to participate in the "Refer A Friend"
+                            program.<br>
+                            - The Refer A Friend Program is only restricted to Singapore customers.<br>
+                            - Michael Trio reserves the right to amend the Terms and Conditions without prior notice.
+                        </p>
+                    </div>
+
+
+
+
+
+
+                    <div class="form-group col-sm-24">
+                        <label class="control-label"> I have read, understood & agree to the Terms and
+                            Conditions set by Michael Trio. <span class="text-danger">*</span></label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[terms_conditions]" required
+                                id="tc_1" value="yes">
+                            <label class="form-check-label" for="tc_1">
+                                YES - I agree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[terms_conditions]" required
+                                id="tc_2" value="no">
+                            <label class="form-check-label" for="tc_2">
+                                NO - I do not agree with the T&Cs.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="clear:both;"></div>
+                <!-- <div class="col-sm-24 g-recaptcha" data-sitekey="6Ldp0JwgAAAAAOujKF8nE2uJQXzHSuQEAgbxY-5N"></div> -->
+
+                <div style="clear:both;"></div>
+                <div class="form-group ">
+                    <div class="col-sm-24 friend-form-btn mt-4">
+                        <button type="reset" class="btn btn-large btn-blue mb-3 mr-3">Reset</button>
+
+                        <input type="submit" value="Submit" class="btn btn-large btn-blue mb-3" />
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Success  -->
+    <div class="success-popup" id="success-popup">
+        <div class="success-inner">
+            <span class="success-popup-close" id="success-popup-close">x</span>
+            Nicely done! You have successfully referred your friends.
+        </div>
+    </div>
+
+    <!-- Success End -->
+
+
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        let popup = document.getElementById('success-popup');
+        let close = document.getElementById('success-popup-close');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                // window.open('page2.html', '_blank');
+                // alert("success!");
+                popup.style.display = "block";
+
+            });
+            form.reset();
+        });
+
+        popup.addEventListener("click", e => {
+            popup.style.display = "none";
+        });
+
+        close.addEventListener("click", e => {
+            popup.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
