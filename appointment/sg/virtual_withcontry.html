@@ -996,7 +996,7 @@
             height: auto;
             /* margin-top: 10px; */
             border-color: var(--companyblue);
-            line-height: 24px;
+            line-height: 24.5px;
             border-width: 1px;
         }
 
@@ -1681,6 +1681,8 @@
                                                     </div>
                                                 </div>
 
+
+
                                                 <div class="row justify-content-center">
                                                     <div class="col-xs-24 col-sm-10 col-md-10 ">
                                                         <div class="mb-3">
@@ -1917,9 +1919,14 @@
                                                                     <option value="+263"> Zimbabwe (+263)</option>
                                                                 </select>
                                                             </div>
-
+                                                            <div class="mb-3"
+                                                                style="width: 49%;float: right; display: none;">
+                                                                <input type="hidden" id="areaCode" name="areaCode"
+                                                                    placeholder="Area Code" value="0">
+                                                            </div>
 
                                                         </div>
+
                                                         <div class="mb-3">
 
 
@@ -2141,6 +2148,7 @@
                 "customerName2": "",
                 "email": "",
                 "countryCode": "",
+                "areaCode": "",
                 "contactNumber": "",
                 "budget": "",
                 "remarks": "NIL"
@@ -2234,6 +2242,7 @@
                 bookingData['customer']['customerName2'] = document.getElementById("customerName2").value;
                 bookingData['customer']['email'] = document.getElementById("email").value;
                 bookingData['customer']['countryCode'] = document.getElementById("countryCode").value;
+                bookingData['customer']['areaCode'] = document.getElementById("areaCode").value;
                 bookingData['customer']['contactNumber'] = document.getElementById("contactNumber").value;
                 bookingData['customer']['budget'] = "";
                 bookingData['customer']['remarks'] = document.getElementById("remarks").value;
@@ -2261,7 +2270,6 @@
             <input type="hidden" name="interested" value="${bookingData.interest}"/>
             <input type="hidden" name="name" value="${bookingData.customer.customerName} ${bookingData.customer.customerName2}"/>
             <input type="hidden" name="email" value="${bookingData.customer.email}"/>
-            <input type="hidden" name="countryCode" value="${bookingData.customer.countryCode}"/>
             <input type="hidden" name="contact" value="${bookingData.customer.contactNumber}"/>
             <input type="hidden" name="budget" value="${bookingData.customer.budget}"/>
             <input type="hidden" name="remarks" value="${bookingData.customer.remarks}"/>

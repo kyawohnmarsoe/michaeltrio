@@ -7,6 +7,11 @@
         /* html {
             scroll-behavior: smooth;
         } */
+        .mt2021 #copyEmail {
+            color: #a0b8d0;
+            font-weight: 700;
+        }
+
         .mt2021 .sgd-sign {
             font-size: 16px;
             letter-spacing: 0px;
@@ -252,15 +257,16 @@
                     <h1 class="share-the-love mt-5 mb-4">Share The Love</h1>
                     <hr>
                     <p class="refer-desc mb-5 mt-4">
-                        GIFT YOU FRIEND <span style="color:#c88d70;font-weight: 600;">SGD $100</span> OFF THEIR FIRST
+                        GIFT YOU FRIEND <span style="color:#c88d70;font-weight: 600;">RM $300</span> OFF THEIR FIRST
                         MICHAEL TRIO PURCHASE AND BE REWARDED WITH ONE OF THE FOLLOWING*:
                     </p>
 
                     <div class="row mt-3">
-                        <div class="col-sm-8 mb-3">
+                        <div class="col-sm-4 "></div>
+                        <div class="col-sm-8 mb-3 ">
                             <div class="voucher-bg">
                                 <div>
-                                    <h1 class="voucher-price"> <span class="sgd-sign">SGD</span> $100</h1>
+                                    <h1 class="voucher-price"> <span class="sgd-sign">RM</span> $300</h1>
                                     <h4 class="voucher-title">Michael Trio<br> Voucher</h4>
                                 </div>
                             </div>
@@ -268,19 +274,13 @@
                         <div class="col-sm-8 mb-3">
                             <div class="voucher-bg">
                                 <div>
-                                    <h1 class="voucher-price"> <span class="sgd-sign">SGD</span> $50</h1>
-                                    <h4 class="voucher-title">NTUC Fairprice<br> Voucher</h4>
+                                    <h1 class="voucher-price"> <span class="sgd-sign">RM</span> $120</h1>
+                                    <h4 class="voucher-title">Grab Food<br> Voucher</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-8 mb-3">
-                            <div class="voucher-bg">
-                                <div>
-                                    <h1 class="voucher-price"> <span class="sgd-sign">SGD</span> $50</h1>
-                                    <h4 class="voucher-title">Capitaland<br> Voucher</h4>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-sm-4 "></div>
+
                     </div>
 
 
@@ -301,22 +301,22 @@
         <div class="container my-5 friend-form">
 
             <form data-toggle="validator" role="form" class="form-horizontal"
-                action="https://sheetdb.io/api/v1/8nkdybl3ysfe3" method="post" id="sheetdb-form">
+                action="https://sheetdb.io/api/v1/xcwpg3mcgj38v" method="post" id="sheetdb-form">
 
                 <div class="customer-info mb-5">
 
-                    <div class="col-sm-24">
+                    <div class="col-sm-24" id="email_top">
                         <h5 class="mb-4">Please enter your information</h5>
                     </div>
 
-                    <input id="date" type="hidden" name="data[date]" required>
+                    <input id="date" type="hidden" name="data[date_my]" required>
                     <script> document.getElementById("date").value = new Date().toDateString().replace(/ /g, "-");</script>
 
                     <div class="form-group">
                         <label class="control-label col-sm-6 col-md-5" for="full_name">Full Name: <span
                                 class="text-danger">*</span> </label>
                         <div class="col-sm-16 col-md-12">
-                            <input type="text" class="form-control" id="full_name" name="data[full_name]" required>
+                            <input type="text" class="form-control" id="full_name" name="data[full_name_my]" required>
                         </div>
                     </div>
 
@@ -324,7 +324,8 @@
                         <label class="control-label col-sm-6 col-md-5" for="email">Email: <span
                                 class="text-danger">*</span></label>
                         <div class="col-sm-16 col-md-12">
-                            <input type="email" class="form-control" id="email" name="data[email]" required>
+                            <input type="email" class="form-control" id="email" onfocusout="myFunction()"
+                                name="data[email_my]" required>
                         </div>
                     </div>
 
@@ -332,7 +333,7 @@
                     <div class="form-group">
                         <div class="col-sm-16">
                             <div class="checkbox">
-                                <label><input type="checkbox" name="data[receive_offer]"> <small
+                                <label><input type="checkbox" name="data[receive_offer_my]"> <small
                                         style="color: #b5b5b5;">Receive special offer and
                                         gift
                                         ideas from Michael
@@ -351,7 +352,7 @@
                         <label class="control-label " for="full_name">Full Name: <span
                                 class="text-danger">*</span></label>
                         <div>
-                            <input type="text" class="form-control" id="f1_full_name" name="data[f1_full_name]"
+                            <input type="text" class="form-control" id="f1_full_name" name="data[f1_full_name_my]"
                                 required>
                         </div>
                     </div>
@@ -359,7 +360,7 @@
                     <div class="form-group col-sm-12">
                         <label class="control-label " for="email">Email: <span class="text-danger">*</span></label>
                         <div>
-                            <input type="email" class="form-control" id="f1_email" name="data[f1_email]" required>
+                            <input type="email" class="form-control" id="f1_email" name="data[f1_email_my]" required>
                         </div>
                     </div>
 
@@ -367,7 +368,8 @@
                     <div class="form-group col-sm-24">
                         <label class="control-label " for="email">Include An Optional Message To Your Friend(s):</label>
                         <div>
-                            <textarea class="form-control" id="f1_message" rows="5" name="data[f1_message]"></textarea>
+                            <textarea class="form-control" id="f1_message" rows="5"
+                                name="data[f1_message_my]"></textarea>
 
                         </div>
                     </div>
@@ -381,20 +383,12 @@
                     <div class="col-sm-24">
                         <h5 class="mb-4 ">Referrer Details</h5>
                         <p class="mb-4 ">
-                            Please fill in your address below. We will be mailing you the voucher via Singpost within 20
-                            days after your friend has collected their order. </p>
-                    </div>
-
-                    <div class="form-group col-sm-24">
-                        <label class="control-label " for="home_address">Your (House/Mailing) Address: <span
-                                class="text-danger">*</span></label>
-                        <div>
-                            <!-- <textarea class="form-control" id="home_address" rows="5" name="data[home_address]"
-                                required>
-                            </textarea> -->
-                            <input type="text" class="form-control" id="home_address" name="data[home_address]"
-                                required>
-                        </div>
+                            We will Email the Voucher to <a href="#email_top"> "<span id="copyEmail"></span>" </a>
+                            within 20
+                            days after your
+                            friends
+                            has
+                            collected their order. </p>
                     </div>
 
                     <div class="form-group col-sm-24">
@@ -402,14 +396,15 @@
                             <span class="text-danger">*</span></label>
 
                         <div class="row " id="voucherBtnGroup">
+                            <div class="col-sm-4 "></div>
                             <div class="col-sm-8 mb-3">
                                 <input style="visibility: hidden;" class="form-check-input" type="radio"
-                                    name="data[rewards_voucher]" id="voucher_1" value="SGD $100 Michael Trio Voucher"
+                                    name="data[rewards_voucher_my]" id="voucher_1" value="RM $300 Michael Trio Voucher"
                                     checked>
                                 <label class="form-check-label voucherBtn active" for="voucher_1">
                                     <div class="voucher-bg">
                                         <div>
-                                            <h1 class="voucher-price"><span class="sgd-sign">SGD</span> $100</h1>
+                                            <h1 class="voucher-price"><span class="sgd-sign">RM</span> $300</h1>
                                             <h4 class="voucher-title">Michael Trio<br> Voucher</h4>
                                         </div>
                                     </div>
@@ -417,28 +412,17 @@
                             </div>
                             <div class="col-sm-8 mb-3">
                                 <input style="visibility: hidden;" class="form-check-input" type="radio"
-                                    name="data[rewards_voucher]" id="voucher_2" value="SGD $50 NTUC Voucher">
+                                    name="data[rewards_voucher_my]" id="voucher_2" value="RM $120 Grab Food Voucher">
                                 <label class="form-check-label voucherBtn" for="voucher_2">
                                     <div class="voucher-bg">
                                         <div>
-                                            <h1 class="voucher-price"><span class="sgd-sign">SGD</span> $50</h1>
-                                            <h4 class="voucher-title">NTUC Fairprice<br> Voucher</h4>
+                                            <h1 class="voucher-price"><span class="sgd-sign">RM</span> $120</h1>
+                                            <h4 class="voucher-title">Grab Food<br> Voucher</h4>
                                         </div>
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-sm-8 mb-3">
-                                <input style="visibility: hidden;" class="form-check-input" type="radio"
-                                    name="data[rewards_voucher]" id="voucher_3" value="SGD $50 CapitaLand Voucher">
-                                <label class="form-check-label voucherBtn" for="voucher_3">
-                                    <div class="voucher-bg">
-                                        <div>
-                                            <h1 class="voucher-price"><span class="sgd-sign">SGD</span> $50</h1>
-                                            <h4 class="voucher-title">Capitaland<br> Voucher</h4>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
+                            <div class="col-sm-4 "></div>
                         </div>
 
                         <!-- <div class="form-check">
@@ -465,9 +449,6 @@
 
 
                     </div>
-
-
-
                 </div>
 
                 <div style="clear:both;"></div>
@@ -492,10 +473,10 @@
                                 <div class="panel-body">
 
                                     <p class="mb-4 ">
-                                        - Refer a Friend and we will send them a SGD $100 Michael Trio voucher for
+                                        - Refer a Friend and we will send them a RM $300 Michael Trio voucher for
                                         their first
                                         purchase.<br>
-                                        - A minimum spend of SGD $1000 is required.<br>
+                                        - A minimum spend of RM $3000 is required.<br>
                                         - Referee must be a new customer to Michael Trio.<br>
                                         - Discount code is not stackable with other promotional discounts or offers.
                                         Please
@@ -530,9 +511,8 @@
                                         of rewards voucher* as indicated during the Google form submission.<br><br>
 
                                         *Rewards voucher options:<br>
-                                        SGD $100 Michael Trio Rewards Voucher, minimum spend SGD $500 required<br>
-                                        SGD $50 NTUC Voucher<br>
-                                        SGD $50 CapitaLand Voucher<br>
+                                        RM $300 Michael Trio Rewards Voucher, minimum spend RM $1500 required<br>
+                                        RM $120 Grab Food Voucher<br>
                                     </p>
                                 </div>
                             </div>
@@ -550,7 +530,7 @@
                                 <div class="panel-body">
 
                                     <p class="mb-4 ">
-                                        - SGD $100 Michael Trio rewards vouchers will not be stackable with any other
+                                        - RM $300 Michael Trio rewards vouchers will not be stackable with any other
                                         ongoing
                                         promotions.<br>
                                         - Please check with management or store consultants before using vouchers during
@@ -589,7 +569,7 @@
 
                     <div class="checkbox">
                         <label style="font-size: 16px;">
-                            <input type="checkbox" name="data[terms_conditions]" required>
+                            <input type="checkbox" name="data[terms_conditions_my]" required>
                             I have read, understood & agree to the Terms and
                             Conditions set by Michael Trio. <span class="text-danger">*</span>
                         </label>
@@ -619,16 +599,20 @@
         require(['jquery'], function ($) {
             $(document).ready(function () {
 
-
                 $("label.voucherBtn").click(function () {
                     console.log(this);
                     $('label.voucherBtn').removeClass('active');
                     $(this).addClass('active');
                 });
 
-
             });
         });
+
+        function myFunction() {
+            var email = document.getElementById("email");
+            var copyEmail = document.getElementById("copyEmail");
+            copyEmail.innerText = email.value;
+        }
 
 
         var form = document.getElementById('sheetdb-form');

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .big-image {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 5px;
+            border: 2px solid lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .choose-color {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border: 2px solid lightblue;
+        }
+
+        .diamond-type {
+            width: 30%;
+            padding: 20px 10px;
+            border: 2px solid lightblue;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .product-image {
+            width: 120px;
+            height: 120px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 20px 10px;
+            /* background: lightblue; */
+            border: 2px solid lightblue;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="master">
+        <div class="container" id="Cat1">
+            <h1>Title Cat 1</h1>
+            <p>This is a Paragraph 1</p>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="big-image" id="Cat1-displayMainImg">
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="choose-color" color="Cat1-WhiteGold">WhiteGold</div>
+                        <div class="choose-color" color="Cat1-YellowGold">YellowGold
+                        </div>
+                        <div class="choose-color" color="Cat1-RoseGold">RoseGold</div>
+                        <div class="choose-color" color="Cat1-Platinum">Platinum</div>
+
+                    </div>
+                </div>
+                <div class="col-md-16">
+                    <h3>Diamond Type</h3>
+                    <div class="row">
+
+                        <div class="diamond-type" type="Cat1-LabGrown">LabGrown</div>
+                        <div class="diamond-type" type="Cat1-EarthNaturalSI">
+                            EarthNaturalSI</div>
+                        <div class="diamond-type" type="Cat1-EarthNaturalVS">
+                            EarthNaturalVS</div>
+
+                    </div>
+
+                    <div class="row" id="Cat1-displayItems">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <div class="container" id="Cat2">
+            <h1>Title Cat 2</h1>
+            <p>This is a Paragraph 2</p>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="big-image" id="Cat2-displayMainImg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="choose-color" color="Cat2-WhiteGold">WhiteGold</div>
+                        <div class="choose-color" color="Cat2-YellowGold">YellowGold
+                        </div>
+                        <div class="choose-color" color="Cat2-RoseGold">RoseGold</div>
+                        <div class="choose-color" color="Cat2-Platinum">Platinum</div>
+
+                    </div>
+                </div>
+                <div class="col-md-16">
+                    <h3>Diamond Type</h3>
+                    <div class="row">
+
+                        <div class="diamond-type" type="Cat2-LabGrown">LabGrown</div>
+                        <div class="diamond-type" type="Cat2-EarthNaturalSI">
+                            EarthNaturalSI</div>
+                        <div class="diamond-type" type="Cat2-EarthNaturalVS">
+                            EarthNaturalVS</div>
+
+                    </div>
+
+                    <div class="row" id="Cat2-displayItems"> </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const data = {
+            "Cat1": {
+                "LabGrown": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": "Cat1 | LabGrown | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": "Cat1 | LabGrown | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": "Cat1 | LabGrown | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": "Cat1 | LabGrown | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                },
+
+                "EarthNaturalSI": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalSI | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalSI | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalSI | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalSI | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                },
+
+                "EarthNaturalVS": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalVS | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalVS | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalVS | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": " Cat1 |EarthNaturalVS | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                }
+            },
+            "Cat2": {
+                "LabGrown": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": "Cat2 | LabGrown | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": "Cat2 | LabGrown | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": "Cat2 | LabGrown | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": " Cat2  | LabGrown | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "LabGrown | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                },
+
+                "EarthNaturalSI": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalSI | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalSI | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalSI | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalSI | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalSI | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                },
+
+                "EarthNaturalVS": {
+                    "WhiteGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalVS | WhiteGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | WhiteGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | WhiteGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "YellowGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalVS | YellowGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | YellowGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | YellowGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "RoseGold": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalVS | RoseGold",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | RoseGold | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | RoseGold | Item2 "
+                            }
+
+                        ]
+                    },
+                    "Platinum": {
+                        "mainImg": "",
+                        "title": " Cat2 | EarthNaturalVS | Platinum",
+                        "desc": "",
+                        "items": [
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | Platinum | Item1 "
+                            },
+                            {
+                                "SKU": "NR0001-HE030-18KW",
+                                "price": "10SGD",
+                                "Image": "",
+                                "testing": "EarthNaturalVS | Platinum | Item2 "
+                            }
+
+                        ]
+                    }
+                }
+            }
+        }
+
+
+
+
+        window.onload = function () {
+            let cat = 'Cat1', type = 'LabGrown', color = 'WhiteGold';
+            const colorBtn = document.getElementsByClassName('choose-color');
+            const typeBtn = document.getElementsByClassName('diamond-type');
+
+            for (let i = 0; i < colorBtn.length; i++) {
+                colorBtn[i].addEventListener('click', function () {
+                    const array = this.getAttribute('color').split("-");
+                    console.log(this.getAttribute('color').split("-"));
+                    cat = array[0];
+                    color = array[1];
+
+                    displayItems(cat, type, color)
+                })
+            }
+
+            for (let i = 0; i < typeBtn.length; i++) {
+                typeBtn[i].addEventListener('click', function () {
+                    const array = this.getAttribute('type').split("-");
+                    console.log(this.getAttribute('type').split("-"));
+                    cat = array[0];
+                    type = array[1];
+
+                    displayItems(cat, type, color)
+                })
+            }
+
+            const displayItems = (cat, type, color) => {
+                const itemsHolderId = `${cat}-displayItems`
+                const imgHolderId = `${cat}-displayMainImg`
+                let result = data[cat][type][color].items;
+                let value = `<ul>`;
+
+                result.forEach(function (r) {
+                    value += `<li>${r.testing}</li>`;
+                });
+
+                value += `</ul>`;
+
+                document.getElementById(itemsHolderId).innerHTML = value;
+                document.getElementById(imgHolderId).innerHTML = data[cat][type][color].title;
+            }
+
+            displayItems(cat, type, color)
+            displayItems('Cat2', 'EarthNaturalSI', 'YellowGold')
+
+        }
+    </script>
+</body>
+
+</html>

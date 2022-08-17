@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <p>Singapore : <span id="Singapore"></span></p>
+    <p>Newyork : <span id="Newyork"></span></p>
+
+    <label>India Time: </label>
+    <select onchange="calcSgTime()" id="userTime">
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="12:30 PM">12:30 PM</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="1:30 PM">1:30 PM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <option value="2:30 PM">2:30 PM</option>
+        <option value="3:00 PM">3:00 PM</option>
+        <option value="3:30 PM">3:30 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="4:30 PM">4:30 PM</option>
+        <option value="5:00 PM">5:00 PM</option>
+        <option value="5:30 PM">5:30 PM</option>
+        <option value="6:00 PM">6:00 PM</option>
+        <option value="6:30 PM">6:30 PM</option>
+        <option value="7:00 PM">7:00 PM</option>
+        <option value="7:30 PM">7:30 PM</option>
+    </select>
+
+    <script language="JavaScript">
+        function calcSgTime() {
+            let hr, min, sec;
+            let x = document.getElementById('userTime').value;
+            hr = x.split(' ');
+
+            console.log(hr);
+        }
+
+
+        function calcTime(city, offset) {
+
+            d = new Date();
+
+            utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+            nd = new Date(utc + (3600000 * offset));
+
+            return "The local time in " + city + " is " + nd.toLocaleString();
+
+        }
+
+        document.getElementById('Singapore').innerText = calcTime('Singapore', '+8');
+        document.getElementById('Newyork').innerText = calcTime('Newyork', '-4');
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

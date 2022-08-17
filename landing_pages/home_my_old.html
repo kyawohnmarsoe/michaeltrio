@@ -3,93 +3,6 @@
 
 <head>
     <style>
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Review CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-        #mtreview {
-            cursor: grab;
-            color: #606060;
-        }
-
-        #mtreview .item .testimonials-slider__text {
-            padding: 50px 30px;
-            transition: transform .5s ease, box-shadow .5s ease;
-            transform: scale(.95);
-        }
-
-        #mtreview .center .item .testimonials-slider__text {
-            transform: scale(1.1);
-            box-shadow: 0 10px 20px #0000001a;
-            position: relative;
-            z-index: 10;
-            background: #fbf9f9c4;
-        }
-
-        #mtreview .text-spacing {
-            margin-bottom: 15px;
-        }
-
-        #mtreview .testimonial-stars {
-            margin-bottom: 15px;
-        }
-
-        #mtreview .testimonials-slider__text cite {
-            font-size: 17px;
-            font-style: normal;
-            font-weight: 700;
-        }
-
-        #mtreview .rte-setting,
-        #mtreview .testimonials__info {
-            font-size: 15px;
-        }
-
-        .mt2021 #mtreview p {
-            font-size: 15px;
-        }
-
-        #mtreview .rte-setting p {
-            line-height: 20px;
-        }
-
-        .review .owl-stage-outer {
-            padding: 40px 0;
-        }
-
-        .review .owl-theme .owl-nav {
-            margin-top: 0px;
-        }
-
-        .icon-review-star {
-            width: 19px;
-            height: 19px;
-            background-image: url(https://www.michaeltrio.com/pub/media/0home/review-star.png);
-            background-size: cover;
-            display: inline-block;
-        }
-
-        .margin-right-5px {
-            margin-right: 5px;
-        }
-
-        @media (max-width: 767.98px) {
-            #mtreview .center .item .testimonials-slider__text {
-                width: 80%;
-                margin: auto;
-            }
-
-            .mt2021 .owl-carousel .owl-item.center {
-                margin: 0;
-            }
-
-            .mt2021 #mtreview p {
-                letter-spacing: 0;
-            }
-        }
-
-
-
-
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         * {
@@ -751,11 +664,11 @@
         }
 
         #choose-setting.owl-carousel .owl-item img {
-            width: 175px;
+            width: 200px;
         }
 
         #choose-setting.owl-carousel .owl-item.center img {
-            width: 270px;
+            width: 320px;
         }
 
 
@@ -820,12 +733,11 @@
 
         .home-jewel {
             position: relative;
-            margin-top: 0px;
+            margin-top: 150px;
             background-color: #f7e6dd;
         }
 
         .home-jewel::before {
-            display: none;
             content: "jewellery";
             position: absolute;
             top: -131px;
@@ -1136,73 +1048,79 @@
                         <div>
                             <h1>Choose Your Setting Style</h1>
                             <div id="choose-setting" class="owl-carousel owl-theme img-slider my-3" data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
-                  "0": {
-                      "items":1
-                  },
-                  "375": {
-                      "items":1
-                  },
-                  "480": {
-                  "items":3
+              "0": {
+                  "items":1
               },
-                  "768":{
-                      "items":5
-                  },
-                  "1200":{
+             "375": {
+                  "items":1
+              },
+              "480": {
+                "items":3
+            },
+              "768":{
                   "items":5
-              }
-              }}}}}'>
+              },
+              "1200":{
+                "items":5
+            }
+          }}}}}'>
                                 <div class="item">
                                     <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/solitaire'}}">
-                                                <img src="{{media url=&quot;0home/msr0013-18kw.jpg&quot;}}"></a>
+                                        <figure><a href="{{store url='engagement-rings/solitaire'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Solitaire-MSR0013-18KW.jpg"></a>
                                         </figure>
                                         <a href="{{store url='engagement-rings/solitaire'}}">Solitaire</a>
                                     </article>
                                 </div>
                                 <div class="item">
                                     <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/channel-set'}}">
-                                                <img src="{{media url=&quot;0home/msr0033f.jpg&quot;}}"></a>
-                                        </figure>
-                                        <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
-                                    </article>
-                                </div>
-                                <div class="item">
-                                    <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/pave'}}">
-                                                <img src="{{media url=&quot;0home/msr0330-18kwr.jpg&quot;}}"></a>
+                                        <figure><a href="{{store url='engagement-rings/pave'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Pave-WR0175F-18KW.jpg"></a>
                                         </figure>
                                         <a href="{{store url='engagement-rings/pave'}}">Pavé</a>
                                     </article>
                                 </div>
                                 <div class="item">
                                     <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/side-stone'}}">
-                                                <img src="{{media url=&quot;0home/msr0301-18kw.jpg&quot;}}"></a>
+                                        <figure><a href="{{store url='engagement-rings/channel-set'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Channel_Set-MSR0033F-18KW.jpg"></a>
+                                        </figure>
+                                        <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
+                                    </article>
+                                </div>
+
+                                <!-- <div class="item">
+                                    <article class="text-center">
+                                        <figure><a href="{{store url='engagement-rings/side-stone'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Side_Stone-MSR0063-18KW.jpg"></a>
                                         </figure>
                                         <a href="{{store url='engagement-rings/side-stone'}}">Side Stone</a>
                                     </article>
-                                </div>
+                                </div> -->
                                 <div class="item">
                                     <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/vintage'}}">
-                                                <img src="{{media url=&quot;0home/msr0066-18kw.jpg&quot;}}"></a>
+                                        <figure><a href="{{store url='engagement-rings/vintage'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Vintage-msr0100-18kwr.jpg"></a>
                                         </figure>
                                         <a href="{{store url='engagement-rings/vintage'}}">Vintage</a>
                                     </article>
                                 </div>
                                 <div class="item">
                                     <article class="text-center">
-                                        <figure><a href="{{store url='engagement-rings/halo'}}">
-                                                <img src="{{media url=&quot;0home/msr0070-18kw.jpg&quot;}}"></a>
+                                        <figure><a href="{{store url='engagement-rings/halo'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Halo-MSR0188-18kw.jpg"></a>
                                         </figure>
                                         <a href="{{store url='engagement-rings/halo'}}">Halo</a>
                                     </article>
                                 </div>
-
-
-
+                                <div class="item">
+                                    <article class="text-center">
+                                        <figure><a href="{{store url='engagement-rings/channel-set'}}"><img
+                                                    src="https://www.michaeltrio.com/pub/media/0newengagementpage/Channel_Set-MSR0033F-18KW.jpg"></a>
+                                        </figure>
+                                        <a href="{{store url='engagement-rings/channel-set'}}">Channel-Set</a>
+                                    </article>
+                                </div>
 
                             </div>
 
@@ -1249,7 +1167,7 @@
             </div>
         </section>
 
-        <!-- <section class="py-5">
+        <section class="py-5">
             <div class="container">
                 <h1 class="text-center">Michael Trio Customer Reviews
                 </h1>
@@ -1266,188 +1184,7 @@
 
                 </div>
             </div>
-        </section> -->
-
-
-        <div class="mt2021 review">
-            <section class="py-5">
-
-                <div>
-                    <div class="row">
-                        <div class="col-sm-24 text-center">
-                            <div>
-                                <h1>Michael Trio Customer Reviews </h1>
-                                <h4>Over A Thousand</h4>
-                                <div>
-                                    <span class="icon-review-star margin-right-5px"></span>
-                                    <span class="icon-review-star margin-right-5px"></span>
-                                    <span class="icon-review-star margin-right-5px"></span>
-                                    <span class="icon-review-star margin-right-5px"></span>
-                                    <span class="icon-review-star"></span>
-                                </div>
-                                <h6>5 Stars Reviews</h6>
-                                <div id="mtreview" class="owl-carousel owl-theme img-slider " data-mage-init='{"themewidgets":{"jewel.slider":{"sliderConfig":{"nav":true,"dots":true,"center":true,"loop":true,"autoWidth":false,"autoplay":false,"responsive":{
-                                    "0": {
-                                        "items":1
-                                    },
-                                    "375": {
-                                        "items":1
-                                    },
-                                    "480": {
-                                    "items":1
-                                },
-                                    "768":{
-                                        "items":1
-                                    },
-                                    "1200":{
-                                    "items":3
-                                }
-                                }}}}}'>
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>
-                                                        Great customer service! Customised a ring with Michael Trio and
-                                                        it
-                                                        came
-                                                        out exactly how I wanted. Thank you!
-                                                    </p>
-                                                </div>
-                                                <cite>Esther </cite>
-                                                <div class="testimonials__info">Selangor</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>My husband and daughter surprise me with all BIO earrings! They
-                                                        are
-                                                        my
-                                                        absolute favourite because I have very sensitive skin, these are
-                                                        the
-                                                        only earrings I can put on without worry! Loving it.</p>
-                                                </div><cite>Lilian P.</cite>
-                                                <div class="testimonials__info">Sarawak</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>
-                                                        Very excellent craftmanship of ring, excellent quality diamond
-                                                        and
-                                                        perfect cutting. Very good after purchase service. Allowed
-                                                        customisation
-                                                        and personalised service.
-                                                    </p>
-                                                </div><cite>Jun Ze </cite>
-                                                <div class="testimonials__info">Penang</div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>
-                                                        Simple and classy engagement ring. Great workmanship. Customer
-                                                        service
-                                                        was good too. Very pleasant experience.
-                                                    </p>
-                                                </div><cite>Amira </cite>
-                                                <div class="testimonials__info">Sarawak</div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>
-                                                        Good service and deliver their promised timeline, while being
-                                                        updated
-                                                        along the process.
-                                                    </p>
-                                                </div><cite>Andreas </cite>
-                                                <div class="testimonials__info">Selangor</div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="item">
-                                        <a href="{{store url=''}}reviews">
-                                            <div class="testimonials-slider__text">
-                                                <div class="testimonial-stars">
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star margin-right-5px"></span>
-                                                    <span class="icon-review-star"></span>
-                                                </div>
-                                                <div class="rte-setting text-spacing">
-                                                    <p>
-                                                        Perfect ring for the perfect occasion.
-                                                    </p>
-                                                </div><cite>Sunil </cite>
-                                                <div class="testimonials__info">Selangor</div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </div>
+        </section>
 
         <section class="home-diamond-banner">
             <div class="container">
@@ -1639,7 +1376,7 @@
 
         <section class="home-jewel bg-lighterorange py-5">
             <div class="container">
-                <h1 class="text-center mb-5">Jewellery</h1>
+
                 <p class="text-center mb-5 ">Delicate jewellery pieces hand-crafted for any occasion. Explore our
                     extensive range of jewellery pieces from dainty to extravagant, made with love and quality as our
                     utmost priority.

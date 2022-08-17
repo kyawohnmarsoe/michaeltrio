@@ -4,6 +4,26 @@
 
 <head>
     <style>
+        .form-control,
+        input[type="email"],
+        input[type="password"],
+        input[type="search"],
+        input[type="text"],
+        select,
+        textarea {
+            height: 40px;
+            line-height: 40px !important;
+        }
+
+        #ringsizerfrm .mt-4 {
+            margin-top: 0px !important;
+        }
+
+        #ringsizerfrm .mdl-textfield {
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+        }
+
         /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Common CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
         * {
@@ -712,13 +732,10 @@
                         </div>
 
 
-
                         <div class="mb-5 ">
                             {{block class="Michaeltrio\Customer\Block\RingSizer"
                             template='Michaeltrio_Customer::ring-sizer.phtml'}}
                         </div>
-
-
 
                         <div>
                             <h5 class=" mb-4 font-weight-normal">Free Shipping Worldwide</h5>

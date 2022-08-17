@@ -1,4 +1,7 @@
 
+.modal-popup .modal-inner-wrap .modal-header .action-close{
+    right:0 !important;
+}
 .sc-7dvmpp-1.gCdMUP{
     display: none;
     }
